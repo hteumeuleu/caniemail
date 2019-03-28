@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<h2>{{ page.description }}</h2>
+
+{{ content }}
+
+<!-- Stats -->
+{% for stat in page.stats %}
+	{% for client in stat %}
+		<h3>{{ client[0] }}</h3>
+		<ul>
+		{% for version in client[1] %}
+			<li style="background:rgba(0,0,0,0.125);">
+				{% for value in version %}
+					{{ value[0] }}: {{ value[1] }}
+					<div class="stat">{{ value[0] }}</div>
+				{% endfor %}
+			</li>
+		{% endfor %}
+		</ul>
+	{% endfor %}
+{% endfor %}
+
+<!-- Categories -->
+<p>
+{% for cat in page.categories %}
+	{{ cat }}
+	{% if forloop.index >= 1 and forloop.index < forloop.length %}
+	,
+	{% endif %}
+{% endfor %}
+<p>
+
+<a href="{{ site.url }}/{{ page.collection }}">Back</a>

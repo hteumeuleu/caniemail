@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<h1>Features</h1>
+<ul>
+  {% for feature in site.features %}
+    <li>
+      <h2><a href="{{ feature.url }}">{{ feature.title }}</a></h2>
+      <p>{{ feature.description | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,14 @@
+collections:
+  features:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: "feature"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
