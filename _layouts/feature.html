@@ -14,8 +14,17 @@ layout: default
 		{% for version in client[1] %}
 			<li style="background:rgba(0,0,0,0.125);">
 				{% for value in version %}
-					{{ value[0] }}: {{ value[1] }}
-					<div class="stat">{{ value[0] }}</div>
+					{% case value[1] %}
+						{% when 'y' %}
+							{% assign stat_class_name = 'supported' %}
+						{% when 'n' %}
+							{% assign stat_class_name = 'unsupported' %}
+						{% when 'a' %}
+							{% assign stat_class_name = 'mitigated' %}
+						{% else %}
+							{% assign stat_class_name = '' %}
+					{% endcase %}
+					<div class="stat {{ stat_class_name }}"> {{ value[0] }}</div>
 				{% endfor %}
 			</li>
 		{% endfor %}
