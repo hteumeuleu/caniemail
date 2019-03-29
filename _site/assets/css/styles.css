@@ -10,29 +10,125 @@ body {
   color: #b1b1b3;
   background: #1b1b1d; }
 
-h1 {
-  font-size: 2em;
-  text-align: center; }
-
 .main {
-  max-width: 40rem;
+  width: 100%;
+  max-width: 80rem;
   margin: 0 auto; }
 
-.stat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 6rem;
-  height: 2rem;
-  color: #fff;
-  font-size: 1rem;
-  background: #b1b1b3; }
+.title {
+  margin: auto;
+  font-size: 2rem;
+  text-align: center; }
 
-.mitigated {
-  background: #f7a03c; }
+.feature {
+  padding: 1rem 2rem;
+  border: 1px solid #3c3c3d; }
+
+.data {
+  margin: 2rem -3rem 0;
+  background: #2a2a2e;
+  border: 1px solid #3c3c3d; }
+
+.data-summary {
+  color: #fff; }
+
+.data-summary-panel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  list-style: none; }
+
+.data-summary-client {
+  padding: 1rem 2rem;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+.data-summary-client:not(:first-child) {
+  border-left: 1px solid #3c3c3d; }
+
+.data-summary-client.selected {
+  position: relative;
+  outline: 1px solid #fff; }
+
+.data-summary-client h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem; }
+
+.data-summary-cell {
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border: 1px solid #3c3c3d; }
 
 .supported {
-  background: #39b54a; }
+  background-color: #39b54a !important; }
 
 .unsupported {
-  background: #c44230; }
+  background-color: #c44230 !important; }
+
+.mitigated {
+  background-color: #f7a03c !important; }
+
+.data-details {
+  position: relative;
+  padding: 1rem 2rem;
+  border-top: 1px solid #3c3c3d; }
+
+.data-notes {
+  margin-top: 1rem; }
+
+/*
+ * Data
+ */
+.data-table {
+  width: 100%;
+  border-spacing: 0.5rem; }
+
+.data-table th {
+  font-weight: 400;
+  vertical-align: top; }
+
+.data-table th small {
+  display: block; }
+
+.data-table tbody td {
+  position: relative;
+  padding: 0 1rem;
+  height: 2rem;
+  width: 4rem;
+  min-width: 6rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.025); }
+
+.data-table-scroll {
+  overflow-x: auto;
+  padding: 0 0 1rem; }
+
+.family-cell {
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: none;
+  font-size: 1.25rem; }
+
+.stat-cell {
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1rem;
+  white-space: nowrap; }
+
+.note {
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.55); }

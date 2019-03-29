@@ -1,45 +1,52 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<h2>{{ page.description }}</h2>
+<section class="feature">
+	<h1 class="data-title">{{ page.title }}</h1>
+	<p>{{ page.description }}</p>
 
-{{ content }}
+	<div class="data">
+		<div class="data-summary">
 
-<!-- Stats -->
-{% for stat in page.stats %}
-	{% for client in stat %}
-		<h3>{{ client[0] }}</h3>
-		<ul>
-		{% for version in client[1] %}
-			<li style="background:rgba(0,0,0,0.125);">
-				{% for value in version %}
-					{% case value[1] %}
-						{% when 'y' %}
-							{% assign stat_class_name = 'supported' %}
-						{% when 'n' %}
-							{% assign stat_class_name = 'unsupported' %}
-						{% when 'a' %}
-							{% assign stat_class_name = 'mitigated' %}
-						{% else %}
-							{% assign stat_class_name = '' %}
-					{% endcase %}
-					<div class="stat {{ stat_class_name }}"> {{ value[0] }}</div>
+		</div>
+		<div class="data-details">
+		<!-- Stats -->
+		{% for stat in page.stats %}
+			{% for client in stat %}
+				<h3>{{ client[0] }}</h3>
+				<ul>
+				{% for version in client[1] %}
+					<li style="background:rgba(0,0,0,0.125);">
+						{% for value in version %}
+							{% case value[1] %}
+								{% when 'y' %}
+									{% assign stat_class_name = 'supported' %}
+								{% when 'n' %}
+									{% assign stat_class_name = 'unsupported' %}
+								{% when 'a' %}
+									{% assign stat_class_name = 'mitigated' %}
+								{% else %}
+									{% assign stat_class_name = '' %}
+							{% endcase %}
+							<div class="stat {{ stat_class_name }}"> {{ value[0] }}</div>
+						{% endfor %}
+					</li>
 				{% endfor %}
-			</li>
+				</ul>
+			{% endfor %}
 		{% endfor %}
-		</ul>
+		</div>
+	</div>
+
+	<!-- Categories -->
+	<p>
+	{% for cat in page.categories %}
+		{{ cat }}
+		{% if forloop.index >= 1 and forloop.index < forloop.length %}
+		,
+		{% endif %}
 	{% endfor %}
-{% endfor %}
+	</p>
 
-<!-- Categories -->
-<p>
-{% for cat in page.categories %}
-	{{ cat }}
-	{% if forloop.index >= 1 and forloop.index < forloop.length %}
-	,
-	{% endif %}
-{% endfor %}
-<p>
-
-<a href="{{ site.url }}/{{ page.collection }}">Back</a>
+	<a href="{{ site.url }}/{{ page.collection }}">Back</a>
+</section>

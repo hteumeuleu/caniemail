@@ -12,35 +12,14 @@ body {
 	background: #1b1b1d;
 }
 
-h1 {
-	font-size: 2em;
-	text-align: center;
-}
-
 .main {
-	max-width: 40rem;
+	width: 100%;
+	max-width: 80rem;
 	margin: 0 auto;
 }
 
-.stat {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 6rem;
-	height: 2rem;
-	color: #fff;
-	font-size: 1rem;
-	background: #b1b1b3;
-}
-
-.mitigated {
-	background: #f7a03c;
-}
-
-.supported {
-	background: #39b54a;
-}
-
-.unsupported {
-	background: #c44230;
+.title {
+	margin: auto;
+	font-size: 2rem;
+	text-align: center;
 }
