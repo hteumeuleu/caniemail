@@ -4,42 +4,51 @@ layout: default
 <section class="feature">
 	<h1 class="data-title">{{ page.title }}</h1>
 	<p>{{ page.description }}</p>
-
 	<div class="data">
 		<div class="data-summary">
-
 		</div>
 		<div class="data-details">
 			<div class="data-family-list">
+				{% for family in page.stats %}
+					{% assign family-obj = family | first %}
+					{% assign family-key = family-obj | first %}
+					{% assign family-values = family-obj | last %}
 				<div class="data-family">
-					<h2 class="data-family-name">x-family</h2>
+					<h2 class="data-family-name">
+						{{ site.data.nicenames.family[family-key] | default: family-key }}
+					</h2>
 					<div class="data-client-list">
-					{% for stat in page.stats %}
-						{% for client in stat %}
+						{% for platform in family-values %}
+							{% assign platform-obj = platform | first %}
+							{% assign platform-key = platform-obj | first %}
+							{% assign platform-values = platform-obj | last %}
 							<div class="data-client">
-								<h3 class="data-platform-name">{{ client[0] }}</h3>
+								<h3 class="data-platform-name">
+									{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
+								</h3>
 								<div class="data-versions-list">
-								{% for version in client[1] %}
-									{% for value in version %}
-										{% case value[1] %}
-											{% when 'y' %}
-												{% assign stat_class_name = 'supported' %}
-											{% when 'n' %}
-												{% assign stat_class_name = 'unsupported' %}
-											{% when 'a' %}
-												{% assign stat_class_name = 'mitigated' %}
-											{% else %}
-												{% assign stat_class_name = '' %}
-										{% endcase %}
-										<div class="data-version {{ stat_class_name }}"> {{ value[0] }}</div>
-									{% endfor %}
+								{% for version in platform-values %}
+									{% assign version-obj = version | first %}
+									{% assign version-key = version-obj | first %}
+									{% assign version-values = version-obj | last %}
+									{% case version-values %}
+										{% when 'y' %}
+											{% assign stat_class_name = 'supported' %}
+										{% when 'n' %}
+											{% assign stat_class_name = 'unsupported' %}
+										{% when 'a' %}
+											{% assign stat_class_name = 'mitigated' %}
+										{% else %}
+											{% assign stat_class_name = '' %}
+									{% endcase %}
+									<div class="data-version {{ stat_class_name }}"> {{ version-key }}</div>
 								{% endfor %}
 								</div>
 							</div>
 						{% endfor %}
-					{% endfor %}
 					</div>
 				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>

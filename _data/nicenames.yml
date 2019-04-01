@@ -1,0 +1,11 @@
+family:
+  gmail: "Gmail"
+  outlook: "Outlook"
+  yahoo: "Yahoo"
+platform:
+  desktop-webmail: "Desktop Webmail"
+  mobile-webmail: "Mobile Webmail"
+  webmail: "Webmail"
+  ios: "iOS"
+  windows: "Windows"
+  macos: "macOS"

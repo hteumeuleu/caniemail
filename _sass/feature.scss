@@ -42,15 +42,6 @@
 		font-size: 1.75rem;
 	}
 
-// .data-summary-cell {
-// 	display: inline-block;
-// 	padding: 1rem;
-// 	width: 100%;
-// 	font-weight: bold;
-// 	font-size: 1.125rem;
-// 	border: 1px solid #3c3c3d;
-// }
-
 	.supported {
 		background-color: #39b54a !important;
 	}
@@ -69,34 +60,19 @@
 	border-top: 1px solid #3c3c3d;
 }
 
-// .data-notes {
-// 	margin-top: 1rem;
-// }
-
 /*
  * Data
  */
+// Family
+// (ie Outlook, Gmail, …)
 .data-family-list {
 	display: flex;
 	flex-direction: row;
 }
 
-.data-client-list {
-	display: flex;
-	flex-direction: row;
-}
-
-.data-client {
+.data-family {
 	display: flex;
 	flex-direction: column;
-	margin: 0 0.25rem;
-}
-
-.data-platform-name {
-	padding: 0.5rem;
-	font-size: 1rem;
-	font-weight: normal;
-	text-align: center;
 }
 
 .data-family-name {
@@ -105,6 +81,29 @@
 	border-bottom: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+// Plaform
+// (ie iOS, Windows, …)
+.data-platform-name {
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+.data-client-list {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.data-client {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0.25rem;
+}
+
+// Clients versions
+// (ie 2016, 2019, …)
 .data-versions-list {
 	display: flex;
 	flex-direction: column;
@@ -123,7 +122,7 @@
 	justify-content: center;
 	flex-shrink: 0;
 	flex-grow: 0;
-	width: 6rem;
+	padding: 0 2rem;
 	height: 2rem;
 	color: #fff;
 
@@ -131,59 +130,3 @@
 		margin-top: 0.5rem;
 	}
 }
-// .data-table {
-// 	width: 100%;
-// 	border-spacing: 0.5rem;
-// }
-
-// 	.data-table th {
-// 		font-weight: 400;
-// 		vertical-align: top;
-// 	}
-
-// 		.data-table th small {
-// 			display: block;
-// 		}
-
-// 	.data-table tbody td {
-// 		position: relative;
-// 		padding: 0 1rem;
-// 		height: 2rem;
-// 		width: 4rem;
-// 		min-width: 6rem;
-// 		color: #fff;
-// 		background-color: rgba(255, 255, 255, 0.025);
-// 	}
-
-// 	.data-table-scroll {
-// 		overflow-x: auto;
-// 		padding: 0 0 1rem;
-// 	}
-
-// 	.family-cell {
-// 		text-align: center;
-// 		border-bottom: 1px solid rgba(255, 255, 255, 0.125);
-// 		border-radius: none;
-// 		font-size: 1.25rem;
-// 	}
-
-// 	.stat-cell {
-// 		position: relative;
-// 		vertical-align: middle;
-// 		text-align: center;
-// 		font-size: 1rem;
-// 		white-space: nowrap;
-// 	}
-
-// 	.note {
-// 		position: absolute;
-// 		left: 0.25rem;
-// 		top: 0.25rem;
-// 		display: block;
-// 		width: 1.25rem;
-// 		height: 1.25rem;
-// 		text-decoration: none;
-// 		font-size: 0.75rem;
-// 		font-weight: bold;
-// 		background-color: rgba(0, 0, 0, 0.55);
-// 	}
