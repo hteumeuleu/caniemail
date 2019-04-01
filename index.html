@@ -2,4 +2,9 @@
 title: Home
 layout: default
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<h1 class="caniemail-list-title">Features</h1>
+<ul class="caniemail-list">
+	{% for feature in site.features %}
+	<li><a href="{{ feature.url }}">{{ feature.title }}</a></li>
+	{% endfor %}
+</ul>

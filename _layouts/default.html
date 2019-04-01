@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>{{ page.title }}</title>
-		<link rel="stylesheet" href="/assets/css/styles.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	</head>
-	<body>
-		<main class="main">
+<head>
+	<meta charset="utf-8" />
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+	<div class="caniemail">
+		{% include header.html %}
+		<main class="main" role="main">
 			{{ content }}
 		</main>
-	</body>
+		{% include footer.html %}
+	</div>
+</body>
 </html>

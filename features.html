@@ -1,12 +1,9 @@
 ---
 layout: default
 ---
-<h1>Features</h1>
-<ul>
-  {% for feature in site.features %}
-    <li>
-      <h2><a href="{{ feature.url }}">{{ feature.title }}</a></h2>
-      <p>{{ feature.description | markdownify }}</p>
-    </li>
-  {% endfor %}
+<h1 class="caniemail-list-title">Features</h1>
+<ul class="caniemail-list">
+	{% for feature in site.features %}
+	<li><a href="{{ feature.url }}">{{ feature.title }}</a></li>
+	{% endfor %}
 </ul>
