@@ -56,6 +56,14 @@ body {
   margin-bottom: 0.75rem;
   font-size: 1.75rem; }
 
+.data-summary-cell {
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border: 1px solid #3c3c3d; }
+
 .supported {
   background-color: #39b54a !important; }
 
@@ -79,9 +87,11 @@ body {
 
 .data-family {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-grow: 1; }
 
 .data-family-name {
+  margin: 0 0.25rem;
   font-size: 1.25rem;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
@@ -100,6 +110,7 @@ body {
 .data-client {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   margin: 0 0.25rem; }
 
 .data-versions-list {

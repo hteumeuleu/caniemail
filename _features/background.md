@@ -2,7 +2,7 @@
 title: "Background shorthand property"
 description: "This is the description of the background property."
 spec: "https://www.w3.org/TR/css-backgrounds-3/"
-categories: ["CSS", "foo", "bar"]
+tags: ["CSS", "foo", "bar"]
 stats: [
     gmail: [
         desktop-webmail: [
@@ -40,7 +40,7 @@ stats: [
         macos: [
             "2013":"y",
             "2016":"y",
-            "2019":"y"
+            "2019":"a"
         ]
     ]
 ]

@@ -9,3 +9,7 @@ platform:
   ios: "iOS"
   windows: "Windows"
   macos: "macOS"
+support:
+  supported: "Supported"
+  unsupported: "Not supported"
+  mitigated: "Partial support"
