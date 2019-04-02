@@ -3,6 +3,10 @@
 	border: 1px solid #3c3c3d;
 }
 
+.feature-title {
+	font-size: 2rem;
+}
+
 .data {
 	margin: 2rem -3rem 0;
 	background: #2a2a2e;
@@ -37,7 +41,7 @@
 		outline: 1px solid #fff;
 	}
 
-	.data-summary-family h3 {
+	.data-summary-family-title {
 		margin-bottom: 0.75rem;
 		font-size: 1.75rem;
 	}
@@ -66,6 +70,8 @@
 .data-details {
 	position: relative;
 	padding: 1rem 2rem;
+	overflow-x: auto;
+	overflow-y: hidden;
 	border-top: 1px solid #3c3c3d;
 }
 
@@ -95,6 +101,10 @@
 // Plaform
 // (ie iOS, Windows, …)
 .data-platform-name {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	min-height: 4rem;
 	padding: 0.5rem;
 	font-size: 1rem;
 	font-weight: normal;
@@ -112,6 +122,7 @@
 	flex-direction: column;
 	flex-grow: 1;
 	margin: 0 0.25rem;
+	min-width: 8rem;
 }
 
 // Clients versions
@@ -129,16 +140,85 @@
 }
 
 .data-version {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-shrink: 0;
 	flex-grow: 0;
 	padding: 0 2rem;
-	height: 2rem;
+	height: 3rem;
 	color: #fff;
 
 	&:not(:first-child) {
 		margin-top: 0.5rem;
 	}
+}
+
+.data-version-notes {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+
+	& > a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0.25rem;
+		width: 1rem;
+		height: 1rem;
+		color: #333;
+		font-size: 0.5rem;
+		background: rgba(255, 255, 255, 0.5);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+	}
+}
+
+/*
+ * Notes
+ */
+.data-notes {
+	padding: 2rem 0 1rem;
+
+	a {
+		color: inherit;
+	}
+
+	p:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.data-notes-list {
+	position: relative;
+	list-style: none;
+	margin-left: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.data-note {
+	position: relative;
+
+	&:not(:last-child) {
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		display: inline;
+	}
+}
+
+.data-note-key {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: -2.5rem;
+	top: 0;
+	font-size: 0.75rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.2);
 }

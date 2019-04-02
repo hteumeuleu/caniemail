@@ -2,8 +2,10 @@
 layout: default
 ---
 <section class="feature">
-	<h1 class="data-title">{{ page.title }}</h1>
-	<p>{{ page.description }}</p>
+	<header class="feature-header">
+		<h1 class="feature-title">{{ page.title }}</h1>
+		{{ page.description | markdownify }}
+	</header>
 	<div class="data">
 		<div class="data-summary">
 			<ul class="data-summary-panel">
@@ -13,7 +15,7 @@ layout: default
 				{% assign family-key = family-obj | first %}
 				{% assign family-values = family-obj | last %}
 				{% assign family-support = '' %}
-				<h3>{{ site.data.nicenames.family[family-key] | default: family-key }}</h3>
+				<h2 class="data-summary-family-title">{{ site.data.nicenames.family[family-key] | default: family-key }}</h2>
 				{% for platform in family-values %}
 					{% assign platform-obj = platform | first %}
 					{% assign platform-key = platform-obj | first %}
@@ -21,7 +23,7 @@ layout: default
 					{% for version in platform-values %}
 						{% assign version-obj = version | first %}
 						{% assign version-key = version-obj | first %}
-						{% assign version-values = version-obj | last %}
+						{% assign version-values = version-obj | last | split: ' ' | first %}
 						{% comment %}
 							Assign highest support value possible.
 							If it's a mix of anything, result should be 'a'.
@@ -60,23 +62,24 @@ layout: default
 					{% assign family-key = family-obj | first %}
 					{% assign family-values = family-obj | last %}
 				<div class="data-family">
-					<h2 class="data-family-name">
+					<h3 class="data-family-name">
 						{{ site.data.nicenames.family[family-key] | default: family-key }}
-					</h2>
+					</h3>
 					<div class="data-client-list">
 						{% for platform in family-values %}
 							{% assign platform-obj = platform | first %}
 							{% assign platform-key = platform-obj | first %}
 							{% assign platform-values = platform-obj | last %}
 							<div class="data-client">
-								<h3 class="data-platform-name">
+								<h4 class="data-platform-name">
 									{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
-								</h3>
+								</h4>
 								<div class="data-versions-list">
 								{% for version in platform-values %}
 									{% assign version-obj = version | first %}
 									{% assign version-key = version-obj | first %}
-									{% assign version-values = version-obj | last %}
+									{% assign version-values = version-obj | last | split: ' ' | first %}
+									{% assign version-notes = version-obj | last | split: ' ' | shift %}
 									{% case version-values %}
 										{% when 'y' %}
 											{% assign stat_class_name = 'supported' %}
@@ -87,7 +90,16 @@ layout: default
 										{% else %}
 											{% assign stat_class_name = '' %}
 									{% endcase %}
-									<div class="data-version {{ stat_class_name }}"> {{ version-key }}</div>
+									<div class="data-version {{ stat_class_name }}">
+										{{ version-key }}
+										{% if version-notes.size > 0  %}
+											<div class="data-version-notes">
+											{% for note-key in version-notes %}
+												<a href="#{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">{{ note-key }}</a>
+											{% endfor %}
+											</div>
+										{% endif %}
+									</div>
 								{% endfor %}
 								</div>
 							</div>
@@ -98,11 +110,24 @@ layout: default
 			</div>
 		</div>
 	</div>
-
-	<!-- Categories -->
-	<p>
-	{{ page.tags | array_to_sentence_string }}
-	</p>
-
-	<a href="{{ site.url }}/{{ page.collection }}">Back</a>
+	<div class="data-notes">
+		<h2 class="caniemail-list-title">Notes</h2>
+		{{ page.notes | markdownify }}
+		<ul class="data-notes-list">
+		{% for note in page.notes_by_num %}
+			{% assign note-obj = note | first %}
+			{% assign note-key = note-obj | first %}
+			{% assign note-value = note-obj | last %}
+			<li class="data-note" id="{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">
+				<span class="data-note-key">{{ note-key }}</span> {{ note-value | markdownify }}
+			</li>
+		{% endfor %}
+		</ul>
+		<p>
+			{{ page.tags | array_to_sentence_string }}
+		</p>
+		<p>
+			Generated on {{ site.time | date_to_string: "ordinal", "US" }}.
+		</p>
+	</div>
 </section>

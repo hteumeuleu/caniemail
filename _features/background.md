@@ -4,6 +4,29 @@ description: "This is the description of the background property."
 spec: "https://www.w3.org/TR/css-backgrounds-3/"
 tags: ["CSS", "foo", "bar"]
 stats: [
+    aol: [
+        desktop-app: [
+            "2017-09":"a #1 #2 #3"
+        ],
+        desktop-webmail: [
+            "2017-09":"y"
+        ],
+        alto-ios: [
+            "2017-09":"y"
+        ],
+        alto-android: [
+            "2017-09":"a #1"
+        ]
+    ],
+    apple-mail: [
+        macos: [
+            "10":"y"
+        ],
+        ios: [
+            "10":"y",
+            "11":"y"
+        ]
+    ],
     gmail: [
         desktop-webmail: [
             "2015-12":"y",
@@ -43,5 +66,11 @@ stats: [
             "2019":"a"
         ]
     ]
+]
+notes: "Initial data by [Campaign Monitor](https://www.campaignmonitor.com/css/color-background/background/)."
+notes_by_num: [
+    "1": "Partial. Fixed attachment is not supported.",
+    "2": "Lorem ipsum.",
+    "3": "Partial. Fixed attachment is not supported."
 ]
 ---
