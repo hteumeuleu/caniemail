@@ -3,7 +3,15 @@ title: "Background shorthand property"
 description: "This is the description of the background property."
 spec: "https://www.w3.org/TR/css-backgrounds-3/"
 tags: ["CSS", "foo", "bar"]
-stats: [
+stats2: {
+    aol: [
+        foo: bar
+    ],
+    apple-mail: [
+        fuu: uuuu
+    ]
+}
+stats: {
     aol: [
         desktop-app: [
             "2017-09":"a #1"
@@ -92,7 +100,7 @@ stats: [
             "2017-09":"a #5"
         ]
     ]
-]
+}
 notes: "Initial data by [Campaign Monitor](https://www.campaignmonitor.com/css/color-background/background/)."
 notes_by_num: [
     "1": "Partial. Fixed attachment is not supported.",
