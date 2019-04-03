@@ -6,7 +6,7 @@ tags: ["CSS", "foo", "bar"]
 stats: [
     aol: [
         desktop-app: [
-            "2017-09":"a #1 #2 #3"
+            "2017-09":"a #1"
         ],
         desktop-webmail: [
             "2017-09":"y"
@@ -29,31 +29,29 @@ stats: [
     ],
     gmail: [
         desktop-webmail: [
-            "2015-12":"y",
+            "2017-09":"y",
             "2019-04":"y"
         ],
         ios: [
             "2019-04":"y"
         ]
     ],
-    outlook: [
+    ibm-notes: [
         windows: [
-            "2003":"y",
-            "2007":"a",
-            "2010":"a",
-            "2013":"a",
-            "2016":"a",
-            "2019":"a"
-        ],
-        macos: [
-            "2013":"y",
-            "2016":"y",
-            "2019":"y"
+            "9":"n"
         ]
     ],
-    yahoo: [
-        webmail: [
-            "2003":"n",
+    microsoft: [
+        windows-10-mail: [
+            "n/a":"n"
+        ],
+        windows-live-mail: [
+            "n/a":"a #3"
+        ]
+    ],
+    outlook: [
+        windows: [
+            "2003":"a #2",
             "2007":"n",
             "2010":"n",
             "2013":"n",
@@ -63,14 +61,44 @@ stats: [
         macos: [
             "2013":"y",
             "2016":"y",
-            "2019":"a"
+            "2019":"y"
+        ],
+        outlook-express: [
+            "n/a":"a #3"
+        ],
+        outlook-com: [
+            "2017-09":"y"
+        ],
+        ios: [
+            "2017-09":"y"
+        ],
+        android: [
+            "2017-09":"a #1"
+        ]
+    ],
+    thunderbird: [
+        windows: [
+            "60.0":"y"
+        ]
+    ],
+    yahoo: [
+        desktop-webmail: [
+            "2017-09":"a #4"
+        ],
+        ios: [
+            "2017-09":"a #2"
+        ],
+        android: [
+            "2017-09":"a #5"
         ]
     ]
 ]
 notes: "Initial data by [Campaign Monitor](https://www.campaignmonitor.com/css/color-background/background/)."
 notes_by_num: [
     "1": "Partial. Fixed attachment is not supported.",
-    "2": "Lorem ipsum.",
-    "3": "Partial. Fixed attachment is not supported."
+    "2": "Partial. Slash syntax values are not supported.",
+    "3": "Partial. Values containing background images are not supported.",
+    "4": "Buggy. For slash syntax values, it removes the slash character, making the value invalid.",
+    "5": "Partial. Seems to only support background colors."
 ]
 ---
