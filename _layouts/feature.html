@@ -124,7 +124,10 @@ layout: default
 		{% endfor %}
 		</ul>
 		<p>
-			Generated on {{ site.time | date_to_string: "ordinal", "US" }}.
+			{{ page.tags | array_to_sentence_string }}.
+		</p>
+		<p>
+			Generated on {{ site.time }}.
 		</p>
 	</div>
 </section>
