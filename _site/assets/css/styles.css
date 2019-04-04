@@ -36,13 +36,13 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .data-summary-panel { position: relative; z-index: 1; display: flex; width: 100%; list-style: none; }
 
-.data-summary-family { padding: 1rem 2rem; text-align: center; flex-grow: 1; flex-shrink: 1; }
+.data-summary-family { display: flex; flex-direction: column; padding: 1rem 2rem; text-align: center; flex-grow: 1; flex-shrink: 1; }
 
 .data-summary-family:not(:first-child) { border-left: 1px solid #3c3c3d; }
 
 .data-summary-family.selected { position: relative; outline: 1px solid #fff; }
 
-.data-summary-family-title { margin-bottom: 0.75rem; font-size: 1.75rem; }
+.data-summary-family-title { margin-bottom: 0.75rem; font-size: 1.75rem; flex-grow: 1; }
 
 .data-summary-cell { display: inline-block; padding: 1rem; width: 100%; font-weight: bold; font-size: 1.125rem; border: 1px solid #3c3c3d; }
 

@@ -26,6 +26,8 @@
 }
 
 .data-summary-family {
+	display: flex;
+	flex-direction: column;
 	padding: 1rem 2rem;
 	text-align: center;
 	flex-grow: 1;
@@ -44,6 +46,7 @@
 	.data-summary-family-title {
 		margin-bottom: 0.75rem;
 		font-size: 1.75rem;
+		flex-grow: 1;
 	}
 
 .data-summary-cell {
