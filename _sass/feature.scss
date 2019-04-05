@@ -27,8 +27,9 @@
 
 .data-summary-family {
 	display: flex;
+	width: 25%;
 	flex-direction: column;
-	padding: 1rem 2rem;
+	padding: 1rem 2rem 2rem;
 	text-align: center;
 	flex-grow: 1;
 	flex-shrink: 1;
@@ -50,11 +51,15 @@
 	}
 
 .data-summary-cell {
-	display: inline-block;
-	padding: 1rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 4rem;
+	padding: 0.25rem;
 	width: 100%;
 	font-weight: bold;
 	font-size: 1.125rem;
+	line-height: 1;
 	border: 1px solid #3c3c3d;
 }
 
@@ -72,10 +77,11 @@
 
 .data-details {
 	position: relative;
+	margin: 0 -2rem;
 	padding: 1rem 2rem;
 	overflow-x: auto;
 	overflow-y: hidden;
-	border-top: 1px solid #3c3c3d;
+	background: #2a2a2e;
 }
 
 /*
@@ -92,6 +98,7 @@
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	padding-right: 2rem;
 }
 
 .data-family-name {

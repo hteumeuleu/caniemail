@@ -111,58 +111,58 @@ layout: default
 			{% endfor %} -->
 			</ul>
 		</div>
-		<div class="data-details">
-			<div class="data-family-list">
-				{% for family in page.stats %}
-					{% assign family-key = family | first %}
-					{% assign family-values = family | last %}
-				<div class="data-family">
-					<h3 class="data-family-name">
-						{{ site.data.nicenames.family[family-key] | default: family-key }}
-					</h3>
-					<div class="data-client-list">
-						{% for platform in family-values %}
-							{% assign platform-obj = platform | first %}
-							{% assign platform-key = platform-obj | first %}
-							{% assign platform-values = platform-obj | last %}
-							<div class="data-client">
-								<h4 class="data-platform-name">
-									{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
-								</h4>
-								<div class="data-versions-list">
-								{% for version in platform-values %}
-									{% assign version-obj = version | first %}
-									{% assign version-key = version-obj | first %}
-									{% assign version-values = version-obj | last | split: ' ' | first %}
-									{% assign version-notes = version-obj | last | split: ' ' | shift %}
-									{% case version-values %}
-										{% when 'y' %}
-											{% assign stat_class_name = 'supported' %}
-										{% when 'n' %}
-											{% assign stat_class_name = 'unsupported' %}
-										{% when 'a' %}
-											{% assign stat_class_name = 'mitigated' %}
-										{% else %}
-											{% assign stat_class_name = '' %}
-									{% endcase %}
-									<div class="data-version {{ stat_class_name }}">
-										{{ version-key }}
-										{% if version-notes.size > 0  %}
-											<div class="data-version-notes">
-											{% for note-key in version-notes %}
-												<a href="#{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">{{ note-key }}</a>
-											{% endfor %}
-											</div>
-										{% endif %}
-									</div>
-								{% endfor %}
+	</div>
+	<div class="data-details">
+		<div class="data-family-list">
+			{% for family in page.stats %}
+				{% assign family-key = family | first %}
+				{% assign family-values = family | last %}
+			<div class="data-family">
+				<h3 class="data-family-name">
+					{{ site.data.nicenames.family[family-key] | default: family-key }}
+				</h3>
+				<div class="data-client-list">
+					{% for platform in family-values %}
+						{% assign platform-obj = platform | first %}
+						{% assign platform-key = platform-obj | first %}
+						{% assign platform-values = platform-obj | last %}
+						<div class="data-client">
+							<h4 class="data-platform-name">
+								{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
+							</h4>
+							<div class="data-versions-list">
+							{% for version in platform-values %}
+								{% assign version-obj = version | first %}
+								{% assign version-key = version-obj | first %}
+								{% assign version-values = version-obj | last | split: ' ' | first %}
+								{% assign version-notes = version-obj | last | split: ' ' | shift %}
+								{% case version-values %}
+									{% when 'y' %}
+										{% assign stat_class_name = 'supported' %}
+									{% when 'n' %}
+										{% assign stat_class_name = 'unsupported' %}
+									{% when 'a' %}
+										{% assign stat_class_name = 'mitigated' %}
+									{% else %}
+										{% assign stat_class_name = '' %}
+								{% endcase %}
+								<div class="data-version {{ stat_class_name }}">
+									{{ version-key }}
+									{% if version-notes.size > 0  %}
+										<div class="data-version-notes">
+										{% for note-key in version-notes %}
+											<a href="#{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">{{ note-key }}</a>
+										{% endfor %}
+										</div>
+									{% endif %}
 								</div>
+							{% endfor %}
 							</div>
-						{% endfor %}
-					</div>
+						</div>
+					{% endfor %}
 				</div>
-				{% endfor %}
 			</div>
+			{% endfor %}
 		</div>
 	</div>
 	<div class="data-notes">

@@ -36,7 +36,7 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .data-summary-panel { position: relative; z-index: 1; display: flex; width: 100%; list-style: none; }
 
-.data-summary-family { display: flex; flex-direction: column; padding: 1rem 2rem; text-align: center; flex-grow: 1; flex-shrink: 1; }
+.data-summary-family { display: flex; width: 25%; flex-direction: column; padding: 1rem 2rem 2rem; text-align: center; flex-grow: 1; flex-shrink: 1; }
 
 .data-summary-family:not(:first-child) { border-left: 1px solid #3c3c3d; }
 
@@ -44,7 +44,7 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .data-summary-family-title { margin-bottom: 0.75rem; font-size: 1.75rem; flex-grow: 1; }
 
-.data-summary-cell { display: inline-block; padding: 1rem; width: 100%; font-weight: bold; font-size: 1.125rem; border: 1px solid #3c3c3d; }
+.data-summary-cell { display: inline-flex; align-items: center; justify-content: center; min-height: 4rem; padding: 0.25rem; width: 100%; font-weight: bold; font-size: 1.125rem; line-height: 1; border: 1px solid #3c3c3d; }
 
 .supported { background-color: #39b54a !important; }
 
@@ -52,12 +52,12 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .mitigated { background-color: #f7a03c !important; }
 
-.data-details { position: relative; padding: 1rem 2rem; overflow-x: auto; overflow-y: hidden; border-top: 1px solid #3c3c3d; }
+.data-details { position: relative; margin: 0 -2rem; padding: 1rem 2rem; overflow-x: auto; overflow-y: hidden; background: #2a2a2e; }
 
 /* Data */
 .data-family-list { display: flex; flex-direction: row; }
 
-.data-family { display: flex; flex-direction: column; flex-grow: 1; }
+.data-family { display: flex; flex-direction: column; flex-grow: 1; padding-right: 2rem; }
 
 .data-family-name { margin: 0 0.25rem; font-size: 1.25rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
 
