@@ -2,11 +2,12 @@
 layout: default
 ---
 {% assign page-most-popular-families = "" | split: '' %}
-{% for default in site.data.settings.most-popular-families %}
-	{% if page.stats[default].size > 0 and page-most-popular-families.size < 3  %}
-		{% assign page-most-popular-families = page-most-popular-families | push: default %}
-	{% endif %}
+{% assign page-stats-keys = "" | split: '' %}
+{% for default in page.stats %}
+	{% assign family-key = default | first %}
+	{% assign page-stats-keys = page-stats-keys | push: family-key %}
 {% endfor %}
+{% assign page-most-popular-families = site.data.settings.most-popular-families | concat: page-stats-keys | uniq %}
 <section class="feature">
 	<header class="feature-header">
 		<h1 class="feature-title">{{ page.title }}</h1>
@@ -15,7 +16,7 @@ layout: default
 	<div class="data">
 		<div class="data-summary">
 			<ul class="data-summary-panel">
-			{% for default in page-most-popular-families %}
+			{% for default in page-most-popular-families | limit:3 %}
 				{% if page.stats[default].size > 0  %}
 					{% assign family-key = default %}
 					{% assign family-values = page.stats[default] %}
@@ -114,9 +115,9 @@ layout: default
 	</div>
 	<div class="data-details">
 		<div class="data-family-list">
-			{% for family in page.stats %}
-				{% assign family-key = family | first %}
-				{% assign family-values = family | last %}
+			{% for family in page-most-popular-families %}
+				{% assign family-key = family %}
+				{% assign family-values = page.stats[family] %}
 			<div class="data-family">
 				<h3 class="data-family-name">
 					{{ site.data.nicenames.family[family-key] | default: family-key }}
