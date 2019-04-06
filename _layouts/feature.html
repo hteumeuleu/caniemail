@@ -1,115 +1,131 @@
 ---
 layout: default
 ---
+{% comment %}
+	Most popular families.
+	Building an array of the current page/feature familiers ordered by popularity.
+{% endcomment %}
 {% assign page-most-popular-families = "" | split: '' %}
+{% comment %}
+	1. We go through the `most-popular-families` variable defined in `data.settings`.
+	If the current page/feature has data for this feature, we had it to the array.
+{% endcomment %}
+{% for default in site.data.settings.most-popular-families %}
+	{% assign family-key = default %}
+	{% if page.stats[default].size > 0  %}
+		{% assign page-most-popular-families = page-most-popular-families | push: family-key %}
+	{% endif %}
+{% endfor %}
+{% comment %}
+	2. We go through the page/feature `stats` and add all the keys.
+{% endcomment %}
 {% assign page-stats-keys = "" | split: '' %}
 {% for default in page.stats %}
 	{% assign family-key = default | first %}
 	{% assign page-stats-keys = page-stats-keys | push: family-key %}
 {% endfor %}
-{% assign page-most-popular-families = site.data.settings.most-popular-families | concat: page-stats-keys | uniq %}
+{% comment %}
+	3. Previous step might introduce duplicate. So we `concat` the two previous arrays built and use the `uniq` filter to remove duplicates.
+{% endcomment %}
+{% assign page-most-popular-families = page-most-popular-families | concat: page-stats-keys | uniq %}
 <section class="feature">
 	<header class="feature-header">
 		<h1 class="feature-title">{{ page.title }}</h1>
 		{{ page.description | markdownify }}
 	</header>
 	<div class="data">
+		{% comment %}
+			Data summary.
+			Showing at most three email client families with a summary/average cell for the whole family.
+		{% endcomment %}
 		<div class="data-summary">
 			<ul class="data-summary-panel">
-			{% for default in page-most-popular-families | limit:3 %}
-				{% if page.stats[default].size > 0  %}
-					{% assign family-key = default %}
-					{% assign family-values = page.stats[default] %}
-					{% assign family-support = '' %}
-					<li class="data-summary-family">
-						<h2 class="data-summary-family-title">{{ site.data.nicenames.family[family-key] | default: family-key }}</h2>
-						{% for platform in family-values %}
-							{% assign platform-obj = platform | first %}
-							{% assign platform-key = platform-obj | first %}
-							{% assign platform-values = platform-obj | last %}
-							{% for version in platform-values %}
-								{% assign version-obj = version | first %}
-								{% assign version-key = version-obj | first %}
-								{% assign version-values = version-obj | last | split: ' ' | first %}
-								{% comment %}
-									Assign highest support value possible.
-									If it's a mix of anything, result should be 'a'.
-									'y' and 'n' are only possible when all versions have the same support.
-								{% endcomment %}
-								{% if family-support == '' %}
-									{% assign family-support = version-values %}
-								{% elsif family-support == 'y' and version-values != 'y' %}
-									{% assign family-support = 'a' %}
-									{% break %}
-								{% elsif family-support == 'n' and version-values != 'n' %}
-									{% assign family-support = 'a' %}
-									{% break %}
-								{% endif %}
-							{% endfor %}
-						{% endfor %}
-						{% case family-support %}
-							{% when 'y' %}
-								{% assign family-support-slug = 'supported' %}
-							{% when 'n' %}
-								{% assign family-support-slug = 'unsupported' %}
-							{% when 'a' %}
-								{% assign family-support-slug = 'mitigated' %}
-							{% else %}
-								{% assign family-support-slug = '' %}
-						{% endcase %}
-						<div class="data-summary-cell {{ family-support-slug }}">{{ site.data.nicenames.support[family-support-slug] | default: family-support-slug }}</div>
-					</li>
-				{% endif %}
-			{% endfor %}
-			<li class="data-summary-family">
-				<h2 class="data-summary-family-title">Others</h2>
-				<div class="data-summary-cell mitigated">{{ site.data.nicenames.support['mitigated'] | default: family-support-slug }}</div>
-			</li>
-			<!-- {% for family in page.stats %}
-				{% assign family-key = family | first %}
-				{% assign family-values = family | last %}
-				{% assign family-support = '' %}
-				{% if page-most-popular-families[family-key].size == nil %}
-					<li class="data-summary-family">
-					<h2 class="data-summary-family-title">Others</h2>
+			{% comment %}
+				1. Going through the three first email client families.
+			{% endcomment %}
+			{% for default in page-most-popular-families limit:3 %}
+				{% assign family-key = default %}
+				{% assign family-values = page.stats[default] %}
+				{% assign family-average-support = '' %}
+				<li class="data-summary-family">
+					<h2 class="data-summary-family-title">{{ site.data.nicenames.family[family-key] | default: family-key }}</h2>
 					{% for platform in family-values %}
-						{% assign platform-obj = platform | first %}
-						{% assign platform-key = platform-obj | first %}
-						{% assign platform-values = platform-obj | last %}
+						{% assign platform-key = platform | first %}
+						{% assign platform-values = platform | last %}
 						{% for version in platform-values %}
-							{% assign version-obj = version | first %}
-							{% assign version-key = version-obj | first %}
-							{% assign version-values = version-obj | last | split: ' ' | first %}
+							{% assign version-key = version | first %}
+							{% assign version-values = version | last | split: ' ' | first %}
 							{% comment %}
-								Assign highest support value possible.
+								2. Assign highest support value possible.
 								If it's a mix of anything, result should be 'a'.
 								'y' and 'n' are only possible when all versions have the same support.
 							{% endcomment %}
-							{% if family-support == '' %}
-								{% assign family-support = version-values %}
-							{% elsif family-support == 'y' and version-values != 'y' %}
-								{% assign family-support = 'a' %}
+							{% if family-average-support == '' %}
+								{% assign family-average-support = version-values %}
+							{% elsif family-average-support == 'y' and version-values != 'y' %}
+								{% assign family-average-support = 'a' %}
 								{% break %}
-							{% elsif family-support == 'n' and version-values != 'n' %}
-								{% assign family-support = 'a' %}
+							{% elsif family-average-support == 'n' and version-values != 'n' %}
+								{% assign family-average-support = 'a' %}
 								{% break %}
 							{% endif %}
 						{% endfor %}
 					{% endfor %}
-					{% case family-support %}
+					{% case family-average-support %}
 						{% when 'y' %}
-							{% assign family-support-slug = 'supported' %}
+							{% assign family-average-support-slug = 'supported' %}
 						{% when 'n' %}
-							{% assign family-support-slug = 'unsupported' %}
+							{% assign family-average-support-slug = 'unsupported' %}
 						{% when 'a' %}
-							{% assign family-support-slug = 'mitigated' %}
+							{% assign family-average-support-slug = 'mitigated' %}
 						{% else %}
-							{% assign family-support-slug = '' %}
+							{% assign family-average-support-slug = '' %}
 					{% endcase %}
-					<div class="data-summary-cell {{ family-support-slug }}">{{ site.data.nicenames.support[family-support-slug] | default: family-support-slug }}</div>
-					</li>
-				{% endif %}
-			{% endfor %} -->
+					<div class="data-summary-cell {{ family-average-support-slug }}">{{ site.data.nicenames.support[family-average-support-slug] | default: family-average-support-slug }}</div>
+				</li>
+			{% endfor %}
+			{% comment %}
+				3. If there are more than three families for the current page/feature,
+				we show a summary for the rest under an "Others" category.
+			{% endcomment %}
+			{% if page-most-popular-families.size > 3 %}
+				{% assign family-average-support = '' %}
+				{% for default in page-most-popular-families offset:3 %}
+					{% assign family-key = default %}
+					{% assign family-values = page.stats[default] %}
+					{% for platform in family-values %}
+						{% assign platform-key = platform | first %}
+						{% assign platform-values = platform | last %}
+						{% for version in platform-values %}
+							{% assign version-key = version | first %}
+							{% assign version-values = version | last | split: ' ' | first %}
+							{% if family-average-support == '' %}
+								{% assign family-average-support = version-values %}
+							{% elsif family-average-support == 'y' and version-values != 'y' %}
+								{% assign family-average-support = 'a' %}
+								{% break %}
+							{% elsif family-average-support == 'n' and version-values != 'n' %}
+								{% assign family-average-support = 'a' %}
+								{% break %}
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+				{% case family-average-support %}
+					{% when 'y' %}
+						{% assign family-average-support-slug = 'supported' %}
+					{% when 'n' %}
+						{% assign family-average-support-slug = 'unsupported' %}
+					{% when 'a' %}
+						{% assign family-average-support-slug = 'mitigated' %}
+					{% else %}
+						{% assign family-average-support-slug = '' %}
+				{% endcase %}
+				<li class="data-summary-family">
+					<h2 class="data-summary-family-title">Others</h2>
+					<div class="data-summary-cell {{ family-average-support-slug }}">{{ site.data.nicenames.support[family-average-support-slug] | default: family-average-support-slug }}</div>
+				</li>
+			{% endif %}
 			</ul>
 		</div>
 	</div>
@@ -124,19 +140,17 @@ layout: default
 				</h3>
 				<div class="data-client-list">
 					{% for platform in family-values %}
-						{% assign platform-obj = platform | first %}
-						{% assign platform-key = platform-obj | first %}
-						{% assign platform-values = platform-obj | last %}
+						{% assign platform-key = platform | first %}
+						{% assign platform-values = platform | last %}
 						<div class="data-client">
 							<h4 class="data-platform-name">
 								{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
 							</h4>
 							<div class="data-versions-list">
 							{% for version in platform-values %}
-								{% assign version-obj = version | first %}
-								{% assign version-key = version-obj | first %}
-								{% assign version-values = version-obj | last | split: ' ' | first %}
-								{% assign version-notes = version-obj | last | split: ' ' | shift %}
+								{% assign version-key = version | first %}
+								{% assign version-values = version | last | split: ' ' | first %}
+								{% assign version-notes = version | last | split: ' ' | shift %}
 								{% case version-values %}
 									{% when 'y' %}
 										{% assign stat_class_name = 'supported' %}

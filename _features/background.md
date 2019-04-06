@@ -4,94 +4,94 @@ description: "This is the description of the background property."
 spec: "https://www.w3.org/TR/css-backgrounds-3/"
 tags: ["CSS", "foo", "bar"]
 stats: {
-    aol: [
-        desktop-app: [
+    aol: {
+        desktop-app: {
             "2017-09":"a #1"
-        ],
-        desktop-webmail: [
+        },
+        desktop-webmail: {
             "2017-09":"y"
-        ],
-        alto-ios: [
+        },
+        alto-ios: {
             "2017-09":"y"
-        ],
-        alto-android: [
+        },
+        alto-android: {
             "2017-09":"a #1"
-        ]
-    ],
-    apple-mail: [
-        macos: [
+        }
+    },
+    apple-mail: {
+        macos: {
             "10":"y"
-        ],
-        ios: [
+        },
+        ios: {
             "10":"y",
             "11":"y"
-        ]
-    ],
-    gmail: [
-        desktop-webmail: [
+        }
+    },
+    gmail: {
+        desktop-webmail: {
             "2017-09":"y",
             "2019-04":"y"
-        ],
-        ios: [
+        },
+        ios: {
             "2019-04":"y"
-        ]
-    ],
-    ibm-notes: [
-        windows: [
+        }
+    },
+    ibm-notes: {
+        windows: {
             "9":"n"
-        ]
-    ],
-    microsoft: [
-        windows-10-mail: [
+        }
+    },
+    microsoft: {
+        windows-10-mail: {
             "2017-09":"n"
-        ],
-        windows-live-mail: [
+        },
+        windows-live-mail: {
             "2017-09":"a #3"
-        ]
-    ],
-    outlook: [
-        windows: [
+        }
+    },
+    outlook: {
+        windows: {
             "2003":"a #2",
             "2007":"n",
             "2010":"n",
             "2013":"n",
             "2016":"n",
             "2019":"n"
-        ],
-        macos: [
+        },
+        macos: {
             "2013":"y",
             "2016":"y",
             "2019":"y"
-        ],
-        outlook-express: [
+        },
+        outlook-express: {
             "2017-09":"a #3"
-        ],
-        outlook-com: [
+        },
+        outlook-com: {
             "2017-09":"y"
-        ],
-        ios: [
+        },
+        ios: {
             "2017-09":"y"
-        ],
-        android: [
+        },
+        android: {
             "2017-09":"a #1"
-        ]
-    ],
-    thunderbird: [
-        windows: [
+        }
+    },
+    thunderbird: {
+        windows: {
             "60.0":"y"
-        ]
-    ],
-    yahoo: [
-        desktop-webmail: [
+        }
+    },
+    yahoo: {
+        desktop-webmail: {
             "2017-09":"a #4"
-        ],
-        ios: [
+        },
+        ios: {
             "2017-09":"a #2"
-        ],
-        android: [
+        },
+        android: {
             "2017-09":"a #5"
-        ]
-    ]
+        }
+    }
 }
 notes: "Initial data by [Campaign Monitor](https://www.campaignmonitor.com/css/color-background/background/)."
 notes_by_num: [
