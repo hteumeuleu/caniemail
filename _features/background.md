@@ -43,10 +43,10 @@ stats: {
     ],
     microsoft: [
         windows-10-mail: [
-            "n/a":"n"
+            "2017-09":"n"
         ],
         windows-live-mail: [
-            "n/a":"a #3"
+            "2017-09":"a #3"
         ]
     ],
     outlook: [
@@ -64,7 +64,7 @@ stats: {
             "2019":"y"
         ],
         outlook-express: [
-            "n/a":"a #3"
+            "2017-09":"a #3"
         ],
         outlook-com: [
             "2017-09":"y"
