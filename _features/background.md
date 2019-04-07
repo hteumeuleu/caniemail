@@ -1,8 +1,7 @@
 ---
 title: "Background shorthand property"
 description: "This is the description of the background property."
-spec: "https://www.w3.org/TR/css-backgrounds-3/"
-tags: ["CSS", "foo", "bar"]
+category: css
 stats: {
     aol: {
         desktop-app: {

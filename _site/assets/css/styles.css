@@ -59,7 +59,7 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .data-family { display: flex; flex-direction: column; flex-grow: 1; padding-right: 2rem; }
 
-.data-family-name { margin: 0 0.25rem; font-size: 1.25rem; text-align: center; white-space: nowrap; border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
+.data-family-name { margin: 0 0.25rem; color: #fff; font-size: 1.25rem; text-align: center; white-space: nowrap; border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
 
 .data-platform-name { display: flex; align-items: flex-end; justify-content: center; min-height: 4rem; padding: 0.5rem; font-size: 1rem; font-weight: normal; text-align: center; }
 
@@ -88,3 +88,6 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 .data-note p { display: inline; }
 
 .data-note-key { display: flex; justify-content: center; align-items: center; position: absolute; left: -2.5rem; top: 0; font-size: 0.75rem; width: 1.5rem; height: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.2); }
+
+.github-edit-link a { display: inline-block; padding: 0.25rem 1rem; color: inherit; text-decoration: none; border-radius: 3px; border: 1px solid rgba(255, 255, 255, 0.2); }
+.github-edit-link a:hover { background: rgba(255, 255, 255, 0.2); }

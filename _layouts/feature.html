@@ -184,24 +184,26 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	<div class="data-notes">
-		<h2 class="caniemail-list-title">Notes</h2>
-		{{ page.notes | markdownify }}
-		<ul class="data-notes-list">
-		{% for note in page.notes_by_num %}
-			{% assign note-obj = note | first %}
-			{% assign note-key = note-obj | first %}
-			{% assign note-value = note-obj | last %}
-			<li class="data-note" id="{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">
-				<span class="data-note-key">{{ note-key }}</span> {{ note-value | markdownify }}
-			</li>
-		{% endfor %}
-		</ul>
-		<p>
-			{{ page.tags | array_to_sentence_string }}.
-		</p>
-		<p>
-			Generated on {{ site.time }}. {% github_edit_link "Improve this page" %}.
-		</p>
-	</div>
+	<footer class="feature-footer">
+		<div class="data-notes">
+			<h2 class="caniemail-list-title">Notes</h2>
+			{{ page.notes | markdownify }}
+			<ul class="data-notes-list">
+			{% for note in page.notes_by_num %}
+				{% assign note-obj = note | first %}
+				{% assign note-key = note-obj | first %}
+				{% assign note-value = note-obj | last %}
+				<li class="data-note" id="{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">
+					<span class="data-note-key">{{ note-key }}</span> {{ note-value | markdownify }}
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+		<div class="data-contribute">
+			<h2 class="caniemail-list-title">Know something we don't?</h2>
+			<p class="github-edit-link">
+				{% github_edit_link "Improve this page on GitHub" %}
+			</p>
+		</div>
+	</footer>
 </section>

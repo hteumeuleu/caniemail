@@ -103,6 +103,7 @@
 
 .data-family-name {
 	margin: 0 0.25rem;
+	color: #fff;
 	font-size: 1.25rem;
 	text-align: center;
 	white-space: nowrap;
@@ -232,4 +233,17 @@
 	width: 1.5rem;
 	height: 1.5rem;
 	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.github-edit-link a {
+	display: inline-block;
+	padding: 0.25rem 1rem;
+	color: inherit;
+	text-decoration: none;
+	border-radius: 3px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.2);
+	}
 }
