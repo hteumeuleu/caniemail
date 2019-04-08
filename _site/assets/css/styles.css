@@ -26,25 +26,29 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .caniemail-footer-title { margin-bottom: 0.75rem; color: #fff; font-size: 1em; font-weight: 300; }
 
-.feature { padding: 1rem 2rem; border: 1px solid #3c3c3d; }
+.feature { padding: 1rem 2rem 0; border: 1px solid #3c3c3d; }
 
 .feature-title { font-size: 2rem; }
 
-.data { margin: 2rem -3rem 0; background: #2a2a2e; border: 1px solid #3c3c3d; }
+.data { margin: 2rem -3rem 0; background: #2a2a2e; border: 1px solid #3c3c3d; border-bottom: none; }
 
 .data-summary { color: #fff; }
 
-.data-summary-panel { position: relative; z-index: 1; display: flex; width: 100%; list-style: none; }
+.data-summary-panel { position: relative; z-index: 1; display: flex; flex-wrap: wrap; width: 100%; list-style: none; }
 
-.data-summary-family { display: flex; width: 25%; flex-direction: column; padding: 1rem 2rem 2rem; text-align: center; flex-grow: 1; flex-shrink: 1; }
+.data-summary-family { display: flex; width: 25%; flex-direction: column; padding: 1rem 2rem 2rem; text-align: center; flex-grow: 1; flex-shrink: 1; border-bottom: 1px solid #3c3c3d; }
+@media only screen and (max-width: 60rem) { .data-summary-family { width: 50%; } }
+@media only screen and (max-width: 24rem) { .data-summary-family { padding: 1rem; } }
 
 .data-summary-family:not(:first-child) { border-left: 1px solid #3c3c3d; }
 
 .data-summary-family.selected { position: relative; outline: 1px solid #fff; }
 
 .data-summary-family-title { margin-bottom: 0.75rem; font-size: 1.75rem; flex-grow: 1; }
+@media only screen and (max-width: 24rem) { .data-summary-family-title { font-size: 1.25rem; } }
 
 .data-summary-cell { display: inline-flex; align-items: center; justify-content: center; min-height: 4rem; padding: 0.25rem; width: 100%; font-weight: bold; font-size: 1.125rem; line-height: 1; border: 1px solid #3c3c3d; }
+@media only screen and (max-width: 24rem) { .data-summary-cell { font-size: 1rem; min-height: 3rem; } }
 
 .supported { background-color: #39b54a !important; }
 
@@ -76,11 +80,17 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 .data-version-notes { position: absolute; left: 0; top: 0; display: flex; flex-direction: row; }
 .data-version-notes > a { display: flex; justify-content: center; align-items: center; margin-right: 0.25rem; width: 1rem; height: 1rem; color: #333; font-size: 0.5rem; background: rgba(255, 255, 255, 0.5); border: 1px solid rgba(255, 255, 255, 0.8); }
 
-/* Notes */
-.data-notes { padding: 2rem 0 1rem; }
-.data-notes a { color: inherit; }
-.data-notes p:not(:last-child) { margin-bottom: 1rem; }
+/* Footer */
+.feature-footer { margin: 0 -2rem; border-top: 1px solid #3c3c3d; }
+.feature-footer a { color: inherit; }
+.feature-footer p:not(:last-child) { margin-bottom: 1rem; }
+.feature-footer > * { padding: 2rem; }
+.feature-footer > *:first-child { border-bottom: 1px solid #3c3c3d; }
+@media only screen and (min-width: 64rem) { .feature-footer { display: flex; }
+  .feature-footer > * { width: 50%; }
+  .feature-footer > *:first-child { border-right: 1px solid #3c3c3d; border-bottom: none; } }
 
+/* Notes */
 .data-notes-list { position: relative; list-style: none; margin-left: 2.5rem; margin-bottom: 1rem; }
 
 .data-note { position: relative; }
@@ -88,6 +98,8 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 .data-note p { display: inline; }
 
 .data-note-key { display: flex; justify-content: center; align-items: center; position: absolute; left: -2.5rem; top: 0; font-size: 0.75rem; width: 1.5rem; height: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.2); }
+
+.feature-footer p.github-edit-link { margin-bottom: 2rem; }
 
 .github-edit-link a { display: inline-block; padding: 0.25rem 1rem; color: inherit; text-decoration: none; border-radius: 3px; border: 1px solid rgba(255, 255, 255, 0.2); }
 .github-edit-link a:hover { background: rgba(255, 255, 255, 0.2); }

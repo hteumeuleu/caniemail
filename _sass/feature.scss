@@ -1,5 +1,5 @@
 .feature {
-	padding: 1rem 2rem;
+	padding: 1rem 2rem 0;
 	border: 1px solid #3c3c3d;
 }
 
@@ -11,6 +11,7 @@
 	margin: 2rem -3rem 0;
 	background: #2a2a2e;
 	border: 1px solid #3c3c3d;
+	border-bottom: none;
 }
 
 .data-summary {
@@ -21,6 +22,7 @@
 	position: relative;
 	z-index: 1;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	list-style: none;
 }
@@ -33,6 +35,15 @@
 	text-align: center;
 	flex-grow: 1;
 	flex-shrink: 1;
+	border-bottom: 1px solid #3c3c3d;
+
+	@media only screen and (max-width: 60rem) {
+		width: 50%;
+	}
+
+	@media only screen and (max-width: 24rem) {
+		padding: 1rem;
+	}
 }
 
 	.data-summary-family:not(:first-child) {
@@ -48,6 +59,10 @@
 		margin-bottom: 0.75rem;
 		font-size: 1.75rem;
 		flex-grow: 1;
+
+		@media only screen and (max-width: 24rem) {
+			font-size: 1.25rem;
+		}
 	}
 
 .data-summary-cell {
@@ -61,6 +76,11 @@
 	font-size: 1.125rem;
 	line-height: 1;
 	border: 1px solid #3c3c3d;
+
+	@media only screen and (max-width: 24rem) {
+		font-size: 1rem;
+		min-height: 3rem;
+	}
 }
 
 	.supported {
@@ -189,10 +209,11 @@
 }
 
 /*
- * Notes
+ * Footer
  */
-.data-notes {
-	padding: 2rem 0 1rem;
+.feature-footer {
+	margin: 0 -2rem;
+	border-top: 1px solid #3c3c3d;
 
 	a {
 		color: inherit;
@@ -201,8 +222,32 @@
 	p:not(:last-child) {
 		margin-bottom: 1rem;
 	}
+
+	& > * {
+		padding: 2rem;
+
+		&:first-child {
+			border-bottom: 1px solid #3c3c3d;
+		}
+	}
+
+	@media only screen and (min-width: 64rem) {
+		display: flex;
+
+		& > * {
+			width: 50%;
+
+			&:first-child {
+				border-right: 1px solid #3c3c3d;
+				border-bottom: none;
+			}
+		}
+	}
 }
 
+/*
+ * Notes
+ */
 .data-notes-list {
 	position: relative;
 	list-style: none;
@@ -233,6 +278,10 @@
 	width: 1.5rem;
 	height: 1.5rem;
 	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-footer p.github-edit-link {
+	margin-bottom: 2rem;
 }
 
 .github-edit-link a {
