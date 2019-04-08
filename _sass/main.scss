@@ -51,6 +51,15 @@ body {
 	font-weight: 300;
 	text-align: center;
 	background: #0a84ff;
+
+	@media only screen and (max-width: 38rem) {
+		label {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
 }
 
 .caniemail-search-input {
@@ -64,8 +73,15 @@ body {
 	-webkit-appearance: none;
 	appearance: none;
 	border-bottom: 1px solid #fff;
+	border-radius: 0;
+	order: 1;
 
+	&:active,
 	&:focus {
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	@media only screen and (max-width: 48rem) {
 		background: rgba(255, 255, 255, 0.2);
 	}
 }

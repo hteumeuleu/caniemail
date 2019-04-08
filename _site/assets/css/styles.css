@@ -9,9 +9,11 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 .caniemail-nav a.current, .caniemail-nav a:hover { background-color: #204e8a; }
 
 .caniemail-search { margin-bottom: 1rem; padding: .375em; color: #fff; line-height: 1.5; font-size: 2.5rem; font-weight: 300; text-align: center; background: #0a84ff; }
+@media only screen and (max-width: 38rem) { .caniemail-search label { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; } }
 
-.caniemail-search-input { width: 100%; color: inherit; font: inherit; text-align: center; max-width: 32rem; background: none; border: none; -webkit-appearance: none; appearance: none; border-bottom: 1px solid #fff; }
-.caniemail-search-input:focus { background: rgba(255, 255, 255, 0.2); }
+.caniemail-search-input { width: 100%; color: inherit; font: inherit; text-align: center; max-width: 32rem; background: none; border: none; -webkit-appearance: none; appearance: none; border-bottom: 1px solid #fff; border-radius: 0; order: 1; }
+.caniemail-search-input:active, .caniemail-search-input:focus { background: rgba(255, 255, 255, 0.2); }
+@media only screen and (max-width: 48rem) { .caniemail-search-input { background: rgba(255, 255, 255, 0.2); } }
 
 .caniemail-list-title { display: inline-block; padding: 0.5em 0; margin-bottom: 0.5em; font-size: 1.375rem; font-weight: 300; border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
 
@@ -30,7 +32,7 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .feature-title { font-size: 2rem; }
 
-.data { margin: 2rem -3rem 0; background: #2a2a2e; border: 1px solid #3c3c3d; border-bottom: none; }
+.data { position: relative; z-index: 1; margin: 2rem -3rem 0; background: #2a2a2e; border: 1px solid #3c3c3d; border-bottom: none; box-shadow: 0 2rem 1rem -1rem rgba(0, 0, 0, 0.25); }
 
 .data-summary { color: #fff; }
 
@@ -63,7 +65,7 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .data-family { display: flex; flex-direction: column; flex-grow: 1; padding-right: 2rem; }
 
-.data-family-name { margin: 0 0.25rem; color: #fff; font-size: 1.25rem; text-align: center; white-space: nowrap; border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
+.data-family-name { margin: 0 0.25rem; color: rgba(255, 255, 255, 0.85); font-size: 1.25rem; text-align: center; white-space: nowrap; border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
 
 .data-platform-name { display: flex; align-items: flex-end; justify-content: center; min-height: 4rem; padding: 0.5rem; font-size: 1rem; font-weight: normal; text-align: center; }
 

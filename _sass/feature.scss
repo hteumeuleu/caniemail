@@ -8,10 +8,13 @@
 }
 
 .data {
+	position: relative;
+	z-index: 1;
 	margin: 2rem -3rem 0;
 	background: #2a2a2e;
 	border: 1px solid #3c3c3d;
 	border-bottom: none;
+	box-shadow: 0 2rem 1rem -1rem rgba(0, 0, 0, 0.25);
 }
 
 .data-summary {
@@ -123,7 +126,7 @@
 
 .data-family-name {
 	margin: 0 0.25rem;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.85);
 	font-size: 1.25rem;
 	text-align: center;
 	white-space: nowrap;
