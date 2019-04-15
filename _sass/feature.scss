@@ -268,6 +268,17 @@
 	p {
 		display: inline;
 	}
+
+	&:target::before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: -2.75rem;
+		right: 0;
+		top: -0.25rem;
+		bottom: -0.25rem;
+		background: rgba(255, 255, 255, 0.2);
+	}
 }
 
 .data-note-key {
