@@ -53,21 +53,23 @@ layout: default
 						{% assign platform-key = platform | first %}
 						{% assign platform-values = platform | last %}
 						{% for version in platform-values %}
-							{% assign version-key = version | first %}
-							{% assign version-values = version | last | split: ' ' | first %}
-							{% comment %}
-								2. Assign highest support value possible.
-								If it's a mix of anything, result should be 'a'.
-								'y' and 'n' are only possible when all versions have the same support.
-							{% endcomment %}
-							{% if family-average-support == '' %}
-								{% assign family-average-support = version-values %}
-							{% elsif family-average-support == 'y' and version-values != 'y' %}
-								{% assign family-average-support = 'a' %}
-								{% break %}
-							{% elsif family-average-support == 'n' and version-values != 'n' %}
-								{% assign family-average-support = 'a' %}
-								{% break %}
+							{% if forloop.last == true %}
+								{% assign version-key = version | first %}
+								{% assign version-values = version | last | split: ' ' | first %}
+								{% comment %}
+									2. Assign highest support value possible.
+									If it's a mix of anything, result should be 'a'.
+									'y' and 'n' are only possible when all versions have the same support.
+								{% endcomment %}
+								{% if family-average-support == '' %}
+									{% assign family-average-support = version-values %}
+								{% elsif family-average-support == 'y' and version-values != 'y' %}
+									{% assign family-average-support = 'a' %}
+									{% break %}
+								{% elsif family-average-support == 'n' and version-values != 'n' %}
+									{% assign family-average-support = 'a' %}
+									{% break %}
+								{% endif %}
 							{% endif %}
 						{% endfor %}
 					{% endfor %}
