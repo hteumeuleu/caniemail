@@ -2,6 +2,8 @@
 title: "Background shorthand property"
 description: "This is the description of the background property."
 category: css
+last_test_date: "2019-04-16"
+test_url: "https://gist.github.com/hteumeuleu/10e89de83f362646e2e12365308440f8"
 stats: {
     aol: {
         desktop-app: {

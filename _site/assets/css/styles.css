@@ -58,7 +58,7 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .mitigated { background-color: #f7a03c !important; }
 
-.data-details { position: relative; margin: 0 -2rem; padding: 1rem 2rem; overflow-x: auto; overflow-y: hidden; background: #2a2a2e; }
+.data-details { position: relative; margin: 0 -2rem; padding: 1rem 2rem; overflow-x: auto; overflow-y: hidden; background: #2a2a2e; -webkit-overflow-scrolling: touch; }
 
 /* Data */
 .data-family-list { display: flex; flex-direction: row; }
@@ -88,21 +88,26 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 .feature-footer p:not(:last-child) { margin-bottom: 1rem; }
 .feature-footer > * { padding: 2rem; }
 .feature-footer > *:first-child { border-bottom: 1px solid #3c3c3d; }
-@media only screen and (min-width: 64rem) { .feature-footer { display: flex; }
+@media only screen and (min-width: 64rem) { .feature-footer { display: flex; flex-wrap: wrap; }
   .feature-footer > * { width: 50%; }
-  .feature-footer > *:first-child { border-right: 1px solid #3c3c3d; border-bottom: none; } }
+  .feature-footer > *:nth-child(2) { border-right: 1px solid #3c3c3d; }
+  .feature-footer > .data-notes { width: 100%; } }
 
 /* Notes */
-.data-notes-list { position: relative; list-style: none; margin-left: 2.5rem; margin-bottom: 1rem; }
+.data-notes-list { position: relative; list-style: none; margin-left: -0.25rem; padding-left: 2.5rem; margin-bottom: 1rem; overflow: hidden; }
 
-.data-note { position: relative; }
+.data-note { position: relative; float: left; clear: left; }
 .data-note:not(:last-child) { margin-bottom: 0.5rem; }
 .data-note p { display: inline; }
-.data-note:target::before { content: ''; display: block; position: absolute; left: -2.75rem; right: 0; top: -0.25rem; bottom: -0.25rem; background: rgba(255, 255, 255, 0.2); }
+.data-note:target::before { content: ''; display: block; position: absolute; left: -2.75rem; right: -0.5rem; top: -0.25rem; bottom: -0.25rem; background: rgba(255, 255, 255, 0.2); }
 
-.data-note-key { display: flex; justify-content: center; align-items: center; position: absolute; left: -2.5rem; top: 0; font-size: 0.75rem; width: 1.5rem; height: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.2); }
+.data-note-key { display: flex; justify-content: center; align-items: center; position: absolute; left: -2.25rem; top: 0; font-size: 0.75rem; width: 1.5rem; height: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.2); }
 
 .feature-footer p.github-edit-link { margin-bottom: 2rem; }
 
-.github-edit-link a { display: inline-block; padding: 0.25rem 1rem; color: inherit; text-decoration: none; border-radius: 3px; border: 1px solid rgba(255, 255, 255, 0.2); }
-.github-edit-link a:hover { background: rgba(255, 255, 255, 0.2); }
+.feature-button { display: inline-block; padding: 0.25rem 1rem; color: inherit; text-decoration: none; border-radius: 3px; border: 1px solid rgba(255, 255, 255, 0.2); }
+.feature-button:hover { background: rgba(255, 255, 255, 0.2); }
+.feature-button:not(:only-child):not(:last-child) { margin-right: 0.5rem; }
+.feature-button:not(:only-child) { margin-top: 0.75rem; }
+
+.data-contribute-buttons { margin-top: -0.75rem; }

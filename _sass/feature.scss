@@ -105,6 +105,7 @@
 	overflow-x: auto;
 	overflow-y: hidden;
 	background: #2a2a2e;
+	-webkit-overflow-scrolling: touch;
 }
 
 /*
@@ -236,14 +237,18 @@
 
 	@media only screen and (min-width: 64rem) {
 		display: flex;
+		flex-wrap: wrap;
 
 		& > * {
 			width: 50%;
 
-			&:first-child {
+			&:nth-child(2) {
 				border-right: 1px solid #3c3c3d;
-				border-bottom: none;
 			}
+		}
+
+		& > .data-notes {
+			width: 100%;
 		}
 	}
 }
@@ -254,12 +259,16 @@
 .data-notes-list {
 	position: relative;
 	list-style: none;
-	margin-left: 2.5rem;
+	margin-left: -0.25rem;
+	padding-left: 2.5rem;
 	margin-bottom: 1rem;
+	overflow: hidden;
 }
 
 .data-note {
 	position: relative;
+	float: left;
+	clear: left;
 
 	&:not(:last-child) {
 		margin-bottom: 0.5rem;
@@ -274,7 +283,7 @@
 		display: block;
 		position: absolute;
 		left: -2.75rem;
-		right: 0;
+		right: -0.5rem;
 		top: -0.25rem;
 		bottom: -0.25rem;
 		background: rgba(255, 255, 255, 0.2);
@@ -286,7 +295,7 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	left: -2.5rem;
+	left: -2.25rem;
 	top: 0;
 	font-size: 0.75rem;
 	width: 1.5rem;
@@ -298,7 +307,7 @@
 	margin-bottom: 2rem;
 }
 
-.github-edit-link a {
+.feature-button {
 	display: inline-block;
 	padding: 0.25rem 1rem;
 	color: inherit;
@@ -309,4 +318,16 @@
 	&:hover {
 		background: rgba(255, 255, 255, 0.2);
 	}
+
+	&:not(:only-child):not(:last-child) {
+		margin-right: 0.5rem;
+	}
+
+	&:not(:only-child) {
+		margin-top: 0.75rem;
+	}
+}
+
+.data-contribute-buttons {
+	margin-top: -0.75rem;
 }
