@@ -31,6 +31,7 @@
 }
 
 .data-summary-family {
+	position: relative;
 	display: flex;
 	width: 25%;
 	flex-direction: column;
@@ -62,6 +63,21 @@
 		margin-bottom: 0.75rem;
 		font-size: 1.75rem;
 		flex-grow: 1;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+		}
 
 		@media only screen and (max-width: 24rem) {
 			font-size: 1.25rem;
@@ -101,7 +117,6 @@
 .data-details {
 	position: relative;
 	margin: 0 -2rem;
-	padding: 1rem 2rem;
 	overflow-x: auto;
 	overflow-y: hidden;
 	background: #2a2a2e;
@@ -122,16 +137,29 @@
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	padding-right: 2rem;
+	padding: 2rem 0.25rem;
+	border-right: 1px solid rgba(255, 255, 255, 0.125);
+
+	&:nth-child(2n) {
+		background-color: rgba(255, 255, 255, 0.0125);
+	}
+
+	&:first-child {
+		padding-left: 1rem;
+	}
+
+	&:last-child {
+		padding-right: 1rem;
+	}
 }
 
 .data-family-name {
 	margin: 0 0.25rem;
+	padding: 0 1rem;
 	color: rgba(255, 255, 255, 0.85);
 	font-size: 1.25rem;
 	text-align: center;
 	white-space: nowrap;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 // Plaform
@@ -189,6 +217,14 @@
 	&:not(:first-child) {
 		margin-top: 0.5rem;
 	}
+
+	// display: none;
+
+	// &:nth-last-child(1),
+	// &:nth-last-child(2),
+	// &:nth-last-child(3) {
+	// 	display: flex;
+	// }
 }
 
 .data-version-notes {
@@ -312,6 +348,7 @@
 	padding: 0.25rem 1rem;
 	color: inherit;
 	text-decoration: none;
+	text-align: center;
 	border-radius: 3px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
 

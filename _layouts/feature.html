@@ -48,7 +48,7 @@ layout: default
 				{% assign family-values = page.stats[default] %}
 				{% assign family-average-support = '' %}
 				<li class="data-summary-family">
-					<h2 class="data-summary-family-title">{{ site.data.nicenames.family[family-key] | default: family-key }}</h2>
+					<h2 class="data-summary-family-title"><a href="#data-{{ page.title | slugify }}-{{ family-key }}">{{ site.data.nicenames.family[family-key] | default: family-key }}</a></h2>
 					{% for platform in family-values %}
 						{% assign platform-key = platform | first %}
 						{% assign platform-values = platform | last %}
@@ -140,7 +140,7 @@ layout: default
 			{% for family in page-most-popular-families %}
 				{% assign family-key = family %}
 				{% assign family-values = page.stats[family] %}
-			<div class="data-family">
+			<div class="data-family" id="data-{{ page.title | slugify }}-{{ family-key }}">
 				<h3 class="data-family-name">
 					{{ site.data.nicenames.family[family-key] | default: family-key }}
 				</h3>
