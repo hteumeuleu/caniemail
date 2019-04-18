@@ -12,6 +12,12 @@ body {
 	background: #1b1b1d;
 }
 
+a:active,
+a:focus {
+	outline: 1px dotted rgba(255, 255, 255, 0.5);
+	outline-offset: 0.25rem;
+}
+
 .caniemail {
 	width: 100%;
 	max-width: 80rem;

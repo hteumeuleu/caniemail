@@ -2,6 +2,8 @@
 
 body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #b1b1b3; background: #1b1b1d; }
 
+a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset: 0.25rem; }
+
 .caniemail { width: 100%; max-width: 80rem; margin: 0 auto; }
 
 .caniemail-nav { display: flex; flex-direction: row; margin-bottom: 5rem; }
@@ -44,7 +46,7 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 
 .data-summary-family:not(:first-child) { border-left: 1px solid #3c3c3d; }
 
-.data-summary-family.selected { position: relative; outline: 1px solid #fff; }
+.data-summary-family.selected { position: relative; z-index: 1; outline: 1px solid #fff; }
 
 .data-summary-family-title { margin-bottom: 0.75rem; font-size: 1.75rem; flex-grow: 1; }
 .data-summary-family-title a { color: inherit; text-decoration: none; }
@@ -63,12 +65,11 @@ body { padding: 0 1em; min-height: 100vh; font: 1em/1.5 -apple-system, BlinkMacS
 .data-details { position: relative; margin: 0 -2rem; overflow-x: auto; overflow-y: hidden; background: #2a2a2e; -webkit-overflow-scrolling: touch; }
 
 /* Data */
-.data-family-list { display: flex; flex-direction: row; }
+.data-family-list { display: flex; flex-direction: row; padding-left: 1rem; padding-right: 1rem; }
 
-.data-family { display: flex; flex-direction: column; flex-grow: 1; padding: 2rem 0.25rem; border-right: 1px solid rgba(255, 255, 255, 0.125); }
+.data-family { position: relative; display: flex; flex-direction: column; flex-grow: 1; padding: 2rem 0.25rem; border-right: 1px solid rgba(255, 255, 255, 0.125); }
 .data-family:nth-child(2n) { background-color: rgba(255, 255, 255, 0.0125); }
-.data-family:first-child { padding-left: 1rem; }
-.data-family:last-child { padding-right: 1rem; }
+.data-family:target::before { content: ''; display: block; position: absolute; left: 0; right: 0; top: 1rem; bottom: 1.5rem; border: 1px solid #fff; background: rgba(255, 255, 255, 0.025); }
 
 .data-family-name { margin: 0 0.25rem; padding: 0 1rem; color: rgba(255, 255, 255, 0.85); font-size: 1.25rem; text-align: center; white-space: nowrap; }
 
