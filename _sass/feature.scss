@@ -218,12 +218,15 @@
 		margin-top: 0.5rem;
 	}
 
-	// display: none;
+	// Limit display to 3 versions
+	// (Todo: Add a button to show all versions)
+	//
+	// &:not(:nth-last-child(-n + 3)) {
+	// 	display: none;
+	// }
 
-	// &:nth-last-child(1),
-	// &:nth-last-child(2),
 	// &:nth-last-child(3) {
-	// 	display: flex;
+	// 	margin-top: 0;
 	// }
 }
 
