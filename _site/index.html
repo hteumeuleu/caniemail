@@ -22,6 +22,15 @@
 		Can I email <input type="search" class="caniemail-search-input" id="search" name="feat_search" value="" autofocus /> ?
 	</label>
 </div>
+<ul class="caniemail-list" id="results-container"></ul>
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+})
+</script>
 </header>
 		<main class="main" role="main">
 			<h1 class="caniemail-list-title">Features</h1>
