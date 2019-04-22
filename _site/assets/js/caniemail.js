@@ -10,13 +10,8 @@
 				var summaryElements = document.querySelectorAll('.data-summary-family');
 				for(var i = 0; i < summaryElements.length; i++) {
 					summaryElements[i].addEventListener('click', function(e) {
-						e.preventDefault();
-						if(!this.classList.contains('selected')) {
-							Caniemail.feature.summary.unselect();
-							this.classList.add('selected');
-						} else {
-							Caniemail.feature.summary.unselect();
-						}
+						Caniemail.feature.summary.unselect();
+						this.classList.add('selected');
 					});
 				}
 			},
