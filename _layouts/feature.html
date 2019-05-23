@@ -142,7 +142,7 @@ layout: default
 				{% assign family-values = page.stats[family] %}
 			<div class="data-family" id="data-{{ page.title | slugify }}-{{ family-key }}">
 				<h3 class="data-family-name">
-					{{ site.data.nicenames.family[family-key] | default: family-key }}
+					<span>{{ site.data.nicenames.family[family-key] | default: family-key }}</span>
 				</h3>
 				<div class="data-client-list">
 					{% for platform in family-values %}

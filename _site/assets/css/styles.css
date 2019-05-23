@@ -72,6 +72,7 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .data-family:target::before { content: ''; display: block; position: absolute; left: 0; right: 0; top: 1rem; bottom: 1.5rem; border: 1px solid #fff; background: rgba(255, 255, 255, 0.025); }
 
 .data-family-name { margin: 0 0.25rem; padding: 0 1rem; color: rgba(255, 255, 255, 0.85); font-size: 1.25rem; text-align: center; white-space: nowrap; }
+.data-family-name span { position: sticky; left: 0.5rem; right: 0.5rem; }
 
 .data-platform-name { display: flex; align-items: flex-end; justify-content: center; min-height: 4rem; padding: 0.5rem; font-size: 1rem; font-weight: normal; text-align: center; }
 

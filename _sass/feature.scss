@@ -169,6 +169,12 @@
 	font-size: 1.25rem;
 	text-align: center;
 	white-space: nowrap;
+
+	span {
+		position: sticky;
+		left: 0.5rem;
+		right: 0.5rem;
+	}
 }
 
 // Plaform
