@@ -3,6 +3,11 @@
 		{
 			"title": "Background shorthand property",
 			"url" : "/features/background/"
+		} ,
+	
+		{
+			"title": " element",
+			"url" : "/features/html-picture/"
 		} 
 	
 ]
