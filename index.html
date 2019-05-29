@@ -5,6 +5,6 @@ layout: default
 <h1 class="caniemail-list-title">Features</h1>
 <ul class="caniemail-list">
 	{% for feature in site.features %}
-	<li><a href="{{ feature.url }}">{{ feature.title }}</a></li>
+	<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 	{% endfor %}
 </ul>
