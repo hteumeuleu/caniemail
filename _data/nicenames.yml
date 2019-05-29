@@ -7,6 +7,9 @@ family:
   ibm-notes: "IBM Notes"
   thunderbird: "Mozilla Thunderbird"
   microsoft: "Microsoft"
+  samsung-email: "Samsung Email"
+  sfr: "SFR"
+  orange: "Orange"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"
