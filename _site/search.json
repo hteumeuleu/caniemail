@@ -8,6 +8,11 @@
 		{
 			"title": " element",
 			"url" : "/features/html-picture/"
+		} ,
+	
+		{
+			"title": "srcset and sizes attribute",
+			"url" : "/features/html-srcset/"
 		} 
 	
 ]
