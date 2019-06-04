@@ -163,17 +163,17 @@ layout: default
 								{% assign version-notes = version | last | split: ' ' | shift %}
 								{% case version-values %}
 									{% when 'y' %}
-										{% assign stat_class_name = 'supported' %}
+										{% assign stat-class-name = 'supported' %}
 									{% when 'n' %}
-										{% assign stat_class_name = 'unsupported' %}
+										{% assign stat-class-name = 'unsupported' %}
 									{% when 'a' %}
-										{% assign stat_class_name = 'mitigated' %}
+										{% assign stat-class-name = 'mitigated' %}
 									{% when 'u' %}
-										{% assign stat_class_name = 'unknown' %}
+										{% assign stat-class-name = 'unknown' %}
 									{% else %}
-										{% assign stat_class_name = '' %}
+										{% assign stat-class-name = '' %}
 								{% endcase %}
-								<div class="data-version {{ stat_class_name }}">
+								<div class="data-version {{ stat-class-name }}">
 									{{ version-key }}
 									{% if version-notes.size > 0  %}
 										<div class="data-version-notes">
