@@ -85,7 +85,7 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .data-versions-list { display: flex; flex-direction: column; flex-grow: 1; }
 .data-versions-list::before { content: ''; flex-grow: 1; background: rgba(255, 255, 255, 0.1); }
 
-.data-version { position: relative; display: flex; align-items: center; justify-content: center; flex-shrink: 0; flex-grow: 0; padding: 0 2rem; height: 3rem; color: #fff; }
+.data-version { position: relative; display: flex; align-items: center; justify-content: center; flex-shrink: 0; flex-grow: 0; padding: 0 2rem; height: 2rem; color: #fff; }
 .data-version:not(:first-child) { margin-top: 0.5rem; }
 
 .data-version-notes { position: absolute; left: 0; top: 0; display: flex; flex-direction: row; }
