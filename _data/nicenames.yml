@@ -30,3 +30,6 @@ support:
   unsupported: "Not supported"
   mitigated: "Partial support"
   unknown: "Support unknown"
+category:
+  html: "HTML"
+  css: "CSS"
