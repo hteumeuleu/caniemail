@@ -3,7 +3,7 @@ title: "srcset and sizes attribute"
 description: "This is the description of the `srcset` and `sizes` attributes."
 category: html
 last_test_date: "2019-05-29"
-test_url: "https://gist.github.com/hteumeuleu/f133061fd3f31eb824a5d2762b5a7432"
+test_url: "/tests/html-srcset.html"
 stats: {
     apple-mail: {
         macos: {

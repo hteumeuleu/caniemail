@@ -3,7 +3,7 @@ title: "<picture> element"
 description: "This is the description of the `<picture>` element."
 category: html
 last_test_date: "2019-05-29"
-test_url: "https://gist.github.com/hteumeuleu/96dfdf6c6b993c17a202e93673b5abe3"
+test_url: "/tests/html-picture.html"
 stats: {
     apple-mail: {
         macos: {
