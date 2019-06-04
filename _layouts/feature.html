@@ -80,6 +80,8 @@ layout: default
 							{% assign family-average-support-slug = 'unsupported' %}
 						{% when 'a' %}
 							{% assign family-average-support-slug = 'mitigated' %}
+						{% when 'u' %}
+							{% assign family-average-support-slug = 'unknown' %}
 						{% else %}
 							{% assign family-average-support-slug = '' %}
 					{% endcase %}
@@ -120,6 +122,8 @@ layout: default
 						{% assign family-average-support-slug = 'unsupported' %}
 					{% when 'a' %}
 						{% assign family-average-support-slug = 'mitigated' %}
+					{% when 'u' %}
+						{% assign family-average-support-slug = 'unknown' %}
 					{% else %}
 						{% assign family-average-support-slug = '' %}
 				{% endcase %}
@@ -164,6 +168,8 @@ layout: default
 										{% assign stat_class_name = 'unsupported' %}
 									{% when 'a' %}
 										{% assign stat_class_name = 'mitigated' %}
+									{% when 'u' %}
+										{% assign stat_class_name = 'unknown' %}
 									{% else %}
 										{% assign stat_class_name = '' %}
 								{% endcase %}

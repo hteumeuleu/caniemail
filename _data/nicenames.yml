@@ -29,3 +29,4 @@ support:
   supported: "Supported"
   unsupported: "Not supported"
   mitigated: "Partial support"
+  unknown: "Support unknown"

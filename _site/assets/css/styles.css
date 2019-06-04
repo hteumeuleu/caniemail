@@ -60,7 +60,9 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 
 .unsupported { background-color: #c44230 !important; }
 
-.mitigated { background-color: #f7a03c !important; }
+.mitigated { background-color: #eda745 !important; }
+
+.unknown { background-color: #838383 !important; }
 
 .data-details { position: relative; margin: 0 -2rem; overflow-x: auto; overflow-y: hidden; background: #2a2a2e; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
 
