@@ -1,5 +1,5 @@
 ---
-title: "srcset and sizes attribute"
+title: "srcset and sizes attributes"
 description: "This is the description of the `srcset` and `sizes` attributes."
 category: html
 last_test_date: "2019-05-29"
