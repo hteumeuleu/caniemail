@@ -6,6 +6,7 @@
 
 body {
 	padding: 0 1em;
+	min-width: 17.5rem;
 	min-height: 100vh;
 	font: 1em/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	color: #b1b1b3;
@@ -26,10 +27,15 @@ a:focus {
 }
 
 // Header navigation
-.caniemail-nav {
+.caniemail-tabs {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 5rem;
+}
+
+.caniemail-nav {
+	display: flex;
+	flex-direction: row;
 
 	a {
 		margin-right: 0.5rem;
@@ -48,6 +54,51 @@ a:focus {
 	}
 }
 
+// Latest post in header
+.caniemail-latest-post {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0.25rem 0.75rem;
+	min-height: 2rem;
+	font-weight: 300;
+	font-size: 1.125rem;
+
+	@media only screen and (max-width: 50rem) {
+		display: none;
+	}
+}
+
+.caniemail-latest-post-date {
+	&::after {
+		content: '-';
+		margin: 0 0.5ch;
+	}
+}
+
+.caniemail-latest-post-title {
+	color: #fff;
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	&:hover {
+		color: #0a84ff;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}
+
 // Search box
 .caniemail-search {
 	margin-bottom: 1rem;
@@ -59,10 +110,14 @@ a:focus {
 	text-align: center;
 	background: #0a84ff;
 
-	@media only screen and (max-width: 38rem) {
-		label {
-			display: flex;
-			flex-direction: row;
+	label {
+		display: flex;
+		flex-direction: row;
+		max-width: 44rem;
+		margin: 0 auto;
+		white-space: nowrap;
+
+		@media only screen and (max-width: 48rem) {
 			flex-wrap: wrap;
 			justify-content: center;
 		}
@@ -70,18 +125,19 @@ a:focus {
 }
 
 .caniemail-search-input {
+	flex-shrink: 1;
+	margin: 0 1rem;
 	width: 100%;
+	max-width: 32rem;
 	color: inherit;
 	font: inherit;
 	text-align: center;
-	max-width: 32rem;
 	background: none;
 	border: none;
 	-webkit-appearance: none;
 	appearance: none;
 	border-bottom: 1px solid #fff;
 	border-radius: 0;
-	order: 1;
 
 	&:active,
 	&:focus {
@@ -89,6 +145,7 @@ a:focus {
 	}
 
 	@media only screen and (max-width: 48rem) {
+		order: 1;
 		background: rgba(255, 255, 255, 0.2);
 	}
 }

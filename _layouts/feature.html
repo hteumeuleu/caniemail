@@ -194,6 +194,7 @@ layout: default
 		</div>
 	</div>
 	<footer class="feature-footer">
+		{% if page.notes_by_num.size > 0 %}
 		<div class="data-notes">
 			<h2 class="caniemail-list-title">Notes</h2>
 			{{ page.notes | markdownify }}
@@ -207,6 +208,7 @@ layout: default
 			{% endfor %}
 			</ul>
 		</div>
+		{% endif %}
 		<div class="data-contribute">
 			<h2 class="caniemail-list-title">Know something we don't?</h2>
 			<p>
