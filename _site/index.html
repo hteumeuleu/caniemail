@@ -9,7 +9,8 @@
 </head>
 <body>
 	<div class="caniemail">
-		<header role="banner">
+		<header class="caniemail-header" role="banner">
+	<div class="caniemail-tabs">
 	<nav class="caniemail-nav" role="navigation">
 	
 		<a href="/" class="current">Home</a>
@@ -17,9 +18,18 @@
 		<a href="/features/" >Features</a>
 	
 </nav>
-	<div class="caniemail-search" [role="search"]>
+	
+<div class="caniemail-latest-post">
+	<span class="caniemail-latest-post-date">March 15, 2019</span>
+	<a href="/caniemail-a-proposal/" class="caniemail-latest-post-title">
+		Can I Email: A Proposal
+	</a>
+</div>
+
+	</div>
+	<div class="caniemail-search" role="search">
 	<label for="search">
-		Can I email <input type="search" class="caniemail-search-input" id="search" name="feat_search" value="" autofocus /> ?
+		<span>Can I email</span> <input type="search" class="caniemail-search-input" id="search" name="feat_search" value="" autofocus /> <span>?</span>
 	</label>
 </div>
 <ul class="caniemail-list" id="results-container"></ul>
@@ -33,14 +43,23 @@ SimpleJekyllSearch({
 </script>
 </header>
 		<main class="main" role="main">
-			<h1 class="caniemail-list-title">Features</h1>
+			<h1 class="caniemail-list-title">News</h1>
+<ul class="caniemail-list">
+	
+	<li><a href="/caniemail-a-proposal/">Can I Email: A Proposal</a>, March 15, 2019</li>
+	
+</ul>
+
+<h1 class="caniemail-list-title">Features</h1>
 <ul class="caniemail-list">
 	
 	<li><a href="/features/css-background/">Background shorthand property</a></li>
 	
 	<li><a href="/features/html-picture/">&lt;picture&gt; element</a></li>
 	
-	<li><a href="/features/html-srcset/">srcset and sizes attribute</a></li>
+	<li><a href="/features/html-role/">role attribute</a></li>
+	
+	<li><a href="/features/html-srcset/">srcset and sizes attributes</a></li>
 	
 </ul>
 		</main>

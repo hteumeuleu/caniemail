@@ -9,7 +9,8 @@
 </head>
 <body>
 	<div class="caniemail">
-		<header role="banner">
+		<header class="caniemail-header" role="banner">
+	<div class="caniemail-tabs">
 	<nav class="caniemail-nav" role="navigation">
 	
 		<a href="/" >Home</a>
@@ -17,9 +18,18 @@
 		<a href="/features/" >Features</a>
 	
 </nav>
-	<div class="caniemail-search" [role="search"]>
+	
+<div class="caniemail-latest-post">
+	<span class="caniemail-latest-post-date">March 15, 2019</span>
+	<a href="/caniemail-a-proposal/" class="caniemail-latest-post-title">
+		Can I Email: A Proposal
+	</a>
+</div>
+
+	</div>
+	<div class="caniemail-search" role="search">
 	<label for="search">
-		Can I email <input type="search" class="caniemail-search-input" id="search" name="feat_search" value=""  /> ?
+		<span>Can I email</span> <input type="search" class="caniemail-search-input" id="search" name="feat_search" value=""  /> <span>?</span>
 	</label>
 </div>
 <ul class="caniemail-list" id="results-container"></ul>
@@ -1000,6 +1010,7 @@ SimpleJekyllSearch({
 		</div>
 	</div>
 	<footer class="feature-footer">
+		
 		<div class="data-notes">
 			<h2 class="caniemail-list-title">Notes</h2>
 			<p>Initial data by <a href="https://www.campaignmonitor.com/css/color-background/background/">Campaign Monitor</a>.</p>
@@ -1043,6 +1054,7 @@ SimpleJekyllSearch({
 			
 			</ul>
 		</div>
+		
 		<div class="data-contribute">
 			<h2 class="caniemail-list-title">Know something we don't?</h2>
 			<p>

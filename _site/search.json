@@ -11,7 +11,12 @@
 		} ,
 	
 		{
-			"title": "srcset and sizes attribute",
+			"title": "role attribute",
+			"url" : "/features/html-role/"
+		} ,
+	
+		{
+			"title": "srcset and sizes attributes",
 			"url" : "/features/html-srcset/"
 		} 
 	
