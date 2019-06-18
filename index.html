@@ -2,14 +2,14 @@
 title: Home
 layout: default
 ---
-<h1 class="caniemail-list-title">News</h1>
+<h1 class="caniemail-list-title"><a href="/news/">News</a></h1>
 <ul class="caniemail-list">
 	{% for post in site.posts %}
 	<li><a href="{{ post.url }}">{{ post.title | escape_once }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
 	{% endfor %}
 </ul>
 
-<h1 class="caniemail-list-title">Features</h1>
+<h1 class="caniemail-list-title"><a href="/features/">Features</a></h1>
 <ul class="caniemail-list">
 	{% for feature in site.features %}
 	<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
