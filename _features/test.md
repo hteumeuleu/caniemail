@@ -1,8 +1,8 @@
 ---
-title: "Background shorthand property"
-description: "This is the description of the background property."
+title: "Test property"
+description: "This is the description of the test property."
 category: css
-last_test_date: "2019-04-16"
+last_test_date: "2019-06-18"
 test_url: "https://gist.github.com/hteumeuleu/10e89de83f362646e2e12365308440f8"
 stats: {
     aol: {
@@ -21,20 +21,20 @@ stats: {
     },
     apple-mail: {
         macos: {
-            "10":"y"
+            "10":"u"
         },
         ios: {
             "10":"y",
-            "11":"y"
+            "11":"u"
         }
     },
     gmail: {
         desktop-webmail: {
-            "2017-09":"y",
-            "2019-04":"y"
+            "2017-09":"n",
+            "2019-04":"n"
         },
         ios: {
-            "2019-04":"y"
+            "2019-04":"n"
         }
     },
     ibm-notes: {
@@ -94,7 +94,7 @@ stats: {
         }
     }
 }
-notes: "Initial data by [Campaign Monitor](https://www.campaignmonitor.com/css/color-background/background/)."
+notes: "This is a global note."
 notes_by_num: {
     "1": "Partial. Fixed attachment is not supported.",
     "2": "Partial. Slash syntax values are not supported.",

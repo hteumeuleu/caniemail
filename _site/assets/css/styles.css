@@ -68,11 +68,11 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .data-summary-cell { display: inline-flex; align-items: center; justify-content: center; min-height: 4rem; padding: 0.25rem; width: 100%; font-weight: bold; font-size: 1.125rem; line-height: 1; border: 1px solid #3c3c3d; }
 @media only screen and (max-width: 24rem) { .data-summary-cell { font-size: 1rem; min-height: 3rem; } }
 
-.supported { background-color: #39b54a !important; }
+.supported, .supported::before { background-color: #39b54a !important; }
 
-.unsupported { background-color: #c44230 !important; }
+.unsupported, .unsupported::before { background-color: #c44230 !important; }
 
-.mitigated { background-color: #eda745 !important; }
+.mitigated, .mitigated::before { background-color: #eda745 !important; }
 
 .unknown { background-color: #838383 !important; }
 
@@ -85,20 +85,24 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .data-family:nth-child(2n) { background-color: rgba(255, 255, 255, 0.0125); }
 .data-family:target::before { content: ''; display: block; position: absolute; left: 0; right: 0; top: 1rem; bottom: 1.5rem; border: 1px solid #fff; background: rgba(255, 255, 255, 0.025); }
 
-.data-family-name { margin: 0 0.25rem; padding: 0 1rem; color: rgba(255, 255, 255, 0.85); font-size: 1.25rem; text-align: center; white-space: nowrap; }
+.data-family-name { margin: 0 0.25rem; padding: 0 1rem; color: rgba(255, 255, 255, 0.85); font-size: 1rem; min-height: 3rem; text-align: center; }
 .data-family-name span { position: sticky; left: 0.5rem; right: 0.5rem; }
 
-.data-platform-name { display: flex; align-items: flex-end; justify-content: center; min-height: 4rem; padding: 0.5rem; font-size: 1rem; font-weight: normal; text-align: center; }
+.data-platform-name { display: flex; align-items: flex-end; justify-content: center; min-height: 2.8rem; padding: 0.5rem; font-size: 0.75rem; font-weight: normal; line-height: 1.2; text-align: center; }
 
 .data-client-list { display: flex; flex-direction: row; flex-grow: 1; }
 
-.data-client { display: flex; flex-direction: column; flex-grow: 1; margin: 0 0.25rem; min-width: 8rem; }
+.data-client { display: flex; flex-direction: column; flex-grow: 1; margin: 0 0.25rem; width: 6.5rem; }
 
 .data-versions-list { display: flex; flex-direction: column; flex-grow: 1; }
-.data-versions-list::before { content: ''; flex-grow: 1; background: rgba(255, 255, 255, 0.1); }
+.data-versions-list::before { content: ''; flex-grow: 1; background: rgba(255, 255, 255, 0.05); }
 
-.data-version { position: relative; display: flex; align-items: center; justify-content: center; flex-shrink: 0; flex-grow: 0; padding: 0 2rem; height: 2rem; color: #fff; }
+.data-version { position: relative; display: flex; align-items: center; justify-content: center; flex-shrink: 0; flex-grow: 0; padding: 0 1rem; height: 2rem; color: #fff; }
 .data-version:not(:first-child) { margin-top: 0.5rem; }
+.data-version::before { position: absolute; right: -0.25rem; top: -0.25rem; display: flex; align-items: center; justify-content: center; width: 1.25rem; height: 1.25rem; border-radius: 50%; font-size: 1rem; }
+.data-version.supported::before { content: '\2714'; }
+.data-version.unsupported::before { content: '\2717'; }
+.data-version.mitigated::before { content: '~'; }
 
 .data-version-notes { position: absolute; left: 0; top: 0; display: flex; flex-direction: row; }
 .data-version-notes > a { display: flex; justify-content: center; align-items: center; margin-right: 0.25rem; width: 1rem; height: 1rem; color: #333; font-size: 0.5rem; background: rgba(255, 255, 255, 0.5); border: 1px solid rgba(255, 255, 255, 0.8); }
@@ -108,10 +112,10 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .feature-footer a { color: inherit; }
 .feature-footer p:not(:last-child) { margin-bottom: 1rem; }
 .feature-footer > * { padding: 2rem; }
-.feature-footer > *:first-child { border-bottom: 1px solid #3c3c3d; }
+.feature-footer > * > .data-notes { border-bottom: 1px solid #3c3c3d; }
 @media only screen and (min-width: 64rem) { .feature-footer { display: flex; flex-wrap: wrap; }
-  .feature-footer > * { width: 50%; }
-  .feature-footer > *:nth-child(2) { border-right: 1px solid #3c3c3d; }
+  .feature-footer > .data-contribute, .feature-footer > .data-test { width: 50%; }
+  .feature-footer > .data-contribute { border-right: 1px solid #3c3c3d; }
   .feature-footer > .data-notes { width: 100%; } }
 
 /* Notes */

@@ -63,10 +63,12 @@ layout: default
 								{% endcomment %}
 								{% if family-average-support == '' %}
 									{% assign family-average-support = version-values %}
-								{% elsif family-average-support == 'y' and version-values != 'y' %}
+								{% elsif family-average-support == 'u' and version-values != 'u' %}
+									{% assign family-average-support = version-values %}
+								{% elsif family-average-support == 'y' and version-values != 'y' and version-values != 'u' %}
 									{% assign family-average-support = 'a' %}
 									{% break %}
-								{% elsif family-average-support == 'n' and version-values != 'n' %}
+								{% elsif family-average-support == 'n' and version-values != 'n' and version-values != 'u' %}
 									{% assign family-average-support = 'a' %}
 									{% break %}
 								{% endif %}
