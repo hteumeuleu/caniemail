@@ -113,7 +113,7 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .feature-footer a { color: inherit; }
 .feature-footer p:not(:last-child) { margin-bottom: 1rem; }
 .feature-footer > * { padding: 2rem; }
-.feature-footer > * > .data-notes { border-bottom: 1px solid #3c3c3d; }
+.feature-footer > .data-notes { border-bottom: 1px solid #3c3c3d; }
 @media only screen and (min-width: 64rem) { .feature-footer { display: flex; flex-wrap: wrap; }
   .feature-footer > .data-contribute, .feature-footer > .data-test { width: 50%; }
   .feature-footer > .data-contribute { border-right: 1px solid #3c3c3d; }

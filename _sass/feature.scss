@@ -318,10 +318,10 @@
 
 	& > * {
 		padding: 2rem;
+	}
 
-		& > .data-notes {
-			border-bottom: 1px solid #3c3c3d;
-		}
+	& > .data-notes {
+		border-bottom: 1px solid #3c3c3d;
 	}
 
 	@media only screen and (min-width: 64rem) {
