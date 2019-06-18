@@ -1,11 +1,6 @@
 [
 	
 		{
-			"title": "Background shorthand property",
-			"url" : "/features/css-background/"
-		} ,
-	
-		{
 			"title": " element",
 			"url" : "/features/html-picture/"
 		} ,
@@ -18,6 +13,11 @@
 		{
 			"title": "srcset and sizes attributes",
 			"url" : "/features/html-srcset/"
+		} ,
+	
+		{
+			"title": "Test property",
+			"url" : "/features/test/"
 		} 
 	
 ]
