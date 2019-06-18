@@ -288,7 +288,7 @@
 	& > * {
 		padding: 2rem;
 
-		&:first-child {
+		& > .data-notes {
 			border-bottom: 1px solid #3c3c3d;
 		}
 	}
@@ -297,12 +297,13 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		& > * {
+		& > .data-contribute,
+		& > .data-test {
 			width: 50%;
+		}
 
-			&:nth-child(2) {
-				border-right: 1px solid #3c3c3d;
-			}
+		& > .data-contribute {
+			border-right: 1px solid #3c3c3d;
 		}
 
 		& > .data-notes {
