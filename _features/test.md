@@ -21,7 +21,7 @@ stats: {
     },
     apple-mail: {
         macos: {
-            "10":"y"
+            "10":"u"
         },
         ios: {
             "10":"y",
