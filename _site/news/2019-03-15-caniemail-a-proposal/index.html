@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Can I Email: A Proposal</title>
+	<title>Can I email: a proposal</title>
 	<link rel="stylesheet" href="/assets/css/styles.css">
 	<script src="/assets/js/caniemail.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,31 +24,23 @@
 <div class="caniemail-latest-post">
 	<span class="caniemail-latest-post-date">March 15, 2019</span>
 	<a href="/news/2019-03-15-caniemail-a-proposal/" class="caniemail-latest-post-title">
-		Can I Email: A Proposal
+		Can I email: a proposal
 	</a>
 </div>
 
 	</div>
 	<div class="caniemail-search" role="search">
-	<label for="search">
-		<span>Can I email</span> <input type="search" class="caniemail-search-input" id="search" name="feat_search" value=""  /> <span>?</span>
+	<label for="caniemail-search">
+		<span>Can I email</span> <input type="search" class="caniemail-search-input" id="caniemail-search" name="feat_search" value=""  /> <span>?</span>
 	</label>
 </div>
-<ul class="caniemail-list" id="results-container"></ul>
-<script src="/assets/js/simple-jekyll-search.min.js"></script>
-<script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '/search.json'
-})
-</script>
 </header>
 		<main class="main" role="main">
+			<div class="caniemail-search-results" id="caniemail-search-results"></div>
 			<div class="post">
 	<div class="post-inside">
 		<p class="post-date">March 15, 2019</p>
-		<h1 class="post-title">Can I Email: A Proposal</h1>
+		<h1 class="post-title">Can I email: a proposal</h1>
 		<h1 id="pre-existing-ressources">Pre-existing ressources</h1>
 <p><a href="https://www.caniuse.com">Caniuse.com</a> is a widely popular site for web developers providing “<em>Browser support tables for modern web technologies</em>”. The site is great for web developers to quickly know whether a web feature has good support or not. But it also helps providing a good picture of disparities between browsers, and how this evolves through time with new browsers versions. The website turned <a href="https://twitter.com/Fyrd/status/1080495727233646592">10 years old</a> this year.</p>
 
@@ -62,7 +54,7 @@ SimpleJekyllSearch({
   <li>This might fall into a personal preference, but I think the updated layout in 2017 <em>lacks clarity</em>. Email clients are listed through three columns by alphabetical orders. This results in older or less popular email clients always listed first (<em>AOL Desktop</em>, <em>Android 4.4.2 Mail</em>, <em>AOL Alto App</em>, …). The three categories used (<em>Desktop</em>, <em>Mobile</em>, <em>Webmail</em>) are also disputable in my opinion as webmails can fall in both other categories.</li>
 </ol>
 
-<p>Other guides exist. FreshInbox provides a <a href="http://freshinbox.com/resources/css.php">Kinetic Email CSS Support</a> page with a nicely presented table. But the four first points listed above also apply.</p>
+<p>Other guides exist. FreshInbox provides a <a href="http://freshinbox.com/resources/css.php">Kinetic Email CSS Support</a> page with a nicely presented table. I also just discovered <a href="https://www.caniuse.email/">Caniuse.email</a> when starting to redact this document. But the four first points listed above also apply.</p>
 
 <p>Some email clients provide official information regarding HTML and CSS support. For example, Gmail provides a <a href="https://developers.google.com/gmail/design/reference/supported_css">Supported CSS Properties &amp; Media Queries</a> page. Microsoft also has a <a href="https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2007/aa338201(v=office.12)">HTML and CSS Rendering Capabilities in Outlook 2007</a> page. But both are really incomplete and some of the informations are wrong. For example, Google states that Gmail supports the <code class="highlighter-rouge">columns</code> properties in CSS, which appears to be false through manual testing.</p>
 
@@ -70,7 +62,7 @@ SimpleJekyllSearch({
 
 <p>I first became aware of the project after <a href="https://www.youtube.com/watch?v=xhUfiOSOk3g">watching a conference</a> by @M-J-Robbins where he announced his team at Rebel (then RebelMail) was working on a site similar to <code class="highlighter-rouge">caniuse.com</code> called <code class="highlighter-rouge">caniemail.com</code>. <a href="https://github.com/caniemail">A few repos and notes were created on Github</a>. And Rebel made a totally killer logo for the project.</p>
 
-<p><img src="https://avatars0.githubusercontent.com/u/11875778?s=200&amp;v=4" alt="caniemail logo by Rebel" /></p>
+<p><img src="/assets/images/posts/2019-03-15-logo.png" alt="caniemail logo by Rebel" /></p>
 
 <p>In 2017, Rebel didn’t renew the domain <code class="highlighter-rouge">caniemail.com</code>. So I bought it. I first offered to transfer it back to Rebel by contacting Mark on Slack, but it didn’t happen. So I started working on the project, mostly thinking and planning how things could or should be. I made <a href="https://www.caniemail.com/prototype-2017/">an HTML mockup</a> that I only shared about a year later on Slack during a casual conversation.</p>
 
@@ -88,7 +80,7 @@ SimpleJekyllSearch({
 
 <p>Here’s a quick UI prototype I had in mind. This can be found on the branch <code class="highlighter-rouge">prototype</code> or online at <a href="https://www.caniemail.com/prototype/">https://www.caniemail.com/prototype/</a>.</p>
 
-<p><a href="https://www.caniemail.com/prototype/"><img src="https://i.imgur.com/F5S7t0D.png" alt="" /></a></p>
+<p><a href="https://www.caniemail.com/prototype/"><img src="/assets/images/posts/2019-03-15-prototype.png" alt="Screenshot of a prototype" /></a></p>
 
 <p>The main idea is to regroup email clients through their “family” names, and show only the few most popular first. (I think Outlook, Gmail and Apple Mail are obvious candidates. But maybe Yahoo should be featured there.)</p>
 
@@ -101,13 +93,18 @@ SimpleJekyllSearch({
   <li>Testing</li>
 </ul>
 
+<p>Rémi<br />
+@HTeuMeuLeu</p>
+
 	</div>
 </div>
 		</main>
 		<footer class="caniemail-footer" role="contentinfo">
 	<h1 class="caniemail-footer-title">Can I email…</h1>
 	<p>
-		Based on the original <a href="https://www.caniuse.com">caniuse.com</a> by <a href="https:/www.twitter.com/Fyrd">@Fyrd</a>. Original name and idea by <a href="https://www.twitter.com/M_J_Robbins">@M_J_Robbins</a> and the team at <a href="https://www.gorebel.com/">Rebel</a>. Launched by <a href="https://www.twitter.com/HTeuMeuLeu">@HTeuMeuLeu</a>.
+		Based on the original <a href="https://www.caniuse.com">caniuse.com</a> by <a href="https:/www.twitter.com/Fyrd">@Fyrd</a>.<br />
+		Original name and idea by <a href="https://www.twitter.com/M_J_Robbins">@M_J_Robbins</a> and the team at <a href="https://www.gorebel.com/">Rebel</a>.<br />
+		Launched by <a href="https://www.twitter.com/HTeuMeuLeu">@HTeuMeuLeu</a>.
 	</p>
 </footer>
 	</div>

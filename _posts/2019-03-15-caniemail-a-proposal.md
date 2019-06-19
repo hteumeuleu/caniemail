@@ -1,5 +1,5 @@
 ---
-title:  "Can I Email: A Proposal"
+title:  "Can I email: a proposal"
 date: 2019-03-15
 ---
 
@@ -14,7 +14,7 @@ Similar ressources also exists in emails. The most popular is [Campaign Monitor'
 4. The guide provides informations *only for CSS properties*. But questions regarding HTML or images format support are frequent for email developers.
 5. This might fall into a personal preference, but I think the updated layout in 2017 *lacks clarity*. Email clients are listed through three columns by alphabetical orders. This results in older or less popular email clients always listed first (_AOL Desktop_, _Android 4.4.2 Mail_, _AOL Alto App_, …). The three categories used (_Desktop_, _Mobile_, _Webmail_) are also disputable in my opinion as webmails can fall in both other categories.
 
-Other guides exist. FreshInbox provides a [Kinetic Email CSS Support](http://freshinbox.com/resources/css.php) page with a nicely presented table. But the four first points listed above also apply.
+Other guides exist. FreshInbox provides a [Kinetic Email CSS Support](http://freshinbox.com/resources/css.php) page with a nicely presented table. I also just discovered [Caniuse.email](https://www.caniuse.email/) when starting to redact this document. But the four first points listed above also apply.
 
 Some email clients provide official information regarding HTML and CSS support. For example, Gmail provides a [Supported CSS Properties & Media Queries](https://developers.google.com/gmail/design/reference/supported_css) page. Microsoft also has a [HTML and CSS Rendering Capabilities in Outlook 2007](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2007/aa338201(v=office.12)) page. But both are really incomplete and some of the informations are wrong. For example, Google states that Gmail supports the `columns` properties in CSS, which appears to be false through manual testing.
 
@@ -22,7 +22,7 @@ Some email clients provide official information regarding HTML and CSS support. 
 
 I first became aware of the project after [watching a conference](https://www.youtube.com/watch?v=xhUfiOSOk3g) by @M-J-Robbins where he announced his team at Rebel (then RebelMail) was working on a site similar to `caniuse.com` called `caniemail.com`. [A few repos and notes were created on Github](https://github.com/caniemail). And Rebel made a totally killer logo for the project.
 
-![caniemail logo by Rebel](https://avatars0.githubusercontent.com/u/11875778?s=200&v=4)
+![caniemail logo by Rebel](/assets/images/posts/2019-03-15-logo.png)
 
 In 2017, Rebel didn't renew the domain `caniemail.com`. So I bought it. I first offered to transfer it back to Rebel by contacting Mark on Slack, but it didn't happen. So I started working on the project, mostly thinking and planning how things could or should be. I made [an HTML mockup](https://www.caniemail.com/prototype-2017/) that I only shared about a year later on Slack during a casual conversation.
 
@@ -38,7 +38,7 @@ Caniemail.com should address the problems mentionned above. Thus the project sho
 
 Here's a quick UI prototype I had in mind. This can be found on the branch `prototype` or online at [https://www.caniemail.com/prototype/](https://www.caniemail.com/prototype/).
 
-[![](https://i.imgur.com/F5S7t0D.png)](https://www.caniemail.com/prototype/)
+[![Screenshot of a prototype](/assets/images/posts/2019-03-15-prototype.png)](https://www.caniemail.com/prototype/)
 
 The main idea is to regroup email clients through their "family" names, and show only the few most popular first. (I think Outlook, Gmail and Apple Mail are obvious candidates. But maybe Yahoo should be featured there.)
 
@@ -48,3 +48,6 @@ In the following days, I will start issues to start the conversation on the foll
 * User interface
 * Encouraging participation
 * Testing
+
+Rémi  
+@HTeuMeuLeu
