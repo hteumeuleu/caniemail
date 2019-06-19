@@ -138,6 +138,7 @@ a:focus {
 	appearance: none;
 	border-bottom: 1px solid #fff;
 	border-radius: 0;
+	outline: none;
 
 	&:active,
 	&:focus {
@@ -148,6 +149,15 @@ a:focus {
 		order: 1;
 		background: rgba(255, 255, 255, 0.2);
 	}
+}
+
+.caniemail-search-empty {
+	margin-top: -1rem;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	color: #fff;
+	text-align: center;
+	background: #0a84ff;
 }
 
 // Lists

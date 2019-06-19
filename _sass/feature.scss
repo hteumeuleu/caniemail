@@ -422,3 +422,24 @@
 .data-contribute-buttons {
 	margin-top: -0.75rem;
 }
+
+//
+// Feature in search results
+//
+.caniemail-search-results .feature {
+	margin-bottom: 2rem;
+}
+
+.feature--placeholder {
+	.data {
+		min-height: 10.5rem;
+	}
+
+	.data-details {
+		min-height: 3rem;
+	}
+
+	.feature-footer {
+		min-height: 3rem;
+	}
+}

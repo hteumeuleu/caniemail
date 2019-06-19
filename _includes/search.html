@@ -1,14 +1,5 @@
 <div class="caniemail-search" role="search">
-	<label for="search">
-		<span>Can I email</span> <input type="search" class="caniemail-search-input" id="search" name="feat_search" value="" {% if page.url == "/" %}autofocus{% endif %} /> <span>?</span>
+	<label for="caniemail-search">
+		<span>Can I email</span> <input type="search" class="caniemail-search-input" id="caniemail-search" name="feat_search" value="" {% if page.url == "/" %}autofocus{% endif %} /> <span>?</span>
 	</label>
 </div>
-<ul class="caniemail-list" id="results-container"></ul>
-<script src="/assets/js/simple-jekyll-search.min.js"></script>
-<script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '/search.json'
-})
-</script>
