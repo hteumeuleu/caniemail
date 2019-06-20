@@ -57,13 +57,6 @@
 			console.log('onJsonLoad', json);
 		},
 		onKeyUp: function(e) {
-			setTimeout(function() {
-				var features = document.querySelectorAll('#caniemail-search-results .feature--placeholder');
-				for(var i=0; i < features.length; i++) {
-					console.log(features[i]);
-					features[i].classList.add('foo'+i);
-				}
-			}, 1000);
 		}
 	};
 
