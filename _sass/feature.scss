@@ -150,7 +150,7 @@
 	flex-direction: column;
 	flex-grow: 1;
 	padding: 2rem 0.25rem;
-	border-right: 1px solid rgba(255, 255, 255, 0.125);
+	border-right: 1px solid #454548;
 
 	&:nth-child(2n) {
 		background-color: rgba(255, 255, 255, 0.0125);
@@ -170,13 +170,15 @@
 }
 
 .data-family-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 0 0.25rem;
 	padding: 0 1rem;
 	color: rgba(255, 255, 255, 0.85);
 	font-size: 1rem;
 	min-height: 3rem;
 	text-align: center;
-	// white-space: nowrap;
 
 	span {
 		position: sticky;
@@ -216,19 +218,33 @@
 // Clients versions
 // (ie 2016, 2019, …)
 .data-versions-list {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 
+	// Empty grey zone before the first data cell
 	&::before {
 		content: '';
 		flex-grow: 1;
 		background: rgba(255, 255, 255, 0.05);
 	}
+
+	// Outline of the last cell
+	&::after {
+		content: '';
+		position: absolute;
+		left: -0.5rem;
+		right: -0.5rem;
+		bottom: -0.5rem;
+		height: 3rem;
+		background: #111;
+	}
 }
 
 .data-version {
 	position: relative;
+	z-index: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -240,6 +256,11 @@
 
 	&:not(:first-child) {
 		margin-top: 0.5rem;
+	}
+
+	&:last-child {
+		margin-top: 0.75rem;
+		// outline: 0.5rem solid #111;
 	}
 
 	// Limit display to 3 versions
@@ -351,6 +372,8 @@
 	list-style: none;
 	margin-left: -0.25rem;
 	padding-left: 2.5rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
 	margin-bottom: 1rem;
 	overflow: hidden;
 }
