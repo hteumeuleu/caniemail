@@ -37,7 +37,7 @@
 				noResultsText: '<p class="caniemail-search-empty">No results found.</p>',
 				searchResultTemplate: `<section class="feature feature--placeholder" data-url="{url}">
 					<header class="feature-header">
-						<h1 class="feature-title">{title}</h1>
+						<h1 class="feature-title"><a href="{url}">{title}</a></h1>
 					</header>
 					<div class="data"></div>
 					<div class="data-details"></div>

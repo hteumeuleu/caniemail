@@ -48,6 +48,7 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .feature { padding: 1rem 2rem 0; border: 1px solid #3c3c3d; }
 
 .feature-title { font-size: 2rem; }
+.feature-title a { color: inherit; text-decoration: none; }
 
 .data { position: relative; z-index: 1; margin: 2rem -3rem 0; background: #2a2a2e; border: 1px solid #3c3c3d; border-bottom: none; box-shadow: 0 2rem 1rem -1rem rgba(0, 0, 0, 0.25); }
 
