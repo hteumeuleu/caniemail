@@ -5,8 +5,7 @@ layout: null
 	{% for feature in site.features %}
 		{
 			"title": "{{ feature.title | strip_newlines | remove_chars | escape }}",
-			"url" : "{{ feature.url }}",
-			"stats" : {{ feature.stats | jsonify }}
+			"url" : "{{ feature.url }}"
 		} {% unless forloop.last %},{% endunless %}
 	{% endfor %}
 ]
