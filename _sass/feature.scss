@@ -1,14 +1,45 @@
 .feature {
+	position: relative;
 	padding: 1rem 2rem 0;
 	border: 1px solid #3c3c3d;
 }
 
 .feature-title {
 	font-size: 2rem;
+	padding-left: 1.5rem;
 
 	a {
 		color: inherit;
 		text-decoration: none;
+	}
+
+	@media only screen and (min-width: 85rem) {
+		padding-left: 0;
+	}
+}
+
+.feature-permalink {
+	position: absolute;
+	left: 0rem;
+	top: 1.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.25em 0.75em;
+	width: 2.5rem;
+	height: 2.5rem;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.25rem;
+	text-decoration: none;
+	background-color: #0a84ff;
+
+	&:hover {
+		background-color: #204e8a;
+	}
+
+	@media only screen and (min-width: 85rem) {
+		left: -2.5rem;
 	}
 }
 

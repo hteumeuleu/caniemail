@@ -45,10 +45,15 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 
 .caniemail-footer-title { margin-bottom: 0.75rem; color: #fff; font-size: 1em; font-weight: 300; }
 
-.feature { padding: 1rem 2rem 0; border: 1px solid #3c3c3d; }
+.feature { position: relative; padding: 1rem 2rem 0; border: 1px solid #3c3c3d; }
 
-.feature-title { font-size: 2rem; }
+.feature-title { font-size: 2rem; padding-left: 1.5rem; }
 .feature-title a { color: inherit; text-decoration: none; }
+@media only screen and (min-width: 85rem) { .feature-title { padding-left: 0; } }
+
+.feature-permalink { position: absolute; left: 0rem; top: 1.25rem; display: flex; align-items: center; justify-content: center; padding: 0.25em 0.75em; width: 2.5rem; height: 2.5rem; color: #fff; font-weight: 300; font-size: 1.25rem; text-decoration: none; background-color: #0a84ff; }
+.feature-permalink:hover { background-color: #204e8a; }
+@media only screen and (min-width: 85rem) { .feature-permalink { left: -2.5rem; } }
 
 .data { position: relative; z-index: 1; margin: 2rem -3rem 0; background: #2a2a2e; border: 1px solid #3c3c3d; border-bottom: none; box-shadow: 0 2rem 1rem -1rem rgba(0, 0, 0, 0.25); }
 
