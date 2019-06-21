@@ -3,56 +3,43 @@ title: "Test property"
 description: "This is the description of the test property."
 category: css
 last_test_date: "2019-06-18"
-test_url: "https://gist.github.com/hteumeuleu/10e89de83f362646e2e12365308440f8"
+test_url: "/tests/template.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/uz6yTbAfykA362dvPZZKX81wEhGuUm4uJekIk2NKacALI/list"
 stats: {
-    aol: {
-        desktop-app: {
-            "2017-09":"a #1"
-        },
-        desktop-webmail: {
-            "2017-09":"y"
-        },
-        alto-ios: {
-            "2017-09":"y"
-        },
-        alto-android: {
-            "2017-09":"a #1"
-        }
-    },
     apple-mail: {
         macos: {
-            "10":"u"
+            "10.3":"y"
         },
         ios: {
-            "10":"y",
-            "11":"u"
+            "10.3":"y",
+            "12.2":"y"
         }
     },
     gmail: {
         desktop-webmail: {
-            "2017-09":"n",
-            "2019-04":"n"
+            "2019-05":"n #1"
         },
         ios: {
-            "2019-04":"n"
-        }
-    },
-    ibm-notes: {
-        windows: {
-            "9":"n"
-        }
-    },
-    microsoft: {
-        windows-10-mail: {
-            "2017-09":"n"
+            "2019-05":"n #1"
         },
-        windows-live-mail: {
-            "2017-09":"a #3"
+        android: {
+            "2019-05":"n #1"
+        }
+    },
+    orange: {
+        desktop-webmail: {
+            "2019-05":"y"
+        },
+        ios: {
+            "2019-05":"y"
+        },
+        android: {
+            "2019-05":"y"
         }
     },
     outlook: {
         windows: {
-            "2003":"a #2",
+            "2003":"n",
             "2007":"n",
             "2010":"n",
             "2013":"n",
@@ -60,37 +47,49 @@ stats: {
             "2019":"n"
         },
         macos: {
-            "2013":"y",
-            "2016":"y",
-            "2019":"y"
-        },
-        outlook-express: {
-            "2017-09":"a #3"
+            "2011":"y",
+            "2016":"y"
         },
         outlook-com: {
-            "2017-09":"y"
+            "2019-05":"n"
         },
         ios: {
-            "2017-09":"y"
+            "2019-05":"n"
         },
         android: {
-            "2017-09":"a #1"
+            "2019-05":"n"
+        }
+    },
+    samsung-email: {
+        android: {
+            "6.0":"y"
+        }
+    },
+    sfr: {
+        desktop-webmail: {
+            "2019-05":"y"
+        },
+        ios: {
+            "2019-05":"y"
+        },
+        android: {
+            "2019-05":"y"
         }
     },
     thunderbird: {
-        windows: {
-            "60.0":"y"
+        macos: {
+            "60.3":"y"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2017-09":"a #4"
+            "2019-05":"n"
         },
         ios: {
-            "2017-09":"a #2"
+            "2019-05":"n"
         },
         android: {
-            "2017-09":"a #5"
+            "2019-05":"n"
         }
     }
 }
