@@ -4,7 +4,7 @@
 + [About](#about)
 + [Getting Started](#getting-started)
 + [Usage](#usage)
-+ [Contributing](../contributing.md)
++ [Contributing](contributing.md)
 
 ## About
 Caniemail.com provides email clients support tables for HTML and CSS features.
