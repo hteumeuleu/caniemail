@@ -2,12 +2,19 @@
 
 ## Table of Contents
 + [About](#about)
++ [Links](#links)
 + [Getting Started](#getting-started)
 + [Usage](#usage)
 + [Contributing](contributing.md)
 
 ## About
-Caniemail.com provides email clients support tables for HTML and CSS features.
+
+caniemail.com provides email clients support tables for HTML and CSS features.
+
+## Links
+
+- https://caniemail.com/
+- https://beta.caniemail.com/
 
 ## Getting started
 
