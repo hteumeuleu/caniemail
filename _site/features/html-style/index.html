@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Can I email… &lt;style&gt; element</title>
-	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/styles.css" />
 	<script src="/assets/js/caniemail.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="prefetch" href="/assets/js/search.json" />
 </head>
 <body>
 	<div class="caniemail">
@@ -30,9 +31,11 @@
 
 	</div>
 	<div class="caniemail-search" role="search">
-	<label for="caniemail-search">
-		<span>Can I email</span> <input type="search" class="caniemail-search-input" id="caniemail-search" name="feat_search" value=""  /> <span>?</span>
-	</label>
+	<form action="/search/" method="get">
+		<label for="caniemail-search">
+			<span>Can I email</span> <input type="search" class="caniemail-search-input" id="caniemail-search" name="s" value=""  /> <span>?</span>
+		</label>
+	</form>
 </div>
 </header>
 		<main class="main" role="main">
@@ -539,7 +542,7 @@
 										<div class="data-version-notes">
 										
 											
-											<a href="#style-element-cite-note-1" title="Not supported inside the <body>.">#1</a>
+											<a href="#style-element-cite-note-4" title="<style> elements need to be declared before their rules are used.">#4</a>
 										
 										</div>
 									
@@ -555,7 +558,7 @@
 										<div class="data-version-notes">
 										
 											
-											<a href="#style-element-cite-note-1" title="Not supported inside the <body>.">#1</a>
+											<a href="#style-element-cite-note-4" title="<style> elements need to be declared before their rules are used.">#4</a>
 										
 										</div>
 									
@@ -571,7 +574,7 @@
 										<div class="data-version-notes">
 										
 											
-											<a href="#style-element-cite-note-1" title="Not supported inside the <body>.">#1</a>
+											<a href="#style-element-cite-note-4" title="<style> elements need to be declared before their rules are used.">#4</a>
 										
 										</div>
 									
@@ -587,7 +590,7 @@
 										<div class="data-version-notes">
 										
 											
-											<a href="#style-element-cite-note-1" title="Not supported inside the <body>.">#1</a>
+											<a href="#style-element-cite-note-4" title="<style> elements need to be declared before their rules are used.">#4</a>
 										
 										</div>
 									
@@ -603,7 +606,7 @@
 										<div class="data-version-notes">
 										
 											
-											<a href="#style-element-cite-note-1" title="Not supported inside the <body>.">#1</a>
+											<a href="#style-element-cite-note-4" title="<style> elements need to be declared before their rules are used.">#4</a>
 										
 										</div>
 									
@@ -1017,6 +1020,13 @@
 
 				</li>
 			
+				
+				
+				<li class="data-note" id="style-element-cite-note-4">
+					<span class="data-note-key">4</span> <p>&lt;style&gt; elements need to be declared before their rules are used.</p>
+
+				</li>
+			
 			</ul>
 		</div>
 		
@@ -1041,7 +1051,7 @@
 			</p>
 			
 			<p>
-				If you want to test this feature in the same conditions as we did, you can get our test code and run a test by yourself. Make sure to follow our <a href="#todo">testing recommandations</a> first.
+				If you want to test this feature in the same conditions as we did, you can get our test code and run a test by yourself. Make sure to follow our <a href="#todo">testing recommendations</a> first.
 			</p>
 			<p>
 				<a href="/tests/html-style.html" class="feature-button">View the test code</a>
@@ -1055,6 +1065,7 @@
 		</div>
 	</footer>
 </section>
+
 		</main>
 		<footer class="caniemail-footer" role="contentinfo">
 	<h1 class="caniemail-footer-title">Can I email…</h1>

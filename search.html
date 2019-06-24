@@ -1,0 +1,21 @@
+---
+title: Search
+layout: post
+---
+
+Here are a few problems I have with the current `SimpleJekyllSearch` plugin I used:
+
+* The `search.json` file is always loaded, even if the don't do any search.
+* There has to be an empty element to receive the search results. This should be generated dynamically.
+* There is no event triggered when there are actual search results. So we cannot load the full data dynamically.
+* The results are all regenerated on every single key input.
+
+Here's a brief overview of how I imagine search could work.
+
+1. A `<meta link="prefetch">` would preload the `search.json` file on every page.
+2. On focus on the search input, we load the `search.json` file.
+3. If there are no results, we generate the "empty result" message inside the search `<form>`.
+4. If there are results, we generate a new container with placeholder template for every result.
+5. For every placeholder, we dynamically load the full HTML by calling the corresponding HTML feature page.
+6. If there are results, we change the URL through the history API to `/search/?s=xxx`. This is also the URL that is generated natively through the form without JS.
+7. On the search page, we have a script that can launch a search on load if there's something in the search field. 

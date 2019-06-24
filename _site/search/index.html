@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Can I email… Search</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+	<script src="/assets/js/caniemail.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="prefetch" href="/assets/js/search.json" />
+</head>
+<body>
+	<div class="caniemail">
+		<header class="caniemail-header" role="banner">
+	<div class="caniemail-tabs">
+	<nav class="caniemail-nav" role="navigation">
+	
+		<a href="/" >Home</a>
+	
+		<a href="/features/" >Features</a>
+	
+		<a href="/news/" >News</a>
+	
+</nav>
+	
+<div class="caniemail-latest-post">
+	<span class="caniemail-latest-post-date">March 15, 2019</span>
+	<a href="/news/2019-03-15-caniemail-a-proposal/" class="caniemail-latest-post-title">
+		Can I email: a proposal
+	</a>
+</div>
+
+	</div>
+	<div class="caniemail-search" role="search">
+	<form action="/search/" method="get">
+		<label for="caniemail-search">
+			<span>Can I email</span> <input type="search" class="caniemail-search-input" id="caniemail-search" name="s" value=""  /> <span>?</span>
+		</label>
+	</form>
+</div>
+</header>
+		<main class="main" role="main">
+			<div class="caniemail-search-results" id="caniemail-search-results"></div>
+			<div class="post">
+	<div class="post-inside">
+		<p class="post-date"></p>
+		<h1 class="post-title">Search</h1>
+		<p>Here are a few problems I have with the current <code class="highlighter-rouge">SimpleJekyllSearch</code> plugin I used:</p>
+
+<ul>
+  <li>The <code class="highlighter-rouge">search.json</code> file is always loaded, even if the don’t do any search.</li>
+  <li>There has to be an empty element to receive the search results. This should be generated dynamically.</li>
+  <li>There is no event triggered when there are actual search results. So we cannot load the full data dynamically.</li>
+  <li>The results are all regenerated on every single key input.</li>
+</ul>
+
+<p>Here’s a brief overview of how I imagine search could work.</p>
+
+<ol>
+  <li>A <code class="highlighter-rouge">&lt;meta link="prefetch"&gt;</code> would preload the <code class="highlighter-rouge">search.json</code> file on every page.</li>
+  <li>On focus on the search input, we load the <code class="highlighter-rouge">search.json</code> file.</li>
+  <li>If there are no results, we generate the “empty result” message inside the search <code class="highlighter-rouge">&lt;form&gt;</code>.</li>
+  <li>If there are results, we generate a new container with placeholder template for every result.</li>
+  <li>For every placeholder, we dynamically load the full HTML by calling the corresponding HTML feature page.</li>
+  <li>If there are results, we change the URL through the history API to <code class="highlighter-rouge">/search/?s=xxx</code>. This is also the URL that is generated natively through the form without JS.</li>
+  <li>On the search page, we have a script that can launch a search on load if there’s something in the search field.</li>
+</ol>
+
+	</div>
+</div>
+		</main>
+		<footer class="caniemail-footer" role="contentinfo">
+	<h1 class="caniemail-footer-title">Can I email…</h1>
+	<p>
+		Based on the original <a href="https://www.caniuse.com">caniuse.com</a> by <a href="https:/www.twitter.com/Fyrd">@Fyrd</a>.<br />
+		Original name and idea by <a href="https://www.twitter.com/M_J_Robbins">@M_J_Robbins</a> and the team at <a href="https://www.gorebel.com/">Rebel</a>.<br />
+		Launched by <a href="https://www.twitter.com/HTeuMeuLeu">@HTeuMeuLeu</a> and the team at <a href="https://www.tilt-studio.fr/">Tilt Studio</a>.
+	</p>
+</footer>
+	</div>
+</body>
+</html>
