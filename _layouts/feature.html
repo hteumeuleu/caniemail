@@ -236,6 +236,18 @@ layout: default
 			</p>
 			<p>
 				<a href="{{ page.test_url }}" class="feature-button">View the test code</a>
+				{% if page.test_results_url != nil  %}
+					{% assign test-results-url-provider = "" %}
+					{% if page.test_results_url contains "emailonacid.com"  %}
+						{% assign test-results-url-provider = "Email on Acid" %}
+					{% elsif page.test_results_url contains "litmus.com" %}
+						{% assign test-results-url-provider = "Litmus" %}
+					{% endif %}
+					{% if test-results-url-provider != "" %}
+						{% assign test-results-url-provider = test-results-url-provider | prepend: " on " %}
+					{% endif %}
+					<a href="{{ page.test_results_url }}" class="feature-button">View test results{{test-results-url-provider}}</a>
+				{% endif %}
 			</p>
 		</div>
 	</footer>
