@@ -2,9 +2,9 @@
 title: "<style> element"
 description: "This is the description of the `<style>` element."
 category: html
-last_test_date: "2019-06-20"
+last_test_date: "2019-06-24"
 test_url: "/tests/html-style.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/mQUdeHofF9QDvwCetIJzJOtDRG5b3IFiYXH1SHWZ0Hcxq/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/od5IYQtx8yIbIUbeRyQXnP0yzFKEm2E9CKa3FU4BcEXFv/list"
 stats: {
     apple-mail: {
         macos: {
