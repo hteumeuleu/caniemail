@@ -45,26 +45,7 @@
 	<div class="post-inside">
 		<p class="post-date"></p>
 		<h1 class="post-title">Search</h1>
-		<p>Here are a few problems I have with the current <code class="highlighter-rouge">SimpleJekyllSearch</code> plugin I used:</p>
-
-<ul>
-  <li>The <code class="highlighter-rouge">search.json</code> file is always loaded, even if the don’t do any search.</li>
-  <li>There has to be an empty element to receive the search results. This should be generated dynamically.</li>
-  <li>There is no event triggered when there are actual search results. So we cannot load the full data dynamically.</li>
-  <li>The results are all regenerated on every single key input.</li>
-</ul>
-
-<p>Here’s a brief overview of how I imagine search could work.</p>
-
-<ol>
-  <li>A <code class="highlighter-rouge">&lt;meta link="prefetch"&gt;</code> would preload the <code class="highlighter-rouge">search.json</code> file on every page.</li>
-  <li>On focus on the search input, we load the <code class="highlighter-rouge">search.json</code> file.</li>
-  <li>If there are no results, we generate the “empty result” message inside the search <code class="highlighter-rouge">&lt;form&gt;</code>.</li>
-  <li>If there are results, we generate a new container with placeholder template for every result.</li>
-  <li>For every placeholder, we dynamically load the full HTML by calling the corresponding HTML feature page.</li>
-  <li>If there are results, we change the URL through the history API to <code class="highlighter-rouge">/search/?s=xxx</code>. This is also the URL that is generated natively through the form without JS.</li>
-  <li>On the search page, we have a script that can launch a search on load if there’s something in the search field.</li>
-</ol>
+		<p>This is <em>Can I email</em> search page.</p>
 
 	</div>
 </div>
