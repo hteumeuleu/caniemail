@@ -30,7 +30,7 @@ class Search {
 
 		if(this.input != null) {
 			this.loadJSONFile();
-			this.input.addEventListener('keyup', e => {
+			this.input.addEventListener('input', e => {
 				this.term = e.currentTarget.value;
 				this.query();
 			});
