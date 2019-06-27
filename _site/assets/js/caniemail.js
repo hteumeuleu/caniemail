@@ -43,6 +43,19 @@ class Search {
 				this.term = e.currentTarget.value;
 				this.query();
 			});
+
+			const url = new URL(document.location.href);
+			if(url.searchParams.get('s') != null) {
+
+				if(!this.data) {
+					this.loadJSONFile();
+				}
+				this.input.value = url.searchParams.get('s');
+				this.term = url.searchParams.get('s');
+				this.query();
+			}
+
+
 		}
 	}
 
@@ -89,6 +102,7 @@ class Search {
 				this.removeEmptyMessage();
 				this.buildResultsContainer();
 				this.buildResults();
+				this.updateURL();
 			}
 		}
 	}
@@ -171,6 +185,10 @@ class Search {
 				});
 			}
 		});
+	}
+
+	updateURL() {
+		history.pushState({id:'search'}, 'search', `${document.location.origin}/search/?s=${this.term}`);
 	}
 }
 
