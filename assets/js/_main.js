@@ -33,6 +33,18 @@ class Feature {
 						element.classList.add('selected');
 					});
 				}
+
+				//scroll
+				const details = e.currentTarget.closest('section').querySelector('.data-details');
+				const families = details.querySelectorAll('.data-family');
+				let scrollLeft = 0;
+				for(let i=0; i<families.length; i++) {
+					if(families[i].classList.contains('selected')) {
+						break;
+					}
+					scrollLeft += families[i].scrollWidth;
+				}
+				details.scrollLeft = scrollLeft;
 			});
 		});
 	}
