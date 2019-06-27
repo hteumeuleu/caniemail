@@ -150,6 +150,7 @@ class Search {
 				this.buildResultsContainer();
 				this.buildResults();
 				this.updateURL();
+				this.updateTitle();
 			}
 		}
 	}
@@ -255,8 +256,12 @@ class Search {
 	}
 
 	updateURL() {
-
 		history.pushState({id:'search'}, 'search', `${document.location.origin}/search/?s=${encodeURIComponent(this.term)}`);
+	}
+
+	updateTitle() {
+
+		document.querySelector('title').innerHTML = `Can I email&hellip; "${this.term}" search results`;
 	}
 }
 
