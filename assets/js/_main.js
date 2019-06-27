@@ -2,20 +2,21 @@ class Feature {
 
 	constructor() {
 
-		document.querySelectorAll('.data-summary-family').forEach(element => {
+		this.addEvent(document.querySelectorAll('.data-summary-family'));
+	}
+
+	addEvent(elements) {
+
+		elements.forEach(element => {
 			element.addEventListener('click', e => {
-				this.unselect();
+
+				const selected = e.currentTarget.parentNode.querySelector('.data-summary-family.selected');
+				if(selected != null) {
+					selected.classList.remove('selected');
+				}
 				e.currentTarget.classList.add('selected');
 			});
 		});
-	}
-
-	unselect() {
-
-		const selected = document.querySelector('.data-summary-family.selected');
-		if(selected != null) {
-			selected.classList.remove('selected');
-		}
 	}
 }
 
@@ -178,6 +179,8 @@ class Search {
 						featureContainer.querySelector('.data').innerHTML = div.querySelector('.data').innerHTML;
 						featureContainer.querySelector('.data-details').innerHTML = div.querySelector('.data-details').innerHTML;
 						featureContainer.querySelector('.feature-footer').innerHTML = div.querySelector('.feature-footer').innerHTML;
+
+						caniemail.feature.addEvent(featureContainer.querySelectorAll('.data .data-summary-family'));
 					}
 				})
 				.catch(error => {
@@ -195,11 +198,11 @@ class Search {
 class Caniemail {
 
 	constructor() {
-		const feature = new Feature();
-		const search = new Search();
+		this.feature = new Feature();
+		this.search = new Search();
 	}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	const caniemail = new Caniemail();
+	window['caniemail'] = new Caniemail();
 });
