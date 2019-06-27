@@ -5,6 +5,7 @@ layout: null
 	{% for feature in site.features %}
 		{
 			"title": "{{ feature.title | strip_newlines | remove_chars | escape }}",
+			"description": "{{feature.description | escape }}",
 			"url" : "{{ feature.url }}",
 			"keywords" : "{{ feature.keywords }}"
 		} {% unless forloop.last %},{% endunless %}

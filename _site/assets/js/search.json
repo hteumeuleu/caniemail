@@ -2,24 +2,28 @@
 	
 		{
 			"title": "&lt;picture&gt; element",
+			"description": "This is the description of the `&lt;picture&gt;` element.",
 			"url" : "/features/html-picture/",
 			"keywords" : "picture, responsive image"
 		} ,
 	
 		{
 			"title": "role attribute",
+			"description": "This is the description of the `role` attribute.",
 			"url" : "/features/html-role/",
 			"keywords" : ""
 		} ,
 	
 		{
 			"title": "srcset and sizes attributes",
+			"description": "This is the description of the `srcset` and `sizes` attributes.",
 			"url" : "/features/html-srcset/",
 			"keywords" : ""
 		} ,
 	
 		{
 			"title": "&lt;style&gt; element",
+			"description": "This is the description of the `&lt;style&gt;` element.",
 			"url" : "/features/html-style/",
 			"keywords" : ""
 		} 

@@ -204,6 +204,7 @@ class Search {
 				div.innerHTML = `<section class="feature feature--placeholder" data-url="${feature.url}">
 						<header class="feature-header">
 							<h1 class="feature-title"><a href="${feature.url}">${feature.title}<span class="feature-permalink" aria-hidden="true">#</span></a></h1>
+							<p>${feature.description}</p>
 						</header>
 						<div class="data">
 							<div class="data-summary">
