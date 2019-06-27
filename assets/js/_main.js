@@ -2,20 +2,51 @@ class Feature {
 
 	constructor() {
 
-		document.querySelectorAll('.data-summary-family').forEach(element => {
-			element.addEventListener('click', e => {
-				this.unselect();
-				e.currentTarget.classList.add('selected');
-			});
-		});
+		this.addEvent(document.querySelectorAll('.data-summary-family'));
 	}
 
-	unselect() {
+	addEvent(elements) {
 
-		const selected = document.querySelector('.data-summary-family.selected');
-		if(selected != null) {
-			selected.classList.remove('selected');
-		}
+		elements.forEach(element => {
+			element.addEventListener('click', e => {
+
+				e.preventDefault();
+
+				//summary family
+				let selected = e.currentTarget.parentNode.querySelector('.data-summary-family.selected');
+				if(selected != null) {
+					selected.classList.remove('selected');
+				}
+				e.currentTarget.classList.add('selected');
+
+				// family
+				e.currentTarget.closest('section').querySelectorAll('.data-details .data-family.selected').forEach(element => {
+					element.classList.remove('selected');
+				});
+
+				const family = e.currentTarget.getAttribute('data-family');
+				if(family != null) {
+					e.currentTarget.closest('section').querySelector(`.data-details [data-family=${family}]`).classList.add('selected');
+				}
+				else {
+					e.currentTarget.closest('section').querySelectorAll(`.data-details .data-family:not([data-family])`).forEach(element => {
+						element.classList.add('selected');
+					});
+				}
+
+				//scroll
+				const details = e.currentTarget.closest('section').querySelector('.data-details');
+				const families = details.querySelectorAll('.data-family');
+				let scrollLeft = 0;
+				for(let i=0; i<families.length; i++) {
+					if(families[i].classList.contains('selected')) {
+						break;
+					}
+					scrollLeft += families[i].scrollWidth;
+				}
+				details.scrollLeft = scrollLeft;
+			});
+		});
 	}
 }
 
@@ -197,6 +228,8 @@ class Search {
 						featureContainer.querySelector('.data').innerHTML = div.querySelector('.data').innerHTML;
 						featureContainer.querySelector('.data-details').innerHTML = div.querySelector('.data-details').innerHTML;
 						featureContainer.querySelector('.feature-footer').innerHTML = div.querySelector('.feature-footer').innerHTML;
+
+						caniemail.feature.addEvent(featureContainer.querySelectorAll('.data .data-summary-family'));
 					}
 				})
 				.catch(error => {
@@ -207,6 +240,7 @@ class Search {
 	}
 
 	updateURL() {
+
 		history.pushState({id:'search'}, 'search', `${document.location.origin}/search/?s=${this.term}`);
 	}
 }
@@ -214,11 +248,11 @@ class Search {
 class Caniemail {
 
 	constructor() {
-		const feature = new Feature();
-		const search = new Search();
+		this.feature = new Feature();
+		this.search = new Search();
 	}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	const caniemail = new Caniemail();
+	window['caniemail'] = new Caniemail();
 });
