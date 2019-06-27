@@ -102,7 +102,7 @@ a:focus {
 // Search box
 .caniemail-search {
 	margin-bottom: 1rem;
-	padding: .375em;
+	padding: 1rem;
 	color: #fff;
 	line-height: 1.5;
 	font-size: 2.5rem;
@@ -110,16 +110,33 @@ a:focus {
 	text-align: center;
 	background: #0a84ff;
 
+	@media only screen and (max-width: 50rem) {
+		font-size: 1.5rem;
+	}
+
+	@media only screen and (max-width: 22.5rem) {
+		font-size: 1rem;
+	}
+
 	label {
 		display: flex;
 		flex-direction: row;
-		max-width: 44rem;
+		align-items: center;
 		margin: 0 auto;
 		white-space: nowrap;
 
-		@media only screen and (max-width: 48rem) {
-			flex-wrap: wrap;
-			justify-content: center;
+		@media only screen and (min-width: 50.0625rem) {
+			span {
+				flex-basis: 50%;
+
+				&:first-child {
+					text-align: right;
+				}
+
+				&:last-child {
+					text-align: left;
+				}
+			}
 		}
 	}
 }
@@ -129,6 +146,7 @@ a:focus {
 	margin: 0 1rem;
 	width: 100%;
 	max-width: 32rem;
+	min-width: 0;
 	color: inherit;
 	font: inherit;
 	text-align: center;
@@ -145,17 +163,23 @@ a:focus {
 		background: rgba(255, 255, 255, 0.2);
 	}
 
-	@media only screen and (max-width: 48rem) {
+	&::-webkit-search-cancel-button {
+		margin-right: 1rem;
+	}
+
+	@media only screen and (max-width: 50rem) {
+		margin-right: 0;
 		order: 1;
+		min-height: 2.25rem;
 		background: rgba(255, 255, 255, 0.2);
 	}
 }
 
 .caniemail-search-empty {
-	margin-top: -1rem;
-	margin-bottom: 1rem;
-	padding-bottom: 1rem;
+	max-width: 32rem;
+	margin: 1rem auto 0;
 	color: #fff;
+	font-size: 1rem;
 	text-align: center;
 	background: #0a84ff;
 }
