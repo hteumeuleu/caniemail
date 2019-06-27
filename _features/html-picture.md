@@ -2,6 +2,7 @@
 title: "<picture> element"
 description: "This is the description of the `<picture>` element."
 category: html
+keywords: picture, responsive image
 last_test_date: "2019-05-29"
 test_url: "/tests/html-picture.html"
 stats: {
