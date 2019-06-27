@@ -175,9 +175,9 @@ class Search {
 					div.innerHTML = text;
 					if(featureContainer != null) {
 						featureContainer.classList.remove('loading');
-						featureContainer.querySelector('.data').appendChild(div.querySelector('.data'));
-						featureContainer.querySelector('.data-details').appendChild(div.querySelector('.data-details'));
-						featureContainer.querySelector('.feature-footer').appendChild(div.querySelector('.feature-footer'));
+						featureContainer.querySelector('.data').innerHTML = div.querySelector('.data').innerHTML;
+						featureContainer.querySelector('.data-details').innerHTML = div.querySelector('.data-details').innerHTML;
+						featureContainer.querySelector('.feature-footer').innerHTML = div.querySelector('.feature-footer').innerHTML;
 					}
 				})
 				.catch(error => {
