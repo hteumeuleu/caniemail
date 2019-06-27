@@ -29,8 +29,17 @@ class Search {
 		this.input = document.querySelector('.caniemail-search-input');
 
 		if(this.input != null) {
-			this.loadJSONFile();
+
+			this.input.addEventListener('focus', e => {
+				this.loadJSONFile();
+			});
+
 			this.input.addEventListener('input', e => {
+
+				if(!this.data) {
+					this.loadJSONFile();
+				}
+
 				this.term = e.currentTarget.value;
 				this.query();
 			});
@@ -39,23 +48,21 @@ class Search {
 
 	loadJSONFile() {
 
-		this.input.addEventListener('focus', e => {
-			if(!this.data) {
-				fetch('/assets/js/search.json')
-				.then(response => {
-					return response.json();
-				})
-				.then(json => {
-					this.data = json;
-					if(this.term) {
-						this.query();
-					}
-				})
-				.catch(error => {
-					console.log(error);
-				});
-			}
-		});
+		if(!this.data) {
+			fetch('/assets/js/search.json')
+			.then(response => {
+				return response.json();
+			})
+			.then(json => {
+				this.data = json;
+				if(this.term) {
+					this.query();
+				}
+			})
+			.catch(error => {
+				console.log(error);
+			});
+		}
 	}
 
 	query() {
@@ -163,7 +170,6 @@ class Search {
 					console.log(error);
 				});
 			}
-
 		});
 	}
 }
