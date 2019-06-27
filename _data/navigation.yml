@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: Features
+  link: /features/
+- name: News
+  link: /news/

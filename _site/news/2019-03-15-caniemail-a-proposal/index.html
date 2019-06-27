@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Can I email… Can I email: a proposal</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+	<script src="/assets/js/caniemail.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="prefetch" href="/assets/js/search.json" />
+</head>
+<body>
+	<div class="caniemail">
+		<header class="caniemail-header" role="banner">
+	<div class="caniemail-tabs">
+	<nav class="caniemail-nav" role="navigation">
+	
+		<a href="/" >Home</a>
+	
+		<a href="/features/" >Features</a>
+	
+		<a href="/news/" >News</a>
+	
+</nav>
+	
+<div class="caniemail-latest-post">
+	<span class="caniemail-latest-post-date">March 15, 2019</span>
+	<a href="/news/2019-03-15-caniemail-a-proposal/" class="caniemail-latest-post-title">
+		Can I email: a proposal
+	</a>
+</div>
+
+	</div>
+	<div class="caniemail-search" role="search">
+	<form action="/search/" method="get">
+		<label for="caniemail-search">
+			<span class="caniemail-search-text">Can I email</span>
+			<span class="caniemail-search-input-container"><input type="search" class="caniemail-search-input" id="caniemail-search" name="s" value=""  /></span>
+			<span class="caniemail-search-text">?</span>
+		</label>
+	</form>
+</div>
+</header>
+		<main class="main" role="main">
+			<div class="post">
+	<div class="post-inside">
+		<p class="post-date">March 15, 2019</p>
+		<h1 class="post-title">Can I email: a proposal</h1>
+		<h1 id="pre-existing-ressources">Pre-existing ressources</h1>
+<p><a href="https://www.caniuse.com">Caniuse.com</a> is a widely popular site for web developers providing “<em>Browser support tables for modern web technologies</em>”. The site is great for web developers to quickly know whether a web feature has good support or not. But it also helps providing a good picture of disparities between browsers, and how this evolves through time with new browsers versions. The website turned <a href="https://twitter.com/Fyrd/status/1080495727233646592">10 years old</a> this year.</p>
+
+<p>Similar ressources also exists in emails. The most popular is <a href="https://www.campaignmonitor.com/css/">Campaign Monitor’s CSS Guide</a>. The guide has been very popular among email developers. But while it’s a precious and valuable ressource, I see a few problems.</p>
+
+<ol>
+  <li>It’s <em>not often updated</em>. Last update dates from november 2017. Previously, the guide didn’t receive any update for as long as three years (between may 2014 and september 2017). With time, this diminishes the faith you can have in the values presented.</li>
+  <li>There is <em>no way to contribute</em>, whether it’s to update an information, add new properties, new email clients or contest presented informations.</li>
+  <li><em>Testing methods are opaque</em>. There’s no way to reproduce a test in the same same conditions of the page to check if something has evolved.</li>
+  <li>The guide provides informations <em>only for CSS properties</em>. But questions regarding HTML or images format support are frequent for email developers.</li>
+  <li>This might fall into a personal preference, but I think the updated layout in 2017 <em>lacks clarity</em>. Email clients are listed through three columns by alphabetical orders. This results in older or less popular email clients always listed first (<em>AOL Desktop</em>, <em>Android 4.4.2 Mail</em>, <em>AOL Alto App</em>, …). The three categories used (<em>Desktop</em>, <em>Mobile</em>, <em>Webmail</em>) are also disputable in my opinion as webmails can fall in both other categories.</li>
+</ol>
+
+<p>Other guides exist. FreshInbox provides a <a href="http://freshinbox.com/resources/css.php">Kinetic Email CSS Support</a> page with a nicely presented table. I also just discovered <a href="https://www.caniuse.email/">Caniuse.email</a> when starting to redact this document. But the four first points listed above also apply.</p>
+
+<p>Some email clients provide official information regarding HTML and CSS support. For example, Gmail provides a <a href="https://developers.google.com/gmail/design/reference/supported_css">Supported CSS Properties &amp; Media Queries</a> page. Microsoft also has a <a href="https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2007/aa338201(v=office.12)">HTML and CSS Rendering Capabilities in Outlook 2007</a> page. But both are really incomplete and some of the informations are wrong. For example, Google states that Gmail supports the <code class="highlighter-rouge">columns</code> properties in CSS, which appears to be false through manual testing.</p>
+
+<h1 id="history-of-the-project">History of the project</h1>
+
+<p>I first became aware of the project after <a href="https://www.youtube.com/watch?v=xhUfiOSOk3g">watching a conference</a> by @M-J-Robbins where he announced his team at Rebel (then RebelMail) was working on a site similar to <code class="highlighter-rouge">caniuse.com</code> called <code class="highlighter-rouge">caniemail.com</code>. <a href="https://github.com/caniemail">A few repos and notes were created on Github</a>. And Rebel made a totally killer logo for the project.</p>
+
+<p><img src="/assets/images/posts/2019-03-15-logo.png" alt="caniemail logo by Rebel" /></p>
+
+<p>In 2017, Rebel didn’t renew the domain <code class="highlighter-rouge">caniemail.com</code>. So I bought it. I first offered to transfer it back to Rebel by contacting Mark on Slack, but it didn’t happen. So I started working on the project, mostly thinking and planning how things could or should be. I made <a href="https://www.caniemail.com/prototype-2017/">an HTML mockup</a> that I only shared about a year later on Slack during a casual conversation.</p>
+
+<p>I always thought that I could free some time to work more on this. Or that I could use time at my company to work on this. But this never happened. So this is why I’m opening this up today in hope we can get something done.</p>
+
+<h1 id="the-proposal">The proposal</h1>
+<p>Caniemail.com should address the problems mentionned above. Thus the project should be:</p>
+
+<ol>
+  <li><em>Often updated</em>. That is, as often as email clients evolve. And for this, I mainly count on the second point.</li>
+  <li><em>Opened to contributions</em>. This includes any aspects of the website. But especially any data published on it. Contributors must be able to update existing data and add new data. Github seems like a good platform to on for this, with Pull Requests, issues, and other easy ways to contribute.</li>
+  <li><em>Transparent on testing</em>. Any data published should be so with its confirming test. This makes it easy for anyone to rerun the test at a later time, or to use the same test in new email clients.</li>
+  <li><em>Clear</em>. Sure, every site aims this. But this means the user interface of the website should provide useful informations at a glance, as well as providing full details if needed.</li>
+</ol>
+
+<p>Here’s a quick UI prototype I had in mind. This can be found on the branch <code class="highlighter-rouge">prototype</code> or online at <a href="https://www.caniemail.com/prototype/">https://www.caniemail.com/prototype/</a>.</p>
+
+<p><a href="https://www.caniemail.com/prototype/"><img src="/assets/images/posts/2019-03-15-prototype.png" alt="Screenshot of a prototype" /></a></p>
+
+<p>The main idea is to regroup email clients through their “family” names, and show only the few most popular first. (I think Outlook, Gmail and Apple Mail are obvious candidates. But maybe Yahoo should be featured there.)</p>
+
+<p>In the following days, I will start issues to start the conversation on the following subjects:</p>
+
+<ul>
+  <li>Data structure</li>
+  <li>User interface</li>
+  <li>Encouraging participation</li>
+  <li>Testing</li>
+</ul>
+
+<p>Rémi<br />
+@HTeuMeuLeu</p>
+
+	</div>
+</div>
+		</main>
+		<footer class="caniemail-footer" role="contentinfo">
+	<h1 class="caniemail-footer-title">Can I email…</h1>
+	<p>
+		Based on the original <a href="https://www.caniuse.com">caniuse.com</a> by <a href="https:/www.twitter.com/Fyrd">@Fyrd</a>.<br />
+		Original name and idea by <a href="https://www.twitter.com/M_J_Robbins">@M_J_Robbins</a> and the team at <a href="https://www.gorebel.com/">Rebel</a>.<br />
+		Launched by <a href="https://www.twitter.com/HTeuMeuLeu">@HTeuMeuLeu</a> and the team at <a href="https://www.tilt-studio.fr/">Tilt Studio</a>.
+	</p>
+</footer>
+	</div>
+</body>
+</html>

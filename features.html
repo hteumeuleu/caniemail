@@ -1,0 +1,14 @@
+---
+layout: default
+title: All HTML and CSS features on Can I email…
+---
+{% assign features-by-category = site.features | group_by:"category" %}
+{% for category in features-by-category %}
+	<h1 class="caniemail-list-title">{{ site.data.nicenames.category[category.name] | default: category.name }}</h1>
+	<ul class="caniemail-list">
+		{% assign features = category.items %}
+		{% for feature in features %}
+			<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+		{% endfor %}
+	</ul>
+{% endfor %}

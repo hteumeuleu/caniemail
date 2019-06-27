@@ -1,0 +1,27 @@
+[
+	
+		{
+			"title": "&lt;picture&gt; element",
+			"url" : "/features/html-picture/",
+			"keywords" : "picture, responsive image"
+		} ,
+	
+		{
+			"title": "role attribute",
+			"url" : "/features/html-role/",
+			"keywords" : ""
+		} ,
+	
+		{
+			"title": "srcset and sizes attributes",
+			"url" : "/features/html-srcset/",
+			"keywords" : ""
+		} ,
+	
+		{
+			"title": "&lt;style&gt; element",
+			"url" : "/features/html-style/",
+			"keywords" : ""
+		} 
+	
+]

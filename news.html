@@ -1,0 +1,10 @@
+---
+layout: default
+title: Latest updates on Can I email…
+---
+<h1 class="caniemail-list-title">News</h1>
+<ul class="caniemail-list">
+	{% for post in site.posts %}
+	<li><a href="{{ post.url }}">{{ post.title | escape_once }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
+	{% endfor %}
+</ul>

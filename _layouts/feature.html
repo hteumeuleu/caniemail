@@ -1,0 +1,254 @@
+---
+layout: default
+---
+{% comment %}
+	Most popular families.
+	Building an array of the current page/feature familiers ordered by popularity.
+{% endcomment %}
+{% assign page-most-popular-families = "" | split: '' %}
+{% comment %}
+	1. We go through the `most-popular-families` variable defined in `data.settings`.
+	If the current page/feature has data for this feature, we had it to the array.
+{% endcomment %}
+{% for default in site.data.settings.most-popular-families %}
+	{% assign family-key = default %}
+	{% if page.stats[default].size > 0  %}
+		{% assign page-most-popular-families = page-most-popular-families | push: family-key %}
+	{% endif %}
+{% endfor %}
+{% comment %}
+	2. We go through the page/feature `stats` and add all the keys.
+{% endcomment %}
+{% assign page-stats-keys = "" | split: '' %}
+{% for default in page.stats %}
+	{% assign family-key = default | first %}
+	{% assign page-stats-keys = page-stats-keys | push: family-key %}
+{% endfor %}
+{% comment %}
+	3. Previous step might introduce duplicate. So we `concat` the two previous arrays built and use the `uniq` filter to remove duplicates.
+{% endcomment %}
+{% assign page-most-popular-families = page-most-popular-families | concat: page-stats-keys | uniq %}
+<section class="feature">
+	<header class="feature-header">
+		<h1 class="feature-title">{{ page.title | escape_once }}</h1>
+		{{ page.description | markdownify }}
+	</header>
+	<div class="data">
+		{% comment %}
+			Data summary.
+			Showing at most three email client families with a summary/average cell for the whole family.
+		{% endcomment %}
+		<div class="data-summary">
+			<ul class="data-summary-panel">
+			{% comment %}
+				1. Going through the three first email client families.
+			{% endcomment %}
+			{% for default in page-most-popular-families limit:3 %}
+				{% assign family-key = default %}
+				{% assign family-values = page.stats[default] %}
+				{% assign family-average-support = '' %}
+				<li class="data-summary-family" data-family="{{family-key}}">
+					<h2 class="data-summary-family-title"><a href="#data-{{ page.title | slugify }}-{{ family-key }}">{{ site.data.nicenames.family[family-key] | default: family-key }}</a></h2>
+					{% for platform in family-values %}
+						{% assign platform-key = platform | first %}
+						{% assign platform-values = platform | last %}
+						{% for version in platform-values %}
+							{% if forloop.last == true %}
+								{% assign version-key = version | first %}
+								{% assign version-values = version | last | split: ' ' | first %}
+								{% comment %}
+									2. Assign highest support value possible.
+									If it's a mix of anything, result should be 'a'.
+									'y' and 'n' are only possible when all versions have the same support.
+								{% endcomment %}
+								{% if family-average-support == '' %}
+									{% assign family-average-support = version-values %}
+								{% elsif family-average-support == 'u' and version-values != 'u' %}
+									{% assign family-average-support = version-values %}
+								{% elsif family-average-support == 'y' and version-values != 'y' and version-values != 'u' %}
+									{% assign family-average-support = 'a' %}
+									{% break %}
+								{% elsif family-average-support == 'n' and version-values != 'n' and version-values != 'u' %}
+									{% assign family-average-support = 'a' %}
+									{% break %}
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+					{% case family-average-support %}
+						{% when 'y' %}
+							{% assign family-average-support-slug = 'supported' %}
+						{% when 'n' %}
+							{% assign family-average-support-slug = 'unsupported' %}
+						{% when 'a' %}
+							{% assign family-average-support-slug = 'mitigated' %}
+						{% when 'u' %}
+							{% assign family-average-support-slug = 'unknown' %}
+						{% else %}
+							{% assign family-average-support-slug = '' %}
+					{% endcase %}
+					<div class="data-summary-cell {{ family-average-support-slug }}">{{ site.data.nicenames.support[family-average-support-slug] | default: family-average-support-slug }}</div>
+				</li>
+			{% endfor %}
+			{% comment %}
+				3. If there are more than three families for the current page/feature,
+				we show a summary for the rest under an "Others" category.
+			{% endcomment %}
+			{% if page-most-popular-families.size > 3 %}
+				{% assign family-average-support = '' %}
+				{% for default in page-most-popular-families offset:3 %}
+					{% assign family-key = default %}
+					{% assign family-values = page.stats[default] %}
+					{% for platform in family-values %}
+						{% assign platform-key = platform | first %}
+						{% assign platform-values = platform | last %}
+						{% for version in platform-values %}
+							{% assign version-key = version | first %}
+							{% assign version-values = version | last | split: ' ' | first %}
+							{% if family-average-support == '' %}
+								{% assign family-average-support = version-values %}
+							{% elsif family-average-support == 'y' and version-values != 'y' %}
+								{% assign family-average-support = 'a' %}
+								{% break %}
+							{% elsif family-average-support == 'n' and version-values != 'n' %}
+								{% assign family-average-support = 'a' %}
+								{% break %}
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+				{% case family-average-support %}
+					{% when 'y' %}
+						{% assign family-average-support-slug = 'supported' %}
+					{% when 'n' %}
+						{% assign family-average-support-slug = 'unsupported' %}
+					{% when 'a' %}
+						{% assign family-average-support-slug = 'mitigated' %}
+					{% when 'u' %}
+						{% assign family-average-support-slug = 'unknown' %}
+					{% else %}
+						{% assign family-average-support-slug = '' %}
+				{% endcase %}
+				<li class="data-summary-family">
+					<h2 class="data-summary-family-title">Others</h2>
+					<div class="data-summary-cell {{ family-average-support-slug }}">{{ site.data.nicenames.support[family-average-support-slug] | default: family-average-support-slug }}</div>
+				</li>
+			{% endif %}
+			</ul>
+		</div>
+	</div>
+	{% comment %}
+		Data details.
+		Showing the detailed support for each version of each client of each family.
+	{% endcomment %}
+	<div class="data-details">
+		<div class="data-family-list">
+			{% for family in page-most-popular-families %}
+				{% assign family-key = family %}
+				{% assign family-values = page.stats[family] %}
+			<div class="data-family" {% if forloop.index <= 3 %} data-family="{{family-key}}" {% endif %} id="data-{{ page.title | slugify }}-{{ family-key }}">
+				<h3 class="data-family-name">
+					<span>{{ site.data.nicenames.family[family-key] | default: family-key }}</span>
+				</h3>
+				<div class="data-client-list">
+					{% for platform in family-values %}
+						{% assign platform-key = platform | first %}
+						{% assign platform-values = platform | last %}
+						<div class="data-client">
+							<h4 class="data-platform-name">
+								{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
+							</h4>
+							<div class="data-versions-list">
+							{% for version in platform-values %}
+								{% assign version-key = version | first %}
+								{% assign version-values = version | last | split: ' ' | first %}
+								{% assign version-notes = version | last | split: ' ' | shift %}
+								{% case version-values %}
+									{% when 'y' %}
+										{% assign stat-class-name = 'supported' %}
+									{% when 'n' %}
+										{% assign stat-class-name = 'unsupported' %}
+									{% when 'a' %}
+										{% assign stat-class-name = 'mitigated' %}
+									{% when 'u' %}
+										{% assign stat-class-name = 'unknown' %}
+									{% else %}
+										{% assign stat-class-name = '' %}
+								{% endcase %}
+								<div class="data-version {{ stat-class-name }}">
+									{{ version-key }}
+									{% if version-notes.size > 0  %}
+										<div class="data-version-notes">
+										{% for note-key in version-notes %}
+											{% assign note-key-slug = note-key | slugify %}
+											<a href="#{{ page.title | slugify }}-cite-note-{{ note-key-slug }}" title="{{ page.notes_by_num[note-key-slug] }}">{{ note-key }}</a>
+										{% endfor %}
+										</div>
+									{% endif %}
+								</div>
+							{% endfor %}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<footer class="feature-footer">
+		{% if page.notes_by_num.size > 0 %}
+		<div class="data-notes">
+			<h2 class="caniemail-list-title">Notes</h2>
+			{{ page.notes | markdownify }}
+			<ul class="data-notes-list">
+			{% for note in page.notes_by_num %}
+				{% assign note-key = note | first %}
+				{% assign note-value = note | last %}
+				<li class="data-note" id="{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">
+					<span class="data-note-key">{{ note-key }}</span> {{ note-value | escape_once | markdownify }}
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+		{% endif %}
+		<div class="data-contribute">
+			<h2 class="caniemail-list-title">Know something we don't?</h2>
+			<p>
+				Is any of the above data outdated? Or do you want to add a new email client to the list? Heads on to GitHub and edit the data file!
+			</p>
+			<p class="data-contribute-buttons">
+				<a href="{% github_edit_link %}" class="feature-button">Edit this page on GitHub</a>
+				<a href="{{ site.github.issues_url }}" class="feature-button">Report an issue on GitHub</a>
+			</p>
+			<p>
+				Not comfortable with GitHub? <a href="mailto:feature@caniemail.com?subject=[caniemail]%20{{ page.id | uri_escape }}">Send us an email</a> or <a href="https://www.twitter.com/caniemail">get in touch on Twitter</a>.
+			</p>
+		</div>
+		<div class="data-test">
+			<h2 class="caniemail-list-title">Test it yourself</h2>
+			{% if page.last_test_date != nil and page.last_test_date != "" %}
+			<p>
+				This feature was last tested on <b>{{ page.last_test_date | date: '%B %d, %Y' }}</b>.
+			</p>
+			{% endif %}
+			<p>
+				If you want to test this feature in the same conditions as we did, you can get our test code and run a test by yourself. Make sure to follow our <a href="https://github.com/hteumeuleu/caniemail/blob/gh-pages/contributing.md">testing recommendations</a> first.
+			</p>
+			<p>
+				<a href="{{ page.test_url }}" class="feature-button">View the test code</a>
+				{% if page.test_results_url != nil  %}
+					{% assign test-results-url-provider = "" %}
+					{% if page.test_results_url contains "emailonacid.com"  %}
+						{% assign test-results-url-provider = "Email on Acid" %}
+					{% elsif page.test_results_url contains "litmus.com" %}
+						{% assign test-results-url-provider = "Litmus" %}
+					{% endif %}
+					{% if test-results-url-provider != "" %}
+						{% assign test-results-url-provider = test-results-url-provider | prepend: " on " %}
+					{% endif %}
+					<a href="{{ page.test_results_url }}" class="feature-button">View test results{{test-results-url-provider}}</a>
+				{% endif %}
+			</p>
+		</div>
+	</footer>
+</section>

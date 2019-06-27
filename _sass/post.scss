@@ -1,0 +1,53 @@
+.post {
+	padding: 2rem 1rem;
+	border: 1px solid #3c3c3d;
+	background: #2a2a2e;
+}
+
+.post-inside {
+	max-width: 44rem;
+	margin: 0 auto;
+}
+
+.post-date {
+	color: #fff;
+}
+
+.post-title {
+	border-left: 3px solid #fff;
+	padding-left: 1rem;
+	margin-left: -1rem;
+}
+
+.post {
+	.post-inside > *:not(:last-child) {
+		margin-bottom: 1.5rem;
+	}
+
+	a {
+		color: inherit;
+	}
+
+	h1 {
+		color: #fff;
+	}
+
+	ul,
+	ol {
+		margin-left: 3rem;
+	}
+
+	li:not(:last-child) {
+		margin-bottom: 0.75rem;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	p > code {
+		font-size: 1.25em;
+	}
+}

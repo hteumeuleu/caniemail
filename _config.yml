@@ -1,0 +1,24 @@
+collections:
+  posts:
+    output: true
+    permalink: /news/:year-:month-:day-:title/
+  features:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: "feature"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+permalink: /:title/
