@@ -21,19 +21,25 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .caniemail-latest-post-title:hover { color: #0a84ff; }
 .caniemail-latest-post-title::before { content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
 
-.caniemail-search { margin-bottom: 1rem; padding: 1rem; color: #fff; line-height: 1.5; font-size: 2.5rem; font-weight: 300; text-align: center; background: #0a84ff; }
+.caniemail-search { position: relative; margin-bottom: 1rem; padding: 1rem; color: #fff; line-height: 1.5; font-size: 2.5rem; font-weight: 300; text-align: center; background: #0a84ff; }
 @media only screen and (max-width: 50rem) { .caniemail-search { font-size: 1.5rem; } }
 @media only screen and (max-width: 22.5rem) { .caniemail-search { font-size: 1rem; } }
 .caniemail-search label { display: flex; flex-direction: row; align-items: center; margin: 0 auto; white-space: nowrap; }
-@media only screen and (min-width: 50.0625rem) { .caniemail-search label span { flex-basis: 50%; }
-  .caniemail-search label span:first-child { text-align: right; }
-  .caniemail-search label span:last-child { text-align: left; } }
 
-.caniemail-search-input { flex-shrink: 1; margin: 0 1rem; width: 100%; max-width: 32rem; min-width: 0; color: inherit; font: inherit; text-align: center; background: none; border: none; -webkit-appearance: none; appearance: none; border-bottom: 1px solid #fff; border-radius: 0; outline: none; }
+@media only screen and (min-width: 50.0625rem) { .caniemail-search-text { flex-basis: 50%; }
+  .caniemail-search-text:first-child { text-align: right; }
+  .caniemail-search-text:last-child { text-align: left; } }
+.caniemail-search-input-container { position: relative; flex-shrink: 1; margin: 0 1rem; width: 100%; max-width: 32rem; }
+
+.caniemail-search-input { width: 100%; min-width: 0; color: inherit; font: inherit; text-align: center; background: none; border: none; -webkit-appearance: none; appearance: none; border-bottom: 1px solid #fff; border-radius: 0; outline: none; }
 .caniemail-search-input:active, .caniemail-search-input:focus { background: rgba(255, 255, 255, 0.2); }
 .caniemail-search-input::-webkit-search-cancel-button { margin-right: 1rem; }
 @media only screen and (max-width: 50rem) { .caniemail-search-input { margin-right: 0; order: 1; min-height: 2.25rem; background: rgba(255, 255, 255, 0.2); } }
 
+.caniemail-search--loading .caniemail-search-input-container::before { content: '@'; display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; position: absolute; right: 1rem; top: 50%; margin-top: -1rem; font-size: 1rem; border-radius: 50%; background: rgba(255, 255, 255, 0.2); animation: spin linear 1s infinite; }
+
+@keyframes spin { from { transform: rotate(0); }
+  to { transform: rotate(1turn); } }
 .caniemail-search-empty { max-width: 32rem; margin: 1rem auto 0; color: #fff; font-size: 1rem; text-align: center; background: #0a84ff; }
 
 .caniemail-list-title { display: inline-block; padding: 0.5em 0; margin-bottom: 0.5em; font-size: 1.375rem; font-weight: 300; border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
@@ -153,9 +159,13 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 
 .data-contribute-buttons { margin-top: -0.75rem; }
 
+.caniemail-search-results ~ * { display: none; }
 .caniemail-search-results .feature { margin-bottom: 2rem; }
+.caniemail-search-results .feature .data-contribute, .caniemail-search-results .feature .data-test { display: none; }
+.caniemail-search-results .feature .feature-footer > .data-notes { border-bottom: none; }
 
 .feature--placeholder .data { min-height: 10.5rem; }
+.feature--placeholder .data-summary-cell { margin-top: 3.375rem; opacity: 0.125; }
 .feature--placeholder .data-details { min-height: 3rem; }
 .feature--placeholder .feature-footer { min-height: 3rem; }
 

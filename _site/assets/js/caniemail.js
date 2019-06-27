@@ -27,6 +27,7 @@ class Search {
 		this.term = null;
 		this.results = null;
 		this.input = document.querySelector('.caniemail-search-input');
+		this.form = document.querySelector('.caniemail-search');
 
 		if(this.input != null) {
 
@@ -81,18 +82,18 @@ class Search {
 	query() {
 
 		if(!this.data) {
-			this.input.classList.add('caniemail-search-loading');
+			this.form.classList.add('caniemail-search--loading');
 		}
 
 		if(!this.term) {
-			this.input.classList.remove('caniemail-search-loading');
+			this.form.classList.remove('caniemail-search--loading');
 			this.removeEmptyMessage();
 			this.removeResultsContainer();
 		}
 
 		if(this.data && this.term) {
 			this.results = this.data.filter(feature => feature.title.toLowerCase().includes(this.term.toLowerCase()) || feature.keywords.includes(this.term.toLowerCase()));
-			this.input.classList.remove('caniemail-search-loading');
+			this.form.classList.remove('caniemail-search--loading');
 
 			if(this.results.length == 0) {
 				this.buildEmptyMessage();
@@ -157,7 +158,24 @@ class Search {
 						<header class="feature-header">
 							<h1 class="feature-title"><a href="${feature.url}">${feature.title}<span class="feature-permalink" aria-hidden="true">#</span></a></h1>
 						</header>
-						<div class="data"></div>
+						<div class="data">
+							<div class="data-summary">
+								<ul class="data-summary-panel">
+									<li class="data-summary-family">
+										<div class="data-summary-cell unknown"></div>
+									</li>
+									<li class="data-summary-family">
+										<div class="data-summary-cell unknown"></div>
+									</li>
+									<li class="data-summary-family">
+										<div class="data-summary-cell unknown"></div>
+									</li>
+									<li class="data-summary-family">
+										<div class="data-summary-cell unknown"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
 						<div class="data-details"></div>
 						<footer class="feature-footer"></footer>
 					</section>`;
@@ -174,6 +192,7 @@ class Search {
 					let div = document.createElement('div');
 					div.innerHTML = text;
 					if(featureContainer != null) {
+						featureContainer.classList.remove('feature--placeholder');
 						featureContainer.classList.remove('loading');
 						featureContainer.querySelector('.data').innerHTML = div.querySelector('.data').innerHTML;
 						featureContainer.querySelector('.data-details').innerHTML = div.querySelector('.data-details').innerHTML;

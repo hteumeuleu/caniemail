@@ -101,6 +101,7 @@ a:focus {
 
 // Search box
 .caniemail-search {
+	position: relative;
 	margin-bottom: 1rem;
 	padding: 1rem;
 	color: #fff;
@@ -124,28 +125,33 @@ a:focus {
 		align-items: center;
 		margin: 0 auto;
 		white-space: nowrap;
+	}
+}
 
-		@media only screen and (min-width: 50.0625rem) {
-			span {
-				flex-basis: 50%;
+@media only screen and (min-width: 50.0625rem) {
+	.caniemail-search-text {
+		flex-basis: 50%;
 
-				&:first-child {
-					text-align: right;
-				}
+		&:first-child {
+			text-align: right;
+		}
 
-				&:last-child {
-					text-align: left;
-				}
-			}
+		&:last-child {
+			text-align: left;
 		}
 	}
 }
 
-.caniemail-search-input {
+.caniemail-search-input-container {
+	position: relative;
 	flex-shrink: 1;
 	margin: 0 1rem;
 	width: 100%;
 	max-width: 32rem;
+}
+
+.caniemail-search-input {
+	width: 100%;
 	min-width: 0;
 	color: inherit;
 	font: inherit;
@@ -173,6 +179,30 @@ a:focus {
 		min-height: 2.25rem;
 		background: rgba(255, 255, 255, 0.2);
 	}
+}
+
+.caniemail-search--loading .caniemail-search-input-container {
+	&::before {
+		content: '@';
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 2rem;
+		height: 2rem;
+		position: absolute;
+		right: 1rem;
+		top: 50%;
+		margin-top: -1rem;
+		font-size: 1rem;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.2);
+		animation: spin linear 1s infinite;
+	}
+}
+
+@keyframes spin {
+	from { transform: rotate(0); }
+	to { transform: rotate(1turn); }
 }
 
 .caniemail-search-empty {

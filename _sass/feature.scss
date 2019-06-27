@@ -485,13 +485,33 @@
 //
 // Feature in search results
 //
-.caniemail-search-results .feature {
-	margin-bottom: 2rem;
+.caniemail-search-results {
+	& ~ * {
+		display: none;
+	}
+
+	.feature {
+		margin-bottom: 2rem;
+
+		.data-contribute,
+		.data-test {
+			display: none;
+		}
+
+		.feature-footer > .data-notes {
+			border-bottom: none;
+		}
+	}
 }
 
 .feature--placeholder {
 	.data {
 		min-height: 10.5rem;
+	}
+
+	.data-summary-cell {
+		margin-top: 3.375rem;
+		opacity: 0.125;
 	}
 
 	.data-details {
