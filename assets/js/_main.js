@@ -91,7 +91,7 @@ class Search {
 		}
 
 		if(this.data && this.term) {
-			this.results = this.data.filter(feature => feature.title.includes(this.term) || feature.keywords.includes(this.term));
+			this.results = this.data.filter(feature => feature.title.toLowerCase().includes(this.term.toLowerCase()) || feature.keywords.includes(this.term.toLowerCase()));
 			this.input.classList.remove('caniemail-search-loading');
 
 			if(this.results.length == 0) {
