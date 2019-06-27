@@ -10,11 +10,29 @@ class Feature {
 		elements.forEach(element => {
 			element.addEventListener('click', e => {
 
-				const selected = e.currentTarget.parentNode.querySelector('.data-summary-family.selected');
+				e.preventDefault();
+
+				//summary family
+				let selected = e.currentTarget.parentNode.querySelector('.data-summary-family.selected');
 				if(selected != null) {
 					selected.classList.remove('selected');
 				}
 				e.currentTarget.classList.add('selected');
+
+				// family
+				e.currentTarget.closest('section').querySelectorAll('.data-details .data-family.selected').forEach(element => {
+					element.classList.remove('selected');
+				});
+
+				const family = e.currentTarget.getAttribute('data-family');
+				if(family != null) {
+					e.currentTarget.closest('section').querySelector(`.data-details [data-family=${family}]`).classList.add('selected');
+				}
+				else {
+					e.currentTarget.closest('section').querySelectorAll(`.data-details .data-family:not([data-family])`).forEach(element => {
+						element.classList.add('selected');
+					});
+				}
 			});
 		});
 	}
@@ -191,6 +209,7 @@ class Search {
 	}
 
 	updateURL() {
+
 		history.pushState({id:'search'}, 'search', `${document.location.origin}/search/?s=${this.term}`);
 	}
 }

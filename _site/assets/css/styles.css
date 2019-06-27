@@ -97,7 +97,7 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 
 .data-family { position: relative; display: flex; flex-direction: column; flex-grow: 1; padding: 2rem 0.25rem; border-right: 1px solid #454548; }
 .data-family:nth-child(2n) { background-color: rgba(255, 255, 255, 0.0125); }
-.data-family:target::before { content: ''; display: block; position: absolute; left: 0; right: 0; top: 1rem; bottom: 1.5rem; border: 1px solid #fff; background: rgba(255, 255, 255, 0.025); }
+.data-family.selected::before { content: ''; display: block; position: absolute; left: 0; right: 0; top: 1rem; bottom: 1.5rem; border: 1px solid #fff; background: rgba(255, 255, 255, 0.025); }
 
 .data-family-name { display: flex; justify-content: center; align-items: center; margin: 0 0.25rem; padding: 0 1rem; color: rgba(255, 255, 255, 0.85); font-size: 1rem; min-height: 3rem; text-align: center; }
 .data-family-name span { position: sticky; left: 0.5rem; right: 0.5rem; }
