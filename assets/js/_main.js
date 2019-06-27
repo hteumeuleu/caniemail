@@ -123,7 +123,22 @@ class Search {
 		}
 
 		if(this.data && this.term) {
-			this.results = this.data.filter(feature => feature.title.toLowerCase().includes(this.term.toLowerCase()) || feature.keywords.includes(this.term.toLowerCase()));
+
+			this.results = [];
+			if(this.term.includes('+')) {
+
+				let terms = this.term.split('+');
+				terms.forEach(item => {
+					if(item != '') {
+						let itemResults = this.data.filter(feature => this.results.filter(result => result.title == feature.title).length == 0 && (feature.title.toLowerCase().includes(item.toLowerCase()) || feature.keywords.includes(item.toLowerCase())));
+						this.results = [...this.results, ...itemResults];
+					}
+				});
+			}
+			else {
+				this.results = this.data.filter(feature => feature.title.toLowerCase().includes(this.term.toLowerCase()) || feature.keywords.includes(this.term.toLowerCase()));
+			}
+
 			this.form.classList.remove('caniemail-search--loading');
 
 			if(this.results.length == 0) {
@@ -241,7 +256,7 @@ class Search {
 
 	updateURL() {
 
-		history.pushState({id:'search'}, 'search', `${document.location.origin}/search/?s=${this.term}`);
+		history.pushState({id:'search'}, 'search', `${document.location.origin}/search/?s=${encodeURIComponent(this.term)}`);
 	}
 }
 
