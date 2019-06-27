@@ -29,33 +29,53 @@ class Search {
 		this.input = document.querySelector('.caniemail-search-input');
 
 		if(this.input != null) {
-			this.loadJSONFile();
-			this.input.addEventListener('keyup', e => {
+
+			this.input.addEventListener('focus', e => {
+				this.loadJSONFile();
+			});
+
+			this.input.addEventListener('input', e => {
+
+				if(!this.data) {
+					this.loadJSONFile();
+				}
+
 				this.term = e.currentTarget.value;
 				this.query();
 			});
+
+			const url = new URL(document.location.href);
+			if(url.searchParams.get('s') != null) {
+
+				if(!this.data) {
+					this.loadJSONFile();
+				}
+				this.input.value = url.searchParams.get('s');
+				this.term = url.searchParams.get('s');
+				this.query();
+			}
+
+
 		}
 	}
 
 	loadJSONFile() {
 
-		this.input.addEventListener('focus', e => {
-			if(!this.data) {
-				fetch('/assets/js/search.json')
-				.then(response => {
-					return response.json();
-				})
-				.then(json => {
-					this.data = json;
-					if(this.term) {
-						this.query();
-					}
-				})
-				.catch(error => {
-					console.log(error);
-				});
-			}
-		});
+		if(!this.data) {
+			fetch('/assets/js/search.json')
+			.then(response => {
+				return response.json();
+			})
+			.then(json => {
+				this.data = json;
+				if(this.term) {
+					this.query();
+				}
+			})
+			.catch(error => {
+				console.log(error);
+			});
+		}
 	}
 
 	query() {
@@ -82,6 +102,7 @@ class Search {
 				this.removeEmptyMessage();
 				this.buildResultsContainer();
 				this.buildResults();
+				this.updateURL();
 			}
 		}
 	}
@@ -163,8 +184,11 @@ class Search {
 					console.log(error);
 				});
 			}
-
 		});
+	}
+
+	updateURL() {
+		history.pushState({id:'search'}, 'search', `${document.location.origin}/search/?s=${this.term}`);
 	}
 }
 
