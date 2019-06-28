@@ -94,10 +94,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-    "1": "<picture> and <source> tags are replaced by <u> tags.",
-    "2": "Partial. Slash syntax values are not supported.",
-    "3": "Partial. Values containing background images are not supported.",
-    "4": "Buggy. For slash syntax values, it removes the slash character, making the value invalid.",
-    "5": "Partial. Seems to only support background colors."
+    "1": "<picture> and <source> tags are replaced by <u> tags."
 }
 ---
