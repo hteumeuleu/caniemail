@@ -4,7 +4,9 @@ body { padding: 0 1em; min-width: 17.5rem; min-height: 100vh; font: 1em/1.5 -app
 
 a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset: 0.25rem; }
 
-.caniemail { width: 100%; max-width: 80rem; margin: 0 auto; }
+.caniemail { display: flex; flex-direction: column; min-height: 100vh; width: 100%; max-width: 80rem; margin: 0 auto; }
+
+.caniemail-main { flex: 1 0 auto; }
 
 .caniemail-tabs { display: flex; flex-direction: row; margin-bottom: 5rem; }
 
@@ -55,6 +57,8 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .caniemail-footer p:not(:last-child) { margin-bottom: 0.75rem; }
 
 .caniemail-footer-title { margin-bottom: 0.75rem; color: #fff; font-size: 1em; font-weight: 300; }
+
+.beta { margin-top: 2rem; padding: 1rem; color: #1b1b1d; background: #fbd91b; }
 
 .feature { position: relative; padding: 1rem 2rem 0; border: 1px solid #3c3c3d; }
 
