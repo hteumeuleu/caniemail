@@ -84,7 +84,6 @@ class Search {
 				}
 				this.input.value = url.searchParams.get('s');
 				this.term = url.searchParams.get('s');
-				this.updateTitle();
 				this.query();
 			}
 
