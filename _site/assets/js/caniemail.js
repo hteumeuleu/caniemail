@@ -49,7 +49,6 @@ class Feature {
 		});
 	}
 }
-
 class Search {
 
 	constructor() {
@@ -94,7 +93,7 @@ class Search {
 	loadJSONFile() {
 
 		if(!this.data) {
-			fetch('/assets/js/search.json')
+			fetch('/assets/js/features.json')
 			.then(response => {
 				return response.json();
 			})
