@@ -58,7 +58,7 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 
 .caniemail-footer-title { margin-bottom: 0.75rem; color: #fff; font-size: 1em; font-weight: 300; }
 
-.beta { margin-top: 2rem; padding: 1rem; color: #1b1b1d; background: #fbd91b; }
+.beta, .warning { margin-top: 2rem; padding: 1rem; color: #1b1b1d; background: #fbd91b; }
 
 .feature { position: relative; padding: 1rem 2rem 0; border: 1px solid #3c3c3d; }
 

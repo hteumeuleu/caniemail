@@ -1,6 +1,30 @@
 ---
 title: Search
-layout: post
+layout: default
 ---
-
-This is _Can I email_ search page. 
+<noscript>
+	<div class="warning">
+		This website was poorly built and requires JavaScript for the search to properly work. Bummer. But below you can find a dump of all the features available with their name and keywords.
+	</div>
+</noscript>
+<div class="post">
+	<div class="post-inside">
+		<h1 class="post-title">Search</h1>
+		This is the search page. Try using the search text box above. Or browse the following list of all the features available.
+	</div>
+</div>
+{% assign features-by-category = site.features | group_by:"category" %}
+{% for category in features-by-category %}
+	<h1 class="caniemail-list-title">{{ site.data.nicenames.category[category.name] | default: category.name }}</h1>
+	<ul class="caniemail-list">
+		{% assign features = category.items %}
+		{% for feature in features %}
+			<li>
+				<a href="{{ feature.url }}">{{ feature.title | escape_once }}</a>
+				{% if feature.keywords != nil and feature.keywords != "" %}
+				({{ feature.keywords | escape_once }})
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+{% endfor %}
