@@ -1,6 +1,13 @@
 [
 	
 		{
+			"title": "@font-face",
+			"description": "`@font-face` in CSS allows to include your own fonts inside an email.",
+			"url" : "/features/css-font-face/",
+			"keywords" : "font, web fonts, google fonts"
+		} ,
+	
+		{
 			"title": "&lt;picture&gt; element",
 			"description": "This is the description of the `&lt;picture&gt;` element.",
 			"url" : "/features/html-picture/",
