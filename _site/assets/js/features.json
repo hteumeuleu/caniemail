@@ -8,6 +8,13 @@
 		} ,
 	
 		{
+			"title": "@media (prefers-color-scheme)",
+			"description": "This media query allows to theme for system light and dark mode.",
+			"url" : "/features/css-media-prefers-color-scheme/",
+			"keywords" : "dark, light"
+		} ,
+	
+		{
 			"title": "&lt;picture&gt; element",
 			"description": "This is the description of the `&lt;picture&gt;` element.",
 			"url" : "/features/html-picture/",
