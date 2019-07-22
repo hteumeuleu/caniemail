@@ -3,9 +3,9 @@ title: "@font-face"
 description: "`@font-face` in CSS allows to include your own fonts inside an email."
 category: css
 keywords: font, web fonts, google fonts
-last_test_date: "2019-07-16"
+last_test_date: "2019-07-18"
 test_url: "/tests/css-font-face.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/XoD6nriiRqc6TfJTcKb6TmTLsmnMHku4jbVMekT165vUC/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/CJWdqiWQQ3ENhRI169UVE3ThdDmzIXfOrWmk6Hxw6eV9Q/list"
 stats: {
     apple-mail: {
         macos: {
@@ -40,12 +40,12 @@ stats: {
     },
     outlook: {
         windows: {
-            "2003":"y #3",
-            "2007":"n",
-            "2010":"n",
-            "2013":"n",
-            "2016":"n",
-            "2019":"n"
+            "2003":"a #3",
+            "2007":"a #4 #5",
+            "2010":"a #4 #5",
+            "2013":"a #4 #5",
+            "2016":"a #4 #5",
+            "2019":"a #4"
         },
         macos: {
             "2011":"y",
@@ -99,6 +99,8 @@ notes: "This is a global note."
 notes_by_num: {
     "1": "Only supported through a <link> tag.",
     "2": "Only supported directly through a <style> tag.",
-    "3": "Only supported in TTF format."
+    "3": "Support depends on the version of IE installed.",
+    "4": "The declaration is supported but distant fonts are ignored.",
+    "5": "Elements using a font declared with `@font-face` ignore the font stack and fall back to Times New Roman. Use `mso-generic-font-family` and `mso-font-alt` to control the fallback."
 }
 ---
