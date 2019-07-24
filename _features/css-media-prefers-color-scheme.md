@@ -9,23 +9,22 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/2MuLSkwqVCv82XAWYqjy
 stats: {
     apple-mail: {
         macos: {
-            "10.3":"u"
+            "10.3":"n"
         },
         ios: {
-            "10.3":"u",
-            "12.2":"u",
+            "12.2":"n",
 			"13.0 beta 3":"y"
         }
     },
     gmail: {
         desktop-webmail: {
-            "2019-05":"u"
+            "2019-07":"n"
         },
         ios: {
-            "2019-05":"u"
+            "2019-07":"n"
         },
         android: {
-            "2019-05":"u"
+            "2019-07":"n"
         }
     },
     orange: {
