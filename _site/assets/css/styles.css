@@ -121,7 +121,7 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .data-versions-list::before { content: ''; flex-grow: 1; background: rgba(255, 255, 255, 0.05); }
 .data-versions-list::after { content: ''; position: absolute; left: -0.5rem; right: -0.5rem; bottom: -0.5rem; height: 3rem; background: #111; }
 
-.data-version { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; flex-grow: 0; padding: 0 1rem; height: 2rem; color: #fff; }
+.data-version { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; flex-grow: 0; padding: 0 1rem; height: 2rem; color: #fff; overflow: hidden; white-space: nowrap; }
 .data-version:not(:first-child) { margin-top: 0.5rem; }
 .data-version:last-child { margin-top: 0.75rem; }
 .data-version::before { position: absolute; right: -0.25rem; top: -0.25rem; display: flex; align-items: center; justify-content: center; width: 1.25rem; height: 1.25rem; border-radius: 50%; font-size: 1rem; }
