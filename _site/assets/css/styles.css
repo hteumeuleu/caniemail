@@ -23,6 +23,8 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .caniemail-latest-post-title:hover { color: #0a84ff; }
 .caniemail-latest-post-title::before { content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
 
+.caniemail-block:not(:last-child) { margin-bottom: 2rem; }
+
 .caniemail-search { position: relative; margin-bottom: 1rem; padding: 1rem; color: #fff; line-height: 1.5; font-size: 2.5rem; font-weight: 300; text-align: center; background: #0a84ff; }
 @media only screen and (max-width: 50rem) { .caniemail-search { font-size: 1.5rem; } }
 @media only screen and (max-width: 22.5rem) { .caniemail-search { font-size: 1rem; } }
