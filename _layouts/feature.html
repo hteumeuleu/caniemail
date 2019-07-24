@@ -176,7 +176,7 @@ layout: default
 										{% assign stat-class-name = '' %}
 								{% endcase %}
 								<div class="data-version {{ stat-class-name }}">
-									{{ version-key }}
+									<span class="data-version-number">{{ version-key }}</span>
 									{% if version-notes.size > 0  %}
 										<div class="data-version-notes">
 										{% for note-key in version-notes %}

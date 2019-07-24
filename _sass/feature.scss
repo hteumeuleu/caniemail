@@ -285,8 +285,6 @@
 	padding: 0 1rem;
 	height: 2rem;
 	color: #fff;
-	overflow: hidden;
-	white-space: nowrap;
 
 	&:not(:first-child) {
 		margin-top: 0.5rem;
@@ -333,6 +331,13 @@
 	&.mitigated::before {
 		content: '~';
 	}
+}
+
+.data-version-number {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .data-version-notes {
