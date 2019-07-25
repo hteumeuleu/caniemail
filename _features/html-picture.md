@@ -5,6 +5,7 @@ category: html
 keywords: picture, responsive image
 last_test_date: "2019-05-29"
 test_url: "/tests/html-picture.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/AQoLHTLaC6F6JcMrkx38M7oyiJlAlXeRnJgkK06bSJiBR/list"
 stats: {
     apple-mail: {
         macos: {
