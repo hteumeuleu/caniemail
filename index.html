@@ -14,8 +14,9 @@ layout: default
 <div class="caniemail-block">
 	<h1 class="caniemail-list-title"><a href="/features/">Latest features</a></h1>
 	<ul class="caniemail-list">
-		{% for feature in site.features limit:5 %}
-		<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+		{% assign latest-features = site.features | sort:"last_test_date" | reverse %}
+		{% for feature in latest-features limit:5 %}
+		<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a>, {{ feature.last_test_date | date: '%B %d, %Y' }}</li>
 		{% endfor %}
 	</ul>
 	<a href="/features/" class="feature-button">View all features</a>
