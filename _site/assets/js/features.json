@@ -15,6 +15,13 @@
 		} ,
 	
 		{
+			"title": "HTML5 doctype",
+			"description": "This is the description of the test property.",
+			"url" : "/features/html-doctype/",
+			"keywords" : ""
+		} ,
+	
+		{
 			"title": "&lt;picture&gt; element",
 			"description": "This is the description of the `&lt;picture&gt;` element.",
 			"url" : "/features/html-picture/",
