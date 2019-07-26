@@ -1,0 +1,99 @@
+---
+title: "padding"
+description: "This test includes support for the `padding` shorthand property as well as for `padding-left`, `padding-right`, `padding-top` and `padding-bottom`."
+category: css
+last_test_date: "2019-07-25"
+test_url: "/tests/css-padding.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/bT9ZMtvO5cZkTTbfskZRDbdCOMlSpCTSVUd4lMkrGU68b/list"
+stats: {
+    apple-mail: {
+        macos: {
+            "10.3":"y"
+        },
+        ios: {
+            "10.3":"y",
+            "12.2":"y"
+        }
+    },
+    gmail: {
+        desktop-webmail: {
+            "2019-05":"y"
+        },
+        ios: {
+            "2019-05":"y"
+        },
+        android: {
+            "2019-05":"y"
+        }
+    },
+    orange: {
+        desktop-webmail: {
+            "2019-05":"y"
+        },
+        ios: {
+            "2019-05":"y"
+        },
+        android: {
+            "2019-05":"y"
+        }
+    },
+    outlook: {
+        windows: {
+            "2003":"y",
+            "2007":"a #1",
+            "2010":"a #1",
+            "2013":"a #1",
+            "2016":"a #1",
+            "2019":"a #1"
+        },
+        macos: {
+            "2011":"y",
+            "2016":"y"
+        },
+        outlook-com: {
+            "2019-05":"y"
+        },
+        ios: {
+            "2019-05":"y"
+        },
+        android: {
+            "2019-05":"y"
+        }
+    },
+    samsung-email: {
+        android: {
+            "6.0":"y"
+        }
+    },
+    sfr: {
+        desktop-webmail: {
+            "2019-05":"y"
+        },
+        ios: {
+            "2019-05":"y"
+        },
+        android: {
+            "2019-05":"y"
+        }
+    },
+    thunderbird: {
+        macos: {
+            "60.3":"y"
+        }
+    },
+    yahoo: {
+        desktop-webmail: {
+            "2019-05":"y"
+        },
+        ios: {
+            "2019-05":"y"
+        },
+        android: {
+            "2019-05":"y"
+        }
+    }
+}
+notes_by_num: {
+    "1": "Only supported on table cells."
+}
+---

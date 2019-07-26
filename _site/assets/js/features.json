@@ -15,6 +15,13 @@
 		} ,
 	
 		{
+			"title": "padding",
+			"description": "This test includes support for the `padding` shorthand property as well as for `padding-left`, `padding-right`, `padding-top` and `padding-bottom`.",
+			"url" : "/features/css-padding/",
+			"keywords" : ""
+		} ,
+	
+		{
 			"title": "HTML5 doctype",
 			"description": "This is the description of the test property.",
 			"url" : "/features/html-doctype/",
