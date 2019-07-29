@@ -43,6 +43,13 @@
 		} ,
 	
 		{
+			"title": "HTML5 semantics",
+			"description": "This includes support for `&lt;article&gt;`, `&lt;aside&gt;`, `&lt;details&gt;`, `&lt;figcaption&gt;`, `&lt;figure&gt;`, `&lt;footer&gt;`, `&lt;header&gt;`, `&lt;main&gt;`, `&lt;mark&gt;`, `&lt;nav&gt;`, `&lt;section&gt;`, `&lt;summary&gt;`, `&lt;time&gt;` elements.",
+			"url" : "/features/html-semantics/",
+			"keywords" : "<article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>"
+		} ,
+	
+		{
 			"title": "srcset and sizes attributes",
 			"description": "This is the description of the `srcset` and `sizes` attributes.",
 			"url" : "/features/html-srcset/",
