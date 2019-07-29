@@ -7,6 +7,7 @@ class Search {
 		this.results = null;
 		this.input = document.querySelector('.caniemail-search-input');
 		this.form = document.querySelector('.caniemail-search');
+		this.origin = document.location.href;
 
 		if(this.input != null) {
 
@@ -68,6 +69,7 @@ class Search {
 			this.form.classList.remove('caniemail-search--loading');
 			this.removeEmptyMessage();
 			this.removeResultsContainer();
+			history.pushState({id:'search'}, 'search', `${this.origin}`);
 		}
 
 		if(this.data && this.term) {

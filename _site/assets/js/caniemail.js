@@ -49,7 +49,6 @@ class Feature {
 		});
 	}
 }
-
 class Search {
 
 	constructor() {
@@ -122,7 +121,6 @@ class Search {
 			this.removeEmptyMessage();
 			this.removeResultsContainer();
 			history.pushState({id:'search'}, 'search', `${this.origin}`);
-			
 		}
 
 		if(this.data && this.term) {
