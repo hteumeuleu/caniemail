@@ -53,6 +53,7 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .caniemail-list > li { list-style-type: square; }
 .caniemail-list a { color: #fff; text-decoration: none; }
 .caniemail-list a:hover { color: #0a84ff; text-decoration: underline; }
+.caniemail-list code { font-size: 1.25em; line-height: 0.95; }
 
 .caniemail-footer { margin-top: 5rem; padding: 2rem 0; border-top: 2px solid rgba(255, 255, 255, 0.2); }
 .caniemail-footer a { color: inherit; }
@@ -192,4 +193,4 @@ a:active, a:focus { outline: 1px dotted rgba(255, 255, 255, 0.5); outline-offset
 .post ul, .post ol { margin-left: 3rem; }
 .post li:not(:last-child) { margin-bottom: 0.75rem; }
 .post img { display: block; max-width: 100%; height: auto; }
-.post p > code { font-size: 1.25em; }
+.post * > code { font-size: 1.25em; }

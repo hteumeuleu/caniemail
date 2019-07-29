@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Can I email… {{ page.title | escape_once }}</title>
+	<title>Can I email… {{ page.title | escape_once | markdownify | strip_html }}</title>
 	<link rel="stylesheet" href="/assets/css/styles.css" />
 	<script src="/assets/js/caniemail.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />

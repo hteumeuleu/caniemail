@@ -2,7 +2,7 @@
 <div class="caniemail-latest-post">
 	<span class="caniemail-latest-post-date">{{ post.date | date: '%B %d, %Y' }}</span>
 	<a href="{{ post.url }}" class="caniemail-latest-post-title">
-		{{ post.title | escape_once }}
+		{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}
 	</a>
 </div>
 {% endfor %}
