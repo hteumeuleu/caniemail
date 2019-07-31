@@ -2,7 +2,7 @@
 title: "@import"
 description: "This is the description of the `@import` property."
 category: css
-keywords: style
+keywords: css, style
 last_test_date: "2019-02-28"
 test_url: "/tests/css-placement.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/6vV9sx4RoRsdnkZBDjLWwSC18VcUQzJY00tlj2NVSxKKv/list"
@@ -24,19 +24,13 @@ stats: {
         },
         android: {
             "2019-02":  "n"
-        },
-        ios-ganga: {
-            "2019-02":  "n"
-        },
-        android-ganga: {
-            "2019-02":  "n"
         }
     },
     outlook: {
-         windows: {
+        windows: {
             "2019-02":  "y"
         },
-        windows-mail: {
+        windows-10-mail: {
             "2019-02":  "y"
         },
         macos: {
@@ -71,9 +65,9 @@ stats: {
             "2019-02":  "n"
         }
     },
-    samsung: {
+    samsung-email: {
         android: {
-            "2019-02":  "n"
+            "5.0.10.2":  "n"
         }
     }
 }
