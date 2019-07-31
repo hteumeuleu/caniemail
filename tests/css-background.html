@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<style type="text/css">
+.wrapper {
+  background: #6e6868; margin: 0 0 10px 0; border: 5px solid #ff008d;
+  padding: 10px; color: white; font-family: sans-serif; font-size: 25px;
+}
+
+.wrapper p {
+  font-size: 17px; font-family: monospace;
+}
+
+.wrapper h2 {
+  font-size: 20px;
+}
+
+.backgroundtest {
+  width: 200px; height: 200px; border:5px solid purple; color:#e9dbdb; word-break:break-all;
+}
+
+.shorthand {
+  background:orange url('http://fillmurray.com/100/100') center/cover no-repeat;
+}
+
+.longhand {
+  background-image:url('http://fillmurray.com/100/100');
+  background-color: orange;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shorthand-sized-positioned {
+  background:orange url('http://fillmurray.com/100/100') 20px 20px/75px 75px no-repeat;
+}
+
+.longhand-sized-positioned {
+  background-image:url('http://fillmurray.com/100/100');
+  background-color: orange;
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+}
+
+.shorthand-multiple {
+  background:
+  url('http://fillmurray.com/50/50') top right no-repeat,
+  url('http://fillmurray.com/50/100') bottom left no-repeat,
+  url('http://fillmurray.com/250/250') center center no-repeat,
+  red;
+}
+
+.longhand-multiple {
+  background-image:
+  url('http://fillmurray.com/50/50'),
+  url('http://fillmurray.com/50/100'),
+  url('http://fillmurray.com/250/250');
+  background-position: top right, bottom left, center center;
+  background-repeat: no-repeat,no-repeat,no-repeat;
+  background-color: red;
+}
+
+.shorthand-multiple-sized-positioned {
+  background:
+  url('http://fillmurray.com/50/50') 100% 100% / 100px 100px no-repeat,
+  url('http://fillmurray.com/50/100') right center no-repeat,
+  url('http://fillmurray.com/250/250') center center no-repeat,
+  red;
+}
+
+.longhand-multiple-sized-positioned {
+  background-image:
+  url('http://fillmurray.com/50/50'),
+  url('http://fillmurray.com/50/100'),
+  url('http://fillmurray.com/250/250');
+  background-position: 100% 100%, right center, center center;
+  background-size:100px 100px, auto, auto;
+  background-repeat: no-repeat,no-repeat,no-repeat;
+  background-color: red;
+}
+
+.background-clip{
+  border: 10px dotted purple;
+  padding: 15px;
+  background: orange;
+}
+
+.background-clip-border-box {
+  background-clip: border-box;
+}
+
+.background-clip-padding-box {
+  background-clip: padding-box;
+}
+
+.background-clip-content-box {
+  background-clip: content-box;
+}
+
+.background-origin{
+  border: 25px double purple;
+  padding: 15px;
+  background: url('http://fillmurray.com/50/50');
+  background-repeat: no-repeat;
+}
+
+.background-origin-border-box {
+  background-origin: border-box;
+}
+
+.background-origin-padding-box {
+  background-origin: padding-box;
+}
+
+.background-origin-content-box {
+  background-origin: content-box;
+}
+
+.background-blend-mode {
+  background-image: url('http://fillmurray.com/200/200'), url('http://fillmurray.com/55/55');
+  background-repeat: no-repeat, repeat;
+}
+.background-blend-lighten {
+  background-blend-mode: lighten;
+}
+.background-blend-color-dodge {
+  background-blend-mode: color-dodge;
+}
+.background-blend-luminosity {
+  background-blend-mode: luminosity;
+}
+.background-blend-screen {
+  background-blend-mode: screen;
+}
+.background-blend-color-burn {
+  background-blend-mode: color-burn;
+}
+.background-blend-color {
+  background-blend-mode: color;
+}
+
+.linear-gradient-2-transparent {
+  background-image: linear-gradient(to left, transparent, black);
+}
+
+.linear-gradient-2-color {
+  background-image: linear-gradient(black,orange);
+}
+
+.linear-gradient-3-color {
+  background-image: linear-gradient(to right, black,orange,purple);
+}
+
+.linear-gradient-4-color {
+  background-image: linear-gradient(to bottom right, black,orange,white,purple);
+}
+
+.radial-gradient-2-transparent {
+  background-image: radial-gradient(to left, transparent, black);
+}
+
+.radial-gradient-2-color {
+  background-image: radial-gradient(black,orange);
+}
+
+.radial-gradient-3-color {
+  background-image: radial-gradient(black,orange,purple);
+}
+
+.radial-gradient-4-color {
+  background-image: radial-gradient(black,orange,white,purple);
+}
+
+.radical-radial-1 {
+  background:
+  radial-gradient(
+    ellipse at center,
+    rgba(255,255,255,1) 31%,
+    rgba(255,255,255,1) 32%,
+    rgba(241,111,92,1) 32%,
+    rgba(246,41,12,1) 51%,
+    rgba(231,56,39,1) 100%);
+}
+
+.radical-radial-2 {
+  background:
+  radial-gradient(
+    ellipse at center,
+    rgba(226,226,226,1) 0%,
+    rgba(219,219,219,1) 50%,
+    rgba(209,209,209,1) 51%,
+    rgba(254,254,254,1) 51%,
+    rgba(254,254,254,1) 100%);
+  }
+
+</style>
+
+  </head>
+  <body>
+
+
+<div class="wrapper">
+  <h2>shorthand</h2>
+  <div class="backgroundtest shorthand"></div>
+    <p>background:orange url('http://fillmurray.com/100/100') center/cover no-repeat;</p>
+</div>
+
+<div class="wrapper">
+  <h2>longhand</h2>
+  <div class="backgroundtest longhand"></div>
+    <p>background-image:url('http://fillmurray.com/100/100');
+    background-color: orange;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;</p>
+</div>
+
+<div class="wrapper">
+  <h2>shorthand: sized + positioned</h2>
+  <div class="backgroundtest shorthand-sized-positioned"></div>
+    <p>background:orange url('http://fillmurray.com/100/100') 20px 20px/75px 75px no-repeat;</p>
+</div>
+
+<div class="wrapper">
+  <h2>longhand: sized + positioned</h2>
+  <div class="backgroundtest longhand-sized-positioned"></div>
+    <p>background-image:url('http://fillmurray.com/100/100');
+      background-color: orange;
+      background-position: 20px 20px;
+      background-repeat: no-repeat;
+      background-size: 75px 75px;</p>
+</div>
+
+<div class="wrapper">
+  <h2>shorthand multiple</h2>
+  <div class="backgroundtest shorthand-multiple"></div>
+    <p>background:
+    url('http://fillmurray.com/50/50') top right no-repeat,
+    url('http://fillmurray.com/50/100') bottom left no-repeat,
+    url('http://fillmurray.com/250/250') center center no-repeat,
+    red;</p>
+</div>
+
+<div class="wrapper">
+  <h2>longhand multiple</h2>
+  <div class="backgroundtest longhand-multiple"></div>
+    <p>background-image:
+    url('http://fillmurray.com/50/50'),
+    url('http://fillmurray.com/50/100'),
+    url('http://fillmurray.com/250/250');
+    background-position: top right, bottom left, center center;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-color: red;</p>
+</div>
+
+<div class="wrapper">
+  <h2>shorthand multiple: sized + positioned</h2>
+  <div class="backgroundtest shorthand-multiple-sized-positioned"></div>
+    <p>background:
+      url('http://fillmurray.com/50/50') 100% 100% / 100px 100px no-repeat,
+      url('http://fillmurray.com/50/100') right center no-repeat,
+      url('http://fillmurray.com/250/250') center center no-repeat,
+      red;</p>
+</div>
+
+<div class="wrapper">
+  <h2>longhand multiple: sized + positioned</h2>
+  <div class="backgroundtest longhand-multiple-sized-positioned"></div>
+    <p>background-image:
+    url('http://fillmurray.com/50/50'),
+    url('http://fillmurray.com/50/100'),
+    url('http://fillmurray.com/250/250');
+    background-position: 100% 100%, right center, center center;
+    background-size:100px 100px, auto, auto;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-color: red;</p>
+</div>
+
+<div class="wrapper">
+  <h2>background attribute on div</h2>
+  <div class="backgroundtest" background="http://fillmurray.com/50/50"></div>
+    <p>&lt;div class="backgroundtest" background="http://fillmurray.com/50/50"&gt;</p>
+</div>
+
+<div class="wrapper">
+  <h2>background attribute on &lt;div&gt; display:table</h2>
+  <div class="backgroundtest" style="display:table;" background="http://fillmurray.com/50/50"></div>
+    <p>&lt;div class="backgroundtest" style="display:table;" background="http://fillmurray.com/50/50"&gt;</p>
+</div>
+
+<div class="wrapper">
+  <h2>background attribute on &lt;table&gt; tag</h2>
+  <table class="backgroundtest" background="http://fillmurray.com/75/75"><tr><td></td></tr></table>
+    <p>&lt;table class="backgroundtest" background="http://fillmurray.com/75/75"&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</p>
+</div>
+
+<div class="wrapper">
+  <h2>background attribute on &lt;tr&gt; tag</h2>
+  <table class="backgroundtest"><tr background="http://fillmurray.com/75/75"><td></td></tr></table>
+    <p>&lt;table class="backgroundtest"&gt;&lt;tr background="http://fillmurray.com/75/75"&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</p>
+</div>
+
+<div class="wrapper">
+  <h2>background attribute on &lt;td&gt; tag</h2>
+  <table class="backgroundtest"><tr><td background="http://fillmurray.com/75/75"></td></tr></table>
+    <p>&lt;table class="backgroundtest"&gt;&lt;tr&gt;&lt;td background="http://fillmurray.com/75/75"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</p>
+</div>
+
+
+<div class="wrapper">
+  <h2>background-clip: border-box (this is default):</h2>
+  <div class="background-clip background-clip-border-box">
+    <p>The background extends behind the border.</p>
+  </div>
+
+  <h2>background-clip: padding-box:</h2>
+  <div class="background-clip background-clip-padding-box">
+    <p>The background extends to the inside edge of the border.</p>
+  </div>
+
+  <h2>background-clip: content-box:</h2>
+  <div class="background-clip background-clip-content-box">
+    <p>The background extends to the edge of the content box.</p>
+  </div>
+</div>
+
+<div class="wrapper">
+  <h2>background-origin: padding-box (default):</h2>
+  <div class="background-origin background-origin-border-box">
+    <p>The background image starts from the upper left corner of the padding edge</p>
+  </div>
+
+  <h2>background-origin: border-box:</h2>
+  <div class="background-origin background-origin-padding-box">
+    <p>The background image starts from the upper left corner of the border.</p>
+  </div>
+
+  <h2>background-origin: content-box:</h2>
+  <div class="background-origin background-origin-content-box">
+    <p>The background image starts from the upper left corner of the content.</p>
+  </div>
+</div>
+
+
+<div class="wrapper">
+  <h2>background-blend-mode: lighten</h2>
+  <div class="backgroundtest background-blend-mode background-blend-lighten"></div>
+</div>
+
+<div class="wrapper">
+  <h2>background-blend-mode: color-dodge</h2>
+  <div class="backgroundtest background-blend-mode background-blend-color-dodge"></div>
+</div>
+
+<div class="wrapper">
+  <h2>background-blend-mode: luminosity</h2>
+  <div class="backgroundtest background-blend-mode background-blend-luminosity"></div>
+</div>
+
+<div class="wrapper">
+  <h2>background-blend-mode: screen</h2>
+  <div class="backgroundtest background-blend-mode background-blend-screen"></div>
+</div>
+
+<div class="wrapper">
+  <h2>background-blend-mode: color-burn</h2>
+  <div class="backgroundtest background-blend-mode background-blend-color-burn"></div>
+</div>
+
+<div class="wrapper">
+  <h2>background-blend-mode: color</h2>
+  <div class="backgroundtest background-blend-mode background-blend-color"></div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+  <h2>linear gradient (to transparent)</h2>
+    <div class="backgroundtest linear-gradient-2-transparent"></div>
+    <p>background-image: linear-gradient(to left, transparent, black);</p>
+</div>
+
+<div class="wrapper">
+  <h2>linear gradient (2 colors)</h2>
+    <div class="backgroundtest linear-gradient-2-color"></div>
+    <p>background-image: linear-gradient(black,orange);</p>
+</div>
+
+<div class="wrapper">
+  <h2>linear gradient (3 colors) to right</h2>
+    <div class="backgroundtest linear-gradient-3-color"></div>
+    <p>background-image: linear-gradient(to right, black,orange,purple);</p>
+</div>
+
+<div class="wrapper">
+  <h2>linear gradient (4 colors) to bottom right</h2>
+    <div class="backgroundtest linear-gradient-4-color"></div>
+    <p>background-image: linear-gradient(to bottom right, black,orange,white,purple);</p>
+</div>
+
+<div class="wrapper">
+  <h2>radial gradient (2 colors)</h2>
+    <div class="backgroundtest radial-gradient-2-color"></div>
+    <p>background-image: radial-gradient(black,orange);</p>
+</div>
+
+<div class="wrapper">
+  <h2>radial gradient (3 colors)</h2>
+    <div class="backgroundtest radial-gradient-3-color"></div>
+    <p>background-image: radial-gradient(black,orange,purple);</p>
+</div>
+
+<div class="wrapper">
+  <h2>radial gradient (4 colors)</h2>
+    <div class="backgroundtest radial-gradient-4-color"></div>
+    <p>background-image: radial-gradient(black,orange,white,purple);</p>
+</div>
+
+<div class="wrapper">
+  <h2>radical radial 1</h2>
+    <div class="backgroundtest radical-radial-1"></div>
+      <p>background:
+      radial-gradient(
+        ellipse at center,
+        rgba(255,255,255,1) 31%,
+        rgba(255,255,255,1) 32%,
+        rgba(241,111,92,1) 32%,
+        rgba(246,41,12,1) 51%,
+        rgba(231,56,39,1) 100%);</p>
+</div>
+
+<div class="wrapper">
+  <h2>radical radial 2</h2>
+    <div class="backgroundtest radical-radial-2"></div>
+    <p>background:
+      radial-gradient(
+        ellipse at center,
+        rgba(226,226,226,1) 0%,
+        rgba(219,219,219,1) 50%,
+        rgba(209,209,209,1) 51%,
+        rgba(254,254,254,1) 51%,
+        rgba(254,254,254,1) 100%);</p>
+</div>
+
+<div class="wrapper">
+  <p>The native Android Samsung email app app does not recognize background images as a resource At least one html &lt;img&gt; is required in order to trigger the app to download background images.</p>
+  <img src="http://fillmurray.com/321/123" width="1" height="1">
+</div>
+
+  </body>
+</html>

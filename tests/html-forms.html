@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>Forms</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <p>method="get"</p>
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+      Test: <input type="text" name="test"><br>
+      <input type="submit" value="Submit">
+    </form>
+  <hr>
+
+  <p>method="post"</p>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+      Test: <input type="text" name="test"><br>
+      <input type="submit" value="Submit">
+    </form>
+  <hr>
+
+  <p>target="_blank"</p>
+    <form action="https://www.w3schools.com/action_page.php" method="get" target="_blank">
+      Test: <input type="text" name="test"><br>
+      <input type="submit" value="Submit">
+    </form>
+  <hr>
+
+  <p>target="_self"</p>
+    <form action="https://www.w3schools.com/action_page.php" method="get" target="_self">
+      Test: <input type="text" name="test"><br>
+      <input type="submit" value="Submit">
+    </form>
+  <hr>
+
+  <form action="https://www.w3schools.com/action_page.php" method="get" target="_self">
+      <p>checkbox</p>
+      <input type="checkbox" name="checkbox" id="label">
+      <label for="label">label</label>
+      <p>color</p>
+      <input type="color" name="color">
+      <p>date</p>
+      <input type="date" name="date">
+      <p>datetime-local</p>
+      <input type="datetime-local" name="datetime-local">
+      <p>email</p>
+      <input type="email" name="email">
+      <p>file</p>
+      <input type="file" name="file">
+      <p>hidden</p>
+      <input type="hidden" name="hidden">
+      <p>image</p>
+      <input type="image" name="image" src="https://dummyimage.com/60x40/000/fff.gif&text=submit">
+      <p>month</p>
+      <input type="month" name="month">
+      <p>number</p>
+      <input type="number" name="number">
+      <p>password</p>
+      <input type="password" name="password">
+      <p>radio</p>
+      <input type="radio" name="radio">
+      <p>range</p>
+      <input type="range" name="range">
+      <p>reset input</p>
+      <input type="reset" name="reset">
+      <p>search</p>
+      <input type="search" name="search">
+      <p>submit input</p>
+      <input type="submit" name="submit">
+     	<input type="submit" formmethod="post" value="Submit using POST">
+      <p>tel</p>
+      <input type="tel" name="tel">
+      <p>text</p>
+      <input type="text" name="text">
+      <p>time</p>
+      <input type="time" name="time">
+      <p>url</p>
+      <input type="url" name="url">
+      <p>week</p>
+      <input type="week" name="week">
+      <fieldset>
+        <legend>fieldset - legend:</legend>
+        <p>textarea</p>
+        <textarea name="textarea" rows="4" cols="50"></textarea>
+        <p>select - option - optgroup</p>
+        <select name="select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <optgroup>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </optgroup>
+          <option value="0" selected disabled>selected disabled</option>
+        </select>
+      </fieldset>
+      <p>required</p>
+      <input type="text" name="text" required>
+      <p>reset button</p>
+      <button type="reset">reset button</button>
+      <p>submit button</p>
+      <button type="submit">submit button</button>
+  </form>
+
+<!-- Add more validation and HTML5 tests to a later version https://www.w3schools.com/html/html_form_attributes.asp -->
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>Advanced Text CSS</title>
+  <style>
+h2 {margin:0;padding:0;font-weight:normal;}.body,h2 {font-size:12px;font-family:sans-serif;}
+h1 {margin:0; padding: 10px; background: #dddddd;}
+.text-styles {margin:10px; border:1px solid black; padding:10px;}
+
+.under {text-decoration: underline red;}
+.over {text-decoration: wavy overline red;}
+.singleline {text-decoration: line-through red;}
+.doubleline {text-decoration: double line-through red;}
+.dottedline {text-decoration: dotted line-through red;}
+.plain {text-decoration: none;}
+.underover {text-decoration: dashed underline overline red;}
+.blink {text-decoration: blink;}
+
+.normal-caps {font-variant: normal;}
+.small-caps {font-variant: small-caps;}
+.petite-caps {font-variant: petite-caps;}
+
+.horizontal-tb {writing-mode: horizontal-tb;}
+.vertical-lr {writing-mode: vertical-lr;}
+.vertical-rl {writing-mode: vertical-rl;}
+
+.text-styles div {
+  background: orange;
+  border:purple 10px solid;
+  padding: 10px;
+  margin:10px;
+}
+
+.font-longhand-1 {
+  font-family: monospace;
+  font-size: 22px;
+}
+.font-shorthand-1 {
+  font: 22px monospace;
+}
+
+.font-longhand-2 {
+  font-family: monospace;
+  font-size: 22px;
+  line-height: 150%;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.font-shorthand-2 {
+  font: italic small-caps bold 22px/150% monospace;
+}
+
+.text-overflow-ellipsis {
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.ws-nowrap {
+  white-space: nowrap;
+}
+
+.ws-pre {
+  white-space: pre;
+}
+
+.ws-normal {
+  white-space: normal;
+}
+  </style>
+</head>
+<body class="body">
+
+<div class="text-styles ws-nowrap">
+  <h2>white-space: nowrap;</h2>
+    <div class="ws-nowrap" style="max-width:75px">
+      The quick brown fox
+                jumps over
+      the lazy rebellious
+    </div>
+  </div>
+
+<div class="text-styles">
+  <h2>white-space: pre;</h2>
+    <div class="ws-pre">
+      The quick brown fox
+                jumps over
+      the lazy rebellious
+    </div>
+</div>
+
+<div class="text-styles">
+  <h2>white-space: normal;</h2>
+    <div class="ws-normal">
+      The quick brown fox
+                jumps over
+      the lazy rebellious
+    </div>
+</div>
+
+
+<div class="text-styles text-overflow-ellipsis" style="max-width:75px;max-height:75px">
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+</div>
+
+<div class="text-styles">&lt;strike&gt;<strike>XXX</strike>&lt;/strike&gt;</div>
+<div class="text-styles">&lt;del&gt;<del>XXX</del>&lt;/del&gt;</div>
+<div class="text-styles">&lt;s&gt;<s>XXX</s>&lt;/s&gt;</div>
+
+<h1>font delcaration</h1>
+<div class="text-styles">
+  <h2>font-family: monospace; font-size: 22px;</h2>
+    <div class="font-longhand-1">
+      The quick brown fox jumps over the lazy rebellious dog
+    </div>
+</div>
+
+<div class="text-styles">
+  <h2>font: 22px monospace;</h2>
+    <div class="font-shorthand-1">
+      The quick brown fox jumps over the lazy rebellious dog
+    </div>
+</div>
+
+<div class="text-styles">
+  <h2>  font-family: monospace;
+    font-size: 22px;
+    line-height: 150%;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+</h2>
+    <div class="font-longhand-2">
+      The quick brown fox jumps over the lazy rebellious dog
+    </div>
+</div>
+
+<div class="text-styles">
+  <h2>font: italic small-caps bold 22px/150% monospace;</h2>
+    <div class="font-shorthand-2">
+      The quick brown fox jumps over the lazy rebellious dog
+    </div>
+</div>
+
+<h1>text decoration</h1>
+
+<div class="text-styles under">text-decoration: underline red;</div>
+<div class="text-styles over">text-decoration: wavy overline red;</div>
+<div class="text-styles singleline">text-decoration: line-through;</div>
+<div class="text-styles doubleline">text-decoration: double line-through;</div>
+<div class="text-styles dottedline">text-decoration: dotted line-through;</div>
+<div class="text-styles plain">text-decoration: none;</div>
+<div class="text-styles underover">text-decoration: dashed underline overline;</div>
+<div class="text-styles blink">text-decoration: blink;</div>
+
+<h1>font variant</h1>
+<div class="text-styles normal-caps">FONT-VARIANT: NORMAL</div>
+<div class="text-styles small-caps">font-variant: small-caps</div>
+<div class="text-styles petite-caps">font-variant: petite-caps</div>
+
+<h1>writing mode</h1>
+<div class="text-styles">
+  <h2>writing-mode: horizontal-tb</h2>
+    <div class="text-styles horizontal-tb">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+</div>
+<div class="text-styles">
+  <h2>writing-mode: vertical-lr</h2>
+    <div class="text-styles vertical-lr">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+</div>
+<div class="text-styles">
+  <h2>writing-mode: vertical-rl</h2>
+    <div class="text-styles vertical-rl">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+</div>
+
+</body>
+</html>

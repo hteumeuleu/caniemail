@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>Basic selectors</title>
+  <style>
+h1, h2, h3, p{font-size:16px;font-size:1rem;margin:0;font-weight:normal}
+input{max-width:4em}
+
+h1{background:green !important;}
+.class{background:green}
+#id{background:green}
+.★{background:green}
+#★{background:green}
+.1{background:green}
+#1{background:green}
+.&{background:green}
+#&{background:green}
+*{border:2px dashed purple}
+p{background:green;}
+strong, b{background:green;font-weight:normal;}
+div em{background:green;font-style: normal;}
+font>span{background:green;}
+i{float:left;}
+i + div{background:green;}
+i ~ .sibling{background:green;}
+[title]{background: green}
+[rebel]{background:green;}
+[class="attribute"]{background:green;}
+[class~="value1"]{background:green;}
+[class|="value2"]{background:green;}
+[class^="value3"]{background:green;}
+[class$="value4"]{background:green;}
+[class*="abcde"]{background:green;}
+
+
+  </style>
+</head>
+<body>
+<h1 style="background:white"> !important</h1>
+<div class="class">.class</div>
+<div id="id">#id</div>
+<div class="★">.★</div>
+<div class="★">#★</div>
+<div class="1">.1</div>
+<div class="1">#1</div>
+<div class="&">.&</div>
+<div class="&">#&</div>
+<div>* - border:2px dashed purple</div>
+<p>element</p>
+<div><strong>element,element</strong></div>
+<div><em>element element</em></div>
+<div><font><span>element>element</span></font> <font><u><span>not this one</span></u></font></div>
+<i></i><div>element+element</div>
+<div class="sibling">element1~.class</div>
+<div title="attribute">[attribute]</div>
+<div rebel>fake [attribute]</div>
+<div class="attribute">[attribute=value]</div>
+<div class="xxx value1 xxx">[attribute~=value]</div>
+<div class="value2-xxx">[attribute|=value]</div>
+<div class="value3 xxx">[attribute^=value]</div>
+<div class="xxx-value4">[attribute$=value]</div>
+<div class="xxxabcdexxx">[attribute*=value]</div>
+
+</body>
+</html>
