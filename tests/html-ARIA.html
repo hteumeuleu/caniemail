@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>ARIA</title>
+  <style>
+    .visual-test div{margin: .25em}
+    .visual-test div::after, p::after{background:darkblue;}
+    .visual-test div[role]::after{content:' role=' attr(role) }
+    .visual-test div[aria-hidden]::after{content:' aria-hidden=' attr(aria-hidden)}
+    .visual-test div[aria-label]::after{content:' aria-label=' attr(aria-label)}
+    .visual-test div[aria-labelledby]::after{content:' aria-labelledby=' attr(aria-labelledby)}
+    .visual-test div[aria-describedby]::after{content:' aria-describedby=' attr(aria-describedby)}
+    .visual-test div[aria-live]::after{content:' aria-live=' attr(aria-live)}
+    .visual-test p[id]::after{content:' id=' attr(id)}
+
+
+    .visual-test [role~="article"]{background:green;color:white;}
+    .visual-test [aria-hidden~="true"]{background:green;color:white;}
+    .visual-test [aria-label~="aria-label is working"]{background:green;color:white;}
+    .visual-test [aria-labelledby~="foo"]{background:green;color:white;}
+    .visual-test [aria-describedby~="bar"]{background:green;color:white;}
+    .visual-test [aria-live~="polite"]{background:green;color:white;}
+
+    input + div{display:block}
+    input + div + div{display:none}
+    input:checked + div{display:none}
+    input:checked + div + div{display:block}
+
+  </style>
+</head>
+<body>
+  <div class="visual-test" role="article" aria-labelledby="title1">
+    <h2 id="title1">Visual tests</h2>
+    <div role="article">Role for an article</div>
+    <div aria-hidden="true">aria-hidden</div>
+    <div aria-label="aria-label is working">aria-label</div>
+    <div aria-labelledby="foo"> aria-labelledby <p id="foo">This is the label</p> </div>
+    <div aria-describedby="bar"> aria-describedby <p id="bar">This is the description</p> </div>
+    <div aria-live="polite">aria-live</div>
+  </div>
+
+  <div role="group" aria-labelledby="title2">
+    <h1 id="title2">Screenreader test</h1>
+    <p>testing screen reader</p>
+    <div aria-hidden="true">aria-hidden</div>
+    <div role="heading" aria-level="2">Role for an h2</div>
+    <div role="img" aria-label="alt text">Role for an image</div>
+    <div aria-live="polite">
+        <input type="checkbox" role="button" aria-label="close" aria-describedby="descriptionClose">
+        <div>content 1</div>
+        <div>content 2</div>
+        <div id="descriptionClose">The button will toggle some content</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

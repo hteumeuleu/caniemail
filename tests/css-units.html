@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>CSS units</title>
+  <style>
+  div{
+    --width2: 100px;
+  }
+  .var{
+      width:var(--width2);
+      height:var(--width2);
+  }
+  </style>
+</head>
+<body>
+
+  <div  style="--width1: 100px;">
+      <p>no width - for comparison</p>
+      <table style="background:blue;color:white;"><tr><td>x</td></tr></table>
+      <p>100px</p>
+      <table style="width:100px;height:100px;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>50%</p>
+      <table style="width:50%;height:150px;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>10em</p>
+      <table style="width:10em;height:10em;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>10rem</p>
+      <table style="width:10rem;height:10rem;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>5vw</p>
+      <table style="width:15vw;height:15vw;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>5vh</p>
+      <table style="width:15vh;height:15vh;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>5vmin</p>
+      <table style="width:15vmin;height:15vmin;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>5vmax</p>
+      <table style="width:15vmax;height:15vmax;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>10ex</p>
+      <table style="width:10ex;height:10ex;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>100pt</p>
+      <table style="width:100pt;height:100pt;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>10pc</p>
+      <table style="width:10pc;height:10pc;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>10ch</p>
+      <table style="width:10ch;height:10ch;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>3cm</p>
+      <table style="width:3cm;height:3cm;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>30mm</p>
+      <table style="width:30mm;height:30mm;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>1in</p>
+      <table style="width:1in;height:1in;background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>Calc</p>
+      <table style="width:calc(50px + 50px);height:calc(50px + 50px);background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>Var inline</p>
+      <table style="width:var(--width1);height:var(--width1);background:green;color:white;"><tr><td>x</td></tr></table>
+      <p>Var class</p>
+      <table style="background:green;color:white;" class="var" ><tr><td>x</td></tr></table>
+    </div>
+</body>
+</html>

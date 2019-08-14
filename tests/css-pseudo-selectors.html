@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>pseudo selectors</title>
+  <style>
+h1, h2, h3, h4, p{font-size:16px;font-size:1rem;margin:0;font-weight:normal}
+input{font:inherit}
+
+a:active{background:green;}
+.before::before{content:'::before';background:green;}
+.after::after{content:'r::after';background:green;}
+input:checked + h2{background:green;}
+.checkbox:checked + h2 + .checked{background:green;}
+input:default + .default{background:green;}
+input:disabled + div{background:green;}
+h3:empty, h3:empty + div{background:green;}
+input.enabled:enabled+span, input.enabled:enabled{background:green;}
+.first-child span:first-child{background:green;}
+.first-letter::first-letter{background:green;font-size:1.5em;line-height:.75em}
+.first-line::first-line{background:green;}
+.first-of-type span:first-of-type{background:green;}
+button{background: none;font:inherit;}
+.focus:focus{background:green;}
+.hover:hover{background:green;}
+.in-range:in-range, .in-range:in-range + span{background:green;}
+progress:indeterminate{background:green;border:4px dashed green;}
+progress::-webkit-progress-bar{background:red;}
+progress:indeterminate::-webkit-progress-bar{background:green;}
+progress:indeterminate + span{background:green;}
+.invalid:invalid{background:green;}
+.lang:lang(en){background:green;}
+.last-child span:last-child{background:green;}
+.last-of-type span:last-of-type{background:green;}
+.link:link{background:green;}
+.nott span:not(.not){background:green;}
+.nth-child span:nth-child(2n){background:green;}
+.nth-last-child span:nth-last-child(2){background:green;}
+.nth-last-of-type span:nth-last-of-type(2){background:green;}
+.nth-of-type span:nth-of-type(2n){background:green;}
+h4:only-of-type{background:green;}
+.only-child span:only-child{background:green;}
+.optional input:optional, .optional input:optional + span{background:green;}
+.out-of-range:out-of-range, .out-of-range:out-of-range + span{background:green;}
+.placeholder::placeholder{background:green;font:inherit;color:inherit;}
+.read-only:read-only{background:green;}
+.read-only:-moz-read-only{background:green;}
+.read-write:read-write{background:green;}
+.read-write:-moz-read-write{background:green;}
+.required:required{background:green;}
+:root .root{background:green;}
+:root{background:pink}
+.selection::-moz-selection{background:green;}
+.selection::selection{background:green;}
+#target:target{background:green;}
+.valid:valid{background:green;}
+.visited:visited{background-color:green;color:darkgreen}
+
+  </style>
+</head>
+<body>
+<div><a href="/" class="active">:active a</a></div>
+<label class="active" tabindex="0">:active tabindex label</label>
+<div class="after">::after</div>
+<div class="before">::before</div>
+<input type="checkbox" class="checkbox" checked>
+<h2>input:checked</h2>
+<div class="checked">.class:checked</div>
+<input type="radio" name="radio" checked><div class="default">:default</div>
+<input type="text" disabled="disabled"><div>:disabled</div>
+<h3></h3><div>:empty</div>
+<input type="text" disabled="disabled"><span>not this one</span><input type="text" class="enabled"><span>:enabled</span>
+<div class="first-child"><span>:first-child</span><span>not this one</span></div>
+<div class="first-letter">::first-letter</div>
+<div class="first-line">::first-line<br>not this one</div>
+<div class="first-of-type"><span>:first-of-type</span><span>not this one</span></div>
+<button class="focus">:focus - button</button><br>
+<div class="focus" tabindex="0">:focus - tabindex div</div>
+<a href="/" class="hover">:hover - link</a><br>
+<div class="hover">:hover - div</div>
+<input type="number" min="8" max="10" value="9" class="in-range"><span>:in-range</span>
+<div><progress  max="100">
+</progress> <span>:indeterminate</span></div>
+<input type="email" value=":invalid" class="invalid" style="width:auto;display:block">
+<div lang="en" class="lang">:lang(language)</div>
+<div class="last-child"><span>not this one</span><span>:last-child</span></div>
+<div class="last-of-type"><span>not this one</span><span>:last-of-type</span></div>
+<div><a href="https://www.w3schools.com/xxx-not-visited-xxxp" class="link">:link</a></div>
+<div class="nott"><span class="not">not this one</span><span>:not(selector)</span></div>
+<div class="nth-child"><span>not this one </span><span>:nth-child(n)</span><span>not this one </span><span>:nth-child(n) </span></div>
+<div class="nth-last-child"><span>not this one </span><span>not this one </span><span>:nth-last-child(n) </span><span>not this one </span></div>
+<div class="nth-last-of-type"><span>not this one </span><span>not this one </span><span>:nth-last-of-type(n) </span><span>not this one </span></div>
+<div class="nth-of-type"><span>not this one </span><span>:nth-of-type(n)</span><span>not this one </span><span>:nth-of-type(n) </span></div>
+<h4>:only-of-type</h4>
+<div class="only-child"><span>:only-child</span></div>
+<div class="optional"><input value="not this one" required><input value="optional"><span>:optional</span></div>
+<input type="number" min="8" max="10" value="12" class="out-of-range"><span>:out-of-range</span><br>
+<input type="text" placeholder="::placeholder" class="placeholder"><br>
+<input readonly value="read-only" class="read-only"><input value="not this one" class="read-only"><br>
+<input value="read-write" class="read-write"><input readonly value="not this one" class="read-write"><br>
+<input value="required" class="required" required><input value="not this one" class="required"><br>
+<div class="root">:root - this is green page is pink</div>
+<div class="selection">::selection</div>
+<a href="#target">jumo to target</a><div id="target">:target</div>
+<input type="email" value="valid@valid.com" class="valid"><br>
+<a href="#" class="visited">:visited - #</a> <a href="https://www.google.com/" class="visited" target="_blank">:visited - google</a><br>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>HTML5</title>
+  <style>
+    article{background:green;color:white}
+    aside{background:green;color:white}
+    details{background:green;color:white}
+    summary{background:darkgreen;color:white}
+    figure{background:green;color:white}
+    figcaption{background:darkgreen;color:white}
+    footer{background:green;color:white}
+    header{background:green;color:white}
+    main{background:green;color:white}
+    mark{background:green;color:white}
+    nav{background:green;color:white}
+    section{background:green;color:white}
+    time{background:green;color:white}
+    bdi{background:green;color:white}
+    dialog{background:green;color:white}
+    ruby{background:green;color:white}
+    rp{background:darkgreen;color:white}
+    rt{background:darkgreen;color:white}
+    div{background:red;}
+  </style>
+</head>
+<body>
+
+  <article>article</article>
+  <aside>aside</aside>
+  <details>details
+    <summary>summary</summary>
+  </details>
+  <figure>figure
+    <figcaption>figcaption</figcaption>
+  </figure>
+  <footer>footer</footer>
+  <header>header</header>
+  <main>main</main>
+  <mark>mark</mark>
+  <nav>nav</nav>
+  <section>section</section>
+  <time>time</time><br>
+  <bdi>bdi</bdi>
+  <dialog open>dialog</dialog>
+  <p style="width:300px">This should break on wbr text not on A AAAAAAAA<wbr>wbrAAAAAAA<wbr>wbrAAAAAA<wbr>wbrAAAAAAAAAwbrAAAAAAA<wbr>wbrAAAAAAAAA<wbr>wbrAAAAAA<wbr>wbrAAAAAAAAwbrAAAAAAA<wbr>wbrAAAAAAAAA<wbr>wbrAAAAAAA<wbr>wbrAAAAAAAAwbrAAAAAA<wbr>wbrAAAAAAAA<wbr>wbrAAAAAAAAA<wbr>wbrAAAAAA</p>
+  <p>meter <meter value="8" min="0" max="10">not working</meter></p>
+  <p>progress <progress value="8" max="10">not working</progress></p>
+  <p><ruby>Ruby
+    <rp>Rp</rp>
+    <rt>Rt</rt>
+  </ruby> Rt will show if Ruby is supported, Rp is it's not.  And both will show if none of it is supported</p>
+
+</body>
+</html>

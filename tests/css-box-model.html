@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <title>TEST</title>
+	<style>
+
+h2 {
+  margin:0;
+  padding:10px;
+  background: #efefef;
+  color: black;
+  font-size: 16px;
+}
+.body {
+  font-family: sans-serif;
+  background: #dfdede;
+}
+
+.border-image {
+  border: 10px solid orange;
+  height: 100px;
+  margin: 0 0 20px 0;
+  background: green;
+  color: orange;
+  font-size: 2em;
+}
+.border-image-shorthand {
+  border-image: url('https://interactive-examples.mdn.mozilla.net/media/examples/border-diamonds.png') 30 / 10px round;
+}
+
+.border-radius {
+  border: 10px solid purple;
+  height: 100px;
+  margin: 0 0 20px 0;
+  background: orange;
+  color: purple;
+  font-size: 2em;
+  border-radius: 40px 10px 40px;
+}
+
+.text-shadow {
+  border: 10px solid;
+  height: 100px;
+  margin: 0 0 20px 0;
+  background: orange;
+  color: purple;
+  font-size: 2em;
+  text-shadow: 4px 4px 4px green;
+}
+
+.box-shadow {
+  border: 10px solid;
+  height: 100px;
+  margin: 0 0 20px 0;
+  background: orange;
+  color: purple;
+  font-size: 2em;
+  box-shadow: 4px 4px 22px green;
+}
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container-column {
+  flex-direction: column;
+}
+
+.flex-container-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-container div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: DodgerBlue;
+  padding: 10px;
+}
+
+.grid-container-columns {
+  grid-template-columns: 80px auto auto 30px;
+}
+
+.grid-container div {
+  background-color: gray;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.wrapper {
+  background:red;
+  display:inline-block;
+}
+.control {
+  width:220px;
+  height:220px;
+  background:orange;
+}
+.box-sizing {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 30px solid green;
+}
+
+.float {
+  float: left;
+}
+
+.float-test {
+  padding: 20px;
+  background: orange;
+  border: 11px solid purple;
+  color: white;
+}
+
+.overflow-wrap {
+  overflow:scroll;
+  max-height:200px;
+  width:200px;
+  border:11px solid green;
+}
+.overflow-inner {
+  width:500px;
+  border:11px dotted purple;
+}
+
+.columns {
+  column-count: 6;
+  column-gap: 10px;
+  column-rule: 5px solid #ff00ff;
+  background: orange;
+  color: white;
+  padding: 5px;
+  margin: 0 0 5px 0;
+}
+.column-125 {
+  column-width: 125px;
+}
+.columns h2 {
+  column-span: all;
+}
+.column {
+  background:purple;
+}
+
+.logical div {
+  background: orange;
+  margin: 0 0 20px 0;
+  border: 1px solid red;
+}
+
+  </style>
+
+</head>
+<body class="body">
+
+<h2>border-image</h2>
+<div class="border-image border-image-shorthand">&nbsp;</div>
+
+<h2>border-radius</h2>
+<div class="border-radius">&nbsp;</div>
+
+<h2>box-shadow</h2>
+<div class="box-shadow box-shadow-shorthand">&nbsp;</div>
+
+
+<h2>box-sizing * red background will be exposed if not supported</h2>
+<div class="wrapper">
+  <div class="control">
+    &nbsp;
+  </div>
+
+  <div class="control box-sizing">
+    &nbsp;
+  </div>
+</div>
+
+<h2>column-count</h2>
+<div class="columns">
+    <div class="column">1</div>
+    <div class="column">2</div>
+    <div class="column">3</div>
+    <div class="column">4</div>
+    <div class="column">5</div>
+    <div class="column">6</div>
+</div>
+
+<div class="columns">
+  <h2>column-span: all</h2>
+    <div class="column">1</div>
+    <div class="column">2</div>
+    <div class="column">3</div>
+    <div class="column">4</div>
+    <div class="column">5</div>
+    <div class="column">6</div>
+</div>
+
+<h2>column-width</h2>
+<div class="columns column-125">
+    <div class="column">width:125px</div>
+    <div class="column">width:125px</div>
+    <div class="column">width:125px</div>
+</div>
+
+
+<h2>display:flex</h2>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+<h2>flex-direction:column</h2>
+  <div class="flex-container flex-container-column">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+<h2>flex-wrap:wrap</h2>
+  <div class="flex-container flex-container-wrap">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+  </div>
+
+<h2>float (left)</h2>
+<div>
+  <img class="float" src="https://dummyimage.com/250x250/008000/ffa200" alt="" width="150" style="max-width:100%; margin:0 10px 0 10px;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+</div>
+
+<div style="clear:both;"></div>
+
+  <div class="float-test float">1</div>
+  <div class="float-test float">2</div>
+  <div class="float-test float">3</div>
+  <div class="float-test float">4</div>
+  <div class="float-test float">5</div>
+  <div class="float-test float">6</div>
+  <div class="float-test float">7</div>
+
+<div style="clear:both;"></div>
+
+<h2>display:grid</h2>
+  <div class="grid-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+
+<h2>display:grid + grid-template-columns</h2>
+  <div class="grid-container grid-container-columns">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+
+<div class="logical">
+
+  <h2>block-size:100px;</h2>
+  <div style="block-size: 100px;">
+    <code>height:100px;</code>
+  </div>
+
+  <h2>inline-size: 100px;</h2>
+  <div style="inline-size: 100px;">
+    <code>width:100px;</code>
+  </div>
+
+  <h2>min-block-size:100px;</h2>
+  <div style="min-block-size: 100px;">
+    <code>min-height:100px;</code>
+  </div>
+
+  <h2>min-inline-size:480px;</h2>
+  <div style="min-inline-size:480px;">
+    <code>min-width:480px;</code>
+  </div>
+
+  <h2>max-block-size:100px;(overflow: hidden;)</h2>
+  <div style="max-block-size :50px;overflow: hidden;">
+    <code>max-height:50px;(overflow: hidden;) numbers liseted 1-100: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99,100.</code>
+  </div>
+
+  <h2>max-inline-size:300px;</h2>
+  <div style="max-inline-size:300px;">
+    <code>max-width:300px;</code>
+  </div>
+
+</div>
+
+<div class="logical margin">
+
+  <h2>margin-block-start:22px;</h2>
+  <div style="margin-block-start:22px;">
+    <code>margin-top:22px</code>
+  </div>
+
+  <h2>margin-block-end:22px;</h2>
+  <div style="margin-block-end:22px;">
+    <code>margin-bottom:22px</code>
+  </div>
+
+  <h2>margin-inline-start:22px;</h2>
+  <div style="margin-inline-start:22px;">
+    <code>margin-left:22px</code>
+  </div>
+
+  <h2>margin-inline-end:22px;</h2>
+  <div style="margin-inline-end:22px;text-align:right;">
+    <code>margin-right:22px</code>
+  </div>
+
+  <h2>margin-block:22px</h2>
+  <div style="margin-block:22px">
+    <code>margin-top 22px margin-bottom:22px</code>
+  </div>
+
+  <h2>margin-inline:22px</h2>
+  <div style="margin-inline:22px">
+    <code>margin-left 22px margin-right:22px</code>
+  </div>
+
+</div>
+
+<div class="logical padding">
+
+  <h2>padding-block-start:22px;</h2>
+  <div style="padding-block-start:22px;">
+    <code>padding-top:22px</code>
+  </div>
+
+  <h2>padding-block-end:22px;</h2>
+  <div style="padding-block-end:22px;">
+    <code>padding-bottom:22px</code>
+  </div>
+
+  <h2>padding-inline-start:22px;</h2>
+  <div style="padding-inline-start:22px;">
+    <code>padding-left:22px</code>
+  </div>
+
+  <h2>padding-inline-end:22px;</h2>
+  <div style="padding-inline-end:22px;text-align:right;">
+    <code>padding-right:22px</code>
+  </div>
+
+  <h2>padding-block:22px</h2>
+  <div style="padding-block:22px">
+    <code>padding-top 22px padding-bottom:22px</code>
+  </div>
+
+  <h2>padding-inline:22px</h2>
+  <div style="padding-inline:22px">
+    <code>padding-left 22px padding-right:22px</code>
+  </div>
+
+</div>
+
+
+<div class="logical border">
+
+  <h2>border-block-start:solid green 22px;</h2>
+  <div style="border-block-start:solid green 22px;">
+    <code>border-top:solid green 22px</code>
+  </div>
+
+  <h2>border-block-end:solid green 22px;</h2>
+  <div style="border-block-end:solid green 22px;">
+    <code>border-bottom:solid green 22px</code>
+  </div>
+
+  <h2>border-inline-start:solid green 22px;</h2>
+  <div style="border-inline-start:solid green 22px;">
+    <code>border-left:solid green 22px</code>
+  </div>
+
+  <h2>border-inline-end:solid green 22px;</h2>
+  <div style="border-inline-end:solid green 22px;text-align:right;">
+    <code>border-right:solid green 22px</code>
+  </div>
+
+  <h2>border-block:solid green 22px</h2>
+  <div style="border-block:solid green 22px">
+    <code>border-top solid green 22px border-bottom:solid green 22px</code>
+  </div>
+
+  <h2>border-inline:solid green 22px</h2>
+  <div style="border-inline:solid green 22px">
+    <code>border-left solid green 22px border-right:solid green 22px</code>
+  </div>
+
+</div>
+
+<h2>overflow scroll</h2>
+<div class="overflow-wrap">
+
+  <div class="overflow-inner">
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:orange solid 5px;">test</div>
+      <div style="margin:10px; padding:5px; border:aqua solid 5px;">test</div>
+  </div>
+
+</div>
+
+<h2>text-shadow</h2>
+<div class="text-shadow text-shadow-shorthand">text-shadow</div>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>Media query</title>
+<style>
+  body { margin:0;}
+  div {background: red;padding:11px; margin:11px; font-size: 18px; border:2px solid black;  }
+</style>
+
+<style>
+@media screen {
+  .screen {
+    background: green;
+  }
+}
+</style>
+
+
+<style>
+@media screen and (min-width:0px) {
+  .min-width {
+    background: green;
+  }
+}
+</style>
+<style>
+@media screen and (min-width:0px) {
+  @media screen and (min-width:0px) {
+    .min-width-nested {
+      background: green;
+    }
+  }
+}
+</style>
+
+
+
+<style>
+@media screen and (min-height:0px) {
+  .min-height {
+    background: green;
+  }
+}
+</style>
+<style>
+@media screen and (min-height:0px) {
+  @media screen and (min-height:0px) {
+    .min-height-nested {
+      background: green;
+    }
+  }
+}
+</style>
+
+
+
+<style>
+@media screen and (max-width:9999px) {
+  .max-width {
+    background: green;
+  }
+}
+</style>
+<style>
+@media screen and (max-width:9999px) {
+  @media screen and (max-width:9999px) {
+    .max-width-nested {
+      background: green;
+    }
+  }
+}
+</style>
+
+
+<style>
+@media screen and (max-height:9999px) {
+  .max-height {
+    background: green;
+  }
+}
+</style>
+<style>
+@media screen and (max-height:9999px) {
+  @media screen and (max-height:9999px) {
+    .max-height-nested {
+      background: green;
+    }
+  }
+}
+</style>
+
+
+
+<style>
+@media screen and (max-device-width:9999px) {
+  .max-device-width {
+    background: green;
+  }
+}
+</style>
+
+<style>
+@media screen and (min-device-width:0px) {
+  .min-device-width {
+    background: green;
+  }
+}
+</style>
+
+
+
+<style>
+@media screen and (min-width:0px) and (max-width:9999px) {
+  .min-width-max-width {
+    background: green;
+  }
+}
+</style>
+<style>
+@media screen and (min-width:0px) and (max-width:9999px) {
+  @media screen and (min-width:0px) and (max-width:9999px) {
+    .min-width-max-width-nested {
+      background: green;
+    }
+  }
+}
+</style>
+
+
+
+<style>
+@media screen and (-webkit-device-pixel-ratio) {
+  .webkit-device-pixel-ratio {
+    background: green;
+  }
+}
+</style>
+<style>
+@media screen and (-webkit-device-pixel-ratio) {
+  @media screen and (-webkit-device-pixel-ratio) {
+    .webkit-device-pixel-ratio-nested {
+      background: green;
+    }
+  }
+}
+</style>
+
+
+
+<style>
+@media screen and (orientation: landscape) {
+  .landscape {
+    background: green;
+  }
+}
+</style>
+<style>
+@media screen and (orientation: portrait) {
+  .portrait {
+    background: green;
+  }
+}
+</style>
+</head>
+<body class="body">
+
+  <div class="screen">screen</div>
+
+  <div class="min-width">min-width</div>
+  <div class="min-width-nested">min-width-nested</div>
+
+  <div class="min-height">min-height</div>
+  <div class="min-height-nested">min-height-nested</div>
+
+  <div class="max-width">max-width</div>
+  <div class="max-width-nested">max-width-nested</div>
+
+  <div class="max-height">max-height</div>
+  <div class="max-height-nested">max-height-nested</div>
+
+  <div class="max-device-width">max-device-width</div>
+  <div class="min-device-width">min-device-width</div>
+
+  <div class="min-width-max-width">min-width max-width</div>
+  <div class="min-width-max-width-nested">min-width-max-width-nested</div>
+
+  <div class="webkit-device-pixel-ratio">webkit-device-pixel-ratio</div>
+  <div class="webkit-device-pixel-ratio-nested">webkit-device-pixel-ratio-nested</div>
+
+  <div class="landscape">landscape</div>
+  <div class="portrait">portrait</div>
+
+</body>
+</html>
