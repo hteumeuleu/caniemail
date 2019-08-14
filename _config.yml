@@ -22,3 +22,6 @@ defaults:
       layout: "default"
 
 permalink: /:title/
+
+plugins:
+  - jekyll-mentions
