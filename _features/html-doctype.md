@@ -55,10 +55,10 @@ stats: {
             "2019-07":"y"
         },
         ios: {
-            "2019-07":"y"
+            "2019-07":"a #1"
         },
         android: {
-            "2019-07":"n #1"
+            "2019-07":"a #1"
         }
     },
     samsung-email: {
@@ -95,6 +95,6 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Renders as if there was no doctype."
+    "1": "Renders as if there was no doctype with an Outlook email, and in HTML5 otherwise."
 }
 ---
