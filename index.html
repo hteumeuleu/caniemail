@@ -6,7 +6,7 @@ layout: default
 	<h1 class="caniemail-list-title"><a href="/news/">Latest news</a></h1>
 	<ul class="caniemail-list">
 		{% for post in site.posts limit:5 %}
-		<li><a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
+		<li><a href="{{ post.url }}">{{ post.title | markdownify | strip_html }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
 		{% endfor %}
 	</ul>
 	<a href="/news/" class="feature-button">View all news</a>

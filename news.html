@@ -4,6 +4,6 @@ title: Latest news
 ---
 <ul class="caniemail-list">
 	{% for post in site.posts %}
-	<li><a href="{{ post.url }}">{{ post.title | escape_once }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
+	<li><a href="{{ post.url }}">{{ post.title | markdownify | strip_html }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
 	{% endfor %}
 </ul>
