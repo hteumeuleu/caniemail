@@ -181,7 +181,7 @@ layout: default
 										<div class="data-version-notes">
 										{% for note-key in version-notes %}
 											{% assign note-key-slug = note-key | slugify %}
-											<a href="#{{ page.title | slugify }}-cite-note-{{ note-key-slug }}" title="{{ page.notes_by_num[note-key-slug] }}">{{ note-key }}</a>
+											<a href="#{{ page.title | slugify }}-cite-note-{{ note-key-slug }}" title="{{ page.notes_by_num[note-key-slug] | markdownify | strip_html }}">{{ note-key }}</a>
 										{% endfor %}
 										</div>
 									{% endif %}
@@ -205,7 +205,7 @@ layout: default
 				{% assign note-key = note | first %}
 				{% assign note-value = note | last %}
 				<li class="data-note" id="{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">
-					<span class="data-note-key">{{ note-key }}</span> {{ note-value | escape_once | markdownify }}
+					<span class="data-note-key">{{ note-key }}</span> {{ note-value | markdownify }}
 				</li>
 			{% endfor %}
 			</ul>
