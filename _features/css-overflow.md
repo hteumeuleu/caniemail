@@ -83,6 +83,6 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Cannot scroll through to hidden content."
+    "1": "Buggy. Cannot scroll through to hidden content."
 }
 ---

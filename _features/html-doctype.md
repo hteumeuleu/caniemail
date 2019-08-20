@@ -95,6 +95,6 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Renders as if there was no doctype with an Outlook email, and in HTML5 otherwise."
+    "1": "Buggy. Renders as if there was no doctype with an Outlook email, and in HTML5 otherwise."
 }
 ---

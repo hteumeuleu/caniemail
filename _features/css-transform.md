@@ -78,6 +78,6 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "`scale translate` is not supported."
+    "1": "Partial. `scale translate` is not supported."
 }
 ---

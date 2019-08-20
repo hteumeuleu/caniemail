@@ -96,6 +96,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-    "1": "<picture> and <source> tags are replaced by <u> tags."
+    "1": "`<picture>` and `<source>` tags are replaced by `<u></u>` tags."
 }
 ---

@@ -97,10 +97,10 @@ stats: {
 }
 notes: "This is a global note."
 notes_by_num: {
-    "1": "Only supported through a <link> tag.",
-    "2": "Only supported directly through a <style> tag.",
-    "3": "Support depends on the version of IE installed.",
-    "4": "The declaration is supported but distant fonts are ignored.",
-    "5": "Elements using a font declared with `@font-face` ignore the font stack and fall back to Times New Roman. Use `mso-generic-font-family` and `mso-font-alt` to control the fallback."
+    "1": "Partial. Only supported through a `<link>` tag.",
+    "2": "Partial. Only supported directly through a `<style>` tag.",
+    "3": "Buggy. Support depends on the version of IE installed.",
+    "4": "Partial. The declaration is supported but distant fonts are ignored.",
+    "5": "Buggy. Elements using a font declared with `@font-face` ignore the font stack and fall back to Times New Roman. Use `mso-generic-font-family` and `mso-font-alt` to control the fallback."
 }
 ---

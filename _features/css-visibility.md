@@ -78,6 +78,6 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "`visibility:collapse` applied to a `<tr>` only hides content and does not \"remove\" it from layout."
+    "1": "Buggy. `visibility:collapse` applied to a `<tr>` only hides content and does not \"remove\" it from layout."
 }
 ---

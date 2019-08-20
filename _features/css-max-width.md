@@ -97,7 +97,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Only works on <table> elements.",
-    "2": "Partial. Doesn't work on <table> elements, as per CSS 2.1 specification."
+    "1": "Partial. Only works on `<table>` elements.",
+    "2": "Partial. Doesn't work on `<table>` elements, as per [CSS 2.1 specification](https://www.w3.org/TR/CSS2/visudet.html#min-max-widths)."
 }
 ---

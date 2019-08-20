@@ -94,11 +94,11 @@ stats: {
 }
 notes_by_num: {
 	"1": "Buggy. `target=_blank` is added on links so anchors open in a new window.",
-	"2": "Anchor links go back to the homepage of the webmail because it also uses anchor links for navigation.",
-	"3": "Clicking an anchor link does nothing.",
-	"4": "Opens a new browser window with the anchor as a URL.",
-	"5": "Opens a new in-app browser window on yahoo.com with the anchor appended to the URL.",
-	"6": "Targeted content is partially hidden by the application UI on top.",
-	"7": "Works when targeting an empty anchor with the corresponding `name` attribute, but not with `id` attributes."
+	"2": "Buggy. Anchor links go back to the homepage of the webmail because it also uses anchor links for navigation.",
+	"3": "Buggy. Clicking an anchor link does nothing.",
+	"4": "Buggy. Opens a new browser window with the anchor as a URL.",
+	"5": "Buggy. Opens a new in-app browser window on yahoo.com with the anchor appended to the URL.",
+	"6": "Buggy. Targeted content is partially hidden by the application UI on top.",
+	"7": "Partial. Works when targeting an empty anchor with the corresponding `name` attribute, but not with `id` attributes."
 }
 ---

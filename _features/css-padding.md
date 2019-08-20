@@ -94,6 +94,6 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Only supported on table cells."
+    "1": "Partial. Only supported on table cells."
 }
 ---

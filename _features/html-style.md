@@ -96,9 +96,9 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-    "1": "Not supported inside the <body>.",
-    "2": "Not supported when using a non Gmail account.",
-    "3": "The first <head> in the HTML is removed, so <style> elements need to be in a second <head> element.",
-    "4": "<style> elements need to be declared before their rules are used."
+    "1": "Partial. Not supported inside the `<body>`.",
+    "2": "Partial. Not supported with Non Gmail Accounts.",
+    "3": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element.",
+    "4": "Buggy. `<style>` elements need to be declared before their rules are used."
 }
 ---

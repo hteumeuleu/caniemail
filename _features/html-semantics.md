@@ -95,9 +95,9 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Only <time> is supported.",
-    "2": "Partial. <details>, <main>, <nav> and <summary> are not supported. Opening and closing tags are replaced by <u></u>.",
-    "3": "Partial. <article> is not supported.",
+    "1": "Partial. Only `<time>` is supported.",
+    "2": "Partial. `<details>`, `<main>`, `<nav>` and `<summary>` are not supported. Opening and closing tags are replaced by `<u></u>`.",
+    "3": "Partial. `<article>` is not supported.",
     "4": "Unsupported opening and closing tags are stripped."
 }
 ---

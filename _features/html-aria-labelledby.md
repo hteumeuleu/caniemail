@@ -79,7 +79,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "`id` is removed.",
-    "2": "`id` prefix mismatched."
+    "1": "Buggy. `id` is removed.",
+    "2": "Buggy. `id` prefix mismatched."
 }
 ---
