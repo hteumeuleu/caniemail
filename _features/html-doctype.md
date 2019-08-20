@@ -2,7 +2,7 @@
 title: "HTML5 doctype"
 description: "This is the description of the test property."
 code_sample: "<!doctype html>"
-category: css
+category: html
 last_test_date: "2019-07-25"
 test_url: "/tests/html-doctype.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/aBmEH3dY9eBopWg9Qzf14ZZYy3Wmllacb9lbenpbCRhth/list"
