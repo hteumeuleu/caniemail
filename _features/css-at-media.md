@@ -1,8 +1,8 @@
 ---
-title: "CSS Media Queries"
+title: "@media"
 description: ""
 category: css
-keywords: "@media"
+keywords: "media queries, query"
 last_test_date: "2019-08-20"
 test_url: "/tests/css-media.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/hMLCNCSKZYHkLgLOpIWltlnYjtagbNsrwzMxalc2VbghN/list"
