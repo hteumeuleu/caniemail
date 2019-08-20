@@ -84,6 +84,6 @@ stats: {
 	}
 }
 notes_by_num: {
-	"1": "Missing note."
+	"1": "Citation needed."
 }
 ---
