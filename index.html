@@ -16,7 +16,15 @@ layout: default
 	<ul class="caniemail-list">
 		{% assign latest-features = site.features | sort:"last_test_date" | reverse %}
 		{% for feature in latest-features limit:5 %}
-		<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a>, {{ feature.last_test_date | date: '%B %d, %Y' }}</li>
+			{% assign feature-category = '' %}
+			{% if feature.category == 'html' or feature.category == 'css' %}
+				{% assign feature-title-first-chars = feature.title | downcase | slice: 0, feature.category.size %}
+				{% assign feature-category-first-chars = feature.category | downcase %}
+				{% if feature-category-first-chars != feature-title-first-chars %}
+					{% assign feature-category = feature.category | upcase | append:' ' %}
+				{% endif %}
+			{% endif %}
+		<li><a href="{{ feature.url }}">{{ feature-category | default:'' }}{{ feature.title | escape_once }}</a>, {{ feature.last_test_date | date: '%B %d, %Y' }}</li>
 		{% endfor %}
 	</ul>
 	<a href="/features/" class="feature-button">View all features</a>
