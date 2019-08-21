@@ -20,46 +20,58 @@
 		{% for family in feature.stats %}
 			{% assign family-key = family | first %}
 			{% assign family-values = feature.stats[family-key] %}
-			{% assign family-index = 0 %}
+			{% assign client-index = 0 %}
 			{% comment %}
-				3. We add the family to the `client-scores-families` array if it doesn't exist yet.
-			{% endcomment %}
-			{% unless client-scores-families contains family-key %}
-				{% assign client-scores-families = client-scores-families | push: family-key %}
-				{% assign client-scores-y = client-scores-y | push: 0 %}
-				{% assign client-scores-a = client-scores-a | push: 0 %}
-				{% assign client-scores-n = client-scores-n | push: 0 %}
-				{% assign client-scores-u = client-scores-u | push: 0 %}
-				{% assign family-index = client-scores-families.size | minus: 1 %}
-			{% else %}
-				{% comment %}
-					If the family already exists, we get its index in the `client-scores-families` array.
-				{% endcomment %}
-				{% for client-scores-family in client-scores-families %}
-					{% if client-scores-family == family-key %}
-						{% assign family-index = forloop.index | minus: 1 %}
-					{% endif %}
-				{% endfor %}
-			{% endunless %}
-			{% comment %}
-				4. We go through each platform of the current family and
+				3. We go through each platform of the current family and
 				keep track of the support value for the most recent version.
 			{% endcomment %}
 			{% for platform in family-values %}
 				{% assign platform-key = platform | first %}
 				{% assign platform-values = platform | last %}
+				{% comment %}
+					4. We add the family:platform to the `client-scores-families` array if it doesn't exist yet.
+				{% endcomment %}
+				{% assign family-platform-key = '' | split: '' %}
+				{% assign family-platform-key = family-platform-key | push: family-key %}
+				{% assign family-platform-key = family-platform-key | push: platform-key %}
+				{% assign family-platform-key = family-platform-key | join: ':' %}
+				{% unless client-scores-families contains family-platform-key %}
+					{% assign client-scores-families = client-scores-families | push: family-platform-key %}
+					{% assign client-scores-y = client-scores-y | push: 0 %}
+					{% assign client-scores-a = client-scores-a | push: 0 %}
+					{% assign client-scores-n = client-scores-n | push: 0 %}
+					{% assign client-scores-u = client-scores-u | push: 0 %}
+					{% assign client-index = client-scores-families.size | minus: 1 %}
+				{% else %}
+					{% comment %}
+						If the family already exists, we get its index in the `client-scores-families` array.
+					{% endcomment %}
+					{% for client-scores-family in client-scores-families %}
+						{% if client-scores-family == family-platform-key %}
+							{% assign client-index = forloop.index | minus: 1 %}
+						{% endif %}
+					{% endfor %}
+				{% endunless %}
+				{% comment %}
+					5. We pick the latest version for the current platform.
+					And we add a point to its corresponding value in `client-scores-x-value` value.
+				{% endcomment %}
 				{% for version in platform-values %}
 					{% if forloop.last == true %}
 						{% assign version-key = version | first %}
 						{% assign version-values = version | last | split: ' ' | first %}
 						{% case version-values %}
 							{% when 'y' %}
+							{% comment %}
+								Because liquid doesn't allow to change an array's value (like `a[b]=c`),
+								we need to create a new temporary array and reassign all values. Yikes.
+							{% endcomment %}
 								{% assign new-client-scores-y = '' | split:'' %}
 								{% for client-scores-y-value in client-scores-y %}
 									{% assign i = forloop.index | minus:1 %}
 									{% assign new-value = client-scores-y[i] %}
-									{% if i == family-index %}
-										{% assign new-value = client-scores-y[family-index] | plus:1 %}
+									{% if i == client-index %}
+										{% assign new-value = client-scores-y[client-index] | plus:1 %}
 									{% endif %}
 									{% assign new-client-scores-y = new-client-scores-y | push:new-value %}
 								{% endfor %}
@@ -69,8 +81,8 @@
 								{% for client-scores-a-value in client-scores-a %}
 									{% assign i = forloop.index | minus:1 %}
 									{% assign new-value = client-scores-a[i] %}
-									{% if i == family-index %}
-										{% assign new-value = client-scores-a[family-index] | plus:1 %}
+									{% if i == client-index %}
+										{% assign new-value = client-scores-a[client-index] | plus:1 %}
 									{% endif %}
 									{% assign new-client-scores-a = new-client-scores-a | push:new-value %}
 								{% endfor %}
@@ -80,8 +92,8 @@
 								{% for client-scores-n-value in client-scores-n %}
 									{% assign i = forloop.index | minus:1 %}
 									{% assign new-value = client-scores-n[i] %}
-									{% if i == family-index %}
-										{% assign new-value = client-scores-n[family-index] | plus:1 %}
+									{% if i == client-index %}
+										{% assign new-value = client-scores-n[client-index] | plus:1 %}
 									{% endif %}
 									{% assign new-client-scores-n = new-client-scores-n | push:new-value %}
 								{% endfor %}
@@ -91,8 +103,8 @@
 								{% for client-scores-u-value in client-scores-u %}
 									{% assign i = forloop.index | minus:1 %}
 									{% assign new-value = client-scores-u[i] %}
-									{% if i == family-index %}
-										{% assign new-value = client-scores-u[family-index] | plus:1 %}
+									{% if i == client-index %}
+										{% assign new-value = client-scores-u[client-index] | plus:1 %}
 									{% endif %}
 									{% assign new-client-scores-u = new-client-scores-u | push:new-value %}
 								{% endfor %}
@@ -103,12 +115,50 @@
 			{% endfor %}
 		{% endfor %}
 	{% endfor %}
+	{% comment %}
+		6. We sort all our scores based on the ones with the most `y` values.
+	{% endcomment %}
+	{% assign client-scores-sorted = "" | split: '' %}
+	{% for client in client-scores-families %}
+		{% assign i = forloop.index | minus:1 %}
+		{% assign client-scores-sorted-y = client-scores-y[i] | prepend: '0000' | slice: -4, 4 %}
+		{% assign client-scores-sorted-a = client-scores-a[i] | prepend: '0000' | slice: -4, 4 %}
+		{% assign client-scores-sorted-n = client-scores-n[i] | prepend: '0000' | slice: -4, 4 %}
+		{% assign client-scores-sorted-u = client-scores-u[i] | prepend: '0000' | slice: -4, 4 %}
+		{% assign client-sorted-string = client-scores-sorted-y | append:'|' | append:client-scores-sorted-a | append:'|' | append:client-scores-sorted-n | append:'|' | append:client-scores-sorted-u | append:client-scores-families[i] %}
+		{% assign client-scores-sorted = client-scores-sorted | push: client-sorted-string %}
+	{% endfor %}
+	{% assign client-scores-sorted = client-scores-sorted | sort | reverse %}
+	{% for client in client-scores-sorted %}
+		{% assign i = forloop.index | minus:1 %}
+		{% comment %}TODO{% endcomment %}
+	{% endfor %}
+	{% comment %}
+		7. We display the data.
+	{% endcomment %}
 	<ul class="caniemail-list">
-		{% for client-family in client-scores-families %}
+		{{ site.features.size }} features<br />
+		{% for client in client-scores-families %}
 		<li>
 			{% assign i = forloop.index | minus:1 %}
+			{% assign client-family = client | split:':' | first %}
+			{% assign client-platform = client | split:':' | last %}
+			{% assign client-scores-y-percent = client-scores-y[i] | times: 100 | divided_by: site.features.size %}
+			{% assign client-scores-a-percent = client-scores-a[i] | times: 100 | divided_by: site.features.size %}
+			{% assign client-scores-n-percent = client-scores-n[i] | times: 100 | divided_by: site.features.size %}
+			{% assign client-scores-u-percent = client-scores-u[i] | times: 100 | divided_by: site.features.size %}
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="display:inline-table; width:200px; background:rgba(255,255,255, 0.125); table-layout:fixed;">
+				<tr>
+					<td style="height:24px; width:{{client-scores-y-percent | default:0 }}%;" class="supported"></td>
+					<td style="height:24px; width:{{client-scores-a-percent | default:0 }}%;" class="mitigated"></td>
+					<td style="height:24px; width:{{client-scores-n-percent | default:0 }}%;" class="unsupported"></td>
+					<td style="height:24px; width:{{client-scores-u-percent | default:0 }}%;" class="unknown"></td>
+					<td></td>
+				</tr>
+			</table>
 			{{ site.data.nicenames.family[client-family] | default: client-family }}
-			(y:{{client-scores-y[i]}})
+			({{ site.data.nicenames.platform[client-platform] | default: client-platform }}):
+			{{client-scores-y[i]}}
 		</li>
 		{% endfor %}
 	</ul>
