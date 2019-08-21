@@ -23,12 +23,6 @@ stats: {
 		},
 		android: {
 			"2019-02": "n"
-		},
-		ios-ganga: {
-			"2019-02": "n"
-		},
-		android-ganga: {
-			"2019-02": "n"
 		}
 	},
 	outlook: {
