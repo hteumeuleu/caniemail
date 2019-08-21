@@ -293,3 +293,59 @@ a:focus {
 	color: #1b1b1d;
 	background: #fbd91b;
 }
+
+// Scoreboard
+.scoreboard {
+	list-style: none;
+
+	& > li {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 0.5rem;
+	}
+}
+
+.score {
+	display: inline-flex;
+	flex-direction: row;
+	width: 12.5rem;
+	height: 1.5rem;
+	margin-right: 0.5rem;
+	background: rgba(255, 255, 255, 0.125);
+
+	& > div {
+		flex-shrink: 0;
+		flex-grow: 0;
+		flex-basis: auto;
+	}
+}
+
+.score-name {
+	color: #fff;
+}
+
+.scoreboard-page {
+	text-align: center;
+}
+
+.scoreboard-page .scoreboard {
+	display: inline-block;
+
+	& > li:nth-child(-n + 3) {
+		font-size: 1.25rem;
+
+		.score {
+			height: 3rem;
+		}
+	}
+}
+
+// Homepage
+.homepage {
+	@media (min-width: 32rem) {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(15rem, 1fr));
+		grid-gap: 1rem;
+	}
+}

@@ -2,30 +2,37 @@
 title: Support tables for HTML and CSS in emails
 layout: default
 ---
-<div class="caniemail-block">
-	<h1 class="caniemail-list-title"><a href="/news/">Latest news</a></h1>
-	<ul class="caniemail-list">
-		{% for post in site.posts limit:5 %}
-		<li><a href="{{ post.url }}">{{ post.title | markdownify | strip_html }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
-		{% endfor %}
-	</ul>
-	<a href="/news/" class="feature-button">View all news</a>
-</div>
-<div class="caniemail-block">
-	<h1 class="caniemail-list-title"><a href="/features/">Latest features</a></h1>
-	<ul class="caniemail-list">
-		{% assign latest-features = site.features | sort:"last_test_date" | reverse %}
-		{% for feature in latest-features limit:5 %}
-			{% assign feature-category = '' %}
-			{% if feature.category == 'html' or feature.category == 'css' %}
-				{% assign feature-title-first-chars = feature.title | downcase | slice: 0, feature.category.size %}
-				{% assign feature-category-first-chars = feature.category | downcase %}
-				{% if feature-category-first-chars != feature-title-first-chars %}
-					{% assign feature-category = feature.category | upcase | append:' ' %}
+<div class="homepage">
+	<div class="caniemail-block">
+		<h1 class="caniemail-list-title"><a href="/features/">Latest features</a></h1>
+		<ul class="caniemail-list">
+			{% assign latest-features = site.features | sort:"last_test_date" | reverse %}
+			{% for feature in latest-features limit:5 %}
+				{% assign feature-category = '' %}
+				{% if feature.category == 'html' or feature.category == 'css' %}
+					{% assign feature-title-first-chars = feature.title | downcase | slice: 0, feature.category.size %}
+					{% assign feature-category-first-chars = feature.category | downcase %}
+					{% if feature-category-first-chars != feature-title-first-chars %}
+						{% assign feature-category = feature.category | upcase | append:' ' %}
+					{% endif %}
 				{% endif %}
-			{% endif %}
-		<li><a href="{{ feature.url }}">{{ feature-category | default:'' }}{{ feature.title | escape_once }}</a>, {{ feature.last_test_date | date: '%B %d, %Y' }}</li>
-		{% endfor %}
-	</ul>
-	<a href="/features/" class="feature-button">View all features</a>
+			<li><a href="{{ feature.url }}">{{ feature-category | default:'' }}{{ feature.title | escape_once }}</a>, {{ feature.last_test_date | date: '%B %d, %Y' }}</li>
+			{% endfor %}
+		</ul>
+		<a href="/features/" class="feature-button">View all features</a>
+	</div>
+	<div class="caniemail-block">
+		<h1 class="caniemail-list-title"><a href="/news/">Latest news</a></h1>
+		<ul class="caniemail-list">
+			{% for post in site.posts limit:5 %}
+			<li><a href="{{ post.url }}">{{ post.title | markdownify | strip_html }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
+			{% endfor %}
+		</ul>
+		<a href="/news/" class="feature-button">View all news</a>
+	</div>
+	<div class="caniemail-block">
+		<h1 class="caniemail-list-title">Client scores</h1>
+		{% include client-scores.html limit=5 %}
+		<a href="/scoreboard/" class="feature-button">View the scoreboard</a>
+	</div>
 </div>
