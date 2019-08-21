@@ -12,7 +12,7 @@
 	{% comment %}
 		1. We go through each existing feature.
 	{% endcomment %}
-	{% for feature in site.features limit:3 %}
+	{% for feature in site.features %}
 		{% assign feature-stats = feature.stats %}
 		{% comment %}
 			2. We go through each family of the current feature.
@@ -31,6 +31,15 @@
 				{% assign client-scores-n = client-scores-n | push: 0 %}
 				{% assign client-scores-u = client-scores-u | push: 0 %}
 				{% assign family-index = client-scores-families.size | minus: 1 %}
+			{% else %}
+				{% comment %}
+					If the family already exists, we get its index in the `client-scores-families` array.
+				{% endcomment %}
+				{% for client-scores-family in client-scores-families %}
+					{% if client-scores-family == family-key %}
+						{% assign family-index = forloop.index | minus: 1 %}
+					{% endif %}
+				{% endfor %}
 			{% endunless %}
 			{% comment %}
 				4. We go through each platform of the current family and
@@ -45,35 +54,62 @@
 						{% assign version-values = version | last | split: ' ' | first %}
 						{% case version-values %}
 							{% when 'y' %}
-								{% assign client-scores-y[family-index] = client-scores-y[family-index] | plus:1 %}
+								{% assign new-client-scores-y = '' | split:'' %}
+								{% for client-scores-y-value in client-scores-y %}
+									{% assign i = forloop.index | minus:1 %}
+									{% assign new-value = client-scores-y[i] %}
+									{% if i == family-index %}
+										{% assign new-value = client-scores-y[family-index] | plus:1 %}
+									{% endif %}
+									{% assign new-client-scores-y = new-client-scores-y | push:new-value %}
+								{% endfor %}
+								{% assign client-scores-y = new-client-scores-y %}
 							{% when 'a' %}
-								{% assign client-scores-a[family-index] = client-scores-a[family-index] | plus:1 %}
+								{% assign new-client-scores-a = '' | split:'' %}
+								{% for client-scores-a-value in client-scores-a %}
+									{% assign i = forloop.index | minus:1 %}
+									{% assign new-value = client-scores-a[i] %}
+									{% if i == family-index %}
+										{% assign new-value = client-scores-a[family-index] | plus:1 %}
+									{% endif %}
+									{% assign new-client-scores-a = new-client-scores-a | push:new-value %}
+								{% endfor %}
+								{% assign client-scores-a = new-client-scores-a %}
 							{% when 'n' %}
-								{% assign client-scores-n[family-index] = client-scores-n[family-index] | plus:1 %}
+								{% assign new-client-scores-n = '' | split:'' %}
+								{% for client-scores-n-value in client-scores-n %}
+									{% assign i = forloop.index | minus:1 %}
+									{% assign new-value = client-scores-n[i] %}
+									{% if i == family-index %}
+										{% assign new-value = client-scores-n[family-index] | plus:1 %}
+									{% endif %}
+									{% assign new-client-scores-n = new-client-scores-n | push:new-value %}
+								{% endfor %}
+								{% assign client-scores-n = new-client-scores-n %}
 							{% when 'u' %}
-								{% assign client-scores-u[family-index] = client-scores-u[family-index] | plus:1 %}
+								{% assign new-client-scores-u = '' | split:'' %}
+								{% for client-scores-u-value in client-scores-u %}
+									{% assign i = forloop.index | minus:1 %}
+									{% assign new-value = client-scores-u[i] %}
+									{% if i == family-index %}
+										{% assign new-value = client-scores-u[family-index] | plus:1 %}
+									{% endif %}
+									{% assign new-client-scores-u = new-client-scores-u | push:new-value %}
+								{% endfor %}
+								{% assign client-scores-u = new-client-scores-u %}
 						{% endcase %}
 					{% endif %}
 				{% endfor %}
 			{% endfor %}
 		{% endfor %}
 	{% endfor %}
-	<br />
-	{{ client-scores-families | inspect }}<br />
-	{% assign client-scores-y = "0,0,6,0,0,0,0,0,0" | split:',' %}
-	{{ client-scores-y | inspect }}<br />
-	{{ client-scores-y[2] | inspect }}<br />
-	{{ client-scores-a | inspect }}<br />
-	{{ client-scores-n | inspect }}<br />
-	{{ client-scores-u | inspect }}<br />
 	<ul class="caniemail-list">
-		<li>Foobar</li>
+		{% for client-family in client-scores-families %}
+		<li>
+			{% assign i = forloop.index | minus:1 %}
+			{{ site.data.nicenames.family[client-family] | default: client-family }}
+			(y:{{client-scores-y[i]}})
+		</li>
+		{% endfor %}
 	</ul>
 </div>
-<!--
-# Pour chaque feature:
-# - Pour chaque famille:
-# -- Si la famille n'existe pas, on l'ajoute à un tableau global.
-# -- Pour chaque plateforme, on regarde la valeur la plus récente.
-# -- On ajoute ça a un compteur pour les 4 valeurs possibles (y, a, n, u)
--->
