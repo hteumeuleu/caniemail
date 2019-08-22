@@ -50,6 +50,11 @@ stats: {
 			"2019-02": "n"
 		}
 	},
+    thunderbird: {
+        macos: {
+            "60.8":"y"
+        }
+    },
 	yahoo: {
 		desktop-webmail: {
 			"2019-02": "n"

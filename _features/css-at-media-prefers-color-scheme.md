@@ -79,7 +79,7 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "60.3":"u"
+            "60.8":"n"
         }
     },
     yahoo: {

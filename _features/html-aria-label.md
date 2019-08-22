@@ -26,6 +26,11 @@ stats: {
             "2019-02": "y"
         }
     },
+    thunderbird: {
+        macos: {
+            "60.8":"n"
+        }
+    },
     outlook: {
         windows: {
             "2007": "y",
@@ -35,7 +40,7 @@ stats: {
             "2019": "y"
         },
         windows-10-mail: {
-            "2019-02":  #N/A
+            "2019-02": "u"
         },
         macos: {
             "2019-02": "y"
