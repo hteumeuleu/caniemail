@@ -297,12 +297,26 @@ a:focus {
 // Scoreboard
 .scoreboard {
 	list-style: none;
+	counter-reset: scoreboard;
 
 	& > li {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		margin-bottom: 0.5rem;
+		counter-increment: scoreboard;
+
+		&::before {
+			content: counter(scoreboard) '.';
+			margin-right: 0.5rem;
+			width: 2.5rem;
+			text-align: right;
+
+			.homepage & {
+				width: 1rem;
+				text-align: center;
+			}
+		}
 	}
 }
 
@@ -325,19 +339,36 @@ a:focus {
 	color: #fff;
 }
 
-.scoreboard-page {
+.post--scoreboard {
 	text-align: center;
+
+	.scoreboard {
+		display: inline-block;
+		margin-left: 0;
+
+		& > li {
+			padding-right: 3rem;
+		}
+
+		@media only screen and (max-width: 40rem) {
+			& > li {
+				padding-right: 0;
+			}
+
+			.score-text {
+				width: 100%;
+				margin: 0.25rem 0 1rem 3rem;
+				text-align: left;
+			}
+		}
+	}
 }
 
-.scoreboard-page .scoreboard {
-	display: inline-block;
+.scoreboard-intro {
+	margin-bottom: 3rem;
 
-	& > li:nth-child(-n + 3) {
-		font-size: 1.25rem;
-
-		.score {
-			height: 3rem;
-		}
+	& > h1 {
+		color: #fff;
 	}
 }
 

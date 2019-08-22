@@ -2,6 +2,12 @@
 title: Email Client Support Scoreboard
 layout: default
 ---
-<div class="scoreboard-page">
+<div class="post post--scoreboard">
+	<div class="scoreboard-intro">
+		<h1>Email Client Support Scoreboard</h1>
+		<p>
+			This page ranks email clients based on their support for the <b>{{ site.features.size | default: "many" }}</b> HTML and CSS features listed on Can I email.
+		</p>
+	</div>
 	{% include client-scores.html %}
 </div>

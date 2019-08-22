@@ -1,10 +1,9 @@
-
-	{% comment %}
-		Client scores.
-		Building an array of the global score pour each client family.
-	{% endcomment %}
-	{% assign client-scores-families = "" | split: '' %}
-	{% assign client-scores-y = "" | split: '' %}
+{% comment %}
+	Client scores.
+	Building an array of the global score pour each client family.
+{% endcomment %}
+{% assign client-scores-families = "" | split: '' %}
+{% assign client-scores-y = "" | split: '' %}
 {% assign client-scores-a = "" | split: '' %}
 {% assign client-scores-n = "" | split: '' %}
 {% assign client-scores-u = "" | split: '' %}
@@ -161,11 +160,13 @@
 			<div title="{{ client-scores-n[i] | times: 1 }}" style="width:{{client-scores-n-percent | default:0 }}%;" class="unsupported"></div>
 			<div title="{{ client-scores-u[i] | times: 1 }}" style="width:{{client-scores-u-percent | default:0 }}%;" class="unknown"></div>
 		</div>
-		<span class="score-name">
-			{{ site.data.nicenames.family[client-family] | default: client-family }}
-			({{ site.data.nicenames.platform[client-platform] | default: client-platform }})
-		</span>:
-		{{ client-scores-y[i] | times: 1 }}
+		<span class="score-text">
+			<span class="score-name">
+				{{ site.data.nicenames.family[client-family] | default: client-family }}
+				({{ site.data.nicenames.platform[client-platform] | default: client-platform }})
+			</span>:
+			{{ client-scores-y[i] | times: 1 }}
+		</span>
 	</li>
 	{% endfor %}
 </ul>
