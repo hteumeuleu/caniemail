@@ -266,6 +266,9 @@ a:focus {
 
 // Footer
 .caniemail-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin-top: 5rem;
 	padding: 2rem 0;
 	border-top: 2px solid rgba(255, 255, 255, 0.2);
@@ -279,6 +282,10 @@ a:focus {
 	}
 }
 
+.caniemail-footer-section:first-child {
+	padding-right: 1rem;
+}
+
 .caniemail-footer-title {
 	margin-bottom: 0.75rem;
 	color: #fff;
@@ -286,8 +293,26 @@ a:focus {
 	font-weight: 300;
 }
 
+.legend-list {
+	list-style: none;
+
+	li {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	span {
+		display: inline-block;
+		width: 1.5rem;
+		height: 0.75rem;
+		margin-right: 0.25rem;
+	}
+}
+
 .beta,
 .warning {
+	width: 100%;
 	margin-top: 2rem;
 	padding: 1rem;
 	color: #1b1b1d;
@@ -326,7 +351,7 @@ a:focus {
 	width: 12.5rem;
 	height: 1.5rem;
 	margin-right: 0.5rem;
-	background: rgba(255, 255, 255, 0.125);
+	background: #838383;
 
 	& > div {
 		flex-shrink: 0;
