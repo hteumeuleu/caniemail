@@ -295,6 +295,7 @@ a:focus {
 
 .legend-list {
 	list-style: none;
+	margin-bottom: 0.75rem;
 
 	li {
 		display: flex;
@@ -310,6 +311,32 @@ a:focus {
 	}
 }
 
+// Accessible colors
+.a11y-colors-button {
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+	color: inherit;
+	font: inherit;
+	text-decoration: underline;
+	cursor: pointer;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:active,
+	&:focus {
+		outline: 1px dotted currentColor;
+		outline-offset: 0.25rem;
+	}
+
+	&::-moz-focus-inner {
+		border: none;
+	}
+}
+
+// Beta message
 .beta,
 .warning {
 	width: 100%;

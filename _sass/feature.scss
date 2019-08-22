@@ -134,6 +134,7 @@
 	}
 }
 
+	// Support colors
 	.supported,
 	.supported::before {
 		background-color: #39b54a !important;
@@ -151,6 +152,26 @@
 
 	.unknown {
 		background-color: #838383 !important;
+	}
+
+	// Accessible colors
+	.accessible-colors-enabled {
+		.supported,
+		.supported::before {
+			color: #000;
+			background-color: #a6edb2 !important;
+		}
+
+		.unsupported,
+		.unsupported::before {
+			background-color: #842e98 !important;
+		}
+
+		.mitigated,
+		.mitigated::before {
+			color: #000;
+			background-color: #8090f9 !important;
+		}
 	}
 
 .data-details {
