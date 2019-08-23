@@ -25,6 +25,17 @@ stats: {
             "2019-02":  "y"
         }
     },
+    orange: {
+        desktop-webmail: {
+            "2019-08":"n #2"
+        },
+        ios: {
+            "2019-08":"y"
+        },
+        android: {
+            "2019-08":"y"
+        }
+    },
     outlook: {
         windows: {
             "2007": "n",
@@ -83,6 +94,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. Cannot scroll through to hidden content."
+    "1": "Buggy. Cannot scroll through to hidden content.",
+    "2": "Buggy. `overflow` is replaced by `java-script`."
 }
 ---

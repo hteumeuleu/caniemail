@@ -26,6 +26,17 @@ stats: {
 			"2019-02": "a #1"
 		}
 	},
+    orange: {
+        desktop-webmail: {
+            "2019-08":"y"
+        },
+        ios: {
+            "2019-08":"a #3"
+        },
+        android: {
+            "2019-08":"y"
+        }
+    },
 	outlook: {
 		windows: {
 			"2007": "n",
@@ -85,6 +96,7 @@ stats: {
 }
 notes_by_num: {
 	"1": "Partial. Not supported with non Gmail accounts.",
-	"2": "Citation needed."
+	"2": "Citation needed.",
+	"3": "Partial. Only works on focusable elements."
 }
 ---
