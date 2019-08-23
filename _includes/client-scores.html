@@ -165,7 +165,7 @@
 				{{ site.data.nicenames.family[client-family] | default: client-family }}
 				({{ site.data.nicenames.platform[client-platform] | default: client-platform }})
 			</span>:
-			{{ client-scores-y[i] | times: 1 }}
+			{{ client-scores-y[i] | times: 1 }}<small>/{{ client-scores-y[i] | plus: client-scores-a[i] | plus: client-scores-n[i] }}</small>
 		</span>
 	</li>
 	{% endfor %}
