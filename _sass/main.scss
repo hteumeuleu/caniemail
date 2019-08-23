@@ -312,6 +312,10 @@ a:focus {
 }
 
 // Accessible colors
+.a11y-colors {
+	min-width: 12.5rem;
+}
+
 .a11y-colors-button {
 	-webkit-appearance: none;
 	background: none;
