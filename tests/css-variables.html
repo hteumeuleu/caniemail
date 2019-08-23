@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<head>
+	<title>css variables</title>
+</head>
+<body>
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td style="--test1: green; padding:10px; color:#fff; background:red; background:var(--test1);">
+				--test1: green; on td
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" style="--test2: green;">
+		<tr>
+			<td style="padding:10px; color:#fff; background:red; background:var(--test2);">
+				--test2: green; on parent table
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
