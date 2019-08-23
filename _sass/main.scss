@@ -343,11 +343,19 @@ a:focus {
 // Beta message
 .beta,
 .warning {
+	color: #1b1b1d;
+	background: #fbd91b;
+}
+
+.warning {
 	width: 100%;
 	margin-top: 2rem;
 	padding: 1rem;
-	color: #1b1b1d;
-	background: #fbd91b;
+}
+
+.beta {
+	display: inline-block;
+	padding: 0.25rem 0.5rem;
 }
 
 // Scoreboard
