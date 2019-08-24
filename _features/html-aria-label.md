@@ -26,6 +26,17 @@ stats: {
             "2019-02": "y"
         }
     },
+    orange: {
+        desktop-webmail: {
+            "2019-08":"y"
+        },
+        ios: {
+            "2019-08":"u"
+        },
+        android: {
+            "2019-08":"u"
+        }
+    },
     thunderbird: {
         macos: {
             "60.8":"n"
