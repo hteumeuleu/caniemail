@@ -145,14 +145,15 @@
 {% endcomment %}
 <ul class="scoreboard">
 	{% assign client-scores-limit = include.limit | default: 999 %}
+	{% assign number-of-features = site.features.size | times: 1.0 %}
 	{% for client in client-scores-families limit:client-scores-limit %}
 		{% assign i = forloop.index | minus:1 %}
 		{% assign client-family = client | split:':' | first %}
 		{% assign client-platform = client | split:':' | last %}
-		{% assign client-scores-y-percent = client-scores-y[i] | times: 100 | divided_by: site.features.size %}
-		{% assign client-scores-a-percent = client-scores-a[i] | times: 100 | divided_by: site.features.size %}
-		{% assign client-scores-n-percent = client-scores-n[i] | times: 100 | divided_by: site.features.size %}
-		{% assign client-scores-u-percent = client-scores-u[i] | times: 100 | divided_by: site.features.size %}
+		{% assign client-scores-y-percent = client-scores-y[i] | times: 100 | divided_by: number-of-features | round: 2 %}
+		{% assign client-scores-a-percent = client-scores-a[i] | times: 100 | divided_by: number-of-features | round: 2 %}
+		{% assign client-scores-n-percent = client-scores-n[i] | times: 100 | divided_by: number-of-features | round: 2 %}
+		{% assign client-scores-u-percent = client-scores-u[i] | times: 100 | divided_by: number-of-features | round: 2 %}
 	<li>
 		<div class="score">
 			<div title="{{ client-scores-y[i] | times: 1 }}" style="width:{{client-scores-y-percent | default:0 }}%;" class="supported"></div>
