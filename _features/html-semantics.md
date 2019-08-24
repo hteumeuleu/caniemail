@@ -2,7 +2,7 @@
 title: "HTML5 semantics"
 description: "This includes support for `<article>`, `<aside>`, `<details>`, `<figcaption>`, `<figure>`, `<footer>`, `<header>`, `<main>`, `<mark>`, `<nav>`, `<section>`, `<summary>`, `<time>` elements."
 category: html
-keywords: <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>
+keywords: article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time
 last_test_date: "2019-07-29"
 test_url: "/tests/html-semantics.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/fel5GW8SquYS9SWxQHu5Z9s0IeTpLZcnf5ghDEqQFf5Je/list"
