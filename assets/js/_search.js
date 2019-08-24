@@ -25,6 +25,12 @@ class Search {
 				this.query();
 			});
 
+			this.input.addEventListener('blur', e => {
+				if(this.data && this.term && this.results.length > 0) {
+					this.updateURL();
+				}
+			});
+
 			const url = new URL(document.location.href);
 			if(url.searchParams.get('s') != null) {
 
@@ -99,7 +105,6 @@ class Search {
 				this.removeEmptyMessage();
 				this.buildResultsContainer();
 				this.buildResults();
-				this.updateURL();
 				this.updateTitle();
 			}
 		}
