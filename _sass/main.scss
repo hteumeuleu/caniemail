@@ -397,6 +397,11 @@ a:focus {
 		flex-grow: 0;
 		flex-basis: auto;
 	}
+
+	@media (max-width: 30rem) {
+		width: calc(100% - 6rem);
+		margin-right: 0;
+	}
 }
 
 .score-name {
