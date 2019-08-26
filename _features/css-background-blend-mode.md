@@ -20,12 +20,23 @@ stats: {
 			"2019-02": "y"
 		},
 		ios: {
-			"2019-02": "a"
+			"2019-02": "a #1"
 		},
 		android: {
-			"2019-02": "a"
+			"2019-02": "a #1"
 		}
 	},
+    orange: {
+        desktop-webmail: {
+            "2019-08":"y"
+        },
+        ios: {
+            "2019-08":"y"
+        },
+        android: {
+            "2019-08":"y"
+        }
+    },
 	outlook: {
 		windows: {
 			"2007": "n",
@@ -74,9 +85,21 @@ stats: {
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "y"
+			"5.0.10.2": "y",
+			"6.0.04.6": "y"
 		}
 	},
+    sfr: {
+        desktop-webmail: {
+            "2019-08":"y"
+        },
+        ios: {
+            "2019-08":"y"
+        },
+        android: {
+            "2019-08":"y"
+        }
+    },
 	thunderbird: {
 		macos: {
 			"60.5.0": "y"
@@ -84,6 +107,6 @@ stats: {
 	}
 }
 notes_by_num: {
-	"1": ""
+    "1": "Partial. Not supported with non Gmail accounts."
 }
 ---

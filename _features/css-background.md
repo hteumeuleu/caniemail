@@ -1,7 +1,7 @@
 ---
-title: "background-repeat"
+title: "shorthand"
 description: ""
-category: css
+category:	css
 keywords:
 last_test_date: "2019-02-28"
 test_url: "/tests/css-background.html"
@@ -63,24 +63,24 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "a"
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "a"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "n"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "a"
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "a"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "a"
 		}
 	},
 	samsung-email: {

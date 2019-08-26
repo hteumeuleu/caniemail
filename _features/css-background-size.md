@@ -20,10 +20,10 @@ stats: {
 			"2019-02": "y"
 		},
 		ios: {
-			"2019-02": "a"
+			"2019-02": "a #1"
 		},
 		android: {
-			"2019-02": "a"
+			"2019-02": "a #1"
 		}
 	},
     orange: {
@@ -34,7 +34,7 @@ stats: {
             "2019-08":"y"
         },
         android: {
-            "2019-08":"u"
+            "2019-08":"y"
         }
     },
 	outlook: {
@@ -85,7 +85,8 @@ stats: {
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "y"
+			"5.0.10.2": "y",
+            "6.0.04.6": "y"
 		}
 	},
     sfr: {
@@ -96,7 +97,7 @@ stats: {
             "2019-08":"y"
         },
         android: {
-            "2019-08":"u"
+            "2019-08":"y"
         }
     },
 	thunderbird: {
@@ -104,5 +105,8 @@ stats: {
 			"60.5.0": "y"
 		}
 	}
+}
+notes_by_num: {
+    "1": "Partial. Not supported with non Gmail accounts. But it can be used in the `background` shorthand property instead."
 }
 ---

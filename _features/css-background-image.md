@@ -1,5 +1,5 @@
 ---
-title: "background-repeat"
+title: "background-image"
 description: ""
 category: css
 keywords:
@@ -20,10 +20,14 @@ stats: {
 			"2019-02": "y"
 		},
 		ios: {
-			"2019-02": "a"
+            "2018-09": "a #1",
+            "2018-10": "a #1",
+            "2019-02": "y"
 		},
 		android: {
-			"2019-02": "a"
+			"2018-09": "a #1",
+            "2018-10": "a #1",
+            "2019-02": "y"
 		}
 	},
     orange: {
@@ -63,30 +67,30 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "a #3"
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "a #3"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "a #3"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "a #3"
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "a #3"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "a #3"
 		}
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "y",
-			"6.0.04.6": "y"
+			"5.0.10.2": "a #2",
+            "6.0.04.6": "y"
 		}
 	},
     sfr: {
@@ -107,6 +111,8 @@ stats: {
 	}
 }
 notes_by_num: {
-	"1": ""
+    "1": "Partial. Not supported with non Gmail accounts.",
+    "2": "Buggy. Requires at least one `<img>` element in the email to download all images.",
+    "3": "Partial. Does not support multiple values declarations.",
 }
 ---
