@@ -115,4 +115,8 @@ notes_by_num: {
     "6": "Partial. Not supported with non Gmail accounts.",
     "7": "Partial. Does not support height based media queries."
 }
+links: {
+    "Can I use: CSS3 Media Queries":"https://caniuse.com/#feat=css-mediaqueries",
+    "MDN: @media":"https://developer.mozilla.org/en-US/docs/Web/CSS/@media"
+}
 ---

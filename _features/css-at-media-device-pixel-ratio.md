@@ -109,4 +109,8 @@ stats: {
 notes_by_num: {
     "1": "Buggy. The first rule inside a media query is not prefixed."
 }
+links: {
+    "Can I use: Media Queries: Resolution Feature":"https://www.caniuse.com/#feat=css-media-resolution",
+    "MDN: -webkit-device-pixel-ratio":"https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-webkit-device-pixel-ratio"
+}
 ---

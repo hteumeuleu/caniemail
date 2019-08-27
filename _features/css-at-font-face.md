@@ -2,7 +2,7 @@
 title: "@font-face"
 description: "`@font-face` in CSS allows to include your own fonts inside an email."
 category: css
-keywords: font, web fonts, google fonts
+keywords: font face, web fonts, google fonts
 last_test_date: "2019-07-18"
 test_url: "/tests/css-font-face.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/CJWdqiWQQ3ENhRI169UVE3ThdDmzIXfOrWmk6Hxw6eV9Q/list"
@@ -95,12 +95,15 @@ stats: {
         }
     }
 }
-notes: "This is a global note."
 notes_by_num: {
     "1": "Partial. Only supported through a `<link>` tag.",
     "2": "Partial. Only supported directly through a `<style>` tag.",
     "3": "Buggy. Support depends on the version of IE installed.",
     "4": "Partial. The declaration is supported but distant fonts are ignored.",
     "5": "Buggy. Elements using a font declared with `@font-face` ignore the font stack and fall back to Times New Roman. Use `mso-generic-font-family` and `mso-font-alt` to control the fallback."
+}
+links: {
+    "Can I use: @font-face Web fonts":"https://www.caniuse.com/#feat=fontface",
+    "MDN: @font-face":"https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
 }
 ---

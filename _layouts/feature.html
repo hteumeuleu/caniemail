@@ -196,19 +196,33 @@ layout: default
 		</div>
 	</div>
 	<footer class="feature-footer">
-		{% if page.notes_by_num.size > 0 %}
+		{% if page.notes_by_num.size > 0 or page.links.size > 0%}
 		<div class="data-notes">
-			<h2 class="caniemail-list-title">Notes</h2>
-			{{ page.notes | markdownify }}
-			<ul class="data-notes-list">
-			{% for note in page.notes_by_num %}
-				{% assign note-key = note | first %}
-				{% assign note-value = note | last %}
-				<li class="data-note" id="{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">
-					<span class="data-note-key">{{ note-key }}</span> {{ note-value | markdownify }}
-				</li>
-			{% endfor %}
+			{% if page.notes_by_num.size > 0 %}
+				<h2 class="caniemail-list-title">Notes</h2>
+				{{ page.notes | markdownify }}
+				<ul class="data-notes-list">
+				{% for note in page.notes_by_num %}
+					{% assign note-key = note | first %}
+					{% assign note-value = note | last %}
+					<li class="data-note" id="{{ page.title | slugify }}-cite-note-{{ note-key | slugify }}">
+						<span class="data-note-key">{{ note-key }}</span> {{ note-value | markdownify }}
+					</li>
+				{% endfor %}
 			</ul>
+			{% endif %}
+			{% if page.links.size > 0 %}
+				<h2 class="caniemail-list-title">Resources</h2>
+				<ul class="caniemail-list">
+				{% for link in page.links %}
+					{% assign link-title = link | first %}
+					{% assign link-url = link | last %}
+					<li>
+						<a href="{{ link-url | escape_once }}">{{ link-title }}</a>
+					</li>
+				{% endfor %}
+				</ul>
+			{% endif %}
 		</div>
 		{% endif %}
 		<div class="data-contribute">

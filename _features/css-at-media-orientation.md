@@ -109,4 +109,8 @@ stats: {
 notes_by_num: {
     "1": "Buggy. The first rule inside a media query is not prefixed."
 }
+links: {
+    "Can I use: CSS3 Media Queries":"https://caniuse.com/#feat=css-mediaqueries",
+    "MDN: orientation":"https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation"
+}
 ---
