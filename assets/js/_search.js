@@ -73,13 +73,14 @@ class Search {
 
 		if(!this.term) {
 			this.form.classList.remove('caniemail-search--loading');
-			this.removeEmptyMessage();
+			this.removeResultsMessage();
 			this.removeResultsContainer();
 			history.pushState({id:'search'}, 'search', `${this.origin}`);
 		}
 
 		if(this.data && this.term) {
 
+			const previousResultsLength = this.results ? this.results.length : -1;
 			this.results = [];
 			if(this.term.includes('+')) {
 
@@ -97,12 +98,14 @@ class Search {
 
 			this.form.classList.remove('caniemail-search--loading');
 
+			if(this.results.length != previousResultsLength) {
+				this.buildResultsMessage(this.results.length);
+			}
+
 			if(this.results.length == 0) {
-				this.buildEmptyMessage();
 				this.removeResultsContainer();
 			}
 			else {
-				this.removeEmptyMessage();
 				this.buildResultsContainer();
 				this.buildResults();
 				this.updateTitle();
@@ -110,21 +113,31 @@ class Search {
 		}
 	}
 
-	removeEmptyMessage() {
+	removeResultsMessage() {
 
-		if(document.querySelector('[role=search] form .caniemail-search-empty') != null) {
-			document.querySelector('[role=search] form .caniemail-search-empty').remove();
+		let searchResultsMessage = document.querySelector('[role=search] form .caniemail-search-empty');
+		if(searchResultsMessage != null) {
+			searchResultsMessage.remove();
 		}
 	}
 
-	buildEmptyMessage() {
+	buildResultsMessage(n) {
 
-		if(document.querySelector('[role=search] form .caniemail-search-empty') == null) {
+		let searchResultsMessage = document.querySelector('[role=search] form .caniemail-search-empty');
+		if(searchResultsMessage == null) {
 			let noResult = document.createElement('p');
 			noResult.classList.add('caniemail-search-empty');
-			noResult.innerHTML = 'No results found.';
-			document.querySelector('[role=search] form').appendChild(noResult);
+			searchResultsMessage = document.querySelector('[role=search] form').appendChild(noResult);
 		}
+		let message = '';
+		if(n == 0) {
+			message = 'No results found.';
+		} else if (n == 1) {
+			message = '1 result found.';
+		} else {
+			message = n + ' results found.';
+		}
+		searchResultsMessage.innerHTML = message;
 	}
 
 	buildResultsContainer() {
