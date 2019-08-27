@@ -91,6 +91,17 @@ stats: {
         android: {
             "5.0.10.2": "y"
         }
+    },
+    sfr: {
+        desktop-webmail: {
+            "2019-08":"y"
+        },
+        ios: {
+            "2019-08":"y #1"
+        },
+        android: {
+            "2019-08":"y"
+        }
     }
 }
 notes_by_num: {

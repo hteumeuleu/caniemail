@@ -83,6 +83,17 @@ stats: {
 			"2019-02": "n"
 		}
 	},
+    sfr: {
+        desktop-webmail: {
+            "2019-08":"y"
+        },
+        ios: {
+            "2019-08":"y"
+        },
+        android: {
+            "2019-08":"y"
+        }
+    },
 	samsung-email: {
 		android: {
 			"5.0.10.2": "y"
