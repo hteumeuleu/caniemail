@@ -153,7 +153,7 @@
 		{% assign client-scores-y-percent = client-scores-y[i] | times: 100 | divided_by: number-of-features | round: 2 %}
 		{% assign client-scores-a-percent = client-scores-a[i] | times: 100 | divided_by: number-of-features | round: 2 %}
 		{% assign client-scores-n-percent = client-scores-n[i] | times: 100 | divided_by: number-of-features | round: 2 %}
-		{% assign client-scores-u-percent = client-scores-u[i] | times: 100 | divided_by: number-of-features | round: 2 %}
+		{% assign client-scores-u-percent = 100 | minus: client-scores-y-percent | minus: client-scores-a-percent | minus: client-scores-n-percent | round: 2 %}
 	<li>
 		<div class="score">
 			<div title="{{ client-scores-y[i] | times: 1 }}" style="width:{{client-scores-y-percent | default:0 }}%;" class="supported"></div>
