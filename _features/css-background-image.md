@@ -21,12 +21,12 @@ stats: {
 		},
 		ios: {
             "2018-09": "a #1",
-            "2018-10": "a #1",
+            "2018-10": "y",
             "2019-02": "y"
 		},
 		android: {
 			"2018-09": "a #1",
-            "2018-10": "a #1",
+            "2018-10": "y",
             "2019-02": "y"
 		}
 	},
@@ -113,6 +113,6 @@ stats: {
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",
     "2": "Buggy. Requires at least one `<img>` element in the email to download all images.",
-    "3": "Partial. Does not support multiple values declarations.",
+    "3": "Partial. Does not support multiple values. The comma between two values is removed."
 }
 ---

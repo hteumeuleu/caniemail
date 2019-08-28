@@ -1,7 +1,7 @@
 ---
-title: "shorthand"
+title: "background"
 description: ""
-category:	css
+category: css
 keywords:
 last_test_date: "2019-02-28"
 test_url: "/tests/css-background.html"
@@ -20,30 +20,30 @@ stats: {
 			"2019-02": "y"
 		},
 		ios: {
-			"2019-02": "a"
+			"2019-02": "y"
 		},
 		android: {
-			"2019-02": "a"
+			"2019-02": "y"
 		}
 	},
     orange: {
         desktop-webmail: {
-            "2019-08":"y"
+            "2019-08": "y"
         },
         ios: {
-            "2019-08":"y"
+            "2019-08": "y"
         },
         android: {
-            "2019-08":"y"
+            "2019-08": "y"
         }
     },
 	outlook: {
 		windows: {
-			"2007": "n",
-			"2010": "n",
-			"2013": "n",
-			"2016": "n",
-			"2019": "n"
+			"2007": "a #3",
+			"2010": "a #3",
+			"2013": "a #3",
+			"2016": "a #3",
+			"2019": "a #3"
 		},
 		windows-10-mail: {
 			"2019-02": "n"
@@ -63,24 +63,24 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "a"
+			"2019-02": "a #1 #2"
 		},
 		ios: {
-			"2019-02": "a"
+			"2019-02": "a #1 #2"
 		},
 		android: {
-			"2019-02": "n"
+			"2019-02": "a #1 #2"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "a"
+			"2019-02": "a #1 #2"
 		},
 		ios: {
-			"2019-02": "a"
+			"2019-02": "a #1 #2"
 		},
 		android: {
-			"2019-02": "a"
+			"2019-02": "a #1 #2"
 		}
 	},
 	samsung-email: {
@@ -91,13 +91,13 @@ stats: {
 	},
     sfr: {
         desktop-webmail: {
-            "2019-08":"y"
+            "2019-08": "y"
         },
         ios: {
-            "2019-08":"y"
+            "2019-08": "y"
         },
         android: {
-            "2019-08":"y"
+            "2019-08": "y"
         }
     },
 	thunderbird: {
@@ -107,6 +107,8 @@ stats: {
 	}
 }
 notes_by_num: {
-	"1": ""
+    "1": "Partial. Does not support multiple values. The comma between two values is removed.",
+    "2": "Partial. Does not support the `/ value` shorthand for `background-size`. But it can be used in the `background-size` property instead.",
+    "3": "Partial. Only `background-color` values are supported."
 }
 ---

@@ -63,24 +63,24 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "y #1"
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "y #1"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "y #1"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "y #1"
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "y #1"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "y #1"
 		}
 	},
 	samsung-email: {
@@ -107,6 +107,6 @@ stats: {
 	}
 }
 notes_by_num: {
-	"1": ""
+    "1": "Partial. Does not support multiple values. The comma between two values is removed."
 }
 ---
