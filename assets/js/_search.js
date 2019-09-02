@@ -171,27 +171,13 @@ class Search {
 				let div = document.createElement('div');
 				div.innerHTML = `<section class="feature feature--placeholder" data-url="${feature.url}">
 						<header class="feature-header">
-							<h1 class="feature-title"><a href="${feature.url}">${feature.title}<span class="feature-permalink" aria-hidden="true">#</span></a></h1>
-							<p>${feature.description}</p>
-						</header>
-						<div class="data">
-							<div class="data-summary">
-								<ul class="data-summary-panel">
-									<li class="data-summary-family">
-										<div class="data-summary-cell unknown"></div>
-									</li>
-									<li class="data-summary-family">
-										<div class="data-summary-cell unknown"></div>
-									</li>
-									<li class="data-summary-family">
-										<div class="data-summary-cell unknown"></div>
-									</li>
-									<li class="data-summary-family">
-										<div class="data-summary-cell unknown"></div>
-									</li>
-								</ul>
+							<div class="feature-header-column">
+								<h1 class="feature-title"><a href="${feature.url}">${feature.title}<span class="feature-permalink" aria-hidden="true">#</span></a></h1>
+								<div class="feature-description">
+									${feature.description}
+								</div>
 							</div>
-						</div>
+						</header>
 						<div class="data-details"></div>
 						<footer class="feature-footer"></footer>
 					</section>`;
@@ -210,11 +196,8 @@ class Search {
 					if(featureContainer != null) {
 						featureContainer.classList.remove('feature--placeholder');
 						featureContainer.classList.remove('loading');
-						featureContainer.querySelector('.data').innerHTML = div.querySelector('.data').innerHTML;
 						featureContainer.querySelector('.data-details').innerHTML = div.querySelector('.data-details').innerHTML;
 						featureContainer.querySelector('.feature-footer').innerHTML = div.querySelector('.feature-footer').innerHTML;
-
-						caniemail.feature.addEvent(featureContainer.querySelectorAll('.data .data-summary-family'));
 					}
 				})
 				.catch(error => {

@@ -30,16 +30,18 @@ layout: default
 {% assign page-most-popular-families = page-most-popular-families | concat: page-stats-keys | uniq %}
 <section class="feature">
 	<header class="feature-header">
-		<h1 class="feature-title">{{ page.title | escape_once }}</h1>
-		{{ page.description | markdownify }}
-	</header>
-	<div class="data">
-		{% comment %}
-			Data summary.
-			Showing at most three email client families with a summary/average cell for the whole family.
-		{% endcomment %}
-		<div class="data-summary">
-			<ul class="data-summary-panel">
+		<div class="feature-header-column">
+			<h1 class="feature-title">{{ page.title | escape_once }}</h1>
+			<div class="feature-description">
+				{{ page.description | markdownify }}
+			</div>
+		</div>
+		<div class="feature-header-column">
+				{% comment %}
+					Data summary.
+					Showing at most three email client families with a summary/average cell for the whole family.
+				{% endcomment %}
+			<ul class="legend-list">
 			{% comment %}
 				1. Going through the three first email client families.
 			{% endcomment %}
@@ -47,8 +49,7 @@ layout: default
 				{% assign family-key = default %}
 				{% assign family-values = page.stats[default] %}
 				{% assign family-average-support = '' %}
-				<li class="data-summary-family" data-family="{{family-key}}">
-					<h2 class="data-summary-family-title"><a href="#data-{{ page.title | slugify }}-{{ family-key }}">{{ site.data.nicenames.family[family-key] | default: family-key }}</a></h2>
+				<li>
 					{% for platform in family-values %}
 						{% assign platform-key = platform | first %}
 						{% assign platform-values = platform | last %}
@@ -87,7 +88,8 @@ layout: default
 						{% else %}
 							{% assign family-average-support-slug = '' %}
 					{% endcase %}
-					<div class="data-summary-cell {{ family-average-support-slug }}">{{ site.data.nicenames.support[family-average-support-slug] | default: family-average-support-slug }}</div>
+					<span class="{{ family-average-support-slug }}" aria-label="{{ site.data.nicenames.support[family-average-support-slug] | default: family-average-support-slug }}"></span>
+					{{ site.data.nicenames.family[family-key] | default: family-key }}
 				</li>
 			{% endfor %}
 			{% comment %}
@@ -129,14 +131,14 @@ layout: default
 					{% else %}
 						{% assign family-average-support-slug = '' %}
 				{% endcase %}
-				<li class="data-summary-family">
-					<h2 class="data-summary-family-title">Others</h2>
-					<div class="data-summary-cell {{ family-average-support-slug }}">{{ site.data.nicenames.support[family-average-support-slug] | default: family-average-support-slug }}</div>
+				<li>
+					<span class="{{ family-average-support-slug }}" aria-label="{{ site.data.nicenames.support[family-average-support-slug] | default: family-average-support-slug }}"></span>
+					Other clients
 				</li>
 			{% endif %}
 			</ul>
 		</div>
-	</div>
+	</header>
 	{% comment %}
 		Data details.
 		Showing the detailed support for each version of each client of each family.
