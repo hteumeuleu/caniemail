@@ -1,0 +1,36 @@
+last-update: 2019-07-01
+clients:
+  - name: "Gmail"
+    share: 29.3%
+    family: gmail
+  - name: "Apple iPhone"
+    share: 26.09%
+    family: apple-mail
+    platform: ios
+  - name: "Outlook"
+    share: 10.56%
+    family: outlook
+  - name: "Apple iPad"
+    share: 7.65%
+    family: apple-mail
+    platform: ios
+  - name: "Apple Mail"
+    share: 7.35%
+    family: apple-mail
+    platform: macos
+  - name: "Yahoo! Mail"
+    share: 5.59%
+    family: yahoo
+  - name: "Google Android"
+    share: 2.89%
+    family: google-android
+  - name: "Outlook.com"
+    share: 2.08%
+    family: outlook
+    platform: outlook-com
+  - name: "Samsung Mail"
+    share: 1.2%
+    family: samsung-email
+  - name: "Thunderbird"
+    share: 0.51%
+    family: thunderbird
