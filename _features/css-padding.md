@@ -40,11 +40,11 @@ stats: {
     outlook: {
         windows: {
             "2003":"y",
-            "2007":"a #1",
-            "2010":"a #1",
-            "2013":"a #1",
-            "2016":"a #1",
-            "2019":"a #1"
+            "2007":"a #1 #2",
+            "2010":"a #1 #2",
+            "2013":"a #1 #2",
+            "2016":"a #1 #2",
+            "2019":"a #1 #2"
         },
         macos: {
             "2011":"y",
@@ -94,6 +94,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Only supported on table cells."
+    "1": "Partial. Only supported on table cells.",
+    "2": "Buggy. Vertical padding will be the same for all cells of a same row, adopting the biggest value."
 }
 ---
