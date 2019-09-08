@@ -5,7 +5,7 @@
 + [Links](#links)
 + [Getting Started](#getting-started)
 + [Usage](#usage)
-+ [Contributing](contributing.md)
++ [Contributing](CONTRIBUTING.md)
 
 ## About
 
@@ -13,8 +13,7 @@ caniemail.com provides email clients support tables for HTML and CSS features.
 
 ## Links
 
-- https://caniemail.com/
-- https://beta.caniemail.com/
+- https://www.caniemail.com/
 
 ## Getting started
 
