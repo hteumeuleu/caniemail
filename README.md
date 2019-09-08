@@ -5,7 +5,7 @@
 + [Links](#links)
 + [Getting Started](#getting-started)
 + [Usage](#usage)
-+ [Contributing](contributing.md)
++ [Contributing](CONTRIBUTING.md)
 
 ## About
 
