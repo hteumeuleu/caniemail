@@ -3,7 +3,7 @@ title:  "Introducing caniemail.com"
 date: 2019-09-09
 ---
 
-Last march, I wrote [a proposal for Can I email](http://127.0.0.1:4000/news/2019-03-15-caniemail-a-proposal/), a website similar to [caniuse.com](https://www.caniuse.com) dedicated to support in email clients.
+Last march, I wrote [a proposal for Can I email](/news/2019-03-15-caniemail-a-proposal/), a website similar to [caniuse.com](https://www.caniuse.com) dedicated to support in email clients.
 
 Today, barely six months after, I am really happy and pleased to announce that with the help of my colleagues and members of the email geeks community, we're officially launching [caniemail.com](https://www.caniemail.com).
 
