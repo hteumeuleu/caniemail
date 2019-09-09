@@ -17,14 +17,14 @@ caniemail.com provides email clients support tables for HTML and CSS features.
 
 ## Getting started
 
-Caniemail.com runs on [Jekyll](https://www.jekyllrb.com/) as a [GitHub Pages](https://pages.github.com/) site with a home made theme.
+Caniemail.com runs on [Jekyll](https://jekyllrb.com/) as a [GitHub Pages](https://pages.github.com/) site with a home made theme.
 
 The site uses [Sass](https://sass-lang.com/) for CSS compilation.
 
 1. Clone the repository. 
 
 ```
-git clone https://www.github.com/hteumeuleu/caniemail.git
+git clone https://github.com/hteumeuleu/caniemail.git
 ```
 
 See [Cloning a repository](https://help.github.com/en/articles/cloning-a-repository) on GitHub documentation.
