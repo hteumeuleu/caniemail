@@ -98,12 +98,13 @@ class Search {
 
 			this.form.classList.remove('caniemail-search--loading');
 
-			if(this.results.length != previousResultsLength) {
+			if(this.results.length != 0 && this.results.length != previousResultsLength) {
 				this.buildResultsMessage(this.results.length);
 			}
 
 			if(this.results.length == 0) {
 				this.removeResultsContainer();
+				this.buildResultsMessage(this.results.length);
 			}
 			else {
 				this.buildResultsContainer();
@@ -132,6 +133,7 @@ class Search {
 		let message = '';
 		if(n == 0) {
 			message = 'No results found.';
+			message += ' Why not <a href="https://github.com/hteumeuleu/caniemail/issues?utf8=✓&q=is%3Aissue+is%3Aopen+'+encodeURIComponent(this.term)+'">suggest this feature to be added?</a>';
 		} else if (n == 1) {
 			message = '1 result found.';
 		} else {
