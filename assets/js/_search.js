@@ -87,7 +87,7 @@ class Search {
 				let terms = this.term.split('+');
 				terms.forEach(item => {
 					if(item != '') {
-						let itemResults = this.data.filter(feature => this.results.filter(result => result.title == feature.title).length == 0 && (feature.title.toLowerCase().includes(item.toLowerCase()) || feature.keywords.includes(item.toLowerCase())));
+						let itemResults = this.data.filter(feature => this.results.filter(result => result.title == feature.title).length == 0 && (feature.title.toLowerCase().includes(item.toLowerCase().trim()) || feature.keywords.includes(item.toLowerCase().trim())));
 						this.results = [...this.results, ...itemResults];
 					}
 				});
