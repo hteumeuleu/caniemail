@@ -1,6 +1,5 @@
 ---
 title: "HTML5 doctype"
-description: "This is the description of the test property."
 code_sample: "<!doctype html>"
 category: html
 last_test_date: "2019-07-25"
