@@ -1,11 +1,11 @@
 ---
-title: "Text input"
+title: "<input type=\"text\"> element"
 description: "HTML input type text"
 category: html
 keywords: form, text
 last_test_date: "2019-09-10"
 test_url: "tests/html-forms.html"
-test_results_url: ""
+test_results_url: "https://app.emailonacid.com/app/acidtest/MOk8g8TWwCTL4vLGrdMIgu3Vncqdxif6KlK4g8HfUV1mB/list"
 stats: {
     apple-mail: {
         macos: {
@@ -83,8 +83,8 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Email scrolls to the end when space bar is pressed.  This can be fixed by wrapping the `<input>` in `<ul role=/"presentation/">` ",
-  "2": "Screen jumps when input is in focus",
-  "3": "A number of android clients will not show the keyboard when the input is clicked.  Copy and pasting text works."
+  "1": "Buggy. Email scrolls to the end when space bar is pressed.  This can be fixed by wrapping the `<input>` in `<ul role=\"presentation\">`.",
+  "2": "Buggy. Screen jumps when input is in focus.",
+  "3": "Buggy. A number of Android clients will not show the keyboard when the input is clicked. Copy and pasting text works."
 }
 ---

@@ -1,11 +1,11 @@
 ---
-title: "Submit input"
+title: "<button type=\"submit\"> element"
 description: "HTML button type submit"
 category: html
 keywords: form, submit, button
 last_test_date: "2019-09-10"
 test_url: "tests/html-forms.html"
-test_results_url: ""
+test_results_url: "https://app.emailonacid.com/app/acidtest/MOk8g8TWwCTL4vLGrdMIgu3Vncqdxif6KlK4g8HfUV1mB/list"
 stats: {
     apple-mail: {
         macos: {
@@ -83,6 +83,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Does not work in iOS GANGA"
+  "1": "Partial. Not supported with non Gmail accounts."
 }
 ---

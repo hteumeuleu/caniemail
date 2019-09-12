@@ -1,11 +1,11 @@
 ---
-title: "Select"
+title: "<select> element"
 description: "HTML select menu"
 category: html
 keywords: form, select
 last_test_date: "2019-09-10"
 test_url: "tests/html-forms.html"
-test_results_url: ""
+test_results_url: "https://app.emailonacid.com/app/acidtest/MOk8g8TWwCTL4vLGrdMIgu3Vncqdxif6KlK4g8HfUV1mB/list"
 stats: {
     apple-mail: {
         macos: {
@@ -83,6 +83,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "If the email is shorter than the viewport it works, otherwise the screen goes blank when the select is in focus"
+  "1": "Buggy. Works if the email is shorter than the viewport. Otherwise the screen goes blank when the `<select>`.` is in focus"
 }
 ---
