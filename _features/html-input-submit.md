@@ -86,7 +86,7 @@ notes_by_num: {
   "1": "Partial. Not supported with non Gmail accounts."
 }
 links: {
-    "Can I use: HTML element: input: type=\"submit\"":"https://caniuse.com/#feat=mdn-html_elements_input_input-submit",
-    "MDN: <input: type=\"submit\">":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit"
+    "Can I use: `<input type=\"submit\">`":"https://caniuse.com/#feat=mdn-html_elements_input_input-submit",
+    "MDN: `<input type=\"submit\">`":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit"
 }
 ---

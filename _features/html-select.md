@@ -83,6 +83,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Buggy. Works if the email is shorter than the viewport. Otherwise the screen goes blank when the `<select>`.` is in focus"
+  "1": "Buggy. Works if the email is shorter than the viewport. Otherwise the screen goes blank when the `<select>` is in focus."
 }
 ---
