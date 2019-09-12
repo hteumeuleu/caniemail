@@ -220,7 +220,7 @@ layout: default
 					{% assign link-title = link | first %}
 					{% assign link-url = link | last %}
 					<li>
-						<a href="{{ link-url | escape_once }}">{{ link-title }}</a>
+						<a href="{{ link-url | escape_once }}">{{ link-title | markdownify | strip_html | strip }}</a>
 					</li>
 				{% endfor %}
 				</ul>
