@@ -5,7 +5,7 @@ category: css
 keywords: font face, web fonts, google fonts
 last_test_date: "2019-07-18"
 test_url: "/tests/css-font-face.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/CJWdqiWQQ3ENhRI169UVE3ThdDmzIXfOrWmk6Hxw6eV9Q/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/veY9MhuhgFeF1ly5crrhTXawfLJSwxgpYi27OElI7iSoc/list"
 stats: {
     apple-mail: {
         macos: {
