@@ -142,7 +142,6 @@ code {
 		align-items: center;
 		margin: 0 auto;
 		white-space: nowrap;
-		width: 100%;
 	}
 }
 
@@ -158,13 +157,6 @@ code {
 			text-align: left;
 		}
 	}
-}
-
-.caniemail-search-form {
-	display: flex;
-	flex-direction: row;
-	align-items: stretch;
-	justify-content: center;
 }
 
 .caniemail-search-button {
