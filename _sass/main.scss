@@ -142,6 +142,7 @@ code {
 		align-items: center;
 		margin: 0 auto;
 		white-space: nowrap;
+		width: 100%;
 	}
 }
 
@@ -156,6 +157,30 @@ code {
 		&:last-child {
 			text-align: left;
 		}
+	}
+}
+
+.caniemail-search-form {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+}
+
+.caniemail-search-button {
+	display: inline-block;
+	padding: 0.25rem 1rem;
+	color: #fff;
+	font-size: 0.5em;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 3px;
+	border: 3px solid rgba(255, 255, 255, 0.2);
+	background: none;
+	cursor: pointer;
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.2);
 	}
 }
 
