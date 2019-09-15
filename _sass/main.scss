@@ -292,7 +292,7 @@ code {
 // Footer
 .caniemail-footer {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-between;
 	margin-top: 5rem;
 	padding: 2rem 0;
@@ -305,10 +305,28 @@ code {
 	p:not(:last-child) {
 		margin-bottom: 0.75rem;
 	}
+
+	@media only screen and (min-width: 60rem) {
+		flex-direction: row;
+	}
 }
 
-.caniemail-footer-section:first-child {
-	padding-right: 1rem;
+.caniemail-footer-section {
+	padding-bottom: 2rem;
+	max-width: 40rem;
+
+	ul {
+		list-style: none;
+	}
+
+	@media only screen and (min-width: 60rem) {
+		flex-shrink: 1;
+
+		&:not(:last-child) {
+			padding-bottom: 0;
+			padding-right: 1rem;
+		}
+	}
 }
 
 .caniemail-footer-title {
