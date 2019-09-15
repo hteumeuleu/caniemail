@@ -1,0 +1,20 @@
+---
+title: To do
+layout: default
+---
+<div class="post">
+	<div class="post-inside">
+		<h1>To do</h1>
+		<p>
+			Can I email is based on contributions. Want to help? Here are a few tasks you can help with, even if you know nothing about email development.
+		</p>
+		<h2 class="caniemail-list-title">Add links</h2>
+		<ul class="caniemail-list">
+			{% for feature in site.features %}
+				{% if feature.links.size == nil or feature.links.size == 0 %}
+			<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+</div>
