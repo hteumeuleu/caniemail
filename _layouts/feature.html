@@ -8,7 +8,7 @@ layout: default
 {% assign page-most-popular-families = "" | split: '' %}
 {% comment %}
 	1. We go through the `most-popular-families` variable defined in `data.settings`.
-	If the current page/feature has data for this feature, we had it to the array.
+	If the current page/feature has data for this feature, we add it to the array.
 {% endcomment %}
 {% for default in site.data.settings.most-popular-families %}
 	{% assign family-key = default %}
