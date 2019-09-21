@@ -8,13 +8,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="/assets/images/favicon.png" />
 	<link rel="prefetch" href="/assets/js/features.json" />
-	<meta name="description" content="Support tables for HTML and CSS in emails." />
 	{%- if page.collection == 'features' -%}
 	<meta property="og:title" content="Can I email… {{ page.title | escape_once | markdownify | strip_html | strip }}" />
 	<meta property="og:description" content="{% include meta-og-dynamic.html %}" />
+	<meta name="description" content="{% include meta-og-dynamic.html %}" />
 	{%- else -%}
 	<meta property="og:title" content="Can I email…" />
 	<meta property="og:description" content="Support tables for HTML and CSS in emails." />
+	<meta name="description" content="Support tables for HTML and CSS in emails." />
 	{%- endif -%}
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
