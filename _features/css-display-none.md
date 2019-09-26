@@ -105,7 +105,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Not inherit onto nested `<table>` elements",
-    "2": "Does not work when applied directly to an `<img>` element"
+    "1": "Partial. Does not inherit onto nested `<table>` elements.",
+    "2": "Partial. Does not work when applied directly to an `<img>` element."
 }
 ---
