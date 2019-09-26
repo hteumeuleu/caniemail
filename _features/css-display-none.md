@@ -38,14 +38,14 @@ stats: {
     },
     outlook: {
         windows: {
-            "2007": "n",
-            "2010": "n",
-            "2013": "n",
-            "2016": "n",
-            "2019": "n"
+            "2007": "a #1 #2",
+            "2010": "a #1 #2",
+            "2013": "a #1 #2",
+            "2016": "a #1 #2",
+            "2019": "a #1 #2"
         },
         windows-10-mail: {
-            "2019-02": "n"
+            "2019-02": "a #1 #2"
         },
         macos: {
             "2019-02": "y"
@@ -73,7 +73,7 @@ stats: {
             "2019-02": "y"
         },
         android: {
-            "2019-02": "n"
+            "2019-02": "y"
         }
     },
     aol: {
@@ -103,5 +103,9 @@ stats: {
             "2019-08":"y"
         }
     }
+}
+notes_by_num: {
+    "1": "Not inherit onto nested `<table>` elements",
+    "2": "Does not work when applied directly to an `<img>` element"
 }
 ---
