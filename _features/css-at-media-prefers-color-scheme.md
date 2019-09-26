@@ -3,17 +3,18 @@ title: "@media (prefers-color-scheme)"
 description: "This media query allows to theme for system light and dark mode."
 category: css
 keywords: dark mode, light mode
-last_test_date: "2019-07-22"
+last_test_date: "2019-09-26"
 test_url: "/tests/css-media-prefers-color-scheme.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/2MuLSkwqVCv82XAWYqjysw0DV4jd2r7zKfAlXYgbwj178/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/QfK3GwqGlrxNTMYFz17rfR4CFdgbisb7oXB3xkCuOZ83F/list"
 stats: {
     apple-mail: {
         macos: {
-            "10.3":"n"
+            "10.3":"n",
+            "12.4":"y"
         },
         ios: {
             "12.2":"n",
-			"13.0 beta 3":"y"
+			"13.0":"y"
         }
     },
     gmail: {
