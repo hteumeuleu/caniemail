@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
+	<title>Can I email</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="x-apple-disable-message-reformatting" />
 	<meta name="color-scheme" value="light dark">
-	<meta name="supported-color-schemes" value="light dark">
-	<title>@media (prefers-color-scheme: dark)</title>
+	<meta name="supported-color-schemes" content="light dark">
+	<!--[if mso]>
+	<xml>
+		<o:OfficeDocumentSettings>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
 	<style>
 		body {
 			color: #333;
@@ -43,18 +53,44 @@
 				color: #fff;
 				background-color: #333;
 			}
+
+			.box {
+				background-color: green !important;
+			}
 		}
 	</style>
 </head>
 <body>
-	<div class="main">
-		<picture>
-			<source srcset="https://www.caniemail.com/assets/tests/images/mojave-night.jpg" media="(prefers-color-scheme: dark)" />
-			<img src="https://www.caniemail.com/assets/tests/images/mojave-day.jpg" style="display:block; max-width:100%;" />
-		</picture>
-		<h1>@media (prefers-color-scheme: dark)</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio molestiae nihil hic natus nostrum eligendi soluta odit repudiandae at, qui ullam impedit architecto iure neque vel eum, accusamus quos autem.
+	<div style="max-width:600px; margin:0 auto;">
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">@media (prefers-color-scheme: dark)</h1>
+		<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; table-layout:fixed; border-bottom:1px solid lightgrey;">
+			<tbody>
+				<tr>
+					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+						.box { background:green; }
+					</td>
+					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
+						<div class="box" style="background:red; width:200px; height:200px;"></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+						&lt;picture&gt; with dark source
+					</td>
+					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
+						<picture>
+							<source srcset="https://www.caniemail.com/assets/tests/images/mojave-night.jpg" media="(prefers-color-scheme: dark)" />
+							<img src="https://www.caniemail.com/assets/tests/images/mojave-day.jpg" style="display:block; max-width:100%;" />
+						</picture>
+					</td>
+				</tr>
+			<tbody>
+		</table>
+		<p style="margin-top:1.6em; font:20px serif;">
+			The first box should be green. The second image should appear as <a href="https://www.caniemail.com/assets/tests/images/mojave-night.jpg">a night sunset</a> and not <a href="https://www.caniemail.com/assets/tests/images/mojave-day.jpg">a daylight</a>.
+		</p>
+		<p style="margin-top:1.6em; font:20px serif;">
+			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2019.
 		</p>
 	</div>
 </body>
