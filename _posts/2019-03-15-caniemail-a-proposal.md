@@ -3,7 +3,7 @@ title:  "Can I email: a proposal"
 date: 2019-03-15
 ---
 
-# Pre-existing ressources
+# Pre-existing resources
 [Caniuse.com](https://www.caniuse.com) is a widely popular site for web developers providing "_Browser support tables for modern web technologies_". The site is great for web developers to quickly know whether a web feature has good support or not. But it also helps providing a good picture of disparities between browsers, and how this evolves through time with new browsers versions. The website turned [10 years old](https://twitter.com/Fyrd/status/1080495727233646592) this year.
 
 Similar ressources also exists in emails. The most popular is [Campaign Monitor's CSS Guide](https://www.campaignmonitor.com/css/). The guide has been very popular among email developers. But while it's a precious and valuable ressource, I see a few problems.
