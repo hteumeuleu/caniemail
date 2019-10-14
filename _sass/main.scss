@@ -491,3 +491,14 @@ code {
 		grid-gap: 1rem;
 	}
 }
+
+// Features page
+.caniemail-list--features {
+	column-count: 3;
+	column-width: 20rem;
+	column-gap: 1rem;
+
+	& + .caniemail-list-title {
+		margin-top: 3rem;
+	}
+}
