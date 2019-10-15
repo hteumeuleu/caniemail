@@ -18,11 +18,15 @@
         .test-type td:nth-last-of-type(2) { background: green; }
     </style>
     <style>
-        .test-link a:link { background: orange; }
+        .test-link a:link { background: green; }
         .test-link a:visited { background: purple; }
-        .test-link a:hover { background: green; }
+        .test-link a:hover { background: orange; }
         .test-link a:focus { background: blue; }
         .test-link a:active { background: yellow; }
+    </style>
+    <style>
+        .test-not td:not(.foo) { background: green; }
+        .test-not td:not(:last-child) { background: green; }
     </style>
     <style>
         .test-anchor p:target { background: green; }
@@ -83,6 +87,19 @@
                                 <td height="100" style="width:100px; height:100px;">3</td>
                                 <td height="100" style="width:100px; height:100px;">4</td>
                                 <td height="100" style="width:100px; height:100px;">5</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+                        :not
+                    </td>
+                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="test-not">
+                            <tr>
+                                <td class="foo" height="100" style="width:100px; height:100px;">1</td>
+                                <td height="100" style="width:100px; height:100px;">2</td>
                             </tr>
                         </table>
                     </td>
