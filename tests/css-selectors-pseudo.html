@@ -18,27 +18,27 @@
         .test-type td:nth-last-of-type(2) { background: green; }
     </style>
     <style>
-        .test-link:link { background: orange; }
-        .test-link:visited { background: purple; }
-        .test-link:hover { background: green; }
-        .test-link:focus { background: blue; }
-        .test-link:active { background: yellow; }
+        .test-link a:link { background: orange; }
+        .test-link a:visited { background: purple; }
+        .test-link a:hover { background: green; }
+        .test-link a:focus { background: blue; }
+        .test-link a:active { background: yellow; }
     </style>
     <style>
-        .test-anchor:target { background: green; }
+        .test-anchor p:target { background: green; }
     </style>
     <style>
-        .test-checkbox:checked { background: green; }
-        .test-checkbox:checked + label { background: green; }
+        .test-checkbox input:checked { background: green; }
+        .test-checkbox input:checked + label { background: green; }
     </style>
     <style>
-        .test-empty:empty { background: green; }
+        .test-empty td:empty { background: green; }
     </style>
     <style>
-        .test-textbox:disabled { background: orange; }
-        .test-textbox:enabled { background: blue; }
-        .test-textbox:valid { background: green; }
-        .test-textbox:invalid { background: red; }
+        .test-textbox input:disabled { background: orange; }
+        .test-textbox input:enabled { background: blue; }
+        .test-textbox input:valid { background: green; }
+        .test-textbox input:invalid { background: red; }
     </style>
     <!--[if mso]>
     <xml>
@@ -51,7 +51,7 @@
 <body class="body">
     <div style="max-width:600px; margin:0 auto;">
         <h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; border:none;">
-            CSS selectors
+            CSS pseudo-selectors
         </h1>
         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; table-layout:fixed; border-bottom:1px solid lightgrey;">
             <tbody>
@@ -92,16 +92,18 @@
                         :active, :focus, :hover, :link, :visited
                     </td>
                     <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-                        <a href="https://www.example.com" class="test-link" style="padding:10px; display:block;">https://www.example.com</a>
+                        <p class="test-link">
+                            <a href="https://www.example.com" style="padding:10px; display:block;">https://www.example.com</a>
+                        </p>
                     </td>
                 </tr>
                 <tr>
                     <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
                         :target
                     </td>
-                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
+                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;" class="test-anchor">
                         <a href="#test-anchor1">test-anchor</a><br />
-                        <p id="test-anchor1" class="test-anchor">
+                        <p id="test-anchor1">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis consequatur recusandae eaque provident blanditiis debitis animi eveniet quaerat quisquam.
                         </p>
                     </td>
@@ -110,11 +112,11 @@
                     <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
                         :checked
                     </td>
-                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-                       <input type="checkbox" class="test-checkbox" id="test-checkbox1" />
+                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;" class="test-checkbox">
+                       <input type="checkbox" id="test-checkbox1" />
                        <label for="test-checkbox1">.test-checkbox</label>
                        <br />
-                       <input type="checkbox" checked="checked" class="test-checkbox" id="test-checkbox2" />
+                       <input type="checkbox" checked="checked" id="test-checkbox2" />
                        <label for="test-checkbox2">.test-checkbox:checked</label>
                     </td>
                 </tr>
@@ -123,9 +125,9 @@
                         :empty
                     </td>
                     <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="test-empty">
                             <tr>
-                                <td height="100" style="width:100px; height:100px;" class="test-empty"></td>
+                                <td height="100" style="width:100px; height:100px;"></td>
                             </tr>
                         </table>
                     </td>
@@ -134,17 +136,17 @@
                     <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
                         :enabled, :disabled, :valid, :invalid
                     </td>
-                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-                       <input type="text" class="test-textbox" id="test-textbox1" />
+                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;" class="test-textbox">
+                       <input type="text" id="test-textbox1" />
                        <label for="test-textbox1">.test-textbox</label>
                        <br />
-                       <input type="text" disabled="disabled" class="test-textbox" id="test-textbox2" />
+                       <input type="text" disabled="disabled" id="test-textbox2" />
                        <label for="test-textbox2">.test-textbox:disabled</label>
                        <br />
-                       <input type="email" value="foo@bar.com" class="test-textbox" id="test-textbox3" />
+                       <input type="email" value="foo@bar.com" id="test-textbox3" />
                        <label for="test-textbox3">.test-textbox:valid</label>
                        <br />
-                       <input type="email" value="foobar" class="test-textbox" id="test-textbox4" />
+                       <input type="email" value="foobar" id="test-textbox4" />
                        <label for="test-textbox4">.test-textbox:invalid</label>
                     </td>
                 </tr>
