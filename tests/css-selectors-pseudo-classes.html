@@ -18,6 +18,10 @@
         .test-type td:nth-last-of-type(2) { background: green; }
     </style>
     <style>
+        .test-only th:only-of-type { background: green; }
+        .test-only tr:only-child td { background: green; }
+    </style>
+    <style>
         .test-link a:link { background: green; }
         .test-link a:visited { background: purple; }
         .test-link a:hover { background: orange; }
@@ -55,7 +59,7 @@
 <body class="body">
     <div style="max-width:600px; margin:0 auto;">
         <h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; border:none;">
-            CSS pseudo-selectors
+            CSS pseudo-classes
         </h1>
         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; table-layout:fixed; border-bottom:1px solid lightgrey;">
             <tbody>
@@ -71,6 +75,19 @@
                                 <td height="100" style="width:100px; height:100px;">3</td>
                                 <td height="100" style="width:100px; height:100px;">4</td>
                                 <td height="100" style="width:100px; height:100px;">5</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+                        :only-child, :only-of-type
+                    </td>
+                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="test-only">
+                            <tr>
+                                <th height="100" style="width:100px; height:100px;">1</th>
+                                <td height="100" style="width:100px; height:100px;">2</td>
                             </tr>
                         </table>
                     </td>
