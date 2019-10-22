@@ -2,6 +2,8 @@
 title: "AMP for Email"
 description: "Support for rendering emails in the AMP format."
 category: html
+keywords: amp4email
+last_test_date: "2019-10-22"
 test_url: "/tests/amp.html"
 stats: {
 	apple-mail: {
@@ -76,7 +78,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "In developer preview, turned off by default in user mailboxes."
+    "1": "Partially supported. Needs to be activated in _Settings > Mail > Message handling > Dynamic email_."
 }
 links: {
 	"AMP for Email Format":"https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email",
