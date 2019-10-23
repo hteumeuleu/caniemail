@@ -44,7 +44,7 @@ stats: {
         },
         outlook-com: {
             "2019-02":"y #2",
-            "2019-10":"n #3"
+            "2019-10":"a #2 #3"
         },
         ios: {
             "2019-06":"y"
@@ -86,6 +86,6 @@ notes: ""
 notes_by_num: {
   "1": "Does not submit in iOS GANGA",
   "2": "On submit name values are prefixed with x_",
-  "3": "Does not submit."
+  "3": "Does not submit in preview pane, but does when the email is opened in a new window."
 }
 ---
