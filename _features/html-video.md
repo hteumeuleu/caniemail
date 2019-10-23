@@ -11,7 +11,7 @@ stats: {
             "12.4":"y"
         },
         ios: {
-            "12.4":"y"
+            "12.4":"y #5"
         }
     },
     gmail: {
@@ -64,7 +64,7 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"y"
+            "6.0":"a #5"
         }
     },
     sfr: {
@@ -110,7 +110,8 @@ notes_by_num: {
     "1": "The `<video>` element is supported, but not the inner `<source>` element so no video can play.",
     "2": "`<video>`, `<source>` and `<track>` tags are replaced by `<u></u>` tags.",
     "3": "Buggy. Support depends on the version of Internet Explorer installed.",
-    "4": "`<video>`, `<source>` and `<track>` tags are stripped. The fallback content is shown instead."
+    "4": "`<video>`, `<source>` and `<track>` tags are stripped. The fallback content is shown instead.",
+    "5": "Partial support. Requires the `controls` attribute to play."
 }
 links: {
     "Can I use: Video element":"https://caniuse.com/#feat=video",
