@@ -43,7 +43,8 @@ stats: {
             "2019":"n"
         },
         outlook-com: {
-            "2019-09":"y #2"
+            "2019-02":"y #2",
+            "2019-10":"n #3"
         },
         ios: {
             "2019-06":"y"
@@ -84,6 +85,7 @@ stats: {
 notes: ""
 notes_by_num: {
   "1": "Does not submit in iOS GANGA",
-  "2": "On submit name values are prefixed with x_"
+  "2": "On submit name values are prefixed with x_",
+  "3": "Does not submit."
 }
 ---
