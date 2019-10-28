@@ -8,33 +8,33 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkw
 stats: {
 	apple-mail: {
 		macos: {
-			"12.4": "y" // YES pour :active, NOPE pour le reste
+			"12.4": "y"
 		},
 		ios: {
 			"12.1": "y",
-            "13.1": "y" // NOPE pour le reste
+            "13.1": "y"
 		}
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-10": "y" // NOPE pour :active, :focus, :visited, :target
+			"2019-10": "y"
 		},
 		ios: {
-			"2019-10": "n" // NOPE pour :active, :focus, :visited, :target
+			"2019-10": "n"
 		},
 		android: {
-			"2019-10": "a #1" // NOPE pour :active, :focus, :visited, :target
+			"2019-10": "a #1"
 		}
 	},
     orange: {
         desktop-webmail: {
-            "2019-10": "y" // OK pour :active, :focus, :visited, :target
+            "2019-10": "y"
         },
         ios: {
-            "2019-10": "y" // NOPE pour :active, :focus, :visited, :target
+            "2019-10": "y"
         },
         android: {
-            "2019-10": "y" // OK pour :active, :focus, :target | NOPE pour :visited
+            "2019-10": "y"
         }
     },
 	outlook: {
@@ -52,10 +52,10 @@ stats: {
 			"2019-02": "y"
 		},
 		outlook-com: {
-			"2019-10": "a #2" // OK pour :active, :focus, :visited, :target (not filtered but does not work)
+			"2019-10": "a #2"
 		},
 		ios: {
-			"2019-10": "n" // OK pour :target, NOPE pour le reste
+			"2019-10": "n"
 		},
 		android: {
 			"2019-10": "y"
@@ -63,7 +63,7 @@ stats: {
 	},
     thunderbird: {
         macos: {
-            "60.8":"y" // OK pour tout
+            "60.8": "y"
         }
     },
 	yahoo: {
@@ -91,7 +91,7 @@ stats: {
 	samsung-email: {
 		android: {
 			"5.0.10.2": "y",
-			"6.0.04.6": "y" // OK pour :focus, :target | NOPE pour :active, :visited
+			"6.0.04.6": "y"
 		}
 	}
 }
