@@ -1,40 +1,39 @@
 ---
-title: ":hover"
-description: ""
+title: ":focus"
 category: css
-keywords: rollover
-last_test_date: "2019-02-28"
-test_url: "/tests/css-pseudo-selectors.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/hHMzp8VOfzCWRBr2JG3H7bew0ZyX7c9uTnaZQPtCvrvnn/list"
+keywords: pseudo-class
+last_test_date: "2019-10-28"
+test_url: "/tests/css-selectors-pseudo-classes.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkwNJDd7B4JUpo23Nz6qANcSlRUA/list"
 stats: {
 	apple-mail: {
 		macos: {
-			"12.4": "y"
+			"12.4": "n"
 		},
 		ios: {
-			"12.1": "y"
+            "13.1": "n"
 		}
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-10": "n"
 		},
 		ios: {
-			"2019-02": "n"
+			"2019-10": "n"
 		},
 		android: {
-			"2019-02": "a #1"
+			"2019-10": "n"
 		}
 	},
     orange: {
         desktop-webmail: {
-            "2019-08":"y"
+            "2019-10": "y"
         },
         ios: {
-            "2019-08":"a #3"
+            "2019-10": "n"
         },
         android: {
-            "2019-08":"y"
+            "2019-10": "y"
         }
     },
 	outlook: {
@@ -46,25 +45,24 @@ stats: {
 			"2019": "n"
 		},
 		windows-10-mail: {
-			"2019-02": "n"
+			"2019-10": "n"
 		},
 		macos: {
 			"2019-02": "y"
 		},
 		outlook-com: {
-			"2019-02": "a #2"
+			"2019-10": "a #1"
 		},
 		ios: {
-			"2019-02": "a #2"
+			"2019-10": "n"
 		},
 		android: {
-			"2019-02": "a #2"
+			"2019-10": "y"
 		}
 	},
     thunderbird: {
         macos: {
-            "60.8":"y"
-        }
+            "60.8": "y"
     },
 	yahoo: {
 		desktop-webmail: {
@@ -90,13 +88,15 @@ stats: {
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "y"
+			"6.0.04.6": "y"
 		}
 	}
 }
 notes_by_num: {
-	"1": "Partial. Not supported with non Gmail accounts.",
-	"2": "Citation needed.",
-	"3": "Partial. Only works on focusable elements."
+    "1": "Partial. Only supported on type selectors."
+}
+links: {
+    "Can I use: :focus":"https://caniuse.com/#feat=mdn-css_selectors_focus",
+    "MDN: :focus":"https://developer.mozilla.org/en-US/docs/Web/CSS/:focus"
 }
 ---
