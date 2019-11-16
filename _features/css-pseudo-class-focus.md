@@ -63,6 +63,7 @@ stats: {
     thunderbird: {
         macos: {
             "60.8": "y"
+        }
     },
 	yahoo: {
 		desktop-webmail: {
