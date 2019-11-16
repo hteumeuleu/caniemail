@@ -79,6 +79,32 @@
 	}
 }
 
+.feature-support {
+	& + .legend-list { display: none; }
+}
+
+.feature-support-title {
+	margin-bottom: 0.75rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.feature-support-summary {
+	color: #fff;
+}
+
+.feature-support-legend {
+	font-size: 0.75rem;
+
+	a {
+		color: inherit;
+	}
+
+	a[href*="emailclientmarketshare.com"] {
+		text-decoration: none;
+	}
+}
+
 // Support colors
 .supported,
 .supported::before {
