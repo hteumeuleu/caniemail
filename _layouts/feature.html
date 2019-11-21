@@ -41,7 +41,18 @@ layout: default
 				Estimated support.
 				Showing visual representation of global support based on emailclientmarketshare.com.
 			{% endcomment %}
+			{% comment %}
+				Algorithm:
+				- For each "client" in data.emailclientmarketshare.client:
+					* See if page.stats[family][platform] exists
+					* Associate support value for the latest version with client.share
+					* Else associate unknown support with share
+				- Group support from the previous results
+			{% endcomment %}
 			<div class="feature-support">
+				{% for support-client in site.data.emailclientmarketshare.clients %}
+					{{ support-client.name }},
+				{% endfor %}
 				<p class="feature-support-title">Estimated support</p>
 				<div class="score">
 					<div style="width:60%;" class="supported"></div>
