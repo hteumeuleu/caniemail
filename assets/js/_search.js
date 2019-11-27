@@ -105,11 +105,13 @@ class Search {
 			if(this.results.length == 0) {
 				this.removeResultsContainer();
 				this.buildResultsMessage(this.results.length);
+				if(window.ma !== undefined) { ma.trackEvent('Search', 'OnSearchInput', 'NoResult', this.term) }
 			}
 			else {
 				this.buildResultsContainer();
 				this.buildResults();
 				this.updateTitle();
+				if(window.ma !== undefined) { ma.trackEvent('Search', 'OnSearchInput', 'HasResults', this.term) }
 			}
 		}
 	}
