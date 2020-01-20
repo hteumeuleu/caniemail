@@ -5,7 +5,7 @@ category: css
 keywords: dark mode, light mode
 last_test_date: "2019-09-26"
 test_url: "/tests/css-media-prefers-color-scheme.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/QfK3GwqGlrxNTMYFz17rfR4CFdgbisb7oXB3xkCuOZ83F/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/CqQL3EUXh33sQ8Q6rOkJapoIjxfDz99BUpXGjtT2ErWdN/list"
 stats: {
     apple-mail: {
         macos: {
@@ -50,7 +50,8 @@ stats: {
         },
         macos: {
             "2011":"u",
-            "2016":"u"
+            "2016":"u",
+            "2019":"y"
         },
         outlook-com: {
             "2019-07":"y"
@@ -64,7 +65,7 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.0":"n"
         }
     },
     sfr: {
