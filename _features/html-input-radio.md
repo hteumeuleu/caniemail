@@ -28,6 +28,17 @@ stats: {
             "2019-09":"y"
         }
     },
+    orange: {
+        desktop-webmail: {
+            "2020-01":"n #1"
+        },
+        ios: {
+            "2020-01":"n #1"
+        },
+        android: {
+            "2020-01":"n #1"
+        }
+    },
     outlook: {
         windows: {
             "2003":"n",
@@ -83,6 +94,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-
+  "1": "Not supported. `<input>` is transformed into `<noinput>`."
 }
 ---

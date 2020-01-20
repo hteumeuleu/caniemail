@@ -28,6 +28,17 @@ stats: {
             "2019-09":"y"
         }
     },
+    orange: {
+        desktop-webmail: {
+            "2020-01":"n #2"
+        },
+        ios: {
+            "2020-01":"n #2"
+        },
+        android: {
+            "2020-01":"n #2"
+        }
+    },
     outlook: {
         windows: {
             "2003":"n",
@@ -83,7 +94,8 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Partial. Not supported with non Gmail accounts."
+  "1": "Partial. Not supported with non Gmail accounts.",
+  "2": "Not supported. `<input>` is transformed into `<noinput>`."
 }
 links: {
     "Can I use: `<input type=\"submit\">`":"https://caniuse.com/#feat=mdn-html_elements_input_input-submit",

@@ -25,6 +25,17 @@ stats: {
 			"2019-02":"a #1"
 		}
 	},
+    orange: {
+        desktop-webmail: {
+            "2020-01":"n #2"
+        },
+        ios: {
+            "2020-01":"y"
+        },
+        android: {
+            "2020-01":"y"
+        }
+    },
 	outlook: {
 		windows: {
 			"2007":"n",
@@ -78,7 +89,8 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts."
+    "1": "Partial. Not supported with non Gmail accounts.",
+    "2": "Not supported. `overflow` is replaced by `java-script`."
 }
 links: {
 	"Can I use: text-overflow":"https://caniuse.com/#feat=text-overflow",

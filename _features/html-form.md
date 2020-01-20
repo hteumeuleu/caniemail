@@ -28,6 +28,17 @@ stats: {
             "2019-09":"y"
         }
     },
+    orange: {
+        desktop-webmail: {
+            "2020-01":"n #4"
+        },
+        ios: {
+            "2020-01":"n #4"
+        },
+        android: {
+            "2020-01":"n #4"
+        }
+    },
     outlook: {
         windows: {
             "2003":"n",
@@ -86,6 +97,7 @@ notes: ""
 notes_by_num: {
   "1": "Does not submit in iOS GANGA",
   "2": "On submit name values are prefixed with x_",
-  "3": "Does not submit in preview pane, but does when the email is opened in a new window."
+  "3": "Does not submit in preview pane, but does when the email is opened in a new window.",
+  "4": "Not supported. `<form>` is transformed into `<noform>`."
 }
 ---

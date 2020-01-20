@@ -26,6 +26,17 @@ stats: {
 			"2019-02": "a #1"
 		}
 	},
+    orange: {
+        desktop-webmail: {
+            "2020-01":"y"
+        },
+        ios: {
+            "2020-01":"n"
+        },
+        android: {
+            "2020-01":"y"
+        }
+    },
 	outlook: {
 		windows: {
 			"2007": "a #2 #3",

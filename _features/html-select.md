@@ -28,6 +28,17 @@ stats: {
             "2019-09":"y"
         }
     },
+    orange: {
+        desktop-webmail: {
+            "2020-01":"n #2"
+        },
+        ios: {
+            "2020-01":"n #2"
+        },
+        android: {
+            "2020-01":"n #2"
+        }
+    },
     outlook: {
         windows: {
             "2003":"n",
@@ -83,6 +94,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Buggy. Works if the email is shorter than the viewport. Otherwise the screen goes blank when the `<select>` is in focus."
+  "1": "Buggy. Works if the email is shorter than the viewport. Otherwise the screen goes blank when the `<select>` is in focus.",
+  "2": "Not supported. `<textarea>` is transformed into `<notextarea>`."
 }
 ---

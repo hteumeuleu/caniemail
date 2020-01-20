@@ -28,6 +28,17 @@ stats: {
             "2019-09":"a #1"
         }
     },
+    orange: {
+        desktop-webmail: {
+            "2020-01":"a #2"
+        },
+        ios: {
+            "2020-01":"a #2"
+        },
+        android: {
+            "2020-01":"a #2"
+        }
+    },
     outlook: {
         windows: {
             "2003":"n",
@@ -83,6 +94,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Partial. Only supported with non Gmail accounts."
+  "1": "Partial. Only supported with non Gmail accounts.",
+  "2": "Partial. The `required` attribute is supported, but form elements are not."
 }
 ---

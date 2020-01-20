@@ -106,6 +106,6 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. Cannot scroll through to hidden content.",
-    "2": "Buggy. `overflow` is replaced by `java-script`."
+    "2": "Not supported. `overflow` is replaced by `java-script`."
 }
 ---

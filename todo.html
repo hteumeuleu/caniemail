@@ -8,6 +8,14 @@ layout: default
 		<p>
 			Can I email is based on contributions. Want to help? Here are a few tasks you can help with, even if you know nothing about email development.
 		</p>
+		<h2 class="caniemail-list-title">Features to test on Orange desktop</h2>
+		<ul class="caniemail-list">
+			{% for feature in site.features %}
+				{% if feature.stats.orange.size == nil or feature.stats.orange.size == 0 %}
+			<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
 		<h2 class="caniemail-list-title">Add links</h2>
 		<ul class="caniemail-list">
 			{% for feature in site.features %}

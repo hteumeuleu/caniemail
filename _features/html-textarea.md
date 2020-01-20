@@ -28,6 +28,17 @@ stats: {
             "2019-09":"y"
         }
     },
+    orange: {
+        desktop-webmail: {
+            "2020-01":"n #4"
+        },
+        ios: {
+            "2020-01":"n #4"
+        },
+        android: {
+            "2020-01":"n #4"
+        }
+    },
     outlook: {
         windows: {
             "2003":"n",
@@ -85,6 +96,7 @@ notes: ""
 notes_by_num: {
   "1": "Buggy. Email scrolls to the end when space bar is pressed.  This can be fixed by wrapping the `<input>` in `<ul role=\"presentation\">`.",
   "2": "Buggy. Screen jumps when input is in focus.",
-  "3": "Buggy. A number of android clients will not show the keyboard when the input is clicked.  Copy and pasting text works."
+  "3": "Buggy. A number of android clients will not show the keyboard when the input is clicked.  Copy and pasting text works.",
+  "4": "Not supported. `<textarea>` is transformed into `<notextarea>`."
 }
 ---
