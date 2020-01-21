@@ -50,9 +50,17 @@ layout: default
 				- Group support from the previous results
 			{% endcomment %}
 			<div class="feature-support">
-				{% for support-client in site.data.emailclientmarketshare.clients %}
-					{{ support-client.name }},
+				{% for support-family in site.data.clients %}
+					{% assign support-family-key = support-family | first %}
+					{% assign support-family-values = support-family | last %}
+					{{ support-family-key | inspect }}<br />
+					{% for support-platform in support-family-values %}
+						{{ support-platform | inspect }}
+					{% endfor %}
 				{% endfor %}
+				<br />
+				{{ page.stats.apple-mail.macos | inspect }}<br />
+				{{ page.stats[apple-mail][macos] | inspect }}<br />
 				<p class="feature-support-title">Estimated support</p>
 				<div class="score">
 					<div style="width:60%;" class="supported"></div>

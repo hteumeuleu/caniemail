@@ -1,0 +1,85 @@
+{
+  apple-mail: {
+    macos: {
+      corresponding-ecms-id: apple-mail-macos
+    },
+    ios: {
+      corresponding-ecms-id: apple-iphone
+    }
+  },
+  gmail: {
+    desktop-webmail: {
+      corresponding-ecms-id: gmail
+    },
+    ios: {
+      corresponding-ecms-id: gmail
+    },
+    android: {
+      corresponding-ecms-id: gmail
+    }
+  },
+  orange: {
+    desktop-webmail: {
+    },
+    ios: {
+    },
+    android: {
+    }
+  },
+  outlook: {
+    windows: {
+      corresponding-ecms-id: outlook
+    },
+    windows-10-mail: {
+    },
+    macos: {
+      corresponding-ecms-id: outlook
+    },
+    outlook-com: {
+    },
+    ios: {
+    },
+    android: {
+    }
+  },
+  samsung-email: {
+    android: {
+      corresponding-ecms-id: samsung-email
+    }
+  },
+  sfr: {
+    desktop-webmail: {
+    },
+    ios: {
+    },
+    android: {
+    }
+  },
+  thunderbird: {
+    macos: {
+      corresponding-ecms-id: thunderbird
+    }
+  },
+  aol: {
+    desktop-webmail: {
+      corresponding-ecms-id: yahoo
+    },
+    ios: {
+      corresponding-ecms-id: yahoo
+    },
+    android: {
+      corresponding-ecms-id: yahoo
+    }
+  },
+  yahoo: {
+    desktop-webmail: {
+      corresponding-ecms-id: yahoo
+    },
+    ios: {
+      corresponding-ecms-id: yahoo
+    },
+    android: {
+      corresponding-ecms-id: yahoo
+    }
+  }
+}
