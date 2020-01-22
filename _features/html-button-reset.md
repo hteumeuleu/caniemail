@@ -4,7 +4,7 @@ description: "HTML button type reset"
 category: html
 keywords: form, reset, button
 last_test_date: "2019-09-10"
-test_url: "tests/html-forms.html"
+test_url: "/tests/html-forms.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/MOk8g8TWwCTL4vLGrdMIgu3Vncqdxif6KlK4g8HfUV1mB/list"
 stats: {
     apple-mail: {
