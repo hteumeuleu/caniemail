@@ -69,6 +69,17 @@ stats: {
             "9.0":"y"
         }
     },
+    sfr: {
+        desktop-webmail: {
+            "2020-01":"a #3"
+        },
+        ios: {
+            "2020-01":"y"
+        },
+        android: {
+            "2020-01":"y"
+        }
+    },
     thunderbird: {
         macos: {
             "68.4":"a #2"
@@ -100,6 +111,7 @@ stats: {
 notes: ""
 notes_by_num: {
   "1": "Partial. Not supported with non Gmail accounts.",
-  "2": "Buggy. Interacting with the element submits the form it belongs in."
+  "2": "Buggy. Interacting with the element submits the form it belongs in.",
+  "3": "Partial. The element is present but is not interactive."
 }
 ---

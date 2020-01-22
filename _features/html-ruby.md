@@ -91,7 +91,18 @@ stats: {
 		android: {
 			"5.0.10.2": "y"
 		}
-	}
+	},
+    sfr: {
+        desktop-webmail: {
+            "2020-01":"y"
+        },
+        ios: {
+            "2020-01":"y"
+        },
+        android: {
+            "2020-01":"y"
+        }
+    }
 }
 notes_by_num: {
 	"1": "Partial. Supported with Non Gmail Accounts only."

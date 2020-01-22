@@ -91,7 +91,18 @@ stats: {
 		android: {
 			"6.0.04.6": "y"
 		}
-	}
+	},
+    sfr: {
+        desktop-webmail: {
+            "2020-01":"y"
+        },
+        ios: {
+            "2020-01":"u"
+        },
+        android: {
+            "2020-01":"u"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Only supported on type selectors.",

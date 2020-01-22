@@ -87,6 +87,17 @@ stats: {
 			"5.0.10.2":"n"
 		}
 	},
+    sfr: {
+        desktop-webmail: {
+            "2020-01":"y"
+        },
+        ios: {
+            "2020-01":"y"
+        },
+        android: {
+            "2020-01":"a #2"
+        }
+    },
 	thunderbird: {
 		macos: {
 			"68.4":"y"

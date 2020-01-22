@@ -69,6 +69,17 @@ stats: {
             "9.0":"y"
         }
     },
+    sfr: {
+        desktop-webmail: {
+            "2020-01":"n #2"
+        },
+        ios: {
+            "2020-01":"y"
+        },
+        android: {
+            "2020-01":"y"
+        }
+    },
     thunderbird: {
         macos: {
             "68.4":"a #3"
@@ -100,7 +111,7 @@ stats: {
 notes: ""
 notes_by_num: {
   "1": "Buggy. Works if the email is shorter than the viewport. Otherwise the screen goes blank when the `<select>` is in focus.",
-  "2": "Not supported. `<textarea>` is transformed into `<notextarea>`.",
+  "2": "Not supported. `<select>` is transformed into `<noselect>`.",
   "3": "Buggy. Interacting with the element submits the form it belongs in."
 }
 ---
