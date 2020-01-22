@@ -86,6 +86,11 @@ stats: {
 		android: {
 			"5.0.10.2":"n"
 		}
+	},
+	thunderbird: {
+		macos: {
+			"68.4":"n"
+		}
 	}
 }
 notes_by_num: {

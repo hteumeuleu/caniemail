@@ -69,6 +69,11 @@ stats: {
             "9.0":"n #3"
         }
     },
+    thunderbird: {
+        macos: {
+            "68.4":"a #5"
+        }
+    },
     yahoo: {
         desktop-webmail: {
             "2019-09":"y"
@@ -97,6 +102,7 @@ notes_by_num: {
   "1": "Buggy. Email scrolls to the end when space bar is pressed.  This can be fixed by wrapping the `<input>` in `<ul role=\"presentation\">`.",
   "2": "Buggy. Screen jumps when input is in focus.",
   "3": "Buggy. A number of Android clients will not show the keyboard when the input is clicked. Copy and pasting text works.",
-  "4": "Not supported. `<input>` is transformed into `<noinput>`."
+  "4": "Not supported. `<input>` is transformed into `<noinput>`.",
+  "5": "Buggy. Interacting with the element submits the form it belongs in."
 }
 ---

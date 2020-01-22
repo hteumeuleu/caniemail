@@ -69,6 +69,11 @@ stats: {
             "9.0":"y"
         }
     },
+    thunderbird: {
+        macos: {
+            "68.4":"a #2"
+        }
+    },
     yahoo: {
         desktop-webmail: {
             "2019-09":"y"
@@ -94,6 +99,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Not supported. `<input>` is transformed into `<noinput>`."
+  "1": "Not supported. `<input>` is transformed into `<noinput>`.",
+  "2": "Buggy. Interacting with the element submits the form it belongs in."
 }
 ---

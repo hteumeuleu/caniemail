@@ -70,6 +70,11 @@ stats: {
             "9.0":"y"
         }
     },
+    thunderbird: {
+        macos: {
+            "68.4":"y"
+        }
+    },
     yahoo: {
         desktop-webmail: {
             "2019-09":"y"

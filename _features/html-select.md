@@ -69,6 +69,11 @@ stats: {
             "9.0":"y"
         }
     },
+    thunderbird: {
+        macos: {
+            "68.4":"a #3"
+        }
+    },
     yahoo: {
         desktop-webmail: {
             "2019-09":"y"
@@ -95,6 +100,7 @@ stats: {
 notes: ""
 notes_by_num: {
   "1": "Buggy. Works if the email is shorter than the viewport. Otherwise the screen goes blank when the `<select>` is in focus.",
-  "2": "Not supported. `<textarea>` is transformed into `<notextarea>`."
+  "2": "Not supported. `<textarea>` is transformed into `<notextarea>`.",
+  "3": "Buggy. Interacting with the element submits the form it belongs in."
 }
 ---
