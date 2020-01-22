@@ -19,13 +19,13 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2019-07":"n"
+            "2020-01":"n"
         },
         ios: {
-            "2019-07":"n"
+            "2020-01":"n"
         },
         android: {
-            "2019-07":"n"
+            "2020-01":"n"
         }
     },
     orange: {
@@ -33,7 +33,7 @@ stats: {
             "2019-08":"y"
         },
         ios: {
-            "2019-07":"u"
+            "2020-01":"n"
         },
         android: {
             "2019-07":"u"
@@ -49,15 +49,13 @@ stats: {
             "2019":"u"
         },
         macos: {
-            "2011":"u",
-            "2016":"u",
             "2019":"y"
         },
         outlook-com: {
             "2019-07":"y"
         },
         ios: {
-            "2019-07":"u"
+            "2020-01":"y"
         },
         android: {
             "2019-07":"u"
@@ -81,19 +79,23 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "60.8":"n"
+            "60.8":"n",
+            "68.4":"y"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2019-07":"u"
+            "2020-01":"n #1"
         },
         ios: {
-            "2019-07":"u"
+            "2020-01":"n #1"
         },
         android: {
-            "2019-07":"u"
+            "2020-01":"n #1"
         }
     }
+}
+notes_by_num: {
+    "1": "Not supported. `@media (prefers-color-scheme)` is transformed into `@media ( _filtered_a )`."
 }
 ---
