@@ -11,7 +11,8 @@ stats: {
             "12.4":"y"
         },
         ios: {
-            "12.4":"a #5"
+            "12.4":"a #5",
+            "13.3":"a #5 #6"
         }
     },
     gmail: {
@@ -111,7 +112,8 @@ notes_by_num: {
     "2": "`<video>`, `<source>` and `<track>` tags are replaced by `<u></u>` tags.",
     "3": "Buggy. Support depends on the version of Internet Explorer installed.",
     "4": "`<video>`, `<source>` and `<track>` tags are stripped. The fallback content is shown instead.",
-    "5": "Partial support. Requires the `controls` attribute to play."
+    "5": "Partial support. Requires the `controls` attribute to play.",
+    "6": "Partial support. `autoplay` is not supported."
 }
 links: {
     "Can I use: Video element":"https://caniuse.com/#feat=video",
