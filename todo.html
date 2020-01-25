@@ -9,21 +9,20 @@ layout: default
 			Can I email is based on contributions. Want to help? Here are a few tasks you can help with, even if you know nothing about email development.
 		</p>
 		<h2 class="caniemail-list-title">{{ site.features.size }} Features to test</h2>
-		<ol class="caniemail-list" style="column-count:10;">
+		<ol class="caniemail-list" style="column-count:4;">
 			{% for feature in site.features %}
-				{% assign todo-platform = feature.stats.outlook.android %}
+				{% assign todo-platform = feature.stats.gmail.android %}
 				{% if todo-platform.size == nil or todo-platform.size == 0 %}
 				<li style="list-style-type:decimal;"><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 				{% else %}
 					{% for version in todo-platform %}
 						{% if forloop.last == true %}
 							{% assign version-value = version | last | split: ' ' | first %}
-							<li style="list-style-type:decimal;">
 							{% if version-value == "u" %}
+							<li style="list-style-type:decimal;">
 							<a href="{{ feature.url }}">{{ feature.title | escape_once }}</a>
-							{% endif %}
-							{{ version-value }}
 							</li>
+							{% endif %}
 						{% endif %}
 					{% endfor %}
 				{% endif %}
