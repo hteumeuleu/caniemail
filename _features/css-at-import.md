@@ -77,14 +77,17 @@ stats: {
 			"2019-02": "n"
 		}
 	},
-	aol: {
-		desktop-webmail: {
-			"2019-02": "n"
-		},
-		ios: {
-			"2019-02": "n"
-		}
-	},
+    aol: {
+        desktop-webmail: {
+            "2019-02": "n"
+        },
+        ios: {
+            "2019-02": "n"
+        },
+        android: {
+            "2020-01": "n"
+        }
+    },
 	samsung-email: {
 		android: {
 			"5.0.10.2": "n"

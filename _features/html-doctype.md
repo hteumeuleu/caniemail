@@ -39,12 +39,12 @@ stats: {
     },
     outlook: {
         windows: {
-            "2003":"u",
-            "2007":"u",
-            "2010":"u",
-            "2013":"u",
-            "2016":"u",
-            "2019":"u"
+            "2003":"a #3",
+            "2007":"n #2",
+            "2010":"n #2",
+            "2013":"n #2",
+            "2016":"n #2",
+            "2019":"n #2"
         },
         macos: {
             "2011":"y",
@@ -81,6 +81,17 @@ stats: {
             "60.3":"n #1"
         }
     },
+    aol: {
+        desktop-webmail: {
+            "2020-01":"y"
+        },
+        ios: {
+            "2020-01":"y"
+        },
+        android: {
+            "2020-01":"n"
+        }
+    },
     yahoo: {
         desktop-webmail: {
             "2019-07":"y"
@@ -94,6 +105,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. Renders as if there was no doctype with an Outlook email, and in HTML5 otherwise."
+    "1": "Buggy. Renders as if there was no doctype with an Outlook email, and in HTML5 otherwise.",
+    "2": "Not supported. The HTML5 doctype has no impact here.",
+    "3": "Partial support. Depends on the version of Internet Explorer installed."
 }
 ---

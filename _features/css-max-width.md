@@ -84,6 +84,17 @@ stats: {
             "60.7":"y"
         }
     },
+    aol: {
+        desktop-webmail: {
+            "2020-01":"y"
+        },
+        ios: {
+            "2020-01":"a #2"
+        },
+        android: {
+            "2020-01":"y"
+        }
+    },
     yahoo: {
         desktop-webmail: {
             "2019-08":"y"
