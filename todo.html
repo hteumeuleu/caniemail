@@ -8,11 +8,10 @@ layout: default
 		<p>
 			Can I email is based on contributions. Want to help? Here are a few tasks you can help with, even if you know nothing about email development.
 		</p>
-		{% comment %}
 		<h2 class="caniemail-list-title">{{ site.features.size }} Features to test</h2>
 		<ol class="caniemail-list">
 			{% for feature in site.features %}
-				{% assign todo-platform = feature.stats.gmail.android %}
+				{% assign todo-platform = feature.stats.orange.ios %}
 				{% if todo-platform.size == nil or todo-platform.size == 0 %}
 				<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 				{% else %}
@@ -29,23 +28,19 @@ layout: default
 				{% endif %}
 			{% endfor %}
 		</ol>
-		{% endcomment %}
 		<h2 class="caniemail-list-title">Features to test</h2>
+		<h3>— Orange iOS</h3>
+		<ol class="caniemail-list">
+			<li><a href="/features/html-aria-label/">aria-label attribute</a></li>
+			<li><a href="/features/html-aria-labelledby/">aria-labelledby attribute</a></li>
+		</ol>
 		<h3>— Orange Android</h3>
 		<ol class="caniemail-list">
-			<li><a href="/features/css-at-media-prefers-color-scheme/">@media (prefers-color-scheme)</a></li>
-		</ol>
-		<h3>— Outlook Android</h3>
-		<ol class="caniemail-list">
-			<li><a href="/features/css-at-media-prefers-color-scheme/">@media (prefers-color-scheme)</a></li>
-		</ol>
-		<h3>— Gmail iOS</h3>
-		<ol class="caniemail-list">
-			<li><a href="/features/html-aria-live/">aria-live attribute</a></li>
-		</ol>
-		<h3>— Gmail Android</h3>
-		<ol class="caniemail-list">
-			<li><a href="/features/html-aria-live/">aria-live attribute</a></li>
+			<li><a href="/features/html-aria-label/">aria-label attribute</a></li>
+			<li><a href="/features/html-aria-labelledby/">aria-labelledby attribute</a></li>
+			<li><a href="/features/html-dialog/">&lt;dialog&gt; element</a></li>
+			<li><a href="/features/html-role/">role attribute</a></li>
+			<li><a href="/features/html-rp/">&lt;rp&gt; element</a></li>
 		</ol>
 		<h3>— Outlook Windows 10 Mail</h3>
 		<ol class="caniemail-list">
