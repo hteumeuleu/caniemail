@@ -8,10 +8,11 @@ layout: default
 		<p>
 			Can I email is based on contributions. Want to help? Here are a few tasks you can help with, even if you know nothing about email development.
 		</p>
+		{% comment %}
 		<h2 class="caniemail-list-title">{{ site.features.size }} Features to test</h2>
 		<ol class="caniemail-list">
 			{% for feature in site.features %}
-				{% assign todo-platform = feature.stats.orange.ios %}
+				{% assign todo-platform = feature.stats.outlook.windows-10-mail %}
 				{% if todo-platform.size == nil or todo-platform.size == 0 %}
 				<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 				{% else %}
@@ -28,43 +29,7 @@ layout: default
 				{% endif %}
 			{% endfor %}
 		</ol>
-		<h2 class="caniemail-list-title">Features to test</h2>
-		<h3>— Outlook Windows 10 Mail</h3>
-		<ol class="caniemail-list">
-			<li><a href="/features/css-at-font-face/">@font-face</a></li>
-			<li><a href="/features/css-at-media-device-pixel-ratio/">@media (-webkit-device-pixel-ratio)</a></li>
-			<li><a href="/features/css-at-media-orientation/">@media (orientation)</a></li>
-			<li><a href="/features/css-at-media-prefers-color-scheme/">@media (prefers-color-scheme)</a></li>
-			<li><a href="/features/css-at-media/">@media</a></li>
-			<li><a href="/features/css-border-radius/">border-radius</a></li>
-			<li><a href="/features/css-max-width/">max-width</a></li>
-			<li><a href="/features/css-padding/">padding</a></li>
-			<li><a href="/features/css-variables/">CSS Variables (Custom Properties)</a></li>
-			<li><a href="/features/html-anchor-links/">Anchor links</a></li>
-			<li><a href="/features/html-aria-describedby/">aria-describedby attribute</a></li>
-			<li><a href="/features/html-aria-hidden/">aria-hidden attribute</a></li>
-			<li><a href="/features/html-aria-label/">aria-label attribute</a></li>
-			<li><a href="/features/html-aria-labelledby/">aria-labelledby attribute</a></li>
-			<li><a href="/features/html-aria-live/">aria-live attribute</a></li>
-			<li><a href="/features/html-button-reset/">&lt;button type="reset"&gt; element</a></li>
-			<li><a href="/features/html-button-submit/">&lt;button type="submit"&gt; element</a></li>
-			<li><a href="/features/html-doctype/">HTML5 doctype</a></li>
-			<li><a href="/features/html-form/">&lt;form&gt; element</a></li>
-			<li><a href="/features/html-input-checkbox/">&lt;input type="checkbox"&gt; element</a></li>
-			<li><a href="/features/html-input-hidden/">&lt;input type="hidden"&gt; element</a></li>
-			<li><a href="/features/html-input-radio/">&lt;input type="radio"&gt; element</a></li>
-			<li><a href="/features/html-input-reset/">&lt;input type="reset"&gt; element</a></li>
-			<li><a href="/features/html-input-submit/">&lt;input type="submit"&gt; element</a></li>
-			<li><a href="/features/html-input-text/">&lt;input type="text"&gt; element</a></li>
-			<li><a href="/features/html-picture/">&lt;picture&gt; element</a></li>
-			<li><a href="/features/html-required/">required attribute</a></li>
-			<li><a href="/features/html-role/">role attribute</a></li>
-			<li><a href="/features/html-select/">&lt;select&gt; element</a></li>
-			<li><a href="/features/html-semantics/">HTML5 semantics</a></li>
-			<li><a href="/features/html-srcset/">srcset and sizes attributes</a></li>
-			<li><a href="/features/html-style/">&lt;style&gt; element</a></li>
-			<li><a href="/features/html-textarea/">&lt;textarea&gt; element</a></li>
-		</ol>
+		{% endcomment %}
 		<h2 class="caniemail-list-title">Add links</h2>
 		<ul class="caniemail-list">
 			{% for feature in site.features %}
