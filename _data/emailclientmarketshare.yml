@@ -1,32 +1,81 @@
-last-update: 2019-10-01
-clients:
-  - name: "Gmail"
-    share: 26.54%
-    ecms-id: gmail
-  - name: "Apple iPhone"
-    share: 31.61%
-    ecms-id: apple-iphone
-  - name: "Outlook"
-    share: 10.25%
-    ecms-id: outlook
-  - name: "Apple Mail"
-    share: 8.93%
-    ecms-id: apple-mail-macos
-  - name: "Yahoo! Mail"
-    share: 5.75%
-    ecms-id: yahoo
-  - name: "Apple iPad"
-    share: 4.88%
-    ecms-id: apple-ipad
-  - name: "Google Android"
-    share: 2.86%
-    ecms-id: google-android
-  - name: "Outlook.com"
-    share: 1.86%
-    ecms-id: outlook-com
-  - name: "Samsung Mail"
-    share: 0.92%
-    ecms-id: samsung-email
-  - name: "Thunderbird"
-    share: 0.43%
-    ecms-id: thunderbird
+{
+  last-update: 2019-10-01,
+  clients: {
+    gmail: {
+      name: "Gmail",
+      share: 26.54%,
+      match: [
+        "gmail.desktop-webmail",
+        "gmail.ios",
+        "gmail.android"
+      ]
+    },
+    apple-iphone: {
+      name: "Apple iPhone",
+      share: 31.61%,
+      match: [
+        "apple-mail.ios"
+      ]
+    },
+    outlook: {
+      name: "Outlook",
+      share: 10.25%,
+      match: [
+        "outlook.windows",
+        "outlook.macos"
+      ]
+    },
+    apple-mail-macos: {
+      name: "Apple Mail",
+      share: 8.93%,
+      match: [
+        "apple-mail.macos"
+      ]
+    },
+    yahoo: {
+      name: "Yahoo! Mail",
+      share: 5.75%,
+      match: [
+        "yahoo.desktop-webmail",
+        "yahoo.ios",
+        "yahoo.android",
+        "aol.desktop-webmail",
+        "aol.ios",
+        "aol.android"
+      ]
+    },
+    apple-ipad: {
+      name: "Apple iPad",
+      share: 4.88%,
+      match: [
+        "apple-mail.ipados"
+      ]
+    },
+    google-android: {
+      name: "Google Android",
+      share: 2.86%
+    },
+    outlook-com: {
+      name: "Outlook.com",
+      share: 1.86%,
+      match: [
+        "outlook.outlook-com"
+      ]
+    },
+    samsung-email: {
+      name: "Samsung Mail",
+      share: 0.92%,
+      match: [
+        "samsung-email.android"
+      ]
+    },
+    thunderbird: {
+      name: "Thunderbird",
+      share: 0.43%,
+      match: [
+        "thunderbird.macos",
+        "thunderbird.windows"
+      ]
+    }
+  }
+}

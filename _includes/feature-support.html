@@ -1,0 +1,70 @@
+{% comment %}
+	Estimated support.
+	Showing visual representation of global support based on emailclientmarketshare.com.
+{% endcomment %}
+{% comment %}
+	Algorithm:
+	- For each "client" in data.emailclientmarketshare.client:
+		* See if page.stats[family][platform] exists
+		* Associate support value for the latest version with client.share
+		* Else associate unknown support with share
+	- Group support from the previous results
+{% endcomment %}
+<div class="feature-support">
+	{% for share-client in site.data.emailclientmarketshare.clients %}
+		{% assign share-client-key = share-client | first %}
+		{% assign share-client-values = share-client | last %}
+		{% assign share-client-name = share-client-values.name %}
+		{% assign share-client-marketshare = share-client-values.share %}
+		{% assign share-client-match = share-client-values.match %}
+		{% assign share-client-average-support = '' %}
+		--<br /><br />{{ share-client-values | inspect }}<br />
+		{% for support-client in share-client-match %}
+			{% assign support-client = support-client | first %}
+			{% assign support-client-family = support-client | split: '.' | first %}
+			{% assign support-client-platform = support-client | split: '.' | last %}
+			{{ support-client-family | inspect }}.{{ support-client-platform | inspect }}<br />
+			{% comment %}
+			{% if family-average-support == '' %}
+				{% assign family-average-support = version-values %}
+			{% elsif family-average-support == 'u' and version-values != 'u' %}
+				{% assign family-average-support = version-values %}
+			{% elsif family-average-support == 'y' and version-values != 'y' and version-values != 'u' %}
+				{% assign family-average-support = 'a' %}
+				{% break %}
+			{% elsif family-average-support == 'n' and version-values != 'n' and version-values != 'u' %}
+				{% assign family-average-support = 'a' %}
+				{% break %}
+			{% endif %}
+			{% endcomment %}
+		{% endfor %}
+		{% comment %}
+		{{ share-client-key | inspect }}
+		{{ share-client-name | inspect }}<br />
+		{% assign support-family-key = share-client.name %}
+		{% assign support-family-values = support-family | last %}
+		{{ support-family-key | inspect }}<br />
+		{% for support-platform in support-family-values %}
+			{{ support-platform | inspect }}
+		{% endfor %}
+		{% endcomment %}
+	{% endfor %}
+	<br />
+	{% comment %}
+	{% assign support-family-key = "gmail" %}
+	{% assign support-platform-key = "desktop-webmail" %}
+	{% assign support-ecms-id = site.data.clients[support-family-key][support-platform-key].corresponding-ecms-id %}
+	page.stats: {{ page.stats[support-family-key][support-platform-key] | inspect }}<br />
+	corresponding-ecms-id: {{ site.data.clients[support-family-key][support-platform-key].corresponding-ecms-id | inspect }}<br />
+	share: {{ site.data.emailclientmarketshare.clients[support-ecms-id].share | inspect }}<br />
+	{% endcomment %}
+	<p class="feature-support-title">Estimated support</p>
+	<div class="score">
+		<div style="width:60%;" class="supported"></div>
+		<div style="width:20%;" class="mitigated"></div>
+		<div style="width:10%;" class="unsupported"></div>
+		<div style="width:10%;" class="unknown"></div>
+	</div>
+	<p class="feature-support-summary">51.23% + 39.71% + 9.06%</p>
+	<p class="feature-support-legend">Based on <a href="https://www.emailclientmarketshare.com">emailclientmarketshare.com</a>. <a href="/">Learn more</a>.</p>
+</div>

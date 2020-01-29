@@ -37,40 +37,7 @@ layout: default
 			</div>
 		</div>
 		<div class="feature-header-column">
-			{% comment %}
-				Estimated support.
-				Showing visual representation of global support based on emailclientmarketshare.com.
-			{% endcomment %}
-			{% comment %}
-				Algorithm:
-				- For each "client" in data.emailclientmarketshare.client:
-					* See if page.stats[family][platform] exists
-					* Associate support value for the latest version with client.share
-					* Else associate unknown support with share
-				- Group support from the previous results
-			{% endcomment %}
-			<div class="feature-support">
-				{% for support-family in site.data.clients %}
-					{% assign support-family-key = support-family | first %}
-					{% assign support-family-values = support-family | last %}
-					{{ support-family-key | inspect }}<br />
-					{% for support-platform in support-family-values %}
-						{{ support-platform | inspect }}
-					{% endfor %}
-				{% endfor %}
-				<br />
-				{{ page.stats.apple-mail.macos | inspect }}<br />
-				{{ page.stats[apple-mail][macos] | inspect }}<br />
-				<p class="feature-support-title">Estimated support</p>
-				<div class="score">
-					<div style="width:60%;" class="supported"></div>
-					<div style="width:20%;" class="mitigated"></div>
-					<div style="width:10%;" class="unsupported"></div>
-					<div style="width:10%;" class="unknown"></div>
-				</div>
-				<p class="feature-support-summary">51.23% + 39.71% + 9.06%</p>
-				<p class="feature-support-legend">Based on <a href="https://www.emailclientmarketshare.com">emailclientmarketshare.com</a>. <a href="/">Learn more</a>.</p>
-			</div>
+			{% include feature-support.html %}
 			{% comment %}
 				Data summary.
 				Showing at most three email client families with a summary/average cell for the whole family.
