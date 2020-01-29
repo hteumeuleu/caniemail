@@ -251,18 +251,33 @@ layout: default
 				If you want to test this feature in the same conditions as we did, you can get our test code and run a test by yourself. Make sure to follow our <a href="https://github.com/hteumeuleu/caniemail/blob/master/CONTRIBUTING.md">testing recommendations</a> first.
 			</p>
 			<p>
+				{% comment %}
+					View test code button.
+				{% endcomment %}
+				{% if page.test_url != nil and page.test_url != "" %}
 				<a href="{{ page.test_url }}" class="feature-button">View the test code</a>
-				{% if page.test_results_url != nil  %}
-					{% assign test-results-url-provider = "" %}
-					{% if page.test_results_url contains "emailonacid.com"  %}
-						{% assign test-results-url-provider = "Email on Acid" %}
-					{% elsif page.test_results_url contains "litmus.com" %}
-						{% assign test-results-url-provider = "Litmus" %}
+				{% endif %}
+				{% comment %}
+					View test results button.
+					If the last_text_date is more than 30 days old, the link might have expired so we don't show anything.
+				{% endcomment %}
+				{% if page.test_results_url != nil and page.test_results_url != "" and page.last_test_date != nil and page.last_test_date != ""  %}
+					{% assign last_test_date_timestamp = page.last_test_date | date: '%s' %}
+					{% assign now_timestamp = 'now' | date: '%s' %}
+					{% assign last_test_date_in_seconds = now_timestamp | minus: last_test_date_timestamp %}
+					{% assign last_test_date_in_days = last_test_date_in_seconds | divided_by: 3600 | divided_by: 24 %}
+					{% if last_test_date_in_days < 30  %}
+						{% assign test-results-url-provider = "" %}
+						{% if page.test_results_url contains "emailonacid.com"  %}
+							{% assign test-results-url-provider = "Email on Acid" %}
+						{% elsif page.test_results_url contains "litmus.com" %}
+							{% assign test-results-url-provider = "Litmus" %}
+						{% endif %}
+						{% if test-results-url-provider != "" %}
+							{% assign test-results-url-provider = test-results-url-provider | prepend: " on " %}
+						{% endif %}
+						<a href="{{ page.test_results_url }}" class="feature-button">View test results{{test-results-url-provider}}</a>
 					{% endif %}
-					{% if test-results-url-provider != "" %}
-						{% assign test-results-url-provider = test-results-url-provider | prepend: " on " %}
-					{% endif %}
-					<a href="{{ page.test_results_url }}" class="feature-button">View test results{{test-results-url-provider}}</a>
 				{% endif %}
 			</p>
 		</div>
