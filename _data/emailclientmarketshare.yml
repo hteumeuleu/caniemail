@@ -1,40 +1,40 @@
 {
-  last-update: 2019-10-01,
+  last-update: 2019-12-01,
   clients: {
+    apple-iphone: {
+      name: "Apple iPhone",
+      share: 36.66%,
+      match: [
+        "apple-mail.ios"
+      ]
+    },
     gmail: {
       name: "Gmail",
-      share: 26.54%,
+      share: 25.14%,
       match: [
         "gmail.desktop-webmail",
         "gmail.ios",
         "gmail.android"
       ]
     },
-    apple-iphone: {
-      name: "Apple iPhone",
-      share: 31.61%,
+    apple-mail-macos: {
+      name: "Apple Mail",
+      share: 10.05%,
       match: [
-        "apple-mail.ios"
+        "apple-mail.macos"
       ]
     },
     outlook: {
       name: "Outlook",
-      share: 10.25%,
+      share: 8.21%,
       match: [
         "outlook.windows",
         "outlook.macos"
       ]
     },
-    apple-mail-macos: {
-      name: "Apple Mail",
-      share: 8.93%,
-      match: [
-        "apple-mail.macos"
-      ]
-    },
     yahoo: {
       name: "Yahoo! Mail",
-      share: 5.75%,
+      share: 5.68%,
       match: [
         "yahoo.desktop-webmail",
         "yahoo.ios",
@@ -46,36 +46,32 @@
     },
     apple-ipad: {
       name: "Apple iPad",
-      share: 4.88%,
+      share: 3.62%,
       match: [
         "apple-mail.ipados"
       ]
     },
-    google-android: {
-      name: "Google Android",
-      share: 2.86%
-    },
-    outlook-com: {
-      name: "Outlook.com",
-      share: 1.86%,
-      match: [
-        "outlook.outlook-com"
-      ]
-    },
     samsung-email: {
       name: "Samsung Mail",
-      share: 0.92%,
+      share: 2.00%,
       match: [
         "samsung-email.android"
       ]
     },
-    thunderbird: {
-      name: "Thunderbird",
-      share: 0.43%,
+    outlook-com: {
+      name: "Outlook.com",
+      share: 1.58%,
       match: [
-        "thunderbird.macos",
-        "thunderbird.windows"
+        "outlook.outlook-com"
       ]
+    },
+    google-android: {
+      name: "Google Android",
+      share: 1.46%
+    },
+    windows-live-mail: {
+      name: "Windows Live Mail",
+      share: 0.32%
     }
   }
 }
