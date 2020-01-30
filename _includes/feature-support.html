@@ -2,69 +2,116 @@
 	Estimated support.
 	Showing visual representation of global support based on emailclientmarketshare.com.
 {% endcomment %}
-{% comment %}
-	Algorithm:
-	- For each "client" in data.emailclientmarketshare.client:
-		* See if page.stats[family][platform] exists
-		* Associate support value for the latest version with client.share
-		* Else associate unknown support with share
-	- Group support from the previous results
-{% endcomment %}
 <div class="feature-support">
+	{% assign support-scores-y = 0 %}
+	{% assign support-scores-a = 0 %}
+	{% assign support-scores-n = 0 %}
+	{% assign support-scores-u = 0 %}
+	{% assign support-scores-names-y = "" | split: '' %}
+	{% assign support-scores-names-a = "" | split: '' %}
+	{% assign support-scores-names-n = "" | split: '' %}
+	{% assign support-scores-names-u = "" | split: '' %}
 	{% for share-client in site.data.emailclientmarketshare.clients %}
+		{% comment %}
+			1. For each "client" in data.emailclientmarketshare.clients,
+			we get the name, share percentage and list of matching clients.
+		{% endcomment %}
 		{% assign share-client-key = share-client | first %}
 		{% assign share-client-values = share-client | last %}
 		{% assign share-client-name = share-client-values.name %}
-		{% assign share-client-marketshare = share-client-values.share %}
+		{% assign share-client-marketshare = share-client-values.share | replace: '%', '' %}
 		{% assign share-client-match = share-client-values.match %}
 		{% assign share-client-average-support = '' %}
-		--<br /><br />{{ share-client-values | inspect }}<br />
 		{% for support-client in share-client-match %}
+			{% comment %}
+				2. For each matching client, we get its support values in page.stats.
+			{% endcomment %}
 			{% assign support-client = support-client | first %}
 			{% assign support-client-family = support-client | split: '.' | first %}
 			{% assign support-client-platform = support-client | split: '.' | last %}
-			{{ support-client-family | inspect }}.{{ support-client-platform | inspect }}<br />
-			{% comment %}
-			{% if family-average-support == '' %}
-				{% assign family-average-support = version-values %}
-			{% elsif family-average-support == 'u' and version-values != 'u' %}
-				{% assign family-average-support = version-values %}
-			{% elsif family-average-support == 'y' and version-values != 'y' and version-values != 'u' %}
-				{% assign family-average-support = 'a' %}
-				{% break %}
-			{% elsif family-average-support == 'n' and version-values != 'n' and version-values != 'u' %}
-				{% assign family-average-support = 'a' %}
-				{% break %}
-			{% endif %}
-			{% endcomment %}
+			{% assign support-client-values = page.stats[support-client-family][support-client-platform] %}
+			{% for support-version in support-client-values %}
+				{% comment %}
+					3. We then go through only the latest support value.
+				{% endcomment %}
+				{% if forloop.last == true %}
+					{% assign support-version-key = support-version | first %}
+						{% assign support-version-values = support-version | last | split: ' ' | first %}
+					{% comment %}
+						4. We calculate the average support for the current "emailclientmarketshare" client.
+					{% endcomment %}
+					{% if share-client-average-support == '' %}
+						{% assign share-client-average-support = support-version-values %}
+					{% elsif share-client-average-support == 'u' and support-version-values != 'u' %}
+						{% assign share-client-average-support = support-version-values %}
+					{% elsif share-client-average-support == 'y' and support-version-values != 'y' and support-version-values != 'u' %}
+						{% assign share-client-average-support = 'a' %}
+					{% elsif share-client-average-support == 'n' and support-version-values != 'n' and support-version-values != 'u' %}
+						{% assign share-client-average-support = 'a' %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
 		{% endfor %}
+		{% assign share-client-average-support = share-client-average-support | default: 'u' %}
 		{% comment %}
-		{{ share-client-key | inspect }}
-		{{ share-client-name | inspect }}<br />
-		{% assign support-family-key = share-client.name %}
-		{% assign support-family-values = support-family | last %}
-		{{ support-family-key | inspect }}<br />
-		{% for support-platform in support-family-values %}
-			{{ support-platform | inspect }}
-		{% endfor %}
+			5. We assign the average value of the current "emailclientmarketshare" client to the corresponding array.
 		{% endcomment %}
+		{% if share-client-average-support == 'y' %}
+			{% assign support-scores-names-y = support-scores-names-y | push: share-client-name %}
+			{% assign support-scores-y = support-scores-y | round: 2 | plus: share-client-marketshare %}
+		{% elsif share-client-average-support == 'a' %}
+			{% assign support-scores-names-a = support-scores-names-a | push: share-client-name %}
+			{% assign support-scores-a = support-scores-a | plus: share-client-marketshare %}
+		{% elsif share-client-average-support == 'n' %}
+			{% assign support-scores-names-n = support-scores-names-n | push: share-client-name %}
+			{% assign support-scores-n = support-scores-n | plus: share-client-marketshare %}
+		{% elsif share-client-average-support == 'u' %}
+			{% assign support-scores-names-u = support-scores-names-u | push: share-client-name %}
+			{% assign support-scores-u = support-scores-u | plus: share-client-marketshare %}
+		{% endif %}
 	{% endfor %}
-	<br />
 	{% comment %}
-	{% assign support-family-key = "gmail" %}
-	{% assign support-platform-key = "desktop-webmail" %}
-	{% assign support-ecms-id = site.data.clients[support-family-key][support-platform-key].corresponding-ecms-id %}
-	page.stats: {{ page.stats[support-family-key][support-platform-key] | inspect }}<br />
-	corresponding-ecms-id: {{ site.data.clients[support-family-key][support-platform-key].corresponding-ecms-id | inspect }}<br />
-	share: {{ site.data.emailclientmarketshare.clients[support-ecms-id].share | inspect }}<br />
+		6. We display the data.
 	{% endcomment %}
-	<p class="feature-support-title">Estimated support</p>
+	<p class="feature-support-title">Estimated support <span class="beta">Beta</span></p>
 	<div class="score">
-		<div style="width:60%;" class="supported"></div>
-		<div style="width:20%;" class="mitigated"></div>
-		<div style="width:10%;" class="unsupported"></div>
-		<div style="width:10%;" class="unknown"></div>
+		{% if support-scores-y != 0 %}
+			{% assign support-scores-names-y-string = support-scores-names-y | join: ", " %}
+			{% assign support-scores-names-y-string = site.data.nicenames.support['supported'] | append: ' in ' | append: support-scores-names-y-string | append: ". " %}
+			<div title="{{ support-scores-names-y-string }}" style="width:{{ support-scores-y }}%;" class="supported"></div>
+		{% endif %}
+		{% if support-scores-a != 0 %}
+			{% assign support-scores-names-a-string = support-scores-names-a | join: ", " %}
+			{% assign support-scores-names-a-string = site.data.nicenames.support['mitigated'] | append: ' in ' | append: support-scores-names-a-string | append: ". " %}
+			<div title="{{ support-scores-names-a-string }}" style="width:{{ support-scores-a }}%;" class="mitigated"></div>
+		{% endif %}
+		{% if support-scores-n != 0 %}
+			{% assign support-scores-names-n-string = support-scores-names-n | join: ", " %}
+			{% assign support-scores-names-n-string = site.data.nicenames.support['unsupported'] | append: ' in ' | append: support-scores-names-n-string | append: ". " %}
+			<div title="{{ support-scores-names-n-string }}" style="width:{{ support-scores-n }}%;" class="unsupported"></div>
+		{% endif %}
+		{% assign support-scores-names-u-string = support-scores-names-u | join: ", " %}
+		{% assign support-scores-names-u-string = site.data.nicenames.support['unknown'] | append: ' in ' | append: support-scores-names-u-string | append: ". " %}
+		<div title="{{ support-scores-names-u-string }}" class="unknown"></div>
 	</div>
-	<p class="feature-support-summary">51.23% + 39.71% + 9.06%</p>
-	<p class="feature-support-legend">Based on <a href="https://www.emailclientmarketshare.com">emailclientmarketshare.com</a>. <a href="/">Learn more</a>.</p>
+	<p class="feature-support-summary">
+		{% if support-scores-y != 0 %}
+		{{ support-scores-y }}%
+			{% if support-scores-a != 0 or support-scores-n != 0 %}
+			+ 
+			{% endif %}
+		{% endif %}
+		{% if support-scores-a != 0 %}
+		{{ support-scores-a }}%
+			{% if support-scores-n != 0 %}
+			+ 
+			{% endif %}
+		{% endif %}
+		{% if support-scores-n != 0 %}
+		{{ support-scores-n }}%
+		{% endif %}
+		+ 
+		{{ 100 | minus: support-scores-y | minus: support-scores-a | minus: support-scores-n }}%
+	</p>
+	<p class="feature-support-legend">Based on <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>. <a href="/">Learn more</a>.</p>
 </div>

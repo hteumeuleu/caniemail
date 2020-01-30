@@ -87,6 +87,12 @@
 	margin-bottom: 0.75rem;
 	color: #fff;
 	font-size: 1rem;
+
+	.beta {
+		font-size: 0.5em;
+		text-transform: uppercase;
+		vertical-align: text-top;
+	}
 }
 
 .feature-support-summary {
@@ -103,6 +109,10 @@
 	a[href*="emailclientmarketshare.com"] {
 		text-decoration: none;
 	}
+}
+
+.feature-support .score > div:not(.unknown) {
+	flex-grow: 0;
 }
 
 // Support colors
