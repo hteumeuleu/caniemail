@@ -80,9 +80,11 @@
 }
 
 .feature-support {
+	display: none;
 	margin-top: 0.5rem;
 
-	& + .legend-list { display: none; }
+	.beta-features-enabled & { display: block; }
+	.beta-features-enabled & + .legend-list { display: none; }
 }
 
 .feature-support-title {
