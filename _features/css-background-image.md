@@ -28,7 +28,10 @@ stats: {
 			"2018-09": "a #1",
             "2018-10": "y",
             "2019-02": "y"
-		}
+		},
+        mobile-webmail: {
+            "2020-02":"y"
+        }
 	},
     orange: {
         desktop-webmail: {
