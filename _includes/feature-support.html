@@ -70,6 +70,7 @@
 			{% assign support-scores-u = support-scores-u | plus: share-client-marketshare %}
 		{% endif %}
 	{% endfor %}
+	{% assign support-scores-u = 100 | minus: support-scores-y | minus: support-scores-a | minus: support-scores-n %}
 	{% comment %}
 		6. We display the data.
 	{% endcomment %}
@@ -77,41 +78,43 @@
 	<div class="score">
 		{% if support-scores-y != 0 %}
 			{% assign support-scores-names-y-string = support-scores-names-y | join: ", " %}
-			{% assign support-scores-names-y-string = site.data.nicenames.support['supported'] | append: ' in ' | append: support-scores-names-y-string | append: ". " %}
-			<div title="{{ support-scores-names-y-string }}" style="width:{{ support-scores-y }}%;" class="supported"></div>
+			{% assign support-scores-names-y-string = support-scores-y | append: '% ' | append: site.data.nicenames.support['supported'] | downcase | append: ' in ' | append: support-scores-names-y-string | append: "." %}
+			<div title="{{ support-scores-names-y-string }}" role="group" style="width:{{ support-scores-y }}%;" class="supported"></div>
 		{% endif %}
 		{% if support-scores-a != 0 %}
 			{% assign support-scores-names-a-string = support-scores-names-a | join: ", " %}
-			{% assign support-scores-names-a-string = site.data.nicenames.support['mitigated'] | append: ' in ' | append: support-scores-names-a-string | append: ". " %}
-			<div title="{{ support-scores-names-a-string }}" style="width:{{ support-scores-a }}%;" class="mitigated"></div>
+			{% assign support-scores-names-a-string = support-scores-a | append: '% ' | append: site.data.nicenames.support['mitigated'] | downcase | append: ' in ' | append: support-scores-names-a-string | append: "." %}
+			<div title="{{ support-scores-names-a-string }}" role="group" style="width:{{ support-scores-a }}%;" class="mitigated"></div>
 		{% endif %}
 		{% if support-scores-n != 0 %}
 			{% assign support-scores-names-n-string = support-scores-names-n | join: ", " %}
-			{% assign support-scores-names-n-string = site.data.nicenames.support['unsupported'] | append: ' in ' | append: support-scores-names-n-string | append: ". " %}
-			<div title="{{ support-scores-names-n-string }}" style="width:{{ support-scores-n }}%;" class="unsupported"></div>
+			{% assign support-scores-names-n-string = support-scores-n | append: '% ' | append: site.data.nicenames.support['unsupported'] | downcase | append: ' in ' | append: support-scores-names-n-string | append: "." %}
+			<div title="{{ support-scores-names-n-string }}" role="group" style="width:{{ support-scores-n }}%;" class="unsupported"></div>
 		{% endif %}
-		{% assign support-scores-names-u-string = support-scores-names-u | join: ", " %}
-		{% assign support-scores-names-u-string = site.data.nicenames.support['unknown'] | append: ' in ' | append: support-scores-names-u-string | append: ". " %}
-		<div title="{{ support-scores-names-u-string }}" class="unknown"></div>
+		{% if support-scores-u != 0 %}
+			{% assign support-scores-names-u-string = support-scores-names-u | join: ", " %}
+			{% assign support-scores-names-u-string = support-scores-u | append: '% ' | append: site.data.nicenames.support['unknown'] | downcase | append: ' in ' | append: support-scores-names-u-string | append: " and others." %}
+			<div title="{{ support-scores-names-u-string }}" role="group" class="unknown"></div>
+		{% endif %}
 	</div>
 	<p class="feature-support-summary">
 		{% if support-scores-y != 0 %}
-		{{ support-scores-y }}%
-			{% if support-scores-a != 0 or support-scores-n != 0 %}
+			<span class="feature-support-summary-value feature-support-summary-value--supported" title="{{ support-scores-y }}% {{ site.data.nicenames.support['supported'] | downcase }}">{{ support-scores-y }}%</span>
+			{% if support-scores-a != 0 %}
 			+ 
+			{% else %}
+			{{ site.data.nicenames.support['supported'] | downcase }}
 			{% endif %}
 		{% endif %}
 		{% if support-scores-a != 0 %}
-		{{ support-scores-a }}%
-			{% if support-scores-n != 0 %}
-			+ 
+			<span class="feature-support-summary-value feature-support-summary-value--mitigated" title="{{ support-scores-a }}% {{ site.data.nicenames.support['mitigated'] | downcase }}">{{ support-scores-a }}%</span>
+			{% if support-scores-y == 0 %}
+			{{ site.data.nicenames.support['mitigated'] | downcase }}
 			{% endif %}
 		{% endif %}
-		{% if support-scores-n != 0 %}
-		{{ support-scores-n }}%
+		{% if support-scores-y != 0 and support-scores-a != 0 %}
+			= {{ support-scores-y | plus: support-scores-a }}%
 		{% endif %}
-		+ 
-		{{ 100 | minus: support-scores-y | minus: support-scores-a | minus: support-scores-n }}%
 	</p>
-	<p class="feature-support-legend">Based on <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>. <a href="/">Learn more</a>.</p>
+	<p class="feature-support-legend">Based on <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>. <a href="/support/">Learn more</a>.</p>
 </div>

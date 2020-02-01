@@ -80,6 +80,8 @@
 }
 
 .feature-support {
+	margin-top: 0.5rem;
+
 	& + .legend-list { display: none; }
 }
 
@@ -99,6 +101,11 @@
 	color: #fff;
 }
 
+	.feature-support-summary-value--mitigated {
+		text-decoration: underline;
+		text-decoration-style: wavy;
+	}
+
 .feature-support-legend {
 	font-size: 0.75rem;
 
@@ -113,6 +120,12 @@
 
 .feature-support .score > div:not(.unknown) {
 	flex-grow: 0;
+}
+
+.feature-support .score .mitigated {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="white" d="M0,50q25-30 50,0t50,0 50"/></svg>');
+	background-position: center center;
+	background-size: 1rem 1rem;
 }
 
 // Support colors
@@ -135,6 +148,14 @@
 	background-color: #838383 !important;
 }
 
+.feature-support-summary-value--supported {
+	text-decoration-color: #39b54a;
+}
+
+.feature-support-summary-value--mitigated {
+	text-decoration-color: #eda745;
+}
+
 // Accessible colors
 .accessible-colors-enabled {
 	.supported,
@@ -152,6 +173,14 @@
 	.mitigated::before {
 		color: #000;
 		background-color: #8090f9 !important;
+	}
+
+	.feature-support-summary-value--supported {
+		text-decoration-color: #a6edb2;
+	}
+
+	.feature-support-summary-value--mitigated {
+		text-decoration-color: #8090f9;
 	}
 }
 
