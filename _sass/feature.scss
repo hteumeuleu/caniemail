@@ -122,12 +122,6 @@
 	flex-grow: 0;
 }
 
-.feature-support .score .mitigated {
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="white" d="M0,50q25-30 50,0t50,0 50"/></svg>');
-	background-position: center center;
-	background-size: 1rem 1rem;
-}
-
 // Support colors
 .supported,
 .supported::before {
@@ -142,6 +136,16 @@
 .mitigated,
 .mitigated::before {
 	background-color: #eda745 !important;
+}
+
+.score .mitigated {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		rgba(255,255,255,0),
+		rgba(255,255,255,0) 4px,
+		rgba(255,255,255,0.25) 4px,
+		rgba(255,255,255,0.25) 6px
+	);
 }
 
 .unknown {
