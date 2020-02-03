@@ -86,7 +86,8 @@ stats: {
     },
     yahoo: {
         desktop-webmail: {
-            "2019-06":"n"
+            "2019-06":"n",
+			"2020-02":"y #2"
         },
         ios: {
             "2019-02":"n"
@@ -115,5 +116,6 @@ stats: {
 notes: ""
 notes_by_num: {
     "1": "Not live tested, only looked at processed code on Litmus."
+	"2": "Only works on the `<table>` tag."
 }
 ---
