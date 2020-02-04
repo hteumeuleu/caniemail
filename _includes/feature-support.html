@@ -74,7 +74,7 @@
 	{% comment %}
 		6. We display the data.
 	{% endcomment %}
-	<p class="feature-support-title">Estimated support <span class="beta-tag">Beta</span></p>
+	<p class="feature-support-title">Estimated support <span class="beta-tag">Beta</span> <a href="/support/">About</a></p>
 	<div class="score">
 		{% if support-scores-y != 0 %}
 			{% assign support-scores-names-y-string = support-scores-names-y | join: ", " %}
@@ -116,5 +116,5 @@
 			= {{ support-scores-y | plus: support-scores-a }}%
 		{% endif %}
 	</p>
-	<p class="feature-support-legend">Based on <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>. <a href="/support/">Learn more</a>.</p>
+	<p class="feature-support-legend">Based on <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>.</p>
 </div>
