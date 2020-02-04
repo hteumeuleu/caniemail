@@ -4,6 +4,7 @@ description: "This is the description of the `role` attribute."
 category: html
 keywords: accessibility
 last_test_date: "2019-06-15"
+last_test_date: "2020-02-04"
 test_url: "/tests/html-role.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/uz6yTbAfykA362dvPZZKX81wEhGuUm4uJekIk2NKacALI/list"
 stats: {
@@ -90,21 +91,26 @@ stats: {
 			"2020-02":"a #2"
         },
         ios: {
-            "2019-02":"n"
+            "2019-02":"n",
+            "2020-02":"a #2"
         },
         android: {
-            "2019-02":"n"
+            "2019-02":"n",
+            "2020-02":"a #2"
         }
     },
     aol: {
         desktop-webmail: {
-            "2019-02": "n"
+            "2019-02": "n",
+            "2020-02":"a #2"
         },
         ios: {
-            "2019-02": "n"
+            "2019-02": "n",
+            "2020-02":"a #2"
         },
         android: {
-            "2019-02": "n"
+            "2019-02": "n",
+            "2020-02":"a #2"
         }
     },
     samsung-email: {
