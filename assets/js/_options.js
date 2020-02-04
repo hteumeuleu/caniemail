@@ -1,11 +1,13 @@
-class AccessibleColors {
+class Options {
 
-	constructor() {
+	constructor(buttonSelector, optionName) {
 
-		this.button = document.querySelector('.a11y-colors-button');
+		this.button = document.querySelector(buttonSelector);
+		this.cookieName = optionName;
 		this.enabled = false;
-		this.cookieName = 'accessible-colors-enabled';
-		this.addEvent();
+		if(this.button) {
+			this.addEvent();
+		}
 	}
 
 	addEvent() {
@@ -20,8 +22,8 @@ class AccessibleColors {
 	}
 
 	init() {
-		const enableAccessibleColorsCookie = this.readCookie();
-		if(enableAccessibleColorsCookie == 'true') {
+		const enableOptionCookie = this.readCookie();
+		if(enableOptionCookie == 'true') {
 			this.toggle();
 		}
 	}

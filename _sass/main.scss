@@ -316,6 +316,7 @@ code {
 	max-width: 40rem;
 
 	ul {
+		margin-bottom: 0.75rem;
 		list-style: none;
 	}
 
@@ -359,7 +360,7 @@ code {
 	min-width: 12.5rem;
 }
 
-.a11y-colors-button {
+.caniemail-link-button {
 	-webkit-appearance: none;
 	background: none;
 	border: none;
@@ -398,7 +399,17 @@ code {
 
 .beta {
 	display: inline-block;
-	padding: 0.25rem 0.5rem;
+	padding: 0 0.25rem;
+}
+
+.beta-tag {
+	display: inline-block;
+	padding: 0 0.25rem;
+	color: #000;
+	font-size: 0.5em;
+	text-transform: uppercase;
+	vertical-align: text-top;
+	background: #fbd91b;
 }
 
 // Scoreboard

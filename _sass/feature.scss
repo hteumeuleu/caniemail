@@ -79,6 +79,45 @@
 	}
 }
 
+.feature-support {
+	display: none;
+	margin-top: 0.5rem;
+
+	.beta-features-enabled & { display: block; }
+	.beta-features-enabled & + .legend-list { display: none; }
+}
+
+.feature-support-title {
+	margin-bottom: 0.75rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.feature-support-summary {
+	color: #fff;
+}
+
+	.feature-support-summary-value--mitigated {
+		text-decoration: underline;
+		text-decoration-style: wavy;
+	}
+
+.feature-support-legend {
+	font-size: 0.75rem;
+
+	a {
+		color: inherit;
+	}
+
+	a[href*="emailclientmarketshare.com"] {
+		text-decoration: none;
+	}
+}
+
+.feature-support .score > div:not(.unknown) {
+	flex-grow: 0;
+}
+
 // Support colors
 .supported,
 .supported::before {
@@ -95,8 +134,26 @@
 	background-color: #eda745 !important;
 }
 
+.score .mitigated {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		rgba(255,255,255,0),
+		rgba(255,255,255,0) 4px,
+		rgba(255,255,255,0.25) 4px,
+		rgba(255,255,255,0.25) 6px
+	);
+}
+
 .unknown {
 	background-color: #838383 !important;
+}
+
+.feature-support-summary-value--supported {
+	text-decoration-color: #39b54a;
+}
+
+.feature-support-summary-value--mitigated {
+	text-decoration-color: #eda745;
 }
 
 // Accessible colors
@@ -116,6 +173,14 @@
 	.mitigated::before {
 		color: #000;
 		background-color: #8090f9 !important;
+	}
+
+	.feature-support-summary-value--supported {
+		text-decoration-color: #a6edb2;
+	}
+
+	.feature-support-summary-value--mitigated {
+		text-decoration-color: #8090f9;
 	}
 }
 

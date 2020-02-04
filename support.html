@@ -1,0 +1,71 @@
+---
+title: About Estimated Support
+layout: default
+---
+<div class="post">
+	<div class="post-inside">
+		<h1>About Estimated Support</h1>
+		<p>
+			In february 2020, we rolled out a new functionality called <em>Estimated support</em>. This will give you a clue of how widely supported every HTML and CSS features tested on the site is. The supported data is provided by <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>, a service ran by <a href="https://www.litmus.com">Litmus</a>.
+		</p>
+		<div class="feature-support">
+			<p class="feature-support-title">
+				Estimated support <span class="beta-tag">Beta</span>
+			</p>
+			<div class="score">
+				<div title="75.43% supported in Apple iPhone, Gmail, Apple Mail, Samsung Mail, Outlook.com." role="group" style="width:75.43%;" class="supported"></div>
+				<div title="8.21% partially supported in Outlook." role="group" style="width:8.21%;" class="mitigated"></div>
+				<div title="5.68% not supported in Yahoo! Mail." role="group" style="width:5.68%;" class="unsupported"></div>
+				<div title="10.68% support unknown in Apple iPad, Google Android, Windows Live Mail and others." role="group" class="unknown"></div>
+			</div>
+			<p class="feature-support-summary">
+				<span class="feature-support-summary-value feature-support-summary-value--supported" title="75.43% supported">75.43%</span> + <span class="feature-support-summary-value feature-support-summary-value--mitigated" title="8.21% partially supported">8.21%</span> = 83.64%
+			</p>
+			<p class="feature-support-legend">
+				Based on <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>. <a href="/support/">Learn more</a>.
+			</p>
+		</div>
+		<p>
+			While we think this is a valuable functionality to help make technical choices, it is important to keep in mind how email tracking works and how accurate (or how inaccurate) this data can be. So here are a few things worth noting.
+		</p>
+		<h2>Email tracking is inherently flawed.</h2>
+		<p>
+			In order to keep track of email clients, there are two methods used conjointly:
+		</p>
+		<ol>
+			<li>Use an invisible image (aka tracking pixel). When this image gets downloaded, we can know which email client triggered the download.</li>
+			<li>Use a custom link tracking. When you click on a link, we can know where you can from before.</li>
+		</ol>
+		<p>
+			This means that if somebody consults your email with images turned off and doesn't click any link, this person (and its email client) will be totally ignored from your analytics. In 2013, Campaign Monitor published <a href="https://www.campaignmonitor.com/resources/guides/email-marketing-trends/#two">a benchmark of opens by environment</a> based on 1.8 billion opens… <a href="https://speakerdeck.com/hteumeuleu/comment-sortir-lintegration-de-mails-de-la-prehistoire?slide=105">from nearly 22 billions email recipients</a>. This means that we have no clue what happens for 20.2 billions of those recipients.
+		</p>
+		<p>
+			This also means that any email client that displays images by default will be advantaged. This was particularily visible in <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a> in late 2013. In december 2013, Gmail accounted for 3.02% of market share according to the site. At that time, Gmail still blocked images by default. In december 2013, Gmail finally turned images on for everyone by default. <a href="https://speakerdeck.com/hteumeuleu/comment-sortir-lintegration-de-mails-de-la-prehistoire?slide=103">In January 2014</a>, Gmail accounted for 9.05% of market share according to the same site. That 300% jump is not related to any specific push or new market from Gmail. It's only because images were now visible for everyone, and thus emails could be tracked by analytics.
+		</p>
+		<h2>Different email clients may be reported as the same.</h2>
+		<p>
+			Due to the nature of how certain email applications or webmails work, it is not always possible to have precise measures of which email client version is used precisely. <a href="https://help.litmus.com/article/165-how-are-third-party-mobile-email-apps-reported">According to Litmus</a>:
+		</p>
+		<p>
+			<blockquote>In some cases, opens made in third-party email applications will appear in your stats as mobile webmail opens (for example, the AOL Mail iOS app appears as "AOL Mail using iPhone"). Custom applications, like Mailbox, that use WebKit as their rendering engine will appear as native iPhone mail app opens (for example, Mailbox appears as "Apple iPhone"). When this happens, Email Analytics is unable to differentiate between the native iPhone application and the Mailbox application because they both use WebKit to render, and provide the same type of identifying information back to us.</blockquote>
+		</p>
+		<p>
+			Some email clients also use proxies to serve images. This makes it harder to distinguish the platform under which the email client is used. For example, it is not possible to distinguish Gmail between its desktop webmail, mobile webmail, iOS app or Android app.
+		</p>
+		<p>
+			Another example is Outlook. In Litmus' data, <em>Outlook</em> accounts for both the Windows and macOS desktop applications. Those two applications are vastly different (the former using Word's rendering engine while the latter uses WebKit, resulting in much better support regarding HTML and CSS in general).
+		</p>
+		<p>
+			To display an estimated support for those categories, we will determinate an average of the support across all matching clients. For example, if Outlook on macOS supports a certain feature but Outlook on Windows does not, then this feature will be shown as being Partially Supported on Outlook.
+		</p>
+		<p>
+			If you want to see exactly how we match Litmus' data to Can I email's data, you can take a look at the file <a href="https://github.com/hteumeuleu/caniemail/blob/master/_data/emailclientmarketshare.yml"><code>_data/emailclientmarketshare.yml</code></a> available in our source code on GitHub.
+		</p>
+		<h2>Other things worth mentioning.</h2>
+		<ul>
+			<li><b>Litmus tracks email clients we don't.</b> (Currently: <em>Apple iPad</em>, <em>Google Android</em> and <em>Windows Live Mail</em>).</li>
+			<li><b>Some email clients we track are not tracked by Litmus.</b> For example, we keep track of french email clients from Orange that are not accounted in Litmus top 10.</li>
+			<li><b>Litmus top ten doesn't add up to 100%.</b></li>
+		</ul>
+	</div>
+</div>

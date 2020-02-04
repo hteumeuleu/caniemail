@@ -37,10 +37,11 @@ layout: default
 			</div>
 		</div>
 		<div class="feature-header-column">
-				{% comment %}
-					Data summary.
-					Showing at most three email client families with a summary/average cell for the whole family.
-				{% endcomment %}
+			{% include feature-support.html %}
+			{% comment %}
+				Data summary.
+				Showing at most three email client families with a summary/average cell for the whole family.
+			{% endcomment %}
 			<ul class="legend-list">
 			{% comment %}
 				1. Going through the three first email client families.

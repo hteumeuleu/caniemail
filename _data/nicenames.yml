@@ -28,7 +28,7 @@ platform:
 support:
   supported: "Supported"
   unsupported: "Not supported"
-  mitigated: "Partial support"
+  mitigated: "Partially supported"
   unknown: "Support unknown"
 category:
   html: "HTML"
