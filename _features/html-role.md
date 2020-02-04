@@ -121,6 +121,6 @@ stats: {
 notes: ""
 notes_by_num: {
     "1": "Not live tested, only looked at processed code on Litmus.",
-	"2": "Only works on the `<table>` tag."
+	"2": "Partial. Only works on the `<table>` tag."
 }
 ---
