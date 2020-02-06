@@ -24,6 +24,9 @@ stats: {
         },
         android: {
             "2019-05":"n"
+        },
+        mobile-webmail: {
+            "2020-02":"n"
         }
     },
     orange: {

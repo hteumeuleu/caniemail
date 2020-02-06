@@ -23,7 +23,10 @@ stats: {
 		},
 		android: {
 			"2019-08":"y #6"
-		}
+		},
+        mobile-webmail: {
+            "2020-02":"y #7"
+        }
 	},
 	orange: {
 		desktop-webmail: {
