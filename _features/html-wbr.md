@@ -16,14 +16,18 @@ stats: {
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02": "n"
+			"2019-02": "n",
+            "2020-02": "y"
 		},
 		ios: {
 			"2019-02": "n"
 		},
 		android: {
 			"2019-02": "a #1"
-		}
+		},
+        mobile-webmail: {
+            "2020-02": "y"
+        }
 	},
 	orange: {
 		desktop-webmail: {
