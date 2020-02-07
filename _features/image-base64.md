@@ -4,8 +4,8 @@ description: "Support for Base 64 image format"
 category: image
 keywords: image, Base 64
 last_test_date: "2020-02-06"
-test_url: "/tests/html-images.html"
-test_results_url: ""
+test_url: "/tests/images.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidhagmt3Z53CjqbkMhorlvuM0Gz57/list"
 stats: {
     apple-mail: {
         macos: {
@@ -87,10 +87,33 @@ stats: {
         android: {
             "2020-02":"y"
         }
+    },
+    orange: {
+        desktop-webmail: {
+            "2020-02":"n #2"
+        },
+        ios: {
+            "2020-02":"n"
+        },
+        android: {
+            "2020-02":"u"
+        }
+    },
+    sfr: {
+        desktop-webmail: {
+            "2020-02":"n #2"
+        },
+        ios: {
+            "2020-02":"y"
+        },
+        android: {
+            "2020-02":"u"
+        }
     }
 }
 notes: ""
 notes_by_num: {
-    "1": "Partial: Does not render Base 64 gif format."
+    "1": "Partial: Does not render Base 64 gif format.",
+    "2": "Not supported. The `src` is turned into a `nosrc` attribute."
 }
 ---
