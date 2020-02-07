@@ -62,7 +62,7 @@ stats: {
     thunderbird: {
         windows:{
           "2020-02":"y"
-        }
+        },
         macos: {
             "68.4":"y"
         }
