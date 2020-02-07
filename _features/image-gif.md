@@ -35,8 +35,7 @@ stats: {
             "2010":"a #1",
             "2013":"a #1",
             "2016":"a #1",
-            "2019":"a #1",
-            "365":"a #2"
+            "2019":"a #1 #2"
         },
         windows-10-mail: {
             "2020-02":"y"
@@ -93,6 +92,6 @@ stats: {
 notes: ""
 notes_by_num: {
     "1": "Partial: Does not support animated gif images.",
-    "2": "Partial: Plays the animation 3 times then stops and shows a play button to reactivate the animation."
+    "2": "Partial: With an Office 365 account, it plays the animation 3 times then stops and shows a play button to reactivate the animation."
 }
 ---
