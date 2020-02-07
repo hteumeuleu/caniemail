@@ -6,7 +6,11 @@
 	<link rel="stylesheet" href="/assets/css/styles.css" />
 	<script src="/assets/js/caniemail.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{%- if jekyll.environment == 'production' -%}
 	<link rel="shortcut icon" href="/assets/images/favicon.png" />
+	{%- else -%}
+	<link rel="shortcut icon" href="/assets/images/favicon-local.png" />
+	{%- endif -%}
 	<link rel="prefetch" href="/assets/js/features.json" />
 	{%- if page.collection == 'features' -%}
 	<meta property="og:title" content="Can I email… {{ page.title | escape_once | markdownify | strip_html | strip }}" />
