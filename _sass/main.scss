@@ -435,6 +435,10 @@ code {
 				text-align: center;
 			}
 		}
+
+		&.not-enough-tests::before {
+			visibility: hidden;
+		}
 	}
 }
 

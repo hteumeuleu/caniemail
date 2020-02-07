@@ -146,6 +146,7 @@
 <ul class="scoreboard">
 	{% assign client-scores-limit = include.limit | default: 999 %}
 	{% assign number-of-features = site.features.size | times: 1.0 %}
+	{% assign half-number-of-features = number-of-features | divided_by: 2 %}
 	{% for client in client-scores-families limit:client-scores-limit %}
 		{% assign i = forloop.index | minus:1 %}
 		{% assign client-family = client | split:':' | first %}
@@ -154,7 +155,12 @@
 		{% assign client-scores-a-percent = client-scores-a[i] | times: 100 | divided_by: number-of-features | round: 2 %}
 		{% assign client-scores-n-percent = client-scores-n[i] | times: 100 | divided_by: number-of-features | round: 2 %}
 		{% assign client-scores-u-percent = 100 | minus: client-scores-y-percent | minus: client-scores-a-percent | minus: client-scores-n-percent | round: 2 %}
-	<li>
+		{% assign client-number-of-features = client-scores-y[i] | plus: client-scores-a[i] | plus: client-scores-n[i] %}
+		{% assign client-css-class = '' %}
+		{% if client-number-of-features <= half-number-of-features %}
+			{% assign client-css-class = 'class="not-enough-tests"' %}
+		{% endif %}
+	<li {{ client-css-class }}>
 		<div class="score">
 			<div title="{{ client-scores-y[i] | times: 1 }}" style="width:{{client-scores-y-percent | default:0 }}%;" class="supported"></div>
 			<div title="{{ client-scores-a[i] | times: 1 }}" style="width:{{client-scores-a-percent | default:0 }}%;" class="mitigated"></div>
