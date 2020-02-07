@@ -93,6 +93,6 @@ stats: {
 notes: ""
 notes_by_num: {
     "1": "Partial: Does not support animated gif images.",
-    "2": "Partial: Plays the animation 3 times them stops and shows a play button to reactivate the animation."
+    "2": "Partial: Plays the animation 3 times then stops and shows a play button to reactivate the animation."
 }
 ---
