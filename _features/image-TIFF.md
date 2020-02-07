@@ -9,7 +9,7 @@ test_results_url: ""
 stats: {
     apple-mail: {
         macos: {
-            "13:"y"
+            "13":"y"
         },
         ios: {
             "13":"y"
@@ -59,7 +59,7 @@ stats: {
         }
     },
     thunderbird: {
-        windows:{
+        windows: {
           "2020-02":"n"
         },
         macos: {
