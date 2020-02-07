@@ -17,6 +17,38 @@
   </style>
 </head>
 <body>
+  <h3>Base 64</h3>
+  jpg<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD//gA+Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBkZWZhdWx0IHF1YWxpdHkK/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy/8AAEQgAKAA8AwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A4qiiprS1mvryG0tozJPM4jRR3JOBXzR8elfQhorent/DdhK1rLLf380ZKvPbOkcW7vtDKxYe/GaxrkQC5k+ymQwZ+QygBse+OM03GxUo8vUiorofDHhtdcmke6uDbWqhlVgMtLLtLBF/AZPoPqK56hxaSb6g4NRUn1CiiikSFdJ4Hhjm8QsZJRCI7O4cSlc7D5TDdj2zn8K5utTw9qMOl6zDcXKu1syvDOqdTG6lGx74bP4VdNpTTZpSaU033J/7T0SKTy49ASa3HHmTXMgmYeuVIQH/AICQPepbnw4smsWkNhKfsV5ALpJpv+WMXO8uRx8pVgcdce9Nk8LT+YWt9R0uaz6rcm9jQY90YhwenGM/WrV94mawmjs9IkhmtIbNLNnnt1dZ8MXY7XBwC7EgHsBV2/nRrZW/eqxa0TUYrvxhp1rZqU0+0jmjt1I5b92252/2mPJ/Adq42uw8M+J5P+EgtvtUekwQ4k3SCwt4sfI2PmCjHOB75xXM31/LqEyyyx20bKu0C3t0hX8QgAJ560ptOKd+r/Qmo04J36v9CrRRRWRgFFFFABRRRQAUUUUAFFFFAH//2Q==">
+gif<img src="data:image/gif;base64,R0lGODdhPAAoALMAAACAAP///3+/f7/fv9/v3x+PHz+fP1+vX5/PnwAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAPAAoAAAE2RDISau9OOvNu/9gKI5kaZ5oqq5s675wLM80JwxEQAxCwSEHmoFAEBiOh0FQgwggZgWn6KB7ygYDUYGQtMIMAV9o8CTLEN6PgCAxxwLLD9jQTreivmRO18MUJ24vYAU4BwWHB0R0FQhZgHYsVIEUCARiEomXAJMtkhkEXlFxdTFUoxVrjxackWEZgwCpq5ArsBiDcxesK1GLF4NNAcLDxMOaKn8YqYfMzYQIzC+Vn7QUu7xSFgKuGte1AQO+Bk2+Gd68A8J70B3nLUflNfLz9PX29/j5+vv8FBEAOw==">
+png<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoBAMAAABQlYTMAAAAG1BMVEUAgAD///9/v3+/37/f798fjx8/nz9fr1+fz59QqNX+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxElEQVQ4je3OzwuCMBQH8Efp7Coy81hU9w5CHtPox3ES3hXCOhbUfZFQf3ZuswX6PHqq72F82eexPYB/OswkXM1UeyJ6iPLjQraB11Tze3fZNbk/14PboMkZ04Mc4ZduU0B4+CnERdiklm9H4gNjhDCh/i25bsr2AIQth5dnwcBa4yxOg0N8Rlmu1ltKQpiqDcoBjEnFWYqy6Sq+2zK07pH6OxEJElbnotoc0MchFjJmbUycFE4utDHs7dBj7Qwkx25/NG8tKxtX6Jcv2gAAAABJRU5ErkJggg==">
+  <h3>jpg</h3>
+  <img src="https://dummyimage.com/600x400/008000/fff.jpg&text=jpg" width="300">
+  <h3>png</h3>
+  <img src="https://dummyimage.com/600x400/008000/fff.png&text=png" width="300">
+  <h3>Animated png flash red then hold green</h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-animation.png">
+  <h3>gif</h3>
+  <img src="https://dummyimage.com/600x400/008000/fff.gif&text=gif" width="300">
+  <h3>Animated gif flash red then hold green</h3>
+  <img src="https://im6.ezgif.com/tmp/ezgif-6-1e0e0f2559b9.gif" width="300">
+  <h3>tiff</h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/tiff.tiff" width="300">
+  <h3>bmp</h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/bmp.bmp" width="300">
+  <h3>ico</h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/ico.ico" width="300">
+  <h3>hdr</h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/hdr.hdr" width="300">
+  <h3>heif</h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/heif.heif" width="300">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-img.heic">
+  <h3>ppm</h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/ppm.ppm" width="300">
+  <h3>webP </h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-img.webp">
+  <h3>Animated webP flash red then hold green</h3>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-animation.webp">
+
   <h3>inline SVG</h3>
   <svg version="1.1" baseProfile="full" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
     <switch>
@@ -28,18 +60,6 @@
   </svg>
   <h3>svg img</h3>
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-img.svg">
-
-  <h3>webP </h3>
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-img.webp">
-
-  <h3>HEIF </h3>
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-img.heic">
-
-  <h3>Animated png flash red then hold green</h3>
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-animation.png">
-
-  <h3>Animated webP flash red then hold green</h3>
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51773/test-animation.webp">
 
   <h3>srcset</h3>
   <img src="https://dummyimage.com/1x1/ff0000/ffffff&text=fallback" srcset="https://dummyimage.com/300x100/008000/ffffff&text=srcset 1x"
@@ -60,6 +80,7 @@
   <img src="https://dummyimage.com/1x1/ff0000/ffffff&text=fallback" width="300"
   height="100">
   </picture>
+
 
 </body>
 </html>

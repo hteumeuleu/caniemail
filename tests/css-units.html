@@ -11,58 +11,34 @@
   <o:PixelsPerInch>96</o:PixelsPerInch>
   </o:OfficeDocumentSettings>
   </xml><![endif]-->
-  <title>CSS units</title>
+  <title>Images</title>
   <style>
-  div{
-    --width2: 100px;
-  }
-  .var{
-      width:var(--width2);
-      height:var(--width2);
-  }
+
   </style>
 </head>
 <body>
+  Default font size is set to 10px, then each unit is set to be larger than 10px, if the unit value passes then the text will be larger than the x that preceeds it.
+  <br><br>
+  <div style="font-size:10px;--var-size: 32px;">
+    x<div style="margin:0;font-size:initial">initial</div>
+    x<div style="margin:0;font-size:32px">px</div>
+    x<div style="margin:0;font-size:320%">%</div>
+    x<div style="margin:0;font-size:3.2em">em</div>
+    x<div style="margin:0;font-size:2rem">rem</div>
+    x<div style="margin:0;font-size:4vw">vw</div>
+    x<div style="margin:0;font-size:4vh">vh</div>
+    x<div style="margin:0;font-size:4vmin">vmin</div>
+    x<div style="margin:0;font-size:4vmax">vmax</div>
+    x<div style="margin:0;font-size:8ex">ex</div>
+    x<div style="margin:0;font-size:32pt">pt</div>
+    x<div style="margin:0;font-size:2pc">pc</div>
+    x<div style="margin:0;font-size:8ch">ch</div>
+    x<div style="margin:0;font-size:1cm">cm</div>
+    x<div style="margin:0;font-size:10mm">mm</div>
+    x<div style="margin:0;font-size:.5in">in</div>
+    x<div style="margin:0;font-size:calc(10px + 22px)">Calc</div>
+    x<div style="margin:0;--var-size: 32px;font-size:var(--var-size)">Var</div>
 
-  <div  style="--width1: 100px;">
-      <p>no width - for comparison</p>
-      <table style="background:blue;color:white;"><tr><td>x</td></tr></table>
-      <p>100px</p>
-      <table style="width:100px;height:100px;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>50%</p>
-      <table style="width:50%;height:150px;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>10em</p>
-      <table style="width:10em;height:10em;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>10rem</p>
-      <table style="width:10rem;height:10rem;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>5vw</p>
-      <table style="width:15vw;height:15vw;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>5vh</p>
-      <table style="width:15vh;height:15vh;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>5vmin</p>
-      <table style="width:15vmin;height:15vmin;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>5vmax</p>
-      <table style="width:15vmax;height:15vmax;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>10ex</p>
-      <table style="width:10ex;height:10ex;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>100pt</p>
-      <table style="width:100pt;height:100pt;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>10pc</p>
-      <table style="width:10pc;height:10pc;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>10ch</p>
-      <table style="width:10ch;height:10ch;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>3cm</p>
-      <table style="width:3cm;height:3cm;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>30mm</p>
-      <table style="width:30mm;height:30mm;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>1in</p>
-      <table style="width:1in;height:1in;background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>Calc</p>
-      <table style="width:calc(50px + 50px);height:calc(50px + 50px);background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>Var inline</p>
-      <table style="width:var(--width1);height:var(--width1);background:green;color:white;"><tr><td>x</td></tr></table>
-      <p>Var class</p>
-      <table style="background:green;color:white;" class="var" ><tr><td>x</td></tr></table>
-    </div>
+  </div>
 </body>
 </html>
