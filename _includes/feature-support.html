@@ -79,27 +79,27 @@
 		{% if support-scores-y != 0 %}
 			{% assign support-scores-names-y-string = support-scores-names-y | join: ", " %}
 			{% assign support-scores-names-y-string = support-scores-y | append: '% ' | append: site.data.nicenames.support['supported'] | downcase | append: ' in ' | append: support-scores-names-y-string | append: "." %}
-			<div title="{{ support-scores-names-y-string }}" role="group" style="width:{{ support-scores-y }}%;" class="supported"></div>
+			<div tabindex="0" title="{{ support-scores-names-y-string }}" role="group" style="width:{{ support-scores-y }}%;" class="supported"></div>
 		{% endif %}
 		{% if support-scores-a != 0 %}
 			{% assign support-scores-names-a-string = support-scores-names-a | join: ", " %}
 			{% assign support-scores-names-a-string = support-scores-a | append: '% ' | append: site.data.nicenames.support['mitigated'] | downcase | append: ' in ' | append: support-scores-names-a-string | append: "." %}
-			<div title="{{ support-scores-names-a-string }}" role="group" style="width:{{ support-scores-a }}%;" class="mitigated"></div>
+			<div tabindex="0" title="{{ support-scores-names-a-string }}" role="group" style="width:{{ support-scores-a }}%;" class="mitigated"></div>
 		{% endif %}
 		{% if support-scores-n != 0 %}
 			{% assign support-scores-names-n-string = support-scores-names-n | join: ", " %}
 			{% assign support-scores-names-n-string = support-scores-n | append: '% ' | append: site.data.nicenames.support['unsupported'] | downcase | append: ' in ' | append: support-scores-names-n-string | append: "." %}
-			<div title="{{ support-scores-names-n-string }}" role="group" style="width:{{ support-scores-n }}%;" class="unsupported"></div>
+			<div tabindex="0" title="{{ support-scores-names-n-string }}" role="group" style="width:{{ support-scores-n }}%;" class="unsupported"></div>
 		{% endif %}
 		{% if support-scores-u != 0 %}
 			{% assign support-scores-names-u-string = support-scores-names-u | join: ", " %}
 			{% assign support-scores-names-u-string = support-scores-u | append: '% ' | append: site.data.nicenames.support['unknown'] | downcase | append: ' in ' | append: support-scores-names-u-string | append: " and others." %}
-			<div title="{{ support-scores-names-u-string }}" role="group" class="unknown"></div>
+			<div tabindex="0" title="{{ support-scores-names-u-string }}" role="group" class="unknown"></div>
 		{% endif %}
 	</div>
 	<p class="feature-support-summary">
 		{% if support-scores-y != 0 %}
-			<span class="feature-support-summary-value feature-support-summary-value--supported" title="{{ support-scores-y }}% {{ site.data.nicenames.support['supported'] | downcase }}">{{ support-scores-y }}%</span>
+			<span class="feature-support-summary-value supported" title="{{ support-scores-y }}% {{ site.data.nicenames.support['supported'] | downcase }}">{{ support-scores-y }}%</span>
 			{% if support-scores-a != 0 %}
 			+ 
 			{% else %}
@@ -107,7 +107,7 @@
 			{% endif %}
 		{% endif %}
 		{% if support-scores-a != 0 %}
-			<span class="feature-support-summary-value feature-support-summary-value--mitigated" title="{{ support-scores-a }}% {{ site.data.nicenames.support['mitigated'] | downcase }}">{{ support-scores-a }}%</span>
+			<span class="feature-support-summary-value mitigated" title="{{ support-scores-a }}% {{ site.data.nicenames.support['mitigated'] | downcase }}">{{ support-scores-a }}%</span>
 			{% if support-scores-y == 0 %}
 			{{ site.data.nicenames.support['mitigated'] | downcase }}
 			{% endif %}

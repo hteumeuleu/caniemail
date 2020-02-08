@@ -108,9 +108,11 @@
 	color: #fff;
 }
 
-	.feature-support-summary-value--mitigated {
-		text-decoration: underline;
-		text-decoration-style: wavy;
+	.feature-support-summary-value {
+		display: inline-block;
+		padding: 0 0.25em;
+		line-height: 1.375em;
+		border-radius: 0.125rem;
 	}
 
 .feature-support-legend {
@@ -122,12 +124,46 @@
 	}
 }
 
+.feature-support .score {
+	margin-bottom: 0.75rem;
+}
+
 .feature-support .score > div {
-	&:hover {
+	position: relative;
+	cursor: help;
+
+	&:focus::before,
+	&:hover::before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: -2px;
+		right: -2px;
+		top: -2px;
+		bottom: -2px;
+		border: 2px solid #1b1b1d;
 		outline: 1px solid #fff;
-		outline-offset: 2px;
 		z-index: 1;
-		cursor: help;
+	}
+
+	&:focus::after,
+	&:hover::after {
+		content: attr(title);
+		position: absolute;
+		z-index: 2;
+		top: 1.25rem;
+		bottom: auto;
+		right: 0.5rem;
+		padding: 0.5em;
+		min-width: 6rem;
+		max-width: calc(100% - 2rem);
+		font-size: 0.75rem;
+		line-height: 1.25;
+		color: rgba(255, 255, 255, 0.85);
+		background: #2a2a2e;
+		border: 1px solid #3c3c3d;
+		border-radius: 0.25rem;
+		box-shadow: -2px -2px 4px rgba(0,0,0,0.5);
 	}
 
 	&:not(.unknown) {
@@ -137,17 +173,17 @@
 
 // Support colors
 .supported,
-.supported::before {
+.data-details .supported::before {
 	background-color: #39b54a !important;
 }
 
 .unsupported,
-.unsupported::before {
+.data-details .unsupported::before {
 	background-color: #c44230 !important;
 }
 
 .mitigated,
-.mitigated::before {
+.data-details .mitigated::before {
 	background-color: #eda745 !important;
 }
 
@@ -165,39 +201,23 @@
 	background-color: #838383 !important;
 }
 
-.feature-support-summary-value--supported {
-	text-decoration-color: #39b54a;
-}
-
-.feature-support-summary-value--mitigated {
-	text-decoration-color: #eda745;
-}
-
 // Accessible colors
 .accessible-colors-enabled {
 	.supported,
-	.supported::before {
+	.data-details .supported::before {
 		color: #000;
 		background-color: #a6edb2 !important;
 	}
 
 	.unsupported,
-	.unsupported::before {
+	.data-details .unsupported::before {
 		background-color: #842e98 !important;
 	}
 
 	.mitigated,
-	.mitigated::before {
+	.data-details .mitigated::before {
 		color: #000;
 		background-color: #8090f9 !important;
-	}
-
-	.feature-support-summary-value--supported {
-		text-decoration-color: #a6edb2;
-	}
-
-	.feature-support-summary-value--mitigated {
-		text-decoration-color: #8090f9;
 	}
 }
 
