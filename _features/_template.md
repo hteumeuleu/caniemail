@@ -9,33 +9,35 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/uz6yTbAfykA362dvPZZK
 stats: {
     apple-mail: {
         macos: {
-            "10.3":"u"
+            "13":"u"
         },
         ios: {
-            "10.3":"u",
-            "12.2":"u"
+            "13":"u"
         }
     },
     gmail: {
         desktop-webmail: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         ios: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         android: {
-            "2019-09":"u"
+            "2020-02":"u"
+        }
+        mobile-webmail: {
+            "2020-02":"u"
         }
     },
     orange: {
         desktop-webmail: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         ios: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         android: {
-            "2019-09":"u"
+            "2020-02":"u"
         }
     },
     outlook: {
@@ -48,20 +50,20 @@ stats: {
             "2019":"u"
         },
         windows-10-mail: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         macos: {
             "2011":"u",
             "2016":"u"
         },
         outlook-com: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         ios: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         android: {
-            "2019-09":"u"
+            "2020-02":"u"
         }
     },
     samsung-email: {
@@ -71,13 +73,13 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         ios: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         android: {
-            "2019-09":"u"
+            "2020-02":"u"
         }
     },
     thunderbird: {
@@ -87,24 +89,24 @@ stats: {
     },
     aol: {
         desktop-webmail: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         ios: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         android: {
-            "2019-09":"u"
+            "2020-02":"u"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         ios: {
-            "2019-09":"u"
+            "2020-02":"u"
         },
         android: {
-            "2019-09":"u"
+            "2020-02":"u"
         }
     }
 }
