@@ -2,7 +2,7 @@
 title: "Animated PNG image format"
 description: "Support for animated PNG image format"
 category: image
-keywords: image, PNG, animation
+keywords: image, apng, png, animation
 last_test_date: "2020-02-06"
 test_url: "/tests/images.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidhagmt3Z53CjqbkMhorlvuM0Gz57/list"
