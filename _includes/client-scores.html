@@ -162,10 +162,18 @@
 		{% endif %}
 	<li {{ client-css-class }}>
 		<div class="score">
+			{% if client-scores-y[i] != "0000" %}
 			<div role="group" title="{{ client-scores-y[i] | times: 1 | append: ' features ' | append: site.data.nicenames.support['supported'] | downcase }}" style="width:{{client-scores-y-percent | default:0 }}%;" class="supported"></div>
+			{% endif %}
+			{% if client-scores-a[i] != "0000" %}
 			<div role="group" title="{{ client-scores-a[i] | times: 1 | append: ' features ' | append: site.data.nicenames.support['mitigated'] | downcase }}" style="width:{{client-scores-a-percent | default:0 }}%;" class="mitigated"></div>
+			{% endif %}
+			{% if client-scores-n[i] != "0000" %}
 			<div role="group" title="{{ client-scores-n[i] | times: 1 | append: ' features ' | append: site.data.nicenames.support['unsupported'] | downcase }}" style="width:{{client-scores-n-percent | default:0 }}%;" class="unsupported"></div>
+			{% endif %}
+			{% if client-scores-u[i] != "0000" or client-number-of-features != number-of-features %}
 			<div role="group" title="{{ client-scores-u[i] | times: 1 | append: ' features width ' | append: site.data.nicenames.support['unknown'] | downcase }}" style="width:{{client-scores-u-percent | default:0 }}%;" class="unknown"></div>
+			{% endif %}
 		</div>
 		<span class="score-text">
 			<span class="score-name">
