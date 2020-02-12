@@ -99,7 +99,11 @@
 	</div>
 	<p class="feature-support-summary">
 		{% if support-scores-y != 0 %}
-			<span class="feature-support-summary-value supported" title="{{ support-scores-y }}% {{ site.data.nicenames.support['supported'] | downcase }}">{{ support-scores-y }}%</span>
+			{% assign support-scores-y-title-string = "" %}
+			{% if support-scores-a != 0 %}
+				{% assign support-scores-y-title-string = 'title="' | append: support-scores-y | append: "% " | append: site.data.nicenames.support['supported'] | downcase | append: '"' %}
+			{% endif %}
+			<span class="feature-support-summary-value supported" {{ support-scores-y-title-string }}>{{ support-scores-y }}%</span>
 			{% if support-scores-a != 0 %}
 			+ 
 			{% else %}
@@ -107,7 +111,11 @@
 			{% endif %}
 		{% endif %}
 		{% if support-scores-a != 0 %}
-			<span class="feature-support-summary-value mitigated" title="{{ support-scores-a }}% {{ site.data.nicenames.support['mitigated'] | downcase }}">{{ support-scores-a }}%</span>
+			{% assign support-scores-a-title-string = "" %}
+			{% if support-scores-y != 0 %}
+				{% assign support-scores-a-title-string = 'title="' | append: support-scores-a | append: "% " | append: site.data.nicenames.support['mitigated'] | downcase | append: '"' %}
+			{% endif %}
+			<span class="feature-support-summary-value mitigated" {{ support-scores-a-title-string }}>{{ support-scores-a }}%</span>
 			{% if support-scores-y == 0 %}
 			{{ site.data.nicenames.support['mitigated'] | downcase }}
 			{% endif %}
