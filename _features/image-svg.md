@@ -1,6 +1,6 @@
 ---
 title: "SVG image format"
-description: "Support for SVG image format, as a linked file.  See SVG html for embedded SVG support."
+description: "Support for SVG image format, as a linked file. See [SVG html](/features/html-svg) for embedded SVG support."
 category: image
 keywords: image, SVG
 last_test_date: "2020-02-06"
