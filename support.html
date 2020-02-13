@@ -8,23 +8,9 @@ layout: default
 		<p>
 			In february 2020, we rolled out a new functionality called <em>Estimated support</em>. This will give you a clue of how widely supported every HTML and CSS features tested on the site is. The supported data is provided by <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>, a service ran by <a href="https://www.litmus.com">Litmus</a>.
 		</p>
-		<div class="feature-support">
-			<p class="feature-support-title">
-				Estimated support <span class="beta-tag">Beta</span>
-			</p>
-			<div class="score">
-				<div title="75.43% supported in Apple iPhone, Gmail, Apple Mail, Samsung Mail, Outlook.com." role="group" style="width:75.43%;" class="supported"></div>
-				<div title="8.21% partially supported in Outlook." role="group" style="width:8.21%;" class="mitigated"></div>
-				<div title="5.68% not supported in Yahoo! Mail." role="group" style="width:5.68%;" class="unsupported"></div>
-				<div title="10.68% support unknown in Apple iPad, Google Android, Windows Live Mail and others." role="group" class="unknown"></div>
-			</div>
-			<p class="feature-support-summary">
-				<span class="feature-support-summary-value feature-support-summary-value--supported" title="75.43% supported">75.43%</span> + <span class="feature-support-summary-value feature-support-summary-value--mitigated" title="8.21% partially supported">8.21%</span> = 83.64%
-			</p>
-			<p class="feature-support-legend">
-				Based on <a href="https://www.emailclientmarketshare.com">EmailClientMarketShare.com</a>. <a href="/support/">Learn more</a>.
-			</p>
-		</div>
+		<p>
+			<img src="/assets/images/posts/2020-02-13-estimated-support.png" alt="Screenshot of the estimated support functionality." width="260" height="140" />
+		</p>
 		<p>
 			While we think this is a valuable functionality to help make technical choices, it is important to keep in mind how email tracking works and how accurate (or how inaccurate) this data can be. So here are a few things worth noting.
 		</p>
@@ -64,6 +50,7 @@ layout: default
 		<h2>Other things worth mentioning.</h2>
 		<ul>
 			<li><b>Litmus tracks email clients we don't.</b> (Currently: <em>Apple iPad</em>, <em>Google Android</em> and <em>Windows Live Mail</em>).</li>
+			<li>We match market share only to the latest tested version of an email client. So if something is supported in Outlook 2019 but not in Outlook 2016, we won't be able to account for this difference and Outlook's market share will be associated with the feature as supported.</li>
 			<li><b>Some email clients we track are not tracked by Litmus.</b> For example, we keep track of french email clients from Orange that are not accounted in Litmus top 10.</li>
 			<li><b>Litmus top ten doesn't add up to 100%.</b></li>
 		</ul>
