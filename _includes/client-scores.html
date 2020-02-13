@@ -145,34 +145,41 @@
 {% endcomment %}
 <ul class="scoreboard">
 	{% assign client-scores-limit = include.limit | default: 999 %}
-	{% assign number-of-features = site.features.size | times: 1.0 %}
+	{% assign number-of-features = site.features.size | times: 1 %}
 	{% assign half-number-of-features = number-of-features | divided_by: 2 %}
 	{% for client in client-scores-families limit:client-scores-limit %}
 		{% assign i = forloop.index | minus:1 %}
 		{% assign client-family = client | split:':' | first %}
 		{% assign client-platform = client | split:':' | last %}
+
+		{% assign client-scores-y-number = client-scores-y[i] | times: 1 %}
+		{% assign client-scores-a-number = client-scores-a[i] | times: 1 %}
+		{% assign client-scores-n-number = client-scores-n[i] | times: 1 %}
+		{% assign client-number-of-features = client-scores-y-number | plus: client-scores-a-number | plus: client-scores-n-number %}
+		{% assign client-scores-u-number = number-of-features | minus: client-number-of-features %}
+
 		{% assign client-scores-y-percent = client-scores-y[i] | times: 100 | divided_by: number-of-features | round: 2 %}
 		{% assign client-scores-a-percent = client-scores-a[i] | times: 100 | divided_by: number-of-features | round: 2 %}
 		{% assign client-scores-n-percent = client-scores-n[i] | times: 100 | divided_by: number-of-features | round: 2 %}
 		{% assign client-scores-u-percent = 100 | minus: client-scores-y-percent | minus: client-scores-a-percent | minus: client-scores-n-percent | round: 2 %}
-		{% assign client-number-of-features = client-scores-y[i] | plus: client-scores-a[i] | plus: client-scores-n[i] %}
+
 		{% assign client-css-class = '' %}
 		{% if client-number-of-features <= half-number-of-features %}
 			{% assign client-css-class = 'class="not-enough-tests"' %}
 		{% endif %}
 	<li {{ client-css-class }}>
 		<div class="score">
-			{% if client-scores-y[i] != "0000" %}
-			<div role="group" title="{{ client-scores-y[i] | times: 1 | append: ' features ' | append: site.data.nicenames.support['supported'] | downcase }}" style="width:{{client-scores-y-percent | default:0 }}%;" class="supported"></div>
+			{% if client-scores-y-number != 0 %}
+			<div role="group" title="{{ client-scores-y-number | append: ' features ' | append: site.data.nicenames.support['supported'] | downcase }}" style="width:{{client-scores-y-percent | default:0 }}%;" class="supported"></div>
 			{% endif %}
-			{% if client-scores-a[i] != "0000" %}
-			<div role="group" title="{{ client-scores-a[i] | times: 1 | append: ' features ' | append: site.data.nicenames.support['mitigated'] | downcase }}" style="width:{{client-scores-a-percent | default:0 }}%;" class="mitigated"></div>
+			{% if client-scores-a-number != 0 %}
+			<div role="group" title="{{ client-scores-a-number | append: ' features ' | append: site.data.nicenames.support['mitigated'] | downcase }}" style="width:{{client-scores-a-percent | default:0 }}%;" class="mitigated"></div>
 			{% endif %}
-			{% if client-scores-n[i] != "0000" %}
-			<div role="group" title="{{ client-scores-n[i] | times: 1 | append: ' features ' | append: site.data.nicenames.support['unsupported'] | downcase }}" style="width:{{client-scores-n-percent | default:0 }}%;" class="unsupported"></div>
+			{% if client-scores-n-number != 0 %}
+			<div role="group" title="{{ client-scores-n-number | append: ' features ' | append: site.data.nicenames.support['unsupported'] | downcase }}" style="width:{{client-scores-n-percent | default:0 }}%;" class="unsupported"></div>
 			{% endif %}
-			{% if client-scores-u[i] != "0000" or client-number-of-features != number-of-features %}
-			<div role="group" title="{{ client-scores-u[i] | times: 1 | append: ' features width ' | append: site.data.nicenames.support['unknown'] | downcase }}" style="width:{{client-scores-u-percent | default:0 }}%;" class="unknown"></div>
+			{% if client-scores-u-number != 0 %}
+			<div role="group" title="{{ client-scores-u-number | append: ' features with ' | append: site.data.nicenames.support['unknown'] | downcase }}" style="width:{{client-scores-u-percent | default:0 }}%;" class="unknown"></div>
 			{% endif %}
 		</div>
 		<span class="score-text">
@@ -180,7 +187,7 @@
 				{{ site.data.nicenames.family[client-family] | default: client-family }}
 				({{ site.data.nicenames.platform[client-platform] | default: client-platform }})
 			</span>:
-			{{ client-scores-y[i] | times: 1 }}<small>/{{ client-scores-y[i] | plus: client-scores-a[i] | plus: client-scores-n[i] }}</small>
+			{{ client-scores-y-number }}<small>/{{ client-number-of-features }}</small>
 		</span>
 	</li>
 	{% endfor %}
