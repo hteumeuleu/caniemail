@@ -9,7 +9,6 @@ class Caniemail {
 	constructor() {
 		this.search = new Search();
 		this.accessibleColors = new Options('.a11y-colors-button', 'accessible-colors-enabled');
-		this.betaFeatures = new Options('.beta-features-button', 'beta-features-enabled');
 	}
 }
 
