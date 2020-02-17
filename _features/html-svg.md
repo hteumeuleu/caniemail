@@ -9,7 +9,7 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidha
 stats: {
     apple-mail: {
         macos: {
-            "13":"y"
+            "13":"a #1"
         },
         ios: {
             "13":"y"
@@ -113,6 +113,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-    "": ""
+    "1": "Buggy. Requires a background on the `<body>`. Can be any type of background, image or a color, can be set as attribute, inline style or in `<style>` block"
 }
 ---
