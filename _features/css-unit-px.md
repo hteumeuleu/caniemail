@@ -88,6 +88,28 @@ stats: {
         android: {
             "2020-02":"y"
         }
+    },
+    orange: {
+        desktop-webmail: {
+            "2020-02":"y"
+        },
+        ios: {
+            "2020-02":"y"
+        },
+        android: {
+            "2020-02":"y"
+        }
+    },
+    sfr: {
+        desktop-webmail: {
+            "2020-02":"y"
+        },
+        ios: {
+            "2020-02":"y"
+        },
+        android: {
+            "2020-02":"y"
+        }
     }
 }
 notes: ""

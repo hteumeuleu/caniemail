@@ -1,5 +1,5 @@
 ---
-title: "CSS calc function"
+title: "CSS calc() function"
 description: "Support for CSS calc function."
 category: css
 keywords: unit, calc
@@ -87,6 +87,28 @@ stats: {
         },
         android: {
             "2020-02":"n"
+        }
+    },
+    orange: {
+        desktop-webmail: {
+            "2020-02":"y"
+        },
+        ios: {
+            "2020-02":"y"
+        },
+        android: {
+            "2020-02":"y"
+        }
+    },
+    sfr: {
+        desktop-webmail: {
+            "2020-02":"y"
+        },
+        ios: {
+            "2020-02":"y"
+        },
+        android: {
+            "2020-02":"y"
         }
     }
 }
