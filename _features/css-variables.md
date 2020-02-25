@@ -1,7 +1,7 @@
 ---
 title: "CSS Variables (Custom Properties)"
 category: css
-last_test_date: "2020-02-06"
+last_test_date: "2020-02-25"
 test_url: "/tests/css-variables.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/3viCexhHsrjaP9YS8RwzNwikbf4C0akxPFhK8xgyltxpe/list"
 stats: {

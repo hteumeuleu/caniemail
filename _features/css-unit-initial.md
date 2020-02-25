@@ -3,7 +3,7 @@ title: "initial unit"
 description: "Support for initial unit."
 category: css
 keywords: unit, initial
-last_test_date: "2020-02-06"
+last_test_date: "2020-02-25"
 test_url: "/tests/css-units.html"
 test_results_url: ""
 stats: {
@@ -87,6 +87,28 @@ stats: {
         },
         android: {
             "2020-02":"n"
+        }
+    },
+    orange: {
+        desktop-webmail: {
+            "2020-02":"y"
+        },
+        ios: {
+            "2020-02":"y"
+        },
+        android: {
+            "2020-02":"y"
+        }
+    },
+    sfr: {
+        desktop-webmail: {
+            "2020-02":"y"
+        },
+        ios: {
+            "2020-02":"y"
+        },
+        android: {
+            "2020-02":"y"
         }
     }
 }

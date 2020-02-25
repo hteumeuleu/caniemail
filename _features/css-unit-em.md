@@ -3,7 +3,7 @@ title: "em unit"
 description: "Support for em unit, relative to the current font-size."
 category: css
 keywords: unit, em
-last_test_date: "2020-02-06"
+last_test_date: "2020-02-25"
 test_url: "/tests/css-units.html"
 test_results_url: ""
 stats: {

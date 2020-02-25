@@ -3,7 +3,7 @@ title: "ch unit"
 description: "Support for ch unit, relative to the width of a '0'."
 category: css
 keywords: unit, ch
-last_test_date: "2020-02-06"
+last_test_date: "2020-02-25"
 test_url: "/tests/css-units.html"
 test_results_url: ""
 stats: {

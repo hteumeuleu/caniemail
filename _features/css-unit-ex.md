@@ -3,7 +3,7 @@ title: "ex unit"
 description: "Support for ex unit, relative to the height of an 'x'."
 category: css
 keywords: unit, ex
-last_test_date: "2020-02-06"
+last_test_date: "2020-02-25"
 test_url: "/tests/css-units.html"
 test_results_url: ""
 stats: {

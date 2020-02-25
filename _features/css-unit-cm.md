@@ -3,7 +3,7 @@ title: "cm unit"
 description: "Support for centimeters unit"
 category: css
 keywords: unit, cm
-last_test_date: "2020-02-06"
+last_test_date: "2020-02-25"
 test_url: "/tests/css-units.html"
 test_results_url: ""
 stats: {
