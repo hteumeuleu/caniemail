@@ -1,7 +1,7 @@
 ---
 title: "CSS Variables (Custom Properties)"
 category: css
-last_test_date: "2019-08-23"
+last_test_date: "2020-02-06"
 test_url: "/tests/css-variables.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/3viCexhHsrjaP9YS8RwzNwikbf4C0akxPFhK8xgyltxpe/list"
 stats: {
@@ -53,21 +53,25 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"n"
+            "2016":"y"
         },
         outlook-com: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2020-02":"n"
         },
         ios: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2020-02":"n"
         },
         android: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2020-02":"n"
         }
     },
     samsung-email: {
         android: {
-            "6.0":"y"
+            "6.0":"y",
+            "9.0":"y"
         }
     },
     sfr: {
@@ -82,8 +86,12 @@ stats: {
         }
     },
     thunderbird: {
+        windows: {
+            "2020-02":"y"
+        },
         macos: {
-            "60.3":"y"
+            "60.3":"y",
+            "68.4":"y"
         }
     },
     aol: {
@@ -99,13 +107,16 @@ stats: {
     },
     yahoo: {
         desktop-webmail: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2020-02":"n"
         },
         ios: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2020-02":"n"
         },
         android: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2020-02":"n"
         }
     }
 }
