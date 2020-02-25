@@ -93,6 +93,6 @@ stats: {
 notes: ""
 notes_by_num: {
     "1": "Partial. Webmail rendering doesn't work in IE.",
-    "2": "Partial. Doesn't work in GANGA"
+    "2": "Partial. Not supported with non Gmail accounts."
 }
 ---
