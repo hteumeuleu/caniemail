@@ -517,3 +517,21 @@ code {
 		margin-top: 3rem;
 	}
 }
+
+// Settings
+.caniemail-settings {
+	margin: 1rem 0;
+	padding: 2rem;
+	color: #fff;
+	background: #0a84ff;
+}
+
+.caniemail-settings-button {
+	font-size: 1rem;
+	background-color: transparent;
+
+	.icon {
+		filter: brightness(100);
+		vertical-align: middle;
+	}
+}
