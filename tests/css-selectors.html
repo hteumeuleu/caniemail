@@ -19,9 +19,22 @@
         .test-selector1 { background:red; }
         .test-selector2 { background:red; }
         .test-selector1, .test-selector2 { background: green; }
-        td table { background: green; }
+        .test-descendant-combinator td table { background: green; }
+    </style>
+    <style>
         td > table { background: green; }
-        td + td + td { background: green; }
+    </style>
+    <style>
+        .test-adjacent-sibling-combinator .foo + .bar { background: green; }
+        .test-adjacent-sibling-combinator td + td + td { background: green; }
+        .test-adjacent-sibling-combinator td + .foo { background: green; }
+        .test-adjacent-sibling-combinator .bar + td { background: green; }
+    </style>
+    <style>
+        .test-general-sibling-combinator .foo ~ .bar { background: green; }
+        .test-general-sibling-combinator .foo ~ td { background: green; }
+        .test-general-sibling-combinator td ~ .bar { background: green; }
+        .test-general-sibling-combinator td ~ td { background: green; }
     </style>
     <!--[if mso]>
     <xml>
@@ -86,7 +99,7 @@
                         </table>
                     </td>
                 </tr>
-                <tr>
+                <tr class="test-descendant-combinator">
                     <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
                         E F
                     </td>
@@ -98,7 +111,7 @@
                         </table>
                     </td>
                 </tr>
-                <tr>
+                <tr class="test-child-combinator">
                     <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
                         E > F
                     </td>
@@ -110,7 +123,7 @@
                         </table>
                     </td>
                 </tr>
-                <tr>
+                <tr class="test-adjacent-sibling-combinator">
                     <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
                         E + F
                     </td>
@@ -124,13 +137,43 @@
                         </table>
                     </td>
                 </tr>
+                <tr class="test-adjacent-sibling-combinator">
+                    <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+                        .foo + .bar
+                    </td>
+                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:none;">
+                            <tr>
+                                <td height="100" style="width:75px; height:100px;"></td>
+                                <td height="100" style="width:75px; height:100px;" class="foo"></td>
+                                <td height="100" style="width:75px; height:100px;" class="bar"></td>
+                                <td height="100" style="width:75px; height:100px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="test-general-sibling-combinator">
+                    <td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+                        .foo ~ .bar
+                    </td>
+                    <td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:none;">
+                            <tr>
+                                <td height="100" style="width:75px; height:100px;" class="foo"></td>
+                                <td height="100" style="width:75px; height:100px;"></td>
+                                <td height="100" style="width:75px; height:100px;" class="bar"></td>
+                                <td height="100" style="width:75px; height:100px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
             <tbody>
         </table>
         <p style="margin-top:1.6em; font:20px serif;">
             Every element should have a yellow border. Test cells should be green.
         </p>
         <p style="margin-top:1.6em; font:20px serif;">
-            <a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2019.
+            <a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2020.
         </p>
     </div>
 </body>
