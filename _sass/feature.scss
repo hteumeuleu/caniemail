@@ -45,6 +45,7 @@
 	@media only screen and (min-width: 64rem) {
 		display: flex;
 		flex-wrap: wrap;
+		min-height: 8rem;
 
 		& > .feature-header-column {
 			width: 50%;
@@ -614,7 +615,7 @@
 	}
 
 	.data-details {
-		min-height: 3rem;
+		min-height: 23.125rem;
 	}
 
 	.feature-footer {

@@ -175,9 +175,8 @@ class Search {
 						<header class="feature-header">
 							<div class="feature-header-column">
 								<h1 class="feature-title"><a href="${feature.url}">${feature.title}<span class="feature-permalink" aria-hidden="true">#</span></a></h1>
-								<div class="feature-description">
-									${feature.description}
-								</div>
+							</div>
+							<div class="feature-header-column">
 							</div>
 						</header>
 						<div class="data-details"></div>
@@ -200,6 +199,8 @@ class Search {
 						featureContainer.classList.remove('loading');
 						featureContainer.querySelector('.data-details').innerHTML = div.querySelector('.data-details').innerHTML;
 						featureContainer.querySelector('.feature-footer').innerHTML = div.querySelector('.feature-footer').innerHTML;
+						featureContainer.querySelector('.feature-header-column:nth-child(1)').innerHTML += div.querySelector('.feature-description').outerHTML;
+						featureContainer.querySelector('.feature-header-column:nth-child(2)').innerHTML = div.querySelector('.feature-header-column:nth-child(2)').innerHTML;
 					}
 				})
 				.catch(error => {
