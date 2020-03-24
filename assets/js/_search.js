@@ -23,10 +23,8 @@ class Search {
 
 				this.term = e.currentTarget.value;
 				this.query();
-			});
 
-			this.input.addEventListener('blur', e => {
-				if(this.data && this.term && this.results.length > 0) {
+				if(this.term) {
 					this.updateURL();
 				}
 			});
@@ -109,8 +107,9 @@ class Search {
 			else {
 				this.buildResultsContainer();
 				this.buildResults();
-				this.updateTitle();
 			}
+
+			this.updateTitle();
 		}
 	}
 
