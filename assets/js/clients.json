@@ -1,0 +1,125 @@
+---
+layout: null
+---
+[
+	{
+		"id": "apple-mail",
+		"name": "Apple Mail",
+		"platforms": {
+			"macos": {
+				"versions": [ "12.4", "13" ]
+			},
+			"ios": {
+				"versions": [ "12.4", "13" ]
+			}
+		}
+	},
+	{
+		"id": "gmail",
+		"name": "Gmail",
+		"platforms": {
+			"macos": {
+				"versions": [ "12.4", "13" ]
+			},
+			"ios": {
+				"versions": [ "12.4", "13" ]
+			}
+		}
+	}
+]
+[
+    "gmail": {
+      "desktop-webmail": {
+        "2020-02": "u"
+      },
+      "ios": {
+        "2020-02": "u"
+      },
+      "android": {
+        "2020-02": "u"
+      },
+      "mobile-webmail": {
+        "2020-02": "u"
+      }
+    },
+    "orange": {
+      "desktop-webmail": {
+        "2020-02": "u"
+      },
+      "ios": {
+        "2020-02": "u"
+      },
+      "android": {
+        "2020-02": "u"
+      }
+    },
+    "outlook": {
+      "windows": {
+        "2003": "u",
+        "2007": "u",
+        "2010": "u",
+        "2013": "u",
+        "2016": "u",
+        "2019": "u"
+      },
+      "windows-10-mail": {
+        "2020-02": "u"
+      },
+      "macos": {
+        "2011": "u",
+        "2016": "u"
+      },
+      "outlook-com": {
+        "2020-02": "u"
+      },
+      "ios": {
+        "2020-02": "u"
+      },
+      "android": {
+        "2020-02": "u"
+      }
+    },
+    "samsung-email": {
+      "android": {
+        "6.0": "u"
+      }
+    },
+    "sfr": {
+      "desktop-webmail": {
+        "2020-02": "u"
+      },
+      "ios": {
+        "2020-02": "u"
+      },
+      "android": {
+        "2020-02": "u"
+      }
+    },
+    "thunderbird": {
+      "macos": {
+        "60.3": "u"
+      }
+    },
+    "aol": {
+      "desktop-webmail": {
+        "2020-02": "u"
+      },
+      "ios": {
+        "2020-02": "u"
+      },
+      "android": {
+        "2020-02": "u"
+      }
+    },
+    "yahoo": {
+      "desktop-webmail": {
+        "2020-02": "u"
+      },
+      "ios": {
+        "2020-02": "u"
+      },
+      "android": {
+        "2020-02": "u"
+      }
+  }
+]
