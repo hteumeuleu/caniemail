@@ -118,6 +118,17 @@ stats: {
             "2019-02":"a #1 #2",
             "2020-01":"a #2"
         }
+    },
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"n"
+        },
+        ios: {
+            "2020-03":"n"
+        },
+        android: {
+            "2020-03":"y"
+        }
     }
 }
 notes_by_num: {

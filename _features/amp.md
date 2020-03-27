@@ -105,7 +105,18 @@ stats: {
 		macos: {
 			"68.4":"n"
 		}
-	}
+	},
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"n"
+        },
+        ios: {
+            "2020-03":"n"
+        },
+        android: {
+            "2020-03":"n"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partially supported. Needs to be activated in _Settings > Mail > Message handling > Dynamic email_."

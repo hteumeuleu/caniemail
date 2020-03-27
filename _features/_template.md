@@ -108,6 +108,17 @@ stats: {
         android: {
             "2020-03":"u"
         }
+    },
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"u"
+        },
+        ios: {
+            "2020-03":"u"
+        },
+        android: {
+            "2020-03":"u"
+        }
     }
 }
 notes: "This is a global note."

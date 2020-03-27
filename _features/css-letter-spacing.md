@@ -106,7 +106,18 @@ stats: {
 		macos: {
 			"68.4":"y"
 		}
-	}
+	},
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"y"
+        },
+        ios: {
+            "2020-03":"y"
+        },
+        android: {
+            "2020-03":"y"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Big negative values are rendered differently from CSS standards.",

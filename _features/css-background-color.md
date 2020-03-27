@@ -108,6 +108,17 @@ stats: {
 		macos: {
 			"60.5.0": "y"
 		}
-	}
+	},
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"y"
+        },
+        ios: {
+            "2020-03":"y"
+        },
+        android: {
+            "2020-03":"y"
+        }
+    }
 }
 ---
