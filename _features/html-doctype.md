@@ -108,6 +108,17 @@ stats: {
         android: {
             "2019-07":"n"
         }
+    },
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"y"
+        },
+        ios: {
+            "2020-03":"n"
+        },
+        android: {
+            "2020-03":"n"
+        }
     }
 }
 notes_by_num: {

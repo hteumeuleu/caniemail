@@ -8,11 +8,10 @@ layout: default
 		<p>
 			Can I email is based on contributions. Want to help? Here are a few tasks you can help with, even if you know nothing about email development.
 		</p>
-		{% comment %}
 		<h2 class="caniemail-list-title">{{ site.features.size }} Features to test</h2>
 		<ol class="caniemail-list">
 			{% for feature in site.features %}
-				{% assign todo-platform = feature.stats.outlook.windows-10-mail %}
+				{% assign todo-platform = feature.stats.proton-mail.android %}
 				{% if todo-platform.size == nil or todo-platform.size == 0 %}
 				<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 				{% else %}
@@ -29,7 +28,6 @@ layout: default
 				{% endif %}
 			{% endfor %}
 		</ol>
-		{% endcomment %}
 		<h2 class="caniemail-list-title">Add links</h2>
 		<ul class="caniemail-list">
 			{% for feature in site.features %}

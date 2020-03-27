@@ -108,6 +108,17 @@ stats: {
         android: {
             "2019-09":"n #4"
         }
+    },
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"n #7"
+        },
+        ios: {
+            "2020-03":"n"
+        },
+        android: {
+            "2020-03":"n"
+        }
     }
 }
 notes_by_num: {
@@ -116,7 +127,8 @@ notes_by_num: {
     "3": "Buggy. Support depends on the version of Internet Explorer installed.",
     "4": "`<video>`, `<source>` and `<track>` tags are stripped. The fallback content is shown instead.",
     "5": "Partial support. Requires the `controls` attribute to play.",
-    "6": "Partial support. `autoplay` is not supported."
+    "6": "Partial support. `autoplay` is not supported.",
+    "7": "The `<video>` element is supported and the `poster` image is visible, but the video can not play due to a strict Content Security Policy."
 }
 links: {
     "Can I use: Video element":"https://caniuse.com/#feat=video",

@@ -106,7 +106,18 @@ stats: {
 		android: {
 			"2019-08":"n #3"
 		}
-	}
+	},
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"y"
+        },
+        ios: {
+            "2020-03":"n"
+        },
+        android: {
+            "2020-03":"n"
+        }
+    }
 }
 notes_by_num: {
 	"1": "Buggy. `target=_blank` is added on links so anchors open in a new window.",

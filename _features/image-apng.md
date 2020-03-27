@@ -109,6 +109,17 @@ stats: {
         android: {
             "2020-02":"y"
         }
+    },
+    proton-mail: {
+        desktop-webmail: {
+            "2020-03":"y"
+        },
+        ios: {
+            "2020-03":"y"
+        },
+        android: {
+            "2020-03":"y"
+        }
     }
 }
 notes: "In all cases where the Animated PNG fails, it will fallback to show the first frame of the animation."
