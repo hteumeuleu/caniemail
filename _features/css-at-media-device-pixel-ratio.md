@@ -111,7 +111,7 @@ stats: {
             "2019-02":"n"
         }
     },
-    proton-mail: {
+    protonmail: {
         desktop-webmail: {
             "2020-03":"n"
         },

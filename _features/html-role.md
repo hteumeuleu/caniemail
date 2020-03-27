@@ -120,7 +120,7 @@ stats: {
             "5.0.10.2": "y"
         }
     },
-    proton-mail: {
+    protonmail: {
         desktop-webmail: {
             "2020-03":"y"
         },

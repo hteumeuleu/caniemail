@@ -10,7 +10,7 @@ family:
   samsung-email: "Samsung Email"
   sfr: "SFR"
   orange: "Orange"
-  proton-mail: "ProtonMail"
+  protonmail: "ProtonMail"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"
