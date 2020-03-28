@@ -1,0 +1,91 @@
+---
+layout: default
+---
+<div class="post">
+	<div class="post-inside">
+		<h1 class="post-title">{{ site.data.nicenames.family[page.slug] | default: page.slug }}</h1>
+		{{ content | markdownify }}
+
+		{% if page.platforms != nil and page.platforms != "" %}
+		<ul>
+			{% for platform-slug in page.platforms %}
+			<li><a href="#{{ platform-slug | slugify }}">{{ site.data.nicenames.family[page.slug] | default: page.slug }} ({{ site.data.nicenames.platform[platform-slug] | default: platform-slug }})</a></li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</div>
+</div>
+{% comment %}
+	1. We go through each platform indicate in the page's `platforms` front matter.
+{% endcomment %}
+{% for platform-slug in page.platforms %}
+	{% assign client-features-y = '' %}
+	{% assign client-features-a = '' %}
+	{% assign client-features-n = '' %}
+	{% assign client-features-u = '' %}
+	<div class="post post--client" id="{{ platform-slug | slugify }}">
+		<div class="post-inside">
+			<h2 class="post-title"><span class="client-name">{{ site.data.nicenames.family[page.slug] | default: page.slug }}</span> ({{ site.data.nicenames.platform[platform-slug] | default: platform-slug }})</h2>
+		</div>
+		{% comment %}
+			2. We go through every feature for that family/platform.
+		{% endcomment %}
+		{% for feature in site.features %}
+			{% assign family-values = feature.stats[page.slug] %}
+			{% assign platform-values = family-values[platform-slug] %}
+			{% if platform-values != nil and platform-values != "" %}
+				{% for version in platform-values %}
+					{% if forloop.last == true %}
+						{% assign version-values = version | last | split: ' ' | first %}
+						{% case version-values %}
+							{% when 'y' %}
+								{% capture client-features-y %}
+									{{ client-features-y }}
+									<li><a class="supported" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+								{% endcapture %}
+							{% when 'a' %}
+								{% capture client-features-a %}
+									{{ client-features-a }}
+									<li><a class="mitigated" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+								{% endcapture %}
+							{% when 'n' %}
+								{% capture client-features-n %}
+									{{ client-features-n }}
+									<li><a class="unsupported" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+								{% endcapture %}
+							{% when 'u' %}
+								{% capture client-features-u %}
+									{{ client-features-u }}
+									<li><a class="unknown" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+								{% endcapture %}
+						{% endcase %}
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+		{% if client-features-y != nil and client-features-y != "" %}
+			<h3 class="caniemail-list-title">{{ site.data.nicenames.support.supported }}</h3>
+			<ul class="client-tags">
+			{{ client-features-y }}
+			</ul>
+		{% endif %}
+		{% if client-features-a != nil and client-features-a != "" %}
+			<h3 class="caniemail-list-title">{{ site.data.nicenames.support.mitigated }}</h3>
+			<ul class="client-tags">
+			{{ client-features-a }}
+			</ul>
+		{% endif %}
+		{% if client-features-n != nil and client-features-n != "" %}
+			<h3 class="caniemail-list-title">{{ site.data.nicenames.support.unsupported }}</h3>
+			<ul class="client-tags">
+			{{ client-features-n }}
+			</ul>
+		{% endif %}
+		{% if client-features-u != nil and client-features-u != "" %}
+			<h3 class="caniemail-list-title">{{ site.data.nicenames.support.unknown }}</h3>
+			<ul class="client-tags">
+			{{ client-features-u }}
+			</ul>
+		{% endif %}
+	</div>
+{% endfor %}

@@ -464,6 +464,14 @@ code {
 
 .score-name {
 	color: #fff;
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .post--scoreboard {

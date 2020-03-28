@@ -184,8 +184,10 @@
 		</div>
 		<span class="score-text">
 			<span class="score-name">
+				<a href="/clients/{{ client-family | slugify }}">
 				{{ site.data.nicenames.family[client-family] | default: client-family }}
 				({{ site.data.nicenames.platform[client-platform] | default: client-platform }})
+				</a>
 			</span>:
 			{{ client-scores-y-number }}<small>/{{ client-number-of-features }}</small>
 		</span>

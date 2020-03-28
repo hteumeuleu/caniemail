@@ -4,6 +4,8 @@ collections:
     permalink: /news/:year-:month-:day-:title/
   features:
     output: true
+  clients:
+    output: true
 
 defaults:
   - scope:
@@ -11,6 +13,11 @@ defaults:
       type: "features"
     values:
       layout: "feature"
+  - scope:
+      path: ""
+      type: "clients"
+    values:
+      layout: "client"
   - scope:
       path: ""
       type: "posts"
