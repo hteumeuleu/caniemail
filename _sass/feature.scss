@@ -292,6 +292,15 @@
 		position: sticky;
 		left: 0.5rem;
 		right: 0.5rem;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
@@ -307,6 +316,15 @@
 	font-weight: normal;
 	line-height: 1.2;
 	text-align: center;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
 }
 
 .data-client-list {

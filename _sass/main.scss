@@ -466,9 +466,10 @@ code {
 	color: #fff;
 
 	a {
+		color: inherit;
 		text-decoration: none;
 
-		&:hover {
+		&:hover, &:focus {
 			text-decoration: underline;
 		}
 	}

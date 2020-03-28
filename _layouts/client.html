@@ -24,9 +24,7 @@ layout: default
 	{% assign client-features-n = '' %}
 	{% assign client-features-u = '' %}
 	<div class="post post--client" id="{{ platform-slug | slugify }}">
-		<div class="post-inside">
-			<h2 class="post-title"><span class="client-name">{{ site.data.nicenames.family[page.slug] | default: page.slug }}</span> ({{ site.data.nicenames.platform[platform-slug] | default: platform-slug }})</h2>
-		</div>
+		<h2 class="post-title"><span class="client-name">{{ site.data.nicenames.family[page.slug] | default: page.slug }}</span> ({{ site.data.nicenames.platform[platform-slug] | default: platform-slug }})</h2>
 		{% comment %}
 			2. We go through every feature for that family/platform.
 		{% endcomment %}
@@ -61,6 +59,11 @@ layout: default
 						{% endcase %}
 					{% endif %}
 				{% endfor %}
+			{% else %}
+				{% capture client-features-u %}
+					{{ client-features-u }}
+					<li><a class="unknown" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+				{% endcapture %}
 			{% endif %}
 		{% endfor %}
 		{% if client-features-y != nil and client-features-y != "" %}
