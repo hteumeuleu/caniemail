@@ -70,24 +70,24 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "a #3"
+			"2019-02": "a #3 #4"
 		},
 		ios: {
-			"2019-02": "a #3"
+			"2019-02": "a #3 #4"
 		},
 		android: {
-			"2019-02": "a #3"
+			"2019-02": "a #3 #4"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "a #3"
+			"2019-02": "a #3 #4"
 		},
 		ios: {
-			"2019-02": "a #3"
+			"2019-02": "a #3 #4"
 		},
 		android: {
-			"2019-02": "a #3"
+			"2019-02": "a #3 #4"
 		}
 	},
 	samsung-email: {
@@ -127,6 +127,7 @@ stats: {
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",
     "2": "Buggy. Requires at least one `<img>` element in the email to download all images.",
-    "3": "Partial. Does not support multiple values. The comma between two values is removed."
+    "3": "Partial. Does not support multiple values. The comma between two values is removed.",
+    "4": "Partial. Images URL must be between quotes."
 }
 ---
