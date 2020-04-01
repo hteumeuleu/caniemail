@@ -1,0 +1,18 @@
+---
+layout: default
+title: All email clients tested on Can I email…
+permalink: /clients/
+---
+<div class="post">
+	<div class="post-inside">
+		<h1 class="post-title">Email Clients</h1>
+		<p>
+			Here's an index of all the email clients we currently test features on.
+		</p>
+		<ul class="caniemail-list">
+		{% for client in site.clients %}
+			<li><a href="{{ client.url }}">{{ site.data.nicenames.family[client.slug] | default: client.slug | escape_once }}</a></li>
+		{% endfor %}
+		</ul>
+	</div>
+</div>

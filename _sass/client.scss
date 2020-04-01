@@ -1,0 +1,51 @@
+@import "_variables";
+
+.post--client {
+	margin-top: 1rem;
+	scroll-margin-top: 1rem;
+
+	ul.client-tags {
+		margin: 0;
+
+		li {
+			margin: 0 0.25rem 0.25rem 0;
+		}
+	}
+
+	& > .post-title {
+		margin-left: 0;
+	}
+
+	.post-title .client-name {
+		color: #fff;
+	}
+
+	.caniemail-list-title {
+		margin-top: 2rem;
+		color: #fff;
+		border-bottom: none;
+	}
+}
+
+.client-tags {
+	list-style: none;
+	font-size: 0;
+
+	li {
+		display: inline-block;
+		font-size: 1rem;
+	}
+
+	a {
+		display: inline-block;
+		padding: 0.125rem 0.5rem;
+		color: #fff;
+		background-color: $color-grey;
+		text-decoration: none;
+
+		&:hover, &:focus, &:active {
+			outline-color: #fff;
+			text-decoration: underline;
+		}
+	}
+}

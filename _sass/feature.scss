@@ -45,6 +45,7 @@
 	@media only screen and (min-width: 64rem) {
 		display: flex;
 		flex-wrap: wrap;
+		min-height: 8rem;
 
 		& > .feature-header-column {
 			width: 50%;
@@ -71,6 +72,10 @@
 
 	& > p {
 		margin-top: 1.5rem;
+
+		a {
+			color: inherit;
+		}
 	}
 
 	code {
@@ -287,6 +292,15 @@
 		position: sticky;
 		left: 0.5rem;
 		right: 0.5rem;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
@@ -302,6 +316,15 @@
 	font-weight: normal;
 	line-height: 1.2;
 	text-align: center;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
 }
 
 .data-client-list {
@@ -610,7 +633,7 @@
 	}
 
 	.data-details {
-		min-height: 3rem;
+		min-height: 23.125rem;
 	}
 
 	.feature-footer {

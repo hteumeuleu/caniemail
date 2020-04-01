@@ -39,7 +39,8 @@ code {
 }
 
 // Header navigation
-.caniemail-tabs {
+.caniemail-menu {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 5rem;
@@ -49,19 +50,53 @@ code {
 	display: flex;
 	flex-direction: row;
 
-	a {
-		margin-right: 0.5rem;
-		padding: 0.25em 0.75em;
-		min-height: 2rem;
-		color: #fff;
-		font-weight: 300;
-		font-size: 1.25rem;
-		text-decoration: none;
-		background-color: rgba(255, 255, 255, 0.1);
+	@media only screen and (max-width: 19.9375rem) {
+		width: 100%;
+	}
+}
 
-		&.current,
-		&:hover {
-			background-color: #204e8a;
+.caniemail-tab {
+	margin-right: 0.5rem;
+	padding: 0.25em 0.75em;
+	min-height: 2.5rem;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.25rem;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	&.current {
+		background-color: #204e8a;
+	}
+
+	&:not(.current):hover {
+		background-color: #0a84ff;
+	}
+
+	@media only screen and (max-width: 30rem) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		font-size: 1rem;
+	}
+
+	@media only screen and (max-width: 19.9375rem) {
+		font-size: 0.85rem;
+		flex-grow: 1;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	@media only screen and (min-width: 20rem) {
+		&[href='/clients/'] {
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin-right: 0;
 		}
 	}
 }
@@ -429,6 +464,7 @@ code {
 			margin-right: 0.5rem;
 			width: 2.5rem;
 			text-align: right;
+			font-variant-numeric: tabular-nums;
 
 			.homepage & {
 				width: 1rem;
@@ -463,6 +499,15 @@ code {
 
 .score-name {
 	color: #fff;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
 }
 
 .post--scoreboard {

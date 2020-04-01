@@ -1,17 +1,17 @@
 {
   source: "https://emailclientmarketshare.com/",
-  last-update: 2020-01-01,
+  last-update: 2020-02-01,
   clients: {
     apple-iphone: {
       name: "Apple iPhone",
-      share: 39.75%,
+      share: 38.56%,
       match: [
         "apple-mail.ios"
       ]
     },
     gmail: {
       name: "Gmail",
-      share: 24.2%,
+      share: 24.54%,
       match: [
         "gmail.desktop-webmail",
         "gmail.ios",
@@ -20,14 +20,14 @@
     },
     apple-mail-macos: {
       name: "Apple Mail",
-      share: 9.8%,
+      share: 10.19%,
       match: [
         "apple-mail.macos"
       ]
     },
     outlook: {
       name: "Outlook",
-      share: 8.72%,
+      share: 9.03%,
       match: [
         "outlook.windows",
         "outlook.macos"
@@ -35,7 +35,7 @@
     },
     yahoo: {
       name: "Yahoo! Mail",
-      share: 5.04%,
+      share: 2.88%,
       match: [
         "yahoo.desktop-webmail",
         "yahoo.ios",
@@ -47,32 +47,32 @@
     },
     apple-ipad: {
       name: "Apple iPad",
-      share: 2.39%,
+      share: 2.24%,
       match: [
         "apple-mail.ipados"
       ]
     },
     samsung-email: {
       name: "Samsung Mail",
-      share: 1.83%,
+      share: 1.8%,
       match: [
         "samsung-email.android"
-      ]
-    },
-    outlook-com: {
-      name: "Outlook.com",
-      share: 1.5%,
-      match: [
-        "outlook.outlook-com"
       ]
     },
     google-android: {
       name: "Google Android",
       share: 1.39%
     },
+    outlook-com: {
+      name: "Outlook.com",
+      share: 1.29%,
+      match: [
+        "outlook.outlook-com"
+      ]
+    },
     windows-live-mail: {
       name: "Windows Live Mail",
-      share: 0.26%
+      share: 0.27%
     }
   }
 }

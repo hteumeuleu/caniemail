@@ -18,8 +18,8 @@
 	<meta name="description" content="{% include meta-og-dynamic.html %}" />
 	{%- else -%}
 	<meta property="og:title" content="Can I email…" />
-	<meta property="og:description" content="Support tables for HTML and CSS in emails." />
-	<meta name="description" content="Support tables for HTML and CSS in emails." />
+	<meta property="og:description" content="{{ page.title | escape_once | markdownify | strip_html | strip }}" />
+	<meta name="description" content="{{ page.title | escape_once | markdownify | strip_html | strip }}" />
 	<meta property="og:image" content="https://www.caniemail.com/assets/images/og.png" />
 	{%- endif -%}
 	<meta property="og:type" content="website" />

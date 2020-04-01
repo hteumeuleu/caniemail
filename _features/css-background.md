@@ -66,24 +66,24 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "a #1 #2"
+			"2019-02": "a #1 #2 #4"
 		},
 		ios: {
-			"2019-02": "a #1 #2"
+			"2019-02": "a #1 #2 #4"
 		},
 		android: {
-			"2019-02": "a #1 #2"
+			"2019-02": "a #1 #2 #4"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "a #1 #2"
+			"2019-02": "a #1 #2 #4"
 		},
 		ios: {
-			"2019-02": "a #1 #2"
+			"2019-02": "a #1 #2 #4"
 		},
 		android: {
-			"2019-02": "a #1 #2"
+			"2019-02": "a #1 #2 #4"
 		}
 	},
 	samsung-email: {
@@ -107,11 +107,23 @@ stats: {
 		macos: {
 			"60.5.0": "y"
 		}
-	}
+	},
+    protonmail: {
+        desktop-webmail: {
+            "2020-03":"y"
+        },
+        ios: {
+            "2020-03":"y"
+        },
+        android: {
+            "2020-03":"y"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Does not support multiple values. The comma between two values is removed.",
     "2": "Partial. Does not support the `/ value` shorthand for `background-size`. But it can be used in the `background-size` property instead.",
-    "3": "Partial. Only `background-color` values are supported."
+    "3": "Partial. Only `background-color` values are supported.",
+    "4": "Partial. Images URL must be between quotes."
 }
 ---

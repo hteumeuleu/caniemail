@@ -108,10 +108,22 @@ stats: {
         android: {
             "2019-05":"n"
         }
+    },
+    protonmail: {
+        desktop-webmail: {
+            "2020-03":"n #2"
+        },
+        ios: {
+            "2020-03":"n"
+        },
+        android: {
+            "2020-03":"n"
+        }
     }
 }
 notes: ""
 notes_by_num: {
-    "1": "`<picture>` and `<source>` tags are replaced by `<u></u>` tags."
+    "1": "`<picture>` and `<source>` tags are replaced by `<u></u>` tags.",
+    "2": "The `sizes` attribute is supported but not `srcset`."
 }
 ---

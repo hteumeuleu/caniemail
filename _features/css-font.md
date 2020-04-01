@@ -57,10 +57,10 @@ stats: {
 			"2019-02": "y"
 		},
 		ios: {
-			"2019-02": "a #2"
+			"2020-03": "y"
 		},
 		android: {
-			"2019-02": "a #2"
+			"2020-03": "y"
 		}
 	},
 	yahoo: {
@@ -105,11 +105,21 @@ stats: {
 		macos: {
 			"68.4":"y"
 		}
-	}
+	},
+    protonmail: {
+        desktop-webmail: {
+            "2020-03":"y"
+        },
+        ios: {
+            "2020-03":"y"
+        },
+        android: {
+            "2020-03":"y"
+        }
+    }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
-    "2": "Citation required."
+    "1": "Partial. Not supported with non Gmail accounts."
 }
 links: {
 	"Can I use: font": "https://caniuse.com/#feat=font",

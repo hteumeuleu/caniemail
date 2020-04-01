@@ -1,6 +1,7 @@
 ---
 title: To do
 layout: default
+permalink: /todo/
 ---
 <div class="post">
 	<div class="post-inside">
@@ -12,7 +13,7 @@ layout: default
 		<h2 class="caniemail-list-title">{{ site.features.size }} Features to test</h2>
 		<ol class="caniemail-list">
 			{% for feature in site.features %}
-				{% assign todo-platform = feature.stats.outlook.windows-10-mail %}
+				{% assign todo-platform = feature.stats.protonmail.android %}
 				{% if todo-platform.size == nil or todo-platform.size == 0 %}
 				<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 				{% else %}

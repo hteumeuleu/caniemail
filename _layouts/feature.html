@@ -51,7 +51,16 @@ layout: default
 				{% assign family-values = page.stats[family] %}
 			<div class="data-family" {% if forloop.index <= 3 %} data-family="{{family-key}}" {% endif %} id="data-{{ page.title | slugify }}-{{ family-key }}">
 				<h3 class="data-family-name">
-					<span>{{ site.data.nicenames.family[family-key] | default: family-key }}</span>
+					<span>
+						{% assign family-page = site.clients | where:"slug", client-family | first %}
+						{% if family-page != nil and family-page != "" %}
+						<a href="/clients/{{family-key}}/">
+						{% endif %}
+						{{ site.data.nicenames.family[family-key] | default: family-key }}
+						{% if family-page != nil and family-page != "" %}
+						</a>
+						{% endif %}
+					</span>
 				</h3>
 				<div class="data-client-list">
 					{% for platform in family-values %}
@@ -59,7 +68,13 @@ layout: default
 						{% assign platform-values = platform | last %}
 						<div class="data-client">
 							<h4 class="data-platform-name">
+								{% if family-page != nil and family-page != "" %}
+								<a href="/clients/{{family-key}}/#{{ platform-key | slugify }}">
+								{% endif %}
 								{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
+								{% if family-page != nil and family-page != "" %}
+								</a>
+								{% endif %}
 							</h4>
 							<div class="data-versions-list">
 							{% for version in platform-values %}

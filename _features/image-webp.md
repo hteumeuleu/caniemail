@@ -109,6 +109,17 @@ stats: {
         android: {
             "2020-02":"y"
         }
+    },
+    protonmail: {
+        desktop-webmail: {
+            "2020-03":"y"
+        },
+        ios: {
+            "2020-03":"n"
+        },
+        android: {
+            "2020-03":"y"
+        }
     }
 }
 notes: ""
