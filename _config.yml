@@ -34,3 +34,5 @@ plugins:
   - jekyll-mentions
 
 exclude: ["Gemfile", "Gemfile.lock", "CONTRIBUTING.md", "LICENSE", "README.md"]
+
+incremental: true

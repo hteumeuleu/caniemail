@@ -27,5 +27,6 @@ class Settings {
 	toggle() {
 
 		this.panel.toggleAttribute('hidden');
+		document.body.classList.toggle('settings-opened');
 	}
 }

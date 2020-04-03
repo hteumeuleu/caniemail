@@ -1,13 +1,15 @@
 <div class="caniemail-search" role="search">
 	<form action="/search/" method="get" class="caniemail-search-form">
-		<label for="caniemail-search">
-			<span class="caniemail-search-text">Can I email</span>
-			<span class="caniemail-search-input-container"><input type="search" class="caniemail-search-input" id="caniemail-search" name="s" spellcheck="false" value="" placeholder="HTML, CSS, &hellip;" {% if page.url == "/" %}autofocus{% endif %} /></span>
-			<span class="caniemail-search-text">?</span>
-		</label>
-		<noscript>
-			<button type="submit" class="caniemail-search-button">Search</button>
-		</noscript>
+		<label for="caniemail-search" class="caniemail-search-text">Can I email</label>
+		<span class="caniemail-search-input-container"><input type="search" class="caniemail-search-input" id="caniemail-search" name="s" spellcheck="false" value="" placeholder="HTML, CSS, &hellip;" {% if page.url == "/" %}autofocus{% endif %} /></span>
+		<span class="caniemail-search-text">
+			<span aria-hidden="hidden">?</span>
+			<span class="caniemail-search-actions">
+				<noscript>
+					<button type="submit" class="caniemail-search-button">Search</button>
+				</noscript>
+				<button type="button" class="caniemail-settings-button"><span class="icon" aria-hidden="hidden"></span> Settings</button>
+			</span>
+		</span>
 	</form>
-	<button type="button" class="caniemail-settings-button feature-button"><span class="icon" aria-hidden="hidden">⚙️</span> Settings</button>
 </div>

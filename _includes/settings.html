@@ -1,9 +1,22 @@
 <div class="caniemail-settings" hidden>
 	<h1>Settings</h1>
 	<h2>Clients</h2>
-	<div>
-		{{ site.features | inspect }}
-	</div>
+	<ul class="caniemail-settings-list">
+		{% for client in site.clients %}
+			<li class="caniemail-settings-list-item">
+				<input type="checkbox" id="settings-{{ client.slug }}" name="settings-{{ client.slug }}" />
+				<label for="settings-{{ client.slug }}">{{ site.data.nicenames.family[client.slug] | default: client.slug | escape_once }}</label>
+				<ul>
+				{% for platform in client.platforms %}
+					<li>
+						<input type="checkbox" id="settings-{{ client.slug }}-{{ platform }}" name="settings-{{ client.slug }}" />
+						<label for="settings-{{ client.slug }}-{{ platform }}">{{ site.data.nicenames.platform[platform] | default: platform | escape_once }}</label>
+					</li>
+				{% endfor %}
+				</ul>
+			</li>
+		{% endfor %}
+	</ul>
 	<h2>Misc</h2>
 	<div>
 		Accessible colors
