@@ -6,9 +6,9 @@
 			<li class="caniemail-settings-list-item">
 				<input type="checkbox" id="settings-{{ client.slug }}" name="settings-{{ client.slug }}" />
 				<label for="settings-{{ client.slug }}">{{ site.data.nicenames.family[client.slug] | default: client.slug | escape_once }}</label>
-				<ul>
+				<ul class="caniemail-settings-child-list">
 				{% for platform in client.platforms %}
-					<li>
+					<li class="caniemail-settings-child-list-item">
 						<input type="checkbox" id="settings-{{ client.slug }}-{{ platform }}" name="settings-{{ client.slug }}" />
 						<label for="settings-{{ client.slug }}-{{ platform }}">{{ site.data.nicenames.platform[platform] | default: platform | escape_once }}</label>
 					</li>
