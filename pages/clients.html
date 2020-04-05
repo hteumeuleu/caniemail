@@ -10,7 +10,8 @@ permalink: /clients/
 			Here's an index of all the email clients we currently test features on.
 		</p>
 		<ul class="caniemail-list">
-		{% for client in site.clients %}
+		{% assign clients = site.clients | sort:"display_order" %}
+		{% for client in clients %}
 			<li><a href="{{ client.url }}">{{ site.data.nicenames.family[client.slug] | default: client.slug | escape_once }}</a></li>
 		{% endfor %}
 		</ul>
