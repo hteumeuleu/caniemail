@@ -638,7 +638,9 @@ code {
 
 			&::before {
 				content: '';
-				display: inline-block;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
 				margin-right: 0.25rem;
 				flex-grow: 0;
 				flex-shrink: 0;
@@ -656,11 +658,14 @@ code {
 		}
 
 		&:checked + label::before {
-			background-color: green;
+			content: '\2714';
+			font-size: 0.75em;
 		}
 
 		&:indeterminate + label::before {
-			background-color: orange;
+			content: '-';
+			font-weight: bold;
+			font-family: sans-serif;
 		}
 	}
 }

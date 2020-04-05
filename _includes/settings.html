@@ -1,24 +1,23 @@
 <div class="caniemail-settings" hidden>
 	<h1>Settings</h1>
 	<h2>Clients</h2>
-	<ul class="caniemail-settings-list">
-		{% for client in site.clients %}
-			<li class="caniemail-settings-list-item">
-				<input type="checkbox" id="settings-{{ client.slug }}" name="settings-{{ client.slug }}" />
-				<label for="settings-{{ client.slug }}">{{ site.data.nicenames.family[client.slug] | default: client.slug | escape_once }}</label>
-				<ul class="caniemail-settings-child-list">
-				{% for platform in client.platforms %}
-					<li class="caniemail-settings-child-list-item">
-						<input type="checkbox" id="settings-{{ client.slug }}-{{ platform }}" name="settings-{{ client.slug }}" />
-						<label for="settings-{{ client.slug }}-{{ platform }}">{{ site.data.nicenames.platform[platform] | default: platform | escape_once }}</label>
-					</li>
-				{% endfor %}
-				</ul>
-			</li>
-		{% endfor %}
-	</ul>
-	<h2>Misc</h2>
-	<div>
-		Accessible colors
-	</div>
+	<form action="/" method="get" id="settings-form">
+		<ul class="caniemail-settings-list">
+			{% assign clients = site.clients | sort:"display_order" %}
+			{% for client in clients %}
+				<li class="caniemail-settings-list-item">
+					<input type="checkbox" id="settings-{{ client.slug }}" name="settings-{{ client.slug }}" />
+					<label for="settings-{{ client.slug }}">{{ site.data.nicenames.family[client.slug] | default: client.slug | escape_once }}</label>
+					<ul class="caniemail-settings-child-list">
+					{% for platform in client.platforms %}
+						<li class="caniemail-settings-child-list-item">
+							<input type="checkbox" id="settings-{{ client.slug }}-{{ platform }}" name="settings-{{ client.slug }}" value="{{ platform }}" />
+							<label for="settings-{{ client.slug }}-{{ platform }}">{{ site.data.nicenames.platform[platform] | default: platform | escape_once }}</label>
+						</li>
+					{% endfor %}
+					</ul>
+				</li>
+			{% endfor %}
+		</ul>
+	</form>
 </div>
