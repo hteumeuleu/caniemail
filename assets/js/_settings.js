@@ -6,8 +6,8 @@ class Settings {
 
 	constructor() {
 
-		this.button = document.querySelector('.caniemail-settings-button');
-		this.panel = document.querySelector('.caniemail-settings');
+		this.button = document.querySelector('.settings-button');
+		this.panel = document.querySelector('.settings');
 
 		if(this.panel && this.button) {
 			this.init();
@@ -19,8 +19,10 @@ class Settings {
 	init() {
 
 		this.initValues();
+		this.setStyles();
 		this.addEventToButton();
 		this.addEventToCheckboxes();
+		this.addEventToCheckAllButton();
 	}
 
 	initValues() {
@@ -43,16 +45,42 @@ class Settings {
 				});
 			}
 			// Indeterminate status
-			const uncheckedParentCheckboxes = this.panel.querySelectorAll('.caniemail-settings-list-item > input[type="checkbox"]:not(:checked)');
+			const uncheckedParentCheckboxes = this.panel.querySelectorAll('.settings-list-item > input[type="checkbox"]:not(:checked)');
 			if(uncheckedParentCheckboxes.length > 0) {
 				uncheckedParentCheckboxes.forEach(checkbox => {
-					const checkedChildrenCheckboxes = checkbox.parentNode.querySelectorAll('.caniemail-settings-child-list-item input[type="checkbox"]:checked');
+					const checkedChildrenCheckboxes = checkbox.parentNode.querySelectorAll('.settings-child-list-item input[type="checkbox"]:checked');
 					if(checkedChildrenCheckboxes.length > 0) {
 						checkbox.indeterminate = true;
 					}
 				});
 			}
 		}
+	}
+
+	addEventToCheckAllButton() {
+
+		let button = this.panel.querySelector('#settings-check-all-button');
+		button.addEventListener('click', e => {
+
+			e.preventDefault();
+			// Change label
+			const dataAttributeLabel = 'data-label-toggle';
+			const oldLabel = button.innerText;
+			const newLabel = button.getAttribute(dataAttributeLabel);
+			button.innerText = newLabel;
+			button.setAttribute(dataAttributeLabel, oldLabel);
+			// Check/Uncheck all
+			const dataAttributeChecked = 'data-checked';
+			const checkValue = (button.getAttribute(dataAttributeChecked) == 'true');
+			const checkboxes = this.panel.querySelectorAll('input[type="checkbox"]');
+			checkboxes.forEach(checkbox => {
+				checkbox.checked = checkValue;
+				checkbox.indeterminate = false;
+			});
+			button.setAttribute(dataAttributeChecked, !checkValue);
+			// Save settings
+			this.save();
+		});
 	}
 
 	addEventToButton() {
@@ -69,17 +97,17 @@ class Settings {
 		const checkboxes = this.panel.querySelectorAll('input[type="checkbox"]');
 		checkboxes.forEach(checkbox => {
 			checkbox.addEventListener('click', e => {
-				if(checkbox.parentNode.className == 'caniemail-settings-list-item') {
-					const childCheckboxes = checkbox.parentNode.querySelectorAll('.caniemail-settings-child-list-item input[type="checkbox"]');
+				if(checkbox.parentNode.className == 'settings-list-item') {
+					const childCheckboxes = checkbox.parentNode.querySelectorAll('.settings-child-list-item input[type="checkbox"]');
 					if(childCheckboxes.length > 0) {
 						const checkboxStatus = checkbox.checked;
 						childCheckboxes.forEach(childCheckbox => {
 							childCheckbox.checked = checkboxStatus;
 						});
 					}
-				} else if(checkbox.parentNode.className == 'caniemail-settings-child-list-item') {
+				} else if(checkbox.parentNode.className == 'settings-child-list-item') {
 					const parentCheckbox = checkbox.parentNode.parentNode.parentNode.querySelector('input[type="checkbox"]');
-					const siblingCheckboxes = parentCheckbox.parentNode.querySelectorAll('.caniemail-settings-child-list-item input[type="checkbox"]');
+					const siblingCheckboxes = parentCheckbox.parentNode.querySelectorAll('.settings-child-list-item input[type="checkbox"]');
 					if(parentCheckbox.checked == true) {
 						if(siblingCheckboxes.length == 1) {
 							parentCheckbox.indeterminate = false;
@@ -103,7 +131,7 @@ class Settings {
 						}
 					}
 				}
-				this.setLocalStorage();
+				this.save();
 			});
 		});
 	}
@@ -137,6 +165,46 @@ class Settings {
 	getLocalStorage() {
 
 		return localStorage.getItem('settings');
+	}
+
+	setStyles() {
+		let css = '';
+		let cssSelectors = new Array();
+		const checkboxes = this.panel.querySelectorAll('input[type="checkbox"]:not(:checked)')
+		if(checkboxes && checkboxes.length > 0) {
+			checkboxes.forEach(checkbox => {
+				const key = checkbox.name;
+				const value = checkbox.value;
+				if(value.toLowerCase() === 'on') {
+					if(!checkbox.indeterminate) {
+						cssSelectors.push(`.data-family--${key}`);
+					}
+				} else {
+					cssSelectors.push(`.data-family--${key} .data-client--${value}`);
+				}
+			});
+			cssSelectors = cssSelectors.join(',');
+			css += cssSelectors;
+			css += '{display:none}';
+		}
+		const hiddenElements = document.querySelectorAll('.data-family[hidden], .data-client[hidden]');
+		if(hiddenElements && hiddenElements.length > 0) {
+			hiddenElements.forEach(item => {
+				item.removeAttribute('hidden');
+			});
+		}
+		if(cssSelectors.length > 0) {
+			document.querySelectorAll(cssSelectors).forEach(item => {
+				item.setAttribute('hidden', '');
+			});
+		}
+		this.panel.querySelector('#settings-style').innerHTML = css;
+	}
+
+	save() {
+
+		this.setLocalStorage();
+		this.setStyles();
 	}
 
 }

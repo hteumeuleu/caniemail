@@ -227,6 +227,7 @@
 
 .data-details {
 	position: relative;
+	min-height: 3rem;
 	margin: 0 -3rem;
 	overflow-x: auto;
 	overflow-y: hidden;
@@ -257,6 +258,10 @@
 	flex-grow: 1;
 	padding: 2rem 0.25rem;
 	border-right: 1px solid #454548;
+
+	&:last-child {
+		border-right: none;
+	}
 
 	&:nth-child(2n) {
 		background-color: rgba(255, 255, 255, 0.0125);
@@ -469,7 +474,6 @@
  */
 .feature-footer {
 	margin: 0 -2rem;
-	border-top: 1px solid #3c3c3d;
 
 	a {
 		color: inherit;
@@ -574,9 +578,15 @@
 	text-align: center;
 	border-radius: 3px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: transparent;
 
 	&:hover {
-		background: rgba(255, 255, 255, 0.2);
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+
+	&:active,
+	&:focus {
+		border-color: rgba(255, 255, 255, 0.75);
 	}
 
 	&:not(:only-child):not(:last-child) {
