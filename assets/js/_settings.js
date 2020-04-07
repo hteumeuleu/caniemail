@@ -52,6 +52,12 @@ class Settings {
 					}
 				});
 			}
+		} else {
+			const checkboxes = this.panel.querySelectorAll('input[type="checkbox"]');
+			checkboxes.forEach(checkbox => {
+				checkbox.checked = true;
+			});
+			this.save();
 		}
 	}
 
