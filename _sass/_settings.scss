@@ -46,8 +46,10 @@
 		}
 
 		&:checked + label::before {
-			font-size: 0.75em;
 			content: '\2714\FE0E';
+			font-size: 0.85em;
+			color: #0a84ff;
+			background-color: #fff;
 		}
 
 		&:indeterminate + label::before {

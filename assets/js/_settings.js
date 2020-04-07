@@ -12,8 +12,6 @@ class Settings {
 		if(this.panel && this.button) {
 			this.init();
 		}
-
-		this.toggle();
 	}
 
 	init() {
