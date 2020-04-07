@@ -420,11 +420,11 @@
 	}
 
 	&.supported::before {
-		content: '\2714';
+		content: '\2714\FE0E';
 	}
 
 	&.unsupported::before {
-		content: '\2717';
+		content: '\2717\FE0E';
 	}
 
 	&.mitigated::before {
