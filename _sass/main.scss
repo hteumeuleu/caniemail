@@ -44,6 +44,10 @@ code {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 5rem;
+
+	@media only screen and (max-width: 30rem) {
+		margin-bottom: calc(1rem + 13.3333vw);
+	}
 }
 
 .caniemail-nav {
