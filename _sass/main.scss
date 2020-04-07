@@ -605,6 +605,15 @@ code {
 		grid-template-columns: repeat(2, minmax(15rem, 1fr));
 		grid-gap: 1rem;
 	}
+
+	@media (max-width: 30rem) {
+		.score-text {
+			margin-left: 1.5rem;
+			margin-top: 0.25rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+
 }
 
 // Features page
