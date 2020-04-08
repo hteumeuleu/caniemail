@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /assets/js/features.json
 ---
 [
 	{% for feature in site.features %}
