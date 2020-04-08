@@ -1,11 +1,8 @@
 class Settings {
 
-	// TODO
-	// Add classes to family and version in feature.html
-	// Generate styles to hide and add them on load
-
 	constructor() {
 
+		this.unchecked = false;
 		this.button = document.querySelector('.settings-button');
 		this.panel = document.querySelector('.settings');
 
@@ -16,14 +13,14 @@ class Settings {
 
 	init() {
 
-		this.initValues();
+		this.setInitialValues();
 		this.setStyles();
 		this.addEventToButton();
 		this.addEventToCheckboxes();
 		this.addEventToCheckAllButton();
 	}
 
-	initValues() {
+	setInitialValues() {
 
 		const settingsString = this.getLocalStorage();
 		if(settingsString && settingsString !== '') {
@@ -59,6 +56,7 @@ class Settings {
 			});
 			this.save();
 		}
+		this.setUncheckedVariable();
 	}
 
 	addEventToCheckAllButton() {
@@ -209,6 +207,41 @@ class Settings {
 
 		this.setLocalStorage();
 		this.setStyles();
+		this.setUncheckedVariable();
+		this.boo();
+	}
+
+	setUncheckedVariable() {
+		const allCheckboxes = this.panel.querySelectorAll('input[type="checkbox"]');
+		const allUncheckedCheckboxes = this.panel.querySelectorAll('input[type="checkbox"]:not(:checked)');
+		this.unchecked = (allCheckboxes.length == allUncheckedCheckboxes.length);
+	}
+
+	createBoo() {
+		const ghost = document.createElement('div');
+		ghost.className = 'boo';
+		ghost.innerHTML = '<p class="i">&#128123;</p><p>Boo! You woke up the <b>Email Ghost</b>!<br>Check some email clients again or it will haunt you forever!</p>';
+		return ghost;
+	}
+
+	boo() {
+		if(this.unchecked) {
+			const dataContainers = document.querySelectorAll('.data-details');
+			dataContainers.forEach(dataContainer => {
+				const existingGhost = dataContainer.querySelector('.boo');
+				if(existingGhost === null) {
+					let ghost = this.createBoo();
+					dataContainer.appendChild(ghost);
+				} else {
+					existingGhost.removeAttribute('hidden');
+				}
+			});
+		} else {
+			let boos = document.querySelectorAll('.boo');
+			boos.forEach(boo => {
+				boo.setAttribute('hidden', '');
+			});
+		}
 	}
 
 }

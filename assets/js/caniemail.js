@@ -8,8 +8,8 @@ layout: null
 class Caniemail {
 
 	constructor() {
+		this.settings = new Settings();
 		this.search = new Search();
-		this.search = new Settings();
 		this.accessibleColors = new Options('.a11y-colors-button', 'accessible-colors-enabled');
 	}
 }
