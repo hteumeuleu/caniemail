@@ -58,7 +58,7 @@ class Search {
 				}
 			})
 			.catch(error => {
-				console.log(error);
+				console.error(error);
 			});
 		}
 	}
@@ -203,7 +203,7 @@ class Search {
 					}
 				})
 				.catch(error => {
-					console.log(error);
+					console.error(error);
 				});
 			}
 		});
