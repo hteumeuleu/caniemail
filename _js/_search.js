@@ -198,7 +198,7 @@ class Search {
 						featureContainer.classList.remove('loading');
 						featureContainer.querySelector('.data-details').innerHTML = div.querySelector('.data-details').innerHTML;
 						if(window.caniemail && window.caniemail.settings && window.caniemail.settings.unchecked) {
-							featureContainer.querySelector('.data-details').appendChild(window.caniemail.settings.createBoo());
+							featureContainer.querySelector('.data-details').appendChild(window.caniemail.settings.getEmptyDataMessageElement());
 						}
 						featureContainer.querySelector('.feature-footer').innerHTML = div.querySelector('.feature-footer').innerHTML;
 						featureContainer.querySelector('.feature-header-column:nth-child(1)').innerHTML += div.querySelector('.feature-description').outerHTML;

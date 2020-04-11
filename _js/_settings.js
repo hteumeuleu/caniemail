@@ -13,9 +13,10 @@ class Settings {
 
 	init() {
 
+		this.initEmptyMessages();
 		this.setInitialValues();
 		this.setStyles();
-		this.addEventToButton();
+		this.addEventToToggleButton();
 		this.addEventToCheckboxes();
 		this.addEventToCheckAllButton();
 	}
@@ -85,7 +86,7 @@ class Settings {
 		});
 	}
 
-	addEventToButton() {
+	addEventToToggleButton() {
 
 		this.button.addEventListener('click', e => {
 
@@ -208,7 +209,7 @@ class Settings {
 		this.setLocalStorage();
 		this.setStyles();
 		this.setUncheckedVariable();
-		this.boo();
+		this.toggleEmptyMessage();
 	}
 
 	setUncheckedVariable() {
@@ -217,31 +218,59 @@ class Settings {
 		this.unchecked = (allCheckboxes.length == allUncheckedCheckboxes.length);
 	}
 
-	createBoo() {
-		const ghost = document.createElement('div');
-		ghost.className = 'boo';
-		ghost.innerHTML = '<p class="i">&#128123;</p><p>Boo! You woke up the <b>Email Ghost</b>!<br>Check some email clients again or it will haunt you forever!</p>';
-		return ghost;
+	createEmptyDataMessageElement() {
+		const message = this.getRandomEmptyMessage();
+		const emptyMessageElement = document.createElement('div');
+		emptyMessageElement.className = 'empty-message';
+		emptyMessageElement.innerHTML = `<p class="i">${message.emoji}</p><p>${message.text}</p>`;
+		return emptyMessageElement;
 	}
 
-	boo() {
+	getEmptyDataMessageElement() {
+		return this.createEmptyDataMessageElement();
+	}
+
+	toggleEmptyMessage() {
 		if(this.unchecked) {
 			const dataContainers = document.querySelectorAll('.data-details');
+			let emptyDataMessage = this.getEmptyDataMessageElement();
 			dataContainers.forEach(dataContainer => {
-				const existingGhost = dataContainer.querySelector('.boo');
-				if(existingGhost === null) {
-					let ghost = this.createBoo();
-					dataContainer.appendChild(ghost);
+				const existingEmptyDataMessage = dataContainer.querySelector('.empty-message');
+				if(existingEmptyDataMessage === null) {
+					dataContainer.appendChild(emptyDataMessage.cloneNode(true));
 				} else {
-					existingGhost.removeAttribute('hidden');
+					existingEmptyDataMessage.removeAttribute('hidden');
 				}
 			});
 		} else {
-			let boos = document.querySelectorAll('.boo');
-			boos.forEach(boo => {
-				boo.setAttribute('hidden', '');
+			let existingEmptyDataMessages = document.querySelectorAll('.empty-message');
+			existingEmptyDataMessages.forEach(item => {
+				item.setAttribute('hidden', '');
 			});
 		}
 	}
+
+	initEmptyMessages() {
+		this.emptyMessages = [
+			{
+				"emoji": "&#128123;",
+				"text": "Boo! You woke up the <b>Email Ghost</b>!<br>Check some email clients again or it might haunt you forever!"
+			},
+			{
+				"emoji": "&#x1F996;",
+				"text": "Rawr! You brought back the <b>Emailosaurus Rex</b>!<br>Check some email clients again or it might run after you!"
+			},
+			{
+				"emoji": "&#x1F41D;",
+				"text": "Bzzz! You attracted the <b>Email Bee</b>!<br>Check some email clients again or it might sting you!"
+			},
+		];
+	}
+
+	getRandomEmptyMessage() {
+		let randomIndex = Math.floor(Math.random() * Math.floor(this.emptyMessages.length));
+		return this.emptyMessages[randomIndex];
+	}
+
 
 }

@@ -467,7 +467,7 @@
 }
 
 // No data to show
-.boo {
+.empty-message {
 	&:not([hidden]) {
 		display: flex;
 	}
