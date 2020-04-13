@@ -557,6 +557,10 @@
 
 .data-notes .caniemail-list a {
 	text-decoration: underline;
+
+	&:hover {
+		color: #fff;
+	}
 }
 
 .data-note {
