@@ -236,6 +236,7 @@
 	border: 1px solid #3c3c3d;
 	-webkit-overflow-scrolling: touch;
 	scroll-behavior: smooth;
+	text-align: center;
 }
 
 /*
@@ -244,7 +245,7 @@
 // Family
 // (ie Outlook, Gmail, …)
 .data-family-list {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	padding-left: 1rem;
@@ -257,11 +258,16 @@
 	flex-direction: column;
 	flex-grow: 1;
 	padding: 2rem 0.25rem;
-	border-right: 1px solid #454548;
+	border-left: 1px solid #454548;
 	max-width: max-content;
 
-	&:last-child {
-		border-right: none;
+	&[hidden] + &:not([hidden]),
+	&:first-child {
+		border-left: none;
+	}
+
+	&:not([hidden]) ~ &:not([hidden]) {
+		border-left: 1px solid #454548;
 	}
 
 	&.selected::before {
