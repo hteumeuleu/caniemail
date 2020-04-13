@@ -239,6 +239,58 @@
 	text-align: center;
 }
 
+//
+// Filters
+//
+.filters {
+	position: relative;
+	z-index: 1;
+	margin-bottom: -1rem;
+	display: flex;
+}
+
+.filter-button {
+	display: inline-block;
+	min-height: 2rem;
+	padding: 0.25rem 1rem;
+	color: #fff;
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: #1b1b1d;
+	cursor: pointer;
+	outline: none;
+
+	&:first-child {
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+
+		&:not(:last-child) {
+			margin-right: -1px;
+		}
+	}
+
+	&:last-child {
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+
+	&::-moz-focus-inner {
+		border: none;
+	}
+
+	&:focus {
+		position: relative;
+		z-index: 2;
+		border-color: #fff;
+	}
+}
+
+.filter-button--active {
+	background-color: #0a84ff;
+}
+
 /*
  * Data
  */

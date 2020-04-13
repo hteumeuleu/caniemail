@@ -170,6 +170,22 @@ class Settings {
 		return localStorage.getItem('settings');
 	}
 
+	unapply() {
+
+		const hiddenElements = document.querySelectorAll('.data-family[hidden], .data-client[hidden]');
+		if(hiddenElements && hiddenElements.length > 0) {
+			hiddenElements.forEach(item => {
+				item.removeAttribute('hidden');
+			});
+		}
+		this.panel.querySelector('#settings-style').innerHTML = '';
+	}
+
+	apply() {
+
+		this.setStyles();
+	}
+
 	setStyles() {
 		let css = '';
 		let cssSelectors = new Array();
@@ -190,12 +206,7 @@ class Settings {
 			css += cssSelectors;
 			css += '{display:none}';
 		}
-		const hiddenElements = document.querySelectorAll('.data-family[hidden], .data-client[hidden]');
-		if(hiddenElements && hiddenElements.length > 0) {
-			hiddenElements.forEach(item => {
-				item.removeAttribute('hidden');
-			});
-		}
+		this.unapply();
 		if(cssSelectors.length > 0) {
 			document.querySelectorAll(cssSelectors).forEach(item => {
 				item.setAttribute('hidden', '');
