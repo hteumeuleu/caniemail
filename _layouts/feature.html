@@ -118,11 +118,18 @@ layout: default
 		</div>
 	</div>
 	<footer class="feature-footer">
-		{% if page.notes_by_num.size > 0 or page.links.size > 0%}
+		{% assign has-page-notes = false %}
+		{% if page.notes != nil and page.notes != "" %}
+			{% assign has-page-notes = true %}
+		{% endif %}
+		{% if has-page-notes == true or page.notes_by_num.size > 0 or page.links.size > 0 %}
 		<div class="data-notes">
-			{% if page.notes_by_num.size > 0 %}
+			{% if has-page-notes == true or page.notes_by_num.size > 0 %}
 				<h2 class="caniemail-list-title">Notes</h2>
+				{% if has-page-notes == true %}
 				{{ page.notes | markdownify }}
+				{% endif %}
+				{% if page.notes_by_num.size > 0 %}
 				<ul class="data-notes-list">
 				{% for note in page.notes_by_num %}
 					{% assign note-key = note | first %}
@@ -131,7 +138,8 @@ layout: default
 						<span class="data-note-key">{{ note-key }}</span> {{ note-value | markdownify }}
 					</li>
 				{% endfor %}
-			</ul>
+				</ul>
+				{% endif %}
 			{% endif %}
 			{% if page.links.size > 0 %}
 				<h2 class="caniemail-list-title">Resources</h2>
