@@ -121,8 +121,8 @@ stats: {
 }
 notes_by_num: {
     "1": "Not supported, but the proprietary `mso-bullet-image` property can be used instead on `<li>`. Outlook 2007 and 2010 only support `.ico` and `.gif` file formats.",
-    "2", "Not supported, but image values are supported through the `list-style` shorthand property.",
-    "3", "`url()` is transformed into `proton-url()`."
+    "2": "Not supported, but image values are supported through the `list-style` shorthand property.",
+    "3": "`url()` is transformed into `proton-url()`."
 }
 links: {
     "Can I use: list-style-image":"https://caniuse.com/#feat=mdn-css_properties_list-style-image",
