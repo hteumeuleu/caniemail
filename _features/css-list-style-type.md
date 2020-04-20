@@ -121,7 +121,6 @@ stats: {
 }
 notes: "Tests and support are based on the CSS Level 2 specification. `<custom-ident>`, `symbols()` and `<string>` values are not tested here."
 notes_by_num: {
-    "1": ""
 }
 links: {
     "Can I use: list-style-type":"https://caniuse.com/#feat=mdn-css_properties_list-style-type",
