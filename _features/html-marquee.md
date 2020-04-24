@@ -27,17 +27,20 @@ stats: {
         },
         android: {
             "2020-04":"n"
+        },
+        mobile-webmail: {
+            "2020-04":"n"
         }
     },
     orange: {
         desktop-webmail: {
-            "":""
+            "2020-04":"y"
         },
         ios: {
-            "":""
+            "2020-04":"y"
         },
         android: {
-            "":""
+            "2020-04":"y"
         }
     },
     outlook: {
@@ -71,26 +74,48 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "":""
+            "2020-04":"y"
         },
         ios: {
-            "":""
+            "2020-04":"y"
         },
         android: {
-            "":""
+            "2020-04":"y"
         }
     },
     thunderbird: {
         macos: {
-            "":""
+            "68.7":"y"
         },
         windows: {
             "60":"y"
         }
     },
+    aol: {
+        desktop-webmail: {
+            "2020-04":"a #1"
+        },
+        ios: {
+            "2020-04":"y"
+        },
+        android: {
+            "2020-04":"y"
+        }
+    },
     yahoo: {
         desktop-webmail: {
-            "2020-04":"y #1"
+            "2020-04":"a #1"
+        },
+        ios: {
+            "2020-04":"y"
+        },
+        android: {
+            "2020-04":"y"
+        }
+    },
+    protonmail: {
+        desktop-webmail: {
+            "2020-04":"a #2"
         },
         ios: {
             "2020-04":"y"
@@ -100,8 +125,8 @@ stats: {
         }
     }
 }
-notes: ""
 notes_by_num: {
-    "1": "Doesn't seem to work in Internet Explorer"
+    "1": "The `<marquee>` element is supported but the animation doesn't play in Internet Explorer or Firefox.",
+    "2": "The `behavior` attribute is not supported."
 }
 ---

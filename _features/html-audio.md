@@ -27,17 +27,20 @@ stats: {
         },
         android: {
             "2020-04":"n"
+        },
+        mobile-webmail: {
+            "2020-04":"n"
         }
     },
     orange: {
         desktop-webmail: {
-            "":""
+            "2020-04":"y"
         },
         ios: {
-            "":""
+            "2020-04":"n #3"
         },
         android: {
-            "":""
+            "2020-04":"y"
         }
     },
     outlook: {
@@ -49,7 +52,8 @@ stats: {
             "2019":"n"
         },
         macos: {
-            "2016":"y #1"
+            "2016":"y #1",
+            "2019":"n"
         },
         outlook-com: {
             "2020-04":"n"
@@ -71,21 +75,32 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "":""
+            "2020-04":"y"
         },
         ios: {
-            "":""
+            "2020-04":"y"
         },
         android: {
-            "":""
+            "2020-04":"y"
         }
     },
     thunderbird: {
         macos: {
-            "":""
+            "68.7":"y"
         },
         windows: {
             "60":"y"
+        }
+    },
+    aol: {
+        desktop-webmail: {
+            "2020-04":"n"
+        },
+        ios: {
+            "2020-04":"n"
+        },
+        android: {
+            "2020-04":"n"
         }
     },
     yahoo: {
@@ -98,10 +113,22 @@ stats: {
         android: {
             "2020-04":"n"
         }
+    },
+    protonmail: {
+        desktop-webmail: {
+            "2020-04":"n #2"
+        },
+        ios: {
+            "2020-04":"n"
+        },
+        android: {
+            "2020-04":"n"
+        }
     }
 }
-notes: ""
 notes_by_num: {
-    "1": "Does not play"
+    "1": "Does not play.",
+    "2": "The `src` attribute is transformed into `proton-src`.",
+    "3": "The `<audio>` element is supported but can not be played."
 }
 ---
