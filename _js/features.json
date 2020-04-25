@@ -5,9 +5,9 @@ permalink: /assets/js/features.json
 [
 	{% for feature in site.features %}
 		{
-			"title": "{{ feature.title | strip_newlines | remove_chars | escape_once }}",
-			"url" : "{{ feature.url }}",
-			"keywords" : "{{ feature.keywords }}"
+			"title": {{ feature.title | strip_newlines | remove_chars | escape_once | jsonify }},
+			"url" : {{ feature.url | jsonify }},
+			"keywords" : {{ feature.keywords | default:"" | jsonify }}
 		} {% unless forloop.last %},{% endunless %}
 	{% endfor %}
 ]
