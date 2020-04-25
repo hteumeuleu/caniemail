@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: "/api/data.json"
+---
+{
+	"api_version":"1.0.0",
+	"last_update_date":{{site.time | jsonify}},
+	"data":[{% for feature in site.features %}
+		{
+			"title":{{ feature.title | jsonify }},
+			"description":{{ feature.description | jsonify }},
+			"url":{{ feature.url | jsonify }},
+			"category":{{ feature.category | jsonify }},
+			"keywords":{{ feature.keywords | jsonify }},
+			"last_test_date":{{ feature.last_test_date | jsonify }},
+			"test_url":{{ feature.test_url | prepend:site.url | jsonify }},
+			"test_results_url":{{ feature.test_results_url | jsonify }},
+			"stats":{{ feature.stats | jsonify}},
+			"notes":{{ feature.notes | jsonify}},
+			"notes_by_num":{{ feature.notes_by_num | jsonify}}
+		}{% unless forloop.last %},{% endunless %}
+	{% endfor %}]
+}
