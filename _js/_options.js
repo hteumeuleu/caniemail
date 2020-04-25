@@ -3,7 +3,7 @@ class Options {
 	constructor(buttonSelector, optionName) {
 
 		this.button = document.querySelector(buttonSelector);
-		this.cookieName = optionName;
+		this.name = optionName;
 		this.enabled = false;
 		if(this.button) {
 			this.addEvent();
@@ -22,8 +22,8 @@ class Options {
 	}
 
 	init() {
-		const enableOptionCookie = this.readCookie();
-		if(enableOptionCookie == 'true') {
+		const enableOption = this.getLocalStorage();
+		if(enableOption == 'true') {
 			this.toggle();
 		}
 	}
@@ -33,12 +33,12 @@ class Options {
 		this.enabled = !this.enabled;
 		this.toggleCSSClass();
 		this.toggleLabel();
-		this.setCookie();
+		this.setLocalStorage();
 	}
 
 	toggleCSSClass() {
 
-		const newClassName = this.cookieName;
+		const newClassName = this.name;
 		document.body.classList.toggle(newClassName);
 	}
 
@@ -52,17 +52,13 @@ class Options {
 
 	}
 
-	setCookie() {
+	setLocalStorage() {
 
-        let date = new Date();
-        date.setTime( date.getTime() + (30 * 24 * 60 * 60 * 1000) );
-        const expires = ';expires='+ date.toGMTString();
-		document.cookie = `${this.cookieName}=${this.enabled}${expires};path=/;`;
+		localStorage.setItem(this.name, this.enabled);
 	}
 
-	readCookie() {
+	getLocalStorage() {
 
-        let b = document.cookie.match(`(^|;)\\s*${this.cookieName}\\s*=\\s*([^;]+)`);
-        return b ? b.pop() : null;
+		return localStorage.getItem(this.name);
 	}
 }
