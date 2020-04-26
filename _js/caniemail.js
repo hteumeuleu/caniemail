@@ -18,5 +18,6 @@ class Caniemail {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	window['caniemail'] = new Caniemail();
+	window.caniemail = new Caniemail();
+	window.caniemail.filters.onDOMContentLoaded();
 });

@@ -221,6 +221,22 @@ class Settings {
 		this.setStyles();
 		this.setUncheckedVariable();
 		this.toggleEmptyMessage();
+
+		if(window.caniemail && window.caniemail.filters) {
+			window.caniemail.filters.showOrHide();
+		}
+	}
+
+	isFullyChecked() {
+		const allCheckboxes = this.panel.querySelectorAll('input[type="checkbox"]');
+		const allCheckedCheckboxes = this.panel.querySelectorAll('input[type="checkbox"]:checked');
+		return (allCheckboxes.length == allCheckedCheckboxes.length);
+	}
+
+	isFullyUnchecked() {
+		const allCheckboxes = this.panel.querySelectorAll('input[type="checkbox"]');
+		const allUncheckedCheckboxes = this.panel.querySelectorAll('input[type="checkbox"]:not(:checked)');
+		return (allCheckboxes.length == allUncheckedCheckboxes.length);
 	}
 
 	setUncheckedVariable() {
