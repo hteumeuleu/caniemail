@@ -1,0 +1,7 @@
+// rem($target)
+// Convertit une taille donnée en pixels en rem en se basant sur la valeur de `$default-font-size`.
+$default-font-size: 16px;
+@function rem($target) {
+	@if $target == 0 { @return 0 }
+	@return 1rem * $target / $default-font-size;
+}

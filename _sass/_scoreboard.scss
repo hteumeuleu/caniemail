@@ -1,0 +1,95 @@
+// Scoreboard
+.scoreboard {
+	list-style: none;
+	counter-reset: scoreboard;
+
+	& > li {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 0.5rem;
+		counter-increment: scoreboard;
+
+		&::before {
+			content: counter(scoreboard) '.';
+			margin-right: 0.5rem;
+			width: 2.5rem;
+			text-align: right;
+			font-variant-numeric: tabular-nums;
+
+			.homepage & {
+				width: 1rem;
+				text-align: center;
+			}
+		}
+
+		&.not-enough-tests::before {
+			visibility: hidden;
+		}
+	}
+}
+
+.score {
+	display: inline-flex;
+	flex-direction: row;
+	width: 12.5rem;
+	height: 1.5rem;
+	margin-right: 0.5rem;
+
+	& > div {
+		flex-shrink: 0;
+		flex-grow: 1;
+		flex-basis: auto;
+	}
+
+	@media (max-width: 30rem) {
+		width: calc(100% - 6rem);
+		margin-right: 0;
+	}
+}
+
+.score-name {
+	color: #fff;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.post--scoreboard {
+	text-align: center;
+
+	.scoreboard {
+		display: inline-block;
+		margin-left: 0;
+
+		& > li {
+			padding-right: 3rem;
+		}
+
+		@media only screen and (max-width: 40rem) {
+			& > li {
+				padding-right: 0;
+			}
+
+			.score-text {
+				width: 100%;
+				margin: 0.25rem 0 1rem 3rem;
+				text-align: left;
+			}
+		}
+	}
+}
+
+.scoreboard-intro {
+	margin-bottom: 3rem;
+
+	& > h1 {
+		color: #fff;
+	}
+}

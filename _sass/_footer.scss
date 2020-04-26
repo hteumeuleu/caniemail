@@ -1,0 +1,122 @@
+// Footer
+.caniemail-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 5rem;
+	padding: 2rem 0;
+	border-top: 2px solid rgba(255, 255, 255, 0.2);
+
+	a {
+		color: inherit;
+	}
+
+	p:not(:last-child) {
+		margin-bottom: 0.75rem;
+	}
+
+	@media only screen and (min-width: 60rem) {
+		flex-direction: row;
+	}
+}
+
+.caniemail-footer-section {
+	padding-bottom: 2rem;
+	max-width: 40rem;
+
+	ul {
+		margin-bottom: 0.75rem;
+		list-style: none;
+	}
+
+	@media only screen and (min-width: 60rem) {
+		flex-shrink: 1;
+
+		&:not(:last-child) {
+			padding-bottom: 0;
+			padding-right: 1rem;
+		}
+	}
+}
+
+.caniemail-footer-title {
+	margin-bottom: 0.75rem;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.legend-list {
+	list-style: none;
+	margin-bottom: 0.75rem;
+
+	li {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	span {
+		display: inline-block;
+		width: 1.5rem;
+		height: 0.75rem;
+		margin-right: 0.25rem;
+	}
+}
+
+// Accessible colors
+.a11y-colors {
+	min-width: 12.5rem;
+}
+
+.caniemail-link-button {
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+	color: inherit;
+	font: inherit;
+	text-decoration: underline;
+	cursor: pointer;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:active,
+	&:focus {
+		outline: 1px dotted currentColor;
+		outline-offset: 0.25rem;
+	}
+
+	&::-moz-focus-inner {
+		border: none;
+	}
+}
+
+// Beta message
+.beta,
+.warning {
+	color: #1b1b1d;
+	background: #fbd91b;
+}
+
+.warning {
+	width: 100%;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+
+.beta {
+	display: inline-block;
+	padding: 0 0.25rem;
+}
+
+.beta-tag {
+	display: inline-block;
+	padding: 0 0.25rem;
+	color: #000;
+	font-size: 0.5em;
+	text-transform: uppercase;
+	vertical-align: text-top;
+	background: #fbd91b;
+}

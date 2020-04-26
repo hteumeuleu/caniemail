@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0 1em;
+	min-width: rem(280px);
+	min-height: 100vh;
+	font: 1em/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	color: #b1b1b3;
+	background: #1b1b1d;
+	scroll-behavior: smooth;
+}
+
+a:active,
+a:focus {
+	outline: 1px dotted rgba(255, 255, 255, 0.5);
+	outline-offset: 0.25rem;
+}
+
+code {
+	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+
+p code {
+	font-size: 85%;
+	padding: 0.2em 0.4em;
+	border-radius: rem(3px);
+	background-color: rgba(255, 255, 255, 0.125);
+}

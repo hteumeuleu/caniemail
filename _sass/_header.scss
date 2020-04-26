@@ -1,0 +1,111 @@
+// Header navigation
+.caniemail-menu {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5rem;
+
+	@media only screen and (max-width: 30rem) {
+		margin-bottom: calc(1rem + 13.3333vw);
+	}
+}
+
+.caniemail-nav {
+	display: flex;
+	flex-direction: row;
+
+	@media only screen and (max-width: 19.9375rem) {
+		width: 100%;
+	}
+}
+
+.caniemail-tab {
+	margin-right: 0.5rem;
+	padding: 0.25em 0.75em;
+	min-height: 2.5rem;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.25rem;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	&.current {
+		background-color: #204e8a;
+	}
+
+	&:not(.current):hover {
+		background-color: #0a84ff;
+	}
+
+	@media only screen and (max-width: 30rem) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		font-size: 1rem;
+	}
+
+	@media only screen and (max-width: 19.9375rem) {
+		font-size: 0.85rem;
+		flex-grow: 1;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	@media only screen and (min-width: 20rem) {
+		&[href='/clients/'] {
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+// Latest post in header
+.caniemail-latest-post {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0.25rem 0.75rem;
+	min-height: 2rem;
+	font-weight: 300;
+	font-size: 1.125rem;
+
+	@media only screen and (max-width: 50rem) {
+		display: none;
+	}
+}
+
+.caniemail-latest-post-date {
+	&::after {
+		content: '-';
+		margin: 0 0.5ch;
+	}
+}
+
+.caniemail-latest-post-title {
+	color: #fff;
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	&:hover {
+		color: #0a84ff;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}

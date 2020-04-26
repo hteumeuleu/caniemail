@@ -1,0 +1,12 @@
+.caniemail {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+.caniemail-main {
+	flex: 1 0 auto;
+}
