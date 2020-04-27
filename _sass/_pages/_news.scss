@@ -1,0 +1,9 @@
+.page--news {
+	.post .caniemail-list a {
+		text-decoration: underline;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
