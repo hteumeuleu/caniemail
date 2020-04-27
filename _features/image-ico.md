@@ -122,8 +122,4 @@ stats: {
         }
     }
 }
-notes: ""
-notes_by_num: {
-    "": ""
-}
 ---

@@ -123,7 +123,6 @@ stats: {
         }
     }
 }
-notes: ""
 notes_by_num: {
     "1": "Partial: Converts file to jpg."
 }

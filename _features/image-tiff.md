@@ -122,7 +122,6 @@ stats: {
         }
     }
 }
-notes: ""
 notes_by_num: {
     "1": "Buggy. An image renders but the colours are incorrect.",
     "2": "Partial. Does not render in GANGA",

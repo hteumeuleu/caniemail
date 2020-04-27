@@ -122,7 +122,6 @@ stats: {
         }
     }
 }
-notes: ""
 notes_by_num: {
     "1": "Partial.  Works in GANGA."
 }

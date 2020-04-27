@@ -122,7 +122,6 @@ stats: {
         }
     }
 }
-notes: ""
 notes_by_num: {
     "1": "Partial: Does not render Base 64 gif format.",
     "2": "Not supported. The `src` is turned into a `nosrc` attribute."
