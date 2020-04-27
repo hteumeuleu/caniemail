@@ -26,7 +26,7 @@ permalink: /
 		<h1 class="caniemail-list-title"><a href="/news/">Latest news</a></h1>
 		<ul class="caniemail-list">
 			{% for post in site.posts limit:5 %}
-			<li><a href="{{ post.url }}">{{ post.title | markdownify | strip_html | strip }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
+			<li><a href="{{ post.url }}">{{ post.title | markdownify | remove: ' class="language-plaintext highlighter-rouge"' | remove: '<p>' | remove: '</p>' | strip }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
 			{% endfor %}
 		</ul>
 		<a href="/news/" class="button">View all news</a>
