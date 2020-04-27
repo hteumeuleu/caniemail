@@ -9,6 +9,10 @@
 
 	a {
 		color: inherit;
+
+		&:hover {
+			color: #fff;
+		}
 	}
 
 	p:not(:last-child) {

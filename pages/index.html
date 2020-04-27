@@ -20,7 +20,7 @@ permalink: /
 			<li><a href="{{ feature.url }}">{{ feature-category | default:'' }}{{ feature.title | escape_once }}</a>, {{ feature.last_test_date | date: '%B %d, %Y' }}</li>
 			{% endfor %}
 		</ol>
-		<a href="/features/" class="feature-button">View all features</a>
+		<a href="/features/" class="button">View all features</a>
 	</div>
 	<div class="caniemail-block">
 		<h1 class="caniemail-list-title"><a href="/news/">Latest news</a></h1>
@@ -29,11 +29,11 @@ permalink: /
 			<li><a href="{{ post.url }}">{{ post.title | markdownify | strip_html | strip }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
 			{% endfor %}
 		</ul>
-		<a href="/news/" class="feature-button">View all news</a>
+		<a href="/news/" class="button">View all news</a>
 	</div>
 	<div class="caniemail-block">
 		<h1 class="caniemail-list-title"><a href="/scoreboard/">Client scores</a></h1>
 		{% include client-scores.html limit=5 %}
-		<a href="/scoreboard/" class="feature-button">View the scoreboard</a>
+		<a href="/scoreboard/" class="button">View the scoreboard</a>
 	</div>
 </div>

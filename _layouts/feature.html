@@ -160,10 +160,10 @@ layout: default
 			<p>
 				Is any of the above data outdated? Or do you want to add a new email client to the list? Heads on to GitHub and edit the data file!
 			</p>
-			<p class="data-contribute-buttons">
-				<a href="{% github_edit_link %}" class="feature-button">Edit this page on GitHub</a>
-				<a href="{{ site.github.issues_url }}" class="feature-button">Report an issue on GitHub</a>
-			</p>
+			<div class="button-group">
+				<a href="{% github_edit_link %}" class="button">Edit this page on GitHub</a>
+				<a href="{{ site.github.issues_url }}" class="button">Report an issue on GitHub</a>
+			</div>
 			<p>
 				Not comfortable with GitHub? <a href="mailto:feature@caniemail.com?subject=[caniemail]%20{{ page.id | uri_escape }}">Send us an email</a> or <a href="https://www.twitter.com/caniemail">get in touch on Twitter</a>.
 			</p>
@@ -178,12 +178,12 @@ layout: default
 			<p>
 				If you want to test this feature in the same conditions as we did, you can get our test code and run a test by yourself. Make sure to follow our <a href="https://github.com/hteumeuleu/caniemail/blob/master/CONTRIBUTING.md">testing recommendations</a> first.
 			</p>
-			<p>
+			<div class="button-group">
 				{% comment %}
 					View test code button.
 				{% endcomment %}
 				{% if page.test_url != nil and page.test_url != "" %}
-				<a href="{{ page.test_url }}" class="feature-button">View the test code</a>
+				<a href="{{ page.test_url }}" class="button">View the test code</a>
 				{% endif %}
 				{% comment %}
 					View test results button.
@@ -204,10 +204,10 @@ layout: default
 						{% if test-results-url-provider != "" %}
 							{% assign test-results-url-provider = test-results-url-provider | prepend: " on " %}
 						{% endif %}
-						<a href="{{ page.test_results_url }}" class="feature-button">View test results{{test-results-url-provider}}</a>
+						<a href="{{ page.test_results_url }}" class="button">View test results{{test-results-url-provider}}</a>
 					{% endif %}
 				{% endif %}
-			</p>
+			</div>
 		</div>
 	</footer>
 </section>

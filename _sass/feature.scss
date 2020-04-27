@@ -661,38 +661,6 @@
 	margin-bottom: 2rem;
 }
 
-.feature-button {
-	display: inline-block;
-	padding: 0.25rem 1rem;
-	color: inherit;
-	text-decoration: none;
-	text-align: center;
-	border-radius: 3px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	background-color: transparent;
-
-	&:hover {
-		background-color: rgba(255, 255, 255, 0.2);
-	}
-
-	&:active,
-	&:focus {
-		border-color: rgba(255, 255, 255, 0.75);
-	}
-
-	&:not(:only-child):not(:last-child) {
-		margin-right: 0.5rem;
-	}
-
-	&:not(:only-child) {
-		margin-top: 0.75rem;
-	}
-}
-
-.data-contribute-buttons {
-	margin-top: -0.75rem;
-}
-
 //
 // Feature in search results
 //

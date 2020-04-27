@@ -61,42 +61,14 @@
 	}
 }
 
-.caniemail-search-button,
-.settings-button {
-	display: inline-block;
-	min-height: 2.5rem;
-	padding: 0.25rem 1rem;
-	margin-left: 1rem;
-	color: #fff;
-	font-size: 1rem;
-	text-decoration: none;
-	text-align: center;
-	border-radius: 3px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	background: none;
-	cursor: pointer;
+.caniemail-search .button {
+	margin-left: rem(16px);
 
-	&:focus,
-	&:hover {
-		background: rgba(255, 255, 255, 0.2);
+	@media only screen and (max-width: rem(375px)) {
+		font-size: rem(12px);
 	}
 
-	&:focus,
-	&:active {
-		outline: 1px dotted #fff;
-		outline-offset: 0.25rem;
-		border-color: rgba(255, 255, 255, 0.75);
-	}
-
-	&::-moz-focus-inner {
-		border: none;
-	}
-
-	@media only screen and (max-width: 23.4375rem) {
-		font-size: 0.75rem;
-	}
-
-	@media only screen and (min-width: 50.0625rem) {
+	@media only screen and (min-width: rem(801px)) {
 		width: max-content;
 		height: max-content;
 	}

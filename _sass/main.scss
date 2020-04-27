@@ -1,4 +1,8 @@
 @import "_reset";
+
+@import "_buttons";
+@import "_icons";
+
 @import "_layout";
 @import "_header";
 @import "_search";
@@ -6,6 +10,7 @@
 @import "_footer";
 @import "_scoreboard";
 @import "_settings";
+
 @import "_pages/_home";
 @import "_pages/_features";
 @import "_pages/_post";
