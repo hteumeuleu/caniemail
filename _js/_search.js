@@ -21,7 +21,7 @@ class Search {
 					this.loadJSONFile();
 				}
 
-				this.term = e.currentTarget.value;
+				this.term = e.currentTarget.value.trim();
 				this.query();
 
 				if(this.term) {
@@ -85,13 +85,13 @@ class Search {
 				let terms = this.term.split('+');
 				terms.forEach(item => {
 					if(item != '') {
-						let itemResults = this.data.filter(feature => this.results.filter(result => result.title == feature.title).length == 0 && (feature.title.toLowerCase().includes(item.toLowerCase().trim()) || feature.keywords.includes(item.toLowerCase().trim())));
+						let itemResults = this.data.filter(feature => this.results.filter(result => result.title == feature.title).length == 0 && (feature.slug.toLowerCase() === item.toLowerCase().trim() || feature.title.toLowerCase().includes(item.toLowerCase().trim()) || feature.keywords.toLowerCase().includes(item.toLowerCase().trim())));
 						this.results = [...this.results, ...itemResults];
 					}
 				});
 			}
 			else {
-				this.results = this.data.filter(feature => feature.title.toLowerCase().includes(this.term.toLowerCase()) || feature.keywords.includes(this.term.toLowerCase()));
+				this.results = this.data.filter(feature => feature.slug.toLowerCase() === this.term.toLowerCase() || feature.title.toLowerCase().includes(this.term.toLowerCase()) || feature.keywords.toLowerCase().includes(this.term.toLowerCase()));
 			}
 
 			this.form.classList.remove('caniemail-search--loading');
@@ -162,18 +162,20 @@ class Search {
 
 		const container = document.querySelector('[role=main] .caniemail-search-results');
 		container.querySelectorAll('section').forEach(section => {
-			if(this.results.filter(feature => feature.url == section.getAttribute('data-url')).length == 0) {
+			if(this.results.filter(feature => feature.slug == section.getAttribute('data-slug')).length == 0) {
 				section.remove();
 			}
 		});
 
 		this.results.forEach(feature => {
-			if(container.querySelector(`[data-url="${feature.url}"]`) == null) {
+			if(container.querySelector(`[data-slug="${feature.slug}"]`) == null) {
+				const featureURL = `/features/${feature.slug}/`;
+				console.log(featureURL);
 				let div = document.createElement('div');
-				div.innerHTML = `<section class="feature feature--placeholder" data-url="${feature.url}">
+				div.innerHTML = `<section class="feature feature--placeholder" data-slug="${feature.slug}">
 						<header class="feature-header">
 							<div class="feature-header-column">
-								<h1 class="feature-title"><a href="${feature.url}">${feature.title}<span class="feature-permalink" aria-hidden="true">#</span></a></h1>
+								<h1 class="feature-title"><a href="${featureURL}">${feature.title}<span class="feature-permalink" aria-hidden="true">#</span></a></h1>
 							</div>
 							<div class="feature-header-column">
 							</div>
@@ -183,10 +185,10 @@ class Search {
 					</section>`;
 				container.appendChild(div.firstChild);
 
-				const featureContainer = container.querySelector(`[data-url="${feature.url}"]`);
+				const featureContainer = container.querySelector(`[data-slug="${feature.slug}"]`);
 				featureContainer.classList.add('loading');
 
-				fetch(feature.url)
+				fetch(featureURL)
 				.then(response => {
 					return response.text();
 				})
