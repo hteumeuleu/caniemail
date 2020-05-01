@@ -20,10 +20,10 @@ stats: {
             "2020-04":"y"
         },
         ios: {
-            "2020-04":"y"
+            "2020-04":"a #3"
         },
         android: {
-            "2020-04":"y"
+            "2020-04":"a #3"
         },
         mobile-webmail: {
             "2020-04":"n"
@@ -124,7 +124,8 @@ stats: {
 notes: "`text-decoration-color` is not supported in Internet Explorer."
 notes_by_num: {
     "1": "Supported with prefix `-webkit-`.",
-    "2": "Not supported, but the proprietary `text-underline-color` property can be used instead."
+    "2": "Not supported, but the proprietary `text-underline-color` property can be used instead.",
+    "3": "Partial. Not supported with non Gmail accounts."
 }
 links: {
     "Can I use: text-decoration-color": "https://caniuse.com/#feat=text-decoration-color",
