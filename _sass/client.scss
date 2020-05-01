@@ -1,6 +1,6 @@
 .post--client {
-	margin-top: 1rem;
-	scroll-margin-top: 1rem;
+	margin-top: rem(16px);
+	scroll-margin-top: rem(16px);
 
 	ul.client-tags {
 		margin: 0;
@@ -19,7 +19,7 @@
 	}
 
 	.caniemail-list-title {
-		margin-top: 2rem;
+		margin-top: rem(32px);
 		color: #fff;
 		border-bottom: none;
 	}
@@ -31,12 +31,12 @@
 
 	li {
 		display: inline-block;
-		font-size: 1rem;
+		font-size: rem(16px);
 	}
 
 	a {
 		display: inline-block;
-		padding: 0.125rem 0.5rem;
+		padding: rem(2px) rem(8px);
 		color: #fff;
 		background-color: $color-grey;
 		text-decoration: none;

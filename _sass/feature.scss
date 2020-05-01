@@ -1,12 +1,12 @@
 .feature {
 	position: relative;
-	padding: 1rem 2rem 0;
+	padding: rem(16px) rem(32px) 0;
 	border: 1px solid #3c3c3d;
 }
 
 .feature-title {
 	color: #eee;
-	font-size: 2rem;
+	font-size: rem(32px);
 
 	a {
 		color: inherit;
@@ -18,16 +18,16 @@
 .feature-permalink {
 	position: absolute;
 	left: 0rem;
-	top: 1.25rem;
+	top: rem(20px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 0.25em 0.75em;
-	width: 2.5rem;
-	height: 2.5rem;
+	width: rem(40px);
+	height: rem(40px);
 	color: #fff;
 	font-weight: 300;
-	font-size: 1.25rem;
+	font-size: rem(20px);
 	text-decoration: none;
 	background-color: #0a84ff;
 
@@ -35,18 +35,18 @@
 		background-color: #204e8a;
 	}
 
-	@media only screen and (min-width: 85rem) {
-		left: -2.5rem;
+	@media only screen and (min-width: rem(1360px)) {
+		left: rem(-40px);
 	}
 }
 
 .feature-header {
-	margin-bottom: 1rem;
+	margin-bottom: rem(16px);
 
-	@media only screen and (min-width: 64rem) {
+	@media only screen and (min-width: rem(1024px)) {
 		display: flex;
 		flex-wrap: wrap;
-		min-height: 8rem;
+		min-height: rem(128px);
 
 		& > .feature-header-column {
 			width: 50%;
@@ -60,16 +60,16 @@
 	}
 
 	.legend-list {
-		min-width: 10.5rem;
+		min-width: rem(168px);
 
 		span {
-			margin-right: 0.5rem;
+			margin-right: rem(8px);
 		}
 	}
 }
 
 .feature-description {
-	font-size: 1.25rem;
+	font-size: rem(20px);
 
 	& > p {
 		margin-top: rem(24px);
@@ -86,17 +86,17 @@
 }
 
 .feature-support {
-	margin-top: 0.5rem;
+	margin-top: rem(8px);
 
-	@media only screen and (min-width: 48rem) {
-		min-width: 17.5rem;
+	@media only screen and (min-width: rem(768px)) {
+		min-width: rem(280px);
 	}
 }
 
 .feature-support-title {
 	margin-bottom: rem(12px);
 	color: #fff;
-	font-size: 1rem;
+	font-size: rem(16px);
 
 	a {
 		font-size: rem(12px);
@@ -156,12 +156,12 @@
 		content: attr(title);
 		position: absolute;
 		z-index: 2;
-		top: 1.25rem;
+		top: rem(20px);
 		bottom: auto;
-		right: 0.5rem;
-		padding: 0.5em;
-		min-width: 6rem;
-		max-width: calc(100% - 2rem);
+		right: rem(8px);
+		padding: rem(8px);
+		min-width: rem(96px);
+		max-width: calc(100% - #{rem(32px)});
 		font-size: rem(12px);
 		line-height: 1.25;
 		color: rgba(255, 255, 255, 0.85);
@@ -228,8 +228,8 @@
 
 .data-details {
 	position: relative;
-	min-height: 12.675rem;
-	margin: 0 -3rem;
+	min-height: rem(202.8px);
+	margin: 0 rem(-48px);
 	overflow-x: auto;
 	overflow-y: hidden;
 	background: #2a2a2e;
@@ -246,7 +246,7 @@
 	position: relative;
 	z-index: 1;
 	display: flex;
-	margin-bottom: -1rem;
+	margin-bottom: rem(-16px);
 
 	&[hidden] {
 		visibility: hidden;
@@ -255,10 +255,10 @@
 
 .filter-button {
 	display: inline-block;
-	min-height: 2rem;
-	padding: rem(4px) 1rem;
+	min-height: rem(32px);
+	padding: rem(4px) rem(16px);
 	color: #fff;
-	font-size: 1rem;
+	font-size: rem(16px);
 	text-decoration: none;
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, 0.2);
@@ -304,8 +304,8 @@
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: rem(16px);
+	padding-right: rem(16px);
 }
 
 .data-family {
@@ -313,7 +313,7 @@
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	padding: 2rem rem(4px);
+	padding: rem(32px) rem(4px);
 	border-left: 1px solid #454548;
 	max-width: max-content;
 
@@ -332,7 +332,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 1rem;
+		top: rem(16px);
 		bottom: rem(24px);
 		z-index: 1;
 		border: 1px solid #fff;
@@ -345,17 +345,17 @@
 	justify-content: center;
 	align-items: center;
 	margin: 0 rem(4px);
-	padding: 0 1rem;
+	padding: 0 rem(16px);
 	color: rgba(255, 255, 255, 0.85);
-	font-size: 1rem;
-	min-height: 3rem;
+	font-size: rem(16px);
+	min-height: rem(48px);
 	text-align: center;
 
 	span {
 		position: -webkit-sticky;
 		position: sticky;
-		left: 0.5rem;
-		right: 0.5rem;
+		left: rem(8px);
+		right: rem(8px);
 
 		a {
 			color: inherit;
@@ -369,7 +369,7 @@
 }
 
 .data-family--thunderbird .data-family-name {
-	max-width: 6.25rem;
+	max-width: rem(100px);
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -380,8 +380,8 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	min-height: 2.8rem;
-	padding: 0.5rem;
+	min-height: rem(44.8px);
+	padding: rem(8px);
 	font-size: rem(12px);
 	font-weight: normal;
 	line-height: 1.2;
@@ -408,7 +408,7 @@
 	flex-direction: column;
 	flex-grow: 1;
 	margin: 0 rem(4px);
-	width: 6.5rem;
+	width: rem(104px);
 }
 
 // Clients versions
@@ -430,10 +430,10 @@
 	&::after {
 		content: '';
 		position: absolute;
-		left: -0.5rem;
-		right: -0.5rem;
-		bottom: -0.5rem;
-		height: 3rem;
+		left: rem(-8px);
+		right: rem(-8px);
+		bottom: rem(-8px);
+		height: rem(48px);
 		background: #111;
 	}
 }
@@ -446,12 +446,12 @@
 	justify-content: center;
 	flex-shrink: 0;
 	flex-grow: 0;
-	padding: 0 1rem;
-	height: 2rem;
+	padding: 0 rem(16px);
+	height: rem(32px);
 	color: #fff;
 
 	&:not(:first-child) {
-		margin-top: 0.5rem;
+		margin-top: rem(8px);
 	}
 
 	&:last-child {
@@ -473,15 +473,15 @@
 	// Support badge
 	&::before {
 		position: absolute;
-		right: -rem(4px);
-		top: -rem(4px);
+		right: rem(-4px);
+		top: rem(-4px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 1.25rem;
-		height: 1.25rem;
+		width: rem(20px);
+		height: rem(20px);
 		border-radius: 50%;
-		font-size: 1rem;
+		font-size: rem(16px);
 	}
 
 	&.supported::before {
@@ -518,7 +518,7 @@
 		min-width: rem(12px);
 		height: rem(12px);
 		color: #333;
-		font-size: 0.625rem;
+		font-size: rem(10px);
 		line-height: 1;
 		text-decoration: none;
 		background: rgba(255, 255, 255, 0.5);
@@ -540,18 +540,18 @@
 		display: flex;
 	}
 
-	padding: 1rem;
+	padding: rem(16px);
 	flex-direction: column;
 	flex-grow: 1;
 	align-items: center;
 	justify-content: center;
-	min-height: 12.55rem;
+	min-height: rem(200.8px);
 	text-align: center;
 
 	.i {
 		display: block;
-		margin: 0 0 0.5rem;
-		font-size: 4rem;
+		margin: 0 0 rem(8px);
+		font-size: rem(64px);
 	}
 }
 
@@ -559,19 +559,19 @@
  * Footer
  */
 .feature-footer {
-	margin: 0 -2rem;
-	min-height: 1rem;
+	margin: 0 rem(-32px);
+	min-height: rem(16px);
 
 	a {
 		color: inherit;
 	}
 
 	p:not(:last-child) {
-		margin-bottom: 1rem;
+		margin-bottom: rem(16px);
 	}
 
 	& > * {
-		padding: 2rem;
+		padding: rem(32px);
 	}
 
 	& > .data-notes {
@@ -603,11 +603,11 @@
 .data-notes-list {
 	position: relative;
 	list-style: none;
-	margin-left: -rem(4px);
-	padding-left: 2.5rem;
+	margin-left: rem(-4px);
+	padding-left: rem(40px);
 	padding-top: rem(4px);
 	padding-bottom: rem(4px);
-	margin-bottom: 1rem;
+	margin-bottom: rem(16px);
 	overflow: hidden;
 }
 
@@ -625,7 +625,7 @@
 	clear: left;
 
 	&:not(:last-child) {
-		margin-bottom: 0.5rem;
+		margin-bottom: rem(8px);
 	}
 
 	p {
@@ -636,10 +636,10 @@
 		content: '';
 		display: block;
 		position: absolute;
-		left: -2.75rem;
-		right: -0.5rem;
-		top: -rem(4px);
-		bottom: -rem(4px);
+		left: rem(-44px);
+		right: rem(-8px);
+		top: rem(-4px);
+		bottom: rem(-4px);
 		background: rgba(255, 255, 255, 0.2);
 	}
 }
@@ -649,7 +649,7 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	left: -2.25rem;
+	left: rem(-36px);
 	top: 0;
 	font-size: rem(12px);
 	width: rem(24px);
@@ -658,7 +658,7 @@
 }
 
 .feature-footer p.github-edit-link {
-	margin-bottom: 2rem;
+	margin-bottom: rem(32px);
 }
 
 //
@@ -670,7 +670,7 @@
 	}
 
 	.feature {
-		margin-bottom: 2rem;
+		margin-bottom: rem(32px);
 
 		.data-contribute,
 		.data-test {
@@ -684,7 +684,7 @@
 		.feature-title {
 			padding-left: rem(24px);
 
-			@media only screen and (min-width: 85rem) {
+			@media only screen and (min-width: rem(1360px)) {
 				padding-left: 0;
 			}
 		}
@@ -693,19 +693,19 @@
 
 .feature--placeholder {
 	.data {
-		min-height: 10.5rem;
+		min-height: rem(168px);
 	}
 
 	.data-summary-cell {
-		margin-top: 3.375rem;
+		margin-top: rem(54px);
 		opacity: 0.125;
 	}
 
 	.data-details {
-		min-height: 23.125rem;
+		min-height: rem(370px);
 	}
 
 	.feature-footer {
-		min-height: 3rem;
+		min-height: rem(48px);
 	}
 }
