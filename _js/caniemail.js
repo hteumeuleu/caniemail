@@ -14,6 +14,20 @@ class Caniemail {
 		this.settings = new Settings();
 		this.filters = new Filters();
 		this.accessibleColors = new Options('.a11y-colors-button', 'accessible-colors-enabled');
+		this.fixMenuTabIndex();
+	}
+
+	fixMenuTabIndex() {
+		const breakpointValueInRem = 801 / 16;
+		const mediaQuery = '(min-width:'+breakpointValueInRem+'rem)';
+		if(window.matchMedia(mediaQuery)) {
+			const menuLinks = document.querySelectorAll('.caniemail-menu a:not([href="/clients/"])');
+			const menuLastLink = document.querySelector('.caniemail-menu a[href="/clients/"]');
+			menuLinks.forEach(menuLinkItem => {
+				menuLinkItem.setAttribute('tabindex', '1');
+			});
+			menuLastLink.setAttribute('tabindex', '2');
+		}
 	}
 }
 

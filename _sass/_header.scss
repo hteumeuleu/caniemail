@@ -5,7 +5,7 @@
 	flex-direction: row;
 	margin-bottom: 5rem;
 
-	@media only screen and (max-width: 30rem) {
+	@media only screen and (max-width: rem(480px)) {
 		margin-bottom: calc(1rem + 13.3333vw);
 	}
 }
@@ -14,8 +14,12 @@
 	display: flex;
 	flex-direction: row;
 
-	@media only screen and (max-width: 19.9375rem) {
+	@media only screen and (max-width: rem(480px)) {
 		width: 100%;
+	}
+
+	@media only screen and (min-width: rem(801px)) {
+		display: contents;
 	}
 }
 
@@ -33,34 +37,31 @@
 		background-color: #204e8a;
 	}
 
+	&:last-child {
+		margin-right: 0;
+	}
+
 	&:not(.current):hover {
 		background-color: #0a84ff;
 	}
 
-	@media only screen and (max-width: 30rem) {
+	@media only screen and (max-width: rem(480px)) {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-grow: 1;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
 		font-size: 1rem;
 	}
 
-	@media only screen and (max-width: 19.9375rem) {
+	@media only screen and (max-width: rem(319px)) {
 		font-size: 0.85rem;
-		flex-grow: 1;
-
-		&:last-child {
-			margin-right: 0;
-		}
 	}
 
-	@media only screen and (min-width: 20rem) {
+	@media only screen and (min-width: rem(320px)) {
 		&[href='/clients/'] {
-			position: absolute;
-			right: 0;
-			top: 0;
-			margin-right: 0;
+			order: 1;
 		}
 	}
 }
@@ -69,6 +70,7 @@
 .caniemail-latest-post {
 	position: relative;
 	display: flex;
+	flex-grow: 1;
 	flex-direction: row;
 	align-items: center;
 	white-space: nowrap;
@@ -78,7 +80,7 @@
 	font-weight: 300;
 	font-size: 1.125rem;
 
-	@media only screen and (max-width: 50rem) {
+	@media only screen and (max-width: rem(800px)) {
 		display: none;
 	}
 }
