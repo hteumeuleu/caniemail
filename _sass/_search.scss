@@ -1,30 +1,30 @@
 // Search box
 .caniemail-search {
 	position: relative;
-	margin-bottom: 1rem;
-	padding: 1rem;
+	margin-bottom: rem(16px);
+	padding: rem(16px);
 	color: #fff;
 	line-height: 1.5;
-	font-size: 2.5rem;
+	font-size: rem(40px);
 	font-weight: 300;
 	text-align: center;
 	background: #0a84ff;
 	transform-origin: top center;
 	transition: transform ease-in-out 0.3s, opacity ease-in-out 0.3s;
 
-	@media only screen and (max-width: 50rem) {
-		font-size: 1.5rem;
+	@media only screen and (max-width: rem(800px)) {
+		font-size: rem(24px);
 	}
 
-	@media only screen and (max-width: 23.4375rem) {
-		font-size: 1rem;
+	@media only screen and (max-width: rem(375px)) {
+		font-size: rem(16px);
 	}
 
 	.caniemail-search-form {
 		display: grid;
 		grid-template-columns: 1fr minmax(0, 2fr) 1fr;
 
-		@media only screen and (max-width: 50rem) {
+		@media only screen and (max-width: rem(800px)) {
 			align-items: center;
 			grid-template-columns: auto auto auto;
 		}
@@ -49,14 +49,14 @@
 	margin-top: 1rem;
 }
 
-@media only screen and (min-width: 50.0625rem) {
+@media only screen and (min-width: rem(801px)) {
 	.caniemail-search-actions {
 		display: flex;
 		grid-column: 3;
 		grid-row: 1;
 		align-self: center;
 		justify-self: flex-start;
-		margin-left: 1rem;
+		margin-left: rem(16px);
 		margin-top: 0;
 	}
 }
@@ -76,14 +76,14 @@
 
 .caniemail-search-input-container {
 	position: relative;
-	padding: 0 1rem;
+	padding: 0 rem(16px);
 	width: 100%;
 	grid-column: 2;
 	grid-row: 1;
 
-	@media only screen and (max-width: 50rem) {
-		padding-left: 0.5rem;
-		padding-right: 0.5rem;
+	@media only screen and (max-width: rem(800px)) {
+		padding-left: rem(8px);
+		padding-right: rem(8px);
 	}
 }
 
@@ -107,17 +107,17 @@
 	}
 
 	&::-webkit-search-cancel-button {
-		margin-right: 1rem;
+		margin-right: rem(16px);
 	}
 
 	&::placeholder {
 		color: rgba(255, 255, 255, 0.5);
 	}
 
-	@media only screen and (max-width: 50rem) {
+	@media only screen and (max-width: rem(800px)) {
 		margin-right: 0;
 		order: 1;
-		min-height: 2.25rem;
+		min-height: rem(36px);
 		background: rgba(255, 255, 255, 0.2);
 	}
 }
@@ -128,13 +128,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 2rem;
-		height: 2rem;
+		width: rem(32px);
+		height: rem(32px);
 		position: absolute;
-		right: 1rem;
+		right: rem(16px);
 		top: 50%;
-		margin-top: -1rem;
-		font-size: 1rem;
+		margin-top: rem(-16px);
+		font-size: rem(16px);
 		border-radius: 50%;
 		background: rgba(255, 255, 255, 0.2);
 		animation: spin linear 1s infinite;
@@ -147,12 +147,12 @@
 }
 
 .caniemail-search-empty {
-	max-width: 32rem;
-	margin: 1rem auto 0;
+	max-width: rem(512px);
+	margin: rem(16px) auto 0;
 	grid-row: 3;
 	grid-column: 1 / 4;
 	color: #fff;
-	font-size: 1rem;
+	font-size: rem(16px);
 	text-align: center;
 	background: #0a84ff;
 

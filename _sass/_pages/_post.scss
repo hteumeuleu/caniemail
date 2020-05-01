@@ -1,11 +1,11 @@
 .post {
-	padding: 2rem 1rem;
+	padding: rem(32px) rem(16px);
 	border: 1px solid #3c3c3d;
 	background: #2a2a2e;
 }
 
 .post-inside {
-	max-width: 44rem;
+	max-width: rem(704px);
 	margin: 0 auto;
 }
 
@@ -15,13 +15,13 @@
 
 .post-title {
 	border-left: 3px solid #fff;
-	padding-left: 1rem;
-	margin-left: -1rem;
+	padding-left: rem(16px);
+	margin-left: rem(-16px);
 }
 
 .post {
 	.post-inside > *:not(:last-child) {
-		margin-bottom: 1.5rem;
+		margin-bottom: rem(24px);
 	}
 
 	a {
@@ -34,11 +34,11 @@
 
 	ul,
 	ol {
-		margin-left: 3rem;
+		margin-left: rem(48px);
 	}
 
 	li:not(:last-child) {
-		margin-bottom: 0.75rem;
+		margin-bottom: rem(12px);
 	}
 
 	img {
@@ -49,7 +49,7 @@
 
 	blockquote {
 		font-style: italic;
-		padding-left: 1rem;
+		padding-left: rem(16px);
 		border-left: 1px solid currentcolor;
 	}
 }

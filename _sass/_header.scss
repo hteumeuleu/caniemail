@@ -3,7 +3,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 5rem;
+	margin-bottom: rem(80px);
 
 	@media only screen and (max-width: rem(480px)) {
 		margin-bottom: calc(1rem + 13.3333vw);
@@ -24,12 +24,12 @@
 }
 
 .caniemail-tab {
-	margin-right: 0.5rem;
+	margin-right: rem(8px);
 	padding: 0.25em 0.75em;
-	min-height: 2.5rem;
+	min-height: rem(40px);
 	color: #fff;
 	font-weight: 300;
-	font-size: 1.25rem;
+	font-size: rem(20px);
 	text-decoration: none;
 	background-color: rgba(255, 255, 255, 0.1);
 
@@ -52,11 +52,11 @@
 		flex-grow: 1;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
-		font-size: 1rem;
+		font-size: rem(16px);
 	}
 
 	@media only screen and (max-width: rem(319px)) {
-		font-size: 0.85rem;
+		font-size: rem(13.6px);
 	}
 
 	@media only screen and (min-width: rem(320px)) {
@@ -75,10 +75,10 @@
 	align-items: center;
 	white-space: nowrap;
 	overflow: hidden;
-	padding: 0.25rem 0.75rem;
-	min-height: 2rem;
+	padding: rem(4px) rem(12px);
+	min-height: rem(32px);
 	font-weight: 300;
-	font-size: 1.125rem;
+	font-size: rem(18px);
 
 	@media only screen and (max-width: rem(800px)) {
 		display: none;

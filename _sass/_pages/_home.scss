@@ -1,21 +1,21 @@
 // Content block in homepage
 .caniemail-block:not(:last-child) {
-	margin-bottom: 2rem;
+	margin-bottom: rem(32px);
 }
 
 // Homepage
 .homepage {
-	@media (min-width: 32rem) {
+	@media (min-width: rem(512px)) {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(15rem, 1fr));
-		grid-gap: 1rem;
+		grid-template-columns: repeat(2, minmax(#{rem(240px)}, 1fr));
+		grid-gap: rem(16px);
 	}
 
-	@media (max-width: 30rem) {
+	@media (max-width: rem(480px)) {
 		.score-text {
-			margin-left: 1.5rem;
-			margin-top: 0.25rem;
-			margin-bottom: 0.5rem;
+			margin-left: rem(24px);
+			margin-top: rem(4px);
+			margin-bottom: rem(8px);
 		}
 	}
 

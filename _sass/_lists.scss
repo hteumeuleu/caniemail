@@ -4,7 +4,7 @@
 	display: inline-block;
 	padding: 0.5em 0;
 	margin-bottom: 0.5em;
-	font-size: 1.375rem;
+	font-size: rem(22px);
 	font-weight: 300;
 	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 
@@ -15,7 +15,7 @@
 }
 
 .caniemail-list {
-	margin-left: 1rem;
+	margin-left: rem(16px);
 
 	& > li {
 		list-style-type: square;

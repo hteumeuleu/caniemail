@@ -7,18 +7,18 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		margin-bottom: 0.5rem;
+		margin-bottom: rem(8px);
 		counter-increment: scoreboard;
 
 		&::before {
 			content: counter(scoreboard) '.';
-			margin-right: 0.5rem;
-			width: 2.5rem;
+			margin-right: rem(8px);
+			width: rem(40px);
 			text-align: right;
 			font-variant-numeric: tabular-nums;
 
 			.homepage & {
-				width: 1rem;
+				width: rem(16px);
 				text-align: center;
 			}
 		}
@@ -32,9 +32,9 @@
 .score {
 	display: inline-flex;
 	flex-direction: row;
-	width: 12.5rem;
-	height: 1.5rem;
-	margin-right: 0.5rem;
+	width: rem(200px);
+	height: rem(24px);
+	margin-right: rem(8px);
 
 	& > div {
 		flex-shrink: 0;
@@ -43,7 +43,7 @@
 	}
 
 	@media (max-width: 30rem) {
-		width: calc(100% - 6rem);
+		width: calc(100% - #{rem(96px)});
 		margin-right: 0;
 	}
 }
@@ -69,17 +69,17 @@
 		margin-left: 0;
 
 		& > li {
-			padding-right: 3rem;
+			padding-right: rem(48px);
 		}
 
-		@media only screen and (max-width: 40rem) {
+		@media only screen and (max-width: rem(640px)) {
 			& > li {
 				padding-right: 0;
 			}
 
 			.score-text {
 				width: 100%;
-				margin: 0.25rem 0 1rem 3rem;
+				margin: rem(4px) 0 rem(16px) rem(48px);
 				text-align: left;
 			}
 		}
@@ -87,7 +87,7 @@
 }
 
 .scoreboard-intro {
-	margin-bottom: 3rem;
+	margin-bottom: rem(48px);
 
 	& > h1 {
 		color: #fff;

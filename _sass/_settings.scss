@@ -2,8 +2,8 @@
 .settings {
 	position: relative;
 	overflow: hidden;
-	margin: -1rem -1rem 1rem -1rem;
-	width: calc(100% + 2rem);
+	margin: rem(-16px) rem(-16px) rem(16px);
+	width: calc(100% + #{rem(32px)});
 	color: #fff;
 	background: #0a84ff;
 	border: 1px solid rgba(255, 255, 255, 0.5);
@@ -15,8 +15,8 @@
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		appearance: none;
-		width: 1rem;
-		height: 1rem;
+		width: rem(16px);
+		height: rem(16px);
 		background: none;
 		border: 1px solid #fff;
 
@@ -29,11 +29,11 @@
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
-				margin-right: 0.25rem;
+				margin-right: rem(4px);
 				flex-grow: 0;
 				flex-shrink: 0;
-				width: 1rem;
-				height: 1rem;
+				width: rem(16px);
+				height: rem(16px);
 				background: none;
 				border: 1px solid #fff;
 				box-sizing: border-box;
@@ -42,7 +42,7 @@
 
 		&:focus + label {
 			outline: 1px dotted #fff;
-			outline-offset: 0.25rem;
+			outline-offset: rem(4px);
 		}
 
 		&:checked + label::before {
@@ -65,14 +65,14 @@
 	left: 0;
 	display: inline-block;
 	padding: 1rem;
-	font-size: 1.5rem;
+	font-size: rem(24px);
 
-	@media only screen and (max-width: 50rem) {
-		font-size: 1.25rem;
+	@media only screen and (max-width: rem(800px)) {
+		font-size: rem(20px);
 	}
 
-	@media only screen and (max-width: 23.4375rem) {
-		font-size: 1rem;
+	@media only screen and (max-width: rem(375px)) {
+		font-size: rem(16px);
 	}
 
 	.button {
@@ -93,19 +93,19 @@
 
 	ul {
 		list-style: none;
-		margin-left: 1.5rem;
+		margin-left: rem(24px);
 	}
 }
 
 .settings-child-list {
-	margin-top: 0.5rem;
+	margin-top: rem(8px);
 }
 
 .settings-list-item {
 	flex-shrink: 0;
 	flex-grow: 0;
-	width: 9.5rem;
-	padding: 1rem;
+	width: rem(152px);
+	padding: rem(16px);
 	border-top: 1px solid rgba(255, 255, 255, 0.25);
 
 	&:not(:last-child) {
@@ -118,12 +118,12 @@
 }
 
 .settings-child-list-item {
-	margin-top: 0.5rem;
-	font-size: 0.75rem;
+	margin-top: rem(8px);
+	font-size: rem(12px);
 	line-height: 1.2;
 
 	input[type="checkbox"] + label::before {
-		margin-top: -0.1rem;
+		margin-top: rem(-1.6px);
 	}
 }
 

@@ -72,7 +72,7 @@
 	font-size: 1.25rem;
 
 	& > p {
-		margin-top: 1.5rem;
+		margin-top: rem(24px);
 
 		a {
 			color: inherit;
@@ -94,19 +94,19 @@
 }
 
 .feature-support-title {
-	margin-bottom: 0.75rem;
+	margin-bottom: rem(12px);
 	color: #fff;
 	font-size: 1rem;
 
 	a {
-		font-size: 0.75rem;
+		font-size: rem(12px);
 		color: #b1b1b3;
 		text-decoration: underline;
 	}
 }
 
 .feature-support-about {
-	margin-bottom: 0.75rem;
+	margin-bottom: rem(12px);
 }
 
 .feature-support-summary {
@@ -121,7 +121,7 @@
 	}
 
 .feature-support-legend {
-	font-size: 0.75rem;
+	font-size: rem(12px);
 
 	a {
 		color: inherit;
@@ -130,7 +130,7 @@
 }
 
 .feature-support .score {
-	margin-bottom: 0.75rem;
+	margin-bottom: rem(12px);
 }
 
 .feature-support .score > div {
@@ -162,12 +162,12 @@
 		padding: 0.5em;
 		min-width: 6rem;
 		max-width: calc(100% - 2rem);
-		font-size: 0.75rem;
+		font-size: rem(12px);
 		line-height: 1.25;
 		color: rgba(255, 255, 255, 0.85);
 		background: #2a2a2e;
 		border: 1px solid #3c3c3d;
-		border-radius: 0.25rem;
+		border-radius: rem(4px);
 		box-shadow: -2px -2px 4px rgba(0,0,0,0.5);
 	}
 
@@ -256,7 +256,7 @@
 .filter-button {
 	display: inline-block;
 	min-height: 2rem;
-	padding: 0.25rem 1rem;
+	padding: rem(4px) 1rem;
 	color: #fff;
 	font-size: 1rem;
 	text-decoration: none;
@@ -313,7 +313,7 @@
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	padding: 2rem 0.25rem;
+	padding: 2rem rem(4px);
 	border-left: 1px solid #454548;
 	max-width: max-content;
 
@@ -333,7 +333,7 @@
 		left: 0;
 		right: 0;
 		top: 1rem;
-		bottom: 1.5rem;
+		bottom: rem(24px);
 		z-index: 1;
 		border: 1px solid #fff;
 		background: rgba(255, 255, 255, 0.025);
@@ -344,7 +344,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 0.25rem;
+	margin: 0 rem(4px);
 	padding: 0 1rem;
 	color: rgba(255, 255, 255, 0.85);
 	font-size: 1rem;
@@ -382,7 +382,7 @@
 	justify-content: center;
 	min-height: 2.8rem;
 	padding: 0.5rem;
-	font-size: 0.75rem;
+	font-size: rem(12px);
 	font-weight: normal;
 	line-height: 1.2;
 	text-align: center;
@@ -407,7 +407,7 @@
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	margin: 0 0.25rem;
+	margin: 0 rem(4px);
 	width: 6.5rem;
 }
 
@@ -455,7 +455,7 @@
 	}
 
 	&:last-child {
-		margin-top: 0.75rem;
+		margin-top: rem(12px);
 		// outline: 0.5rem solid #111;
 	}
 
@@ -473,8 +473,8 @@
 	// Support badge
 	&::before {
 		position: absolute;
-		right: -0.25rem;
-		top: -0.25rem;
+		right: -rem(4px);
+		top: -rem(4px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -515,8 +515,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		min-width: 0.75rem;
-		height: 0.75rem;
+		min-width: rem(12px);
+		height: rem(12px);
 		color: #333;
 		font-size: 0.625rem;
 		line-height: 1;
@@ -603,10 +603,10 @@
 .data-notes-list {
 	position: relative;
 	list-style: none;
-	margin-left: -0.25rem;
+	margin-left: -rem(4px);
 	padding-left: 2.5rem;
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
+	padding-top: rem(4px);
+	padding-bottom: rem(4px);
 	margin-bottom: 1rem;
 	overflow: hidden;
 }
@@ -638,8 +638,8 @@
 		position: absolute;
 		left: -2.75rem;
 		right: -0.5rem;
-		top: -0.25rem;
-		bottom: -0.25rem;
+		top: -rem(4px);
+		bottom: -rem(4px);
 		background: rgba(255, 255, 255, 0.2);
 	}
 }
@@ -651,9 +651,9 @@
 	position: absolute;
 	left: -2.25rem;
 	top: 0;
-	font-size: 0.75rem;
-	width: 1.5rem;
-	height: 1.5rem;
+	font-size: rem(12px);
+	width: rem(24px);
+	height: rem(24px);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -682,7 +682,7 @@
 		}
 
 		.feature-title {
-			padding-left: 1.5rem;
+			padding-left: rem(24px);
 
 			@media only screen and (min-width: 85rem) {
 				padding-left: 0;
