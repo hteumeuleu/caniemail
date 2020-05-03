@@ -6,13 +6,14 @@ layout: default
 	Building an array of the current page/feature familiers ordered by popularity.
 {% endcomment %}
 {% assign page-most-popular-families = "" | split: '' %}
+{% assign site-most-popular-families = site.clients | sort: "display_order" %}
 {% comment %}
-	1. We go through the `most-popular-families` variable defined in `data.settings`.
+	1. We go through the `clients` collection ordered by `display_order`.
 	If the current page/feature has data for this feature, we add it to the array.
 {% endcomment %}
-{% for default in site.data.settings.most-popular-families %}
-	{% assign family-key = default %}
-	{% if page.stats[default].size > 0  %}
+{% for default in site-most-popular-families %}
+	{% assign family-key = default.slug %}
+	{% if page.stats[family-key].size > 0  %}
 		{% assign page-most-popular-families = page-most-popular-families | push: family-key %}
 	{% endif %}
 {% endfor %}
