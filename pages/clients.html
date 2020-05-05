@@ -12,7 +12,22 @@ permalink: /clients/
 		<ul class="list">
 		{% assign clients = site.clients | sort:"display_order" %}
 		{% for client in clients %}
-			<li><a href="{{ client.url }}">{{ site.data.nicenames.family[client.slug] | default: client.slug | escape_once }}</a></li>
+			<li>
+				<a href="{{ client.url }}">{{ site.data.nicenames.family[client.slug] | default: client.slug | escape_once }}</a>
+				<small>
+				{% for platform in client.platforms %}
+					{%- if forloop.first == true -%}
+						(
+					{%- endif -%}
+					<a href="{{ client.url }}#{{ platform }}">{{ site.data.nicenames.platform[platform] | default: platform | escape_once }}</a>
+					{%- if forloop.last == true -%}
+						)
+					{%- else -%}
+						,&nbsp;
+					{%- endif -%}
+				{% endfor %}
+				</small>
+			</li>
 		{% endfor %}
 		</ul>
 	</div>
