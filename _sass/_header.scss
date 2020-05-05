@@ -41,6 +41,7 @@
 		margin-right: 0;
 	}
 
+	&:not(.current):focus,
 	&:not(.current):hover {
 		background-color: #0a84ff;
 	}
@@ -98,8 +99,10 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 
+	&:focus,
 	&:hover {
 		color: #0a84ff;
+		text-decoration: underline;
 	}
 
 	&::before {

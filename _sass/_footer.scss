@@ -10,6 +10,7 @@
 	a {
 		color: inherit;
 
+		&:focus,
 		&:hover {
 			color: #fff;
 		}
@@ -82,6 +83,7 @@
 	text-decoration: underline;
 	cursor: pointer;
 
+	&:focus,
 	&:hover {
 		color: #fff;
 	}

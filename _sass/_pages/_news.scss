@@ -2,6 +2,7 @@
 	.post .list a {
 		text-decoration: underline;
 
+		&:focus,
 		&:hover {
 			color: #fff;
 		}

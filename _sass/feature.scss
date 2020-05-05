@@ -31,6 +31,7 @@
 	text-decoration: none;
 	background-color: #0a84ff;
 
+	&:focus,
 	&:hover {
 		background-color: #204e8a;
 	}
@@ -614,6 +615,7 @@
 .data-notes .list a {
 	text-decoration: underline;
 
+	&:focus,
 	&:hover {
 		color: #fff;
 	}
