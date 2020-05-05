@@ -1,5 +1,5 @@
-<nav class="caniemail-nav" role="navigation">
+<nav class="nav" role="navigation">
 	{% for item in site.data.navigation %}
-		<a href="{{ item.link }}" class="caniemail-tab{% if page.url == item.link %} current{% endif %}">{{ item.name }}</a>
+		<a href="{{ item.link }}" class="tab{% if page.url == item.link %} current{% endif %}">{{ item.name }}</a>
 	{% endfor %}
 </nav>

@@ -3,7 +3,7 @@ layout: post
 title: Latest news
 permalink: /news/
 ---
-<ul class="caniemail-list">
+<ul class="list">
 	{% for post in site.posts %}
 	<li><a href="{{ post.url }}">{{ post.title | markdownify | remove: ' class="language-plaintext highlighter-rouge"' | remove: '<p>' | remove: '</p>' | strip }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
 	{% endfor %}

@@ -4,9 +4,9 @@ layout: default
 permalink: /
 ---
 <div class="homepage">
-	<div class="caniemail-block">
-		<h1 class="caniemail-list-title"><a href="/features/">Latest features</a></h1>
-		<ol class="caniemail-list">
+	<div class="block">
+		<h1 class="list-title"><a href="/features/">Latest features</a></h1>
+		<ol class="list">
 			{% assign latest-features = site.features | sort:"last_test_date" | reverse %}
 			{% for feature in latest-features limit:5 %}
 				{% assign feature-category = '' %}
@@ -22,17 +22,17 @@ permalink: /
 		</ol>
 		<a href="/features/" class="button">View all features</a>
 	</div>
-	<div class="caniemail-block">
-		<h1 class="caniemail-list-title"><a href="/news/">Latest news</a></h1>
-		<ul class="caniemail-list">
+	<div class="block">
+		<h1 class="list-title"><a href="/news/">Latest news</a></h1>
+		<ul class="list">
 			{% for post in site.posts limit:5 %}
 			<li><a href="{{ post.url }}">{{ post.title | markdownify | remove: ' class="language-plaintext highlighter-rouge"' | remove: '<p>' | remove: '</p>' | strip }}</a>, {{ post.date | date: '%B %d, %Y' }}</li>
 			{% endfor %}
 		</ul>
 		<a href="/news/" class="button">View all news</a>
 	</div>
-	<div class="caniemail-block">
-		<h1 class="caniemail-list-title"><a href="/scoreboard/">Client scores</a></h1>
+	<div class="block">
+		<h1 class="list-title"><a href="/scoreboard/">Client scores</a></h1>
 		{% include client-scores.html limit=5 %}
 		<a href="/scoreboard/" class="button">View the scoreboard</a>
 	</div>

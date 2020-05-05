@@ -611,7 +611,7 @@
 	overflow: hidden;
 }
 
-.data-notes .caniemail-list a {
+.data-notes .list a {
 	text-decoration: underline;
 
 	&:hover {
@@ -664,7 +664,7 @@
 //
 // Feature in search results
 //
-.caniemail-search-results {
+.search-results {
 	& ~ * {
 		display: none;
 	}

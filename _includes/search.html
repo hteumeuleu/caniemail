@@ -1,11 +1,11 @@
-<div class="caniemail-search" role="search">
-	<form action="/search/" method="get" class="caniemail-search-form">
-		<label for="caniemail-search" class="caniemail-search-label">Can I email</label>
-		<span class="caniemail-search-input-container"><input type="search" class="caniemail-search-input" id="caniemail-search" name="s" spellcheck="false" value="" placeholder="HTML, CSS, &hellip;" {% if page.url == "/" %}autofocus{% endif %} /></span>
-		<span class="caniemail-search-question-mark" aria-hidden="hidden">?</span>
-		<span class="caniemail-search-actions">
+<div class="search" role="search">
+	<form action="/search/" method="get" class="search-form">
+		<label for="search" class="search-label">Can I email</label>
+		<span class="search-input-container"><input type="search" class="search-input" id="search" name="s" spellcheck="false" value="" placeholder="HTML, CSS, &hellip;" {% if page.url == "/" %}autofocus{% endif %} /></span>
+		<span class="search-question-mark" aria-hidden="hidden">?</span>
+		<span class="search-actions">
 			<noscript>
-				<button type="submit" class="button caniemail-search-button">Search</button>
+				<button type="submit" class="button search-button">Search</button>
 				<style>.settings-button { display:none; }</style>
 			</noscript>
 			<button type="button" class="button settings-button"><span class="icon icon--gear" aria-hidden="hidden"></span> Settings</button>

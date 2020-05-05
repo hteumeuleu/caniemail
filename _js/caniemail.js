@@ -21,8 +21,8 @@ class Caniemail {
 		const breakpointValueInRem = 801 / 16;
 		const mediaQuery = '(min-width:'+breakpointValueInRem+'rem)';
 		if(window.matchMedia(mediaQuery)) {
-			const menuLinks = document.querySelectorAll('.caniemail-menu a:not([href="/clients/"])');
-			const menuLastLink = document.querySelector('.caniemail-menu a[href="/clients/"]');
+			const menuLinks = document.querySelectorAll('.menu a:not([href="/clients/"])');
+			const menuLastLink = document.querySelector('.menu a[href="/clients/"]');
 			menuLinks.forEach(menuLinkItem => {
 				menuLinkItem.setAttribute('tabindex', '1');
 			});

@@ -1,5 +1,5 @@
 // Search box
-.caniemail-search {
+.search {
 	position: relative;
 	margin-bottom: rem(16px);
 	padding: rem(16px);
@@ -20,7 +20,7 @@
 		font-size: rem(16px);
 	}
 
-	.caniemail-search-form {
+	.search-form {
 		display: grid;
 		grid-template-columns: 1fr minmax(0, 2fr) 1fr;
 
@@ -31,26 +31,26 @@
 	}
 }
 
-.caniemail-search-label {
+.search-label {
 	grid-column: 1;
 	grid-row: 1;
 	text-align: right;
 }
 
-.caniemail-search-question-mark {
+.search-question-mark {
 	grid-column: 3;
 	grid-row: 1;
 	text-align: left;
 }
 
-.caniemail-search-actions {
+.search-actions {
 	grid-row: 2;
 	grid-column: 1 / 4;
 	margin-top: 1rem;
 }
 
 @media only screen and (min-width: rem(801px)) {
-	.caniemail-search-actions {
+	.search-actions {
 		display: flex;
 		grid-column: 3;
 		grid-row: 1;
@@ -61,7 +61,7 @@
 	}
 }
 
-.caniemail-search .button {
+.search .button {
 	margin-left: rem(16px);
 
 	@media only screen and (max-width: rem(375px)) {
@@ -74,7 +74,7 @@
 	}
 }
 
-.caniemail-search-input-container {
+.search-input-container {
 	position: relative;
 	padding: 0 rem(16px);
 	width: 100%;
@@ -87,7 +87,7 @@
 	}
 }
 
-.caniemail-search-input {
+.search-input {
 	width: 100%;
 	min-width: 0;
 	color: inherit;
@@ -122,7 +122,7 @@
 	}
 }
 
-.caniemail-search--loading .caniemail-search-input-container {
+.search--loading .search-input-container {
 	&::before {
 		content: '@';
 		display: flex;
@@ -146,7 +146,7 @@
 	to { transform: rotate(1turn); }
 }
 
-.caniemail-search-empty {
+.search-empty {
 	max-width: rem(512px);
 	margin: rem(16px) auto 0;
 	grid-row: 3;

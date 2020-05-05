@@ -1,10 +1,10 @@
 // Features page
-.caniemail-list--features {
+.list--features {
 	column-count: 3;
 	column-width: rem(320px);
 	column-gap: rem(16px);
 
-	& + .caniemail-list-title {
+	& + .list-title {
 		margin-top: rem(48px);
 	}
 }

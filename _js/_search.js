@@ -5,8 +5,8 @@ class Search {
 		this.data = null;
 		this.term = null;
 		this.results = null;
-		this.input = document.querySelector('.caniemail-search-input');
-		this.form = document.querySelector('.caniemail-search');
+		this.input = document.querySelector('.search-input');
+		this.form = document.querySelector('.search');
 		this.origin = document.location.href;
 
 		if(this.input != null) {
@@ -66,11 +66,11 @@ class Search {
 	query() {
 
 		if(!this.data) {
-			this.form.classList.add('caniemail-search--loading');
+			this.form.classList.add('search--loading');
 		}
 
 		if(!this.term) {
-			this.form.classList.remove('caniemail-search--loading');
+			this.form.classList.remove('search--loading');
 			this.removeResultsMessage();
 			this.removeResultsContainer();
 			history.pushState({id:'search'}, 'search', `${this.origin}`);
@@ -94,7 +94,7 @@ class Search {
 				this.results = this.data.filter(feature => feature.slug.toLowerCase() === this.term.toLowerCase() || feature.title.toLowerCase().includes(this.term.toLowerCase()) || feature.keywords.toLowerCase().includes(this.term.toLowerCase()));
 			}
 
-			this.form.classList.remove('caniemail-search--loading');
+			this.form.classList.remove('search--loading');
 
 			if(this.results.length != 0 && this.results.length != previousResultsLength) {
 				this.buildResultsMessage(this.results.length);
@@ -115,7 +115,7 @@ class Search {
 
 	removeResultsMessage() {
 
-		let searchResultsMessage = document.querySelector('[role=search] form .caniemail-search-empty');
+		let searchResultsMessage = document.querySelector('[role=search] form .search-empty');
 		if(searchResultsMessage != null) {
 			searchResultsMessage.remove();
 		}
@@ -123,10 +123,10 @@ class Search {
 
 	buildResultsMessage(n) {
 
-		let searchResultsMessage = document.querySelector('[role=search] form .caniemail-search-empty');
+		let searchResultsMessage = document.querySelector('[role=search] form .search-empty');
 		if(searchResultsMessage == null) {
 			let noResult = document.createElement('p');
-			noResult.classList.add('caniemail-search-empty');
+			noResult.classList.add('search-empty');
 			searchResultsMessage = document.querySelector('[role=search] form').appendChild(noResult);
 		}
 		let message = '';
@@ -143,24 +143,24 @@ class Search {
 
 	buildResultsContainer() {
 
-		if(document.querySelector('[role=main] .caniemail-search-results') == null) {
+		if(document.querySelector('[role=main] .search-results') == null) {
 			let container = document.createElement('div');
-			container.classList.add('caniemail-search-results');
-			container.id = 'caniemail-search-results';
+			container.classList.add('search-results');
+			container.id = 'search-results';
 			document.querySelector('[role=main]').prepend(container);
 		}
 	}
 
 	removeResultsContainer() {
 
-		if(document.querySelector('[role=main] .caniemail-search-results') != null) {
-			document.querySelector('[role=main] .caniemail-search-results').remove();
+		if(document.querySelector('[role=main] .search-results') != null) {
+			document.querySelector('[role=main] .search-results').remove();
 		}
 	}
 
 	buildResults() {
 
-		const container = document.querySelector('[role=main] .caniemail-search-results');
+		const container = document.querySelector('[role=main] .search-results');
 		container.querySelectorAll('section').forEach(section => {
 			if(this.results.filter(feature => feature.slug == section.getAttribute('data-slug')).length == 0) {
 				section.remove();

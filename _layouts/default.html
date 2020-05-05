@@ -29,7 +29,7 @@
 <body>
 	<div class="caniemail{{ page.name | remove: '.html' | slugify | default: 'default' | prepend: ' page--' }}">
 		{% include header.html %}
-		<main class="caniemail-main" role="main">
+		<main class="main" role="main">
 			{{ content }}
 		</main>
 		{% include footer.html %}

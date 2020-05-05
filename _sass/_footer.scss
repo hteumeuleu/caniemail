@@ -1,5 +1,5 @@
 // Footer
-.caniemail-footer {
+.footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -24,7 +24,7 @@
 	}
 }
 
-.caniemail-footer-section {
+.footer-section {
 	padding-bottom: rem(32px);
 	max-width: rem(640px);
 
@@ -43,7 +43,7 @@
 	}
 }
 
-.caniemail-footer-title {
+.footer-title {
 	margin-bottom: rem(12px);
 	color: #fff;
 	font-size: 1em;
@@ -73,7 +73,7 @@
 	min-width: rem(200px);
 }
 
-.caniemail-link-button {
+.link-button {
 	-webkit-appearance: none;
 	background: none;
 	border: none;

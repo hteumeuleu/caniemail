@@ -67,25 +67,25 @@ layout: default
 			{% endif %}
 		{% endfor %}
 		{% if client-features-y != nil and client-features-y != "" %}
-			<h3 class="caniemail-list-title">{{ site.data.nicenames.support.supported }}</h3>
+			<h3 class="list-title">{{ site.data.nicenames.support.supported }}</h3>
 			<ul class="client-tags">
 			{{ client-features-y }}
 			</ul>
 		{% endif %}
 		{% if client-features-a != nil and client-features-a != "" %}
-			<h3 class="caniemail-list-title">{{ site.data.nicenames.support.mitigated }}</h3>
+			<h3 class="list-title">{{ site.data.nicenames.support.mitigated }}</h3>
 			<ul class="client-tags">
 			{{ client-features-a }}
 			</ul>
 		{% endif %}
 		{% if client-features-n != nil and client-features-n != "" %}
-			<h3 class="caniemail-list-title">{{ site.data.nicenames.support.unsupported }}</h3>
+			<h3 class="list-title">{{ site.data.nicenames.support.unsupported }}</h3>
 			<ul class="client-tags">
 			{{ client-features-n }}
 			</ul>
 		{% endif %}
 		{% if client-features-u != nil and client-features-u != "" %}
-			<h3 class="caniemail-list-title">{{ site.data.nicenames.support.unknown }}</h3>
+			<h3 class="list-title">{{ site.data.nicenames.support.unknown }}</h3>
 			<ul class="client-tags">
 			{{ client-features-u }}
 			</ul>

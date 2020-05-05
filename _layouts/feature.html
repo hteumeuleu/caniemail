@@ -126,7 +126,7 @@ layout: default
 		{% if has-page-notes == true or page.notes_by_num.size > 0 or page.links.size > 0 %}
 		<div class="data-notes">
 			{% if has-page-notes == true or page.notes_by_num.size > 0 %}
-				<h2 class="caniemail-list-title">Notes</h2>
+				<h2 class="list-title">Notes</h2>
 				{% if has-page-notes == true %}
 				{{ page.notes | markdownify }}
 				{% endif %}
@@ -143,8 +143,8 @@ layout: default
 				{% endif %}
 			{% endif %}
 			{% if page.links.size > 0 %}
-				<h2 class="caniemail-list-title">Resources</h2>
-				<ul class="caniemail-list">
+				<h2 class="list-title">Resources</h2>
+				<ul class="list">
 				{% for link in page.links %}
 					{% assign link-title = link | first %}
 					{% assign link-url = link | last %}
@@ -157,7 +157,7 @@ layout: default
 		</div>
 		{% endif %}
 		<div class="data-contribute">
-			<h2 class="caniemail-list-title">Know something we don't?</h2>
+			<h2 class="list-title">Know something we don't?</h2>
 			<p>
 				Is any of the above data outdated? Or do you want to add a new email client to the list? Heads on to GitHub and edit the data file!
 			</p>
@@ -170,7 +170,7 @@ layout: default
 			</p>
 		</div>
 		<div class="data-test">
-			<h2 class="caniemail-list-title">Test it yourself</h2>
+			<h2 class="list-title">Test it yourself</h2>
 			{% if page.last_test_date != nil and page.last_test_date != "" %}
 			<p>
 				This feature was last tested on <b>{{ page.last_test_date | date: '%B %d, %Y' }}</b>.

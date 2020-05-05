@@ -1,5 +1,5 @@
 // Header navigation
-.caniemail-menu {
+.menu {
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -10,7 +10,7 @@
 	}
 }
 
-.caniemail-nav {
+.nav {
 	display: flex;
 	flex-direction: row;
 
@@ -23,7 +23,7 @@
 	}
 }
 
-.caniemail-tab {
+.tab {
 	margin-right: rem(8px);
 	padding: 0.25em 0.75em;
 	min-height: rem(40px);
@@ -67,7 +67,7 @@
 }
 
 // Latest post in header
-.caniemail-latest-post {
+.latest-post {
 	position: relative;
 	display: flex;
 	flex-grow: 1;
@@ -85,14 +85,14 @@
 	}
 }
 
-.caniemail-latest-post-date {
+.latest-post-date {
 	&::after {
 		content: '-';
 		margin: 0 0.5ch;
 	}
 }
 
-.caniemail-latest-post-title {
+.latest-post-title {
 	color: #fff;
 	text-decoration: none;
 	overflow: hidden;
