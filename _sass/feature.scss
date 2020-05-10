@@ -625,6 +625,7 @@
 	position: relative;
 	float: left;
 	clear: left;
+	scroll-margin-top: rem(24px);
 
 	&:not(:last-child) {
 		margin-bottom: rem(8px);
