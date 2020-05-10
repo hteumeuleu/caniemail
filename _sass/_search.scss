@@ -147,16 +147,26 @@
 }
 
 .search-empty {
-	max-width: rem(512px);
+	max-width: rem(1024px);
 	margin: rem(16px) auto 0;
 	grid-row: 3;
 	grid-column: 1 / 4;
-	color: #fff;
 	font-size: rem(16px);
-	text-align: center;
-	background: #0a84ff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 
 	a {
 		color: inherit;
+	}
+
+	b {
+		font-weight: bold;
+	}
+
+	.icon {
+		margin-right: rem(4px);
+		margin-top: rem(4px);
+		vertical-align: top;
 	}
 }

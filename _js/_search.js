@@ -73,6 +73,7 @@ class Search {
 			this.form.classList.remove('search--loading');
 			this.removeResultsMessage();
 			this.removeResultsContainer();
+			this.results = [];
 			history.pushState({id:'search'}, 'search', `${this.origin}`);
 		}
 
@@ -136,7 +137,24 @@ class Search {
 		} else if (n == 1) {
 			message = '1 result found.';
 		} else {
-			message = n + ' results found.';
+			if(this.term.includes('+')) {
+				const icon = `<span class="icon icon--notebook" aria-hidden="hidden"></span>`;
+				message = icon + `<b>Secret Recipe</b> with `;
+				let index = 0;
+				this.results.forEach(feature => {
+					if(index > 0 && index < n - 1) {
+						message += `, `;
+					} else if(index == n - 1) {
+						message += ` and `;
+					}
+					const featureURL = `/features/${feature.slug}/`;
+					message += `<a href="${featureURL}">${feature.title}</a>`;
+					index++;
+				});
+				message += `.`;
+			} else {
+				message = n + ' results found.';
+			}
 		}
 		searchResultsMessage.innerHTML = message;
 	}
@@ -170,7 +188,6 @@ class Search {
 		this.results.forEach(feature => {
 			if(container.querySelector(`[data-slug="${feature.slug}"]`) == null) {
 				const featureURL = `/features/${feature.slug}/`;
-				console.log(featureURL);
 				let div = document.createElement('div');
 				div.innerHTML = `<section class="feature feature--placeholder" data-slug="${feature.slug}">
 						<header class="feature-header">
