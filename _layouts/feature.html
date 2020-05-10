@@ -1,34 +1,6 @@
 ---
 layout: default
 ---
-{% comment %}
-	Most popular families.
-	Building an array of the current page/feature familiers ordered by popularity.
-{% endcomment %}
-{% assign page-most-popular-families = "" | split: '' %}
-{% assign site-most-popular-families = site.clients | sort: "display_order" %}
-{% comment %}
-	1. We go through the `clients` collection ordered by `display_order`.
-	If the current page/feature has data for this feature, we add it to the array.
-{% endcomment %}
-{% for default in site-most-popular-families %}
-	{% assign family-key = default.slug %}
-	{% if page.stats[family-key].size > 0  %}
-		{% assign page-most-popular-families = page-most-popular-families | push: family-key %}
-	{% endif %}
-{% endfor %}
-{% comment %}
-	2. We go through the page/feature `stats` and add all the keys.
-{% endcomment %}
-{% assign page-stats-keys = "" | split: '' %}
-{% for default in page.stats %}
-	{% assign family-key = default | first %}
-	{% assign page-stats-keys = page-stats-keys | push: family-key %}
-{% endfor %}
-{% comment %}
-	3. Previous step might introduce duplicate. So we `concat` the two previous arrays built and use the `uniq` filter to remove duplicates.
-{% endcomment %}
-{% assign page-most-popular-families = page-most-popular-families | concat: page-stats-keys | uniq %}
 <section class="feature">
 	<header class="feature-header">
 		<div class="feature-header-column">
@@ -51,7 +23,34 @@ layout: default
 	{% endcomment %}
 	<div class="data-details">
 		<div class="data-family-list">
-			{% for family in page-most-popular-families %}
+			{% assign page-families-in-order = "" | split: '' %}
+			{% assign site-families-in-order = site.clients | sort: "display_order" %}
+			{% comment %}
+				1. We go through the `clients` collection ordered by `display_order`.
+				We add the family slug to the page family array.
+			{% endcomment %}
+			{% for family in site-families-in-order %}
+				{% assign family-key = family.slug %}
+				{% assign page-families-in-order = page-families-in-order | push: family-key %}
+			{% endfor %}
+			{% comment %}
+				2. We go through the page/feature `stats` and add all the keys.
+			{% endcomment %}
+			{% assign page-stats-keys = "" | split: '' %}
+			{% for default in page.stats %}
+				{% assign family-key = default | first %}
+				{% if page.stats[family-key].size > 0  %}
+					{% assign page-stats-keys = page-stats-keys | push: family-key %}
+				{% endif %}
+			{% endfor %}
+			{% comment %}
+				3. Previous step might introduce duplicate. So we `concat` the two previous arrays built and use the `uniq` filter to remove duplicates.
+			{% endcomment %}
+			{% assign page-families-in-order = page-families-in-order | concat: page-stats-keys | uniq %}
+			{% comment %}
+				4. Let's start the loop!
+			{% endcomment %}
+			{% for family in page-families-in-order %}
 				{% assign family-key = family %}
 				{% assign family-values = page.stats[family] %}
 			<div class="data-family data-family--{{family-key}}" id="data-{{ page.title | slugify }}-{{ family-key }}">
