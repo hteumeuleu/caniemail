@@ -153,9 +153,12 @@
 	grid-row: 3;
 	grid-column: 1 / 4;
 	font-size: rem(16px);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+
+	@media only screen and (min-width: rem(801px)) {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
 
 	a {
 		color: inherit;
