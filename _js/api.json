@@ -3,13 +3,13 @@ layout: null
 permalink: "/api/data.json"
 ---
 {
-	"api_version":"1.0.0",
+	"api_version":"1.0.1",
 	"last_update_date":{{site.time | jsonify}},
 	"data":[{% for feature in site.features %}
 		{
 			"title":{{ feature.title | jsonify }},
 			"description":{{ feature.description | jsonify }},
-			"url":{{ feature.url | jsonify }},
+			"url":{{ feature.url | prepend:site.url | jsonify }},
 			"category":{{ feature.category | jsonify }},
 			"keywords":{{ feature.keywords | jsonify }},
 			"last_test_date":{{ feature.last_test_date | jsonify }},
