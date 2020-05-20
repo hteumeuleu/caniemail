@@ -41,11 +41,11 @@ stats: {
     outlook: {
         windows: {
             "2003":"y",
-            "2007":"a #1 #2 #3",
-            "2010":"a #1 #2 #3",
-            "2013":"a #1 #2 #3",
-            "2016":"a #1 #2 #3",
-            "2019":"a #1 #2 #3"
+            "2007":"a #1 #2 #3 #4",
+            "2010":"a #1 #2 #3 #4",
+            "2013":"a #1 #2 #3 #4",
+            "2016":"a #1 #2 #3 #4",
+            "2019":"a #1 #2 #3 #4"
         },
         windows-10-mail: {
             "2019-10":"a #1 #2 #3"
@@ -123,7 +123,8 @@ stats: {
 notes_by_num: {
     "1": "Partial. Negative values are not supported.",
     "2": "Partial. Not supported on `<span>` and `<body>` elements.",
-    "3": "Buggy. `background-color` is included inside the `margin`."
+    "3": "Buggy. `background-color` is included inside the `margin`.",
+    "4": "Partial. `auto` value is not supported."
 }
 links: {
     "Can I use: @font-face Web fonts":"https://caniuse.com/#feat=mdn-css_properties_margin",
