@@ -12,6 +12,7 @@
 
 	& > .post-title {
 		margin-left: 0;
+		margin-bottom: rem(32px);
 	}
 
 	.post-title .client-name {
@@ -19,7 +20,6 @@
 	}
 
 	.list-title {
-		margin-top: rem(32px);
 		color: #fff;
 		border-bottom: none;
 	}

@@ -1,0 +1,133 @@
+// Compare Clients
+.compare {
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 rem(16px);
+	color: #fff;
+	background: $color-blue;
+
+	input[type="checkbox"] {
+		position: absolute;
+		opacity: 0;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		width: rem(16px);
+		height: rem(16px);
+		background: none;
+		border: 1px solid #fff;
+
+		& + label {
+			display: flex;
+			line-height: 1.25;
+
+			&::before {
+				content: '';
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: rem(4px);
+				flex-grow: 0;
+				flex-shrink: 0;
+				width: rem(16px);
+				height: rem(16px);
+				background: none;
+				border: 1px solid #fff;
+				box-sizing: border-box;
+			}
+		}
+
+		&:focus + label {
+			outline: 1px dotted #fff;
+			outline-offset: rem(4px);
+		}
+
+		&:checked + label::before {
+			content: '\2714\FE0E';
+			font-size: 0.85em;
+			color: #0a84ff;
+			background-color: #fff;
+		}
+
+		&:indeterminate + label::before {
+			content: '-';
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+	}
+}
+
+.compare-title {
+	position: sticky;
+	left: 0;
+	display: inline-block;
+	padding: 1rem;
+	font-size: rem(24px);
+
+	@media only screen and (max-width: rem(800px)) {
+		font-size: rem(20px);
+	}
+
+	@media only screen and (max-width: rem(375px)) {
+		font-size: rem(16px);
+	}
+
+	.button {
+		margin-left: 1ch;
+		vertical-align: middle;
+		font-size: rem(12px);
+		min-width: rem(100px);
+	}
+}
+
+.compare-options {
+	overflow: auto;
+}
+
+.compare-list {
+	display: flex;
+	list-style: none;
+
+	ul {
+		list-style: none;
+		margin-left: rem(24px);
+	}
+}
+
+.compare-child-list {
+	margin-top: rem(8px);
+}
+
+.compare-list-item {
+	flex-shrink: 0;
+	flex-grow: 0;
+	width: rem(152px);
+	padding: rem(16px);
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+	&:not(:last-child) {
+		border-right: 1px solid rgba(255, 255, 255, 0.25);
+	}
+
+	&:nth-child(2n) {
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+}
+
+.compare-child-list-item {
+	margin-top: rem(8px);
+	font-size: rem(12px);
+	line-height: 1.2;
+
+	input[type="checkbox"] + label::before {
+		margin-top: rem(-1.6px);
+	}
+}
+
+.compare-results {
+	margin-bottom: rem(16px);
+
+	&:not(:empty) ~ .post--default {
+		display: none;
+	}
+}
