@@ -3,8 +3,9 @@ layout: null
 permalink: "/api/data.json"
 ---
 {
-	"api_version":"1.0.1",
+	"api_version":"1.0.2",
 	"last_update_date":{{site.time | jsonify}},
+	"nicenames":{{site.data.nicenames | jsonify}},
 	"data":[{% for feature in site.features %}
 		{
 			"title":{{ feature.title | jsonify }},
