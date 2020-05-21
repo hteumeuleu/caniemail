@@ -18,7 +18,7 @@
 		width: 100%;
 	}
 
-	@media only screen and (min-width: rem(801px)) {
+	@media only screen and (min-width: rem(801px)), only screen and (max-width: rem(480px)) {
 		display: contents;
 	}
 }
@@ -31,19 +31,31 @@
 	font-weight: 300;
 	font-size: rem(20px);
 	text-decoration: none;
+	white-space: nowrap;
 	background-color: rgba(255, 255, 255, 0.1);
+	text-transform: capitalize;
+
+	@media only screen and (min-width: rem(560px)) {
+		text-transform: none;
+	}
 
 	&.current {
 		background-color: #204e8a;
 	}
 
-	&:last-child {
-		margin-right: 0;
-	}
-
 	&:not(.current):focus,
 	&:not(.current):hover {
 		background-color: #0a84ff;
+	}
+
+	@media only screen and (min-width: rem(801px)) {
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.menu > & {
+		margin-right: 0;
 	}
 
 	@media only screen and (max-width: rem(480px)) {
@@ -59,11 +71,13 @@
 	@media only screen and (max-width: rem(319px)) {
 		font-size: rem(13.6px);
 	}
+}
 
-	@media only screen and (min-width: rem(320px)) {
-		&[href='/clients/'] {
-			order: 1;
-		}
+.tab-longname {
+	display: none;
+
+	@media only screen and (min-width: rem(560px)) {
+		display: inline;
 	}
 }
 
