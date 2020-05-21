@@ -241,9 +241,23 @@ class Compare {
 								supportValue = lastVersionValue.charAt(0);
 							}
 						}
+						let supportLongName = null;
+						switch(supportValue) {
+							case 'y':
+								supportLongName = 'supported';
+								break;
+							case 'a':
+								supportLongName = 'mitigated';
+								break;
+							case 'n':
+								supportLongName = 'unsupported';
+								break;
+							default:
+								supportLongName = 'unknown';
+						}
 						let td = document.createElement('td');
-						td.className = supportValue;
-						td.textContent = this.nicenames.support[supportValue];
+						td.className = supportLongName;
+						td.textContent = this.nicenames.support[supportLongName];
 						tr.append(td);
 					}
 				}
