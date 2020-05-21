@@ -28,8 +28,8 @@ platform:
   outlook-com: "Outlook.com"
 support:
   supported: "Supported"
-  unsupported: "Not supported"
   mitigated: "Partially supported"
+  unsupported: "Not supported"
   unknown: "Support unknown"
 category:
   html: "HTML"
