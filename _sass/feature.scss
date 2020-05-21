@@ -178,16 +178,19 @@
 }
 
 // Support colors
+.y,
 .supported,
 .data-details .supported::before {
 	background-color: #39b54a !important;
 }
 
+.n,
 .unsupported,
 .data-details .unsupported::before {
 	background-color: #c44230 !important;
 }
 
+.a,
 .mitigated,
 .data-details .mitigated::before {
 	background-color: #eda745 !important;
@@ -203,6 +206,7 @@
 	);
 }
 
+.u,
 .unknown {
 	background-color: #838383 !important;
 }

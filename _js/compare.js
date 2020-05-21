@@ -6,6 +6,7 @@ class Compare {
 
 	constructor() {
 		this.data = null;
+		this.nicenames = null;
 		this.resultsContainer = null;
 		this.panel = document.querySelector('.compare');
 		this.form = document.getElementById('compare-form');
@@ -156,6 +157,7 @@ class Compare {
 			})
 			.then(json => {
 				this.data = json.data;
+				this.nicenames = json.nicenames;
 				this.refresh();
 			})
 			.catch(error => {
@@ -183,15 +185,81 @@ class Compare {
 	buildResults() {
 
 		let features = this.buildFeaturesBySupportObject();
-		this.buildFeaturesBySupportElement(features.y, 'Supported', 'supported');
-		this.buildFeaturesBySupportElement(features.a, 'Partial support', 'mitigated');
-		this.buildFeaturesBySupportElement(features.m, 'Mixed support', 'mitigated');
-		this.buildFeaturesBySupportElement(features.n, 'Not supported', 'unsupported');
-		this.buildFeaturesBySupportElement(features.u, 'Support unknown', 'unknown');
-
+		this.buildResultsAsTags(features.y, 'Supported', 'supported');
+		this.buildResultsAsTags(features.a, 'Partial support', 'mitigated');
+		this.buildResultsAsTable(features.m, 'Mixed support');
+		this.buildResultsAsTags(features.n, 'Not supported', 'unsupported');
+		this.buildResultsAsTags(features.u, 'Support unknown', 'unknown');
 	}
 
-	buildFeaturesBySupportElement(featuresArray, title, tagClassName) {
+	buildResultsAsTable(featuresArray, title) {
+
+		if(featuresArray.length > 0) {
+			let div = document.createElement('div');
+			div.className = 'post post--client';
+			div.innerHTML = `<h2 class="post-title"><span class="client-name">${title}</span></h2>`;
+
+			let wrapper = document.createElement('div');
+			wrapper.className = 'clients-comparison';
+			let table = document.createElement('table');
+			table.className = 'clients-comparison-table';
+			let thead = document.createElement('thead');
+			let theadTr = document.createElement('tr');
+			let theadTd = document.createElement('td');
+			theadTr.append(theadTd);
+
+			const formData = new FormData(this.form);
+			for (let key of formData.entries()) {
+				if(key[1].toLowerCase() !== 'on') {
+					let th = document.createElement('th');
+					th.setAttribute('scope', 'col');
+					th.innerHTML = `<span class="data-family-name">${this.nicenames.family[key[0]]}</span><span class="data-platform-name">${this.nicenames.platform[key[1]]}</span>`;
+					theadTr.append(th);
+				}
+			}
+			thead.append(theadTr);
+
+			let tbody = document.createElement('tbody');
+			featuresArray.forEach(feature => {
+				let tr = document.createElement('tr');
+				let th = document.createElement('th');
+				th.setAttribute('scope', 'row');
+				let a = document.createElement('a');
+				a.href = feature.url;
+				a.textContent = feature.title;
+				th.append(a);
+				tr.append(th);
+
+				for (let key of formData.entries()) {
+					if(key[1].toLowerCase() !== 'on') {
+						const versions = feature.stats[key[0]][key[1]];
+						let supportValue = 'u';
+						if(versions) {
+							const lastVersionKey = Object.keys(versions)[Object.keys(versions).length - 1];
+							const lastVersionValue = versions[lastVersionKey];
+							if(lastVersionValue) {
+								supportValue = lastVersionValue.charAt(0);
+							}
+						}
+						let td = document.createElement('td');
+						td.className = supportValue;
+						td.textContent = this.nicenames.support[supportValue];
+						tr.append(td);
+					}
+				}
+				tbody.append(tr);
+			});
+
+			table.append(thead);
+			table.append(tbody);
+			wrapper.append(table);
+			div.append(wrapper);
+			this.resultsContainer.appendChild(div);
+		}
+	}
+
+	buildResultsAsTags(featuresArray, title, tagClassName) {
+
 		if(featuresArray.length > 0) {
 			let div = document.createElement('div');
 			div.className = 'post post--client';
