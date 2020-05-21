@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Can I email… {{ page.title | escape_once | markdownify | strip_html | strip }}</title>
+	<title>Can I email… {{ page.title | remove: '`' | escape_once | markdownify | strip_html | strip }}</title>
 	<link rel="stylesheet" href="/assets/css/styles.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	{%- if jekyll.environment == 'production' -%}
@@ -17,8 +17,8 @@
 	<meta name="description" content="{% include meta-og-dynamic.html %}" />
 	{%- else -%}
 	<meta property="og:title" content="Can I email…" />
-	<meta property="og:description" content="{{ page.title | escape_once | markdownify | strip_html | strip }}" />
-	<meta name="description" content="{{ page.title | escape_once | markdownify | strip_html | strip }}" />
+	<meta property="og:description" content="{{ page.title | remove: '`' | escape_once | markdownify | strip_html | strip }}" />
+	<meta name="description" content="{{ page.title | remove: '`' | escape_once | markdownify | strip_html | strip }}" />
 	<meta property="og:image" content="https://www.caniemail.com/assets/images/og.png" />
 	{%- endif -%}
 	<meta property="og:type" content="website" />
