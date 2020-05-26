@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<head>
+    <meta charset="UTF-8">
+    <title>@supports in emails</title>
+    <style type="text/css">
+        body { font:1em sans-serif; }
+        .test { display:inline-block; width:100px; height:100px; margin:10px; padding:10px; vertical-align:bottom; text-align:left; font:bold 14px sans-serif; background:#ddd; }
+
+        @supports (display:flex) {
+            .test1 { background:#2ecc40 !important; }
+        }
+
+        @supports not (display:flex) {
+            .test2 { background:#2ecc40 !important; }
+        }
+
+        @supports (background-attachment:fixed) {
+            .test3 { background:#2ecc40 !important; }
+        }
+
+        @supports (font-synthesis:none) {
+            .test8 { background:#2ecc40 !important; }
+        }
+
+        @supports (position:fixed) {
+            .test9 { background:#2ecc40 !important; }
+        }
+
+        @media (-webkit-transform-3d) {
+            .test4 { background:#2ecc40 !important; }
+        }
+
+        @media (-webkit-transform-2d) {
+            .test5 { background:#2ecc40 !important; }
+        }
+
+        @media (-webkit-transition) {
+            .test6 { background:#2ecc40 !important; }
+        }
+
+        @media (-webkit-animation) {
+            .test7 { background:#2ecc40 !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        default
+    </div>
+    <div class="test test2">
+        @supports not (display:flex)
+    </div>
+    <div class="test test1">
+        @supports (display:flex)
+    </div>
+    <div class="test test3">
+        @supports (background-attachment: fixed)
+    </div>
+    <div class="test test8" style="font-synthesis:none">
+        @supports (font-synthesis:none)
+    </div>
+    <div class="test test9">
+        @supports (position:fixed)
+    </div>
+    <div class="test test4">
+        @media (-webkit-transform-3d)
+    </div>
+    <div class="test test5">
+        @media (-webkit-transform-2d)
+    </div>
+    <div class="test test6">
+        @media (-webkit-transition)
+    </div>
+    <div class="test test7">
+        @media (-webkit-animation)
+    </div>
+</body>
+</html>
