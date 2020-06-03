@@ -13,10 +13,111 @@ permalink: /embed/
 <body>
 	<div class="caniemail">
 		<main class="main">
-			<div class="feature-header-column">
-				<h1 class="feature-title">{{ page.title | escape_once }}</h1>
-				<div class="feature-description">
-					{{ page.description | markdownify }}
+			<div class="feature-header">
+				<div class="feature-header-column">
+					<h1 class="feature-title"><a href="https://www.caniemail.com/features/{{ page.slug | escape_once }}" target="_blank" rel="noopener">{{ page.title | escape_once }}</a></h1>
+					<div class="feature-description">
+						{{ page.description | markdownify }}
+					</div>
+				</div>
+				<div class="feature-header-column">
+					{% include feature-support.html %}
+				</div>
+			</div>
+			<div class="data-details">
+				<div class="data-family-list">
+					{% assign page-families-in-order = "" | split: '' %}
+					{% assign site-families-in-order = site.clients | sort: "display_order" %}
+					{% comment %}
+						1. We go through the `clients` collection ordered by `display_order`.
+						We add the family slug to the page family array.
+					{% endcomment %}
+					{% for family in site-families-in-order %}
+						{% assign family-key = family.slug %}
+						{% assign page-families-in-order = page-families-in-order | push: family-key %}
+					{% endfor %}
+					{% comment %}
+						2. We go through the page/feature `stats` and add all the keys.
+					{% endcomment %}
+					{% assign page-stats-keys = "" | split: '' %}
+					{% for default in page.stats %}
+						{% assign family-key = default | first %}
+						{% if page.stats[family-key].size > 0  %}
+							{% assign page-stats-keys = page-stats-keys | push: family-key %}
+						{% endif %}
+					{% endfor %}
+					{% comment %}
+						3. Previous step might introduce duplicate. So we `concat` the two previous arrays built and use the `uniq` filter to remove duplicates.
+					{% endcomment %}
+					{% assign page-families-in-order = page-families-in-order | concat: page-stats-keys | uniq %}
+					{% comment %}
+						4. Let's start the loop!
+					{% endcomment %}
+					{% for family in page-families-in-order %}
+						{% assign family-key = family %}
+						{% assign family-values = page.stats[family] %}
+					<div class="data-family data-family--{{family-key}}" id="data-{{ page.title | slugify }}-{{ family-key }}">
+						<h3 class="data-family-name">
+							<span>
+								{% assign family-page = site.clients | where:"slug", client-family | first %}
+								{% if family-page != nil and family-page != "" %}
+								<a href="/clients/{{family-key}}/">
+								{% endif %}
+								{{ site.data.nicenames.family[family-key] | default: family-key }}
+								{% if family-page != nil and family-page != "" %}
+								</a>
+								{% endif %}
+							</span>
+						</h3>
+						<div class="data-client-list">
+							{% for platform in family-values %}
+								{% assign platform-key = platform | first %}
+								{% assign platform-values = platform | last %}
+								<div class="data-client data-client--{{ platform-key | slugify }}">
+									<h4 class="data-platform-name">
+										{% if family-page != nil and family-page != "" %}
+										<a href="/clients/{{family-key}}/#{{ platform-key | slugify }}">
+										{% endif %}
+										{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
+										{% if family-page != nil and family-page != "" %}
+										</a>
+										{% endif %}
+									</h4>
+									<div class="data-versions-list">
+									{% for version in platform-values limit:3 %}
+										{% assign version-key = version | first %}
+										{% assign version-values = version | last | split: ' ' | first %}
+										{% assign version-notes = version | last | split: ' ' | shift %}
+										{% case version-values %}
+											{% when 'y' %}
+												{% assign stat-class-name = 'supported' %}
+											{% when 'n' %}
+												{% assign stat-class-name = 'unsupported' %}
+											{% when 'a' %}
+												{% assign stat-class-name = 'mitigated' %}
+											{% when 'u' %}
+												{% assign stat-class-name = 'unknown' %}
+											{% else %}
+												{% assign stat-class-name = '' %}
+										{% endcase %}
+										<div class="data-version {{ stat-class-name }}">
+											<span class="data-version-number">{{ version-key }}</span>
+											{% if version-notes.size > 0  %}
+												<div class="data-version-notes">
+												{% for note-key in version-notes %}
+													{% assign note-key-slug = note-key | slugify %}
+													<a href="#{{ page.title | slugify }}-cite-note-{{ note-key-slug }}" title="{{ page.notes_by_num[note-key-slug] | markdownify | strip_html }}">{{ note-key | replace: '#', '' }}</a>
+												{% endfor %}
+												</div>
+											{% endif %}
+										</div>
+									{% endfor %}
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+					{% endfor %}
 				</div>
 			</div>
 		</main>
@@ -30,5 +131,6 @@ permalink: /embed/
 			</p>
 		</footer>
 	</div>
+	<script src="/assets/js/embed.js" defer></script>
 </body>
 </html>
