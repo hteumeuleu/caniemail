@@ -1,0 +1,35 @@
+.caniemail {
+	margin: auto;
+	width: rem(800px);
+	height: rem(400px);
+	border: rem(4px) solid $color-blue;
+	border-bottom: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: rem(4px) rem(10px);
+	min-height: rem(32px);
+	color: #fff;
+	font-size: rem(12px);
+	background-color: $color-blue;
+
+	a {
+		color: inherit;
+	}
+
+	.button {
+		font-size: inherit;
+		min-height: 0;
+		padding: rem(2px) rem(8px);
+		border-color: rgba(255, 255, 255, 0.5);
+	}
+}
