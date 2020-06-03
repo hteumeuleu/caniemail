@@ -1,0 +1,25 @@
+collections:
+  posts:
+    output: false
+  features:
+    output: true
+    permalink: /:name/
+  clients:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: "embed"
+
+permalink: /trash/:title/
+
+plugins:
+  - jekyll-mentions
+
+exclude: ["_clients", "_posts", "pages", "tests", "_js/api.json", "assets/js/features.json", "assets/js/compare.js", "assets/tests", "assets/images/posts", "Gemfile", "Gemfile.lock", "CONTRIBUTING.md", "LICENSE", "README.md", "CNAME"]
+include: ["_js"]
+
+incremental: true
