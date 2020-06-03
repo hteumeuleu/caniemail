@@ -1,0 +1,34 @@
+---
+layout: null
+permalink: /embed/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Can I email…</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/embed.css" />
+</head>
+<body>
+	<div class="caniemail">
+		<main class="main">
+			<div class="feature-header-column">
+				<h1 class="feature-title">{{ page.title | escape_once }}</h1>
+				<div class="feature-description">
+					{{ page.description | markdownify }}
+				</div>
+			</div>
+		</main>
+		<footer class="footer" role="contentinfo">
+			<p>Data from <a href="https://www.caniemail.com">caniemail.com</a></p>
+			<p class="a11y-colors">
+				<button type="button" class="a11y-colors-button button" data-label-toggle="Use default colors">Enable accessible colors</button>
+				<noscript>
+					<style>.a11y-colors { display:none; }</style>
+				</noscript>
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
