@@ -8,6 +8,7 @@ class Caniemail {
 
 	constructor() {
 		this.accessibleColors = new Options('.a11y-colors-button', 'accessible-colors-enabled');
+		this.switchLayout = new Options('.switch-layout-button', 'alternate-layout-enabled');
 	}
 }
 

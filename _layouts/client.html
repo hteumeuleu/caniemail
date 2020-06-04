@@ -39,22 +39,22 @@ layout: default
 							{% when 'y' %}
 								{% capture client-features-y %}
 									{{ client-features-y }}
-									<li><a class="supported" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+									<li><a class="tag supported" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 								{% endcapture %}
 							{% when 'a' %}
 								{% capture client-features-a %}
 									{{ client-features-a }}
-									<li><a class="mitigated" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+									<li><a class="tag mitigated" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 								{% endcapture %}
 							{% when 'n' %}
 								{% capture client-features-n %}
 									{{ client-features-n }}
-									<li><a class="unsupported" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+									<li><a class="tag unsupported" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 								{% endcapture %}
 							{% when 'u' %}
 								{% capture client-features-u %}
 									{{ client-features-u }}
-									<li><a class="unknown" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+									<li><a class="tag unknown" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 								{% endcapture %}
 						{% endcase %}
 					{% endif %}
@@ -62,7 +62,7 @@ layout: default
 			{% else %}
 				{% capture client-features-u %}
 					{{ client-features-u }}
-					<li><a class="unknown" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+					<li><a class="tag unknown" href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
 				{% endcapture %}
 			{% endif %}
 		{% endfor %}

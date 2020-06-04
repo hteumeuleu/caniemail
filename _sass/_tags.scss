@@ -1,0 +1,28 @@
+.client-tags {
+	list-style: none;
+	font-size: 0;
+
+	li {
+		display: inline-block;
+		font-size: rem(16px);
+	}
+
+	a {
+		&:hover, &:focus, &:active {
+			outline-color: #fff;
+			text-decoration: underline;
+		}
+	}
+}
+
+.tag {
+	display: inline-block;
+	padding: rem(2px) rem(8px);
+	color: #fff;
+	background-color: $color-grey;
+	text-decoration: none;
+}
+
+.tag-version {
+	opacity: 0.75;
+}

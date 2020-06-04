@@ -6,7 +6,7 @@ permalink: /embed/
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Can I email…</title>
+	<title>Can I email… {{ page.title | escape_once }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="{{ site.url }}/assets/css/embed.css" />
 </head>
@@ -61,7 +61,7 @@ permalink: /embed/
 							<span>
 								{% assign family-page = site.clients | where:"slug", client-family | first %}
 								{% if family-page != nil and family-page != "" %}
-								<a href="/clients/{{family-key}}/">
+								<a href="https://www.caniemail.com/clients/{{family-key}}/" target="_blank" rel="noopener">
 								{% endif %}
 								{{ site.data.nicenames.family[family-key] | default: family-key }}
 								{% if family-page != nil and family-page != "" %}
@@ -76,7 +76,7 @@ permalink: /embed/
 								<div class="data-client data-client--{{ platform-key | slugify }}">
 									<h4 class="data-platform-name">
 										{% if family-page != nil and family-page != "" %}
-										<a href="/clients/{{family-key}}/#{{ platform-key | slugify }}">
+										<a href="https://www.caniemail.com/clients/{{family-key}}/#{{ platform-key | slugify }}" target="_blank" rel="noopener">
 										{% endif %}
 										{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
 										{% if family-page != nil and family-page != "" %}
@@ -84,7 +84,11 @@ permalink: /embed/
 										{% endif %}
 									</h4>
 									<div class="data-versions-list">
-									{% for version in platform-values limit:3 %}
+									{% assign platform-values-reversed = "" | split: '' %}
+									{% for version in platform-values reversed %}
+										{% assign platform-values-reversed = platform-values-reversed | push: version %}
+									{% endfor %}
+									{% for version in platform-values-reversed reversed limit:3 %}
 										{% assign version-key = version | first %}
 										{% assign version-values = version | last | split: ' ' | first %}
 										{% assign version-notes = version | last | split: ' ' | shift %}
@@ -120,9 +124,111 @@ permalink: /embed/
 					{% endfor %}
 				</div>
 			</div>
+			<div class="data-details alternate-data-details" hidden>
+				{% assign page-families-in-order = "" | split: '' %}
+				{% assign site-families-in-order = site.clients | sort: "display_order" %}
+				{% comment %}
+					1. We go through the `clients` collection ordered by `display_order`.
+					We add the family slug to the page family array.
+				{% endcomment %}
+				{% for family in site-families-in-order %}
+					{% assign family-key = family.slug %}
+					{% assign page-families-in-order = page-families-in-order | push: family-key %}
+				{% endfor %}
+				{% comment %}
+					2. We go through the page/feature `stats` and add all the keys.
+				{% endcomment %}
+				{% assign page-stats-keys = "" | split: '' %}
+				{% for default in page.stats %}
+					{% assign family-key = default | first %}
+					{% if page.stats[family-key].size > 0  %}
+						{% assign page-stats-keys = page-stats-keys | push: family-key %}
+					{% endif %}
+				{% endfor %}
+				{% comment %}
+					3. Previous step might introduce duplicate. So we `concat` the two previous arrays built and use the `uniq` filter to remove duplicates.
+				{% endcomment %}
+				{% assign page-families-in-order = page-families-in-order | concat: page-stats-keys | uniq %}
+				{% comment %}
+					4. Let's start the loop!
+				{% endcomment %}
+				{% assign feature-support-y = '' %}
+				{% assign feature-support-a = '' %}
+				{% assign feature-support-n = '' %}
+				{% assign feature-support-u = '' %}
+				{% for family in page-families-in-order %}
+					{% assign family-key = family %}
+					{% assign family-values = page.stats[family] %}
+					{% for platform in family-values %}
+						{% assign platform-key = platform | first %}
+						{% assign platform-values = platform | last %}
+						{% assign platform-values-reversed = "" | split: '' %}
+						{% for version in platform-values reversed %}
+							{% assign platform-values-reversed = platform-values-reversed | push: version %}
+						{% endfor %}
+						{% for version in platform-values-reversed reversed limit:1 %}
+							{% assign version-key = version | first %}
+							{% assign version-values = version | last | split: ' ' | first %}
+							{% assign version-notes = version | last | split: ' ' | shift %}
+							{% case version-values %}
+								{% when 'y' %}
+									{% capture feature-support-y %}
+										{{ feature-support-y }}
+										<li><span class="tag supported">{{ site.data.nicenames.family[family-key] | default: family-key }} <small class="tag-version">({{ site.data.nicenames.platform[platform-key] | default: platform-key }})</small></span></li>
+									{% endcapture %}
+								{% when 'a' %}
+									{% capture feature-support-a %}
+										{{ feature-support-a }}
+										<li><span class="tag mitigated">{{ site.data.nicenames.family[family-key] | default: family-key }} <small class="tag-version">({{ site.data.nicenames.platform[platform-key] | default: platform-key }})</small></span></li>
+									{% endcapture %}
+								{% when 'n' %}
+									{% capture feature-support-n %}
+										{{ feature-support-n }}
+										<li><span class="tag unsupported">{{ site.data.nicenames.family[family-key] | default: family-key }} <small class="tag-version">({{ site.data.nicenames.platform[platform-key] | default: platform-key }})</small></span></li>
+									{% endcapture %}
+								{% when 'u' %}
+									{% capture client-features-u %}
+										{{ client-features-u }}
+										<li><span class="tag unknown">{{ site.data.nicenames.family[family-key] | default: family-key }} <small class="tag-version">({{ site.data.nicenames.platform[platform-key] | default: platform-key }})</small></span></li>
+									{% endcapture %}
+							{% endcase %}
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+				{% if feature-support-y != nil and feature-support-y != "" %}
+					<h3 class="embed-tags-title">{{ site.data.nicenames.support.supported }}</h3>
+					<ul class="embed-tags">
+					{{ feature-support-y }}
+					</ul>
+				{% endif %}
+				{% if feature-support-a != nil and feature-support-a != "" %}
+					<h3 class="embed-tags-title">{{ site.data.nicenames.support.mitigated }}</h3>
+					<ul class="embed-tags">
+					{{ feature-support-a }}
+					</ul>
+				{% endif %}
+				{% if feature-support-n != nil and feature-support-n != "" %}
+					<h3 class="embed-tags-title">{{ site.data.nicenames.support.unsupported }}</h3>
+					<ul class="embed-tags">
+					{{ feature-support-n }}
+					</ul>
+				{% endif %}
+				{% if feature-support-u != nil and feature-support-u != "" %}
+					<h3 class="embed-tags-title">{{ site.data.nicenames.support.unknown }}</h3>
+					<ul class="embed-tags">
+					{{ feature-support-u }}
+					</ul>
+				{% endif %}
+			</div>
 		</main>
 		<footer class="footer" role="contentinfo">
-			<p>Data from <a href="https://www.caniemail.com">caniemail.com</a></p>
+			<p>
+				Data from <a href="https://www.caniemail.com" target="_blank" rel="noopener">caniemail.com</a>
+				{% if page.last_test_date != nil and page.last_test_date != "" %}
+				 | Last tested on {{ page.last_test_date | date: '%B %d, %Y' }}
+				{% endif %}
+			</p>
+			<button type="button" class="switch-layout-button button" data-label-toggle="Regular layout">Alternate layout</button>
 			<p class="a11y-colors">
 				<button type="button" class="a11y-colors-button button" data-label-toggle="Use default colors">Enable accessible colors</button>
 				<noscript>
