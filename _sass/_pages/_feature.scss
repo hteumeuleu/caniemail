@@ -643,6 +643,7 @@
 		content: '';
 		display: block;
 		position: absolute;
+		z-index: -1;
 		left: rem(-44px);
 		right: rem(-8px);
 		top: rem(-4px);
