@@ -46,11 +46,11 @@ stats: {
     },
 	outlook: {
 		windows: {
-			"2007": "n",
-			"2010": "n",
-			"2013": "n",
-			"2016": "n",
-			"2019": "n"
+			"2007": "n #5",
+			"2010": "n #5",
+			"2013": "n #5",
+			"2016": "n #5",
+			"2019": "n #5"
 		},
 		windows-10-mail: {
 			"2019-02": "n"
@@ -128,6 +128,7 @@ notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",
     "2": "Buggy. Requires at least one `<img>` element in the email to download all images.",
     "3": "Partial. Does not support multiple values. The comma between two values is removed.",
-    "4": "Partial. Images URL must be between quotes."
+    "4": "Partial. Images URL must be between quotes.",
+	"5": "Background images can be used in VML. See [backgrounds.cm](https://backgrounds.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element)."
 }
 ---
