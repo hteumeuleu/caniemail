@@ -120,12 +120,18 @@ stats: {
         android: {
             "2020-03":"y"
         }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"a #5"
+        }
     }
 }
 notes_by_num: {
     "1": "Partial. Only `<time>` is supported.",
     "2": "Partial. `<details>`, `<main>`, `<nav>` and `<summary>` are not supported. Opening and closing tags are replaced by `<u></u>`.",
     "3": "Partial. `<article>` is not supported.",
-    "4": "Unsupported opening and closing tags are stripped."
+    "4": "Unsupported opening and closing tags are stripped.",
+    "5": "Partial. `<article>`, `<aside>`, `<header>`, `<main>` `<nav>`, `<section>`, `<summary>` are not supported."
 }
 ---

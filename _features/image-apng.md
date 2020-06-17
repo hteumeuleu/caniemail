@@ -120,6 +120,11 @@ stats: {
         android: {
             "2020-03":"y"
         }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"y"
+        }
     }
 }
 notes: "In all cases where the Animated PNG fails, it will fallback to show the first frame of the animation."

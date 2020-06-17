@@ -124,6 +124,11 @@ stats: {
         android: {
             "2020-03":"a #3"
         }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"n"
+        }
     }
 }
 notes: ""

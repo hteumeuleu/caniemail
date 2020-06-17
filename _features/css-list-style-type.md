@@ -117,6 +117,11 @@ stats: {
         android: {
             "2020-04":"y"
         }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"y"
+        }
     }
 }
 notes: "Tests and support are based on the CSS Level 2 specification. `<custom-ident>`, `symbols()` and `<string>` values are not tested here."

@@ -119,6 +119,11 @@ stats: {
         android: {
             "2020-04":"y"
         }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"y"
+        }
     }
 }
 notes: "`text-decoration-color` is not supported in Internet Explorer."

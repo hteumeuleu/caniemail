@@ -117,6 +117,11 @@ stats: {
         android: {
             "2020-03":"n"
         }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"n"
+        }
     }
 }
 ---

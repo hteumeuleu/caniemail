@@ -117,6 +117,11 @@ stats: {
         android: {
             "2020-03":"n"
         }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"n"
+        }
     }
 }
 notes_by_num: {
@@ -126,6 +131,7 @@ notes_by_num: {
 	"4": "Buggy. Opens a new browser window with the anchor as a URL.",
 	"5": "Buggy. Opens a new in-app browser window on yahoo.com with the anchor appended to the URL.",
 	"6": "Buggy. Targeted content is partially hidden by the application UI on top.",
-	"7": "Partial. Works when targeting an empty anchor with the corresponding `name` attribute, but not with `id` attributes."
+	"7": "Partial. Works when targeting an empty anchor with the corresponding `name` attribute, but not with `id` attributes.",
+	"8": "Not supported. Opens a new window with the same email."
 }
 ---

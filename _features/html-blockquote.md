@@ -117,7 +117,15 @@ stats: {
         android: {
             "2020-05":"y"
         }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"a #1"
+        }
     }
+}
+notes_by_num: {
+    "1": "Buggy. Blockquote elements are nested in a `<details>` element."
 }
 links: {
     "MDN: `<blockquote>`":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"

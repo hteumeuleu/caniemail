@@ -116,7 +116,12 @@ stats: {
         android: {
             "2020-03":"n"
         }
-    }
+    },
+  hey: {
+      desktop-webmail: {
+          "2020-06":"n"
+      }
+  }
 }
 notes_by_num: {
     "1": "Gmail iOS support is in beta and only enabled for some users. Users can opt-in by following the [instructions in Gmail documentation](https://developers.google.com/gmail/ampemail/supported-platforms#joining_the_beta)."
