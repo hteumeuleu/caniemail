@@ -36,4 +36,4 @@ plugins:
 exclude: ["Gemfile", "Gemfile.lock", "CONTRIBUTING.md", "LICENSE", "README.md"]
 include: ["_js"]
 
-incremental: true
+#incremental: true

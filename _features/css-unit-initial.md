@@ -1,6 +1,6 @@
 ---
 title: "initial unit"
-description: "Support for initial unit."
+description: "Support for initial keyword value."
 category: css
 keywords: unit, initial
 last_test_date: "2020-02-25"
@@ -120,6 +120,11 @@ stats: {
         },
         android: {
             "2020-03":"y"
+        }
+    },
+    hey: {
+        desktop-webmail: {
+            "2020-06":"y"
         }
     }
 }
