@@ -25,7 +25,6 @@ layout: default
 		<div class="data-family-list">
 			{% assign page-families-in-order = "" | split: '' %}
 			{% assign site-families-in-order = site.clients | sort: "display_order" %}
-			<pre>{{site-families-in-order}}</pre>
 			{% comment %}
 				1. We go through the `clients` collection ordered by `display_order`.
 				We add the family slug to the page family array.
@@ -100,6 +99,7 @@ layout: default
 								{% endcase %}
 								<div class="data-version {{ stat-class-name }}">
 									<span class="data-version-number">{{ version-key }}</span>
+									<span class="data-version-badge {{ stat-class-name }}" aria-label="{{ site.data.nicenames.support[stat-class-name] }}"></span>
 									{% if version-notes.size > 0  %}
 										<div class="data-version-notes">
 										{% for note-key in version-notes %}
