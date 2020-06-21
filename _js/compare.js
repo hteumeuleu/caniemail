@@ -285,7 +285,7 @@ class Compare {
 			featuresArray.forEach(feature => {
 				let li = document.createElement('li');
 				let a = document.createElement('a');
-				a.className = tagClassName;
+				a.className = "tag " + tagClassName;
 				a.href = feature.url;
 				a.textContent = feature.title;
 				li.append(a);
