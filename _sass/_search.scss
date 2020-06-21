@@ -107,7 +107,12 @@
 	}
 
 	&::-webkit-search-cancel-button {
+		-webkit-appearance: none;
 		margin-right: rem(16px);
+		width: rem(20px);
+		height: rem(20px);
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.2);
 	}
 
 	&::placeholder {
