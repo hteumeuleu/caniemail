@@ -1,5 +1,7 @@
 ---
 title: "margin"
+description: "Support for the `margin` shorthand property and the `margin-left`, `margin-right`, `margin-top`, `margin-bottom` properties."
+keywords: margin-left, margin-right, margin-top, margin-bottom
 category: css
 last_test_date: "2019-10-01"
 test_url: "/tests/css-margin.html"
@@ -132,7 +134,7 @@ notes_by_num: {
     "4": "Partial. `auto` value is not supported."
 }
 links: {
-    "Can I use: @font-face Web fonts":"https://caniuse.com/#feat=mdn-css_properties_margin",
-    "MDN: @font-face":"https://developer.mozilla.org/fr/docs/Web/CSS/margin"
+    "Can I use: margin":"https://caniuse.com/#feat=mdn-css_properties_margin",
+    "MDN: margin":"https://developer.mozilla.org/fr/docs/Web/CSS/margin"
 }
 ---
