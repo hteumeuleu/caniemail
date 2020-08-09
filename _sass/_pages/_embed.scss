@@ -17,10 +17,12 @@ body {
 .caniemail {
 	flex-grow: 0;
 	width: rem(800px);
-	min-height: rem(400px);
+	min-height: rem(460px);
 }
 
 .main {
+	display: flex;
+	flex-direction: column;
 	flex-grow: 1;
 	padding: rem(16px) rem(16px) 0;
 }
@@ -63,13 +65,19 @@ body {
 }
 
 .feature-title {
+	display: inline-block;
 	font-size: rem(20px);
 	line-height: 1;
 }
 
-.feature-description > p {
-	margin-top: rem(8px);
-	font-size: rem(16px);
+.feature-category {
+	color: #eee;
+	font-size: 85%;
+	text-transform: uppercase;
+	padding: 0.2em 0.4em;
+	border-radius: rem(3px);
+	background-color: rgba(255, 255, 255, 0.125);
+	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 }
 
 // Support score
@@ -90,6 +98,7 @@ body {
 
 // Data
 .data-details {
+	flex-grow: 1;
 	margin: 0 rem(-16px);
 }
 
@@ -118,6 +127,7 @@ body {
 
 // Alternate layout
 .alternate-layout-enabled {
+	.feature-support,
 	.data-details {
 		display: none;
 	}
@@ -139,6 +149,10 @@ body {
 		display: inline-block;
 		font-size: rem(14px);
 		margin: 0 rem(4px) rem(4px) 0;
+	}
+
+	.tag-version {
+		opacity: 0.9;
 	}
 }
 

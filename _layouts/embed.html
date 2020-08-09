@@ -9,6 +9,11 @@ permalink: /embed/
 	<title>Can I email… {{ page.title | escape_once }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="{{ site.url }}/assets/css/embed.css" />
+	{%- if jekyll.environment == 'production' -%}
+	<link rel="shortcut icon" href="/assets/images/favicon.png" />
+	{%- else -%}
+	<link rel="shortcut icon" href="/assets/images/favicon-local.png" />
+	{%- endif -%}
 </head>
 <body>
 	<div class="caniemail">
@@ -16,9 +21,7 @@ permalink: /embed/
 			<div class="feature-header">
 				<div class="feature-header-column">
 					<h1 class="feature-title"><a href="https://www.caniemail.com/features/{{ page.slug | escape_once }}" target="_blank" rel="noopener">{{ page.title | escape_once }}</a></h1>
-					<div class="feature-description">
-						{{ page.description | markdownify }}
-					</div>
+					<span class="feature-category">{{ page.category | escape_once }}</span>
 				</div>
 				<div class="feature-header-column">
 					{% include feature-support.html %}
@@ -223,7 +226,7 @@ permalink: /embed/
 		</main>
 		<footer class="footer" role="contentinfo">
 			<p>
-				Data from <a href="https://www.caniemail.com" target="_blank" rel="noopener">caniemail.com</a>
+				Data from <a href="https://www.caniemail.com/features/{{ page.slug | escape_once }}" target="_blank" rel="noopener">caniemail.com</a>
 				{% if page.last_test_date != nil and page.last_test_date != "" %}
 				 | Last tested on {{ page.last_test_date | date: '%B %d, %Y' }}
 				{% endif %}
