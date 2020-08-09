@@ -91,6 +91,16 @@ class Search {
 					}
 				});
 			}
+			else if(this.term.includes(' vs ')) {
+
+				let terms = this.term.split('vs');
+				terms.forEach(item => {
+					if(item != '') {
+						let itemResults = this.data.filter(feature => this.results.filter(result => result.title == feature.title).length == 0 && (feature.slug.toLowerCase() === item.toLowerCase().trim() || feature.title.toLowerCase().includes(item.toLowerCase().trim()) || feature.keywords.toLowerCase().includes(item.toLowerCase().trim())));
+						this.results = [...this.results, ...itemResults];
+					}
+				});
+			}
 			else {
 				this.results = this.data.filter(feature => feature.slug.toLowerCase() === this.term.toLowerCase() || feature.title.toLowerCase().includes(this.term.toLowerCase()) || feature.keywords.toLowerCase().includes(this.term.toLowerCase()));
 			}
@@ -140,6 +150,21 @@ class Search {
 			if(this.term.includes('+')) {
 				const icon = `<span class="icon icon--notebook" aria-hidden="hidden"></span>`;
 				message = icon + `<b>Secret Recipe</b> with `;
+				let index = 0;
+				this.results.forEach(feature => {
+					if(index > 0 && index < n - 1) {
+						message += `, `;
+					} else if(index == n - 1) {
+						message += ` and `;
+					}
+					const featureURL = `/features/${feature.slug}/`;
+					message += `<a href="${featureURL}">${feature.title}</a>`;
+					index++;
+				});
+				message += `.`;
+			} else if(this.term.includes(' vs ')) {
+				const icon = `<span class="icon icon--shout" aria-hidden="hidden"></span>`;
+				message = icon + `<b>Versus</b> with `;
 				let index = 0;
 				this.results.forEach(feature => {
 					if(index > 0 && index < n - 1) {

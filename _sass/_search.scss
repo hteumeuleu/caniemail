@@ -178,4 +178,57 @@
 		margin-top: rem(4px);
 		vertical-align: top;
 	}
+
+	.icon--shout {
+		font-size: rem(24px);
+		margin-top: 0;
+		vertical-align: middle;
+	}
+}
+
+//
+// Versus
+//
+.versus {
+	position: relative;
+	padding: rem(16px);
+	margin-bottom: rem(16px);
+	background-color: #2a2a2e;
+	border: 1px solid #3c3c3d;
+	display: flex;
+	justify-content: center;
+
+	h1 {
+		color: #fff;
+		font-size: rem(20px);
+	}
+}
+
+.versus-icon {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	.icon {
+		font-size: rem(56px);
+	}
+
+	&::before {
+		content: 'vs';
+		position: absolute;
+		left: 0;
+		top: rem(-4px);
+		bottom: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: rem(24px);
+		font-weight: bold;
+		color: #fff;
+		letter-spacing: -0.05em;
+		transform: rotate(-8deg);
+		text-shadow: -2px 2px 0 #2a2a2e, -2px -2px 0 #2a2a2e, 2px -2px 0 #2a2a2e, 2px 2px 0 #2a2a2e;
+	}
 }
