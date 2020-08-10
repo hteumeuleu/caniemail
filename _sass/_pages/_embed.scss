@@ -17,7 +17,7 @@ body {
 .caniemail {
 	flex-grow: 0;
 	max-width: rem(800px);
-	min-height: rem(460px);
+	max-height: rem(460px);
 }
 
 .main {
@@ -162,6 +162,15 @@ body {
 }
 
 // Alternate layout
+.alternate-layout-enabled {
+	.data-details {
+		display: none;
+	}
+	.alternate-data-details {
+		display: block;
+	}
+}
+
 .alternate-data-details {
 	padding: 0 rem(16px) rem(14px);
 	text-align: left;

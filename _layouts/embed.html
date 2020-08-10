@@ -111,10 +111,15 @@ permalink: /embed/
 											<span class="data-version-number">{{ version-key }}</span>
 											{% if version-notes.size > 0  %}
 												<div class="data-version-notes">
+												{% assign version-notes-title-attribute = '' %}
 												{% for note-key in version-notes %}
+
 													{% assign note-key-slug = note-key | slugify %}
-													<a href="#{{ page.title | slugify }}-cite-note-{{ note-key-slug }}" title="{{ page.notes_by_num[note-key-slug] | markdownify | strip_html }}">{{ note-key | replace: '#', '' }}</a>
+													{% assign note-key-display = note-key | append: ': ' %}
+													{% assign note-value-display = page.notes_by_num[note-key-slug] | markdownify | strip_html %}
+													{% assign version-notes-title-attribute = version-notes-title-attribute | append: note-key-display | append: note-value-display %}
 												{% endfor %}
+													<a href="https://www.caniemail.com/features/{{ page.slug | escape_once }}#{{ page.title | slugify }}-cite-note-1" target="_blank" title="{{ version-notes-title-attribute }}">?</a>
 												</div>
 											{% endif %}
 										</div>
