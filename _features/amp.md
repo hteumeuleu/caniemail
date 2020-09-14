@@ -19,7 +19,7 @@ stats: {
       "2020-04":"y"
     },
     ios: {
-      "2020-04":"a #1"
+      "2020-04":"y"
     },
     android: {
       "2020-04":"y"
@@ -54,7 +54,7 @@ stats: {
       "2019-10":"n"
     },
     outlook-com: {
-      "2020-01":"y"
+      "2020-01":"n"
     },
     ios: {
       "2019-10":"n"
@@ -124,11 +124,9 @@ stats: {
   }
 }
 notes_by_num: {
-    "1": "Gmail iOS support is in beta and only enabled for some users. Users can opt-in by following the [instructions in Gmail documentation](https://developers.google.com/gmail/ampemail/supported-platforms#joining_the_beta)."
 }
 links: {
   "AMP for Email Format":"https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email",
   "Gmail documentation on AMP":"https://developers.google.com/gmail/ampemail",
-  "Outlook.com documentation on AMP":"https://docs.microsoft.com/en-us/outlook/amphtml/"
 }
 ---
