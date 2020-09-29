@@ -123,12 +123,18 @@ stats: {
         desktop-webmail: {
             "2020-06":"y"
         }
+    },
+    mail-ru: {
+        desktop-webmail: {
+            "2020-09":"y #5"
+        }
     }
 }
 notes_by_num: {
     "1": "Partial. Does not support multiple values. The comma between two values is removed.",
     "2": "Partial. Does not support the `/ value` shorthand for `background-size`. But it can be used in the `background-size` property instead.",
     "3": "Partial. Only `background-color` values are supported.",
-    "4": "Partial. Images URL must be between quotes."
+    "4": "Partial. Images URL must be between quotes.",
+    "5": "Partial. Does not support multiple values. The entire property is removed if so."
 }
 ---

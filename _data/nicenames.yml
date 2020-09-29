@@ -12,6 +12,7 @@ family:
   orange: "Orange"
   protonmail: "ProtonMail"
   hey: "HEY"
+  mail-ru: "Mail.ru"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"

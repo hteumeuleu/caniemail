@@ -123,6 +123,11 @@ stats: {
         desktop-webmail: {
             "2020-06":"n"
         }
+    },
+    mail-ru: {
+        desktop-webmail: {
+            "2020-09":"y"
+        }
     }
 }
 notes_by_num: {

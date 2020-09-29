@@ -121,6 +121,11 @@ stats: {
       desktop-webmail: {
           "2020-06":"n"
       }
+  },
+  mail-ru: {
+      desktop-webmail: {
+          "2020-09":"y"
+      }
   }
 }
 notes_by_num: {
@@ -128,5 +133,6 @@ notes_by_num: {
 links: {
   "AMP for Email Format":"https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email",
   "Gmail documentation on AMP":"https://developers.google.com/gmail/ampemail",
+  "Mail.ru AMP emails":"https://postmaster.mail.ru/amp/?lang=en"
 }
 ---
