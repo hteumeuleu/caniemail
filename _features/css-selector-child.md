@@ -1,6 +1,6 @@
 ---
 title: "Child combinator"
-description: "The descendant combinator is represented by a space (` `) between two selectors and matches the second selector if it has ancestor matching the first selector."
+description: "The child combinator is represented by a superior sign (`>`) between two selectors and matches the second selector if it is a direct child of the first selector."
 category: css
 last_test_date: "2019-10-13"
 test_url: "/tests/css-selectors.html"
@@ -122,6 +122,11 @@ stats: {
     hey: {
         desktop-webmail: {
             "2020-06":"y"
+        }
+    },
+    mail-ru: {
+        desktop-webmail: {
+            "2020-10":"y"
         }
     }
 }

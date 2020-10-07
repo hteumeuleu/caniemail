@@ -129,6 +129,11 @@ stats: {
         desktop-webmail: {
             "2020-06":"n"
         }
+    },
+    mail-ru: {
+        desktop-webmail: {
+            "2020-10":"n #6"
+        }
     }
 }
 notes: ""
@@ -137,6 +142,7 @@ notes_by_num: {
   "2": "On submit name values are prefixed with `x_`.",
   "3": "Does not submit in preview pane, but does when the email is opened in a new window.",
   "4": "Not supported. `<form>` is transformed into `<noform>`.",
-  "5": "Not supported. The `<form>` and is entire content is removed."
+  "5": "Not supported. The `<form>` and is entire content is removed.",
+  "6": "Not supported. The `<form>` is there but values are not submitted."
 }
 ---

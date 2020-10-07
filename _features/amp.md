@@ -124,7 +124,7 @@ stats: {
   },
   mail-ru: {
       desktop-webmail: {
-          "2020-09":"y"
+          "2020-10":"y"
       }
   }
 }

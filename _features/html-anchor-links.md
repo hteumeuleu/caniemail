@@ -122,6 +122,11 @@ stats: {
         desktop-webmail: {
             "2020-06":"n"
         }
+    },
+    mail-ru: {
+        desktop-webmail: {
+            "2020-10":"y #7 #9"
+        }
     }
 }
 notes_by_num: {
@@ -132,6 +137,7 @@ notes_by_num: {
 	"5": "Buggy. Opens a new in-app browser window on yahoo.com with the anchor appended to the URL.",
 	"6": "Buggy. Targeted content is partially hidden by the application UI on top.",
 	"7": "Partial. Works when targeting an empty anchor with the corresponding `name` attribute, but not with `id` attributes.",
-	"8": "Not supported. Opens a new window with the same email."
+	"8": "Not supported. Opens a new window with the same email.",
+	"9": "The `name` and `href` attributes are prefixed by a specific `mailruanchor_` prefix."
 }
 ---

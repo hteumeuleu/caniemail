@@ -122,9 +122,14 @@ stats: {
         desktop-webmail: {
             "2020-06":"n"
         }
+    },
+    mail-ru: {
+        desktop-webmail: {
+            "2020-10":"n #1"
+        }
     }
 }
 notes_by_num: {
-    "1": "Buggy. `id` prefix mismatched."
+    "1": "Buggy. `id` prefix mismatched. The `id` value is prefixed but not the `aria-describedby` value."
 }
 ---
