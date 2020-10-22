@@ -25,6 +25,21 @@ tests/html-background.html
 A test should include variations of the feature tested to get the best possible understanding of the actual support. For example, if you test a CSS property, try to include a test in both an `inline` style and an embedded `<style>` element, and try different values for the property as well.
 
 A test should be easy to read. Use `red` and `green` background colors to easily get a glimpse of support or non support.
+Code of how to creat Test file:-
+Live Demo
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Using Image in Webpage</title>
+   </head>
+	
+   <body>
+      <p>Simple Image Insert</p>
+      <img src = "/html/images/test.png" alt = "Test Image" />
+   </body>
+	
+</html>
 
 3. **Test**. Please consider the two followings methods of testing:
 
