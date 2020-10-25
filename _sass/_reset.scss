@@ -20,6 +20,12 @@ a:focus {
 	outline-offset: rem(4px);
 }
 
+a:focus:not(:active) {
+	outline: rem(3px) solid #fff;
+	-moz-outline-radius: rem(4px);
+	outline-offset: rem(4px);
+}
+
 code {
 	line-height: 1;
 	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;

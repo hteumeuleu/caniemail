@@ -94,6 +94,12 @@
 		outline-offset: rem(4px);
 	}
 
+	&:focus:not(:active) {
+		outline: rem(3px) solid #fff;
+		-moz-outline-radius: rem(4px);
+		outline-offset: rem(4px);
+	}
+
 	&::-moz-focus-inner {
 		border: none;
 	}
