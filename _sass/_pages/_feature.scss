@@ -489,6 +489,10 @@
 	&.mitigated::before {
 		content: '~';
 	}
+
+	&.unknown {
+		opacity: 0;
+	}
 }
 
 .data-version-notes {
