@@ -3,9 +3,9 @@ title: "display:flex"
 description: ""
 category: css
 keywords: flexbox
-last_test_date: "2019-02-28"
-test_url: "/tests/css-box-model.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/pyPQFHSYLFrhbRShalju0B2fYNwUgLuyKTLx4MLqiw5mE/list"
+last_test_date: "2020-11-12"
+test_url: "/tests/css-flexbox.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/Kw9bvIPLsmmwVoXhbXpIu1FM31v4nV2KXMaEvPQPezSO9/list"
 stats: {
 	apple-mail: {
 		macos: {
@@ -20,10 +20,12 @@ stats: {
 			"2019-02": "y"
 		},
 		ios: {
-			"2019-02": "y"
+            "2019-02": "y",
+			"2020-11": "a #1"
 		},
 		android: {
-			"2019-02": "y"
+            "2019-02": "y",
+			"2020-11": "a #1"
 		},
         mobile-webmail: {
             "2020-02": "y"
@@ -58,32 +60,40 @@ stats: {
 			"2019-02": "y"
 		},
 		ios: {
-			"2019-02": "a #1"
+            "2019-02": "a",
+			"2020-11": "y"
 		},
 		android: {
-			"2019-02": "a #1"
+			"2019-02": "a",
+            "2020-11": "y"
 		}
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "n"
+			"2019-02": "n",
+            "2020-11": "y #2"
 		},
 		ios: {
-			"2019-02": "n"
+			"2019-02": "n",
+            "2020-11": "y #2"
 		},
 		android: {
-			"2019-02": "n"
+            "2019-02": "n",
+			"2020-11": "y #2"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "n"
+			"2019-02": "n",
+            "2020-11": "y #2"
 		},
 		ios: {
-			"2019-02": "n"
+			"2019-02": "n",
+            "2020-11": "y #2"
 		},
 		android: {
-			"2019-02": "n"
+			"2019-02": "n",
+            "2020-11": "y #2"
 		}
 	},
 	samsung-email: {
@@ -130,6 +140,7 @@ stats: {
     }
 }
 notes_by_num: {
-	"1": "Citation needed."
+	"1": "Not supported with non Gmail accounts.",
+    "2": "`display:inline-flex` is not supported."
 }
 ---
