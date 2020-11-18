@@ -7,6 +7,7 @@ body {
 .caniemail {
 	margin: auto;
 	width: 100%;
+	height: rem(432px);
 	flex-grow: 1;
 	border: rem(3px) solid $color-blue;
 	border-bottom: none;
@@ -149,16 +150,76 @@ body {
 }
 
 .data-family-name {
-	font-size: rem(14px);
-	min-height: rem(36px);
+	font-size: rem(12px);
+	line-height: 1.25;
+	min-height: rem(44px);
+	margin-bottom: rem(8px);
 }
 
 .data-client {
-	width: rem(88px);
+	width: rem(96px);
+}
+
+.data-versions-list {
+	&::before,
+	&::after {
+		content: none;
+	}
 }
 
 .data-version {
+	flex-direction: column;
+	font-size: rem(10px);
+	height: auto;
+	min-height: rem(36px);
+	padding: rem(4px) rem(8px);
+	line-height: 1.125;
+
+	&:last-child:not(:first-child) {
+		margin-top: rem(8px);
+	}
+
+	&:first-child:last-child {
+		margin-top: 0;
+	}
+
+	&:hover {
+		.data-version-platform {
+			display: none;
+		}
+
+		.data-version-number {
+			display: block;
+		}
+	}
+}
+
+.data-version-platform {
+	display: block;
+	margin-bottom: rem(2px);
+	font-size: rem(11px);
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.data-version-number {
 	font-size: rem(12px);
+	opacity: 0.85;
+	display: none;
+}
+
+.data-version-badge {
+	right: rem(-2px);
+	top: rem(-2px);
+	transform: scale(0.65);
+	transform-origin: right top;
 }
 
 // Alternate layout
@@ -172,7 +233,7 @@ body {
 }
 
 .alternate-data-details {
-	padding: 0 rem(16px) rem(14px);
+	padding: 0 rem(16px);
 	text-align: left;
 }
 
@@ -192,8 +253,8 @@ body {
 }
 
 .embed-tags-title {
-	margin: rem(8px) 0;
+	margin: rem(4px) 0;
 	color: #fff;
-	font-size: rem(20px);
+	font-size: rem(16px);
 	font-weight: 300;
 }

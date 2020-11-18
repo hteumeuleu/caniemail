@@ -73,60 +73,61 @@ permalink: /embed/
 							</span>
 						</h3>
 						<div class="data-client-list">
-							{% for platform in family-values %}
-								{% assign platform-key = platform | first %}
-								{% assign platform-values = platform | last %}
-								<div class="data-client data-client--{{ platform-key | slugify }}">
-									<h4 class="data-platform-name">
-										{% if family-page != nil and family-page != "" %}
-										<a href="https://www.caniemail.com/clients/{{family-key}}/#{{ platform-key | slugify }}" target="_blank" rel="noopener">
-										{% endif %}
-										{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
-										{% if family-page != nil and family-page != "" %}
-										</a>
-										{% endif %}
-									</h4>
-									<div class="data-versions-list">
-									{% assign platform-values-reversed = "" | split: '' %}
-									{% for version in platform-values reversed %}
-										{% assign platform-values-reversed = platform-values-reversed | push: version %}
-									{% endfor %}
-									{% for version in platform-values-reversed reversed limit:3 %}
-										{% assign version-key = version | first %}
-										{% assign version-values = version | last | split: ' ' | first %}
-										{% assign version-notes = version | last | split: ' ' | shift %}
-										{% case version-values %}
-											{% when 'y' %}
-												{% assign stat-class-name = 'supported' %}
-											{% when 'n' %}
-												{% assign stat-class-name = 'unsupported' %}
-											{% when 'a' %}
-												{% assign stat-class-name = 'mitigated' %}
-											{% when 'u' %}
-												{% assign stat-class-name = 'unknown' %}
-											{% else %}
-												{% assign stat-class-name = '' %}
-										{% endcase %}
-										<div class="data-version {{ stat-class-name }}">
-											<span class="data-version-number">{{ version-key }}</span>
-											{% if version-notes.size > 0  %}
-												<div class="data-version-notes">
-												{% assign version-notes-title-attribute = '' %}
-												{% for note-key in version-notes %}
+							<div class="data-client">
+								<div class="data-versions-list">
+									{% for platform in family-values %}
+										{% assign platform-key = platform | first %}
+										{% assign platform-values = platform | last %}
+											{% assign platform-values-reversed = "" | split: '' %}
+											{% for version in platform-values reversed %}
+												{% assign platform-values-reversed = platform-values-reversed | push: version %}
+											{% endfor %}
+											{% for version in platform-values-reversed reversed limit:1 %}
+												{% assign version-key = version | first %}
+												{% assign version-values = version | last | split: ' ' | first %}
+												{% assign version-notes = version | last | split: ' ' | shift %}
+												{% case version-values %}
+													{% when 'y' %}
+														{% assign stat-class-name = 'supported' %}
+													{% when 'n' %}
+														{% assign stat-class-name = 'unsupported' %}
+													{% when 'a' %}
+														{% assign stat-class-name = 'mitigated' %}
+													{% when 'u' %}
+														{% assign stat-class-name = 'unknown' %}
+													{% else %}
+														{% assign stat-class-name = '' %}
+												{% endcase %}
+												<div class="data-version {{ stat-class-name }}">
+													<span class="data-version-platform">
+														{% if family-page != nil and family-page != "" %}
+														<a href="https://www.caniemail.com/clients/{{family-key}}/#{{ platform-key | slugify }}" target="_blank" rel="noopener">
+														{% endif %}
+														{{ site.data.nicenames.platform[platform-key] | default: platform-key }}
+														{% if family-page != nil and family-page != "" %}
+														</a>
+														{% endif %}
+													</span>
+													<span class="data-version-number">{{ version-key }}</span>
+													<span class="data-version-badge {{ stat-class-name }}" aria-label="{{ site.data.nicenames.support[stat-class-name] }}"></span>
+													{% if version-notes.size > 0  %}
+														<div class="data-version-notes">
+														{% assign version-notes-title-attribute = '' %}
+														{% for note-key in version-notes %}
 
-													{% assign note-key-slug = note-key | slugify %}
-													{% assign note-key-display = note-key | append: ': ' %}
-													{% assign note-value-display = page.notes_by_num[note-key-slug] | markdownify | strip_html %}
-													{% assign version-notes-title-attribute = version-notes-title-attribute | append: note-key-display | append: note-value-display %}
-												{% endfor %}
-													<a href="https://www.caniemail.com/features/{{ page.slug | escape_once }}#{{ page.title | slugify }}-cite-note-1" target="_blank" title="{{ version-notes-title-attribute }}">?</a>
+															{% assign note-key-slug = note-key | slugify %}
+															{% assign note-key-display = note-key | append: ': ' %}
+															{% assign note-value-display = page.notes_by_num[note-key-slug] | markdownify | strip_html %}
+															{% assign version-notes-title-attribute = version-notes-title-attribute | append: note-key-display | append: note-value-display %}
+														{% endfor %}
+															<a href="https://www.caniemail.com/features/{{ page.slug | escape_once }}#{{ page.title | slugify }}-cite-note-1" target="_blank" title="{{ version-notes-title-attribute }}">?</a>
+														</div>
+													{% endif %}
 												</div>
-											{% endif %}
-										</div>
+											{% endfor %}
 									{% endfor %}
-									</div>
 								</div>
-							{% endfor %}
+							</div>
 						</div>
 					</div>
 					{% endfor %}
