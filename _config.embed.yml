@@ -22,7 +22,7 @@ plugins:
 sass:
   style: compressed
 
-exclude: ["_posts", "pages", "tests", "_js/api.json", "assets/js/features.json", "assets/js/compare.js", "assets/tests", "assets/images/posts", "Gemfile", "Gemfile.lock", "CONTRIBUTING.md", "LICENSE", "README.md", "CNAME"]
-include: ["_js"]
+exclude: [vendor, "_posts", "pages/clients.html", "pages/features.html", "pages/home.html", "pages/news.html", "pages/scoreboard.html", "pages/search.html", "pages/support.html", "pages/todo.html", "tests", "_js/api.json", "assets/js/features.json", "assets/js/compare.js", "assets/tests", "assets/images/posts", "Gemfile", "Gemfile.lock", "CONTRIBUTING.md", "LICENSE", "README.md", "CNAME"]
+include: ["_js", "pages/embed.html"]
 
 incremental: true

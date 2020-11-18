@@ -33,7 +33,7 @@ permalink: /:title/
 plugins:
   - jekyll-mentions
 
-exclude: ["Gemfile", "Gemfile.lock", "CONTRIBUTING.md", "LICENSE", "README.md"]
+exclude: [vendor, "pages/embed.html", "Gemfile", "Gemfile.lock", "CONTRIBUTING.md", "LICENSE", "README.md"]
 include: ["_js"]
 
 #incremental: true
