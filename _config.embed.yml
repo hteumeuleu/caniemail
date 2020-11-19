@@ -12,7 +12,7 @@ defaults:
       path: ""
       type: "features"
     values:
-      layout: "embed"
+      layout: "feature-embed"
 
 permalink: /trash/:title/
 
