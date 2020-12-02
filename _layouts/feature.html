@@ -156,6 +156,13 @@ layout: default
 			{% endif %}
 		</div>
 		{% endif %}
+		<div class="data-embed">
+			<h2 class="list-title">Embed</h2>
+			<div>
+				<p>Embed this page on your own website.</p>
+				<input onclick="if(navigator.clipboard) { await navigator.clipboard.writeText(this.value); }" type="text" class="embed-code" value='&lt;iframe src="https://embed.caniemail.com/{{ page.slug }}/" width="640" height="420" style="width:100%; max-width:640px; border:none;" loading="lazy"&gt;&lt;/iframe&gt;' />
+			</div>
+		</div>
 		<div class="data-contribute">
 			<h2 class="list-title">Know something we don't?</h2>
 			<p>

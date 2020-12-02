@@ -565,7 +565,8 @@
 		padding: rem(32px);
 	}
 
-	& > .data-notes {
+	& > .data-notes,
+	& > .data-embed {
 		border-bottom: 1px solid #3c3c3d;
 	}
 
@@ -582,9 +583,40 @@
 			border-right: 1px solid #3c3c3d;
 		}
 
-		& > .data-notes {
+		& > .data-notes,
+		& > .data-embed {
 			width: 100%;
 		}
+	}
+}
+
+/*
+ * Embed
+ */
+.embed-code {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: rem(40px);
+	width: rem(580px);
+	max-width: 100%;
+	padding: rem(4px);
+	color: #fff;
+	font-size: rem(16px);
+	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+	text-decoration: none;
+	text-align: left;
+	border-radius: rem(3px);
+	border: rem(1px) solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.2);
+	cursor: pointer;
+	outline: none;
+	resize: none;
+	overflow: hidden;
+	white-space: nowrap;
+
+	&:focus {
+		border-color: #fff;
 	}
 }
 
