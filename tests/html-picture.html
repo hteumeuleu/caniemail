@@ -11,5 +11,12 @@
 			<source srcset="https://i.imgur.com/JqqqI8g.png" media="(min-width: 641px)" />
 			<img src="https://i.imgur.com/pnUUCFQ.png" alt="" style="display:block; width:100%; height:auto;" />
 		</picture>
+
+		<h2>&lt;picture&gt; with prefers-color-scheme</h2>
+		<picture>
+			<source srcset="https://via.placeholder.com/640/000000/FFFF00?text=Dark+Mode" media="(prefers-color-scheme: dark)">
+			<source srcset="https://via.placeholder.com/640/FFFF00/000000?text=Light+Mode" media="(prefers-color-scheme: light)">
+			<img src="https://i.imgur.com/pnUUCFQ.png" alt="" style="display:block; width:100%; height:auto;" />
+		</picture>
 	</body>
 </html>
