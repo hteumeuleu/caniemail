@@ -83,7 +83,8 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "68.7":"y"
+            "68.7":"y",
+            "78.5":"n"
         }
     },
     aol: {

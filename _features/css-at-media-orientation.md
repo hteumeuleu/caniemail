@@ -86,7 +86,8 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "60.3":"y"
+            "60.3":"y",
+            "78.5":"n"
         }
     },
     yahoo: {
