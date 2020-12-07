@@ -25,13 +25,14 @@ class Generator {
 	}
 
 	updateEmbed() {
-		const feature = this.getSelectedFeature();
+		const featureSlug = this.getSelectedFeatureSlug();
+		const featureName = this.getSelectedFeatureName();
 		const type = this.getSelectedType();
 		let output;
 		if(type == "iframe") {
-			output = this.getIframeOutput(feature);
+			output = this.getIframeOutput(featureSlug, featureName);
 		} else if(type == "image") {
-			output = this.getImageOutput(feature);
+			output = this.getImageOutput(featureSlug, featureName);
 		}
 		const section = document.getElementById('embed-code-section');
 		const preview = document.getElementById('embed-code-preview');
@@ -57,9 +58,19 @@ class Generator {
 		}
 	}
 
-	getSelectedFeature() {
+	getSelectedFeatureSlug() {
 		const select = document.getElementById('field-slug');
 		const selectedValue = select.options[select.selectedIndex].value;
+		if(selectedValue && selectedValue != "") {
+			return selectedValue;
+		} else {
+			return false;
+		}
+	}
+
+	getSelectedFeatureName() {
+		const select = document.getElementById('field-slug');
+		const selectedValue = select.options[select.selectedIndex].innerHTML;
 		if(selectedValue && selectedValue != "") {
 			return selectedValue;
 		} else {
@@ -76,11 +87,11 @@ class Generator {
 		}
 	}
 
-	getIframeOutput(feature) {
-		return `<iframe src="https://embed.caniemail.com/${feature}/" width="640" height="420" style="width:100%; max-width:40rem; height:26.25rem; border:none;" loading="lazy"></iframe>`;
+	getIframeOutput(featureSlug, featureName) {
+		return `<iframe title="Can I email… ${featureName}" src="https://embed.caniemail.com/${featureSlug}/" width="640" height="420" style="width:100%; max-width:40rem; height:26.25rem; border:none;" loading="lazy"></iframe>`;
 	}
 
-	getImageOutput(feature) {
-		return `<a href="https://www.caniemail.com/features/${feature}/"><img src="https://screenshots.caniemail.com/${feature}.png" alt="" width="640" height="400" style="vertical-align:middle; border:0; max-width:100%; height:auto;" /></a>`;
+	getImageOutput(featureSlug, featureName) {
+		return `<a href="https://www.caniemail.com/features/${featureSlug}/"><img src="https://screenshots.caniemail.com/${featureSlug}.png" alt="Can I email… ${featureName}" width="640" height="400" style="vertical-align:middle; border:0; max-width:100%; height:auto;" /></a>`;
 	}
 }
