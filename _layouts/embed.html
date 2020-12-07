@@ -5,13 +5,14 @@ layout: null
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Can I email… {{ page.title | escape_once }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{%- if page.collection == 'features' -%}
+	<title>Can I email… {{ page.title | escape_once }}</title>
 	<link rel="stylesheet" href="{{ site.url }}/assets/css/embed.css" />
-	{%- if jekyll.environment == 'production' -%}
-	<link rel="shortcut icon" href="/assets/images/favicon.png" />
 	{%- else -%}
-	<link rel="shortcut icon" href="/assets/images/favicon-local.png" />
+	<title>{{ page.title | escape_once }}</title>
+	<link rel="shortcut icon" href="/assets/images/favicon.png" />
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/embed-home.css" />
 	{%- endif -%}
 </head>
 <body>

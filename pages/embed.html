@@ -1,11 +1,79 @@
 ---
-title: Support tables for HTML and CSS in emails
+title: The CanIEmail Embed
 layout: embed
 permalink: /
 ---
-<div class="homepage">
-	Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque, nam quae minima, atque dolorem officiis ullam, eligendi ducimus eaque, aspernatur. Illum ullam quasi expedita esse aperiam quaerat ab ad.
-</div>
-<div>
-	<iframe src="/css-display-flex/" width="640" height="400" style="width:100%; max-width:640px; border:none;" loading="lazy"></iframe>
-</div>
+<header>
+	<h1>The CanIEmail Embed</h1>
+	<div class="intro">
+		<p>
+			Embed up-to-date data from <a href="https://www.caniemail.com">caniemail.com</a>.
+		</p>
+	</div>
+	<div class="meta">
+		<p>
+			Made by <a href="https://twitter.com/HTeuMeuLeu">@HTeuMeuLeu</a>. Inspired by <a href="https://twitter.com/ireaderinokun">@IreAderinokun</a>’s <a href="https://caniuse.bitsofco.de/">CanIUse Embed</a>.
+		</p>
+	</div>
+</header>
+<section>
+	<h2>Examples</h2>
+	<p>
+		The CanIEmail embed can be used either as an <strong>interactive embed</strong> or as a <strong>live image</strong>. Each embed is hosted on Netlify and updated with every new commit to the <a href="https://www.github.com/hteumeuleu/caniemail">Can I email repository on GitHub</a>.
+	</p>
+	<h3>Interactive Embed</h3>
+	<p>
+		The interactive embed will show support for the feature in all the latest version of each email clients tested on Can I email. The interactive embed uses an <code>&lt;iframe&gt;</code>. It is built to be <strong>lightweight</strong> (less than 60&nbsp;Kb total, 15&nbsp;Kb gzipped), <strong>performant</strong> (only three HTTPS requests, with a <code>loading="lazy"</code> attribute on the <code>&lt;iframe&gt;</code> itself) and <strong>responsive</strong>.
+	</p>
+	<iframe src="/css-display-flex/" width="640" height="420" style="width:100%; max-width:40rem; border:none;" loading="lazy"></iframe>
+	<h3>Live Image</h3>
+	<p>
+		The live image embed will show a summary view of the support for the feature in the six first email clients families. It is ideal to embed Can I email data where iframes are not supported, like in Slack, in a reply on Stack Overflow or even in an HTML email. Each image should weight less than 40&nbsp;Kb.
+	</p>
+	<p>
+		<a href="https://www.caniemail.com/features/css-display-flex/"><img src="https://screenshots.caniemail.com/css-display-flex.png" alt="Support data for display:flex in CSS" width="640" height="400" style="vertical-align:middle; border:0; max-width:100%; height:auto;" /></a>
+	</p>
+</section>
+<section>
+	<h2>Create your Embed</h2>
+	<form action="/" method="get">
+		<div class="field">
+			<label for="field-slug">Select Feature</label>
+			<select id="field-slug" name="slug" required>
+				{% assign features-by-category = site.features | group_by:"category" %}
+				{% for category in features-by-category %}
+					<optgroup label="{{ site.data.nicenames.category[category.name] | default: category.name }}">
+						{% assign features = category.items %}
+						{% for feature in features %}
+							<option value="{{ feature.slug }}">{{ feature.title | escape_once }}</option>
+						{% endfor %}
+					</optgroup>
+				{% endfor %}
+			</select>
+		</div>
+		<div class="field">
+			<label for="field-type-iframe">Select Embed Type</label>
+			<div>
+				<input id="field-type-iframe" name="type" type="radio" value="iframe" checked />
+				<label for="field-type-iframe">Interactive Embed</label>
+			</div>
+			<div>
+				<input id="field-type-image" name="type" type="radio" value="image" />
+				<label for="field-type-image">Live Image</label>
+			</div>
+		</div>
+		<div>
+			<button id="embed-button" type="button" class="button">Generate</button>
+		</div>
+	</form>
+</section>
+<section id="embed-code-section" hidden>
+	<h2>Get the Embed Code</h2>
+	<textarea spellcheck="false" id="embed-code" class="embed-code"></textarea>
+	<div>
+		<button id="copy-button" type="button" class="button">Copy</button>
+	</div>
+	<h3>Preview</h3>
+	<div id="embed-code-preview"></div>
+</section>
+<script src="/assets/js/embed-home.js" defer></script>
