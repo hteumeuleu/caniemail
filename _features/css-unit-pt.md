@@ -1,8 +1,8 @@
 ---
-title: "px unit"
+title: "pt unit"
 description: "Support for points unit"
 category: css
-keywords: unit, px
+keywords: unit, pt
 last_test_date: "2020-02-25"
 test_url: "/tests/css-units.html"
 test_results_url: ""
