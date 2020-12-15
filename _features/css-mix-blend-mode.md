@@ -5,11 +5,11 @@ category: css
 keywords: mix-blend-mode,blend,filter
 last_test_date: "2020-11-12"
 test_url: "/tests/css-mix-blend-mode.html"
-test_results_url: "https://testi.at/proj/z5yI00Zt8eeC4BwiqwQF8OmhO"
+test_results_url: "https://app.emailonacid.com/app/acidtest/Yh6M44osu9gXxAcqLb2TBazoUxeQYOXHgdiEWg2wYbEhj/list"
 stats: {
 	apple-mail: {
 		macos: {
-            "11": "a #1",
+            "11": "y",
 			"12": "y",
 			"13": "y"
 		},
@@ -17,7 +17,7 @@ stats: {
 			"11": "y",
 			"12": "y",
 			"13": "y",
-			"14": "a #1"
+			"14": "y"
 		}
 	},
 	gmail: {
@@ -28,21 +28,21 @@ stats: {
 			"2020-12": "a #1"
 		},
 		android: {
-            "2020-12": "y"
+            "2020-12": "a #1"
 		},
         mobile-webmail: {
-            "2020-12": "u"
+            "2020-12": "n"
         }
 	},
     orange: {
         desktop-webmail: {
-            "2020-12":"n"
+            "2020-12":"y"
         },
         ios: {
-            "2020-12":"u"
+            "2020-12":"y"
         },
         android: {
-            "2020-12":"u"
+            "2020-12":"y"
         }
     },
 	outlook: {
@@ -74,7 +74,7 @@ stats: {
 			"2020-12": "n"
 		},
 		ios: {
-            "2020-12": "u"
+            "2020-12": "n"
 		},
 		android: {
 			"2020-12": "n"
@@ -85,10 +85,10 @@ stats: {
             "2020-12": "n"
 		},
 		ios: {
-            "2020-12": "u"
+            "2020-12": "n"
 		},
 		android: {
-            "2020-12": "u"
+            "2020-12": "n"
 		}
 	},
 	samsung-email: {
@@ -98,34 +98,34 @@ stats: {
 	},
     sfr: {
         desktop-webmail: {
-            "2020-12":"u"
+            "2020-12":"y"
         },
         ios: {
-            "2020-12":"u"
+            "2020-12":"y"
         },
         android: {
-            "2020-12":"u"
+            "2020-12":"y"
         }
     },
 	thunderbird: {
 		macos: {
-			"2020-12": "y"
+			"78.5": "y"
 		}
 	},
     protonmail: {
         desktop-webmail: {
-            "2020-12":"u"
+            "2020-12":"y"
         },
         ios: {
-            "2020-12":"u"
+            "2020-12":"y"
         },
         android: {
-            "2020-12":"u"
+            "2020-12":"y"
         }
     },
     hey: {
         desktop-webmail: {
-            "2020-12":"u"
+            "2020-12":"y"
         }
     },
     mail-ru: {
@@ -135,7 +135,7 @@ stats: {
     }
 }
 notes_by_num: {
-	"1": "Does not support the following values: hue, saturation, color, luminosity"
+    "1": "Partial. Not supported with Non Gmail Accounts."
 }
 links: {
     "Can I use: CSS property mix-blend-mode":"https://caniuse.com/mdn-css_properties_mix-blend-mode",
