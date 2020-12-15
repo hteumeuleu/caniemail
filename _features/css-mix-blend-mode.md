@@ -3,7 +3,7 @@ title: "mix-blend-mode"
 description: ""
 category: css
 keywords: mix-blend-mode,blend,filter
-last_test_date: "2020-11-12"
+last_test_date: "2020-12-12"
 test_url: "/tests/css-mix-blend-mode.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Yh6M44osu9gXxAcqLb2TBazoUxeQYOXHgdiEWg2wYbEhj/list"
 stats: {
