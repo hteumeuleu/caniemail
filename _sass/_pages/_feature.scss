@@ -29,7 +29,7 @@
 	font-weight: 300;
 	font-size: rem(20px);
 	text-decoration: none;
-	background-color: #0a84ff;
+	background-color: $color-blue;
 
 	&:focus,
 	&:hover {
@@ -291,7 +291,7 @@
 }
 
 .filter-button--active {
-	background-color: #0a84ff;
+	background-color: $color-blue;
 }
 
 /*
