@@ -132,6 +132,6 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. Does not support multiple values. The comma between two values is removed.",
-    "2": "Background images repetition can be used in VML with the `type="tile"` or `type="frame"` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/type-attribute--fill--vml)."
+    "2": "Background images repetition can be used in VML with the `type=\"tile\"` or `type=\"frame\"` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/type-attribute--fill--vml)."
 }
 ---
