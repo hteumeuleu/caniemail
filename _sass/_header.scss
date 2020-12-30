@@ -40,7 +40,7 @@
 	}
 
 	&.current {
-		background-color: #204e8a;
+		background-color: $color-blue-dark;
 	}
 
 	&:not(.current):focus,
