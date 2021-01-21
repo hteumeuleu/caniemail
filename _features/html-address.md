@@ -3,9 +3,9 @@ title: "address"
 description: ""
 category: html
 keywords: address
-last_test_date: "2020-01-17"
+last_test_date: "2021-01-17"
 test_url: "/tests/html-semantics.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/fel5GW8SquYS9SWxQHu5Z9s0IeTpLZcnf5ghDEqQFf5Je/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/uAHFDBWoBklNKrU9rSxERL50IkROvrLzZwLsnNWV5V2tn/list"
 stats: {
 	apple-mail: {
 		macos: {
