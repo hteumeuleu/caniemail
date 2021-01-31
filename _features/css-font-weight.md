@@ -36,13 +36,13 @@ stats: {
   },
   orange: {
     desktop-webmail: {
-      "2021-01":"a #1"
+      "2021-01":"y"
     },
     ios: {
-      "2021-01":"u"
+      "2021-01":"y"
     },
     android: {
-      "2021-01":"u"
+      "2021-01":"y"
     }
   },
   outlook: {
@@ -74,7 +74,7 @@ stats: {
       "2021-01": "a #1"
     },
     ios: {
-      "2021-01": "u"
+      "6.21.1": "a #1"
     },
     android: {
       "6.16.2.1525679": "a #1"
@@ -85,10 +85,10 @@ stats: {
       "2021-01": "a #1"
     },
     ios: {
-      "2021-01": "u"
+      "2021-01": "a #1"
     },
     android: {
-      "2021-01": "u"
+      "2021-01": "a #1"
     }
   },
   samsung-email: {
@@ -98,34 +98,34 @@ stats: {
   },
   sfr: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-01":"y"
     },
     ios: {
-      "2021-01":"u"
+      "2021-01":"y"
     },
     android: {
-      "2021-01":"u"
+      "2021-01":"y"
     }
   },
   thunderbird: {
     macos: {
-      "2021-01": "a #1"
+      "2021-01": "y"
     }
   },
   protonmail: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-01":"y"
     },
     ios: {
-      "2021-01":"u"
+      "2021-01":"y"
     },
     android: {
-      "2021-01":"u"
+      "2021-01":"y"
     }
   },
   hey: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-01":"y"
     }
   },
   mail-ru: {
@@ -135,7 +135,7 @@ stats: {
   }
 }
 notes_by_num: {
-  "1": "`<number>` values are not supported as per CSS Fonts Level 4 where any `<number>` value between 1 and 1000 (inclusive) is a valid value. Only the following numeric values are supported: 100, 200, 300, 400, 500, 600, 700, 800, and 900."
+  "1": "Partial support. `<number>` values are not supported as per CSS Fonts Level 4 where any `<number>` value between 1 and 1000 (inclusive) is a valid value. Only the following numeric values are supported: 100, 200, 300, 400, 500, 600, 700, 800, and 900."
 }
 links: {
   "Can I use: CSS property: font-weight":"https://caniuse.com/mdn-css_properties_font-weight",
