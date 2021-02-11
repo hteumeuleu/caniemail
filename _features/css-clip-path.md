@@ -95,7 +95,7 @@ stats: {
   },
   samsung-email: {
     android: {
-      "6.1.31.2": "n"
+      "6.1.31.2": "y"
     }
   },
   sfr: {
