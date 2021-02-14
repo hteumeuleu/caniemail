@@ -134,6 +134,6 @@ stats: {
 }
 notes_by_num: {
     "1": "Round corners can be used in VML with the `RoundRect` element. See [buttons.cm](https://buttons.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-roundrect-element).",
-    "2": "Partial support. Shorthand for setting 2-radius corners with `/` is not supported e.g. `border-radius: 27% 73% 70% 30% / 30% 34% 66% 70%;`."
+    "2": "Partial support. Shorthand for setting elliptical borders with the slash `/` notation is not supported e.g. `border-radius: 27% 73% 70% 30% / 30% 34% 66% 70%;`."
 }
 ---
