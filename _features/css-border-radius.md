@@ -1,11 +1,11 @@
 ---
 title: "border-radius"
-description: "This is the description of the `border-radius` property."
+description: "The `border-radius` CSS property rounds the corners of an element's outer border edge."
 category: css
 keywords: rounded corners
-last_test_date: "2019-08-02"
+last_test_date: "2021-02-14"
 test_url: "/tests/css-border-radius.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/s7xG53GxUPc0xlGlqZjpT6IFfFhBdBCbmPBGXYynzfZNo/list"
+test_results_url: "https://testi.at/proj/bXAsV8ZHPkOHVVzIqwfAMpHgvx"
 stats: {
     apple-mail: {
         macos: {
@@ -43,15 +43,15 @@ stats: {
     },
     outlook: {
         windows: {
-            "2003":"n",
-            "2007":"n",
-            "2010":"n",
-            "2013":"n",
-            "2016":"n",
-            "2019":"n"
+            "2003":"n #1",
+            "2007":"n #1",
+            "2010":"n #1",
+            "2013":"n #1",
+            "2016":"n #1",
+            "2019":"n #1"
         },
         windows-10-mail: {
-            "2020-01":"n"
+            "2020-01":"n #1"
         },
         macos: {
             "2011":"y",
@@ -69,7 +69,7 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"y"
+            "6.1.31.2":"y"
         }
     },
     sfr: {
@@ -101,13 +101,13 @@ stats: {
     },
     yahoo: {
         desktop-webmail: {
-            "2019-08":"y"
+            "2021-02":"a #2"
         },
         ios: {
             "2019-08":"y"
         },
         android: {
-            "2019-08":"y"
+            "6.18.2.1529859":"a #2"
         }
     },
     protonmail: {
@@ -133,6 +133,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Round corners can be used in VML with the `RoundRect` element. See [buttons.cm](https://buttons.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-roundrect-element)."
+    "1": "Round corners can be used in VML with the `RoundRect` element. See [buttons.cm](https://buttons.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-roundrect-element).",
+    "2": "Partial support. Shorthand for setting 2-radius corners with `/` is not supported e.g. `border-radius: 27% 73% 70% 30% / 30% 34% 66% 70%;`."
 }
 ---
