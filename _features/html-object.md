@@ -2,7 +2,7 @@
 title: "<object> element"
 category: html
 keywords: object,embed,video,image,pdf
-last_test_date: "2020-12-05"
+last_test_date: "2021-02-20"
 test_url: "/tests/html-object.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/IExyoVbvCeJfhRfY6W30e6k4MCsSprSAk58zyNlPlms39/list"
 stats: {
