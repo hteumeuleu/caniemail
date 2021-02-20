@@ -69,6 +69,24 @@
 	}
 }
 
+.footer-links {
+	@media only screen and (max-width: rem(859px)) {
+		li {
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
+		li:first-child {
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
+		a {
+			display: block;
+			padding: rem(12px) 0;
+			line-height: rem(24px);
+		}
+	}
+}
+
 // Accessible colors
 .a11y-colors {
 	min-width: rem(200px);

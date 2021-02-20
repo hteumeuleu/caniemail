@@ -45,7 +45,7 @@
 		&:checked + label::before {
 			content: '\2714\FE0E';
 			font-size: 0.85em;
-			color: #0a84ff;
+			color: $color-blue;
 			background-color: #fff;
 		}
 

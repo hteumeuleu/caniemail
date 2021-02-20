@@ -5,7 +5,7 @@
 	margin: rem(-16px) rem(-16px) rem(16px);
 	width: calc(100% + #{rem(32px)});
 	color: #fff;
-	background: #0a84ff;
+	background: $color-blue;
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	transition: transform ease-in-out 0.3s;
 
@@ -48,7 +48,7 @@
 		&:checked + label::before {
 			content: '\2714\FE0E';
 			font-size: 0.85em;
-			color: #0a84ff;
+			color: $color-blue;
 			background-color: #fff;
 		}
 

@@ -42,11 +42,11 @@ stats: {
     },
 	outlook: {
 		windows: {
-			"2007": "n",
-			"2010": "n",
-			"2013": "n",
-			"2016": "n",
-			"2019": "n"
+			"2007": "n #3",
+			"2010": "n #3",
+			"2013": "n #3",
+			"2016": "n #3",
+			"2019": "n #3"
 		},
 		windows-10-mail: {
 			"2019-02": "n"
@@ -132,6 +132,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts. But it can be used in the `background` shorthand property instead.",
-    "2": "Partial. Does not support multiple values. The comma between two values is removed."
+    "2": "Partial. Does not support multiple values. The comma between two values is removed.",
+    "3": "Background images size can be used in VML with the `size` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/size-attribute--fill--vml)."
 }
 ---

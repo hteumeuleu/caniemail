@@ -42,11 +42,11 @@ stats: {
     },
 	outlook: {
 		windows: {
-			"2007": "n",
-			"2010": "n",
-			"2013": "n",
-			"2016": "n",
-			"2019": "n"
+			"2007": "n #1",
+			"2010": "n #1",
+			"2013": "n #1",
+			"2016": "n #1",
+			"2019": "n #1"
 		},
 		windows-10-mail: {
 			"2019-02": "n"
@@ -129,5 +129,8 @@ stats: {
             "2020-10":"y"
         }
     }
+}
+notes_by_num: {
+    "1": "Background images origin can be used in VML with the `origin` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/origin-attribute--fill--vml)."
 }
 ---

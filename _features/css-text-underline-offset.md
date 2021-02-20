@@ -1,45 +1,42 @@
 ---
-title: "@media (prefers-color-scheme)"
-description: "This media query allows to theme for system light and dark mode."
+title: "text-underline-offset"
 category: css
-keywords: dark mode, light mode
-last_test_date: "2019-09-26"
-test_url: "/tests/css-media-prefers-color-scheme.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/CqQL3EUXh33sQ8Q6rOkJapoIjxfDz99BUpXGjtT2ErWdN/list"
+keywords: underline
+last_test_date: "2021-01-20"
+test_url: "/tests/css-text-decoration.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/Zo8XyakhcacSbta8lYvU5vSTAWnaTLi7XIcWtQ7B218Cj/list"
 stats: {
     apple-mail: {
         macos: {
-            "10.3":"n",
-            "12.4":"y"
+            "14.0":"y"
         },
         ios: {
-            "12.2":"n",
-			"13.0":"y"
+            "14.1":"y"
         }
     },
     gmail: {
         desktop-webmail: {
-            "2020-01":"n"
+            "2021-01":"n"
         },
         ios: {
-            "2020-01":"n"
+            "2021-01":"n"
         },
         android: {
-            "2020-01":"n"
+            "2021-01":"n"
         },
         mobile-webmail: {
-            "2020-02":"n"
+            "2021-01":"n"
         }
     },
     orange: {
         desktop-webmail: {
-            "2019-08":"y"
+            "2021-01":"y"
         },
         ios: {
-            "2020-01":"n"
+            "2021-01":"y"
         },
         android: {
-            "2020-01":"n"
+            "2021-01":"n"
         }
     },
     outlook: {
@@ -52,89 +49,89 @@ stats: {
             "2019":"n"
         },
         windows-10-mail: {
-            "2020-01":"n"
+            "2021-01":"n"
         },
         macos: {
-            "2019":"y"
+            "2016":"n",
+            "16.46":"y"
         },
         outlook-com: {
-            "2019-07":"y"
+            "2021-01":"n"
         },
         ios: {
-            "2020-01":"y"
+            "2021-01":"n"
         },
         android: {
-            "2020-01":"n"
+            "2021-01":"n"
         }
     },
     samsung-email: {
         android: {
-            "6.0":"n"
+            "7.0":"y"
         }
     },
     sfr: {
         desktop-webmail: {
-            "2019-08":"y"
+            "2021-01":"y"
         },
         ios: {
-            "2019-08":"n"
+            "2021-01":"y"
         },
         android: {
-            "2019-08":"n"
+            "2021-01":"n"
         }
     },
     thunderbird: {
         macos: {
-            "60.8":"n",
-            "68.4":"y",
-            "78.5":"n"
+            "78.6":"y"
         }
     },
     aol: {
         desktop-webmail: {
-            "2020-01":"n #1"
+            "2021-01":"n"
         },
         ios: {
-            "2020-01":"n #1"
+            "2021-01":"n"
         },
         android: {
-            "2020-01":"n #1"
+            "2021-01":"n"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2020-01":"n #1"
+            "2021-01":"n"
         },
         ios: {
-            "2020-01":"n #1"
+            "2021-01":"n"
         },
         android: {
-            "2020-01":"n #1"
+            "2021-01":"n"
         }
     },
     protonmail: {
         desktop-webmail: {
-            "2020-03":"n"
+            "2021-01":"y"
         },
         ios: {
-            "2020-03":"n"
+            "2021-01":"y"
         },
         android: {
-            "2020-03":"n"
+            "2021-01":"n"
         }
     },
     hey: {
         desktop-webmail: {
-            "2020-06":"y"
+            "2021-01":"y"
         }
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-10":"n"
+            "2021-01":"y"
         }
     }
 }
-notes_by_num: {
-    "1": "Not supported. `@media (prefers-color-scheme)` is transformed into `@media ( _filtered_a )`."
+links: {
+    "Can I use: text-underline-offset": "https://caniuse.com/#feat=text-underline-offset",
+    "MDN: text-underline-offset": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset"
 }
 ---

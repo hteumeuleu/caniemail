@@ -40,12 +40,12 @@
 	}
 
 	&.current {
-		background-color: #204e8a;
+		background-color: $color-blue-dark;
 	}
 
 	&:not(.current):focus,
 	&:not(.current):hover {
-		background-color: #0a84ff;
+		background-color: $color-blue;
 	}
 
 	@media only screen and (min-width: rem(801px)) {
@@ -115,7 +115,7 @@
 
 	&:focus,
 	&:hover {
-		color: #0a84ff;
+		color: $color-blue;
 		text-decoration: underline;
 	}
 

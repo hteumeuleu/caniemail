@@ -1,0 +1,115 @@
+---
+---
+@import "_functions";
+@import "_variables";
+
+@import "_reset";
+@import "_buttons";
+
+.caniemail {
+	max-width: rem(800px);
+	margin: rem(100px) auto;
+
+	a {
+		color: inherit;
+	}
+
+	h1, h2, h3, .intro {
+		color: #fff;
+	}
+
+	header {
+		margin-bottom: rem(40px);
+	}
+
+		h1 {
+			font-size: rem(40px);
+			margin-bottom: 0.5em;
+		}
+
+		.intro {
+			font-size: rem(24px);
+		}
+
+		.meta {
+			margin-top: rem(20px);
+		}
+
+	section {
+		margin-bottom: rem(40px);
+
+		h2 {
+			margin-bottom: 1em;
+			font-size: rem(24px);
+			border-bottom: 1px solid #b1b1b3;
+		}
+
+		h3 {
+			margin-top: 2em;
+			margin-bottom: 1em;
+		}
+
+		p {
+			margin-bottom: 1em;
+		}
+	}
+
+	.field {
+		margin-bottom: rem(16px);
+
+		& > label {
+			display: block;
+			color: #fff;
+			font-weight: bold;
+			margin-bottom: rem(4px);
+		}
+
+		select {
+			border: none;
+			border-radius: rem(4px);
+			padding-left: 0.5em;
+			height: rem(48px);
+			font-family: inherit;
+			font-size: inherit;
+			max-width: 100%;
+		}
+
+		input[type="radio"] {
+			width: rem(20px);
+			height: rem(20px);
+			vertical-align: middle;
+		}
+	}
+
+	.button {
+		min-width: rem(128px);
+	}
+
+	.embed-code {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: rem(104px);
+		width: rem(640px);
+		max-width: 100%;
+		padding: rem(4px);
+		margin: rem(8px) 0;
+		color: #fff;
+		font-size: rem(16px);
+		line-height: 1.5;
+		font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+		text-decoration: none;
+		text-align: left;
+		border-radius: rem(3px);
+		border: rem(1px) solid rgba(255, 255, 255, 0.2);
+		background: rgba(255, 255, 255, 0.2);
+		cursor: pointer;
+		outline: none;
+		resize: vertical;
+		overflow: hidden;
+
+		&:focus {
+			border-color: #fff;
+		}
+	}
+}

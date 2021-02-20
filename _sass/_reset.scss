@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+:root {
+	color-scheme: dark;
+}
+
 body {
 	padding: 0 1em;
 	min-width: rem(280px);

@@ -132,4 +132,7 @@ stats: {
         }
     }
 }
+notes_by_num: {
+    "1": "Round corners can be used in VML with the `RoundRect` element. See [buttons.cm](https://buttons.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-roundrect-element)."
+}
 ---
