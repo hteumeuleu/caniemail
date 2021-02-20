@@ -4,14 +4,14 @@ category: html
 keywords: object,embed,video,image,pdf
 last_test_date: "2020-12-05"
 test_url: "/tests/html-object.html"
-test_results_url: ""
+test_results_url: "https://app.emailonacid.com/app/acidtest/IExyoVbvCeJfhRfY6W30e6k4MCsSprSAk58zyNlPlms39/list"
 stats: {
     apple-mail: {
         macos: {
-            "12.4":"u"
+            "14.0":"a #1"
         },
         ios: {
-            "14.0":"a #1"
+            "14.4":"y"
         }
     },
     gmail: {
@@ -30,36 +30,35 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2020-10":"u"
+            "2020-10":"n #3"
         },
         ios: {
-            "2020-10":"u"
+            "2020-10":"n"
         },
         android: {
-            "2020-10":"u"
+            "2020-10":"n"
         }
     },
     outlook: {
         windows: {
-            "2003":"u",
-            "2007":"u",
-            "2010":"u",
+            "2007":"n",
+            "2010":"n",
             "2013":"n",
-            "2016":"u",
-            "2019":"u"
+            "2016":"n",
+            "2019":"n"
         },
         windows-10-mail: {
             "2020-10":"n"
         },
         macos: {
-            "2011":"u",
-            "2016":"u"
+            "2011":"a #1",
+            "2016":"a #1"
         },
         outlook-com: {
             "2020-10":"n"
         },
         ios: {
-            "2020-10":"u"
+            "2020-10":"n"
         },
         android: {
             "2020-10":"n"
@@ -72,29 +71,29 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2020-10":"u"
+            "2020-10":"n #3"
         },
         ios: {
-            "2020-10":"u"
+            "2020-10":"n"
         },
         android: {
-            "2020-10":"u"
+            "2020-10":"n"
         }
     },
     thunderbird: {
         macos: {
-            "78.4":"u"
+            "78.7":"a #2"
         }
     },
     aol: {
         desktop-webmail: {
-            "2020-10":"u"
+            "2021-02":"n"
         },
         ios: {
-            "2020-10":"u"
+            "2020-10":"n"
         },
         android: {
-            "2020-10":"u"
+            "2020-10":"n"
         }
     },
     yahoo: {
@@ -102,7 +101,7 @@ stats: {
             "2020-10":"n"
         },
         ios: {
-            "2020-10":"u"
+            "2020-10":"n"
         },
         android: {
             "2020-10":"n"
@@ -110,29 +109,30 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2020-10":"u"
+            "2020-10":"n"
         },
         ios: {
-            "2020-10":"u"
+            "2020-10":"n"
         },
         android: {
-            "2020-10":"u"
+            "2020-10":"n"
         }
     },
     hey: {
         desktop-webmail: {
-            "2020-10":"u"
+            "2020-10":"n"
         }
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-10":"u"
+            "2020-10":"n"
         }
     }
 }
 notes_by_num: {
-    "1": "A snapshot of the first PDF page is displayed instead of a PDF viewer",
-    "2": "Does not support PDF resources",
+    "1": "Partial support. Does not support Videos resources.",
+    "2": "Partial support. Does not support PDF resources.",
+    "3": "Not supported. `<object>` is turned into `<noobject>`."
 }
 links: {
     "Can I use: Object element":"https://caniuse.com/mdn-html_elements_object",
