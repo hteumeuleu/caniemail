@@ -3,7 +3,7 @@ title: "@media (prefers-reduce-motion)"
 description: ""
 category: css
 keywords: media,prefers-reduce-motion,animation
-last_test_date: "2020-12-26"
+last_test_date: "2021-02-20"
 test_url: "/tests/css-media-prefers-reduced-motion.html"
 test_results_url: "https://testi.at/proj/e3GT3l1CxqBUoE3u9keC4WLf5"
 stats: {
@@ -36,13 +36,13 @@ stats: {
 	},
 	orange: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2021-02": "y"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-02": "y"
 		},
 		android: {
-			"2020-12": "u"
+			"2021-02": "y"
 		}
 	},
 	outlook: {
@@ -74,7 +74,7 @@ stats: {
 			"2020-12": "n"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-02": "n"
 		},
 		android: {
 			"6.16.2.1519779": "n"
@@ -85,10 +85,10 @@ stats: {
 			"2020-12": "n"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-02": "n"
 		},
 		android: {
-			"2020-12": "u"
+			"2021-02": "n"
 		}
 	},
 	samsung-email: {
@@ -98,39 +98,39 @@ stats: {
 	},
 	sfr: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2021-02": "y"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-02": "n"
 		},
 		android: {
-			"2020-12": "u"
+			"2021-02": "n"
 		}
 	},
 	thunderbird: {
 		macos: {
-			"2020-12": "n"
+			"78.7": "n"
 		}
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2021-02": "n"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-02": "n"
 		},
 		android: {
-			"2020-12": "u"
+			"2021-02": "n"
 		}
 	},
 	hey: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2021-02": "y"
 		}
 	},
 	mail-ru: {
 		desktop-webmail: {
-			"2020-12": "n"
+			"2021-02": "n"
 		}
 	}
 }
