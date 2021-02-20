@@ -103,7 +103,7 @@
 
 	&:active,
 	&:focus {
-		background: rgba(255, 255, 255, 0.2);
+		background: $color-blue-dark;
 	}
 
 	&::-webkit-search-cancel-button {
@@ -112,7 +112,7 @@
 		width: rem(20px);
 		height: rem(20px);
 		border-radius: 50%;
-		background: rgba(255, 255, 255, 0.2);
+		background: $color-blue-dark;
 	}
 
 	&::placeholder {
@@ -123,7 +123,7 @@
 		margin-right: 0;
 		order: 1;
 		min-height: rem(36px);
-		background: rgba(255, 255, 255, 0.2);
+		background: $color-blue-dark;
 	}
 }
 
