@@ -208,6 +208,18 @@
 	background-color: #838383 !important;
 }
 
+.m,
+.mixed {
+	background-color: #4096ed !important;
+	background-image: repeating-linear-gradient(
+		45deg,
+		rgba(255,255,255,0),
+		rgba(255,255,255,0) 6px,
+		rgba(255,255,255,0.25) 6px,
+		rgba(255,255,255,0.25) 8px
+	);
+}
+
 // Accessible colors
 .accessible-colors-enabled {
 	.supported {
@@ -222,6 +234,10 @@
 	.mitigated {
 		color: #000;
 		background-color: #8090f9 !important;
+	}
+
+	.mixed {
+		background-color: #554800 !important;
 	}
 }
 

@@ -6,10 +6,12 @@
 {% assign support-scores-a = 0 %}
 {% assign support-scores-n = 0 %}
 {% assign support-scores-u = 0 %}
+{% assign support-scores-m = 0 %}
 {% assign support-scores-names-y = "" | split: '' %}
 {% assign support-scores-names-a = "" | split: '' %}
 {% assign support-scores-names-n = "" | split: '' %}
 {% assign support-scores-names-u = "" | split: '' %}
+{% assign support-scores-names-m = "" | split: '' %}
 {% for share-client in site.data.emailclientmarketshare.clients %}
 	{% comment %}
 		1. For each "client" in data.emailclientmarketshare.clients,
@@ -41,12 +43,12 @@
 				{% endcomment %}
 				{% if share-client-average-support == '' %}
 					{% assign share-client-average-support = support-version-values %}
-				{% elsif share-client-average-support == 'u' and support-version-values != 'u' %}
-					{% assign share-client-average-support = support-version-values %}
-				{% elsif share-client-average-support == 'y' and support-version-values != 'y' and support-version-values != 'u' %}
-					{% assign share-client-average-support = 'a' %}
-				{% elsif share-client-average-support == 'n' and support-version-values != 'n' and support-version-values != 'u' %}
-					{% assign share-client-average-support = 'a' %}
+				{% elsif support-version-values != 'u' %}
+					{% if share-client-average-support == 'u' %}
+						{% assign share-client-average-support = support-version-values %}
+					{% elsif share-client-average-support != support-version-values %}
+						{% assign share-client-average-support = 'm' %}
+					{% endif %}
 				{% endif %}
 			{% endif %}
 		{% endfor %}
@@ -61,6 +63,9 @@
 	{% elsif share-client-average-support == 'a' %}
 		{% assign support-scores-names-a = support-scores-names-a | push: share-client-name %}
 		{% assign support-scores-a = support-scores-a | plus: share-client-marketshare %}
+	{% elsif share-client-average-support == 'm' %}
+		{% assign support-scores-names-m = support-scores-names-m | push: share-client-name %}
+		{% assign support-scores-m = support-scores-m | plus: share-client-marketshare %}
 	{% elsif share-client-average-support == 'n' %}
 		{% assign support-scores-names-n = support-scores-names-n | push: share-client-name %}
 		{% assign support-scores-n = support-scores-n | plus: share-client-marketshare %}
@@ -69,7 +74,7 @@
 		{% assign support-scores-u = support-scores-u | plus: share-client-marketshare %}
 	{% endif %}
 {% endfor %}
-{% assign support-scores-u = 100 | minus: support-scores-y | minus: support-scores-a | minus: support-scores-n %}
+{% assign support-scores-u = 100 | minus: support-scores-y | minus: support-scores-a | minus: support-scores-m | minus: support-scores-n %}
 {% comment %}
 	6. We display the data.
 {% endcomment %}
@@ -85,6 +90,11 @@
 			{% assign support-scores-names-a-string = support-scores-names-a | join: ", " %}
 			{% assign support-scores-names-a-string = support-scores-a | append: '% ' | append: site.data.nicenames.support['mitigated'] | downcase | append: ' in ' | append: support-scores-names-a-string | append: "." %}
 			<div tabindex="0" title="{{ support-scores-names-a-string }}" role="group" style="width:{{ support-scores-a }}%;" class="mitigated"></div>
+		{% endif %}
+		{% if support-scores-m != 0 %}
+			{% assign support-scores-names-m-string = support-scores-names-m | join: ", " %}
+			{% assign support-scores-names-m-string = support-scores-m | append: '% ' | append: site.data.nicenames.support['mixed'] | downcase | append: ' in ' | append: support-scores-names-m-string | append: "." %}
+			<div tabindex="0" title="{{ support-scores-names-m-string }}" role="group" style="width:{{ support-scores-m }}%;" class="mixed"></div>
 		{% endif %}
 		{% if support-scores-n != 0 %}
 			{% assign support-scores-names-n-string = support-scores-names-n | join: ", " %}
