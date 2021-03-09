@@ -3,9 +3,9 @@ title: "align-items"
 description: ""
 category: css
 keywords: align,items,flexbox,grid
-last_test_date: "2020-12-26"
+last_test_date: "2021-03-09"
 test_url: "/tests/css-align-items.html"
-test_results_url: "https://testi.at/proj/ZlGcPZnfxlASABWiGn4t1xntZ"
+test_results_url: "https://app.emailonacid.com/app/acidtest/FvYneb1dhiR4we6rAOf4AC02oFa6ksA0sTWxbEjgmt6Mg/list"
 stats: {
 	apple-mail: {
 		macos: {
@@ -30,19 +30,19 @@ stats: {
 		android: {
 			"2020-12": "n"
 		},
-    mobile-webmail: {
+    	mobile-webmail: {
 			"2020-12": "n"
 		}
 	},
 	orange: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2021-03": "y"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-03": "y"
 		},
 		android: {
-			"2020-12": "u"
+			"2021-03": "y"
 		}
 	},
 	outlook: {
@@ -74,7 +74,7 @@ stats: {
 			"2020-12": "n"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-03": "n"
 		},
 		android: {
 			"6.16.2.1519779": "n"
@@ -85,10 +85,10 @@ stats: {
 			"2020-12": "n"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-03": "n"
 		},
 		android: {
-			"2020-12": "u"
+			"2021-03": "n"
 		}
 	},
 	samsung-email: {
@@ -98,13 +98,13 @@ stats: {
 	},
 	sfr: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2021-03": "y"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-03": "y"
 		},
 		android: {
-			"2020-12": "u"
+			"2021-03": "y"
 		}
 	},
 	thunderbird: {
@@ -114,18 +114,18 @@ stats: {
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2021-03": "y"
 		},
 		ios: {
-			"2020-12": "u"
+			"2021-03": "y"
 		},
 		android: {
-			"2020-12": "u"
+			"2021-03": "y"
 		}
 	},
 	hey: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2021-03": "y"
 		}
 	},
 	mail-ru: {
@@ -136,6 +136,7 @@ stats: {
 }
 notes_by_num: {}
 links: {
-  "MDN: align-items":"https://developer.mozilla.org/en-US/docs/Web/CSS/align-items"
+	"MDN: align-items":"https://developer.mozilla.org/en-US/docs/Web/CSS/align-items",
+	"Can I use: flexbox":"https://caniuse.com/flexbox"
 }
 ---
