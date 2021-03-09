@@ -3,9 +3,9 @@ title: "border-radius"
 description: "The `border-radius` CSS property rounds the corners of an element's outer border edge."
 category: css
 keywords: rounded corners
-last_test_date: "2021-02-14"
+last_test_date: "2021-03-09"
 test_url: "/tests/css-border-radius.html"
-test_results_url: "https://testi.at/proj/bXAsV8ZHPkOHVVzIqwfAMpHgvx"
+test_results_url: "https://app.emailonacid.com/app/acidtest/6baogXZwm2BzrRxpjQq0z7QrcfjJQjQa2sLYKhIJSg2sh/list"
 stats: {
     apple-mail: {
         macos: {
@@ -93,10 +93,10 @@ stats: {
             "2021-02":"a #2"
         },
         ios: {
-            "2020-01":"y"
+            "2021-03":"a #2"
         },
         android: {
-            "2020-01":"y"
+            "2021-03":"a #2"
         }
     },
     yahoo: {
@@ -104,7 +104,7 @@ stats: {
             "2021-02":"a #2"
         },
         ios: {
-            "2019-08":"y"
+            "2021-03":"a #2"
         },
         android: {
             "6.18.2.1529859":"a #2"
