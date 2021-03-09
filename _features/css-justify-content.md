@@ -3,13 +3,13 @@ title: "justify-content"
 description: ""
 category: css
 keywords: justify,align,flexbox,grid
-last_test_date: "2020-12-22"
+last_test_date: "2021-03-09"
 test_url: "/tests/css-justify-content.html"
-test_results_url: "https://testi.at/proj/RyGUM3PhNmGs160to7YI8L4"
+test_results_url: "https://app.emailonacid.com/app/acidtest/xzDNNDwodl8rMxtm0irAH2Y4XVYRhz2GOzStUxrTVFgog/list"
 stats: {
 	apple-mail: {
 		macos: {
-      "11": "y",
+			"11": "y",
 			"12": "y",
 			"13": "y"
 		},
@@ -28,23 +28,23 @@ stats: {
 			"2020-12": "n"
 		},
 		android: {
-      "2020-12": "n"
+			"2020-12": "n"
 		},
-    mobile-webmail: {
-      "2020-12": "n"
-    }
+		mobile-webmail: {
+			"2020-12": "n"
+		}
 	},
-    orange: {
-      desktop-webmail: {
-        "2020-12":"u"
-      },
-      ios: {
-        "2020-12":"u"
-      },
-      android: {
-        "2020-12":"u"
-      }
-    },
+	orange: {
+		desktop-webmail: {
+			"2021-03":"y"
+		},
+		ios: {
+			"2021-03":"y"
+		},
+		android: {
+			"2021-03":"y"
+		}
+	},
 	outlook: {
 		windows: {
 			"2007": "n",
@@ -66,7 +66,7 @@ stats: {
 			"2020-12": "n"
 		},
 		android: {
-      "2020-12": "n"
+			"2020-12": "n"
 		}
 	},
 	yahoo: {
@@ -74,7 +74,7 @@ stats: {
 			"2020-12": "n"
 		},
 		ios: {
-      "2020-12": "u"
+			"2021-03": "n"
 		},
 		android: {
 			"6.16.2.1519779": "n"
@@ -82,13 +82,13 @@ stats: {
 	},
 	aol: {
 		desktop-webmail: {
-      "2020-12": "n"
+			"2020-12": "n"
 		},
 		ios: {
-      "2020-12": "u"
+			"2021-03": "n"
 		},
 		android: {
-      "2020-12": "u"
+			"2021-03": "n"
 		}
 	},
 	samsung-email: {
@@ -96,46 +96,47 @@ stats: {
 			"6.1.31.2": "y"
 		}
 	},
-    sfr: {
-      desktop-webmail: {
-        "2020-12":"u"
-      },
-      ios: {
-        "2020-12":"u"
-      },
-      android: {
-        "2020-12":"u"
-      }
-    },
+	sfr: {
+		desktop-webmail: {
+			"2021-03":"y"
+		},
+		ios: {
+			"2021-03":"y"
+		},
+		android: {
+			"2021-03":"y"
+		}
+	},
 	thunderbird: {
 		macos: {
 			"2020-12": "y"
 		}
 	},
-    protonmail: {
-      desktop-webmail: {
-        "2020-12":"u"
-      },
-      ios: {
-        "2020-12":"u"
-      },
-      android: {
-        "2020-12":"u"
-      }
-    },
-    hey: {
-      desktop-webmail: {
-        "2020-12":"u"
-      }
-    },
-    mail-ru: {
-      desktop-webmail: {
-        "2020-12":"y"
-      }
-    }
+	protonmail: {
+		desktop-webmail: {
+			"2021-03":"y"
+		},
+		ios: {
+			"2021-03":"y"
+		},
+		android: {
+			"2021-03":"y"
+		}
+	},
+	hey: {
+		desktop-webmail: {
+			"2021-03":"y"
+		}
+	},
+	mail-ru: {
+		desktop-webmail: {
+			"2020-12":"y"
+		}
+	}
 }
 notes_by_num: {}
 links: {
-  "MDN: justify-content":"https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+	"MDN: justify-content":"https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content",
+	"Can I use: flexbox":"https://caniuse.com/flexbox"
 }
 ---
