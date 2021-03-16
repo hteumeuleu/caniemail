@@ -30,7 +30,8 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2020-05":"y"
+            "2020-05":"y",
+            "2021-03":"n #2"
         },
         ios: {
             "2020-05":"y"
@@ -133,7 +134,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Not supported with non Outlook accounts."
+    "1": "Not supported with non Outlook accounts.",
+    "2": "The pseudo-element is supported but the `content` property is not."
 }
 links: {
     "Can I use: CSS Generated content for pseudo-elements":"https://caniuse.com/#feat=css-gencontent",

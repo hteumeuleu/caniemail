@@ -32,7 +32,8 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2019-05":"a #2"
+            "2019-05":"a #2",
+            "2021-03":"n #7"
         },
         ios: {
             "2019-07":"y"
@@ -140,7 +141,8 @@ notes_by_num: {
     "3": "Buggy. Support depends on the version of IE installed.",
     "4": "Partial. The declaration is supported but distant fonts are ignored.",
     "5": "Buggy. Elements using a font declared with `@font-face` ignore the font stack and fall back to Times New Roman. Use `mso-generic-font-family` and `mso-font-alt` to control the fallback.",
-    "6": "Not supported. Roboto and Google Sans can be used, but only because they're embedded with the webmail's own styles."
+    "6": "Not supported. Roboto and Google Sans can be used, but only because they're embedded with the webmail's own styles.",
+    "7": "Not supported. The `@font-face` declaration is kept but the `src` property is removed."
 }
 links: {
     "Can I use: @font-face Web fonts":"https://www.caniuse.com/#feat=fontface",

@@ -31,7 +31,8 @@ stats: {
 	},
     orange: {
         desktop-webmail: {
-            "2019-08": "y"
+            "2019-08": "y",
+            "2021-03": "a #6"
         },
         ios: {
             "2019-08": "y"
@@ -135,6 +136,7 @@ notes_by_num: {
     "2": "Partial. Does not support the `/ value` shorthand for `background-size`. But it can be used in the `background-size` property instead.",
     "3": "Partial. Only `background-color` values are supported.",
     "4": "Partial. Images URL must be between quotes.",
-    "5": "Partial. Does not support multiple values. The entire property is removed if so."
+    "5": "Partial. Does not support multiple values. The entire property is removed if so.",
+    "6": "Partial. Does not support the `/ value` shorthand for `background-size`."
 }
 ---
