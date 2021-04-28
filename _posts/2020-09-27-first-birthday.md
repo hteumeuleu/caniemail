@@ -3,7 +3,7 @@ title:  "Caniemail's First Birthday 🎂"
 date: 2020-09-27
 ---
 
-[It’s been a year](http://localhost:4000/news/2019-09-09-introducing-caniemail/) since I officially unveiled Can I email. And while I missed the mark for a proper birthday party, I feel like this is a good opportunity to summarize what’s happened so far and where the project is heading.
+[It’s been a year](/news/2019-09-09-introducing-caniemail/) since I officially unveiled Can I email. And while I missed the mark for a proper birthday party, I feel like this is a good opportunity to summarize what’s happened so far and where the project is heading.
 
 In this first year, the site received over 44 000 visitors and generated more than 490 000 page views. 84% of visits happen on desktop.
 
