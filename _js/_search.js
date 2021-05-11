@@ -74,7 +74,7 @@ class Search {
 			this.removeResultsMessage();
 			this.removeResultsContainer();
 			this.results = [];
-			history.pushState({id:'search'}, 'search', `${this.origin}`);
+			history.replaceState({id:'search'}, 'search', `${this.origin}`);
 		}
 
 		if(this.data && this.term) {
@@ -257,7 +257,7 @@ class Search {
 	}
 
 	updateURL() {
-		history.pushState({id:'search'}, 'search', `${document.location.origin}/search/?s=${encodeURIComponent(this.term)}`);
+		history.replaceState({id:'search'}, 'search', `${document.location.origin}/search/?s=${encodeURIComponent(this.term)}`);
 	}
 
 	updateTitle() {
