@@ -3,7 +3,7 @@ title: "caption-side"
 description: "The `caption-side` CSS property puts the content of a table's `<caption>` on the specified side."
 category: css
 keywords: caption,table
-last_test_date: "2021-05-08"
+last_test_date: "2021-05-13"
 test_url: "/tests/css-caption-side.html"
 test_results_url: "https://testi.at/proj/JOOcrJZc0YcjDSZQRFP0OTlYXcw"
 stats: {
