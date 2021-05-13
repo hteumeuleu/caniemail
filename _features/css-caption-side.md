@@ -39,10 +39,10 @@ stats: {
 			"2021-05":"y"
 		},
 		ios: {
-			"2021-05":"u"
+			"2021-05":"y"
 		},
 		android: {
-			"2021-05":"u"
+			"2021-05":"y"
 		}
 	},
 	outlook: {
@@ -60,13 +60,13 @@ stats: {
 			"2021-05": "y"
 		},
 		outlook-com: {
-			"2021-05": "n"
+			"2021-05": "y"
 		},
 		ios: {
-			"2021-05": "n"
+			"2021-05": "y"
 		},
 		android: {
-			"2021-05": "n"
+			"2021-05": "y"
 		}
 	},
 	yahoo: {
@@ -74,10 +74,10 @@ stats: {
 			"2021-05": "y"
 		},
 		ios: {
-			"2021-05": "u"
+			"2021-05": "y"
 		},
 		android: {
-			"6.27.0.1549700": "y"
+			"6.27": "y"
 		}
 	},
 	aol: {
@@ -98,13 +98,13 @@ stats: {
 	},
 	sfr: {
 		desktop-webmail: {
-			"2021-05":"u"
+			"2021-05":"y"
 		},
 		ios: {
-			"2021-05":"u"
+			"2021-05":"y"
 		},
 		android: {
-			"2021-05":"u"
+			"2021-05":"y"
 		}
 	},
 	thunderbird: {
@@ -114,27 +114,29 @@ stats: {
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2021-05":"u"
+			"2021-05":"y"
 		},
 		ios: {
-			"2021-05":"u"
+			"2021-05":"y"
 		},
 		android: {
-			"2021-05":"u"
+			"2021-05":"y"
 		}
 	},
 	hey: {
 		desktop-webmail: {
-			"2021-05":"u"
+			"2021-05":"y #1"
 		}
 	},
 	mail-ru: {
 		desktop-webmail: {
-			"2021-05":"n"
+			"2021-05":"y #1"
 		}
 	}
 }
-notes_by_num: {}
+notes_by_num: {
+	"1": "The `caption-side` property in CSS is supported but the `<caption>` HTML element is not."
+}
 links: {
 	"MDN: The Table Caption element":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption",
 	"MDN: caption-side":"https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side"
