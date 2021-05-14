@@ -3,9 +3,9 @@ title: "AVIF image format"
 description: "A modern image format based on the AV1 video format."
 category: image
 keywords: image,img,AVIF
-last_test_date: "2021-01-30"
+last_test_date: "2021-05-14"
 test_url: "/tests/images.html"
-test_results_url: "https://testi.at/proj/OgBC8ofe6jCZqRCBb0TEPqclx"
+test_results_url: "https://app.emailonacid.com/app/acidtest/d69Dg0BGvV5zAiHI1fjKX6BDulsODM8eYdKO9QVxlNuUL/list"
 stats: {
   apple-mail: {
     macos: {
@@ -39,10 +39,10 @@ stats: {
       "2021-01":"y #1"
     },
     ios: {
-      "2021-01":"u"
+      "2021-01":"n"
     },
     android: {
-      "2021-01":"u"
+      "2021-05":"y"
     }
   },
   outlook: {
@@ -66,7 +66,7 @@ stats: {
       "2021-01": "n"
     },
     android: {
-      "4.2101.0": "n"
+      "4.2116.0": "y #1"
     }
   },
   yahoo: {
@@ -74,10 +74,10 @@ stats: {
       "2021-01": "y #1"
     },
     ios: {
-      "2021-01": "u"
+      "2021-01": "n"
     },
     android: {
-      "6.16.2.1519779": "n"
+      "6.27": "y #1"
     }
   },
   aol: {
@@ -85,10 +85,10 @@ stats: {
       "2021-01": "y #1"
     },
     ios: {
-      "2021-01": "u"
+      "2021-01": "n"
     },
     android: {
-      "2021-01": "u"
+      "2021-05": "y #1"
     }
   },
   samsung-email: {
@@ -98,34 +98,34 @@ stats: {
   },
   sfr: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-01":"y #1"
     },
     ios: {
-      "2021-01":"u"
+      "2021-01":"n"
     },
     android: {
-      "2021-01":"u"
+      "2021-05":"y #1"
     }
   },
   thunderbird: {
     macos: {
-      "2021-01": "n"
+      "78.10": "n"
     }
   },
   protonmail: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-01":"y #1"
     },
     ios: {
-      "2021-01":"u"
+      "2021-05":"n"
     },
     android: {
-      "2021-01":"u"
+      "2021-01":"y #1"
     }
   },
   hey: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-05":"n"
     }
   },
   mail-ru: {
@@ -135,7 +135,7 @@ stats: {
   }
 }
 notes_by_num: {
-  "1": "Webmail rendering depends on browser support."
+  "1": "Support depends on browser and operating system support."
 }
 links: {
   "Can I use: AVIF image format":"https://caniuse.com/avif",
