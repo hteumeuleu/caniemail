@@ -60,13 +60,16 @@ stats: {
             "2019":"n"
         },
         outlook-com: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2021-05":"n #4"
         },
         ios: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2021-05":"n #4"
         },
         android: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2021-05":"n #4"
         }
     },
     samsung-email: {
@@ -143,6 +146,7 @@ stats: {
 notes_by_num: {
     "1": "Does not play.",
     "2": "The `src` attribute is transformed into `proton-src`.",
-    "3": "The `<audio>` element is supported but can not be played."
+    "3": "The `<audio>` element is supported but can not be played.",
+    "4": "The `<audio>` element is supported, but the video can not play due to a strict Content Security Policy."
 }
 ---

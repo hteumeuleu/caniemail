@@ -58,13 +58,16 @@ stats: {
             "2016":"y"
         },
         outlook-com: {
-            "2019-09":"n #4"
+            "2019-09":"n #4",
+            "2021-05":"n #8"
         },
         ios: {
-            "2019-09":"n #4"
+            "2019-09":"n #4",
+            "2021-05":"n #8"
         },
         android: {
-            "2019-09":"n #4"
+            "2019-09":"n #4",
+            "2021-05":"n #8"
         }
     },
     samsung-email: {
@@ -139,7 +142,8 @@ notes_by_num: {
     "4": "`<video>`, `<source>` and `<track>` tags are stripped. The fallback content is shown instead.",
     "5": "Partial support. Requires the `controls` attribute to play.",
     "6": "Partial support. `autoplay` is not supported.",
-    "7": "The `<video>` element is supported and the `poster` image is visible, but the video can not play due to a strict Content Security Policy."
+    "7": "The `<video>` element is supported and the `poster` image is visible, but the video can not play due to a strict Content Security Policy.",
+    "8": "The `<video>` element is supported, but the video can not play due to a strict Content Security Policy."
 }
 links: {
     "Can I use: Video element":"https://caniuse.com/#feat=video",
