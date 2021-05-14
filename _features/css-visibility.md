@@ -30,7 +30,8 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2021-03":"a #2"
         },
         ios: {
             "2019-08":"a #1"
@@ -129,6 +130,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. `visibility:collapse` applied to a `<tr>` only hides content and does not \"remove\" it from layout."
+    "1": "Buggy. `visibility:collapse` applied to a `<tr>` only hides content and does not \"remove\" it from layout.",
+    "2": "Partially supported. `visibility:collapse` is not supported."
 }
 ---

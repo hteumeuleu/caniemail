@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>align-items CSS property</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+		h1,
+		h2 {
+			font-size: 16px;
+			font-family: monospace;
+		}
+
+		@media (prefers-reduced-motion: no-preference) {
+			.box {
+				background-color: blue !important;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.box {
+				background-color: green !important;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<h1>@media (prefers-reduced-motion)</h1>
+
+	<p>Red = Not supported. Green = supported (reduce). Blue = supported (no-preference).</p>
+
+	<h2>background-color</h2>
+	<div class="box" style="background-color:red; width:400px; height:200px; padding:20px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+
+	<hr>
+
+	<h2>&lt;picture&gt; element</h2>
+	<picture>
+		<source srcset="https://dummyimage.com/600x400/008000/fff.jpg&text=reduce" media="(prefers-reduced-motion: reduce)" />
+		<source srcset="https://dummyimage.com/600x400/0000ff/fff.jpg&text=no-preference" media="(prefers-reduced-motion: no-preference)" />
+		<img src="https://dummyimage.com/600x400/ff0000/fff.gif&text=default" style="display:block; max-width:100%;" />
+	</picture>
+</body>
+
+</html>

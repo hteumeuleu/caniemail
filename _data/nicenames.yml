@@ -33,6 +33,7 @@ support:
   mitigated: "Partially supported"
   unsupported: "Not supported"
   unknown: "Support unknown"
+  mixed: "Mixed support"
 category:
   html: "HTML"
   css: "CSS"

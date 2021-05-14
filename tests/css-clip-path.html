@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clip-path</title>
+</head>
+<body>
+  <img src="https://interactive-examples.mdn.mozilla.net/media/examples/balloon-small.jpg" width="150" style="clip-path: circle(40% at 50% 50%);">
+  <img src="https://interactive-examples.mdn.mozilla.net/media/examples/balloon-small.jpg" width="150" style="clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);">
+  <img src="https://interactive-examples.mdn.mozilla.net/media/examples/balloon-small.jpg" width="150" style="clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');">
+
+  <div style="margin-top:40px;">
+    <img src="https://interactive-examples.mdn.mozilla.net/media/examples/balloon-small.jpg" width="150" style="clip-path: url(#myClip);">
+  
+    <svg width="150" height="180">
+      <defs>
+          <clipPath id="myClip">
+              <rect x="0" y="0" stroke="#000000" stroke-miterlimit="10" width="10" height="80"/>
+              <rect x="30" y="30" stroke="#000000" stroke-miterlimit="10" width="55" height="60"/>
+          </clipPath>
+      </defs>
+    </svg>
+  </div>
+</body>
+</html>
