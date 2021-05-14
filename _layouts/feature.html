@@ -199,6 +199,8 @@ layout: default
 						{% assign test-results-url-provider = "" %}
 						{% if page.test_results_url contains "emailonacid.com"  %}
 							{% assign test-results-url-provider = "Email on Acid" %}
+						{% elsif page.test_results_url contains "testi.at" %}
+							{% assign test-results-url-provider = "Testi@" %}
 						{% elsif page.test_results_url contains "litmus.com" %}
 							{% assign test-results-url-provider = "Litmus" %}
 						{% endif %}

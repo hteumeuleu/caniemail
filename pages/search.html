@@ -18,7 +18,7 @@ permalink: /search/
 {% for category in features-by-category %}
 	<h2 class="list-title">{{ site.data.nicenames.category[category.name] | default: category.name }}</h2>
 	<ul class="list list--features">
-		{% assign features = category.items %}
+		{% assign features = category.items | sort:'id' %}
 		{% for feature in features %}
 			<li>
 				<a href="{{ feature.url }}">{{ feature.title | escape_once }}</a>

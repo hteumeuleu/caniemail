@@ -30,7 +30,8 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2020-05":"n"
+            "2020-05":"n",
+            "2021-03":"n #2"
         },
         ios: {
             "2020-05":"n"
@@ -133,7 +134,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Not supported with non Outlook accounts."
+    "1": "Not supported with non Outlook accounts.",
+    "2": "The pseudo-element is supported but `<input>` elements are not."
 }
 links: {
     "Can I use: ::placeholder":"https://caniuse.com/#feat=css-placeholder",

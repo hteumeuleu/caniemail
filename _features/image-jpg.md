@@ -2,7 +2,7 @@
 title: "JPG image format"
 description: "Support for JPG image format"
 category: image
-keywords: image, JPG
+keywords: image, JPG, jpeg
 last_test_date: "2020-02-06"
 test_url: "/tests/images.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidhagmt3Z53CjqbkMhorlvuM0Gz57/list"
@@ -91,7 +91,8 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2021-03":"y"
         },
         ios: {
             "2020-02":"y"

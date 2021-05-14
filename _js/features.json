@@ -3,7 +3,8 @@ layout: null
 permalink: /assets/js/features.json
 ---
 [
-	{% for feature in site.features %}
+	{% assign features = site.features | sort:'id' %}
+	{% for feature in features %}
 		{
 			"slug": {{ feature.slug | jsonify }},
 			"title": {{ feature.title | strip_newlines | remove_chars | escape_once | jsonify }},
