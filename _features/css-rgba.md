@@ -1,9 +1,9 @@
 ---
 title: "rgba()"
-description: "RGB functional notation with alpha-channel transparency value (rgba())"
+description: "RGB functional notation with alpha-channel transparency value (`rgba()`)"
 category: css
 keywords: rgb,rgba,color,alpha
-last_test_date: "2021-01-24"
+last_test_date: "2021-05-14"
 test_url: "/tests/css-colors.html"
 test_results_url: "https://testi.at/proj/w7XizGjCyAYCZgDFP1OSGekFm"
 stats: {
@@ -14,7 +14,7 @@ stats: {
       "13": "y"
     },
     ios: {
-      "11": "a #1",
+      "11": "y #1",
       "12": "y",
       "13": "y",
       "14": "y"
@@ -22,27 +22,27 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2021-01": "a #1"
+      "2021-01": "y #1"
     },
     ios: {
-      "2021-01": "a #1"
+      "2021-01": "y #1"
     },
     android: {
-      "2021-01": "a #1"
+      "2021-01": "y #1"
     },
     mobile-webmail: {
-      "2021-01": "a #1"
+      "2021-01": "y #1"
     }
   },
   orange: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-05":"n"
     },
     ios: {
-      "2021-01":"u"
+      "2021-01":"n"
     },
     android: {
-      "2021-01":"u"
+      "2021-01":"n"
     }
   },
   outlook: {
@@ -71,10 +71,10 @@ stats: {
   },
   yahoo: {
     desktop-webmail: {
-      "2021-01": "y"
+      "2021-01": "y #1"
     },
     ios: {
-      "2021-01": "u"
+      "2021-01": "y #1"
     },
     android: {
       "6.16.2.1519779": "y #1"
@@ -82,13 +82,13 @@ stats: {
   },
   aol: {
     desktop-webmail: {
-      "2021-01": "y"
+      "2021-05": "y #1"
     },
     ios: {
-      "2021-01": "u"
+      "2021-05": "y #1"
     },
     android: {
-      "2021-01": "u"
+      "2021-05": "y #1"
     }
   },
   samsung-email: {
@@ -98,44 +98,44 @@ stats: {
   },
   sfr: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-05":"y"
     },
     ios: {
-      "2021-01":"u"
+      "2021-05":"y"
     },
     android: {
-      "2021-01":"u"
+      "2021-05":"y"
     }
   },
   thunderbird: {
     macos: {
-      "78.5": "u"
+      "78.10": "y"
     }
   },
   protonmail: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-05":"y"
     },
     ios: {
-      "2021-01":"u"
+      "2021-05":"y"
     },
     android: {
-      "2021-01":"u"
+      "2021-05":"y"
     }
   },
   hey: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-05":"y"
     }
   },
   mail-ru: {
     desktop-webmail: {
-      "2021-01":"u"
+      "2021-05":"y"
     }
   }
 }
 notes_by_num: {
-  "1": "Whitespace syntax (e.g. rgb(0 128 0 / 1)) is not supported"
+  "1": "Whitespace syntax is not supported (`rgb(0 128 0 / 1)`)."
 }
 links: {
   "Can I use: Alpha color values (rgba(), hsla())":"https://caniuse.com/mdn-css_types_color_alpha",
