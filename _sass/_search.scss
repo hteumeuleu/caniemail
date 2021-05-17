@@ -81,6 +81,31 @@
 	grid-column: 2;
 	grid-row: 1;
 
+	&::before {
+		content: '';
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem(32px);
+		height: rem(32px);
+		position: absolute;
+		right: rem(32px);
+		top: 50%;
+		margin-top: rem(-16px);
+		font-size: rem(16px);
+		border-radius: 50%;
+		background-color: $color-blue;
+		transform: scale(0);
+		transition: transform ease 0.2s;
+
+		@media only screen and (max-width: rem(800px)) {
+			width: rem(24px);
+			height: rem(24px);
+			right: rem(16px);
+			margin-top: rem(-12px);
+		}
+	}
+
 	@media only screen and (max-width: rem(800px)) {
 		padding-left: rem(8px);
 		padding-right: rem(8px);
@@ -107,12 +132,7 @@
 	}
 
 	&::-webkit-search-cancel-button {
-		-webkit-appearance: none;
-		margin-right: rem(16px);
-		width: rem(20px);
-		height: rem(20px);
-		border-radius: 50%;
-		background: $color-blue-dark;
+		margin-right: rem(22px);
 	}
 
 	&::placeholder {
@@ -129,26 +149,18 @@
 
 .search--loading .search-input-container {
 	&::before {
-		content: '@';
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: rem(32px);
-		height: rem(32px);
-		position: absolute;
-		right: rem(16px);
-		top: 50%;
-		margin-top: rem(-16px);
-		font-size: rem(16px);
-		border-radius: 50%;
-		background: rgba(255, 255, 255, 0.2);
+		background-image: url(/assets/images/favicon.png);
+		background-size: cover;
+		transform: scale(1);
 		animation: spin linear 1s infinite;
+		transition-delay: 0.125s;
+		animation-delay: 0.125s;
 	}
 }
 
 @keyframes spin {
-	from { transform: rotate(0); }
-	to { transform: rotate(1turn); }
+	from { rotate: 0; }
+	to { rotate: 1turn; }
 }
 
 .search-empty {
