@@ -12,7 +12,7 @@ _Can I email_ runs on [Jekyll](https://jekyllrb.com/docs/) as [GitHub Pages](htt
 git clone https://github.com/hteumeuleu/caniemail.git
 ```
 
-See [Cloning a repository](https://help.github.com/en/articles/cloning-a-repository) on GitHub documentation. If you're not familiar with Git or GitHub, I strongly encourage you to try [GitHub's desktop app](https://desktop.github.com/) on macOS or Windows.
+See [Cloning a repository](https://help.github.com/en/articles/cloning-a-repository) on GitHub documentation. If you're not familiar with Git or GitHub, I strongly encourage you to try [GitHub's desktop app](https://desktop.github.com/) on macOS, Windows or Linux.
 
 2. **Install Jekyll**.
 
