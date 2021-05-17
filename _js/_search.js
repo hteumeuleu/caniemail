@@ -8,6 +8,8 @@ class Search {
 		this.input = document.querySelector('.search-input');
 		this.form = document.querySelector('.search');
 		this.origin = document.location.href;
+		this.timer = null;
+		this.timerDelay = 300;
 
 		if(this.input != null) {
 
@@ -17,16 +19,22 @@ class Search {
 
 			this.input.addEventListener('input', e => {
 
-				if(!this.data) {
-					this.loadJSONFile();
-				}
-
 				this.term = e.currentTarget.value.trim();
-				this.query();
+				this.form.classList.add('search--loading');
 
-				if(this.term) {
-					this.updateURL();
-				}
+				clearTimeout(this.timer);
+				this.timer = setTimeout(() => {
+					if(!this.data) {
+						this.loadJSONFile();
+					}
+	
+					this.query();
+	
+					if(this.term) {
+						this.updateURL();
+					}
+				}, this.timerDelay);
+
 			});
 
 			const url = new URL(document.location.href);
@@ -65,9 +73,9 @@ class Search {
 
 	query() {
 
-		if(!this.data) {
-			this.form.classList.add('search--loading');
-		}
+		//if(!this.data) {
+		//	this.form.classList.add('search--loading');
+		//}
 
 		if(!this.term) {
 			this.form.classList.remove('search--loading');
