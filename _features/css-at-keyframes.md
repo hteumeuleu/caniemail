@@ -122,7 +122,7 @@ stats: {
     },
     hey: {
         desktop-webmail: {
-            "2021-05":"u"
+            "2021-05":"y"
         }
     },
     mail-ru: {
