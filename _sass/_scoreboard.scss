@@ -23,8 +23,8 @@
 			}
 		}
 
-		&.not-enough-tests::before {
-			visibility: hidden;
+		&.not-enough-tests {
+			display: none;
 		}
 	}
 }
