@@ -1,6 +1,6 @@
 ---
 title: "Embedded <svg> image"
-description: "Support for embedded `<svg>` images for linked SVG images look for image SVG"
+description: "Support for embedded `<svg>` images. See [SVG html](/features/image-svg) for linked external SVG support."
 category: html
 keywords: image, SVG
 last_test_date: "2020-02-06"
