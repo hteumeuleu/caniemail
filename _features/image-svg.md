@@ -9,10 +9,13 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidha
 stats: {
     apple-mail: {
         macos: {
-            "13":"n"
+            "13":"n",
+			"14":"y"
         },
         ios: {
-            "13":"n"
+            "13":"n",
+			"14":"n",
+			"15":"y"
         }
     },
     gmail: {
