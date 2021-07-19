@@ -17,22 +17,18 @@
 {% for support-family in page.stats %}
 	{% assign support-family-key = support-family | first %}
 	{% assign support-family-values = page.stats[support-family-key] %}
-	{% assign support-client-name = site.data.nicenames.family[support-family-key] | default: support-family-key %}
+	{% assign support-family-name = site.data.nicenames.family[support-family-key] | default: support-family-key %}
+	{% assign support-family-scores-names-y = "" | split: '' %}
+	{% assign support-family-scores-names-a = "" | split: '' %}
+	{% assign support-family-scores-names-n = "" | split: '' %}
+	{% assign support-family-scores-names-u = "" | split: '' %}
 	{% comment %}
 		2. We loop through every platform listed for that family.
 	{% endcomment %}
 	{% for support-platform in support-family-values %}
 		{% assign support-platform-key = support-platform | first %}
 		{% assign support-platform-values = support-platform | last %}
-		{% if forloop.first == true %}
-			{% assign support-client-name = support-client-name | append: ' (' %}
-		{% else %}
-			{% assign support-client-name = support-client-name | append: ', ' %}
-		{% endif %}
-		{% assign support-client-name = support-client-name | append: site.data.nicenames.platform[support-platform-key] | default: client-platform %}
-		{% if forloop.last == true %}
-			{% assign support-client-name = support-client-name | append: ')' %}
-		{% endif %}
+		{% assign support-platform-name = site.data.nicenames.platform[support-platform-key] | default: support-platform-key %}
 		{% comment %}
 			3. We go for the last version listed for that specific email client.
 		{% endcomment %}
@@ -44,24 +40,55 @@
 					4. We assign the average value of the current "emailclientmarketshare" client to the corresponding array.
 				{% endcomment %}
 				{% if support-version-value == 'y' %}
-					{% assign support-scores-names-y = support-scores-names-y | push: support-client-name %}
+					{% assign support-family-scores-names-y = support-family-scores-names-y | push: support-platform-name %}
 					{% assign support-scores-y = support-scores-y | plus: 1 %}
 				{% elsif support-version-value == 'a' %}
-					{% assign support-scores-names-a = support-scores-names-a | push: support-client-name %}
+					{% assign support-family-scores-names-a = support-family-scores-names-a | push: support-platform-name %}
 					{% assign support-scores-a = support-scores-a | plus: 1 %}
 				{% elsif support-version-value == 'n' %}
-					{% assign support-scores-names-n = support-scores-names-n | push: support-client-name %}
+					{% assign support-family-scores-names-n = support-family-scores-names-n | push: support-platform-name %}
 					{% assign support-scores-n = support-scores-n | plus: 1 %}
 				{% elsif support-version-value == 'u' %}
-					{% assign support-scores-names-u = support-scores-names-u | push: support-client-name %}
+					{% assign support-family-scores-names-u = support-family-scores-names-u | push: support-platform-name %}
 					{% assign support-scores-u = support-scores-u | plus: 1 %}
 				{% endif %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
+	{% comment %}
+		5. We generate the text label for that family support.
+	{% endcomment %}
+	{% if support-family-scores-names-y.size > 0 %}
+		{% assign support-family-scores-string = support-family-scores-names-y | join: ', ' %}
+		{% assign support-family-scores-string = support-family-scores-string | prepend: ' (' %}
+		{% assign support-family-scores-string = support-family-scores-string | prepend: support-family-name %}
+		{% assign support-family-scores-string = support-family-scores-string | append: ')' %}
+		{% assign support-scores-names-y = support-scores-names-y | push: support-family-scores-string %}
+	{% endif %}
+	{% if support-family-scores-names-a.size > 0 %}
+		{% assign support-family-scores-string = support-family-scores-names-a | join: ', ' %}
+		{% assign support-family-scores-string = support-family-scores-string | prepend: ' (' %}
+		{% assign support-family-scores-string = support-family-scores-string | prepend: support-family-name %}
+		{% assign support-family-scores-string = support-family-scores-string | append: ')' %}
+		{% assign support-scores-names-a = support-scores-names-a | push: support-family-scores-string %}
+	{% endif %}
+	{% if support-family-scores-names-n.size > 0 %}
+		{% assign support-family-scores-string = support-family-scores-names-n | join: ', ' %}
+		{% assign support-family-scores-string = support-family-scores-string | prepend: ' (' %}
+		{% assign support-family-scores-string = support-family-scores-string | prepend: support-family-name %}
+		{% assign support-family-scores-string = support-family-scores-string | append: ')' %}
+		{% assign support-scores-names-n = support-scores-names-n | push: support-family-scores-string %}
+	{% endif %}
+	{% if support-family-scores-names-u.size > 0 %}
+		{% assign support-family-scores-string = support-family-scores-names-u | join: ', ' %}
+		{% assign support-family-scores-string = support-family-scores-string | prepend: ' (' %}
+		{% assign support-family-scores-string = support-family-scores-string | prepend: support-family-name %}
+		{% assign support-family-scores-string = support-family-scores-string | append: ')' %}
+		{% assign support-scores-names-u = support-scores-names-u | push: support-family-scores-string %}
+	{% endif %}
 {% endfor %}
 {% comment %}
-	5. We calculate the share in percentage of each support.
+	6. We calculate the share in percentage of each support.
 {% endcomment %}
 {% assign support-number-of-clients = support-scores-y | plus: support-scores-a | plus: support-scores-n | plus: support-scores-u %}
 {% if support-scores-y != 0 %}
