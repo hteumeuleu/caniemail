@@ -66,7 +66,7 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.1":"y"
         }
     },
     sfr: {
