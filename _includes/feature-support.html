@@ -11,23 +11,37 @@
 {% assign support-scores-names-n = "" | split: '' %}
 {% assign support-scores-names-u = "" | split: '' %}
 
+{% comment %}
+	1. We loop through every email client family of the current feature page.
+{% endcomment %}
 {% for support-family in page.stats %}
 	{% assign support-family-key = support-family | first %}
 	{% assign support-family-values = page.stats[support-family-key] %}
-
+	{% assign support-client-name = site.data.nicenames.family[support-family-key] | default: support-family-key %}
+	{% comment %}
+		2. We loop through every platform listed for that family.
+	{% endcomment %}
 	{% for support-platform in support-family-values %}
 		{% assign support-platform-key = support-platform | first %}
 		{% assign support-platform-values = support-platform | last %}
-		{% assign support-client-name = site.data.nicenames.family[support-family-key] | default: support-family-key %}
-		{% assign support-client-name = support-client-name | append: '(' %}
-		{% assign support-client-name = support-client-name | append: ')' %}
-		{% assign support-client-name = support-client-name | append: site.data.nicenames.platform[client-platform] | default: client-platform %}
+		{% if forloop.first == true %}
+			{% assign support-client-name = support-client-name | append: ' (' %}
+		{% else %}
+			{% assign support-client-name = support-client-name | append: ', ' %}
+		{% endif %}
+		{% assign support-client-name = support-client-name | append: site.data.nicenames.platform[support-platform-key] | default: client-platform %}
+		{% if forloop.last == true %}
+			{% assign support-client-name = support-client-name | append: ')' %}
+		{% endif %}
+		{% comment %}
+			3. We go for the last version listed for that specific email client.
+		{% endcomment %}
 		{% for support-version in support-platform-values %}
 			{% if forloop.last == true %}
 				{% assign support-version-key = support-version | first %}
 				{% assign support-version-value = support-version | last | split: ' ' | first %}
 				{% comment %}
-					x. We assign the average value of the current "emailclientmarketshare" client to the corresponding array.
+					4. We assign the average value of the current "emailclientmarketshare" client to the corresponding array.
 				{% endcomment %}
 				{% if support-version-value == 'y' %}
 					{% assign support-scores-names-y = support-scores-names-y | push: support-client-name %}
@@ -46,16 +60,27 @@
 		{% endfor %}
 	{% endfor %}
 {% endfor %}
+{% comment %}
+	5. We calculate the share in percentage of each support.
+{% endcomment %}
 {% assign support-number-of-clients = support-scores-y | plus: support-scores-a | plus: support-scores-n | plus: support-scores-u %}
-{% assign support-scores-y = support-scores-y | times: 100 | divided_by: support-number-of-clients | round: 2 %}
-{% assign support-scores-a = support-scores-a | times: 100 | divided_by: support-number-of-clients | round: 2 %}
-{% assign support-scores-n = support-scores-n | times: 100 | divided_by: support-number-of-clients | round: 2 %}
-{% assign support-scores-u = 100 | minus: support-scores-y | minus: support-scores-a | minus: support-scores-n | round: 2 %}
+{% if support-scores-y != 0 %}
+	{% assign support-scores-y = support-scores-y | times: 100.0 | divided_by: support-number-of-clients | round: 2 %}
+{% endif %}
+{% if support-scores-a != 0 %}
+	{% assign support-scores-a = support-scores-a | times: 100.0 | divided_by: support-number-of-clients | round: 2 %}
+{% endif %}
+{% if support-scores-n != 0 %}
+	{% assign support-scores-n = support-scores-n | times: 100.0 | divided_by: support-number-of-clients | round: 2 %}
+{% endif %}
+{% if support-scores-u != 0 %}
+	{% assign support-scores-u = 100.0 | minus: support-scores-y | minus: support-scores-a | minus: support-scores-n | round: 2 %}
+{% endif %}
 {% comment %}
 	6. We display the data.
 {% endcomment %}
 <div class="feature-support">
-	<p class="feature-support-title">Estimated support <a href="/support/">About</a></p>
+	<p class="feature-support-title">Estimated Support <a href="/support/">About</a></p>
 	<div class="score">
 		{% if support-scores-y != 0 %}
 			{% assign support-scores-names-y-string = support-scores-names-y | join: ", " %}
@@ -74,7 +99,7 @@
 		{% endif %}
 		{% if support-scores-u != 0 %}
 			{% assign support-scores-names-u-string = support-scores-names-u | join: ", " %}
-			{% assign support-scores-names-u-string = support-scores-u | append: '% ' | append: site.data.nicenames.support['unknown'] | downcase | append: ' in ' | append: support-scores-names-u-string | append: " and others." %}
+			{% assign support-scores-names-u-string = support-scores-u | append: '% ' | append: site.data.nicenames.support['unknown'] | downcase | append: ' in ' | append: support-scores-names-u-string | append: "." %}
 			<div tabindex="0" title="{{ support-scores-names-u-string }}" role="group" class="unknown"></div>
 		{% endif %}
 	</div>
