@@ -129,6 +129,11 @@ stats: {
         desktop-webmail: {
             "2020-10":"n"
         }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-07": "y"
+        }
     }
 }
 notes_by_num: {

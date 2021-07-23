@@ -128,6 +128,11 @@ stats: {
         desktop-webmail: {
             "2021-05":"n"
         }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-07": "y"
+        }
     }
 }
 links: {

@@ -128,7 +128,12 @@ stats: {
         desktop-webmail: {
             "2020-10":"y"
         }
-    }
+    },
+	fastmail: {
+		desktop-webmail: {
+			"2021-07": "y"
+		}
+	}
 }
 notes_by_num: {
     "1": "Partial. Big negative values are rendered differently from CSS standards.",

@@ -141,12 +141,18 @@ stats: {
         desktop-webmail: {
             "2020-10":"n"
         }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-07": "n #5"
+        }
     }
 }
 notes_by_num: {
     "1": "Does not play.",
     "2": "The `src` attribute is transformed into `proton-src`.",
     "3": "The `<audio>` element is supported but can not be played.",
-    "4": "The `<audio>` element is supported, but the video can not play due to a strict Content Security Policy."
+    "4": "The `<audio>` element is supported, but the video can not play due to a strict Content Security Policy.",
+    "5": "Not supported. The `<audio>` element and all its content is removed."
 }
 ---

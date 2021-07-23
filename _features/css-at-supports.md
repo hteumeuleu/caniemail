@@ -130,10 +130,16 @@ stats: {
         desktop-webmail: {
             "2020-10":"n"
         }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-07": "n #2"
+        }
     }
 }
 notes_by_num: {
-    "1": "Properties not supported by the client are replaced by `_filtered_a` inside the parenthesis."
+    "1": "Properties not supported by the client are replaced by `_filtered_a` inside the parenthesis.",
+    "2": "Not supported. `@supports` is transformed into `@media not all`."
 }
 links: {
     "Can I use: @supports":"https://caniuse.com/#feat=css-featurequeries",

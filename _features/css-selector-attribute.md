@@ -128,6 +128,11 @@ stats: {
         desktop-webmail: {
             "2020-10":"a #4"
         }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-07": "y"
+        }
     }
 }
 notes: "This page reflects support for different syntaxes: `[attr]`, `[attr=\"value\"]`, `[attr~=\"value\"]`, `[attr|=\"value\"]`, `[attr^=\"value\"]`, `[attr$=\"value\"]`, `[attr*=\"value\"]`."

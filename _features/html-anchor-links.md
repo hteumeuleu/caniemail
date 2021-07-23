@@ -128,7 +128,12 @@ stats: {
         desktop-webmail: {
             "2020-10":"y #7 #9"
         }
-    }
+    },
+	fastmail: {
+		desktop-webmail: {
+			"2021-07": "y"
+		}
+	}
 }
 notes_by_num: {
 	"1": "Buggy. `target=_blank` is added on links so anchors open in a new window.",
