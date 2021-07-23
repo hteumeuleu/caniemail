@@ -13,6 +13,7 @@ family:
   protonmail: "ProtonMail"
   hey: "HEY"
   mail-ru: "Mail.ru"
+  fastmail: "Fastmail"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"

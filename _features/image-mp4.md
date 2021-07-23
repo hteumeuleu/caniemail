@@ -131,6 +131,11 @@ stats: {
         desktop-webmail: {
             "2021-05":"n"
         }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-07": "n"
+        }
     }
 }
 notes: "As of may 2021, using Video as Image Assets is only supported in WebKit and Safari."

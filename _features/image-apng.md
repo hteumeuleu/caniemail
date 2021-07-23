@@ -131,6 +131,11 @@ stats: {
         desktop-webmail: {
             "2020-10":"y"
         }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-07": "y"
+        }
     }
 }
 notes: "In all cases where the Animated PNG fails, it will fallback to show the first frame of the animation."

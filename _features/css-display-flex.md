@@ -138,7 +138,12 @@ stats: {
         desktop-webmail: {
             "2020-10":"y"
         }
-    }
+    },
+	fastmail: {
+		desktop-webmail: {
+			"2021-07": "y"
+		}
+	}
 }
 notes_by_num: {
 	"1": "Not supported with non Gmail accounts.",

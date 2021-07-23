@@ -133,11 +133,18 @@ stats: {
 		desktop-webmail: {
 			"2021-02": "n"
 		}
+	},
+	fastmail: {
+		desktop-webmail: {
+			"2021-07": "n #1"
+		}
 	}
 }
-notes_by_num: {}
+notes_by_num: {
+    "1": "Not supported. `@media (prefers-reduced-motion:reduce)` is transformed into `@media none`."
+}
 links: {
 	"Can I use: prefers-reduced-motion":"https://caniuse.com/prefers-reduced-motion",
-  "MDN: prefers-reduced-motion":"https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+	"MDN: prefers-reduced-motion":"https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
 }
 ---

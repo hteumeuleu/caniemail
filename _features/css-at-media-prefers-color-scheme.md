@@ -133,9 +133,15 @@ stats: {
         desktop-webmail: {
             "2020-10":"n"
         }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-07": "n #2"
+        }
     }
 }
 notes_by_num: {
-    "1": "Not supported. `@media (prefers-color-scheme)` is transformed into `@media ( _filtered_a )`."
+    "1": "Not supported. `@media (prefers-color-scheme)` is transformed into `@media ( _filtered_a )`.",
+    "2": "Not supported. `@media (prefers-color-scheme:dark)` is transformed into `@media none`."
 }
 ---
