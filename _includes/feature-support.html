@@ -18,10 +18,6 @@
 	{% assign support-family-key = support-family | first %}
 	{% assign support-family-values = page.stats[support-family-key] %}
 	{% assign support-family-name = site.data.nicenames.family[support-family-key] | default: support-family-key %}
-	{% assign support-family-scores-names-y = "" | split: '' %}
-	{% assign support-family-scores-names-a = "" | split: '' %}
-	{% assign support-family-scores-names-n = "" | split: '' %}
-	{% assign support-family-scores-names-u = "" | split: '' %}
 	{% comment %}
 		2. We loop through every platform listed for that family.
 	{% endcomment %}
@@ -37,58 +33,23 @@
 				{% assign support-version-key = support-version | first %}
 				{% assign support-version-value = support-version | last | split: ' ' | first %}
 				{% comment %}
-					4. We assign the average value of the current "emailclientmarketshare" client to the corresponding array.
+					4. We increment the overall support share.
 				{% endcomment %}
 				{% if support-version-value == 'y' %}
-					{% assign support-family-scores-names-y = support-family-scores-names-y | push: support-platform-name %}
 					{% assign support-scores-y = support-scores-y | plus: 1 %}
 				{% elsif support-version-value == 'a' %}
-					{% assign support-family-scores-names-a = support-family-scores-names-a | push: support-platform-name %}
 					{% assign support-scores-a = support-scores-a | plus: 1 %}
 				{% elsif support-version-value == 'n' %}
-					{% assign support-family-scores-names-n = support-family-scores-names-n | push: support-platform-name %}
 					{% assign support-scores-n = support-scores-n | plus: 1 %}
 				{% elsif support-version-value == 'u' %}
-					{% assign support-family-scores-names-u = support-family-scores-names-u | push: support-platform-name %}
 					{% assign support-scores-u = support-scores-u | plus: 1 %}
 				{% endif %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
-	{% comment %}
-		5. We generate the text label for that family support.
-	{% endcomment %}
-	{% if support-family-scores-names-y.size > 0 %}
-		{% assign support-family-scores-string = support-family-scores-names-y | join: ', ' %}
-		{% assign support-family-scores-string = support-family-scores-string | prepend: ' (' %}
-		{% assign support-family-scores-string = support-family-scores-string | prepend: support-family-name %}
-		{% assign support-family-scores-string = support-family-scores-string | append: ')' %}
-		{% assign support-scores-names-y = support-scores-names-y | push: support-family-scores-string %}
-	{% endif %}
-	{% if support-family-scores-names-a.size > 0 %}
-		{% assign support-family-scores-string = support-family-scores-names-a | join: ', ' %}
-		{% assign support-family-scores-string = support-family-scores-string | prepend: ' (' %}
-		{% assign support-family-scores-string = support-family-scores-string | prepend: support-family-name %}
-		{% assign support-family-scores-string = support-family-scores-string | append: ')' %}
-		{% assign support-scores-names-a = support-scores-names-a | push: support-family-scores-string %}
-	{% endif %}
-	{% if support-family-scores-names-n.size > 0 %}
-		{% assign support-family-scores-string = support-family-scores-names-n | join: ', ' %}
-		{% assign support-family-scores-string = support-family-scores-string | prepend: ' (' %}
-		{% assign support-family-scores-string = support-family-scores-string | prepend: support-family-name %}
-		{% assign support-family-scores-string = support-family-scores-string | append: ')' %}
-		{% assign support-scores-names-n = support-scores-names-n | push: support-family-scores-string %}
-	{% endif %}
-	{% if support-family-scores-names-u.size > 0 %}
-		{% assign support-family-scores-string = support-family-scores-names-u | join: ', ' %}
-		{% assign support-family-scores-string = support-family-scores-string | prepend: ' (' %}
-		{% assign support-family-scores-string = support-family-scores-string | prepend: support-family-name %}
-		{% assign support-family-scores-string = support-family-scores-string | append: ')' %}
-		{% assign support-scores-names-u = support-scores-names-u | push: support-family-scores-string %}
-	{% endif %}
 {% endfor %}
 {% comment %}
-	6. We calculate the share in percentage of each support.
+	5. We calculate the share in percentage of each support.
 {% endcomment %}
 {% assign support-number-of-clients = support-scores-y | plus: support-scores-a | plus: support-scores-n | plus: support-scores-u %}
 {% if support-scores-y != 0 %}
@@ -110,23 +71,19 @@
 	<p class="feature-support-title">Estimated Support <a href="/support/">About</a></p>
 	<div class="score">
 		{% if support-scores-y != 0 %}
-			{% assign support-scores-names-y-string = support-scores-names-y | join: ", " %}
-			{% assign support-scores-names-y-string = support-scores-y | append: '% ' | append: site.data.nicenames.support['supported'] | downcase | append: ' in ' | append: support-scores-names-y-string | append: "." %}
+			{% assign support-scores-names-y-string = support-scores-y | append: '% ' | append: site.data.nicenames.support['supported'] | downcase %}
 			<div tabindex="0" title="{{ support-scores-names-y-string }}" role="group" style="width:{{ support-scores-y }}%;" class="supported"></div>
 		{% endif %}
 		{% if support-scores-a != 0 %}
-			{% assign support-scores-names-a-string = support-scores-names-a | join: ", " %}
-			{% assign support-scores-names-a-string = support-scores-a | append: '% ' | append: site.data.nicenames.support['mitigated'] | downcase | append: ' in ' | append: support-scores-names-a-string | append: "." %}
+			{% assign support-scores-names-a-string = support-scores-a | append: '% ' | append: site.data.nicenames.support['mitigated'] | downcase %}
 			<div tabindex="0" title="{{ support-scores-names-a-string }}" role="group" style="width:{{ support-scores-a }}%;" class="mitigated"></div>
 		{% endif %}
 		{% if support-scores-n != 0 %}
-			{% assign support-scores-names-n-string = support-scores-names-n | join: ", " %}
-			{% assign support-scores-names-n-string = support-scores-n | append: '% ' | append: site.data.nicenames.support['unsupported'] | downcase | append: ' in ' | append: support-scores-names-n-string | append: "." %}
+			{% assign support-scores-names-n-string = support-scores-n | append: '% ' | append: site.data.nicenames.support['unsupported'] | downcase %}
 			<div tabindex="0" title="{{ support-scores-names-n-string }}" role="group" style="width:{{ support-scores-n }}%;" class="unsupported"></div>
 		{% endif %}
 		{% if support-scores-u != 0 %}
-			{% assign support-scores-names-u-string = support-scores-names-u | join: ", " %}
-			{% assign support-scores-names-u-string = support-scores-u | append: '% ' | append: site.data.nicenames.support['unknown'] | downcase | append: ' in ' | append: support-scores-names-u-string | append: "." %}
+			{% assign support-scores-names-u-string = support-scores-u | append: '% ' | append: site.data.nicenames.support['unknown'] | downcase %}
 			<div tabindex="0" title="{{ support-scores-names-u-string }}" role="group" class="unknown"></div>
 		{% endif %}
 	</div>
