@@ -225,6 +225,10 @@ class Settings {
 		if(window.caniemail && window.caniemail.filters) {
 			window.caniemail.filters.showOrHide();
 		}
+
+		if(window.caniemail && window.caniemail.support) {
+			window.caniemail.support.update();
+		}
 	}
 
 	isFullyChecked() {
