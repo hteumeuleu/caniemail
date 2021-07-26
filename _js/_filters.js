@@ -73,6 +73,15 @@ class Filters {
 			} else {
 				this.filters.forEach(filter => {
 					filter.removeAttribute('hidden', '');
+
+					filter.querySelector('.filter-button--active').classList.remove('filter-button--active');
+					if(this.areApplied()) {
+						const applyButton = filter.querySelector('.filter-apply-button');
+						applyButton.classList.add('filter-button--active');
+					} else {
+						const unapplyButton = filter.querySelector('.filter-unapply-button');
+						unapplyButton.classList.add('filter-button--active');
+					}
 				});
 			}
 		}
