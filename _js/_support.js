@@ -17,8 +17,7 @@ class Support {
 		features.forEach(feature => {
 			this.currentFeature = feature;
 			this.updateSupportValues();
-			this.updateScoreHTML();
-			this.updateSummaryHTML();
+			this.updateHTML();
 		});
 	}
 
@@ -38,7 +37,25 @@ class Support {
 				this.currentValues['u']++;
 			}
 		});
+	}
 
+	show() {
+		this.currentFeature.querySelector('.feature-support').removeAttribute('hidden');
+	}
+
+	hide() {
+		this.currentFeature.querySelector('.feature-support').setAttribute('hidden', '');
+	}
+
+	updateHTML() {
+		console.log("updateHTML: ", this.currentTotal);
+		if(this.currentTotal > 0) {
+			this.show();
+			this.updateScoreHTML();
+			this.updateSummaryHTML();
+		} else {
+			this.hide();
+		}
 	}
 
 	updateScoreHTML() {
@@ -65,8 +82,8 @@ class Support {
 	updateSummaryHTML() {
 		let summaryHTML = "";
 		const yValueInPercent = this.convertToPercent(this.currentValues['y'], this.currentTotal);
+		const aValueInPercent = this.convertToPercent(this.currentValues['a'], this.currentTotal);
 		if(this.currentValues['y'] > 0 && this.currentValues['a'] > 0) {
-			const aValueInPercent = this.convertToPercent(this.currentValues['a'], this.currentTotal);
 			const yPlusAValueInPercent = this.roundToTwoDecimals(yValueInPercent + aValueInPercent);
 			summaryHTML = `
 				<span class="feature-support-summary-value supported" title="${yValueInPercent}% supported">${yValueInPercent}%</span>
@@ -77,6 +94,15 @@ class Support {
 		} else if(this.currentValues['y'] > 0) {
 			summaryHTML = `
 				<span class="feature-support-summary-value supported" title="${yValueInPercent}% supported">${yValueInPercent}%</span> supported
+			`;
+		} else if(this.currentValues['a'] > 0) {
+			summaryHTML = `
+				<span class="feature-support-summary-value mitigated" title="${aValueInPercent}% supported">${aValueInPercent}%</span> partially supported
+			`;
+		} else if(this.currentValues['n'] > 0) {
+			const nValueInPercent = this.convertToPercent(this.currentValues['n'], this.currentTotal);
+			summaryHTML = `
+				<span class="feature-support-summary-value unsupported" title="${nValueInPercent}% supported">${nValueInPercent}%</span> not supported
 			`;
 		}
 
