@@ -2,9 +2,6 @@
 // Support
 // Class to make live calculations of Estimated Support in feature pages.
 //
-// TODO:
-// * Fix rounding
-// * Fix updating when applying filters/settings
 class Support {
 
 	constructor() {
@@ -47,19 +44,19 @@ class Support {
 	updateScoreHTML() {
 		let scoreHTML = "";
 		if(this.currentValues['y'] > 0) {
-			const valueInPercent = ((this.currentValues['y'] * 100) / this.currentTotal).toFixed(2);
+			const valueInPercent = this.convertToPercent(this.currentValues['y'], this.currentTotal);
 			scoreHTML += `<div tabindex="0" role="group" title="${valueInPercent}% supported" style="width:${valueInPercent}%;" class="supported"></div>`;
 		}
 		if(this.currentValues['a'] > 0) {
-			const valueInPercent = ((this.currentValues['a'] * 100) / this.currentTotal).toFixed(2);
+			const valueInPercent = this.convertToPercent(this.currentValues['a'], this.currentTotal);
 			scoreHTML += `<div tabindex="0" role="group" title="${valueInPercent}% partially supported" style="width:${valueInPercent}%;" class="mitigated"></div>`;
 		}
 		if(this.currentValues['n'] > 0) {
-			const valueInPercent = ((this.currentValues['n'] * 100) / this.currentTotal).toFixed(2);
+			const valueInPercent = this.convertToPercent(this.currentValues['n'], this.currentTotal);
 			scoreHTML += `<div tabindex="0" role="group" title="${valueInPercent}% not supported" style="width:${valueInPercent}%;" class="unsupported"></div>`;
 		}
 		if(this.currentValues['u'] > 0) {
-			const valueInPercent = ((this.currentValues['u'] * 100) / this.currentTotal).toFixed(2);
+			const valueInPercent = this.convertToPercent(this.currentValues['u'], this.currentTotal);
 			scoreHTML += `<div tabindex="0" role="group" title="${valueInPercent}% support unknown" style="width:${valueInPercent}%;" class="unknown"></div>`;
 		}
 		this.currentFeature.querySelector('.score').innerHTML = scoreHTML;
@@ -67,10 +64,10 @@ class Support {
 
 	updateSummaryHTML() {
 		let summaryHTML = "";
-		const yValueInPercent = ((this.currentValues['y'] * 100) / this.currentTotal).toFixed(2);
+		const yValueInPercent = this.convertToPercent(this.currentValues['y'], this.currentTotal);
 		if(this.currentValues['y'] > 0 && this.currentValues['a'] > 0) {
-			const aValueInPercent = ((this.currentValues['a'] * 100) / this.currentTotal).toFixed(2);
-			const yPlusAValueInPercent = (((this.currentValues['y'] + this.currentValues['a']) * 100) / this.currentTotal).toFixed(2);
+			const aValueInPercent = this.convertToPercent(this.currentValues['a'], this.currentTotal);
+			const yPlusAValueInPercent = this.roundToTwoDecimals(yValueInPercent + aValueInPercent);
 			summaryHTML = `
 				<span class="feature-support-summary-value supported" title="${yValueInPercent}% supported">${yValueInPercent}%</span>
 				+ 
@@ -92,4 +89,14 @@ class Support {
 		}
 		this.currentFeature.querySelector('.feature-support-summary').innerHTML = summaryHTML;
 	}
+
+	convertToPercent(value, total) {
+		let valueInPercent = (value * 100) / total;
+		return this.roundToTwoDecimals(valueInPercent);
+	}
+
+	roundToTwoDecimals(n) {
+    	return +(Math.round(n + "e+2")  + "e-2");
+	}
+
 }
