@@ -223,7 +223,12 @@ class Settings {
 		this.toggleEmptyMessage();
 
 		if(window.caniemail && window.caniemail.filters) {
+			window.caniemail.filters.setCurrentValue('apply');
 			window.caniemail.filters.showOrHide();
+		}
+
+		if(window.caniemail && window.caniemail.support) {
+			window.caniemail.support.update();
 		}
 	}
 

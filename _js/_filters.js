@@ -32,6 +32,10 @@ class Filters {
 						window.caniemail.settings.apply();
 						this.setCurrentValue('apply');
 					}
+
+					if(window.caniemail && window.caniemail.support) {
+						window.caniemail.support.update();
+					}
 				});
 			}
 
@@ -46,9 +50,17 @@ class Filters {
 						window.caniemail.settings.unapply();
 						this.setCurrentValue('unapply');
 					}
+
+					if(window.caniemail && window.caniemail.support) {
+						window.caniemail.support.update();
+					}
 				});
 			}
 		});
+	}
+
+	areApplied() {
+		return (this.current == 'apply');
 	}
 
 	showOrHide() {
@@ -61,6 +73,15 @@ class Filters {
 			} else {
 				this.filters.forEach(filter => {
 					filter.removeAttribute('hidden', '');
+
+					filter.querySelector('.filter-button--active').classList.remove('filter-button--active');
+					if(this.areApplied()) {
+						const applyButton = filter.querySelector('.filter-apply-button');
+						applyButton.classList.add('filter-button--active');
+					} else {
+						const unapplyButton = filter.querySelector('.filter-unapply-button');
+						unapplyButton.classList.add('filter-button--active');
+					}
 				});
 			}
 		}
@@ -89,6 +110,10 @@ class Filters {
 				if(window.caniemail && window.caniemail.settings) {
 					window.caniemail.settings.unapply();
 				}
+			}
+
+			if(window.caniemail && window.caniemail.support) {
+				window.caniemail.support.update();
 			}
 		}
 	}
