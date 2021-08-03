@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS box-shadow</title>
+</head>
+
+<body>
+  <div style="padding:20px;">
+    <h2>Basic values</h2>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px #04f84d;">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:-20px -10px #04f84d;">
+      <p>offset-x (negative value, px) | offset-y (negative value, px) | color color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px rgb(4, 248, 77);">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | color (rgb)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px rgb(4, 248, 77, 0.5);">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | color (rgb with opacity)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px hsl(138, 97%, 49%);">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | color (hsl)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px hsl(138, 97%, 49%, 0.5);">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | color (hsl with opacity)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:0.6em 1em #04f84d;">
+      <p>offset-x (positive value, em) | offset-y (positive value, em) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:-0.6em -1em #04f84d;">
+      <p>offset-x (negative value, em) | offset-y (negative value, em) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:0.6rem 1rem #04f84d;">
+      <p>offset-x (positive value, rem) | offset-y (positive value, rem) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:-0.6rem -1rem #04f84d;">
+      <p>offset-x (negative value, rem) | offset-y (negative value, rem) | color (6-char hex)</p>
+    </div>
+
+
+    <hr>
+
+    <h2>With blur</h2>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px 5px #04f84d;">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | blur-radius (px) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px 1em #04f84d;">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | blur-radius (em) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px 1rem #04f84d;">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | blur-radius (rem) | color (6-char hex)</p>
+    </div>
+
+
+    <hr>
+
+    <h2>With spread</h2>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px 5px 15px #04f84d;">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | blur-radius (px) | spread-radius (px) | color (6-char hex)</p>
+    </div>
+
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 40px 5px -15px #04f84d;">
+      <p>offset-x (positive value, px) | offset-y (positive value, px) | blur-radius (px) | spread-radius (negative value, px) | color (6-char hex)</p>
+    </div>
+
+
+    <hr>
+
+    <h2>With inset</h2>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:inset 20px 10px #04f84d;">
+      <p>inset | offset-x (positive value, px) | offset-y (positive value, px) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:inset -20px -10px #04f84d;">
+      <p>inset | offset-x (negative value, px) | offset-y (negative value, px) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:inset 20px 10px 5px #04f84d;">
+      <p>inset | offset-x (positive value, px) | offset-y (positive value, px) | blur-radius (px) | color (6-char hex)</p>
+    </div>
+
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:inset 20px 10px 5px 15px #04f84d;">
+      <p>inset | offset-x (positive value, px) | offset-y (positive value, px) | blur-radius (px) | spread-radius (px) | color (6-char hex)</p>
+    </div>
+
+
+    <hr>
+
+    <h2>Multiple shadows</h2>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px #04f84d, 40px 30px #041cf8;">
+      <p>Multiple (2): offset-x (positive value, px) | offset-y (positive value, px) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:20px 10px #04f84d, 40px 30px #041cf8, 10px 40px #cbf804;">
+      <p>Multiple (3): offset-x (positive value, px) | offset-y (positive value, px) | color (6-char hex)</p>
+    </div>
+
+    <div style="background-color:#ee8080; padding:20px; margin:60px 0; box-shadow:inset 20px 10px #04f84d, 40px 20px 5px #041cf8;">
+      <p>Multiple (2): mixed values</p>
+    </div>
+
+  </div>
+</body>
+
+</html>
