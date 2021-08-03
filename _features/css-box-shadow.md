@@ -19,7 +19,7 @@ stats: {
 			"2019-02":	"n"
 		},
 		ios: {
-			"2019-02":	"n"
+			"2019-02":	"a #1"
 		},
 		android: {
 			"2021-08":	"a #1"
@@ -136,7 +136,7 @@ stats: {
 	}
 }
 notes_by_num: {
-  "1": "Partial. Works with non-Gmail accounts (GANGA)."
+  "1": "Partial. Only supported with non Gmail accounts."
 }
 links: {
 	"Can I use: CSS3 Box-shadow":"https://caniuse.com/css-boxshadow",
