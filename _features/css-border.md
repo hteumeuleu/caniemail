@@ -133,6 +133,11 @@ stats: {
         desktop-webmail: {
             "2021-07": "y"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
     }
 }
 notes: "This pages reports support for all CSS properties related to `border`: `border`, `border-width`, `border-style`, `border-color`, `border-top`, `border-bottom`, `border-left`, `border-right`, `border-top-width`, `border-top-style`, `border-top-color`, `border-bottom-width`, `border-bottom-style`, `border-bottom-color`, `border-left-width`, `border-left-style`, `border-left-color`, `border-right-width`, `border-right-style`, `border-right-color`."

@@ -13,6 +13,7 @@ family:
   hey: "HEY"
   mail-ru: "Mail.ru"
   fastmail: "Fastmail"
+  laposte: "LaPoste.net"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"

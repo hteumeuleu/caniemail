@@ -136,6 +136,11 @@ stats: {
         desktop-webmail: {
             "2021-07": "n"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y #1"
+        }
     }
 }
 notes: "As of may 2021, using Video as Image Assets is only supported in WebKit and Safari."

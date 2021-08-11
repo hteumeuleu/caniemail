@@ -137,7 +137,12 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
+    }
 }
 notes_by_num: {
 	"1": "The `caption-side` property in CSS is supported but the `<caption>` HTML element is not."

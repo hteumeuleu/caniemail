@@ -133,10 +133,16 @@ stats: {
         desktop-webmail: {
             "2021-07": "y"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "a #3"
+        }
     }
 }
 notes_by_num: {
     "1": "Buggy. Percentage width on `<img>` elements are based on the physical file's width, not on the parent element's width.",
-    "2": "Partial. Not supported on `<body>`, `<span>`, `<div>` or `<p>` elements."
+    "2": "Partial. Not supported on `<body>`, `<span>`, `<div>` or `<p>` elements.",
+    "3": "Buggy. The webmail has a generic style that sets `table { width:inherit; }`."
 }
 ---

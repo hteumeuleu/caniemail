@@ -146,6 +146,11 @@ stats: {
         desktop-webmail: {
             "2021-07": "n #5"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "n #6"
+        }
     }
 }
 notes_by_num: {
@@ -153,6 +158,7 @@ notes_by_num: {
     "2": "The `src` attribute is transformed into `proton-src`.",
     "3": "The `<audio>` element is supported but can not be played.",
     "4": "The `<audio>` element is supported, but the video can not play due to a strict Content Security Policy.",
-    "5": "Not supported. The `<audio>` element and all its content is removed."
+    "5": "Not supported. The `<audio>` element and all its content is removed.",
+    "6": "Not supported. The `src` attribute is replaced by `data-src`."
 }
 ---

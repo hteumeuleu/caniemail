@@ -134,7 +134,12 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
+    }
 }
 notes_by_num: {
     "1": "Background images origin can be used in VML with the `origin` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/origin-attribute--fill--vml)."

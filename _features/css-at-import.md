@@ -134,7 +134,12 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "n"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "n"
+        }
+    }
 }
 links: {
     "MDN: @import":"https://developer.mozilla.org/en-US/docs/Web/CSS/@import"

@@ -133,6 +133,11 @@ stats: {
         desktop-webmail: {
             "2021-07": "y"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
     }
 }
 notes: "This page reflects support for different syntaxes: `[attr]`, `[attr=\"value\"]`, `[attr~=\"value\"]`, `[attr|=\"value\"]`, `[attr^=\"value\"]`, `[attr$=\"value\"]`, `[attr*=\"value\"]`."
