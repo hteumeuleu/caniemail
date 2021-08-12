@@ -137,6 +137,11 @@ stats: {
         desktop-webmail: {
             "2021-07": "n"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "n"
+        }
     }
 }
 notes_by_num: {

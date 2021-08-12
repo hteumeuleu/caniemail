@@ -135,7 +135,15 @@ stats: {
         desktop-webmail: {
             "2021-07": "y"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y #1"
+        }
     }
+}
+notes_by_num: {
+  "1": "The webmail sets `<h1>` to `color:#fff` and `<h2>` to `background:#354963`."
 }
 links: {
     "Can I use: `<h1>`":"https://caniuse.com/#feat=mdn-html_elements_h1",
