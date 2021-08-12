@@ -22,16 +22,16 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2021-01": "y #1"
+      "2021-08": "y #1 #3"
     },
     ios: {
-      "2021-01": "y #1"
+      "2021-08": "y #1 #3"
     },
     android: {
-      "2021-01": "y #1"
+      "2021-08": "y #1 #3"
     },
     mobile-webmail: {
-      "2021-01": "y #1"
+      "2021-08": "y #1 #3"
     }
   },
   orange: {
@@ -143,7 +143,8 @@ stats: {
 }
 notes_by_num: {
   "1": "Whitespace syntax is not supported (`rgb(0 128 0 / 1)`).",
-  "2": "Alpha value is not supported (`rgb(0, 128, 0, 0.5)`)."
+  "2": "Alpha value is not supported (`rgb(0, 128, 0, 0.5)`).",
+  "3": "whitespace syntax (`rgb(0 128 0)`): when used in the `style` attribute of an element, the whole attribute is stripped. When used inside `<style>`, the whole `<style>` block is stripped."
 }
 links: {
   "Can I use: RGB functional notation (rgb())":"https://caniuse.com/mdn-css_types_color_rgb_functional_notation",

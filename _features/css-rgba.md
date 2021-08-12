@@ -22,16 +22,16 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2021-01": "y #1"
+      "2021-08": "y #1 #2"
     },
     ios: {
-      "2021-01": "y #1"
+      "2021-08": "y #1 #2"
     },
     android: {
-      "2021-01": "y #1"
+      "2021-08": "y #1 #2"
     },
     mobile-webmail: {
-      "2021-01": "y #1"
+      "2021-08": "y #1 #2"
     }
   },
   orange: {
@@ -140,7 +140,8 @@ stats: {
   }
 }
 notes_by_num: {
-  "1": "Whitespace syntax is not supported (`rgb(0 128 0 / 1)`)."
+  "1": "Whitespace syntax is not supported (`rgb(0 128 0 / 1)`).",
+  "2": "whitespace syntax (`rgba(0 128 0 / 1)`): when used in the `style` attribute of an element, the whole attribute is stripped. When used inside `<style>`, the whole `<style>` block is stripped."
 }
 links: {
   "Can I use: Alpha color values (rgba(), hsla())":"https://caniuse.com/mdn-css_types_color_alpha",
