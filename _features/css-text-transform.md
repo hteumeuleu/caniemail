@@ -1,6 +1,6 @@
 ---
 title: "text-transform"
-description: "Each of the six text-transform properties defined by MDN."
+description: "Each of the six `text-transform` values defined by MDN (`capitalize`, `uppercase`, `lowercase`, `none`, `full-width`, `full-size-kana`)."
 category: css
 last_test_date: "2021-08-12"
 test_url: "/tests/css-text-transform.html"
@@ -70,6 +70,54 @@ stats: {
     mail-ru: {
         desktop-webmail: {
             "2021-08":"y"
+        }
+    },
+    thunderbird: {
+        macos: {
+            "68.7":"u"
+        }
+    },
+    protonmail: {
+        desktop-webmail: {
+            "2021-08":"u"
+        },
+        ios: {
+            "2021-08":"u"
+        },
+        android: {
+            "2021-08":"u"
+        }
+    },
+    hey: {
+        desktop-webmail: {
+            "2021-08":"u"
+        }
+    },
+    orange: {
+        desktop-webmail: {
+            "2021-08":"u"
+        },
+        ios: {
+            "2021-08":"u"
+        },
+        android: {
+            "2021-08":"u"
+        }
+    },
+    sfr: {
+        desktop-webmail: {
+            "2021-08":"u"
+        },
+        ios: {
+            "2021-08":"u"
+        },
+        android: {
+            "2021-08":"u"
+        }
+    },
+    fastmail: {
+        desktop-webmail: {
+            "2021-08": "u"
         }
     }
 }
