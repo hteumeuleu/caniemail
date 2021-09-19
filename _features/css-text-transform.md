@@ -2,7 +2,7 @@
 title: "text-transform"
 description: "Each of the six `text-transform` values defined by MDN (`capitalize`, `uppercase`, `lowercase`, `none`, `full-width`, `full-size-kana`)."
 category: css
-last_test_date: "2021-08-12"
+last_test_date: "2021-09-19"
 test_url: "/tests/css-text-transform.html"
 test_results_url: "https://app.emailonacid.com/shared-preview/R6niSqR1SM"
 stats: {
@@ -45,21 +45,21 @@ stats: {
 			"2021-08":"y"
 		},
 		ios: {
-			"2019-02":"n"
+			"2021-09":"y"
 		},
 		android: {
-			"2019-02":"n"
+			"2021-09":"y"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02":"n"
+			"2021-09":"y"
 		},
 		ios: {
-			"2019-02":"n"
+			"2021-09":"y"
 		},
 		android: {
-			"2019-02":"n"
+			"2021-09":"y"
 		}
 	},
 	samsung-email: {
@@ -74,52 +74,57 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "68.7":"u"
+            "78.12":"y"
         }
     },
     protonmail: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-09":"y"
         },
         ios: {
-            "2021-08":"u"
+            "2021-09":"y"
         },
         android: {
-            "2021-08":"u"
+            "2021-09":"y"
         }
     },
     hey: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-09":"y"
         }
     },
     orange: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-09":"y"
         },
         ios: {
-            "2021-08":"u"
+            "2021-09":"y"
         },
         android: {
-            "2021-08":"u"
+            "2021-09":"y"
         }
     },
     sfr: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-09":"y"
         },
         ios: {
-            "2021-08":"u"
+            "2021-09":"y"
         },
         android: {
-            "2021-08":"u"
+            "2021-09":"y"
         }
     },
     fastmail: {
         desktop-webmail: {
-            "2021-08": "u"
+            "2021-09":"y"
         }
-    }
+    },
+	laposte: {
+		desktop-webmail: {
+			"2021-09":"y"
+		}
+	}
 }
 notes: "Currently, only Firefox supports the `full-width` and `full-size-kana` property values. Web clients on Firefox will support these properties."
 notes_by_num: {
