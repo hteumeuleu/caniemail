@@ -140,7 +140,10 @@ stats: {
         }
     }
 }
+notes: "This page reflects support for the `<div>` semantic HTML element. But in order to support _the Outlooks_ (2007-2019) on Windows, it is still recommended to use tables."
 links: {
-    "MDN: `<div>` The Content Division Element":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+    "MDN: `<div>` The Content Division Element":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div",
+    "Email Coding Guidelines: Tables for layout":"https://github.com/hteumeuleu/email-guidelines#tables-for-layout",
+    "Get Off The Table by Mark Robbins":"https://github.com/M-J-Robbins/get-off-the-table"
 }
 ---

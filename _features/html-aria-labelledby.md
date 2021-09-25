@@ -2,7 +2,7 @@
 title: "aria-labelledby attribute"
 description: ""
 category: html
-keywords: accessibility
+keywords: "accessibility, a11y, wai-aria"
 last_test_date: "2019-02-28"
 test_url: "/tests/html-ARIA.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/7YEJc8itgQA23oSz9yaDB2rg6MHiItQgtKbflcOSjNx48/list"
@@ -143,5 +143,9 @@ stats: {
 notes_by_num: {
     "1": "Buggy. `id` is removed.",
     "2": "Buggy. `id` prefix mismatched. The `id` value is prefixed but not the `aria-describedby` value."
+}
+links: {
+  "ARIA: aria-labelledby definition":"https://www.w3.org/TR/wai-aria/#aria-labelledby",
+  "MDN: Using the aria-labelledby attribute":"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute"
 }
 ---

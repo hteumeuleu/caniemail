@@ -2,7 +2,7 @@
 title: "aria-describedby attribute"
 description: ""
 category: html
-keywords: accessibility
+keywords: "accessibility, a11y, wai-aria"
 last_test_date: "2019-02-28"
 test_url: "/tests/html-ARIA.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/7YEJc8itgQA23oSz9yaDB2rg6MHiItQgtKbflcOSjNx48/list"
@@ -142,5 +142,9 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. `id` prefix mismatched. The `id` value is prefixed but not the `aria-describedby` value."
+}
+links: {
+  "ARIA: aria-describedby definition":"https://www.w3.org/TR/wai-aria/#aria-describedby",
+  "MDN: Using the aria-describedby attribute":"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute"
 }
 ---
