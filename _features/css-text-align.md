@@ -112,18 +112,18 @@ stats: {
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2021-09":"u"
+			"2021-09":"y"
 		},
 		ios: {
-			"2021-09":"u"
+			"2021-09":"y"
 		},
 		android: {
-			"2021-09":"u"
+			"2021-09":"y"
 		}
 	},
 	hey: {
 		desktop-webmail: {
-			"2021-09":"u"
+			"2021-09":"y"
 		}
 	},
 	mail-ru: {
@@ -133,16 +133,16 @@ stats: {
 	},
 	fastmail: {
 		desktop-webmail: {
-			"2021-07": "u"
+			"2021-07": "y"
 		}
 	}
 }
 notes_by_num: {
-	"1": "Partial. Flow-relative values `start` and `end` are not supported",
-	"2": "Partial. Flow-relative values `start` and `end` are not supported with non Gmail account"
+	"1": "Partial. Flow-relative values `start` and `end` are not supported.",
+	"2": "Partial. Flow-relative values `start` and `end` are not supported with non Gmail account."
 }
 links: {
-	"MDN: The text-align CSS property":"https://developer.mozilla.org/en-US/docs/Web/CSS/text-align",
-	"Can I use: CSS property: text-align: Flow-relative values `start` and `end`:"https://caniuse.com/mdn-css_properties_text-align_flow_relative_values_start_and_end"
+	"MDN: The text-align CSS property": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align",
+	"Can I use: CSS property: text-align: Flow-relative values `start` and `end`": "https://caniuse.com/mdn-css_properties_text-align_flow_relative_values_start_and_end"
 }
 ---
