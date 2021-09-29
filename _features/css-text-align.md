@@ -1,6 +1,6 @@
 ---
 title: "text-align"
-description: "The `text-align` CSS property"
+description: "Sets the horizontal alignment of the content."
 category: css
 keywords: align
 last_test_date: "2021-09-24"
@@ -34,13 +34,13 @@ stats: {
 	},
 	orange: {
 		desktop-webmail: {
-			"2021-09":"u"
+			"2021-09":"a #1"
 		},
 		ios: {
-			"2021-09":"u"
+			"2021-09":"a #1"
 		},
 		android: {
-			"2021-09":"u"
+			"2021-09":"a #1"
 		}
 	},
 	outlook: {
@@ -72,7 +72,7 @@ stats: {
 			"2021-09": "a #1"
 		},
 		ios: {
-			"2021-09": "u"
+			"2021-09": "a #1"
 		},
 		android: {
 			"6.37": "a #1"
@@ -83,10 +83,10 @@ stats: {
 			"2021-09": "a #1"
 		},
 		ios: {
-			"2021-09": "u"
+			"2021-09": "a #1"
 		},
 		android: {
-			"2021-09": "u"
+			"2021-09": "a #1"
 		}
 	},
 	samsung-email: {
