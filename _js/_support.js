@@ -85,6 +85,9 @@ class Support {
 		const aValueInPercent = this.convertToPercent(this.currentValues['a'], this.currentTotal);
 		if(this.currentValues['y'] > 0 && this.currentValues['a'] > 0) {
 			const yPlusAValueInPercent = this.roundToTwoDecimals(yValueInPercent + aValueInPercent);
+			if(yPlusAValueInPercent > 100) {
+				yPlusAValueInPercent = 100;
+			}
 			summaryHTML = `
 				<span class="feature-support-summary-value supported" title="${yValueInPercent}% supported">${yValueInPercent}%</span>
 				+ 

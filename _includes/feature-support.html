@@ -111,7 +111,8 @@
 			{% endif %}
 		{% endif %}
 		{% if support-scores-y != 0 and support-scores-a != 0 %}
-			= {{ support-scores-y | plus: support-scores-a }}%
+			{% assign support-scores-y-plus-a = support-scores-y | plus: support-scores-a | at_most: 100 %}
+			= {{ support-scores-y-plus-a }}%
 		{% endif %}
 	</p>
 </div>
