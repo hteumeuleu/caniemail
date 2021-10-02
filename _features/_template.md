@@ -9,35 +9,35 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/uz6yTbAfykA362dvPZZK
 stats: {
     apple-mail: {
         macos: {
-            "13":"u"
+            "14":"u"
         },
         ios: {
-            "13":"u"
+            "15":"u"
         }
     },
     gmail: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         ios: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         android: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         mobile-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     orange: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         ios: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         android: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     outlook: {
@@ -50,20 +50,20 @@ stats: {
             "2019":"u"
         },
         windows-10-mail: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         macos: {
             "2011":"u",
             "2016":"u"
         },
         outlook-com: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         ios: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         android: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     samsung-email: {
@@ -73,71 +73,71 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         ios: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         android: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     thunderbird: {
         macos: {
-            "68.7":"u"
+            "78.14":"u"
         }
     },
     aol: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         ios: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         android: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         ios: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         android: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     protonmail: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         ios: {
-            "2021-08":"u"
+            "2021-10":"u"
         },
         android: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     hey: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     mail-ru: {
         desktop-webmail: {
-            "2021-08":"u"
+            "2021-10":"u"
         }
     },
     fastmail: {
         desktop-webmail: {
-            "2021-08": "u"
+            "2021-10": "u"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2021-08": "u"
+            "2021-10": "u"
         }
     }
 }
