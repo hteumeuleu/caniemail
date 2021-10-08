@@ -232,15 +232,21 @@ class Compare {
 
 				for (let key of formData.entries()) {
 					if(key[1].toLowerCase() !== 'on') {
-						const versions = feature.stats[key[0]][key[1]];
-						let supportValue = 'u';
-						if(versions) {
-							const lastVersionKey = Object.keys(versions)[Object.keys(versions).length - 1];
-							const lastVersionValue = versions[lastVersionKey];
-							if(lastVersionValue) {
-								supportValue = lastVersionValue.charAt(0);
+
+						let supportValue;
+						if(key[0] in feature.stats && key[1] in feature.stats[key[0]]) {
+							const versions = feature.stats[key[0]][key[1]];
+							supportValue = 'u';
+							if(versions) {
+								const lastVersionKey = Object.keys(versions)[Object.keys(versions).length - 1];
+								const lastVersionValue = versions[lastVersionKey];
+								if(lastVersionValue) {
+									supportValue = lastVersionValue.charAt(0);
+								}
 							}
+
 						}
+
 						let supportLongName = null;
 						switch(supportValue) {
 							case 'y':
@@ -304,24 +310,28 @@ class Compare {
 			let averageSupportValue = null;
 			for (let key of formData.entries()) {
 				if(key[1].toLowerCase() !== 'on') {
-					const versions = feature.stats[key[0]][key[1]];
-					if(versions) {
-						const lastVersionSupportValue = versions[Object.keys(versions)[Object.keys(versions).length - 1]];
-						if(lastVersionSupportValue) {
-							const supportValue = lastVersionSupportValue.charAt(0);
-							if(!averageSupportValue) {
-								averageSupportValue = supportValue;
-							} else if(averageSupportValue == 'u' && supportValue != 'u') {
-								averageSupportValue = supportValue;
-							} else if(averageSupportValue == 'y' && supportValue != 'y' && supportValue != 'u') {
-								averageSupportValue = 'm';
-							} else if(averageSupportValue == 'n' && supportValue != 'n' && supportValue != 'u') {
-								averageSupportValue = 'm';
-							} else if(averageSupportValue == 'a' && supportValue != 'a' && supportValue != 'u') {
-								averageSupportValue = 'm';
+
+					if(key[0] in feature.stats && key[1] in feature.stats[key[0]]) {
+						const versions = feature.stats[key[0]][key[1]];
+						if(versions) {
+							const lastVersionSupportValue = versions[Object.keys(versions)[Object.keys(versions).length - 1]];
+							if(lastVersionSupportValue) {
+								const supportValue = lastVersionSupportValue.charAt(0);
+								if(!averageSupportValue) {
+									averageSupportValue = supportValue;
+								} else if(averageSupportValue == 'u' && supportValue != 'u') {
+									averageSupportValue = supportValue;
+								} else if(averageSupportValue == 'y' && supportValue != 'y' && supportValue != 'u') {
+									averageSupportValue = 'm';
+								} else if(averageSupportValue == 'n' && supportValue != 'n' && supportValue != 'u') {
+									averageSupportValue = 'm';
+								} else if(averageSupportValue == 'a' && supportValue != 'a' && supportValue != 'u') {
+									averageSupportValue = 'm';
+								}
 							}
 						}
 					}
+
 				}
 			}
 			if(averageSupportValue == 'y' || averageSupportValue == 'a' || averageSupportValue == 'n' || averageSupportValue == 'u' || averageSupportValue == 'm') {
