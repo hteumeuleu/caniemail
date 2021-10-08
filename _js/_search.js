@@ -89,6 +89,18 @@ class Search {
 
 			const previousResultsLength = this.results ? this.results.length : -1;
 			this.results = [];
+
+			if(this.term.startsWith('<') && this.term.endsWith('>')) {
+				this.term = this.term.substr(1, this.term.length - 2);
+			}
+			if(this.term.endsWith('element')) {
+				this.term = this.term.replace(new RegExp('element$'), '').trim();
+			}
+			if(this.term.endsWith('attribute')) {
+				this.term = this.term.replace(new RegExp('attribute$'), '').trim();
+			}
+
+			
 			if(this.term.includes('+')) {
 
 				let terms = this.term.split('+');
