@@ -4,7 +4,7 @@ description: "Sets a preferred aspect ratio for the element"
 category: css
 keywords: ratio
 last_test_date: "2021-10-27"
-test_url: "/tests/css-text-align.html"
+test_url: "/tests/css-aspect-ratio.html"
 test_results_url: "https://testi.at/proj/Mv0IO0vs3vTgRQuJ8IzyBfD6"
 stats: {
 	apple-mail: {
