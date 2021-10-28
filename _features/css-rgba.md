@@ -151,6 +151,7 @@ notes_by_num: {
 links: {
   "Can I use: Alpha color values (rgba(), hsla())":"https://caniuse.com/mdn-css_types_color_alpha",
   "Can I use: Allow floats in rgb() and rgba()":"https://caniuse.com/mdn-css_types_color_floats_in_rgb_rgba",
-  "MDN: <color> CSS data type":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()"
+  "MDN: <color> CSS data type":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()",
+  "MDN: Browser compatibility for space-sparated values (also known as whitespace syntax)":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba()#space-separated_values"
 }
 ---

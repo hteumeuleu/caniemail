@@ -155,6 +155,7 @@ links: {
   "Can I use: RGB functional notation (rgb())":"https://caniuse.com/mdn-css_types_color_rgb_functional_notation",
   "Can I use: rgb() can accept alpha values":"https://caniuse.com/mdn-css_types_color_rgb_function_accepts_alpha",
   "Can I use: Allow floats in rgb() and rgba()":"https://caniuse.com/mdn-css_types_color_floats_in_rgb_rgba",
-  "MDN: <color> CSS data type":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()"
+  "MDN: <color> CSS data type":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()",
+  "MDN: Browser compatibility for space-sparated values (also known as whitespace syntax)":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb()#space-separated_values"
 }
 ---
