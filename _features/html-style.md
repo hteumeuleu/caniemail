@@ -51,7 +51,7 @@ stats: {
             "2016":"a #4",
             "2019":"a #4"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-01":"a #4"
         },
         macos: {

@@ -54,7 +54,7 @@ stats: {
 			"2016": "n",
 			"2019": "n"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"16005.13426.20316.0": "n"
 		},
 		macos: {

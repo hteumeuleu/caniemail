@@ -23,7 +23,7 @@ platform:
   android: "Android"
   windows: "Windows"
   macos: "macOS"
-  windows-10-mail: "Windows 10 Mail"
+  windows-mail: "Windows Mail"
   outlook-com: "Outlook.com"
 support:
   supported: "Supported"

@@ -1,4 +1,4 @@
 ---
-platforms: [windows, windows-10-mail, macos, outlook-com, ios, android]
+platforms: [windows, windows-mail, macos, outlook-com, ios, android]
 display_order: 3
 ---

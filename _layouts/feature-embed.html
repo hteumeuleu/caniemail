@@ -84,9 +84,9 @@ layout: embed
 										{% endcase %}
 										{% comment %}
 											Generate the data version cell.
-											To make things lighter to read and for smaller screenshots, we remove Windows 10 Mail from the results which generally has exactly the same support as Outlook on Windows.
+											To make things lighter to read and for smaller screenshots, we remove Windows Mail from the results which generally has exactly the same support as Outlook on Windows.
 										{% endcomment %}
-										{% if platform-key != "windows-10-mail" %}
+										{% if platform-key != "windows-mail" %}
 										<div class="data-version {{ stat-class-name }}">
 											<span class="data-version-platform">
 												{% if family-page != nil and family-page != "" %}
