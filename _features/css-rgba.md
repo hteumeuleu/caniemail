@@ -14,7 +14,7 @@ stats: {
       "13": "y"
     },
     ios: {
-      "11": "y #1",
+      "11": "a #1",
       "12": "y",
       "13": "y",
       "14": "y"
@@ -22,16 +22,16 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2021-08": "y #1 #2"
+      "2021-08": "a #1 #2"
     },
     ios: {
-      "2021-08": "y #1 #2"
+      "2021-08": "a #1 #2"
     },
     android: {
-      "2021-08": "y #1 #2"
+      "2021-08": "a #1 #2"
     },
     mobile-webmail: {
-      "2021-08": "y #1 #2"
+      "2021-08": "a #1 #2"
     }
   },
   orange: {
@@ -71,24 +71,24 @@ stats: {
   },
   yahoo: {
     desktop-webmail: {
-      "2021-01": "y #1"
+      "2021-01": "a #1"
     },
     ios: {
-      "2021-01": "y #1"
+      "2021-01": "a #1"
     },
     android: {
-      "6.16.2.1519779": "y #1"
+      "6.16.2.1519779": "a #1"
     }
   },
   aol: {
     desktop-webmail: {
-      "2021-05": "y #1"
+      "2021-05": "a #1"
     },
     ios: {
-      "2021-05": "y #1"
+      "2021-05": "a #1"
     },
     android: {
-      "2021-05": "y #1"
+      "2021-05": "a #1"
     }
   },
   samsung-email: {
@@ -151,6 +151,7 @@ notes_by_num: {
 links: {
   "Can I use: Alpha color values (rgba(), hsla())":"https://caniuse.com/mdn-css_types_color_alpha",
   "Can I use: Allow floats in rgb() and rgba()":"https://caniuse.com/mdn-css_types_color_floats_in_rgb_rgba",
-  "MDN: <color> CSS data type":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()"
+  "MDN: <color> CSS data type":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()",
+  "MDN: Browser compatibility for space-sparated values (also known as whitespace syntax)":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba()#space-separated_values"
 }
 ---
