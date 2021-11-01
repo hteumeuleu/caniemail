@@ -2,9 +2,9 @@
 title: "dir attribute"
 description: "Indicates the directionality of the element's text."
 category: html
-last_test_date: "2021-10-05"
+last_test_date: "2021-11-01"
 test_url: "/tests/css-direction.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/TzLrUhEnTKX7mZ1LTCpvaZ2PNzg4mnsZtoLJi0FVbCSRD/list"
+test_results_url: "https://testi.at/proj/onwCpJ1Hp7mc8XYhbvUVbvHoM"
 stats: {
     apple-mail: {
         macos: {
@@ -41,14 +41,14 @@ stats: {
     },
     outlook: {
         windows: {
-            "2007":"y",
-            "2010":"y",
-            "2013":"y",
-            "2016":"y",
-            "2019":"y"
+            "2007":"a #3 #4",
+            "2010":"a #3",
+            "2013":"a #3",
+            "2016":"a #3",
+            "2019":"a #3"
         },
         windows-mail: {
-            "2021-10":"y"
+            "2021-10":"a #3"
         },
         macos: {
             "16.55":"y"
@@ -140,7 +140,9 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. The client applies an `rtl` direction to the entire email if it contains text in a `rtl` language.",
-    "2": "Partial. Removed from `<table>` elements."
+    "2": "Partial. Removed from `<table>` elements.",
+    "3": "Buggy on anchor `<a>` tags.",
+    "4": "Buggy. LTR text in `[dir=rtl]` (and vice versa) is rendered with reversed word order."
 }
 links: {
     "Can I use: dir":"https://caniuse.com/mdn-html_global_attributes_dir",
