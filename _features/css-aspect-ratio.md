@@ -3,19 +3,21 @@ title: "aspect-ratio"
 description: "Sets a preferred aspect ratio for the element"
 category: css
 keywords: ratio
-last_test_date: "2021-10-27"
+last_test_date: "2021-11-02"
 test_url: "/tests/css-aspect-ratio.html"
 test_results_url: "https://testi.at/proj/Mv0IO0vs3vTgRQuJ8IzyBfD6"
 stats: {
 	apple-mail: {
 		macos: {
-			"2021-10": "n"
+			"14": "n",
+			"15.0": "y"
 		},
 		ios: {
 			"11": "n",
 			"12": "n",
 			"13": "n",
-			"14": "n"
+			"14": "n",
+			"15": "y"
 		}
 	},
 	gmail: {
@@ -96,34 +98,34 @@ stats: {
 	},
 	sfr: {
 		desktop-webmail: {
-			"2021-10":"n"
+			"2021-11":"y"
 		},
 		ios: {
-			"2021-10":"n"
+			"2021-11":"y #1"
 		},
 		android: {
-			"2021-10":"n"
+			"2021-11":"y"
 		}
 	},
 	thunderbird: {
 		macos: {
-			"2021-10": "n"
+			"78.10.2": "n"
 		}
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2021-10":"u"
+			"2021-11":"y"
 		},
 		ios: {
-			"2021-10":"u"
+			"2021-11":"y #1"
 		},
 		android: {
-			"2021-10":"u"
+			"2021-11":"y"
 		}
 	},
 	hey: {
 		desktop-webmail: {
-			"2021-10":"u"
+			"2021-11":"y"
 		}
 	},
 	mail-ru: {
@@ -133,16 +135,18 @@ stats: {
 	},
 	fastmail: {
 		desktop-webmail: {
-			"2021-07": "u"
+			"2021-11": "n"
 		}
 	},
 	laposte: {
 		desktop-webmail: {
-			"2021-10": "u"
+			"2021-10": "y"
 		}
 	}
 }
-notes_by_num: {}
+notes_by_num: {
+	"1": "Requires iOS 15."
+}
 links: {
 	"MDN: The aspect-ratio CSS property": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
 	"Can I use: CSS property: aspect-ratio": "https://caniuse.com/mdn-css_properties_aspect-ratio"
