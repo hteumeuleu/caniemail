@@ -141,7 +141,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. The client applies an `rtl` direction to the entire email if it contains text in a `rtl` language.",
-    "2": "Partial. Removed from `<table>` elements.",
+    "2": "Partial. Removed from `<table>` and `<td>` elements.",
     "3": "Buggy on anchor `<a>` tags.",
     "4": "Buggy. LTR text in `[dir=rtl]` (and vice versa) is rendered with reversed word order."
 }
