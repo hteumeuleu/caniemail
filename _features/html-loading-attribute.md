@@ -1,6 +1,6 @@
 ---
-title: "img[loading]"
-description: "The `loading` attributes on `img` indicates how the browser should load the image"
+title: "loading attribute"
+description: "The `loading` attribute on `img` indicates how the browser should load the image."
 category: html
 keywords: img,image,loading
 last_test_date: "2021-10-27"
@@ -29,18 +29,18 @@ stats: {
 			"2021-10": "n"
 		},
 		mobile-webmail: {
-			"2021-10": "u"
+			"2021-10": "n"
 		}
 	},
 	orange: {
 		desktop-webmail: {
-			"2021-10":"u"
+			"2021-10":"n"
 		},
 		ios: {
-			"2021-10":"u"
+			"2021-10":"n"
 		},
 		android: {
-			"2021-10":"u"
+			"2021-10":"n"
 		}
 	},
 	outlook: {
@@ -72,7 +72,7 @@ stats: {
 			"2021-10": "n"
 		},
 		ios: {
-			"2021-10": "u"
+			"2021-10": "n"
 		},
 		android: {
 			"2021-10": "n"
@@ -83,10 +83,10 @@ stats: {
 			"2021-10": "n"
 		},
 		ios: {
-			"2021-10": "u"
+			"2021-10": "n"
 		},
 		android: {
-			"2021-10": "u"
+			"2021-10": "n"
 		}
 	},
 	samsung-email: {
@@ -96,13 +96,13 @@ stats: {
 	},
 	sfr: {
 		desktop-webmail: {
-			"2021-10":"u"
+			"2021-11":"y"
 		},
 		ios: {
-			"2021-10":"u"
+			"2021-11":"n"
 		},
 		android: {
-			"2021-10":"u"
+			"2021-11":"n"
 		}
 	},
 	thunderbird: {
@@ -112,18 +112,18 @@ stats: {
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2021-10":"u"
+			"2021-11":"y"
 		},
 		ios: {
-			"2021-10":"u"
+			"2021-10":"n"
 		},
 		android: {
-			"2021-10":"u"
+			"2021-10":"n"
 		}
 	},
 	hey: {
 		desktop-webmail: {
-			"2021-10":"u"
+			"2021-10":"a #3"
 		}
 	},
 	mail-ru: {
@@ -133,18 +133,19 @@ stats: {
 	},
 	fastmail: {
 		desktop-webmail: {
-			"2021-07": "u"
+			"2021-07": "n"
 		}
 	},
 	laposte: {
 		desktop-webmail: {
-			"2021-10": "u"
+			"2021-10": "y"
 		}
 	}
 }
 notes_by_num: {
   "1": "The `loading` attribute is supported, but not confirmed whether it works according to spec.",
-  "2": "The `loading` attribute is supported by the email client, but not by the browser engine."
+  "2": "The `loading` attribute is supported by the email client, but not by the browser engine.",
+  "3": "Not supported. The webmail adds `loading=\"lazy\"` to all images."
 }
 links: {
 	"MDN: `loading` attribute on `<img>`": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading",
