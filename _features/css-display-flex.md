@@ -3,7 +3,7 @@ title: "display:flex"
 description: ""
 category: css
 keywords: flexbox
-last_test_date: "2020-11-12"
+last_test_date: "2021-11-02"
 test_url: "/tests/css-flexbox.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Kw9bvIPLsmmwVoXhbXpIu1FM31v4nV2KXMaEvPQPezSO9/list"
 stats: {
@@ -37,10 +37,12 @@ stats: {
             "2021-03":"n"
         },
         ios: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2021-11":"n"
         },
         android: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2021-11":"n"
         }
     },
 	outlook: {
