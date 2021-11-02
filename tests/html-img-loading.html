@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    img[loading]+p {
+      display: block !important;
+    }
+
+    img[loading="lazy"]+p, img[loading="eager"]+p {
+      display: block !important;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://via.placeholder.com/1200x675/FF0000/FFFFFF.png" alt="" width="640" height="360" loading="lazy" style="width:100%; height:auto;" />
+  <p style="display:none;">img[loading] & attribute selectors are supported</p>
+
+  <img src="https://via.placeholder.com/1200x675/FF0000/FFFFFF.png" alt="" width="640" height="360" loading="eager" style="width:100%; height:auto;" />
+  <p style="display:none;">img[loading] & attribute selectors are supported</p>
+  <p></p>
+</body>
+</html>
