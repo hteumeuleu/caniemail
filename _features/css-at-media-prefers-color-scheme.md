@@ -2,7 +2,7 @@
 title: "@media (prefers-color-scheme)"
 description: "This media query allows to theme for system light and dark mode."
 category: css
-keywords: dark mode, light mode
+keywords: "media queries, media query, media feature, dark mode, light mode"
 last_test_date: "2019-09-26"
 test_url: "/tests/css-media-prefers-color-scheme.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/CqQL3EUXh33sQ8Q6rOkJapoIjxfDz99BUpXGjtT2ErWdN/list"

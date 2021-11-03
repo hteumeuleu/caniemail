@@ -2,7 +2,7 @@
 title: "@media (orientation)"
 description: ""
 category: css
-keywords: "media queries, query, portrait, landscape"
+keywords: "media queries, media query, media feature, portrait, landscape"
 last_test_date: "2019-08-20"
 test_url: "/tests/css-media.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/hMLCNCSKZYHkLgLOpIWltlnYjtagbNsrwzMxalc2VbghN/list"
