@@ -1,6 +1,7 @@
 ---
-title: "Anchor links"
+title: "Local anchors"
 description: ""
+keywords: "hash, fragment identifiers, URLs, URIs, document fragments, local, named, anchor, anchors, links"
 category: html
 last_test_date: "2019-08-08"
 test_url: "/tests/html-anchor-links.html"
