@@ -71,7 +71,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"y"
+            "6.0":"y #8",
+            "2021-11":"y #8"
         }
     },
     sfr: {
@@ -152,7 +153,8 @@ notes_by_num: {
     "4": "Partial. The declaration is supported but distant fonts are ignored.",
     "5": "Buggy. Elements using a font declared with `@font-face` ignore the font stack and fall back to Times New Roman. Use `mso-generic-font-family` and `mso-font-alt` to control the fallback.",
     "6": "Not supported. Roboto and Google Sans can be used, but only because they're embedded with the webmail's own styles.",
-    "7": "Not supported. The `@font-face` declaration is kept but the `src` property is removed."
+    "7": "Not supported. The `@font-face` declaration is kept but the `src` property is removed.",
+    "8": "Not supported when using a Microsoft email address; outlook, live, hotmail, etc.."
 }
 links: {
     "Can I use: @font-face Web fonts":"https://www.caniuse.com/#feat=fontface",
