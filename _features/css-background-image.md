@@ -149,6 +149,16 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    t-online-de: {
+        desktop-webmail: {
+            "2021-11": "n"
+        }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2021-11": "n"
+        }
     }
 }
 notes_by_num: {

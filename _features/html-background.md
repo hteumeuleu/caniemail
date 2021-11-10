@@ -144,7 +144,17 @@ stats: {
 		desktop-webmail: {
 			"2021-08": "y"
 		}
-	}
+	},
+    t-online-de: {
+        desktop-webmail: {
+            "2021-11": "y"
+        }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2021-11": "y"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",

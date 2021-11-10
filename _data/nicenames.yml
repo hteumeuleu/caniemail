@@ -14,6 +14,8 @@ family:
   mail-ru: "Mail.ru"
   fastmail: "Fastmail"
   laposte: "LaPoste.net"
+  t-online-de: "T-online.de"
+  free-fr: "Free.fr"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"
