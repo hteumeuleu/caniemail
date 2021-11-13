@@ -3,7 +3,7 @@ title: "<small> element"
 description: "The `<small>` HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation."
 category: html
 keywords:
-last_test_date: "2021-11-12"
+last_test_date: "2021-11-13"
 test_url: "/tests/html-small.html"
 test_results_url: "https://testi.at/proj/QZ5ik13cllxUNqjfEBQf9JrI5E"
 stats: {
@@ -133,12 +133,12 @@ stats: {
 	},
 	fastmail: {
 		desktop-webmail: {
-			"2021-11": "y"
+			"2021-11": "u"
 		}
 	},
 	laposte: {
 		desktop-webmail: {
-			"2021-11": "y"
+			"2021-11": "u"
 		}
 	},
 	t-online-de: {
