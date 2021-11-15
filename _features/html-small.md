@@ -34,13 +34,13 @@ stats: {
 	},
 	orange: {
 		desktop-webmail: {
-			"2021-11": "u"
+			"2021-11": "n"
 		},
 		ios: {
-			"2021-11": "u"
+			"2021-11": "n"
 		},
 		android: {
-			"2021-11": "u"
+			"2021-11": "n"
 		}
 	},
 	outlook: {
@@ -112,18 +112,18 @@ stats: {
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2021-11":"u"
+			"2021-11":"y"
 		},
 		ios: {
-			"2021-11":"u"
+			"2021-11":"y"
 		},
 		android: {
-			"2021-11":"u"
+			"2021-11":"y"
 		}
 	},
 	hey: {
 		desktop-webmail: {
-			"2021-11":"u"
+			"2021-11":"y"
 		}
 	},
 	mail-ru: {
@@ -133,12 +133,12 @@ stats: {
 	},
 	fastmail: {
 		desktop-webmail: {
-			"2021-11": "u"
+			"2021-11": "y"
 		}
 	},
 	laposte: {
 		desktop-webmail: {
-			"2021-11": "u"
+			"2021-11": "y"
 		}
 	},
 	t-online-de: {
