@@ -48,7 +48,6 @@ class Support {
 	}
 
 	updateHTML() {
-		console.log("updateHTML: ", this.currentTotal);
 		if(this.currentTotal > 0) {
 			this.show();
 			this.updateScoreHTML();
