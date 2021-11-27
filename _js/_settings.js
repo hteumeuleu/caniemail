@@ -19,6 +19,7 @@ class Settings {
 		this.addEventToToggleButton();
 		this.addEventToCheckboxes();
 		this.addEventToCheckAllButton();
+		this.addEventToDevicesButtons();
 	}
 
 	setInitialValues() {
@@ -33,10 +34,14 @@ class Settings {
 					const value = keyValuePair[1];
 					if(value.toLowerCase() == 'on') {
 						const checkbox = this.panel.querySelector(`input[type="checkbox"][name="${key}"]`);
-						checkbox.checked = true;
+						if(checkbox) {
+							checkbox.checked = true;
+						}
 					} else {
 						const checkbox = this.panel.querySelector(`input[type="checkbox"][name="${key}"][value="${value}"]`);
-						checkbox.checked = true;
+						if(checkbox) {
+							checkbox.checked = true;
+						}
 					}
 				});
 			}
@@ -92,6 +97,66 @@ class Settings {
 
 			e.preventDefault();
 			this.toggle();
+		});
+	}
+
+	addEventToDevicesButtons() {
+		const mobilePlatforms = ['mobile-webmail', 'webmail', 'ios', 'android', 'outlook-com'];
+		const desktopPlatforms = ['desktop-app', 'desktop-webmail', 'webmail', 'windows', 'macos', 'windows-mail', 'outlook-com'];
+		let mobileButton = this.panel.querySelector('#settings-mobile-button');
+		let desktopButton = this.panel.querySelector('#settings-desktop-button');
+
+		mobileButton.addEventListener('click', e => {
+
+			e.preventDefault();
+			// Check the mobile clients checkboxes
+			const checkboxes = this.panel.querySelectorAll('input[type="checkbox"]');
+			checkboxes.forEach(checkbox => {
+				const checkValue = mobilePlatforms.indexOf(checkbox.value) > -1 ? true : false;
+				checkbox.checked = checkValue;
+				checkbox.indeterminate = false;
+			});
+			// Set the state of the family's checkboxes
+			const familyCheckboxes = this.panel.querySelectorAll('.settings-list-item > input[type="checkbox"]');
+			familyCheckboxes.forEach(checkbox => {
+				const childCheckboxesAll = checkbox.parentNode.querySelectorAll('.settings-child-list-item > input[type="checkbox"]');
+				const childCheckboxesChecked = checkbox.parentNode.querySelectorAll('.settings-child-list-item > input[type="checkbox"]:checked');
+				if(childCheckboxesChecked.length === 0) {
+					checkbox.checked = false;
+				} else if(childCheckboxesChecked.length === childCheckboxesAll.length) {
+					checkbox.checked = true;
+				} else {
+					checkbox.indeterminate = true;
+				}
+			});
+			// Save settings
+			this.save();
+		});
+
+		desktopButton.addEventListener('click', e => {
+
+			e.preventDefault();
+			const checkboxes = this.panel.querySelectorAll('input[type="checkbox"]');
+			checkboxes.forEach(checkbox => {
+				const checkValue = desktopPlatforms.indexOf(checkbox.value) > -1 ? true : false;
+				checkbox.checked = checkValue;
+				checkbox.indeterminate = false;
+			});
+			// Set the state of the family's checkboxes
+			const familyCheckboxes = this.panel.querySelectorAll('.settings-list-item > input[type="checkbox"]');
+			familyCheckboxes.forEach(checkbox => {
+				const childCheckboxesAll = checkbox.parentNode.querySelectorAll('.settings-child-list-item > input[type="checkbox"]');
+				const childCheckboxesChecked = checkbox.parentNode.querySelectorAll('.settings-child-list-item > input[type="checkbox"]:checked');
+				if(childCheckboxesChecked.length === 0) {
+					checkbox.checked = false;
+				} else if(childCheckboxesChecked.length === childCheckboxesAll.length) {
+					checkbox.checked = true;
+				} else {
+					checkbox.indeterminate = true;
+				}
+			});
+			// Save settings
+			this.save();
 		});
 	}
 
