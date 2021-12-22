@@ -1,6 +1,6 @@
 ---
 title: "<style> element"
-description: "This is the description of the `<style>` element."
+description: "An HTML element to contain style information, in CSS, for a document or part of a document."
 category: html
 last_test_date: "2019-06-24"
 test_url: "/tests/html-style.html"
