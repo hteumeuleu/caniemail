@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head></head>
+<head>
+	<meta charset="UTF-8" />
+	<title>Can I email</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<!--[if mso]>
+	<xml>
+		<o:OfficeDocumentSettings>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+	<style>
+		.test div { 
+			background:red;
+		}
+		.test div:has(a) { 
+			background:green !important;
+		}
+	</style>
+	<style>
+		.test ul { 
+			background:red;
+		}
+		.test ul:has(li:nth-child(3)) { 
+			background:green !important;
+		}
+	</style>
+	<style>
+		.test .foo { 
+			background:red;
+		}
+		.test .foo:has(.bar) { 
+			background:green !important;
+		}
+	</style>
+</head>
+<body>
+	<div style="max-width:600px; margin:0 auto;">
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			CSS :has()
+		</h1>
+		<h2 style="margin:0 0 1em; font:bold 16px monospace;">
+			div:has(a)
+		</h2>
+		<div style="font:20px serif;" class="test">
+			<div style="background:red;">
+				Lorem ipsum, dolor sit, amet consectetur adipisicing elit.
+			</div>
+			<div style="background:red;">
+				Lorem ipsum, dolor sit, <a href="https://www.example.com">amet consectetur</a> adipisicing elit.
+			</div>
+		</div>
+		<h2 style="margin:0 0 1em; font:bold 16px monospace;">
+			ul:has(li:nth-child(3))
+		</h2>
+		<div style="font:20px serif;" class="test">
+			<ul style="background:red;">
+				<li>One</li>
+				<li>Two</li>
+			</ul>
+			<ul style="background:red;">
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+				<li>Four</li>
+			</ul>
+		</div>
+		<h2 style="margin:0 0 1em; font:bold 16px monospace;">
+			.foo:has(.bar)
+		</h2>
+		<div style="font:20px serif;" class="test">
+			<div class="foo" style="background:red;">
+				foo
+			</div>
+			<div class="foo" style="background:red;">
+				foo <span class="bar">bar</span>
+			</div>
+		</div>
+		<p style="margin-top:1.6em; font:20px serif;">
+			https://developer.mozilla.org/en-US/docs/Web/CSS/:has
+		</p>
+		<p style="margin-top:1.6em; font:20px serif;">
+			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2021.
+		</p>
+	</div>
+</body>
+</html>
