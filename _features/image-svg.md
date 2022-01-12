@@ -147,6 +147,6 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial.  Works in GANGA."
+    "1": "Partially supported. Only works with non Gmail accounts."
 }
 ---

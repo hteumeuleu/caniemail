@@ -145,6 +145,6 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. An image renders but the colours are incorrect.",
-    "2": "Partial. Does not render in GANGA",
+    "2": "Partial. Does not render with non Gmail accounts.",
 }
 ---

@@ -149,7 +149,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Does not submit in iOS GANGA.",
+  "1": "Does not submit in iOS with non Gmail accounts.",
   "2": "On submit name values are prefixed with `x_`.",
   "3": "Does not submit in preview pane, but does when the email is opened in a new window.",
   "4": "Not supported. `<form>` is transformed into `<noform>`.",
