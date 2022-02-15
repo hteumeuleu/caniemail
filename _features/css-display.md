@@ -144,7 +144,7 @@ notes_by_num: {
     "2": "Partial. `inline-flex`, `inline-grid`, `flex`, `grid`, `flow-root`, `contents`, `inline flow-root`, `inline flex`, `inline grid`, `initial`, `revert`, `unset` values are not supported.",
     "3": "Buggy. Only the first value is kept with the two-value syntax.",
     "4": "Buggy. `display:none` does not inherit to inner tables.",
-    "5": "Partial. Only supports `display:none`.",
+    "5": "Partial. Only supports `display:none` (but not on `<img>`).",
     "6": "Partial. `flow-root`, `inline-flex`, `inline-grid`, `inline flow`, `contents`, `revert` are not supported.",
     "7": "Partial. Two-value syntax are combined into a single one with a dash."
 }
