@@ -16,6 +16,7 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
+      "2020-04":"y",
       "2022-02":"a #1"
     },
     ios: {
@@ -24,9 +25,9 @@ stats: {
     android: {
       "2020-04":"y"
     },
-        mobile-webmail: {
-            "2020-04":"n"
-        }
+    mobile-webmail: {
+      "2020-04":"n"
+    }
   },
     orange: {
         desktop-webmail: {
@@ -67,6 +68,7 @@ stats: {
   yahoo: {
     desktop-webmail: {
       "2019-10":"n",
+	  "2021-01":"y",
 	  "2022-02":"a #1"
     },
     ios: {
