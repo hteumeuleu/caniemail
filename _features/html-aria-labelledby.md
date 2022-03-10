@@ -142,7 +142,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. `id` is removed.",
-    "2": "Buggy. `id` prefix mismatched. The `id` value is prefixed but not the `aria-describedby` value."
+    "2": "Buggy. `id` prefix mismatched. The `id` value is prefixed but not the `aria-labelledby` value."
 }
 links: {
   "ARIA: aria-labelledby definition":"https://www.w3.org/TR/wai-aria/#aria-labelledby",
