@@ -2,13 +2,14 @@
 title: ":has()"
 description: "Represents an element if any of the selectors passed as parameters match at least one element."
 category: css
-last_test_date: "2021-12-22"
+last_test_date: "2022-03-15"
 test_url: "/tests/css-has.html"
 test_results_url: ""
 stats: {
     apple-mail: {
         macos: {
-            "15.0":"n"
+            "15.0":"n",
+            "16.0":"y"
         },
         ios: {
             "15.1":"n",
@@ -139,7 +140,7 @@ stats: {
         }
     }
 }
-notes: "As of december 2021, `:has()` is only supported in [Safari Technology Preview 137](https://webkit.org/blog/12156/release-notes-for-safari-technology-preview-137/)."
+notes: "As of december 2021, `:has()` is only supported in [Safari Technology Preview 137](https://webkit.org/blog/12156/release-notes-for-safari-technology-preview-137/). As of march 2022, it is supported in Safari 15.4."
 notes_by_num: {
     "1": "Not supported. `:has(…)` is replaced by `:has`.",
     "2": "Not supported. But the pseudo-class seems interpreted and computed server side."
