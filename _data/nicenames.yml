@@ -16,6 +16,7 @@ family:
   laposte: "LaPoste.net"
   t-online-de: "T-online.de"
   free-fr: "Free.fr"
+  gmx: "GMX"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"
