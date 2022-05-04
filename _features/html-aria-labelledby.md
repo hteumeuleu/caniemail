@@ -3,9 +3,9 @@ title: "aria-labelledby attribute"
 description: ""
 category: html
 keywords: "accessibility, a11y, wai-aria"
-last_test_date: "2019-02-28"
+last_test_date: "2022-04-08"
 test_url: "/tests/html-ARIA.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/7YEJc8itgQA23oSz9yaDB2rg6MHiItQgtKbflcOSjNx48/list"
+test_results_url: "https://testi.at/proj/zxzI0MZSJwpF46bHbO6C1gOiVn"
 stats: {
     apple-mail: {
         macos: {
@@ -17,16 +17,20 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2019-02": "n"
+            "2019-02": "n",
+            "2022-04": "n #2"
         },
         ios: {
-            "2020-01":"y"
+            "2020-01":"y",
+            "2022-04": "n #2"
         },
         android: {
-            "2020-01":"y"
+            "2020-01":"y",
+            "2022-04": "n #2"
         },
         mobile-webmail: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2022-04": "n #1"
         }
     },
     orange: {
@@ -142,7 +146,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. `id` is removed.",
-    "2": "Buggy. `id` prefix mismatched. The `id` value is prefixed but not the `aria-describedby` value."
+    "2": "Buggy. `id` prefix mismatched. The `id` value is prefixed but not the `aria-labelledby` value."
 }
 links: {
   "ARIA: aria-labelledby definition":"https://www.w3.org/TR/wai-aria/#aria-labelledby",
