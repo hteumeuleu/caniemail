@@ -30,6 +30,7 @@ platform:
   macos: "macOS"
   windows-mail: "Windows Mail"
   outlook-com: "Outlook.com"
+  outlook-one: "Outlook One"
 support:
   supported: "Supported"
   mitigated: "Partially supported"
