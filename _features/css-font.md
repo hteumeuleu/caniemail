@@ -43,6 +43,9 @@ stats: {
         }
     },
 	outlook: {
+		outlook-one: {
+			"2022-05": "y"
+        },
 		windows: {
 			"2007": "y",
 			"2010": "y",
