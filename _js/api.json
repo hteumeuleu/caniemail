@@ -3,7 +3,7 @@ layout: null
 permalink: "/api/data.json"
 ---
 {
-	"api_version":"1.0.3",
+	"api_version":"1.0.4",
 	"last_update_date":{{site.time | jsonify}},
 	"nicenames":{{site.data.nicenames | jsonify}},
 	"data":[{% for feature in site.features %}
@@ -13,6 +13,7 @@ permalink: "/api/data.json"
 			"description":{{ feature.description | jsonify }},
 			"url":{{ feature.url | prepend:site.url | jsonify }},
 			"category":{{ feature.category | jsonify }},
+			"tags":{{ feature.tags | jsonify }},
 			"keywords":{{ feature.keywords | jsonify }},
 			"last_test_date":{{ feature.last_test_date | jsonify }},
 			"test_url":{{ feature.test_url | prepend:site.url | jsonify }},
