@@ -48,6 +48,7 @@ HTML background
 
 * `description`: A sensible description of the feature. This can contain the actual name of code feature tested. (For example, `font-size`.)
 * `category`: `html` or `css`, in lowercase.
+* `tags`: a list of [tags](https://jekyllrb.com/docs/posts/#tags-and-categories) separated by a space e.g. `value1 value2 value3`. A tag categorises a feature in terms of benefits such as `accessibility` and `performance`.
 * `last_test_date`: The date of the last update in that file. This is useful to sort features by last update on the homepage of the site.
 * `test_url`: The relative URL to the test file created in the `tests` folder. (For example, `/tests/html-role.html`.)
 * `test_url_results`: A full URL to tests results on an online screenshots service. Make sure this link is accessible for anyone without an account. (For example, `https://app.emailonacid.com/app/acidtest/ABCDEF/list`.)
