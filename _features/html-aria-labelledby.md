@@ -3,6 +3,7 @@ title: "aria-labelledby attribute"
 description: ""
 category: html
 keywords: "accessibility, a11y, wai-aria"
+tags: accessibility
 last_test_date: "2022-04-08"
 test_url: "/tests/html-ARIA.html"
 test_results_url: "https://testi.at/proj/zxzI0MZSJwpF46bHbO6C1gOiVn"

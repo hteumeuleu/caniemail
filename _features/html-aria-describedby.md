@@ -3,6 +3,7 @@ title: "aria-describedby attribute"
 description: ""
 category: html
 keywords: "accessibility, a11y, wai-aria"
+tags: accessibility
 last_test_date: "2019-02-28"
 test_url: "/tests/html-ARIA.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/7YEJc8itgQA23oSz9yaDB2rg6MHiItQgtKbflcOSjNx48/list"
