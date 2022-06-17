@@ -138,6 +138,36 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-06": "n"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-06": "n"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-06": "n"
+        },
+        android: {
+            "2022-06":"y"
+        }
     }
 }
 notes: "This page reflects support for different syntaxes: `[attr]`, `[attr=\"value\"]`, `[attr~=\"value\"]`, `[attr|=\"value\"]`, `[attr^=\"value\"]`, `[attr$=\"value\"]`, `[attr*=\"value\"]`."
