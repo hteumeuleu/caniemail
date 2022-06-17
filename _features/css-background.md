@@ -146,7 +146,37 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-06": "a #1 #5 #6"
+		},
+		ios: {
+			"2022-06":"y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-06": "a #1 #5 #6"
+		},
+		ios: {
+			"2022-06":"y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-06": "y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	}
 }
 notes_by_num: {
     "1": "Partial. Does not support multiple values. The comma between two values is removed.",

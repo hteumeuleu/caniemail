@@ -142,7 +142,37 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+	gmx: {
+      desktop-webmail: {
+          "2022-06": "a #1"
+      },
+      ios: {
+          "2022-06":"y"
+      },
+      android: {
+          "2022-06":"y"
+      }
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-06": "a #1"
+		},
+		ios: {
+			"2022-06":"y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-06": "y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	}
 }
 notes_by_num: {
     "1": "Buggy. Only supports [color keywords from CSS Level 1](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#color_keywords)."
