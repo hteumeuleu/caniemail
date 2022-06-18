@@ -1,6 +1,7 @@
 ---
 title: "list-style-type"
 category: css
+tags: i18n
 last_test_date: "2020-04-20"
 test_url: "/tests/css-list.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/ifwlqtEsBCU23xVI7NgjBqvJlcJ4c20Akv3aRW3ugRJsP/list"
