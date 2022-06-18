@@ -2,6 +2,7 @@
 title: "srcset and sizes attributes"
 description: "This is the description of the `srcset` and `sizes` attributes."
 category: html
+tags: performance
 last_test_date: "2019-05-29"
 test_url: "/tests/html-srcset.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/1Bs8nKCQe7qRRBaKa2CdUjcn5j2RBqTSPtf6FRSTh2nQg/list"
