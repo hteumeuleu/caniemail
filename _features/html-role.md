@@ -3,6 +3,7 @@ title: "role attribute"
 description: ""
 category: html
 keywords: "accessibility, a11y, wai-aria"
+tags: accessibility
 last_test_date: "2020-02-04"
 test_url: "/tests/html-role.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/5UaXELRV2jCpTG9wg7EEDfjuPE0Elj08cJQGTxK5H4guu/list"
