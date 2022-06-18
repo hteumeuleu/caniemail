@@ -2,6 +2,7 @@
 title: "direction"
 description: "Sets the direction of text or table columns."
 category: css
+tags: i18n
 last_test_date: "2021-10-05"
 test_url: "/tests/css-direction.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/TzLrUhEnTKX7mZ1LTCpvaZ2PNzg4mnsZtoLJi0FVbCSRD/list"
