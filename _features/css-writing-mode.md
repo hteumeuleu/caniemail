@@ -2,6 +2,7 @@
 title: "writing-mode"
 description: "Sets whether lines of text are laid out horizontally or vertically."
 category: css
+tags: i18n
 last_test_date: "2022-05-04"
 test_url: "/tests/css-writing-mode.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Ingjv4scPnWSgh0u0Fr7EctmGksq4DyF7Pw9PQcENfZ37/list"
