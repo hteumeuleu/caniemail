@@ -152,6 +152,36 @@ stats: {
         desktop-webmail: {
             "2023-01": "u"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2021-12": "u"
+        },
+        ios: {
+            "2021-12": "u"
+        },
+        android: {
+            "2021-12": "u"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2021-12": "u"
+        },
+        ios: {
+            "2021-12": "u"
+        },
+        android: {
+            "2021-12": "u"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2021-12": "u"
+        },
+        android: {
+            "2021-12": "u"
+        }
     }
 }
 notes: "This is a global note."

@@ -174,16 +174,41 @@ stats: {
             "2022-12": "y"
         }
     },
-    gmx: {
-        desktop-webmail: {
-            "2022-12": "n"
-        }
-    },
     t-online-de: {
         desktop-webmail: {
             "2022-12": "n"
         }
-    }  
+    },
+    gmx: {
+      desktop-webmail: {
+          "2022-06": "n"
+      },
+      ios: {
+          "2022-06":"y"
+      },
+      android: {
+          "2022-06":"y"
+      }
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-06": "n"
+		},
+		ios: {
+			"2022-06":"y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-06": "y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	}
 }
 notes_by_num: {
     "1": "Not supported. `@media (prefers-color-scheme)` is transformed into `@media ( _filtered_a )`.",
