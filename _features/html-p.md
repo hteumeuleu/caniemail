@@ -139,7 +139,37 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+    gmx: {
+      desktop-webmail: {
+          "2022-06": "y"
+      },
+      ios: {
+          "2022-06":"y"
+      },
+      android: {
+          "2022-06":"y"
+      }
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-06": "y"
+		},
+		ios: {
+			"2022-06":"y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-06": "y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	}
 }
 links: {
     "MDN: `<p>` The Paragraph Element":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"
