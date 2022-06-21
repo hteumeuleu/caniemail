@@ -4,6 +4,11 @@
 		<title>role attribute</title>
 		<style>
 			[role] { background:#2ECC40; }
+			[role]::after{
+				content: ' role=' attr(role) ' ';
+				background:darkgreen;
+				color:#fff;
+			}
 		</style>
 	</head>
 	<body>
