@@ -3,6 +3,7 @@ title: "webP image format"
 description: "Support for webP image format"
 category: image
 keywords: image, webP
+tags: performance
 last_test_date: "2021-02-06"
 test_url: "/tests/images.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Fykm4EjEiDat8FSTWcKYdh26kFWklJuyERBKIsasMB2VH/list"
