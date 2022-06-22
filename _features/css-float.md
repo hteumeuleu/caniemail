@@ -42,14 +42,14 @@ stats: {
     },
 	outlook: {
 		windows: {
-			"2007": "n",
-			"2010": "n",
-			"2013": "n",
-			"2016": "n",
-			"2019": "n"
+			"2007": "n #1",
+			"2010": "n #1",
+			"2013": "n #1",
+			"2016": "n #1",
+			"2019": "n #1"
 		},
 		windows-mail: {
-			"2019-02": "n"
+			"2019-02": "n #1"
 		},
 		macos: {
 			"2019-02": "y"
@@ -137,6 +137,39 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06":"y"
+        }
     }
+}
+notes_by_num: {
+    "1": "Not supported. `table` and `img` elements can use an `align` attribute to get a similar effect."
 }
 ---
