@@ -59,6 +59,18 @@
 				</tr>
 			<tbody>
 		</table>
+		<h2 style="margin:1em 0 0">clamp</h2>
+		<div style="background:red;height:1em;">
+		  <div style="background:green;height:1em;width:0; width:clamp(100px, 100%, 600px)">
+		</div>
+		<h2 style="margin:1em 0 0">max</h2>
+		<div style="background:red;height:1em;">
+		  <div style="background:green;height:1em;width:0; width:max(100%, 300px)">
+		</div>
+		<h2 style="margin:1em 0 0">min</h2>
+		<div style="background:red;height:1em;">
+		  <div style="background:green;height:1em;width:0; width:min(100%, 600px)">
+		</div>
 		<p style="margin-top:1.6em; font:20px serif;">
 			Can I Use: https://caniuse.com/css-math-functions<br />
 			MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()
