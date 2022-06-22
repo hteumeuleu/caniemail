@@ -2,6 +2,7 @@
 title: "lang attribute"
 description: "The `lang` attribute lets you declare the language of the content of an HTML element."
 category: html
+tags: i18n accessibility
 last_test_date: "2020-10-25"
 test_url: "/tests/html-lang.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Cw4skDHvaihUbRGS21mmXSnyxfjIQQNAMGfRwXlpf6zR7/list"
