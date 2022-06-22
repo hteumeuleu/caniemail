@@ -1,0 +1,16 @@
+---
+layout: default
+title: Features tagged on Can I email…
+permalink: /tags/
+---
+{% assign tags = site.features | map:"tags" | join: ','  | split: ',' | uniq %}
+{% assign tags = tags | sort_natural %}
+{% for tag in tags %}
+	<h1 class="list-title" id="title-{{ tag | slugify }}">{{ site.data.nicenames.tags[tag] | default: tag }}</h1>
+	{% assign features-by-tag = site.features | where:"tags", tag %}
+	<ul class="list list--features">
+		{% for feature in features-by-tag %}
+			<li><a href="{{ feature.url }}">{{ feature.title | escape_once }}</a></li>
+		{% endfor %}
+	</ul>
+{% endfor %}
