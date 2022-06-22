@@ -3,6 +3,7 @@ title: "@media (prefers-reduced-motion)"
 description: ""
 category: css
 keywords: "media queries, media query, media feature, prefers-reduced-motion, animation, accessibility"
+tags: accessibility performance
 last_test_date: "2021-02-20"
 test_url: "/tests/css-media-prefers-reduced-motion.html"
 test_results_url: "https://testi.at/proj/e3GT3l1CxqBUoE3u9keC4WLf5"
