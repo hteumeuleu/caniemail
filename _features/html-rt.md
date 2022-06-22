@@ -2,6 +2,7 @@
 title: "<rt> element"
 description: ""
 category: html
+tags: i18n
 last_test_date: "2019-02-28"
 test_url: "/tests/HTML5.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Bzyzx8Z5Kvlfib1Fw9Ted8xtPE26RcjPSdUobdUywgJVm/list"
