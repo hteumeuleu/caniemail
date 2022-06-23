@@ -3,35 +3,38 @@ title: "font-weight"
 description: ""
 category: css
 keywords: font,weight
-last_test_date: "2021-01-31"
+last_test_date: "2022-06-23"
 test_url: "/tests/css-font-weight.html"
-test_results_url: "https://testi.at/proj/5QnIVlijE5FP53uPe4Ty0F8P"
+test_results_url: "https://app.emailonacid.com/app/acidtest/n4Dj7AQAtcFsJEgkLoSucoofVEvWrmqTqsO5pev2ew8XN/list"
 stats: {
   apple-mail: {
     macos: {
       "11": "y",
       "12": "y",
-      "13": "y"
+      "13": "y",
+	  "14": "y",
+	  "15": "y"
     },
     ios: {
       "11": "y",
       "12": "y",
       "13": "y",
-      "14": "y"
+      "14": "y",
+	  "15": "y"
     }
   },
   gmail: {
     desktop-webmail: {
-      "2021-01": "y"
+      "2022-06": "y"
     },
     ios: {
-      "2021-01": "y"
+      "2022-06": "y"
     },
     android: {
-      "2021-01": "y"
+      "2022-06": "y"
     },
     mobile-webmail: {
-      "2021-01": "y"
+      "2022-06": "y"
     }
   },
   orange: {
@@ -48,14 +51,14 @@ stats: {
   },
   outlook: {
     windows: {
-      "2007": "a #1",
-      "2010": "a #1",
-      "2013": "a #1",
-      "2016": "a #1",
-      "2019": "a #1"
+      "2007": "a #2",
+      "2010": "a #2",
+      "2013": "a #2",
+      "2016": "a #2",
+      "2019": "a #2"
     },
     windows-mail: {
-      "2021-01": "a #1"
+      "2021-01": "a #2"
     },
     macos: {
       "2021-01": "y"
@@ -83,7 +86,7 @@ stats: {
   },
   aol: {
     desktop-webmail: {
-      "2021-01": "a #1"
+      "2022-06": "a #1"
     },
     ios: {
       "2021-01": "a #1"
@@ -131,7 +134,7 @@ stats: {
   },
   mail-ru: {
     desktop-webmail: {
-      "2021-01":"y"
+      "2022-06":"y"
     }
   },
   fastmail: {
@@ -146,7 +149,8 @@ stats: {
   }
 }
 notes_by_num: {
-  "1": "Partial support. `<number>` values are not supported as per CSS Fonts Level 4 where any `<number>` value between 1 and 1000 (inclusive) is a valid value. Only the following numeric values are supported: 100, 200, 300, 400, 500, 600, 700, 800, and 900."
+  "1": "Partial support. `<number>` values are not supported as per CSS Fonts Level 4 where any `<number>` value between 1 and 1000 (inclusive) is a valid value. Only the following numeric values are supported: 100, 200, 300, 400, 500, 600, 700, 800, and 900.",
+  "2": "Partial support. `<number>` values between 0 and 599 are set as normal font weight. `<number>` values between 600 and 1000 are set as bold font weight."
 }
 links: {
   "Can I use: CSS property: font-weight":"https://caniuse.com/mdn-css_properties_font-weight",
