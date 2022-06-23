@@ -43,13 +43,13 @@ stats: {
 	outlook: {
 		windows: {
 			"2003": "y",
-			"2007": "a #1",
-			"2010": "a #1",
-			"2013": "a #1",
-			"2016": "a #1",
-			"2019": "a #1"
+			"2007": "a #1 #2",
+			"2010": "a #1 #2",
+			"2013": "a #1 #2",
+			"2016": "a #1 #2",
+			"2019": "a #1 #2"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"2020-01": "a #1"
 		},
 		macos: {
@@ -133,10 +133,16 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Big negative values are rendered differently from CSS standards.",
+	"2": "Buggy. Values set in `em` are smaller than the expected render in CSS. See [#192](https://github.com/hteumeuleu/caniemail/issues/192)."
 }
 links: {
     "Can I use: letter-spacing": "https://caniuse.com/#feat=css-letter-spacing",

@@ -2,6 +2,7 @@
 title: "lang attribute"
 description: "The `lang` attribute lets you declare the language of the content of an HTML element."
 category: html
+tags: i18n accessibility
 last_test_date: "2020-10-25"
 test_url: "/tests/html-lang.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Cw4skDHvaihUbRGS21mmXSnyxfjIQQNAMGfRwXlpf6zR7/list"
@@ -49,7 +50,7 @@ stats: {
             "2016":"u",
             "2019":"y"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-10":"y"
         },
         macos: {
@@ -79,7 +80,8 @@ stats: {
             "2020-10":"y"
         },
         android: {
-            "2020-10":"u"
+            "2020-10":"n",
+            "2021-10":"y"
         }
     },
     thunderbird: {
@@ -133,6 +135,11 @@ stats: {
     fastmail: {
         desktop-webmail: {
             "2021-07": "y"
+        }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
         }
     }
 }

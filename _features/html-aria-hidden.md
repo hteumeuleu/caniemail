@@ -2,7 +2,8 @@
 title: "aria-hidden attribute"
 description: ""
 category: html
-keywords: accessibility
+keywords: "accessibility, a11y, wai-aria"
+tags: accessibility
 last_test_date: "2019-02-28"
 test_url: "/tests/html-ARIA.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/7YEJc8itgQA23oSz9yaDB2rg6MHiItQgtKbflcOSjNx48/list"
@@ -49,7 +50,7 @@ stats: {
 			"2016": "y",
 			"2019": "y"
 		},
-        windows-10-mail: {
+        windows-mail: {
             "2020-01":"n"
         },
 		macos: {
@@ -133,6 +134,15 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
+	},
+	laposte: {
+		desktop-webmail: {
+			"2021-08": "y"
+		}
 	}
+}
+links: {
+  "ARIA: aria-hidden definition":"https://www.w3.org/TR/wai-aria/#aria-hidden",
+  "MDN: Using the aria-hidden attribute":"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute"
 }
 ---

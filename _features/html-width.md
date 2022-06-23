@@ -7,7 +7,7 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/UhsQmS14DHKFfotKEcCT
 stats: {
     apple-mail: {
         macos: {
-            "12.4":"y"
+            "12.4":"y #3"
         },
         ios: {
             "12.4":"y"
@@ -48,7 +48,7 @@ stats: {
             "2016":"a #1 #2",
             "2019":"a #1 #2"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2019-09":"y"
         },
         macos: {
@@ -133,10 +133,16 @@ stats: {
         desktop-webmail: {
             "2021-07": "y"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
     }
 }
 notes_by_num: {
     "1": "Buggy. Percentage width on `<img>` elements are based on the physical file's width, not on the parent element's width.",
-    "2": "Buggy. Sizes set in attributes don't scale in 120 dpi mode."
+    "2": "Buggy. Sizes set in attributes don't scale in 120 dpi mode.",
+	"3": "The `width` attribute is ignored on CID embedded images. See [#171](https://github.com/hteumeuleu/caniemail/issues/171)."
 }
 ---

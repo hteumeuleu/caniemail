@@ -14,10 +14,10 @@ git clone https://github.com/hteumeuleu/caniemail.git
 
 See [Cloning a repository](https://help.github.com/en/articles/cloning-a-repository) on GitHub documentation. If you're not familiar with Git or GitHub, I strongly encourage you to try [GitHub's desktop app](https://desktop.github.com/) on macOS, Windows or Linux.
 
-2. **Install Jekyll**.
+2. **Install Jekyll** and other dependencies.
 
 ```sh
-gem install bundler jekyll
+bundle install
 ```
 
 See [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/).

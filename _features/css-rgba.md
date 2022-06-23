@@ -14,7 +14,7 @@ stats: {
       "13": "y"
     },
     ios: {
-      "11": "y #1",
+      "11": "a #1",
       "12": "y",
       "13": "y",
       "14": "y"
@@ -22,16 +22,16 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2021-01": "y #1"
+      "2021-08": "a #1 #2"
     },
     ios: {
-      "2021-01": "y #1"
+      "2021-08": "a #1 #2"
     },
     android: {
-      "2021-01": "y #1"
+      "2021-08": "a #1 #2"
     },
     mobile-webmail: {
-      "2021-01": "y #1"
+      "2021-08": "a #1 #2"
     }
   },
   orange: {
@@ -53,7 +53,7 @@ stats: {
       "2016": "n",
       "2019": "n"
     },
-    windows-10-mail: {
+    windows-mail: {
       "2021-01": "n"
     },
     macos: {
@@ -71,24 +71,24 @@ stats: {
   },
   yahoo: {
     desktop-webmail: {
-      "2021-01": "y #1"
+      "2021-01": "a #1"
     },
     ios: {
-      "2021-01": "y #1"
+      "2021-01": "a #1"
     },
     android: {
-      "6.16.2.1519779": "y #1"
+      "6.16.2.1519779": "a #1"
     }
   },
   aol: {
     desktop-webmail: {
-      "2021-05": "y #1"
+      "2021-05": "a #1"
     },
     ios: {
-      "2021-05": "y #1"
+      "2021-05": "a #1"
     },
     android: {
-      "2021-05": "y #1"
+      "2021-05": "a #1"
     }
   },
   samsung-email: {
@@ -137,14 +137,21 @@ stats: {
     desktop-webmail: {
       "2021-07": "y"
     }
+  },
+  laposte: {
+    desktop-webmail: {
+      "2021-08": "y"
+    }
   }
 }
 notes_by_num: {
-  "1": "Whitespace syntax is not supported (`rgb(0 128 0 / 1)`)."
+  "1": "Whitespace syntax is not supported (`rgb(0 128 0 / 1)`).",
+  "2": "whitespace syntax (`rgba(0 128 0 / 1)`): when used in the `style` attribute of an element, the whole attribute is stripped. When used inside `<style>`, the whole `<style>` block is stripped."
 }
 links: {
   "Can I use: Alpha color values (rgba(), hsla())":"https://caniuse.com/mdn-css_types_color_alpha",
   "Can I use: Allow floats in rgb() and rgba()":"https://caniuse.com/mdn-css_types_color_floats_in_rgb_rgba",
-  "MDN: <color> CSS data type":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()"
+  "MDN: <color> CSS data type":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()",
+  "MDN: Browser compatibility for space-sparated values (also known as whitespace syntax)":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba()#space-separated_values"
 }
 ---

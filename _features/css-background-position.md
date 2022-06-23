@@ -17,13 +17,15 @@ stats: {
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "y #1"
 		},
 		ios: {
-			"2019-02": "a"
+			"2019-02": "a",
+			"2021-10": "y #1"
 		},
 		android: {
-			"2019-02": "a"
+			"2019-02": "a",
+			"2021-10": "y #1"
 		},
         mobile-webmail: {
             "2020-02":"y"
@@ -49,7 +51,7 @@ stats: {
 			"2016": "n #2",
 			"2019": "n #2"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"2019-02": "n"
 		},
 		macos: {
@@ -134,7 +136,12 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Does not support multiple values. The comma between two values is removed.",

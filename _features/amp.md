@@ -16,7 +16,8 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2020-04":"y"
+      "2020-04":"y",
+      "2022-02":"a #1"
     },
     ios: {
       "2020-04":"y"
@@ -24,9 +25,9 @@ stats: {
     android: {
       "2020-04":"y"
     },
-        mobile-webmail: {
-            "2020-04":"n"
-        }
+    mobile-webmail: {
+      "2020-04":"n"
+    }
   },
     orange: {
         desktop-webmail: {
@@ -48,7 +49,7 @@ stats: {
       "2016":"n",
       "2019":"n"
     },
-    windows-10-mail: {
+    windows-mail: {
       "2019-10":"n"
     },
     macos: {
@@ -67,7 +68,8 @@ stats: {
   yahoo: {
     desktop-webmail: {
       "2019-10":"n",
-	  "2021-01":"y"
+	  "2021-01":"y",
+	  "2022-02":"a #1"
     },
     ios: {
       "2019-10":"n"
@@ -133,13 +135,21 @@ stats: {
       desktop-webmail: {
           "2021-07":"n"
       }
+  },
+  laposte: {
+      desktop-webmail: {
+          "2021-08":"n"
+      }
   }
 }
 notes_by_num: {
+  "1": "Partial. Not supported on all compatible evergreen browsers. Refer to 'supported platforms' links listed below under resources."
 }
 links: {
   "AMP for Email Format":"https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email",
   "Gmail documentation on AMP":"https://developers.google.com/gmail/ampemail",
-  "Mail.ru AMP emails":"https://postmaster.mail.ru/amp/?lang=en"
+  "Mail.ru AMP emails":"https://postmaster.mail.ru/amp/?lang=en",
+  "Gmail supported platforms":"https://developers.google.com/gmail/ampemail/supported-platforms",
+  "Yahoo supported platforms":"https://senders.yahooinc.com/amp/#supported-platforms"
 }
 ---

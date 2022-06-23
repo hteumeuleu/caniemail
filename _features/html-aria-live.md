@@ -2,7 +2,8 @@
 title: "aria-live attribute"
 description: ""
 category: html
-keywords: accessibility
+keywords: "accessibility, a11y, wai-aria"
+tags: accessibility
 last_test_date: "2019-02-28"
 test_url: "/tests/html-ARIA.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/7YEJc8itgQA23oSz9yaDB2rg6MHiItQgtKbflcOSjNx48/list"
@@ -49,7 +50,7 @@ stats: {
             "2016": "a #2",
             "2019": "a #2"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-01":"n"
         },
         macos: {
@@ -133,10 +134,19 @@ stats: {
         desktop-webmail: {
             "2021-07": "y"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
     }
 }
 notes_by_num: {
     "1": "Unable to trigger live change to test.",
     "2": "Code isn't stripped but can't trigger a live change."
+}
+links: {
+  "ARIA: aria-live definition":"https://www.w3.org/TR/wai-aria/#aria-live",
+  "MDN: ARIA Live Regions":"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
 }
 ---

@@ -3,6 +3,7 @@ title: "AVIF image format"
 description: "A modern image format based on the AV1 video format."
 category: image
 keywords: image,img,AVIF
+tags: performance
 last_test_date: "2021-05-14"
 test_url: "/tests/images.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/d69Dg0BGvV5zAiHI1fjKX6BDulsODM8eYdKO9QVxlNuUL/list"
@@ -53,7 +54,7 @@ stats: {
       "2016": "n",
       "2019": "n"
     },
-    windows-10-mail: {
+    windows-mail: {
       "2021-01": "n"
     },
     macos: {
@@ -136,6 +137,11 @@ stats: {
   fastmail: {
     desktop-webmail: {
       "2021-07": "n"
+    }
+  },
+  laposte: {
+    desktop-webmail: {
+      "2021-08": "y"
     }
   }
 }

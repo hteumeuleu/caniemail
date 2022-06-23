@@ -48,7 +48,7 @@ stats: {
             "2016":"n",
             "2019":"n"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2021-05":"n"
         },
         macos: {
@@ -132,6 +132,11 @@ stats: {
     fastmail: {
         desktop-webmail: {
             "2021-07": "a #1 #6"
+        }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "a #4"
         }
     }
 }

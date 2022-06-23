@@ -37,7 +37,7 @@ stats: {
             "2016":"n",
             "2019":"n"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-02":"y"
         },
         macos: {
@@ -136,10 +136,15 @@ stats: {
         desktop-webmail: {
             "2021-07": "n"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
     }
 }
 notes_by_num: {
     "1": "Buggy. An image renders but the colours are incorrect.",
-    "2": "Partial. Does not render in GANGA",
+    "2": "Partial. Does not render with non Gmail accounts.",
 }
 ---

@@ -6,7 +6,14 @@ permalink: /clients/
 <div class="compare">
 	<form action="/" method="get" id="compare-form" class="compare-form">
 		<div class="settings-title">
-			Select email clients to compare <button type="button" id="compare-check-all-button" class="button" data-label-toggle="Reset selected clients" data-checked="true">Select all clients</button>
+			Select email clients to compare 
+			<div class="settings-title-actions">
+				<button type="button" id="compare-check-all-button" class="button" data-label-toggle="Uncheck all" data-checked="true">Check all</button>
+				<div class="button-group">
+					<button type="button" id="compare-mobile-button" class="button">Mobile</button>
+					<button type="button" id="compare-desktop-button" class="button">Desktop</button>
+				</div>
+			</div>
 		</div>
 		<div class="compare-options">
 			<ul class="compare-list">

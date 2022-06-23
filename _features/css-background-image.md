@@ -53,7 +53,7 @@ stats: {
 			"2016": "n #5",
 			"2019": "n #5"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"2019-02": "n"
 		},
 		macos: {
@@ -71,24 +71,30 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "a #3 #4"
+			"2019-02": "a #3 #4",
+			"2021-10": "a #3"
 		},
 		ios: {
-			"2019-02": "a #3 #4"
+			"2019-02": "a #3 #4",
+			"2021-10": "a #3"
 		},
 		android: {
-			"2019-02": "a #3 #4"
+			"2019-02": "a #3 #4",
+			"2021-10": "a #3"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "a #3 #4"
+			"2019-02": "a #3 #4",
+			"2021-10": "a #3"
 		},
 		ios: {
-			"2019-02": "a #3 #4"
+			"2019-02": "a #3 #4",
+			"2021-10": "a #3"
 		},
 		android: {
-			"2019-02": "a #3 #4"
+			"2019-02": "a #3 #4",
+			"2021-10": "a #3"
 		}
 	},
 	samsung-email: {
@@ -138,7 +144,22 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
+    },
+    t-online-de: {
+        desktop-webmail: {
+            "2021-11": "n"
+        }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2021-11": "n"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",

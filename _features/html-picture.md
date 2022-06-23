@@ -3,6 +3,7 @@ title: "<picture> element"
 description: "This is the description of the `<picture>` element."
 category: html
 keywords: picture, responsive image
+tags: accessibility performance
 last_test_date: "2019-05-29"
 test_url: "/tests/html-picture.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/AQoLHTLaC6F6JcMrkx38M7oyiJlAlXeRnJgkK06bSJiBR/list"
@@ -51,12 +52,13 @@ stats: {
             "2016":"n",
             "2019":"n"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-01":"n"
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.62":"n"
         },
         outlook-com: {
             "2019-05":"n"
@@ -135,6 +137,11 @@ stats: {
     fastmail: {
         desktop-webmail: {
             "2021-07": "n"
+        }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
         }
     }
 }

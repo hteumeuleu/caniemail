@@ -54,7 +54,7 @@ stats: {
 			"2016": "n",
 			"2019": "n"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"2020-12": "n"
 		},
 		macos: {
@@ -138,9 +138,16 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
+	},
+	laposte: {
+		desktop-webmail: {
+			"2021-08": "y #1"
+		}
 	}
 }
-notes_by_num: {}
+notes_by_num: {
+    "1": "Supported. But a default style of `margin:auto` is applied on every element and can prevent the expected result."
+}
 links: {
 	"MDN: align-items":"https://developer.mozilla.org/en-US/docs/Web/CSS/align-items",
 	"Can I use: flexbox":"https://caniuse.com/flexbox"

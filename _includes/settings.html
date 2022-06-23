@@ -1,7 +1,14 @@
 <div class="settings" hidden>
 	<form action="/" method="get" id="settings-form" class="settings-form">
 		<div class="settings-title">
-			Email Clients <button type="button" id="settings-check-all-button" class="button" data-label-toggle="Check all" data-checked="false">Uncheck all</button>
+			Email Clients 
+			<div class="settings-title-actions">
+				<button type="button" id="settings-check-all-button" class="button" data-label-toggle="Check all" data-checked="false">Uncheck all</button>
+				<div class="button-group">
+					<button type="button" id="settings-mobile-button" class="button">Mobile</button>
+					<button type="button" id="settings-desktop-button" class="button">Desktop</button>
+				</div>
+			</div>
 		</div>
 		<div class="settings-options">
 			<ul class="settings-list">

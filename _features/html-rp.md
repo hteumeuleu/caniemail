@@ -2,6 +2,7 @@
 title: "<rp> element"
 description: ""
 category:	html
+tags: i18n
 last_test_date: "2019-02-28"
 test_url: "/tests/HTML5.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Bzyzx8Z5Kvlfib1Fw9Ted8xtPE26RcjPSdUobdUywgJVm/list"
@@ -48,7 +49,7 @@ stats: {
 			"2016": "n",
 			"2019": "n"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"2019-02": "n"
 		},
 		macos: {
@@ -132,7 +133,12 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
+    }
 }
 notes_by_num: {
 	"1": "Partial. Supported with Non Gmail Accounts only."

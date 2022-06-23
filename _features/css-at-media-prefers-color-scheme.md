@@ -2,7 +2,7 @@
 title: "@media (prefers-color-scheme)"
 description: "This media query allows to theme for system light and dark mode."
 category: css
-keywords: dark mode, light mode
+keywords: "media queries, media query, media feature, dark mode, light mode"
 last_test_date: "2019-09-26"
 test_url: "/tests/css-media-prefers-color-scheme.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/CqQL3EUXh33sQ8Q6rOkJapoIjxfDz99BUpXGjtT2ErWdN/list"
@@ -52,7 +52,7 @@ stats: {
             "2016":"n",
             "2019":"n"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-01":"n"
         },
         macos: {
@@ -137,6 +137,11 @@ stats: {
     fastmail: {
         desktop-webmail: {
             "2021-07": "n #2"
+        }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
         }
     }
 }

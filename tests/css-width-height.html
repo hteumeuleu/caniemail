@@ -20,152 +20,174 @@
 </head>
 <body>
 	<div style="max-width:600px; margin:0 auto;">
-		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">width and height in HTML and CSS</h1>
-		<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; table-layout:fixed; border-bottom:1px solid lightgrey;">
-			<tbody>
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			min-*
+		</h1>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;table style="min-width:200px;min-height:200px;&gt;<br />
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="min-width:200px;min-height:200px;background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;table width="200"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="200" style="background:green;">
-							<tr>
-								<td>Test1</td>
-							</tr>
-						</table>
-					</td>
+					<td >Test1</td>
 				</tr>
+			</table>
+			<div style="min-width:200px;min-height:200px;background:green;">
+				Test2
+			</div>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;table style="width:100%;max-width:200px;max-height:200px;&gt;<br />
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-height:200px; max-width:200px;background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;table style="width: 200px;"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:200px; background:green;">
-							<tr>
-								<td>Test2</td>
-							</tr>
-						</table>
-					</td>
+					<td style="height:100%;">Test3.</td>
 				</tr>
+			</table>
+			<div style="max-width:200px;max-height:200px;background:green;">
+				Test4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit blanditiis provident in quam nam, numquam vero impedit enim quod sed sunt ipsa placeat molestias delectus.
+			</div>
+		</div>
+		<hr />
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			width
+		</h1>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;table width="200"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="200" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;td width="200"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
-							<tr>
-								<td width="200">Test3</td>
-							</tr>
-						</table>
-					</td>
+					<td>Test1</td>
 				</tr>
+			</table>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;table style="width: 200px;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:200px; background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;td style="width: 200px;"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
-							<tr>
-								<td style="width:200px;">Test4</td>
-							</tr>
-						</table>
-					</td>
+					<td>Test2</td>
 				</tr>
+			</table>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;td width="200"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;td width="200" style="padding: 0 20px;"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
-							<tr>
-								<td width="200" style="padding:0 20px;">Test5</td>
-							</tr>
-						</table>
-					</td>
+					<td width="200">Test3</td>
 				</tr>
+			</table>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;td style="width: 200px;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;td style="width: 200px; padding: 0 20px;"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
-							<tr>
-								<td style="padding:0 20px; width:200px;">Test6</td>
-							</tr>
-						</table>
-					</td>
+					<td style="width:200px;">Test4</td>
 				</tr>
+			</table>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;td width="200" style="padding: 0 20px;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;td height="200"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
-							<tr>
-								<td height="200">Test7</td>
-							</tr>
-						</table>
-					</td>
+					<td width="200" style="padding:0 20px;">Test5</td>
 				</tr>
+			</table>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;td style="width: 200px; padding: 0 20px;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;td style="height: 200px;"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
-							<tr>
-								<td style="height:200px;">Test8</td>
-							</tr>
-						</table>
-					</td>
+					<td style="padding:0 20px; width:200px;">Test6</td>
 				</tr>
+			</table>
+		</div>
+		<hr />
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			height
+		</h1>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;td height="200"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;td height="200" style="padding: 20px 0;"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
-							<tr>
-								<td height="200" style="padding:20px 0;">Test9</td>
-							</tr>
-						</table>
-					</td>
+					<td height="200">Test7</td>
 				</tr>
+			</table>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;td style="height: 200px;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;td style="height: 200px; padding: 20px 0;"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
-							<tr>
-								<td style="padding:20px 0; height:200px;">Test10</td>
-							</tr>
-						</table>
-					</td>
+					<td style="height:200px;">Test8</td>
 				</tr>
+			</table>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;td height="200" style="padding: 20px 0;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;img style="width:100%"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<img src="https://www.caniemail.com/assets/tests/images/mojave-day.jpg" alt="Test11" style="width:100%;" />
-					</td>
+					<td height="200" style="padding:20px 0;">Test9</td>
 				</tr>
+			</table>
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;td style="height: 200px; padding: 20px 0;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:green;">
 				<tr>
-					<td style="width:25%; vertical-align:top; padding:0.5em 1em 0.5em 0; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
-						&lt;img width="100%"&gt;
-					</td>
-					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<img src="https://www.caniemail.com/assets/tests/images/mojave-day.jpg" alt="Test11" width="100%" />
-					</td>
+					<td style="padding:20px 0; height:200px;">Test10</td>
 				</tr>
-			<tbody>
-		</table>
+			</table>
+		</div>
+		<hr />
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			Images
+		</h1>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;img style="width:100%"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<img src="https://www.caniemail.com/assets/tests/images/mojave-day.jpg" alt="Test11" style="width:100%;" />
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;img width="100%"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<img src="https://www.caniemail.com/assets/tests/images/mojave-day.jpg" alt="Test12" width="100%" />
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;img style="max-width:200px;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<img src="https://www.caniemail.com/assets/tests/images/mojave-day.jpg" alt="Test13" style="max-width:200px" />
+		</div>
+		<h2 style="margin:0 0 0.5em; font:bold 16px monospace;">
+			&lt;img style="max-height:200px;"&gt;
+		</h2>
+		<div style="margin:0 0 1em; font:20px serif;">
+			<img src="https://www.caniemail.com/assets/tests/images/mojave-day.jpg" alt="Test14" style="max-height:200px" />
+		</div>
+		<hr />
 		<p style="margin-top:1.6em; font:20px serif;">
-			This is a note on how the test should be read and interpreted.
-		</p>
-		<p style="margin-top:1.6em; font:20px serif;">
-			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2019.
+			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2021.
 		</p>
 	</div>
 </body>

@@ -56,7 +56,7 @@ layout: default
 			<div class="data-family data-family--{{family-key}}" id="data-{{ page.title | slugify }}-{{ family-key }}">
 				<h3 class="data-family-name">
 					<span>
-						{% assign family-page = site.clients | where:"slug", client-family | first %}
+						{% assign family-page = site.clients | where:"slug", family-key | first %}
 						{% if family-page != nil and family-page != "" %}
 						<a href="/clients/{{family-key}}/">
 						{% endif %}

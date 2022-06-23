@@ -1,6 +1,7 @@
 ---
 title: "list-style-type"
 category: css
+tags: i18n
 last_test_date: "2020-04-20"
 test_url: "/tests/css-list.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/ifwlqtEsBCU23xVI7NgjBqvJlcJ4c20Akv3aRW3ugRJsP/list"
@@ -48,7 +49,7 @@ stats: {
             "2016":"y",
             "2019":"y"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-04":"y"
         },
         macos: {
@@ -132,6 +133,11 @@ stats: {
     fastmail: {
         desktop-webmail: {
             "2021-07": "y"
+        }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
         }
     }
 }

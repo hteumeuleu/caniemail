@@ -18,12 +18,15 @@ stats: {
 		desktop-webmail: {
 			"2021-08":"y"
 		},
-        mobile-webmail: {
+        ios: {
             "2021-08": "y"
         },
 		android: {
 		    "2021-08": "y"
-		}
+		},
+        mobile-webmail: {
+            "2021-08": "y"
+        }
 	},
 	outlook: {
 		windows: {
@@ -33,12 +36,21 @@ stats: {
 			"2016":"a #1",
 			"2019":"a #1"
 		},
+        windows-mail: {
+            "2021-09":"a #1"
+        },
 		macos: {
 			"2016":"y"
 		},
 		outlook-com: {
 			"2021-08":"y"
-		}
+		},
+        ios: {
+            "2021-09":"y"
+        },
+        android: {
+            "2021-09":"y"
+        }
 	},
 	yahoo: {
 		desktop-webmail: {

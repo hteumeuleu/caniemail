@@ -1,8 +1,9 @@
 ---
 title: "role attribute"
-description: "This is the description of the `role` attribute."
+description: ""
 category: html
-keywords: accessibility
+keywords: "accessibility, a11y, wai-aria"
+tags: accessibility
 last_test_date: "2020-02-04"
 test_url: "/tests/html-role.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/5UaXELRV2jCpTG9wg7EEDfjuPE0Elj08cJQGTxK5H4guu/list"
@@ -51,7 +52,7 @@ stats: {
             "2016":"y #1",
             "2019":"y #1"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-01":"n"
         },
         macos: {
@@ -146,11 +147,20 @@ stats: {
         desktop-webmail: {
             "2021-07": "y"
         }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
     }
 }
 notes: ""
 notes_by_num: {
     "1": "Not live tested, only looked at processed code on Litmus.",
 	"2": "Partial. Only works on the `<table>` tag."
+}
+links: {
+  "ARIA: role definition":"https://w3c.github.io/aria/#attr-role",
+  "MDN: WAI-ARIA Roles":"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
 }
 ---

@@ -1,6 +1,6 @@
 ---
 title: "<style> element"
-description: "This is the description of the `<style>` element."
+description: "An HTML element to contain style information, in CSS, for a document or part of a document."
 category: html
 last_test_date: "2019-06-24"
 test_url: "/tests/html-style.html"
@@ -51,7 +51,7 @@ stats: {
             "2016":"a #4",
             "2019":"a #4"
         },
-        windows-10-mail: {
+        windows-mail: {
             "2020-01":"a #4"
         },
         macos: {
@@ -114,7 +114,8 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2020-03":"n"
+            "2020-03":"n",
+            "2022-02":"y"
         },
         ios: {
             "2020-03":"n"
@@ -136,6 +137,11 @@ stats: {
     fastmail: {
         desktop-webmail: {
             "2021-07": "y"
+        }
+    },
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
         }
     }
 }

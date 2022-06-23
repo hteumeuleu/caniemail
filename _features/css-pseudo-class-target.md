@@ -48,7 +48,7 @@ stats: {
 			"2016": "n",
 			"2019": "n"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"2019-10": "n"
 		},
 		macos: {
@@ -132,7 +132,12 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "n #2"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "n #2"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Only supported on type selectors.",

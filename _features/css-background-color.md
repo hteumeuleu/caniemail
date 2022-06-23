@@ -32,13 +32,15 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-08": "y",
-            "2021-03":"n"
+            "2021-03": "a #1"
         },
         ios: {
-            "2019-08": "y"
+            "2019-08": "y",
+            "2021-10": "a #1"
         },
         android: {
-            "2019-08": "y"
+            "2019-08": "y",
+            "2021-10": "a #1"
         }
     },
 	outlook: {
@@ -50,7 +52,7 @@ stats: {
 			"2016": "y",
 			"2019": "y"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"2019-02": "y"
 		},
 		macos: {
@@ -135,6 +137,18 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
+    }
+}
+notes_by_num: {
+    "1": "Buggy. Only supports [color keywords from CSS Level 1](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#color_keywords)."
+}
+links: {
+    "Can I use: background-color":"https://caniuse.com/mdn-css_properties_background-color",
+    "MDN: background-color":"https://developer.mozilla.org/en-US/docs/Web/CSS/background-color"
 }
 ---

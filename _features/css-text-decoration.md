@@ -49,7 +49,7 @@ stats: {
 			"2016": "a #2 #3",
 			"2019": "a #2 #3"
 		},
-		windows-10-mail: {
+		windows-mail: {
 			"2019-02": "a #2 #3"
 		},
 		macos: {
@@ -133,7 +133,12 @@ stats: {
 		desktop-webmail: {
 			"2021-07": "y"
 		}
-	}
+	},
+    laposte: {
+        desktop-webmail: {
+            "2021-08": "y"
+        }
+    }
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",
