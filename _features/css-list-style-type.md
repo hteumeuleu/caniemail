@@ -139,7 +139,38 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        ios: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        ios: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
+        }
     }
+        
 }
 notes: "Tests and support are based on the CSS Level 2 specification. `<custom-ident>`, `symbols()` and `<string>` values are not tested here."
 notes_by_num: {

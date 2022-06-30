@@ -143,14 +143,39 @@ stats: {
             "2022-12": "y"
         }
     },
-    gmx: {
+    t-online-de: {
         desktop-webmail: {
             "2022-12": "y"
         }
     },
-    t-online-de: {
+    gmx: {
         desktop-webmail: {
-            "2022-12": "y"
+            "2022-06": "y"
+        },
+        ios: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        ios: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
         }
     }
 }
