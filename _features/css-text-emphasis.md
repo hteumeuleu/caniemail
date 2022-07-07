@@ -2,7 +2,7 @@
 title: "text-emphasis"
 description: "Applies emphasis marks to text commonly used in East Asian languages. Tests with text-emphasis, text-emphasis-color & text-emphasis-style properties."
 category: css
-last_test_date: "2021-07-07"
+last_test_date: "2022-07-07"
 test_url: "/tests/css-text-emphasis.html"
 test_results_url: "https://testi.at/proj/O0yCP6t6l3sZ1xFrLZuEx6I5O"
 stats: {
@@ -11,10 +11,10 @@ stats: {
         "2022-07":"y"
     },
     ios: {
-		  "11":"y"
-		  "12":"y"
-        "13":"y"
-		  "14":"y"
+		  "11":"y",
+		  "12":"y",
+        "13":"y",
+		  "14":"y",
         "15":"y"
     }
   },
@@ -29,7 +29,7 @@ stats: {
         "2022-07":"n"
     },
     mobile-webmail: {
-        "2022-07":"u"
+        "2022-07":"n"
     }
   },
   orange: {
@@ -47,7 +47,7 @@ stats: {
     windows: {
       "2013":"n",
       "2016":"n",
-      "2019":"n"
+      "2019":"n",
       "2021":"n"
     },
     windows-mail: {
@@ -68,7 +68,7 @@ stats: {
   },
   samsung-email: {
     android: {
-		"10":"n"
+		"10":"n",
 		"11":"n"
     }
   },
