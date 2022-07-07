@@ -1,8 +1,7 @@
 ---
-title: "Test property"
-description: "This is the description of the test property."
+title: "text-emphasis"
+description: "Applies emphasis marks to text commonly used in East Asian languages. Tests with text-emphasis, text-emphasis-color & text-emphasis-style properties."
 category: css
-keywords: a, b, c
 last_test_date: "2021-07-07"
 test_url: "/tests/css-text-emphasis.html"
 test_results_url: "https://testi.at/proj/O0yCP6t6l3sZ1xFrLZuEx6I5O"
@@ -94,10 +93,10 @@ stats: {
       "2022-07":"n"
     },
     ios: {
-      "2022-07":"u"
+      "2022-07":"n"
     },
     android: {
-      "2022-07":"u"
+      "2022-07":"n"
     }
   },
   yahoo: {
@@ -105,10 +104,10 @@ stats: {
         "2022-07":"n"
     },
     ios: {
-        "2022-07":"u"
+        "2022-07":"n"
     },
     android: {
-        "2022-07":"u"
+        "2022-07":"n"
     }
   },
   protonmail: {
