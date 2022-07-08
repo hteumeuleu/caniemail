@@ -138,7 +138,37 @@ stats: {
         desktop-webmail: {
             "2021-12": "y"
         }
-    }
+    },
+  gmx: {
+      desktop-webmail: {
+          "2022-07": "n" 
+      },
+      ios: {
+          "2022-07": "y"
+      },
+      android: {
+          "2022-07": "y"
+      }
+  },
+  web-de: {
+      desktop-webmail: {
+          "2022-07": "n" 
+      },
+      ios: {
+          "2022-07": "y"
+      },
+      android: {
+          "2022-07": "y"
+      }
+  },
+  ionos-1and1: {
+      desktop-webmail: {
+          "2022-07": "y"
+      },
+      android: {
+          "2022-07": "y"
+      }
+  }
 }
 notes: "As of december 2021, `:has()` is only supported in [Safari Technology Preview 137](https://webkit.org/blog/12156/release-notes-for-safari-technology-preview-137/). As of march 2022, it is supported in Safari 15.4."
 notes_by_num: {
