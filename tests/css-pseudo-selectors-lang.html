@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo selector :lang property</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      padding: 30px;
+    }
+
+    h1, h2, p {
+      font-family: Palatino, serif;
+      text-align: center;
+      color:#000;
+    }
+
+    h1 {
+      padding: 20px;
+    }
+
+    h2 {
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      padding-bottom: 30px;
+    }
+
+		:lang(en),
+    :lang(de),
+    :lang(fr) {
+      color: green;
+      font-weight: 700;
+    }
+	</style>
+</head>
+
+<body>
+  <h1>
+    CSS Pseudo Elements - lang
+  </h1>
+  
+  <h2>:lang(en)</h2>
+  <p>
+    Le mot anglais pour cheval est <span lang="en">horse</span>
+  </p>
+
+  <h2>:lang(de)</h2>
+  <p>
+    The german says, "<span lang="de">Gib auf, du hast keine Chance! Lass uns das hier beenden!</span>"
+  </p>
+
+  <h2>:lang(fr)</h2>
+  <p>
+    Use <span lang="fr">bonjour</span> with people you don't know and in formal settings, and <span lang="fr">salut</span> with people you know well.
+  </p>
+</body>
+</html>
