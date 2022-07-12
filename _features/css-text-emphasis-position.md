@@ -5,6 +5,7 @@ category: css
 last_test_date: "2022-07-07"
 test_url: "/tests/css-text-emphasis.html"
 test_results_url: "https://testi.at/proj/O0yCP6t6l3sZ1xFrLZuEx6I5O"
+tags: i18n
 stats: {
   apple-mail: {
     macos: {
