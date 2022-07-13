@@ -6,6 +6,7 @@ category: css
 last_test_date: "2022-07-13"
 test_url: "/tests/css-padding-logical-properties.html"
 test_results_url: "https://testi.at/proj/Y91uDXJIDLc6M0FkVXipW"
+tags: i18n
 stats: {
     apple-mail: {
         macos: {
