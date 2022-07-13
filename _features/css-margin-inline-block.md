@@ -3,7 +3,7 @@ title: "margin-inline & margin-block"
 description: "Support for the `margin-inline` and `margin-block` shorthand properties."
 keywords: margin-inline, margin-block
 category: css
-last_test_date: "2022-07-01"
+last_test_date: "2022-07-12"
 test_url: "/tests/css-margin-logical-properties.html"
 test_results_url: "https://testi.at/proj/qAmuL03Fg51cE6hkbNSVrXik"
 stats: {
