@@ -149,7 +149,7 @@ stats: {
     }
 }
 links: {
-    "MDN: margin-block-start":"https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start",
-    "MDN: margin-block-end":"https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-end"
+    "MDN: padding-block-start":"https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-start",
+    "MDN: padding-block-end":"https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block-end"
 }
 ---

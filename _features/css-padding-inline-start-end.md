@@ -149,7 +149,7 @@ stats: {
     }
 }
 links: {
-    "MDN: margin-inline-start":"https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start",
-    "MDN: margin-inline-end":"https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end"
+    "MDN: padding-inline-start":"https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start",
+    "MDN: padding-inline-end":"https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end"
 }
 ---
