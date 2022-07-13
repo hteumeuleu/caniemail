@@ -74,8 +74,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "10":"n",
-            "10":"n"
+            "10":"y",
+            "11":"y"
         }
     },
     sfr: {
