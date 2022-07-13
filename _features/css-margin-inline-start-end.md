@@ -6,6 +6,7 @@ category: css
 last_test_date: "2022-07-13"
 test_url: "/tests/css-margin-logical-properties.html"
 test_results_url: "https://testi.at/proj/qAmuL03Fg51cE6hkbNSVrXik"
+tags: i18n
 stats: {
     apple-mail: {
         macos: {
