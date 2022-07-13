@@ -1,7 +1,7 @@
 ---
 title: "border-inline & border-block"
 description: "Support for the `border-inline` and `border-block` shorthand properties as well as its longhand properties"
-keywords: border-inline, border-block, border-inline-color, border-inline-style, border-inline-width, border-inline-start, border-inline-end, border-block-start, border-block-end
+keywords: border-inline, border-block, border-inline-color, border-block-color, border-inline-style, border-block-style, border-inline-width, border-block-width, border-inline-start, border-inline-end, border-block-start, border-block-end
 category: css
 last_test_date: "2022-07-13"
 test_url: "/tests/css-border-logical-properties.html"
