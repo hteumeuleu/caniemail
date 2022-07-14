@@ -1,22 +1,26 @@
 ---
-title: "border-inline & border-block"
-description: "Support for the `border-inline` and `border-block` shorthand properties."
-keywords: border-inline, border-block
+title: "border-inline & border-block individual logical properties"
+description: "Support for `border-inline` & `border-block` individual logical properties."
+keywords: border-inline-color, border-block-color, border-inline-style, border-block-style, border-inline-width, border-block-width, border-inline-start, border-inline-end, border-block-start, border-block-end
 category: css
-last_test_date: "2022-07-13"
+last_test_date: "2022-07-14"
 test_url: "/tests/css-border-logical-properties.html"
 test_results_url: "https://testi.at/proj/1yxFDAGtwrUmbf4tzMTY"
 tags: i18n
 stats: {
     apple-mail: {
         macos: {
-            "10.15":"n"
+            "10.12":"n"
+            "10.13":"n"
+            "10.15":"a #1"
             "11":"y"
             "12":"y"
         },
         ios: {
-            "13":"n"
-            "14":"n"
+            "11":"n"
+            "12":"a #1"
+            "13":"a #1"
+            "14":"a #1"
             "15":"y"
         }
     },
@@ -57,8 +61,8 @@ stats: {
             "2022-07":"n"
         },
         macos: {
-            "2011":"n",
-            "2016":"n"
+            "2011":"a #1",
+            "2016":"a #1"
         },
         outlook-com: {
             "2022-07":"n"
@@ -72,8 +76,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "10":"n",
-            "11":"n"
+            "10":"a #1",
+            "11":"a #1"
         }
     },
     sfr: {
@@ -145,6 +149,9 @@ stats: {
             "2022-07": "u"
         }
     }
+}
+notes_by_num: {
+  "1": "Partial. `border-<inline/block>-color` and `border-<inline/block>-width` does not work."
 }
 links: {
     "MDN: border-inline":"https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline",
