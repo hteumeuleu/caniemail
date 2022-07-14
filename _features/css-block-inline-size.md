@@ -6,6 +6,7 @@ last_test_date: "22-07-14"
 test_url: "/tests/css-block-size.html"
 keywords: block-size, inline-size
 test_results_url: "https://testi.at/proj/0xeT11rcnx6IzN7f9NsVFlZ"
+tags: i18n
 stats: {
     apple-mail: {
         macos: {
