@@ -10,17 +10,17 @@ tags: i18n
 stats: {
     apple-mail: {
         macos: {
-            "10.12":"n"
-            "10.13":"n"
-            "10.15":"y"
-            "11":"y"
+            "10.12":"n",
+            "10.13":"n",
+            "10.15":"y",
+            "11":"y",
             "12":"y"
         },
         ios: {
-            "11":"n"
-            "12":"y"
-            "13":"y"
-            "14":"y"
+            "11":"n",
+            "12":"y",
+            "13":"y",
+            "14":"y",
             "15":"y"
         }
     },
@@ -152,8 +152,8 @@ stats: {
 }
 links: {
     "MDN: border-inline-start":"https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start",
-    "MDN: border-inline-end":"https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end"
-    "MDN: border-block-start":"https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start"
+    "MDN: border-inline-end":"https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end",
+    "MDN: border-block-start":"https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-start",
     "MDN: border-block-end":"https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end"
 }
 ---
