@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>text-emphasis CSS property</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, p {
+      font-family: monospace;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 20px 0;
+      text-decoration: underline;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+		h2 {
+      font-size: 18px;
+      line-height: 22px;
+      padding-bottom: 4px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    em:lang(zh) {
+      font-style: normal;
+    }
+	</style>
+</head>
+
+<body style="padding:0 30px;">
+	<h1>text-emphasis CSS property</h1>
+	
+  <div style="margin-bottom: 25px;">
+    <h2>text-emphasis (shorthand)</h2>
+    <p>The fourth animal in the Chinese Zodiac is <span style="font-weight: 700;">Rabbit</span> (<span lang="zh"><em style="text-emphasis: filled red; text-emphasis-position: over;">兔子</em></span>).</p>
+  </div>
+
+  <div style="margin-bottom: 25px;">
+    <h2>text-emphasis-style & text-emphasis-color</h2>
+    <p>The eighth animal in the Chinese Zodiac is <span style="font-weight: 700;">Goat</span> (<span lang="zh"><em style="text-emphasis-style: triangle; text-emphasis-color: red;">山羊</em></span>).</p>
+  </div>
+
+  <div style="margin-bottom: 25px;">
+    <h2>text-emphasis-style & text-emphasis-position</h2>
+    <p>The twelth animal in the Chinese Zodiac is <span style="font-weight: 700;">Pig</span> (<span lang="zh"><em style="text-emphasis-style: triangle; text-emphasis-position: under;">猪</em></span>).</p>
+  </div>
+</body>
+
+</html>
