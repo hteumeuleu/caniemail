@@ -1,10 +1,10 @@
 ---
-title: "overflow-wrap"
+title: "hyphens"
 description: ""
 category: css
-keywords: 
+keywords: hyphens, break
 last_test_date: "2022-08-03"
-test_url: "/tests/css-overflow-wrap.html"
+test_url: "/tests/css-hyphen.html"
 test_results_url: "https://testi.at/proj/rvEUZkBsPVNSbRohvoRigyRiM"
 stats: {
   apple-mail: {
@@ -141,7 +141,7 @@ stats: {
 }
  
 links: {
-  "Can I use: CSS property: Overflow-wrap":"https://caniuse.com/css-hyphens",
-  "MDN: overflow-wrap":"https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens"
+  "Can I use: CSS property: hyphens":"https://caniuse.com/css-hyphens",
+  "MDN: hyphens":"https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens"
 }
 ---
