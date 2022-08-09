@@ -136,6 +136,35 @@ stats: {
 		desktop-webmail: {
 			"2021-09":"y"
 		}
+	},
+	gmx: {
+		desktop-webmail: {
+			"2022-08": "y"
+		},
+		ios: {
+			"2022-08":"y"
+		},
+		android: {
+			"2022-08":"y"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-08": "y",
+		ios: {
+			"2022-08":"y"
+		},
+		android: {
+			"2022-08":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-08": "y"
+		},
+		android: {
+			"2022-08":"y"
+		}
 	}
 }
 notes: "Currently, only Firefox supports the `full-width` and `full-size-kana` property values. Web clients on Firefox will support these properties."

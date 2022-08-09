@@ -142,9 +142,40 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-08": "n"
+		},
+		ios: {
+			"2022-08":"y"
+		},
+		android: {
+			"2022-08":"a #2"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-08": "n",
+		ios: {
+			"2022-08":"y"
+		},
+		android: {
+			"2022-08":"a #2"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-08": "y #1"
+		},
+		android: {
+			"2022-08":"y"
+		}
+	}
 }
 notes: ""
 notes_by_num: {
+  "1": "Buggy. Can affect the preview window size, meaning content can get lost.",
+  "2": "Buggy. Value resolves to zero",
 }
 ---
