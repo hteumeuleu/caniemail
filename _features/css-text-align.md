@@ -140,7 +140,37 @@ stats: {
 		desktop-webmail: {
 			"2021-09": "y"
 		}
-	}
+	},
+    gmx: {
+        desktop-webmail: {
+            "2022-07": "y #1"
+        },
+        ios: {
+            "2022-07":"y"
+        },
+        android: {
+            "2022-07":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-07": "y #1"
+        },
+        ios: {
+            "2022-07":"y"
+        },
+        android: {
+            "2022-07":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-07": "y"
+        },
+        android: {
+            "2022-07":"y"
+        }
+    }
 }
 notes_by_num: {
 	"1": "Partial. Flow-relative values `start` and `end` are not supported.",

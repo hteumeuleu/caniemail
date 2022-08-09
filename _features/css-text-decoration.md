@@ -138,12 +138,44 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-07": "a #4"
+        },
+        ios: {
+            "2022-07": "a #5"
+        },
+        android: {
+            "2022-07":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-07": "a #4"
+        },
+        ios: {
+            "2022-07": "a #5"
+        },
+        android: {
+            "2022-07":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-07": "y"
+        },
+        android: {
+            "2022-07":"y"
+        }
     }
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",
     "2": "Partial. Not supported with multiple values.",
-    "3": "Partial. `overline` is not supported."
+    "3": "Partial. `overline` is not supported.",
+    "4": "Partial. Only supports the line property, not style, color or thickness.",
+    "5": "Partial. Only supports style, color or thickness when written with long hadn selectors."
 }
 links: {
     "Can I use: text-decoration": "https://caniuse.com/#feat=text-decoration",
