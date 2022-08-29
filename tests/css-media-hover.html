@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<head>
+	<meta charset="UTF-8" />
+	<title>Can I email</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="x-apple-disable-message-reformatting" />
+
+	<!--[if mso]>
+	<xml>
+		<o:OfficeDocumentSettings>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+	<style>
+		body {
+			color: #333;
+			background-color: #fff;
+		}
+
+    .sample-text {
+      font-size: 26px;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media (hover: none) {
+      .sample-text-hover {
+        background-color: #fab534;
+      }
+    }
+
+    @media (hover: hover) {
+      .sample-text-hover {
+        background-color: #72ca4f;
+      }
+    }
+
+    @media (hover: none) {
+      .sample-text-anyhover {
+        background-color: #fab534;
+      }
+    }
+
+    @media (hover: hover) {
+      .sample-text-anyhover {
+        background-color: #72ca4f;
+      }
+    }
+	</style>
+</head>
+<body>
+	<div style="max-width:600px; margin:0 auto;">
+		<h1 style="margin:0 0 1em; font:30px Palatino, serif; color:#000; background:none; border:none;">@media (hover)</h1>
+		
+    <h2 style="font:16px monospace;">@media (hover: hover)</h2>
+    <p class="sample-text sample-text-hover">Lorem ipsum dolor sit amet consectetur</p>
+
+    <h2 style="font:16px monospace;">@media (hover: any-hover)</h2>
+    <p class="sample-text sample-text-anyhover">Lorem ipsum dolor sit amet consectetur</p>
+    
+    <hr>
+    
+		<p style="margin-top:1.6em; font:20px serif;">
+			If this is supported, background colors should be green or orange depending on input device hover support. If there is no background, this media query does not work.
+		</p>
+		<p style="margin-top:1.6em; font:20px serif;">
+			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2022.
+		</p>
+	</div>
+</body>
+</html>
