@@ -1,9 +1,9 @@
 ---
-title: "tab-size"
+title: "min-inline-size"
 description: ""
 category: css
-keywords: tab,size
-last_test_date: "2022-07-21"
+keywords: min, inline, size
+last_test_date: "2022-08-30"
 test_url: "/tests/css-min--inline-size.html"
 test_results_url: "https://testi.at/proj/6m0cx5puENPh8pLi9rpSPzJSB"
 stats: {
