@@ -150,7 +150,36 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-09": "n"
+		},
+		ios: {
+			"2022-09":"y"
+		},
+		android: {
+			"2022-09":"y"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-09": "n",
+		ios: {
+			"2022-09":"y"
+		},
+		android: {
+			"2022-09":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-09": "y"
+		},
+		android: {
+			"2022-09":"y"
+		}
+	}
 }
 notes_by_num: {
     "1": "Partial. The `var()` function is supported, but not the variable declaration.",
