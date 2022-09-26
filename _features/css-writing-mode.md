@@ -142,7 +142,32 @@ stats: {
     },
     gmx: {
         desktop-webmail: {
-            "2022-05": "n"
+            "2022-05": "n",
+            "2022-09": "n"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-09": "n",
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-09": "y"
+        },
+        android: {
+            "2022-09":"y"
         }
     }
 }
