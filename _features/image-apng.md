@@ -44,7 +44,7 @@ stats: {
             "2016":"y"
         },
         outlook-com: {
-            "2020-02":"a #1"
+            "2020-02":"y"
         },
         ios: {
             "2020-02":"y"
@@ -68,7 +68,7 @@ stats: {
     },
     aol: {
         desktop-webmail: {
-            "2020-02":"a #1"
+            "2020-02":"y"
         },
         ios: {
             "2020-02":"y"
@@ -79,7 +79,7 @@ stats: {
     },
     yahoo: {
         desktop-webmail: {
-            "2020-02":"a #1"
+            "2020-02":"y"
         },
         ios: {
             "2020-02":"y"
@@ -141,10 +141,40 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-09": "y"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-09": "y"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-09": "y"
+        },
+        android: {
+            "2022-09":"y"
+        }
     }
 }
 notes: "In all cases where the Animated PNG fails, it will fallback to show the first frame of the animation."
 notes_by_num: {
-    "1": "Partial: Webmail rendering depends on browser."
+    
 }
 ---
