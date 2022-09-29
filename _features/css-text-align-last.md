@@ -69,8 +69,8 @@ stats: {
 			"6.1.51.1": "y"
 		}
 	},
-	free-fr {
-		desktop-webmail {
+	free-fr: {
+		desktop-webmail: {
 			"2022-08": "y"
 		}
 	},
@@ -84,9 +84,7 @@ stats: {
 			"2022-08":"y"
 		}
 	}
-	}
 }
-
 links: {
 	"MDN: The text-align-last CSS property": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-last",
 	"Can I use: CSS3 property: text-align-last": "https://caniuse.com/css-text-align-last"
