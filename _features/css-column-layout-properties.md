@@ -44,7 +44,7 @@ stats: {
         windows: {
             "2013":"n",
             "2016":"n",
-            "2019":"n"
+            "2019":"n",
             "2021":"n"
         },
         windows-mail: {
@@ -139,10 +139,10 @@ stats: {
     }
 }
 links: {
-    "MDN: columns":"https://developer.mozilla.org/en-US/docs/Web/CSS/columns"
-    "MDN: column-fill":"https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill"
-    "MDN: column-rule":"https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule"
-    "MDN: column-gap":"https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap"
+    "MDN: columns":"https://developer.mozilla.org/en-US/docs/Web/CSS/columns",
+    "MDN: column-fill":"https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill",
+    "MDN: column-rule":"https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule",
+    "MDN: column-gap":"https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap",
     "MDN: column-span":"https://developer.mozilla.org/en-US/docs/Web/CSS/column-span"
 }
 ---
