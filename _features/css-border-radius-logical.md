@@ -9,13 +9,13 @@ test_results_url: "https://testi.at/proj/1yxFDAGtwrUmbf4tzMTY"
 stats: {
     apple-mail: {
         macos: {
-            "10.15":"n"
-            "11":"n"
+            "10.15":"n",
+            "11":"n",
             "12":"y"
         },
         ios: {
-            "13":"n"
-            "14":"n"
+            "13":"n",
+            "14":"n",
             "15":"y"
         }
     },
