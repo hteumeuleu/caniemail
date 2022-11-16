@@ -143,9 +143,41 @@ stats: {
 		desktop-webmail: {
 			"2021-08": "y"
 		}
+	},
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11": "n #1"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11": "n #1"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "n #1"
+		},
+		android: {
+			"2022-11": "n #1"
+		}
 	}
 }
-notes_by_num: {}
+notes_by_num: {
+    "1": "Unsupported opening and closing tags are stripped."
+}
 links: {
     "Can I use: HTML element address":"https://caniuse.com/mdn-html_elements_address",
     "MDN: The Contact Address element":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address"
