@@ -137,7 +137,37 @@ stats: {
         desktop-webmail: {
             "2021-12": "n"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11": "y"
+		},
+		android: {
+			"2022-11": "n"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11": "y"
+		},
+		android: {
+			"2022-11": "n"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		android: {
+			"2022-11": "n"
+		}
+	}
 }
 notes_by_num: {
     "1": "Buggy. The element is removed but URLs are still correctly computed in links `href` attribute.",

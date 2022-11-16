@@ -145,16 +145,46 @@ stats: {
 			"2021-08": "y"
 		}
 	},
-    t-online-de: {
-        desktop-webmail: {
-            "2021-11": "y"
-        }
-    },
-    free-fr: {
-        desktop-webmail: {
-            "2021-11": "y"
-        }
-    }
+	t-online-de: {
+			desktop-webmail: {
+					"2021-11": "y"
+			}
+	},
+	free-fr: {
+			desktop-webmail: {
+					"2021-11": "y"
+			}
+	},
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		ios: {
+			"2022-11": "y"
+		},
+		android: {
+			"2022-11": "y"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		ios: {
+			"2022-11": "y"
+		},
+		android: {
+			"2022-11": "y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		android: {
+			"2022-11": "y"
+		}
+	}
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",
