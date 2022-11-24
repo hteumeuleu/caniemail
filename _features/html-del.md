@@ -91,53 +91,83 @@ stats: {
 			"5.0.10.2":"y"
 		}
 	},
-    sfr: {
-        desktop-webmail: {
-            "2020-01":"y"
-        },
-        ios: {
-            "2020-01":"y"
-        },
-        android: {
-            "2020-01":"y"
-        }
-    },
+	sfr: {
+			desktop-webmail: {
+					"2020-01":"y"
+			},
+			ios: {
+					"2020-01":"y"
+			},
+			android: {
+					"2020-01":"y"
+			}
+	},
 	thunderbird: {
 		macos: {
 			"68.4":"y"
 		}
 	},
-    protonmail: {
-        desktop-webmail: {
-            "2020-03":"y"
-        },
-        ios: {
-            "2020-03":"y"
-        },
-        android: {
-            "2020-03":"y"
-        }
-    },
-    hey: {
-        desktop-webmail: {
-            "2020-06":"y"
-        }
-    },
-    mail-ru: {
-        desktop-webmail: {
-            "2020-10":"y"
-        }
-    },
+	protonmail: {
+			desktop-webmail: {
+					"2020-03":"y"
+			},
+			ios: {
+					"2020-03":"y"
+			},
+			android: {
+					"2020-03":"y"
+			}
+	},
+	hey: {
+			desktop-webmail: {
+					"2020-06":"y"
+			}
+	},
+	mail-ru: {
+			desktop-webmail: {
+					"2020-10":"y"
+			}
+	},
 	fastmail: {
+			desktop-webmail: {
+				"2021-07": "y"
+			}
+	},
+	laposte: {
+			desktop-webmail: {
+					"2021-08": "y"
+			}
+	},
+	gmx: {
 		desktop-webmail: {
-			"2021-07": "y"
+			"2022-11": "y"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"y"
 		}
 	},
-    laposte: {
-        desktop-webmail: {
-            "2021-08": "y"
-        }
-    }
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		android: {
+			"2022-11":"y"
+		}
+	}
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts."

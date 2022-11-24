@@ -141,7 +141,37 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "a #1"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	}
 }
 notes_by_num: {
     "1": "Partial. Only `<time>` is supported.",
