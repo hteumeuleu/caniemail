@@ -98,47 +98,77 @@ stats: {
 			"5.0.10.2": "n"
 		}
 	},
-    sfr: {
-        desktop-webmail: {
-            "2020-01":"n"
-        },
-        ios: {
-            "2020-01":"n"
-        },
-        android: {
-            "2020-01":"n"
-        }
-    },
-    protonmail: {
-        desktop-webmail: {
-            "2020-03":"n"
-        },
-        ios: {
-            "2020-03":"n"
-        },
-        android: {
-            "2020-03":"n"
-        }
-    },
-    hey: {
-        desktop-webmail: {
-            "2020-06":"n"
-        }
-    },
-    mail-ru: {
-        desktop-webmail: {
-            "2020-09":"n"
-        }
-    },
+	sfr: {
+			desktop-webmail: {
+					"2020-01":"n"
+			},
+			ios: {
+					"2020-01":"n"
+			},
+			android: {
+					"2020-01":"n"
+			}
+	},
+	protonmail: {
+			desktop-webmail: {
+					"2020-03":"n"
+			},
+			ios: {
+					"2020-03":"n"
+			},
+			android: {
+					"2020-03":"n"
+			}
+	},
+	hey: {
+			desktop-webmail: {
+					"2020-06":"n"
+			}
+	},
+	mail-ru: {
+			desktop-webmail: {
+					"2020-09":"n"
+			}
+	},
 	fastmail: {
 		desktop-webmail: {
 			"2021-07": "n"
 		}
 	},
-    laposte: {
-        desktop-webmail: {
-            "2021-08": "n"
-        }
-    }
+	laposte: {
+			desktop-webmail: {
+					"2021-08": "n"
+			}
+	},
+	gmx: {
+		desktop-webmail: {
+				"2022-11": "n"
+		},
+		ios: {
+				"2022-11":"y"
+		},
+		android: {
+				"2022-11":"n"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	}
 }
 ---
