@@ -141,10 +141,41 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "n #2"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	}
 }
 notes: ""
 notes_by_num: {
-    "1": "Buggy. Requires a background on the `<body>`. Can be any type of background, image or a color, can be set as attribute, inline style or in `<style>` block"
+    "1": "Buggy. Requires a background on the `<body>`. Can be any type of background, image or a color, can be set as attribute, inline style or in `<style>` block",
+    "2": "Not supported. Element is removed along with any fallback content."
 }
 ---

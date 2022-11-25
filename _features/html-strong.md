@@ -138,7 +138,37 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"y"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "y"
+		},
+		android: {
+			"2022-11":"y"
+		}
+	}
 }
 links: {
     "MDN: `<strong>`":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"

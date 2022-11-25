@@ -136,7 +136,37 @@ stats: {
         desktop-webmail: {
             "2021-12":"y #2"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "n #1"
+		},
+		ios: {
+			"2022-11":"a #3"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "n #1"
+		},
+		ios: {
+			"2022-11":"a #3"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "n #1"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	}
 }
 notes_by_num: {
     "1": "Not supported. `target=\"_blank\"` is forced on all links.",

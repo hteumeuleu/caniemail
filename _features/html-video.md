@@ -143,7 +143,37 @@ stats: {
         desktop-webmail: {
             "2021-08": "n #10"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y #5 #6"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y #5 #6"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "n #9"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	}
 }
 notes_by_num: {
     "1": "The `<video>` element is supported, but not the inner `<source>` element so no video can play.",
