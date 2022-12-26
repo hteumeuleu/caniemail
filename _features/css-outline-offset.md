@@ -109,7 +109,7 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         ios: {
             "2022-12":"y"
@@ -120,7 +120,7 @@ stats: {
     },
     hey: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
     mail-ru: {
