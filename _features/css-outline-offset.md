@@ -9,7 +9,7 @@ test_results_url: ""
 stats: {
     apple-mail: {
         macos: {
-            "16.0":"u"
+            "16.0":"y"
         },
         ios: {
             "16.2":"y"
@@ -26,7 +26,7 @@ stats: {
             "2022-12":"u"
         },
         mobile-webmail: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
     orange: {
@@ -112,7 +112,7 @@ stats: {
             "2022-12":"u"
         },
         ios: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         android: {
             "2022-12":"u"
