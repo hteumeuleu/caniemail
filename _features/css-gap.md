@@ -5,7 +5,7 @@ category: css
 keywords: gap
 last_test_date: "2022-12-28"
 test_url: "/tests/css-gap.html"
-test_results_url: ""
+test_results_url: "https://app.emailonacid.com/app/acidtest/OAnjtSK1hEGcC3V9Q30mzIU8xKXIqwNq0M4lZywGOhQIn/list"
 stats: {
 	apple-mail: {
 		macos: {
@@ -56,7 +56,7 @@ stats: {
 			"2022-12": "y"
 		},
 		outlook-com: {
-			"2022-12": "u"
+			"2022-12": "a #1"
 		},
 		ios: {
 			"2022-12": "a #1"
@@ -126,7 +126,7 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
 	fastmail: {
