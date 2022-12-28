@@ -48,7 +48,8 @@ stats: {
             "2022-12":"y"
         },
         android: {
-            "2020-01":"n"
+            "2020-01":"n",
+            "2022-12":"n"
         }
     },
     outlook: {
@@ -76,7 +77,8 @@ stats: {
             "2022-12":"y #3"
         },
         android: {
-            "2020-01":"n"
+            "2020-01":"n",
+            "2022-12":"n #3"
         }
     },
     samsung-email: {
@@ -90,10 +92,12 @@ stats: {
             "2022-12":"y"
         },
         ios: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2022-12":"n"
         },
         android: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2022-12":"n"
         }
     },
     thunderbird: {
@@ -164,7 +168,22 @@ stats: {
             "2021-08": "y",
             "2022-12": "y"
         }
-    }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2022-12": "y"
+        }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-12": "n"
+        }
+    },
+    t-online-de: {
+        desktop-webmail: {
+            "2022-12": "n"
+        }
+    }  
 }
 notes_by_num: {
     "1": "Not supported. `@media (prefers-color-scheme)` is transformed into `@media ( _filtered_a )`.",
