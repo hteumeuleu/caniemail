@@ -144,4 +144,8 @@ notes_by_num: {
     "1": "Partial. Supports column-gap for flexbox.",
     "2": "Partial. Supports gap and column-gap for flexbox. Supports gap for multi-column layout (i.e. in conjunction with CSS column-count property)"
 }
+links: {
+	"MDN: gap":"https://developer.mozilla.org/en-US/docs/Web/CSS/gap",
+	"Can I use: gap":"https://caniuse.com/?search=gap"
+}
 ---
