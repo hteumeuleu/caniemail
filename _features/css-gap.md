@@ -67,7 +67,7 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2022-12": "u"
+			"2022-12": "n"
 		},
 		ios: {
 			"2022-12": "n"
