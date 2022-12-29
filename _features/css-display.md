@@ -2,7 +2,7 @@
 title: "display"
 description: "Sets whether an element is treated as a block or inline element and the layout used for its children."
 category: css
-keywords: "inline, block"
+keywords: "inline, block, inline-block"
 last_test_date: "2021-12-01"
 test_url: "/tests/css-display.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/eyGBFSORjrHd635gw4udynxX8ykC5bzlMUUrF6yi7Kspu/list"
