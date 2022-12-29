@@ -31,14 +31,13 @@ stats: {
 	},
     orange: {
         desktop-webmail: {
-            "2022-12":"u",
-            "2022-12":"u"
+            "2022-12":"n"
         },
         ios: {
-            "2022-12":"u"
+            "2022-12":"n"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
 	outlook: {
@@ -73,7 +72,7 @@ stats: {
 			"2022-12": "n"
 		},
 		android: {
-			"2022-12": "u"
+			"2022-12": "n"
 		}
 	},
 	aol: {
@@ -84,28 +83,28 @@ stats: {
 			"2022-12": "n"
 		},
 		android: {
-			"2022-12": "u"
+			"2022-12": "n"
 		}
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "u"
+			"6.1": "y"
 		}
 	},
     sfr: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         ios: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
 	thunderbird: {
 		macos: {
-			"60.5": "u"
+			"102.6.1": "y"
 		}
 	},
     protonmail: {
@@ -116,7 +115,7 @@ stats: {
             "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
     hey: {
@@ -136,7 +135,22 @@ stats: {
 	},
     laposte: {
         desktop-webmail: {
-            "2022-12": "u"
+            "2022-12": "y"
+        }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2022-12": "y"
+        }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-12": "n"
+        }
+    },
+    t-online-de: {
+        desktop-webmail: {
+            "2022-12": "y"
         }
     }
 }
