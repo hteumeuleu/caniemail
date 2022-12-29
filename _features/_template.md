@@ -3,7 +3,7 @@ title: "Test property"
 description: "This is the description of the test property."
 category: css
 keywords: a, b, c
-last_test_date: "1970-01-31"
+last_test_date: "2023-12-31"
 test_url: "/tests/template.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/uz6yTbAfykA362dvPZZKX81wEhGuUm4uJekIk2NKacALI/list"
 stats: {
@@ -17,27 +17,27 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         ios: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         android: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         mobile-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     orange: {
         desktop-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         ios: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         android: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     outlook: {
@@ -49,19 +49,19 @@ stats: {
             "2019":"u"
         },
         windows-mail: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         macos: {
             "16.56":"u"
         },
         outlook-com: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         ios: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         android: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     samsung-email: {
@@ -71,13 +71,13 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         ios: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         android: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     thunderbird: {
@@ -87,55 +87,70 @@ stats: {
     },
     aol: {
         desktop-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         ios: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         android: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         ios: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         android: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     protonmail: {
         desktop-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         ios: {
-            "2021-12":"u"
+            "2023-01":"u"
         },
         android: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     hey: {
         desktop-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     mail-ru: {
         desktop-webmail: {
-            "2021-12":"u"
+            "2023-01":"u"
         }
     },
     fastmail: {
         desktop-webmail: {
-            "2021-12": "u"
+            "2023-01": "u"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2021-12": "u"
+            "2023-01": "u"
+        }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2023-01": "u"
+        }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2023-01": "u"
+        }
+    },
+    t-online-de: {
+        desktop-webmail: {
+            "2023-01": "u"
         }
     }
 }
