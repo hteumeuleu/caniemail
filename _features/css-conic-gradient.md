@@ -82,7 +82,7 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "91.4.1":"u"
+            "91.4.1":"y"
         }
     },
     aol: {
