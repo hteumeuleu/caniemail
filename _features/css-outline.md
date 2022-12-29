@@ -66,7 +66,7 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.0":"y"
         }
     },
     sfr: {
@@ -136,6 +136,21 @@ stats: {
     laposte: {
         desktop-webmail: {
             "2022-03": "y"
+        }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2022-12": "y"
+        }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-12": "y"
+        }
+    },
+    t-online-de: {
+        desktop-webmail: {
+            "2022-12": "y"
         }
     }
 }

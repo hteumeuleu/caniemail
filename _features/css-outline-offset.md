@@ -23,7 +23,7 @@ stats: {
             "2022-12":"n"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         },
         mobile-webmail: {
             "2022-12":"n"
@@ -61,28 +61,28 @@ stats: {
             "2022-12":"n"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.0":"y"
         }
     },
     sfr: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         ios: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
     thunderbird: {
         macos: {
-            "78.14":"u"
+            "102.6.1":"y"
         }
     },
     aol: {
@@ -93,7 +93,7 @@ stats: {
             "2022-12":"n"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
     yahoo: {
@@ -104,7 +104,7 @@ stats: {
             "2022-12":"n"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
     protonmail: {
@@ -115,7 +115,7 @@ stats: {
             "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
     hey: {
@@ -125,17 +125,32 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
     fastmail: {
         desktop-webmail: {
-            "2022-12": "u"
+            "2022-12": "y"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2022-12": "u"
+            "2022-12": "y"
+        }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2022-12": "y"
+        }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-12": "n"
+        }
+    },
+    t-online-de: {
+        desktop-webmail: {
+            "2022-12": "y"
         }
     }
 }
