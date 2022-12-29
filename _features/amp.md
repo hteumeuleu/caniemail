@@ -1,7 +1,7 @@
 ---
 title: "AMP for Email"
 description: "Support for rendering emails in the AMP format."
-category: html
+category: others
 keywords: amp4email
 last_test_date: "2020-03-31"
 test_url: "/tests/amp.html"
