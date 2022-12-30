@@ -8,7 +8,7 @@ Thanks to [Oliver Williams](https://github.com/o-t-w) for the following contribu
 
 * [`::marker`](/features/css-pseudo-element-marker/)
 * [`gap`](/features/css-gap/)
-* [`outline-offset/`](/features/css-outline-offset//)
+* [`outline-offset`](/features/css-outline-offset/)
 
 And thanks to [Mark Robbins](https://github.com/m-j-robbins) for the addition of the following german email clients:
 
