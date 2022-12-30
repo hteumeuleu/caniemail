@@ -157,35 +157,7 @@ stats: {
 	web-de: {
 		desktop-webmail: {
 			"2022-08": "n",
-		ios: {
-			"2022-08":"y"
-		},
-		android: {
-			"2022-08":"y"
-		}
-	},
-	ionos-1and1: {
-		desktop-webmail: {
-			"2022-08": "y"
-		},
-		android: {
-			"2022-08":"y"
-		}
-	},
-	gmx: {
-		desktop-webmail: {
-			"2022-08": "n"
-		},
-		ios: {
-			"2022-08":"y"
-		},
-		android: {
-			"2022-08":"y"
-		}
-	},
-	web-de: {
-		desktop-webmail: {
-			"2022-08": "n",
+        },
 		ios: {
 			"2022-08":"y"
 		},
