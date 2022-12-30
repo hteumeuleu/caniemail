@@ -3,7 +3,7 @@ title: "::marker"
 category: css
 keywords: ::marker
 last_test_date: "2022-12-28"
-test_url: "/tests/marker.html"
+test_url: "/tests/css-marker.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/7ebtlnke6f0814MElvJWzdRU5lTKcZULpbP9ef9OCuxv3/list"
 stats: {
     apple-mail: {
