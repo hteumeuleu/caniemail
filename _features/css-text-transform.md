@@ -151,6 +151,7 @@ stats: {
 	web-de: {
 		desktop-webmail: {
 			"2022-08": "y",
+		},
 		ios: {
 			"2022-08":"y"
 		},
