@@ -1,7 +1,8 @@
 ---
 title: "::marker"
+description: "Selects the marker box of a list item (typically a bullet or number)."
 category: css
-keywords: ::marker
+keywords: pseudo-element
 last_test_date: "2022-12-28"
 test_url: "/tests/css-marker.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/7ebtlnke6f0814MElvJWzdRU5lTKcZULpbP9ef9OCuxv3/list"
@@ -30,14 +31,13 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2022-12":"u",
-            "2022-12":"u"
+            "2022-12":"y"
         },
         ios: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
     outlook: {
@@ -47,38 +47,38 @@ stats: {
             "2010":"n",
             "2013":"n",
             "2016":"n",
-            "2019":"n"
+            "2019":"n #1"
         },
         windows-mail: {
-            "2022-12":"u"
+            "2022-12":"n"
         },
         macos: {
             "2022-12":"y"
         },
         outlook-com: {
-            "2022-12":"u"
+            "2022-12":"n"
         },
         ios: {
             "2022-12":"n",
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.0":"y"
         }
     },
     sfr: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         ios: {
-            "2022-12":"u"
+            "2022-12":"n"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
     thunderbird: {
@@ -94,7 +94,7 @@ stats: {
             "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
     yahoo: {
@@ -105,7 +105,7 @@ stats: {
             "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
     protonmail: {
@@ -116,7 +116,7 @@ stats: {
             "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
     hey: {
@@ -136,9 +136,12 @@ stats: {
     },
     laposte: {
         desktop-webmail: {
-            "2022-12": "u"
+            "2022-12": "y"
         }
     }
+}
+notes_by_num: {
+    "1": "Not supported. But `@list` declarations can achieve the same thing."
 }
 links: {
     "Can I use: ::marker":"https://caniuse.com/css-marker-pseudo",
