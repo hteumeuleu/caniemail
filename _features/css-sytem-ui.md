@@ -1,6 +1,6 @@
 ---
 title: "system-ui, ui-serif, ui-sans-serif, ui-rounded, ui-monospace"
-description: "CSS keywords for specifying system fonts for font-family"
+description: "CSS keywords for specifying system fonts for `font-family`."
 category: css
 last_test_date: "2022-12-30"
 test_url: "/tests/css-system-fonts.html"
@@ -140,8 +140,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Supports system-ui only.",
-    "2": "Partial. Depends on browser support. system-ui works in all browsers. ui-serif, ui-sans-serif, ui-rounded and ui-monospace are supported on all browsers on iOS and Safari on MacOS."
+    "1": "Partial. Supports `system-ui` only.",
+    "2": "Partial. Depends on browser support. `system-ui` works in all browsers. `ui-serif`, `ui-sans-serif`, `ui-rounded` and `ui-monospace` are supported on all browsers on iOS and Safari on MacOS."
 }
 links: {
 	"Can I use: system fonts":"https://caniuse.com/extended-system-fonts",
