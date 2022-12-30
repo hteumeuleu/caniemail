@@ -22,7 +22,7 @@ stats: {
 			"2022-12":"y"
 		},
 		android: {
-			"2022-12":"u"
+			"2022-12":"y #1"
 		},
         mobile-webmail: {
             "2022-12": "y #2"
@@ -61,7 +61,7 @@ stats: {
 			"2022-12":"y"
 		},
 		android: {
-			"2022-12":"u"
+			"2022-12":"y #1"
 		}
 	},
 	yahoo: {
@@ -125,7 +125,7 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y #2"
         }
     },
 	fastmail: {
@@ -144,7 +144,7 @@ notes_by_num: {
     "2": "Partial. Depends on browser support. system-ui works in all browsers. ui-serif, ui-sans-serif, ui-rounded and ui-monospace are supported on all browsers on iOS and Safari on MacOS."
 }
 links: {
-	"Can I use: text-overflow":"https://caniuse.com/#feat=text-overflow",
-	"MDN: text-overflow":"https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow"
+	"Can I use: system fonts":"https://caniuse.com/extended-system-fonts",
+	"MDN: font-family":"https://developer.mozilla.org/en-US/docs/Web/CSS/font-family"
 }
 ---
