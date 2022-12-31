@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head></head>
+<head>
+	<meta charset="UTF-8" />
+	<title>Can I email</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<!--[if mso]>
+	<xml>
+		<o:OfficeDocumentSettings>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+</head>
+<body>
+	<div style="max-width:600px; margin:0 auto;">
+        <h1 style="background-color: red; width: fit-content;">width: fit-content test</h1>
+        <h1 style="background-color: red; width: min-content;">width: min-content test</h1>
+
+        <div style="width: 200px; border: solid 2px blue; margin-bottom: 40px;">
+            <div style="width: max-content;">
+              This is a test for width: max-content. It should overflow the box.
+            </div>
+          </div>
+
+          <div style="display: flex; height: 300px; border: solid green 2px;">
+            <h1 style="background-color: red; height: fit-content;">height: fit-content;</h1>
+          </div>
+
+          <div style="display: flex; height: 300px; border: solid green 2px;">
+            <h1 style="background-color: red; height: min-content;">height: min-content;</h1>
+          </div>
+
+          <div style="display: flex; height: 300px; border: solid green 2px;">
+            <h1 style="background-color: red; height: auto">height: auto;</h1>
+          </div>
+	</div>
+</body>
+</html>
