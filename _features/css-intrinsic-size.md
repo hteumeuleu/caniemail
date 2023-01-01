@@ -19,7 +19,7 @@ stats: {
 			"2022-12": "y"
 		},
 		ios: {
-			"2022-12": "y"
+			"2022-12": "a #3"
 		},
 		android: {
 			"2022-12": "u"
@@ -140,7 +140,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Supports `min-content` and `fit-content` only."
-    "2": "Buggy. `width: min-content` acts as if `word-break: break-all` had been set on the element."
+    "1": "Partial. Supports `min-content` and `fit-content` only.",
+    "2": "Buggy. `width: min-content` acts as if `word-break: break-all` had been set on the element.",
+    "3": "Partial. Not supported with non Gmail accounts."
 }
 ---
