@@ -16,16 +16,16 @@ stats: {
 	},
 	gmail: {
 		desktop-webmail: {
-			"2022-12":"y #2"
+			"2022-12":"a #2"
 		},
 		ios: {
 			"2022-12":"y"
 		},
 		android: {
-			"2022-12":"y #1"
+			"2022-12":"a #1"
 		},
         mobile-webmail: {
-            "2022-12": "y #2"
+            "2022-12": "a #2"
         }
 	},
     orange: {
@@ -61,29 +61,29 @@ stats: {
 			"2022-12":"y"
 		},
 		android: {
-			"2022-12":"y #1"
+			"2022-12":"a #1"
 		}
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2022-12":"y #2"
+			"2022-12":"a #2"
 		},
 		ios: {
 			"2022-12":"y"
 		},
 		android: {
-			"2022-12":"u"
+			"2022-12":"a #1"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2022-12":"y #2"
+			"2022-12":"a #2"
 		},
 		ios: {
 			"2022-12":"y"
 		},
 		android: {
-			"2022-12":"u"
+			"2022-12":"a #1"
 		}
 	},
 	samsung-email: {
@@ -104,28 +104,28 @@ stats: {
     },
 	thunderbird: {
 		macos: {
-			"102.6":"y #1"
+			"102.6":"a #1"
 		}
 	},
     protonmail: {
         desktop-webmail: {
-            "2022-12":"y #2"
+            "2022-12":"a #2"
         },
         ios: {
             "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"a #1"
         }
     },
     hey: {
         desktop-webmail: {
-            "2022-12":"y #2"
+            "2022-12":"a #2"
         }
     },
     mail-ru: {
         desktop-webmail: {
-            "2022-12":"y #2"
+            "2022-12":"a #2"
         }
     },
 	fastmail: {
