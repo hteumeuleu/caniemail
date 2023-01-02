@@ -133,10 +133,40 @@ stats: {
 			"2021-07": "y"
 		}
 	},
-    laposte: {
-        desktop-webmail: {
-            "2021-08": "y"
-        }
-    }
+	laposte: {
+			desktop-webmail: {
+					"2021-08": "y"
+			}
+	},
+	gmx: {
+		desktop-webmail: {
+			"2022-08": "y"
+		},
+		ios: {
+			"2022-08":"y"
+		},
+		android: {
+			"2022-08":"y"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-08": "y",
+		},
+		ios: {
+			"2022-08":"y"
+		},
+		android: {
+			"2022-08":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-08": "y"
+		},
+		android: {
+			"2022-08":"y"
+		}
+	}
 }
 ---

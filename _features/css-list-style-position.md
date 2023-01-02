@@ -138,7 +138,37 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        ios: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        ios: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06": "y"
+        }
+    }   
 }
 notes_by_num: {
     "1": "Not supported, but the proprietary `mso-text-indent-alt` property can be used instead."

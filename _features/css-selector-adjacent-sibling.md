@@ -139,10 +139,41 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-06": "a #2"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-06": "a #2"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06":"y"
+        }
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts."
+    "1": "Partial. Not supported with non Gmail accounts.",
+    "2": "Partial. Only when used as class or ID selectors"
 }
 links: {
     "Can I use: Adjacent sibling combinator":"https://caniuse.com/#feat=mdn-css_selectors_adjacent_sibling",

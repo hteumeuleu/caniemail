@@ -4,7 +4,7 @@ description: "The `loading` attribute on `img` indicates how the browser should 
 category: html
 keywords: img,image,loading
 last_test_date: "2021-10-27"
-test_url: "/tests/html-img-loading.html"
+test_url: "/tests/html-loading-attribute.html"
 test_results_url: "https://testi.at/proj/BG3iM7ZhOjpi8Qlf4E9IQxg"
 stats: {
 	apple-mail: {
@@ -139,6 +139,36 @@ stats: {
 	laposte: {
 		desktop-webmail: {
 			"2021-10": "y"
+		}
+	},
+	gmx: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		ios: {
+			"2022-11":"y"
+		},
+		android: {
+			"2022-11":"n"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-11": "n"
+		},
+		android: {
+			"2022-11":"n"
 		}
 	}
 }

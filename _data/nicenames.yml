@@ -17,6 +17,8 @@ family:
   t-online-de: "T-online.de"
   free-fr: "Free.fr"
   gmx: "GMX"
+  web-de: "WEB.DE"
+  ionos-1and1: "1&1"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"
@@ -38,3 +40,4 @@ category:
   html: "HTML"
   css: "CSS"
   image: "Image formats"
+  others: "Others"

@@ -128,16 +128,46 @@ stats: {
             "2020-10":"y"
         }
     },
-	fastmail: {
-		desktop-webmail: {
-			"2021-07": "y"
-		}
-	},
+		fastmail: {
+			desktop-webmail: {
+				"2021-07": "y"
+			}
+		},
     laposte: {
         desktop-webmail: {
             "2021-08": "y"
         }
-    }
+    },
+		gmx: {
+			desktop-webmail: {
+				"2022-09": "y"
+			},
+			ios: {
+				"2022-09":"y"
+			},
+			android: {
+				"2022-09":"a #2"
+			}
+		},
+		web-de: {
+			desktop-webmail: {
+				"2022-09": "y",
+			},
+			ios: {
+				"2022-09":"y"
+			},
+			android: {
+				"2022-09":"a #2"
+			}
+		},
+		ionos-1and1: {
+			desktop-webmail: {
+				"2022-09": "y"
+			},
+			android: {
+				"2022-09":"a #2"
+			}
+		}
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",

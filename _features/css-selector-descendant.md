@@ -139,11 +139,42 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-06": "a #3"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-06": "a #3"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06":"y"
+        }
     }
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",
-    "2": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element."
+    "2": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element.",
+    "3": "Partial. Only when used as class or ID selectors"
 }
 links: {
     "Can I use: Descendant combinator":"https://caniuse.com/#feat=mdn-css_selectors_descendant",

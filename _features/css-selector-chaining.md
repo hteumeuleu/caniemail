@@ -139,13 +139,44 @@ stats: {
         desktop-webmail: {
             "2021-08": "y"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-06": "a #5"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-06": "a #5"
+        },
+        ios: {
+            "2022-06":"y"
+        },
+        android: {
+            "2022-06":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-06": "y"
+        },
+        android: {
+            "2022-06":"y"
+        }
     }
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",
     "2": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element.",
     "3": "Buggy. Styles will be applied to the first selector of the chain.",
-    "4": "Buggy. Only the first selector of the chain is prefixed in the styles, but all classes are prefixed in the HTML."
+    "4": "Buggy. Only the first selector of the chain is prefixed in the styles, but all classes are prefixed in the HTML.",
+    "5": "Partial. Only when used as class or ID selectors"
 }
 links: {
     "MDN: Grouping selectors":"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#Grouping",

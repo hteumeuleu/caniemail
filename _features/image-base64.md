@@ -141,10 +141,41 @@ stats: {
         desktop-webmail: {
             "2021-08": "n #2"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-09": "a #3"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-09": "a #3"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-09": "y"
+        },
+        android: {
+            "2022-09":"y"
+        }
     }
 }
 notes_by_num: {
     "1": "Partial: Does not render Base 64 gif format.",
-    "2": "Not supported. The `src` is turned into a `nosrc` attribute."
+    "2": "Not supported. The `src` is turned into a `nosrc` attribute.",
+    "3": "Partial: Only supports Base 64 png format."
 }
 ---

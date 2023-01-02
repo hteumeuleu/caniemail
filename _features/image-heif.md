@@ -142,6 +142,36 @@ stats: {
         desktop-webmail: {
             "2021-08": "n"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-09": "n"
+        },
+        ios: {
+            "2022-09":"n"
+        },
+        android: {
+            "2022-09":"n"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-09": "n"
+        },
+        ios: {
+            "2022-09":"n"
+        },
+        android: {
+            "2022-09":"n"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-09": "n"
+        },
+        android: {
+            "2022-09":"n"
+        }
     }
 }
 notes_by_num: {

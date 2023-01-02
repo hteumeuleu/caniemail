@@ -159,7 +159,37 @@ stats: {
         desktop-webmail: {
             "2021-11": "n"
         }
-    }
+    },
+	gmx: {
+		desktop-webmail: {
+			"2022-06": "a #3"
+		},
+		ios: {
+			"2022-06":"y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	},
+	web-de: {
+		desktop-webmail: {
+			"2022-06": "a #3"
+		},
+		ios: {
+			"2022-06":"y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	},
+	ionos-1and1: {
+		desktop-webmail: {
+			"2022-06": "y"
+		},
+		android: {
+			"2022-06":"y"
+		}
+	}
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Gmail accounts.",

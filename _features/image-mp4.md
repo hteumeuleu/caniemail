@@ -141,6 +141,36 @@ stats: {
         desktop-webmail: {
             "2021-08": "y #1"
         }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-09": "n"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"n"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-09": "n"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"n"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-09": "n"
+        },
+        android: {
+            "2022-09":"n"
+        }
     }
 }
 notes: "As of may 2021, using Video as Image Assets is only supported in WebKit and Safari."

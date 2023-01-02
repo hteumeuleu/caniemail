@@ -2,7 +2,7 @@
 title: "block-size & inline-size"
 description: "Defines the horizontal or vertical size of an element's block, depending on its writing mode."
 category: css
-last_test_date: "22-07-14"
+last_test_date: "2022-07-14"
 test_url: "/tests/css-block-size.html"
 keywords: block-size, inline-size
 test_results_url: "https://testi.at/proj/0xeT11rcnx6IzN7f9NsVFlZ"
@@ -141,6 +141,36 @@ stats: {
     laposte: {
         desktop-webmail: {
             "2022-07": "y"
+        }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-09": "n"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-09": "n"
+        },
+        ios: {
+            "2022-09":"y"
+        },
+        android: {
+            "2022-09":"y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-09": "y"
+        },
+        android: {
+            "2022-09":"y"
         }
     }
 }

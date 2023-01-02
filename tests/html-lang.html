@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head></head>
 <head>
 	<meta charset="UTF-8" />
@@ -19,6 +19,14 @@
 		div[lang] { background-color:green; }
 		table[lang] { background-color:green; }
 		td[lang] { background-color:green; }
+    p[dir] { border:2px dashed purple;}
+		div[dir] { border:2px dashed purple;}
+		table[dir] { border:2px dashed purple;}
+		td[dir] { border:2px dashed purple;}
+    [lang]::after{
+      font-weight:bold;
+      content:' lang=' attr(lang) ' dir=' attr(dir)
+    }
 	</style>
 </head>
 <body>
@@ -33,9 +41,9 @@
 						[lang] on &lt;p&gt;
 					</td>
 					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<p lang="en">Hello world!</p>
-						<p lang="fr">Bonjour le monde&nbsp;!</p>
-						<p lang="ru">Привет мир!</p>
+						<p lang="en" dir="ltr">Hello world!</p>
+						<p lang="fr" dir="ltr">Bonjour le monde&nbsp;!</p>
+						<p lang="ru" dir="ltr">Привет мир!</p>
 					</td>
 				</tr>
 				<tr>
@@ -43,9 +51,9 @@
 						[lang] on &lt;div&gt;
 					</td>
 					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<div lang="en">Hello world!</div>
-						<div lang="fr">Bonjour le monde&nbsp;!</div>
-						<div lang="ru">Привет мир!</div>
+						<div lang="en" dir="ltr">Hello world!</div>
+						<div lang="fr" dir="ltr">Bonjour le monde&nbsp;!</div>
+						<div lang="ru" dir="ltr">Привет мир!</div>
 					</td>
 				</tr>
 				<tr>
@@ -53,19 +61,19 @@
 						[lang] on &lt;table&gt;
 					</td>
 					<td style="width:75%; vertical-align:top; padding:0.4em 0 0.4em 0.8em; font:20px serif; border-top:1px solid lightgrey;">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" lang="en">
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" lang="en" dir="ltr">
 							<tr>
-								<td lang="en">Hello world!</td>
+								<td lang="en" dir="ltr">Hello world!</td>
 							</tr>
 						</table>
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" lang="fr">
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" lang="fr" dir="ltr">
 							<tr>
-								<td lang="fr">Bonjour le monde&nbsp;!</td>
+								<td lang="fr" dir="ltr">Bonjour le monde&nbsp;!</td>
 							</tr>
 						</table>
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" lang="ru">
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" lang="ru" dir="ltr">
 							<tr>
-								<td lang="ru">Привет мир!</td>
+								<td lang="ru" dir="ltr">Привет мир!</td>
 							</tr>
 						</table>
 					</td>

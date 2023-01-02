@@ -1,7 +1,7 @@
 ---
 title: "AMP for Email"
 description: "Support for rendering emails in the AMP format."
-category: html
+category: others
 keywords: amp4email
 last_test_date: "2020-03-31"
 test_url: "/tests/amp.html"
@@ -17,7 +17,7 @@ stats: {
   gmail: {
     desktop-webmail: {
       "2020-04":"y",
-      "2022-02":"a #1"
+      "2022-02":"y #1"
     },
     ios: {
       "2020-04":"y"
@@ -67,15 +67,17 @@ stats: {
   },
   yahoo: {
     desktop-webmail: {
-      "2019-10":"n",
+    "2019-10":"y",
 	  "2021-01":"y",
-	  "2022-02":"a #1"
+	  "2022-02":"y #1"
     },
     ios: {
-      "2019-10":"n"
+      "2019-10":"n",
+      "2022-12":"y"
     },
     android: {
-      "2019-10":"n"
+      "2019-10":"n",
+      "2022-12":"y"
     }
   },
   aol: {
@@ -140,10 +142,50 @@ stats: {
       desktop-webmail: {
           "2021-08":"n"
       }
+  },
+  free-fr: {
+      desktop-webmail: {
+          "2022-12": "n"
+      }
+  },
+  t-online-de: {
+      desktop-webmail: {
+          "2022-12": "n"
+      }
+  },
+  gmx: {
+      desktop-webmail: {
+          "2022-06": "n"
+      },
+      ios: {
+          "2022-06":"n"
+      },
+      android: {
+          "2022-06":"n"
+      }
+  },
+  web-de: {
+      desktop-webmail: {
+          "2022-06": "n"
+      },
+      ios: {
+          "2022-06":"n"
+      },
+      android: {
+          "2022-06":"n"
+      }
+  },
+  ionos-1and1: {
+      desktop-webmail: {
+          "2022-06": "n"
+      },
+      android: {
+          "2022-06":"n"
+      }
   }
 }
 notes_by_num: {
-  "1": "Partial. Not supported on all compatible evergreen browsers. Refer to 'supported platforms' links listed below under resources."
+  "1": "Supported on compatible browsers. Refer to ‘supported platforms’ links listed below under resources."
 }
 links: {
   "AMP for Email Format":"https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email",
