@@ -3,7 +3,7 @@ title: "conic-gradient()"
 description: "Creates an image consisting of a gradient with color transitions rotated around a center point (rather than radiating from the center)."
 category: css
 keywords: gradients
-last_test_date: "2022-12-28"
+last_test_date: "2023-01-02"
 test_url: "/tests/css-gradients.html"
 test_results_url: ""
 stats: {
@@ -31,13 +31,13 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2023-01":"n"
         },
         ios: {
-            "2022-12":"u"
+            "2023-01":"n"
         },
         android: {
-            "2022-12":"u"
+            "2023-01":"n"
         }
     },
     outlook: {
@@ -71,13 +71,13 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2023-01":"y"
         },
         ios: {
-            "2022-12":"u"
+            "2023-01":"y"
         },
         android: {
-            "2022-12":"u"
+            "2023-01":"y"
         }
     },
     thunderbird: {
@@ -135,17 +135,17 @@ stats: {
     },
     laposte: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2023-01":"y"
         }
     },
     t-online-de: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2023-01":"y"
         }
     },
     free-fr: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2023-01":"n"
         }
     }
 }
