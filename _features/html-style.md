@@ -121,7 +121,7 @@ stats: {
         },
         ios: {
             "2020-03":"n",
-            "2023-01":"a #1"
+            "2023-01":"a #6"
         },
         android: {
             "2020-03":"a #1"
@@ -184,6 +184,7 @@ notes_by_num: {
     "2": "Partial. Not supported with Non Gmail Accounts.",
     "3": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element.",
     "4": "Buggy. `<style>` elements need to be declared before their rules are used.",
-    "5": "A CSS rule following a CSS comment is ignored. (See [email-bugs#25](https://github.com/hteumeuleu/email-bugs/issues/25).)"
+    "5": "A CSS rule following a CSS comment is ignored. (See [email-bugs#25](https://github.com/hteumeuleu/email-bugs/issues/25).)",
+    "6": "Partial. Fully supports `<style>` inside the `<head>` element. `<style>` in the `<body>` is supported in dark mode but not in light mode.",
 }
 ---
