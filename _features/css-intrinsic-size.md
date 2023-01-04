@@ -4,7 +4,7 @@ description: "Sets the height or width relative to its content."
 category: css
 last_test_date: "2022-12-31"
 test_url: "/tests/css-intrinsic-size.html"
-test_results_url: ""
+test_results_url: "https://app.emailonacid.com/app/acidtest/tcE2poX3tOf6HlwmIH6GQqveQN6SwMrsqCp4ylpkFVc3W/list"
 stats: {
 	apple-mail: {
 		macos: {
@@ -30,26 +30,25 @@ stats: {
 	},
     orange: {
         desktop-webmail: {
-            "2022-12":"u",
-            "2022-12":"u"
+            "2023-01":"n"
         },
         ios: {
-            "2022-12":"u"
+            "2023-01":"n"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"n"
         }
     },
 	outlook: {
 		windows: {
-			"2007": "u",
-			"2010": "u",
-			"2013": "u",
-			"2016": "u",
-			"2019": "u"
+			"2007": "n",
+			"2010": "n",
+			"2013": "n",
+			"2016": "n",
+			"2019": "n"
 		},
 		windows-mail: {
-			"2022-12": "u"
+			"2022-12": "n"
 		},
 		macos: {
 			"2022-12": "y"
@@ -88,18 +87,18 @@ stats: {
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "u"
+			"6.1": "n"
 		}
 	},
     sfr: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         ios: {
-            "2022-12":"u"
+            "2022-12":"y"
         },
         android: {
-            "2022-12":"u"
+            "2022-12":"y"
         }
     },
 	thunderbird: {
@@ -135,7 +134,7 @@ stats: {
 	},
     laposte: {
         desktop-webmail: {
-            "2022-12": "u"
+            "2022-12": "y"
         }
     }
 }
