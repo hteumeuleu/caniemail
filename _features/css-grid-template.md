@@ -1,10 +1,11 @@
 ---
-title: "grid template"
-description: "grid-template, grid-template-areas, grid-template-columns, grid-template-rows"
+title: "grid-template-* properties"
+description: "This page reflects support for `grid-template`, `grid-template-areas`, `grid-template-columns`, `grid-template-rows`."
+keywords: grid-template, grid-template-areas, grid-template-columns, grid-template-rows
 category: css
-last_test_date: "2023-01-05"
+last_test_date: "2023-01-09"
 test_url: "/tests/css-grid-properties.html"
-test_results_url: ""
+test_results_url: "https://app.emailonacid.com/app/acidtest/MBJ7UfOQ1sVRvPBJNsWByvymNSwrIhi2drpCo4gTw0oM0/list"
 stats: {
 	apple-mail: {
 		macos: {
@@ -30,14 +31,13 @@ stats: {
 	},
     orange: {
         desktop-webmail: {
-            "2023-01":"u",
             "2023-01":"n"
         },
         ios: {
-            "2023-01":"u"
+            "2023-01":"n"
         },
         android: {
-            "2023-01":"u"
+            "2023-01":"n"
         }
     },
 	outlook: {
@@ -93,13 +93,13 @@ stats: {
 	},
     sfr: {
         desktop-webmail: {
-            "2023-01":"u"
+            "2023-01":"y"
         },
         ios: {
-            "2023-01":"u"
+            "2023-01":"y"
         },
         android: {
-            "2023-01":"u"
+            "2023-01":"y"
         }
     },
 	thunderbird: {
@@ -135,6 +135,46 @@ stats: {
 	},
     laposte: {
         desktop-webmail: {
+            "2023-01": "y"
+        }
+    },
+    free-fr: {
+        desktop-webmail: {
+            "2023-01": "y"
+        }
+    },
+    t-online-de: {
+        desktop-webmail: {
+            "2023-01": "y"
+        }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2023-01": "n"
+        },
+        ios: {
+            "2023-01": "u"
+        },
+        android: {
+            "2023-01": "u"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2023-01": "u"
+        },
+        ios: {
+            "2023-01": "u"
+        },
+        android: {
+            "2023-01": "u"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2023-01": "u"
+        },
+        android: {
             "2023-01": "u"
         }
     }
