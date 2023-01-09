@@ -143,11 +143,6 @@ stats: {
             "2023-01": "u"
         }
     },
-    gmx: {
-        desktop-webmail: {
-            "2023-01": "u"
-        }
-    },
     t-online-de: {
         desktop-webmail: {
             "2023-01": "u"
