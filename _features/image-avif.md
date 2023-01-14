@@ -12,27 +12,32 @@ stats: {
     macos: {
       "11": "n",
       "12": "n",
-      "13": "n"
+      "13": "n",
+      "13.1": "y #2"
     },
     ios: {
       "11": "n",
       "12": "n",
       "13": "n",
-      "14": "n"
+      "14": "n",
+      "16.2": "y #2"
     }
   },
   gmail: {
     desktop-webmail: {
-      "2021-01": "n"
+      "2021-01": "n",
+      "2023-01": "y #3"
     },
     ios: {
-      "2021-01": "n"
+      "2021-01": "n",
+      "2023-01": "y #3"
     },
     android: {
       "2021-01": "n"
     },
     mobile-webmail: {
-      "2021-01": "n"
+      "2021-01": "n",
+      "2023-01": "y #3"
     }
   },
   orange: {
@@ -58,13 +63,15 @@ stats: {
       "2021-01": "n"
     },
     macos: {
-      "2021-01": "n"
+      "2021-01": "n",
+      "2023-01": "y #2"
     },
     outlook-com: {
       "2021-01": "y #1"
     },
     ios: {
-      "2021-01": "n"
+      "2021-01": "n",
+      "2023-01": "y #2"
     },
     android: {
       "4.2116.0": "y #1"
@@ -75,7 +82,8 @@ stats: {
       "2021-01": "y #1"
     },
     ios: {
-      "2021-01": "n"
+      "2021-01": "n",
+      "2023-01": "y #2"
     },
     android: {
       "6.27": "y #1"
@@ -86,7 +94,8 @@ stats: {
       "2021-01": "y #1"
     },
     ios: {
-      "2021-01": "n"
+      "2021-01": "n",
+      "2023-01": "y #2"
     },
     android: {
       "2021-05": "y #1"
@@ -110,7 +119,8 @@ stats: {
   },
   thunderbird: {
     macos: {
-      "78.10": "n"
+      "78.10": "n",
+      "102.6": "y #2"
     }
   },
   protonmail: {
@@ -118,7 +128,8 @@ stats: {
       "2021-01":"y #1"
     },
     ios: {
-      "2021-05":"n"
+      "2021-05":"n",
+      "2023-01":"n"
     },
     android: {
       "2021-01":"y #1"
@@ -131,12 +142,14 @@ stats: {
   },
   mail-ru: {
     desktop-webmail: {
-      "2021-01":"n"
+      "2021-01":"n",
+      "2023-01":"n"
     }
   },
   fastmail: {
     desktop-webmail: {
-      "2021-07": "n"
+      "2021-07": "n",
+      "2023-01": "n"
     }
   },
   laposte: {
@@ -146,7 +159,9 @@ stats: {
   }
 }
 notes_by_num: {
-  "1": "Support depends on browser and operating system support."
+  "1": "Support depends on browser and operating system support.",
+  "2": "Does not support animated AVIF.",
+  "3": "Converts still AVIF into a jpg and animated AVIF into a gif."
 }
 links: {
   "Can I use: AVIF image format":"https://caniuse.com/avif",
