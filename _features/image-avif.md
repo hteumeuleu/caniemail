@@ -4,7 +4,7 @@ description: "A modern image format based on the AV1 video format."
 category: image
 keywords: image,img,AVIF
 tags: performance
-last_test_date: "2021-05-14"
+last_test_date: "2023-01-14"
 test_url: "/tests/images.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/d69Dg0BGvV5zAiHI1fjKX6BDulsODM8eYdKO9QVxlNuUL/list"
 stats: {
