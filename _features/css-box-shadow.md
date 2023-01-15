@@ -2,7 +2,7 @@
 title: "box-shadow"
 description: ""
 category: css
-last_test_date: "2021-08-03"
+last_test_date: "2023-01-15"
 test_url: "/tests/css-box-shadow.html"
 test_results_url: "https://testi.at/proj/po0Imx6tAX0U9bum5DTNpWcJ"
 stats: {
@@ -16,10 +16,12 @@ stats: {
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02":	"n"
+			"2019-02":	"n",
+			"2023-01":	"n"
 		},
 		ios: {
-			"2019-02":	"a #1"
+			"2019-02":	"a #1",
+			"2023-01":	"a #1"
 		},
 		android: {
 			"2021-08":	"a #1"
@@ -55,10 +57,12 @@ stats: {
 			"2019-02":	"y"
 		},
 		outlook-com: {
-			"2019-02":	"n"
+			"2019-02":	"n",
+			"2023-01":	"n"
 		},
 		ios: {
-			"2019-02":	"n"
+			"2019-02":	"n",
+			"2023-01":	"n"
 		},
 		android: {
 			"2019-02":	"n"
@@ -66,10 +70,12 @@ stats: {
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02":	"n"
+			"2019-02":	"n",
+			"2023-01":	"n"
 		},
 		ios: {
-			"2019-02":	"n"
+			"2019-02":	"n",
+			"2023-01":	"n"
 		},
 		android: {
 			"2019-02":	"n"
@@ -80,7 +86,8 @@ stats: {
 			"2019-02":	"n"
 		},
 		ios: {
-			"2019-02":	"n"
+			"2019-02":	"n",
+			"2023-01":	"n"
 		},
 		android: {
 			"2019-02":	"n"
