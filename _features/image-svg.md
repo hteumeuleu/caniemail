@@ -3,7 +3,7 @@ title: "SVG image format"
 description: "Support for SVG image format, as a linked file. See [SVG html](/features/html-svg) for embedded SVG support."
 category: image
 keywords: image, SVG
-last_test_date: "2020-02-06"
+last_test_date: "2023-01-15"
 test_url: "/tests/images.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidhagmt3Z53CjqbkMhorlvuM0Gz57/list"
 stats: {
@@ -20,16 +20,20 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2020-02":"n"
+            "2020-02":"n",
+            "2023-01":"n"
         },
         ios: {
-            "2020-02":"a #1"
+            "2020-02":"a #1",
+            "2023-01":"a #1"
         },
         android: {
-            "2020-02":"a #1"
+            "2020-02":"a #1",
+            "2023-01":"a #1"
         },
         mobile-webmail: {
-            "2020-02":"n"
+            "2020-02":"n",
+            "2023-01":"n"
         }
     },
     outlook: {
@@ -44,13 +48,15 @@ stats: {
             "2020-02":"y"
         },
         macos: {
-            "2016":"n"
+            "2016":"n",
+            "13.1":"y"
         },
         outlook-com: {
             "2020-02":"y"
         },
         ios: {
-            "2020-02":"n"
+            "2020-02":"n",
+            "2023-01":"y"
         },
         android: {
             "2020-02":"y"
@@ -132,7 +138,8 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-10":"n"
+            "2020-10":"n",
+            "2023-01":"n"
         }
     },
     fastmail: {
