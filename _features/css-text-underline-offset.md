@@ -2,7 +2,7 @@
 title: "text-underline-offset"
 category: css
 keywords: underline
-last_test_date: "2021-01-20"
+last_test_date: "2023-01-16"
 test_url: "/tests/css-text-decoration.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Zo8XyakhcacSbta8lYvU5vSTAWnaTLi7XIcWtQ7B218Cj/list"
 stats: {
@@ -16,13 +16,16 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2023-01":"n"
         },
         ios: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2023-01":"n"
         },
         android: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2023-01":"n"
         },
         mobile-webmail: {
             "2021-01":"n"
@@ -60,10 +63,12 @@ stats: {
             "2021-01":"n"
         },
         ios: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2023-01":"n"
         },
         android: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2023-01":"n"
         }
     },
     samsung-email: {
@@ -103,10 +108,12 @@ stats: {
             "2021-01":"n"
         },
         ios: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2023-01":"n"
         },
         android: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2023-01":"n"
         }
     },
     protonmail: {
@@ -117,7 +124,8 @@ stats: {
             "2021-01":"y"
         },
         android: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2023-01":"y"
         }
     },
     hey: {
