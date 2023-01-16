@@ -2,7 +2,7 @@
 title: "text-decoration-thickness"
 category: css
 keywords: underline
-last_test_date: "2020-04-30"
+last_test_date: "2023-01-16"
 test_url: "/tests/css-text-decoration.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/VYmPi84Nw2pMoQLeljigICaH0QudjS2xc2CgpvPbEW7FZ/list"
 stats: {
@@ -17,13 +17,16 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2020-04":"y"
+            "2020-04":"y",
+            "2023-01":"n"
         },
         ios: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2023-01":"n"
         },
         android: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2023-01":"n"
         },
         mobile-webmail: {
             "2020-04":"n"
@@ -55,21 +58,25 @@ stats: {
         },
         macos: {
             "2011":"n",
-            "2016":"n"
+            "2016":"n",
+            "2023-01":"y"
         },
         outlook-com: {
             "2020-04":"n"
         },
         ios: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2023-01":"n"
         },
         android: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2023-01":"n"
         }
     },
     samsung-email: {
         android: {
-            "7.0":"n"
+            "7.0":"n",
+            "10":"y"
         }
     },
     sfr: {
@@ -85,7 +92,8 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "68.7":"n"
+            "68.7":"n",
+            "102.6":"y"
         }
     },
     aol: {
@@ -104,10 +112,12 @@ stats: {
             "2020-04":"n"
         },
         ios: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2023-01":"n"
         },
         android: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2023-01":"n"
         }
     },
     protonmail: {
@@ -118,7 +128,8 @@ stats: {
             "2020-04":"y"
         },
         android: {
-            "2020-04":"n"
+            "2020-04":"n",
+            "2023-01":"y"
         }
     },
     hey: {
