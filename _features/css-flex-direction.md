@@ -3,7 +3,7 @@ title: "flex-direction:column"
 description: ""
 category: css
 keywords: flexbox
-last_test_date: "2019-02-28"
+last_test_date: "2023-01-17"
 test_url: "/tests/css-box-model.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/pyPQFHSYLFrhbRShalju0B2fYNwUgLuyKTLx4MLqiw5mE/list"
 stats: {
@@ -17,13 +17,16 @@ stats: {
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02": "n"
+			"2019-02": "n",
+			"2023-01": "n"
 		},
 		ios: {
-			"2019-02": "n"
+			"2019-02": "n",
+			"2023-01": "n"
 		},
 		android: {
-			"2019-02": "n"
+			"2019-02": "n",
+			"2023-01": "n"
 		},
         mobile-webmail: {
             "2020-02":"n"
@@ -56,13 +59,16 @@ stats: {
 			"2019-02": "y"
 		},
 		outlook-com: {
-			"2019-02": "n"
+			"2019-02": "n",
+			"2023-01": "y"
 		},
 		ios: {
-			"2019-02": "n"
+			"2019-02": "n",
+			"2023-01": "y"
 		},
 		android: {
-			"2019-02": "n"
+			"2019-02": "n",
+			"2023-01": "n"
 		}
 	},
 	yahoo: {
