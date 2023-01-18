@@ -18,18 +18,18 @@ stats: {
     gmail: {
         desktop-webmail: {
             "2020-02":"n",
-			"2023-01":"a #4"
+            "2023-01":"a #4"
         },
         ios: {
             "2020-02":"n"
         },
         android: {
             "2020-02":"n",
-			"2023-01":"a #4"
+            "2023-01":"a #4"
         },
         mobile-webmail: {
             "2020-02":"n",
-			"2023-01":"a #4"
+            "2023-01":"a #4"
         }
     },
     outlook: {
@@ -180,6 +180,6 @@ notes_by_num: {
     "1": "Partial: Does not render Base 64 gif format.",
     "2": "Not supported. The `src` is turned into a `nosrc` attribute.",
     "3": "Partial: Only supports Base 64 png format.",
-	"4": "The formats ico, jpg, png and webp are verified to be working."
+    "4": "The formats ico, jpg, png and webp are verified to be working."
 }
 ---
