@@ -1,6 +1,6 @@
 ---
 title: "modern-color"
-description: ""
+description: "Modern color values: lch, lab, oklch, oklab, display-p3"
 category: css
 keywords: color
 last_test_date: "2023-01-18"
