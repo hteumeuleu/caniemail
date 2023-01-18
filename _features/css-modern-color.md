@@ -9,7 +9,7 @@ test_results_url: ""
 stats: {
 	apple-mail: {
 		macos: {
-			"13": "y"
+			"13.1": "y"
 		},
 		ios: {
 			"16.2": "y"
@@ -17,27 +17,27 @@ stats: {
 	},
 	gmail: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2023-01": "n"
 		},
 		ios: {
 			"2023-01": "n"
 		},
 		android: {
-            "2020-12": "u"
+            "2023-01": "n"
 		},
         mobile-webmail: {
-            "2020-12": "u"
+            "2023-01": "n"
         }
 	},
     orange: {
         desktop-webmail: {
-            "2020-12":"u"
+            "2023-01":"u"
         },
         ios: {
-            "2020-12":"u"
+            "2023-01":"u"
         },
         android: {
-            "2020-12":"u"
+            "2023-01":"u"
         }
     },
 	outlook: {
@@ -49,46 +49,46 @@ stats: {
 			"2019": "n"
 		},
 		windows-mail: {
-			"2020-12": "u"
+			"2023-01": "u"
 		},
 		macos: {
-			"2020-12": "u"
+			"2023-01": "y"
 		},
 		outlook-com: {
-			"2020-12": "u"
+			"2023-01": "n"
 		},
 		ios: {
-			"2020-12": "u"
+			"2023-01": "n"
 		},
 		android: {
-            "2020-12": "u"
+            "2023-01": "n"
 		}
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2020-12": "u"
+			"2023-01": "n"
 		},
 		ios: {
-            "2020-12": "u"
+            "2023-01": "n"
 		},
 		android: {
-			"2020-12": "u"
+			"2023-01": "n"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-            "2020-12": "u"
+            "2023-01": "n"
 		},
 		ios: {
-            "2020-12": "u"
+            "2023-01": "n"
 		},
 		android: {
-            "2020-12": "u"
+            "2023-01": "n"
 		}
 	},
 	samsung-email: {
 		android: {
-			"6.1.30.30": "u"
+			"6.1.74.5": "n"
 		}
 	},
     sfr: {
@@ -104,33 +104,33 @@ stats: {
     },
 	thunderbird: {
 		macos: {
-			"78.5": "u"
+			"102.6": "n"
 		}
 	},
     protonmail: {
         desktop-webmail: {
-            "2020-12":"u"
+            "2023-01":"y #1"
         },
         ios: {
-            "2020-12":"u"
+            "2023-01":"y"
         },
         android: {
-            "2020-12":"u"
+            "2023-01":"n"
         }
     },
     hey: {
         desktop-webmail: {
-            "2020-12":"u"
+            "2023-01":"y #1"
         }
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-12":"u"
+            "2023-01":"y #1"
         }
     },
 	fastmail: {
 		desktop-webmail: {
-			"2021-07": "u"
+			"2023-01": "y #1"
 		}
 	},
     laposte: {
@@ -139,7 +139,10 @@ stats: {
         }
     }
 }
+notes_by_num: {
+    "1": "Depends on browser support." 
+}
 links: {
-   
+    "Can I use: LCH and Lab color values":"https://caniuse.com/css-lch-lab"
 }
 ---
