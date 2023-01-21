@@ -81,7 +81,7 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "78.14":"u"
+            "102.7":"y"
         }
     },
     aol: {
@@ -97,10 +97,12 @@ stats: {
     },
     yahoo: {
         desktop-webmail: {
-            "2022-08":"n"
+            "2022-08":"n",
+            "2023-01":"n"
         },
         ios: {
-            "2022-08":"n"
+            "2022-08":"n",
+            "2023-01":"n"
         },
         android: {
             "2022-08":"n"
@@ -108,18 +110,18 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2022-08":"u"
+            "2023-01":"y"
         },
         ios: {
-            "2022-08":"u"
+            "2023-01":"y"
         },
         android: {
-            "2022-08":"u"
+            "2023-01":"y"
         }
     },
     hey: {
         desktop-webmail: {
-            "2022-08":"u"
+            "2023-01":"y"
         }
     },
     mail-ru: {
@@ -129,7 +131,7 @@ stats: {
     },
     fastmail: {
         desktop-webmail: {
-            "2022-08": "u"
+            "2023-01": "y"
         }
     },
     laposte: {
