@@ -1,6 +1,6 @@
 ---
-title: "modern-color"
-description: "Modern color values: lch, lab, oklch, oklab, display-p3"
+title: "lch(), oklch(), lab(), oklab()"
+description: "Modern color values: lch, lab, oklch and oklab"
 category: css
 keywords: color
 last_test_date: "2023-01-18"
@@ -17,16 +17,16 @@ stats: {
 	},
 	gmail: {
 		desktop-webmail: {
-			"2023-01": "n"
+			"2023-01": "n #2"
 		},
 		ios: {
-			"2023-01": "n"
+			"2023-01": "n #2"
 		},
 		android: {
-            "2023-01": "n"
+            "2023-01": "n #2"
 		},
         mobile-webmail: {
-            "2023-01": "n"
+            "2023-01": "n #2"
         }
 	},
     orange: {
@@ -140,7 +140,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Depends on browser support." 
+    "1": "Depends on browser support.",
+	"2": "Using this syntax for an inline style will remove all inline styles applied to that element." 
 }
 links: {
     "Can I use: LCH and Lab color values":"https://caniuse.com/css-lch-lab"
