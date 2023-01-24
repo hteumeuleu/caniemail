@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>style element</title>
 		<style>
 			.test1 {
@@ -34,17 +35,26 @@
 					<code>&lt;style&gt;</code> in a second head.
 				</td>
 				<td style="padding:10px; width:100px; height:100px; font:1em sans-serif;" class="test3">
-					<code>&lt;style&gt;</code> in the body.
+					<code>&lt;style&gt;</code> in the body, before test content.
 				</td>
 				<td style="padding:10px; width:100px; height:100px; font:1em sans-serif;" class="test4">
+					<code>&lt;style&gt;</code> in the body, after test content.
+				</td>
+				<td style="padding:10px; width:100px; height:100px; font:1em sans-serif;" class="test5">
 					<code>&lt;style&gt;</code> in a second body.
 				</td>
 			</tr>
 		</table>
+		<style>
+			.test4 {
+				color: #fff;
+				background-color: #39b54a;
+			}
+		</style>
 	</body>
 	<body>
 		<style>
-			.test4 {
+			.test5 {
 				color: #fff;
 				background-color: #39b54a;
 			}
