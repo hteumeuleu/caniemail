@@ -8,19 +8,23 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/od5IYQtx8yIbIUbeRyQX
 stats: {
     apple-mail: {
         macos: {
-            "10.3":"y"
+            "10.3":"y",
+            "16.0":"y"
         },
         ios: {
             "10.3":"y",
-            "12.3":"y"
+            "12.3":"y",
+            "16.2":"y"
         }
     },
     gmail: {
         desktop-webmail: {
-            "2019-06":"a #1"
+            "2019-06":"a #1",
+            "2023-01":"a #1"
         },
         ios: {
-            "2019-06":"a #1 #2"
+            "2019-06":"a #1 #2",
+            "2023-01":"a #1 #2"
         },
         android: {
             "2019-06":"a #1 #2"
@@ -53,17 +57,22 @@ stats: {
             "2019":"a #4"
         },
         windows-mail: {
-            "2020-01":"a #4"
+            "2020-01":"a #4",
+            "2023-01":"a #4"
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "2019":"y",
+            "2021":"y"
         },
         outlook-com: {
-            "2019-06":"y"
+            "2019-06":"y",
+            "2023-01":"y"
         },
         ios: {
-            "2019-06":"y"
+            "2019-06":"y",
+            "2023-01":"y"
         },
         android: {
             "2019-06":"y"
@@ -88,15 +97,21 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "60.3":"y"
+            "60.3":"y",
+            "102.7":"y"
+        },
+        windows: {
+            "102.7":"y"
         }
     },
     aol: {
         desktop-webmail: {
-            "2020-01":"y"
+            "2020-01":"y",
+            "2023-01":"y"
         },
         ios: {
-            "2020-01":"y"
+            "2020-01":"y",
+            "2023-01":"y"
         },
         android: {
             "2020-01":"y"
@@ -104,10 +119,12 @@ stats: {
     },
     yahoo: {
         desktop-webmail: {
-            "2019-06":"y #5"
+            "2019-06":"y #5",
+            "2023-01":"y"
         },
         ios: {
-            "2019-06":"y"
+            "2019-06":"y",
+            "2023-01":"y"
         },
         android: {
             "2019-06":"a #3",
@@ -117,11 +134,12 @@ stats: {
     protonmail: {
         desktop-webmail: {
             "2020-03":"n",
-            "2022-02":"y"
+            "2022-02":"y",
+            "2023-01":"y"
         },
         ios: {
             "2020-03":"n",
-            "2023-01":"a #6"
+            "2023-01":"a #1"
         },
         android: {
             "2020-03":"a #1"
@@ -184,7 +202,6 @@ notes_by_num: {
     "2": "Partial. Not supported with Non Gmail Accounts.",
     "3": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element.",
     "4": "Buggy. `<style>` elements need to be declared before their rules are used.",
-    "5": "A CSS rule following a CSS comment is ignored. (See [email-bugs#25](https://github.com/hteumeuleu/email-bugs/issues/25).)",
-    "6": "Partial. Fully supports `<style>` inside the `<head>` element. `<style>` in the `<body>` is supported in dark mode but not in light mode.",
+    "5": "A CSS rule following a CSS comment is ignored. (See [email-bugs#25](https://github.com/hteumeuleu/email-bugs/issues/25).)"
 }
 ---
