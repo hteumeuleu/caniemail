@@ -37,14 +37,17 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-06":"y",
-            "2021-03":"y"
+            "2021-03":"y",
+            "2023-02":"y"
         },
         ios: {
-            "2019-06":"y"
+            "2019-06":"y",
+            "2023-02":"y"
         },
         android: {
             "2019-06":"n",
-            "2019-08":"y"
+            "2019-08":"y",
+            "2023-02":"y"
         }
     },
     outlook: {
@@ -86,13 +89,16 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2019-06":"y"
+            "2019-06":"y",
+            "2023-02":"y"
         },
         ios: {
-            "2019-06":"n"
+            "2019-06":"n",
+            "2023-02":"n"
         },
         android: {
-            "2019-06":"n"
+            "2019-06":"n",
+            "2023-02":"n"
         }
     },
     thunderbird: {
@@ -163,6 +169,12 @@ stats: {
     laposte: {
         desktop-webmail: {
             "2021-08": "y"
+        },
+        ios: {
+            "2023-02":"n"
+        },
+        android: {
+            "2023-02":"n"
         }
     },
 	gmx: {
@@ -187,14 +199,19 @@ stats: {
 			"2022-11":"y"
 		}
 	},
-	ionos-1and1: {
-		desktop-webmail: {
-			"2022-11": "y"
-		},
-		android: {
-			"2022-11":"y"
-		}
-	}
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-11": "y"
+        },
+        android: {
+            "2022-11":"y"
+        }
+    },
+    rainloop: {
+        desktop-webmail: {
+            "2023-02": "n"
+        }
+    }
 }
 notes: ""
 notes_by_num: {

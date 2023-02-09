@@ -19,6 +19,7 @@ family:
   gmx: "GMX"
   web-de: "WEB.DE"
   ionos-1and1: "1&1"
+  rainloop: "RainLoop"
 platform:
   desktop-app: "Desktop"
   desktop-webmail: "Desktop Webmail"
