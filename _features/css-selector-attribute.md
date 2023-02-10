@@ -16,13 +16,16 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2020-12":"a #5"
+            "2020-12":"a #5",
+            "2023-02":"a #5"
         },
         ios: {
-            "2020-12":"a #5 #6"
+            "2020-12":"a #5 #6",
+            "2023-02":"a #5 #6"
         },
         android: {
-            "2020-12":"a #5 #6"
+            "2020-12":"a #5 #6",
+            "2023-02":"a #5 #6"
         },
         mobile-webmail: {
             "2020-02": "n"
@@ -176,7 +179,7 @@ notes_by_num: {
     "2": "Partial. Only supports `[attr]`, `[attr=value]`, `[attr~=value]`, `[attr|=value]` syntaxes.",
     "3": "Buggy. A `class=\"test\"` in the HTML is prefixed `class=\"x_test\"`, but an attribute selector stays unprefixed `[class=\"test\"]`.",
     "4": "Partial. Only supports `[attr=value]` syntax.",
-    "5": "Partial. Only supports `[attr~=value]` syntax.",
+    "5": "Partial. Only supports `[attr~=value]` syntax. Only `class` as an attribute name is known to be supported.",
     "6": "Partial. Doesn't work with Non Gmail Accounts."
 }
 links: {
