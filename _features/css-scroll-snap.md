@@ -1,0 +1,144 @@
+---
+title: "aspect-ratio"
+description: "Controls panning and scrolling behaviour with snap positions"
+category: css
+last_test_date: "2023-02-27"
+test_url: "/tests/css-scroll-snap.html"
+test_results_url: "https://testi.at/proj/O5rtNMDHo58i8YirVtvyUvG"
+stats: {
+	apple-mail: {
+		macos: {
+			"16": "y"
+		},
+		ios: {
+			"16": "y"
+		}
+	},
+	gmail: {
+		desktop-webmail: {
+			"2023-02": "n"
+		},
+		ios: {
+			"2023-02": "n"
+		},
+		android: {
+			"2023-02": "n"
+		},
+		mobile-webmail: {
+			"2023-02": "n"
+		}
+	},
+	orange: {
+		desktop-webmail: {
+			"2023-02":"u"
+		},
+		ios: {
+			"2023-02":"u"
+		},
+		android: {
+			"2023-02":"u"
+		}
+	},
+	outlook: {
+		windows: {
+			"2013": "n",
+			"2016": "n",
+			"2019": "n"
+			"2021": "n"
+		},
+		windows-mail: {
+			"2023-02": "n"
+		},
+		macos: {
+			"2023-02": "u"
+		},
+		outlook-com: {
+			"2023-02": "n"
+		},
+		ios: {
+			"2023-02": "n"
+		},
+		android: {
+			"2023-02": "u"
+		}
+	},
+	yahoo: {
+		desktop-webmail: {
+			"2023-02": "n"
+		},
+		ios: {
+			"2023-02": "n"
+		},
+		android: {
+			"2023-02": "n"
+		}
+	},
+	aol: {
+		desktop-webmail: {
+			"2023-02": "n"
+		},
+		ios: {
+			"2023-02": "n"
+		},
+		android: {
+			"2023-02": "n"
+		}
+	},
+	samsung-email: {
+		android: {
+			"2023-02": "y"
+		}
+	},
+	sfr: {
+		desktop-webmail: {
+			"2023-02":"u"
+		},
+		ios: {
+			"2023-02":"u"
+		},
+		android: {
+			"2023-02":"u"
+		}
+	},
+	thunderbird: {
+		macos: {
+			"78.10.2": "u"
+		}
+	},
+	protonmail: {
+		desktop-webmail: {
+			"2023-02":"u"
+		},
+		ios: {
+			"2023-02":"u"
+		},
+		android: {
+			"2023-02":"u"
+		}
+	},
+	hey: {
+		desktop-webmail: {
+			"2023-02":"u"
+		}
+	},
+	mail-ru: {
+		desktop-webmail: {
+			"2023-02":"y"
+		}
+	},
+	fastmail: {
+		desktop-webmail: {
+			"2023-02": "u"
+		}
+	},
+	laposte: {
+		desktop-webmail: {
+			"2023-02": "u"
+		}
+	}
+}
+links: {
+	"MDN: The scroll-snap-type CSS property": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type",
+	"Can I use: CSS property: scroll-snap-type": "https://caniuse.com/?search=scroll-snap-type"
+}
+---

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>scroll-snap CSS property</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+		h1, h2 {
+			font-size: 16px;
+			text-align: center;
+			font-family: monospace;
+		}
+	</style>
+</head>
+
+<head></head>
+
+<body>
+
+	<h1 style="margin-bottom:30px;">scroll-snap CSS property</h1>
+  <h2>scroll-snap-type: y mandatory</h2>
+	<div style="height:250px; width:100%; max-width:600px; margin:0 auto 50px; scroll-snap-type: y mandatory; overflow: auto;">
+		<div style="scroll-snap-align: center; height:250px; padding:10px; background-color:#000000; color:#ffffff;">section 1</div>
+		<div style="scroll-snap-align: center; height:250px; padding:10px; background-color:#9932cc; color:#ffffff;">section 2</div>
+		<div style="scroll-snap-align: center; height:250px; padding:10px; background-color:#008b8b; color:#ffffff;">section 3</div>
+	</div>
+
+  <h2>scroll-snap-type: y proximity</h2>
+	<div style="height:250px; width:100%; max-width:600px; margin:0 auto 50px; scroll-snap-type: y proximity; overflow: auto;">
+		<div style="scroll-snap-align: center; height:250px; padding:10px; background-color:#000000; color:#ffffff;">section 1</div>
+		<div style="scroll-snap-align: center; height:250px; padding:10px; background-color:#9932cc; color:#ffffff;">section 2</div>
+		<div style="scroll-snap-align: center; height:250px; padding:10px; background-color:#008b8b; color:#ffffff;">section 3</div>
+	</div>
+</body>
+
+</html>
