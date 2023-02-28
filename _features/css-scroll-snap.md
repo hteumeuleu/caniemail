@@ -1,5 +1,5 @@
 ---
-title: "aspect-ratio"
+title: "scroll-snap"
 description: "Controls panning and scrolling behaviour with snap positions"
 category: css
 last_test_date: "2023-02-27"
