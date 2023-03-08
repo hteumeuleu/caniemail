@@ -9,13 +9,13 @@ test_results_url: "https://testi.at/proj/BG3iM7ZhOjpi8Qlf4E9IQxg"
 stats: {
 	apple-mail: {
 		macos: {
-			"2021-10": "a #1"
+			"2021-10": "y #1"
 		},
 		ios: {
-			"11": "a #1",
-			"12": "a #1",
-			"13": "a #1",
-			"14": "a #1"
+			"11": "y #1",
+			"12": "y #1",
+			"13": "y #1",
+			"14": "y #1"
 		}
 	},
 	gmail: {
