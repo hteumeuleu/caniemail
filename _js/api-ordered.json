@@ -1,0 +1,45 @@
+---
+layout: null
+permalink: "/api/data-ordered.json"
+---
+{
+	"api_version":"1.0.4-ordered",
+	"last_update_date":{{site.time | jsonify}},
+	"nicenames":{{site.data.nicenames | jsonify}},
+	"data":[{% for feature in site.features %}
+		{
+			"slug":{{ feature.slug | jsonify }},
+			"title":{{ feature.title | jsonify }},
+			"description":{{ feature.description | jsonify }},
+			"url":{{ feature.url | prepend:site.url | jsonify }},
+			"category":{{ feature.category | jsonify }},
+			"tags":{{ feature.tags | jsonify }},
+			"keywords":{{ feature.keywords | jsonify }},
+			"last_test_date":{{ feature.last_test_date | jsonify }},
+			"test_url":{{ feature.test_url | prepend:site.url | jsonify }},
+			"test_results_url":{{ feature.test_results_url | jsonify }},
+			"stats":{
+				{%- for family in feature.stats -%}
+					{%- assign family-key = family | first -%}
+					{%- assign family-values = feature.stats[family-key] -%}
+					{{ family-key | jsonify }}:{
+						{%- for platform in family-values -%}
+							{%- assign platform-key = platform | first -%}
+							{%- assign platform-values = platform | last -%}
+							{{ platform-key | jsonify }}:[
+								{%- for version in platform-values -%}
+									{%- assign version-key = version | first -%}
+									{%- assign version-values = version | last | split: ' ' | first -%}
+									{ {{ version-key | jsonify }}:{{ version-values | jsonify }} }
+									{%- unless forloop.last -%},{%- endunless -%}
+								{%- endfor -%}
+							]{%- unless forloop.last -%},{%- endunless -%}
+						{%- endfor -%}
+					}{%- unless forloop.last -%},{%- endunless -%}
+				{%- endfor -%}
+			},
+			"notes":{{ feature.notes | jsonify}},
+			"notes_by_num":{{ feature.notes_by_num | jsonify}}
+		}{% unless forloop.last %},{% endunless %}
+	{% endfor %}]
+}

@@ -218,7 +218,7 @@ class Compare {
 	loadJSONFile() {
 
 		if(!this.data) {
-			fetch('/api/data.json')
+			fetch('/api/data-ordered.json')
 			.then(response => {
 				return response.json();
 			})
@@ -305,8 +305,10 @@ class Compare {
 							const versions = feature.stats[key[0]][key[1]];
 							supportValue = 'u';
 							if(versions) {
-								const lastVersionKey = Object.keys(versions)[Object.keys(versions).length - 1];
-								const lastVersionValue = versions[lastVersionKey];
+								const lastVersion = versions[versions.length - 1];
+								const lastVersionKey = Object.keys(lastVersion)[0];
+								const lastVersionValue = lastVersion[lastVersionKey];
+								console.log(versions, lastVersionKey, lastVersionValue);
 								if(lastVersionValue) {
 									supportValue = lastVersionValue.charAt(0);
 								}
@@ -381,9 +383,12 @@ class Compare {
 					if(key[0] in feature.stats && key[1] in feature.stats[key[0]]) {
 						const versions = feature.stats[key[0]][key[1]];
 						if(versions) {
-							const lastVersionSupportValue = versions[Object.keys(versions)[Object.keys(versions).length - 1]];
+							// const lastVersionSupportValue = versions[Object.keys(versions)[Object.keys(versions).length - 1]];
+							const lastVersionSupportValue = versions[versions.length - 1];
 							if(lastVersionSupportValue) {
-								const supportValue = lastVersionSupportValue.charAt(0);
+								const key = Object.keys(lastVersionSupportValue)[0];
+								const value = lastVersionSupportValue[key];
+								const supportValue = value.charAt(0);
 								if(!averageSupportValue) {
 									averageSupportValue = supportValue;
 								} else if(averageSupportValue == 'u' && supportValue != 'u') {
