@@ -1,6 +1,6 @@
 ---
 title: "scroll-snap"
-description: "Controls panning and scrolling behaviour with snap positions"
+description: "Controls panning and scrolling behaviour with snap positions."
 category: css
 last_test_date: "2023-02-27"
 test_url: "/tests/css-scroll-snap.html"
@@ -30,10 +30,10 @@ stats: {
 	},
 	orange: {
 		desktop-webmail: {
-			"2023-02":"u"
+			"2023-04":"n"
 		},
 		ios: {
-			"2023-02":"u"
+			"2023-04":"n"
 		},
 		android: {
 			"2023-02":"u"
@@ -43,14 +43,14 @@ stats: {
 		windows: {
 			"2013": "n",
 			"2016": "n",
-			"2019": "n"
+			"2019": "n",
 			"2021": "n"
 		},
 		windows-mail: {
 			"2023-02": "n"
 		},
 		macos: {
-			"2023-02": "u"
+			"16.73": "y"
 		},
 		outlook-com: {
 			"2023-02": "n"
@@ -91,10 +91,10 @@ stats: {
 	},
 	sfr: {
 		desktop-webmail: {
-			"2023-02":"u"
+			"2023-02":"y"
 		},
 		ios: {
-			"2023-02":"u"
+			"2023-02":"y"
 		},
 		android: {
 			"2023-02":"u"
@@ -102,15 +102,15 @@ stats: {
 	},
 	thunderbird: {
 		macos: {
-			"78.10.2": "u"
+			"102.10.1": "y"
 		}
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2023-02":"u"
+			"2023-04":"y"
 		},
 		ios: {
-			"2023-02":"u"
+			"2023-04":"y"
 		},
 		android: {
 			"2023-02":"u"
@@ -118,7 +118,7 @@ stats: {
 	},
 	hey: {
 		desktop-webmail: {
-			"2023-02":"u"
+			"2023-04":"y"
 		}
 	},
 	mail-ru: {
@@ -128,12 +128,12 @@ stats: {
 	},
 	fastmail: {
 		desktop-webmail: {
-			"2023-02": "u"
+			"2023-04": "n"
 		}
 	},
 	laposte: {
 		desktop-webmail: {
-			"2023-02": "u"
+			"2023-04": "y"
 		}
 	}
 }
