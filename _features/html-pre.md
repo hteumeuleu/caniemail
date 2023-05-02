@@ -30,13 +30,13 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         ios: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         android: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     outlook: {
@@ -68,29 +68,29 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         ios: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         android: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     thunderbird: {
         macos: {
-            "78.14":"u"
+            "102.10.1":"y"
         }
     },
     aol: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         ios: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         android: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     yahoo: {
@@ -106,18 +106,18 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         ios: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         android: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     hey: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     mail-ru: {
@@ -127,33 +127,27 @@ stats: {
     },
     fastmail: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2023-04": "y"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2023-05": "y"
         }
     },
     free-fr: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2023-05": "y"
         }
     },
     t-online-de: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2023-05": "y"
         }
     },
     gmx: {
         desktop-webmail: {
             "2023-04": "y"
-        },
-        ios: {
-            "2023-04": "u"
-        },
-        android: {
-            "2023-04": "u"
         }
     },
     web-de: {
