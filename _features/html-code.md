@@ -1,6 +1,6 @@
 ---
 title: "<code> element"
-description: ""
+description: "A short fragment of computer code."
 category: html
 last_test_date: "2023-04-25"
 test_url: "/tests/html-code.html"
@@ -30,13 +30,13 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"n #1"
         },
         ios: {
-            "2023-04":"u"
+            "2023-05":"n #1"
         },
         android: {
-            "2023-04":"u"
+            "2023-05":"n #1"
         }
     },
     outlook: {
@@ -68,29 +68,29 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         ios: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         android: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     thunderbird: {
         macos: {
-            "78.14":"u"
+            "102.10.1":"y"
         }
     },
     aol: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         ios: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         android: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     yahoo: {
@@ -106,18 +106,18 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         ios: {
-            "2023-04":"u"
+            "2023-05":"y"
         },
         android: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     hey: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2023-05":"y"
         }
     },
     mail-ru: {
@@ -127,54 +127,37 @@ stats: {
     },
     fastmail: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2023-05": "y"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2023-05": "y"
         }
     },
     free-fr: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2023-05": "y"
         }
     },
     t-online-de: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2023-05": "y"
         }
     },
     gmx: {
         desktop-webmail: {
             "2023-04": "y"
-        },
-        ios: {
-            "2023-04": "u"
-        },
-        android: {
-            "2023-04": "u"
         }
     },
     web-de: {
         desktop-webmail: {
             "2023-04": "u"
-        },
-        ios: {
-            "2023-04": "u"
-        },
-        android: {
-            "2023-04": "u"
-        }
-    },
-    ionos-1and1: {
-        desktop-webmail: {
-            "2023-04": "u"
-        },
-        android: {
-            "2023-04": "u"
         }
     }
+}
+notes_by_num: {
+    "1": "Not supported. The tags are removed but the content is kept."
 }
 links: {
     "Can I use: &lt;code&gt;":"https://caniuse.com/?search=code",
