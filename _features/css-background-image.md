@@ -3,9 +3,9 @@ title: "background-image"
 description: ""
 category: css
 keywords:
-last_test_date: "2019-02-28"
+last_test_date: "2023-07-24"
 test_url: "/tests/css-background.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/oxaaoE6R3ur4T9fAPzVsQ3G2R7p1c9axDm7LLgC3cKw0F/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/04SuPXr8tEGhWRlJ2Us6dA8BzgREpyxHYEmSBeyNuWyWo/list"
 stats: {
 	apple-mail: {
 		macos: {
@@ -17,7 +17,8 @@ stats: {
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "y",
+			"2023-07": "a #6"
 		},
 		ios: {
             "2018-09": "a #1",
@@ -196,6 +197,7 @@ notes_by_num: {
     "2": "Buggy. Requires at least one `<img>` element in the email to download all images.",
     "3": "Partial. Does not support multiple values. The comma between two values is removed.",
     "4": "Partial. Images URL must be between quotes.",
-	"5": "Background images can be used in VML. See [backgrounds.cm](https://backgrounds.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element)."
+	"5": "Background images can be used in VML. See [backgrounds.cm](https://backgrounds.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element).",
+	"6": "Partial and buggy. Removes the entire `style` attribute or `<style>` tag when a `url()` function with a valid image URL is present. See [Gmail rolling out changes that strip CSS with background images](https://freshinbox.com/blog/gmail-rolling-out-changes-that-strip-background-image-css/) and [Gmail and background images](https://parcel.io/blog/gmail-and-background-images)."
 }
 ---
