@@ -91,7 +91,8 @@ stats: {
     thunderbird: {
         macos: {
             "60.3":"y",
-            "78.5":"n"
+            "78.5":"n",
+			"102.11":"n"
         }
     },
     yahoo: {
@@ -124,10 +125,12 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2020-03":"n"
+            "2020-03":"n",
+			"2023-05":"a #8"
         },
         ios: {
-            "2020-03":"n"
+            "2020-03":"n",
+			"2023-05":"a #8"
         },
         android: {
             "2020-03":"y"
@@ -191,7 +194,8 @@ notes_by_num: {
     "4": "Partial. Does not support simple `@media {}` declarations.",
     "5": "Buggy. The first rule inside a media query is not prefixed.",
     "6": "Partial. Not supported with non Gmail accounts.",
-    "7": "Partial. Does not support height based media queries."
+    "7": "Partial. Does not support height based media queries.",
+	"8": "Partial. Does not support landscape media query."
 }
 links: {
     "Can I use: CSS3 Media Queries":"https://caniuse.com/#feat=css-mediaqueries",
