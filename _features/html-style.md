@@ -2,7 +2,7 @@
 title: "<style> element"
 description: "An HTML element to contain style information, in CSS, for a document or part of a document."
 category: html
-last_test_date: "2019-06-24"
+last_test_date: "2023-07-27"
 test_url: "/tests/html-style.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/od5IYQtx8yIbIUbeRyQXnP0yzFKEm2E9CKa3FU4BcEXFv/list"
 stats: {
@@ -179,7 +179,8 @@ stats: {
     },
 	gmx: {
 		desktop-webmail: {
-			"2022-11": "y"
+            "2022-11": "y",
+			"2023-07": "n"
 		},
 		ios: {
 			"2022-11":"y"
