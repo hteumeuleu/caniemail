@@ -3,6 +3,7 @@ title: "@media (hover), @media (any-hover)"
 description: "This media query tests whether the user's input device[s] (i.e mouse, trackpad etc.) can hover over elements"
 category: css
 keywords: "media, media query, hover, any-hover"
+tags: accessibility
 last_test_date: "2022-08-29"
 test_url: "/tests/css-media-hover.html"
 test_results_url: "https://testi.at/proj/onECpNVH8Dhv7BSLPXUbQ4s0O"
