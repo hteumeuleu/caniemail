@@ -2,7 +2,6 @@
 title: ":hover"
 category: css
 keywords: rollover, pseudo-class
-tags: accessibility
 last_test_date: "2019-10-23"
 test_url: "/tests/css-selectors-pseudo-classes.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkwNJDd7B4JUpo23Nz6qANcSlRUA/list"
@@ -139,6 +138,36 @@ stats: {
     laposte: {
         desktop-webmail: {
             "2021-08": "y"
+        }
+    },
+    gmx: {
+        desktop-webmail: {
+            "2022-07": "n"
+        },
+        ios: {
+            "2022-07": "y"
+        },
+        android: {
+            "2022-07": "y"
+        }
+    },
+    web-de: {
+        desktop-webmail: {
+            "2022-07": "n"
+        },
+        ios: {
+            "2022-07": "y"
+        },
+        android: {
+            "2022-07": "y"
+        }
+    },
+    ionos-1and1: {
+        desktop-webmail: {
+            "2022-07": "y"
+        },
+        android: {
+            "2022-07": "y"
         }
     }
 }
