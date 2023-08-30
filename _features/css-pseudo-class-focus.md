@@ -2,7 +2,6 @@
 title: ":focus"
 category: css
 keywords: pseudo-class
-tags: accessibility
 last_test_date: "2019-10-28"
 test_url: "/tests/css-selectors-pseudo-classes.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkwNJDd7B4JUpo23Nz6qANcSlRUA/list"
