@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head></head>
+<head>
+	<meta charset="UTF-8" />
+	<title>Can I email</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<!--[if mso]>
+	<xml>
+		<o:OfficeDocumentSettings>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+	<style>
+		.test1 {
+			span {
+				background: green;
+			}
+		}
+	</style>
+	<style>
+		.test2 {
+			& span {
+				background: green;
+			}
+		}
+	</style>
+	<style>
+		.test3 {
+			@media {
+				color: #fff;
+				background: green;
+			}
+		}
+	</style>
+	<style>
+		.test4 {
+			@media only screen and (min-width:320px) {
+				color: #fff;
+				background: green;
+			}
+		}
+	</style>
+	<style>
+		.box {
+			padding: 1em;
+			background: #eee;
+			border: 1px dotted #333;
+
+			.test5 & & & {
+				color: #fff;
+				background: green;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div style="max-width:600px; margin:0 auto;">
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			CSS Nesting
+		</h1>
+		<h2 style="margin:1em 0; font:bold 16px monospace;">
+			.test1 { span { … } }
+		</h2>
+		<div style="font:20px serif;" class="test1">
+			<a href="https://www.example.com" style="color:#fff; background:red;"><span>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Soluta, ea?</span></a>
+		</div>
+		<h2 style="margin:1em 0; font:bold 16px monospace;">
+			.test2 { & span { … } }
+		</h2>
+		<div style="font:20px serif;" class="test2">
+			<a href="https://www.example.com" style="color:#fff; background:red;"><span>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Soluta, ea?</span></a>
+		</div>
+		<h2 style="margin:1em 0; font:bold 16px monospace;">
+			.test3 { @media { … } }
+		</h2>
+		<div style="font:20px serif;" class="test3">
+			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Soluta, ea?
+		</div>
+		<h2 style="margin:1em 0; font:bold 16px monospace;">
+			.test4 { @media only screen and (…) { … } }
+		</h2>
+		<div style="font:20px serif;" class="test4">
+			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Soluta, ea?
+		</div>
+		<h2 style="margin:1em 0; font:bold 16px monospace;">
+			.box { .test5 & & & { … } }
+		</h2>
+		<div style="font:20px serif;" class="test5">
+			<div class="box">
+				<div class="box">
+					<div class="box">
+						Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Soluta, ea?
+					</div>
+				</div>
+			</div>
+		</div>
+		<p style="margin-top:1.6em; font:20px serif;">
+			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2023.
+		</p>
+	</div>
+</body>
+</html>
