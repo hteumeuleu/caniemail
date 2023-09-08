@@ -1,5 +1,5 @@
 ---
-title: "<code> element"
+title: "<hr> element"
 description: "HTML horizontal rule"
 category: html
 last_test_date: "2023-09-08"
@@ -158,7 +158,7 @@ stats: {
     }
 }
 links: {
-    "Can I use: &lt;code&gt;":"https://caniuse.com/?search=hr",
-    "MDN: &lt;code&gt;":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr"
+    "Can I use: &lt;hr&gt;":"https://caniuse.com/?search=hr",
+    "MDN: &lt;hr&gt;":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr"
 }
 ---
