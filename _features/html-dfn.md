@@ -41,13 +41,13 @@ stats: {
     },
     outlook: {
         windows: {
-            "2013":"y",
-            "2016":"y",
-            "2019":"y",
-            "2021":"y"
+            "2013":"a #1",
+            "2016":"a #1",
+            "2019":"a #1",
+            "2021":"a #1"
         },
         windows-mail: {
-            "2023-09":"y"
+            "2023-09":"a #1"
         },
         macos: {
             "16.56":"y"
@@ -80,7 +80,7 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "102.10.1":"u"
+            "2023-09":"y"
         }
     },
     aol: {
@@ -123,7 +123,7 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2023-09":"y"
+            "2023-09":"n"
         }
     },
     fastmail: {
@@ -143,19 +143,22 @@ stats: {
     },
     t-online-de: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-09": "n"
         }
     },
     gmx: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-09": "y"
         }
     },
     web-de: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-09": "y"
         }
     }
+}
+notes_by_num: {
+    "1": "Partial. The `title` attribute is removed.",
 }
 links: {
     "Can I use: &lt;dfn&gt;":"https://caniuse.com/?search=dfn",
