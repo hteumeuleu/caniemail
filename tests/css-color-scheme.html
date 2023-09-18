@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="color-scheme: only dark;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>New button test</title>
+  <style>
+    :root {
+      color-scheme: only dark;
+    }
+  </style>
+  <style>
+    html {
+      color-scheme: only dark;
+    }
+  </style>
+  </head>
+
+  <body style="color-scheme: only dark;">
+    <div lang="en" dir="ltr" >
+
+        <h1>CSS property test: color-scheme</h1>
+        <p>This email should be displayed with a dark color scheme regardless of user preferences</p>
+
+         <a href="www.google.com">I am a link nested within a dark color-scheme</a>
+
+        <div style="color-scheme: only light;">
+          <a  style="color-scheme: only light;" href="www.google.com">I am a link with have a light color scheme that should override the color-scheme set on the html element.</a>
+
+        </div>
+    </div>
+  </body>
+</html>
