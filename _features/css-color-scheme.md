@@ -1,5 +1,5 @@
 ---
-title: "color-scheme"
+title: "color-scheme CSS property"
 description: "Changes the default colors of HTML elements. Useful for when you want an email to display only in a dark color scheme or only a light scheme, regardless of user settings"
 category: css
 keywords: "dark mode, light mode"
