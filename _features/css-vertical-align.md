@@ -169,14 +169,6 @@ stats: {
 		}
 	}
 }
-notes: "This is a global note."
-notes_by_num: {
-    "1": "Partial. Fixed attachment is not supported.",
-    "2": "Partial. Slash syntax values are not supported.",
-    "3": "Partial. Values containing background images are not supported.",
-    "4": "Buggy. For slash syntax values, it removes the slash character, making the value invalid.",
-    "5": "Partial. Seems to only support background colors."
-}
 links: {
     "Can I use: vertical-align":"https://caniuse.com/mdn-css_properties_vertical-align",
     "MDN: vertical-align":"https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align"
