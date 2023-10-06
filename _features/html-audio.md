@@ -191,4 +191,9 @@ notes_by_num: {
     "5": "Not supported. The `<audio>` element and all its content is removed.",
     "6": "Not supported. The `src` attribute is replaced by `data-src`."
 }
+links: {
+    "Can I use: audio":"https://caniuse.com/audio",
+    "MDN: The Embed Audio element":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio",
+	"Podnews: How to email someone your podcast: the AUDIO tag in email": "https://podnews.net/article/html5-audio-tag-in-email"
+}
 ---
