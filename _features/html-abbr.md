@@ -43,7 +43,7 @@ stats: {
         windows: {
             "2013":"n #1",
             "2016":"n #1",
-            "2019":"n #1"
+            "2019":"n #1",
             "2021":"n #1"
         },
         windows-mail: {
@@ -158,7 +158,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. Element's content are still kept.",
+    "1": "Buggy. Element's content are still kept."
 }
 links: {
     "Can I use: &lt;abbr&gt;":"https://caniuse.com/?search=abbr",
