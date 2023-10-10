@@ -1,6 +1,6 @@
 ---
 title: "<abbr> element"
-description: "Represents an abbreviation or acronym"
+description: "Represents an abbreviation or acronym."
 category: html
 last_test_date: "2023-09-13"
 test_url: "/tests/html-abbr.html"
@@ -30,10 +30,10 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2023-09":"u"
+            "2023-10":"n"
         },
         ios: {
-            "2023-09":"u"
+            "2023-10":"n"
         },
         android: {
             "2023-09":"u"
@@ -43,7 +43,7 @@ stats: {
         windows: {
             "2013":"n #1",
             "2016":"n #1",
-            "2019":"n #1"
+            "2019":"n #1",
             "2021":"n #1"
         },
         windows-mail: {
@@ -69,10 +69,10 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2023-09":"u"
+            "2023-10":"y"
         },
         ios: {
-            "2023-09":"u"
+            "2023-10":"y"
         },
         android: {
             "2023-09":"u"
@@ -107,10 +107,10 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2023-09":"u"
+            "2023-10":"y"
         },
         ios: {
-            "2023-09":"u"
+            "2023-10":"y"
         },
         android: {
             "2023-09":"u"
@@ -118,7 +118,7 @@ stats: {
     },
     hey: {
         desktop-webmail: {
-            "2023-09":"u"
+            "2023-10":"n"
         }
     },
     mail-ru: {
@@ -128,17 +128,17 @@ stats: {
     },
     fastmail: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-10": "y"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-10": "y"
         }
     },
     free-fr: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-10": "y"
         }
     },
     t-online-de: {
@@ -158,7 +158,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. Element's content are still kept.",
+    "1": "Buggy. Element's content are still kept."
 }
 links: {
     "Can I use: &lt;abbr&gt;":"https://caniuse.com/?search=abbr",
