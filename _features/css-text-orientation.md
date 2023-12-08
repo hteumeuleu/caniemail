@@ -3,7 +3,7 @@ title: "text-orientation"
 description: "Sets the orientation of the text characters in vertical mode."
 category: css
 keywords: vertical orientation
-last_test_date: "2023-11-08"
+last_test_date: "2023-12-08"
 test_url: "/tests/css-text-orientation.html"
 test_results_url: "https://testi.at/proj/6vppidbfjxnczrxh4"
 stats: {
@@ -26,7 +26,7 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2023-11": "y"
+      "2023-12": "y"
     },
     ios: {
       "10": "n",
@@ -37,22 +37,22 @@ stats: {
       "15": "y"
     },
     android: {
-      "2023-11": "y"
+      "2023-12": "y"
     },
     mobile-webmail: {
-      "2023-11": "y"
+      "2023-12": "y"
     }
   },
   orange: {
     desktop-webmail: {
-      "2023-11":"u",
-      "2023-11":"u"
+      "2023-12":"u",
+      "2023-12":"u"
     },
     ios: {
-      "2023-11":"u"
+      "2023-12":"u"
     },
     android: {
-      "2023-11":"u"
+      "2023-12":"u"
     }
   },
   outlook: {
@@ -63,13 +63,13 @@ stats: {
       "2021": "n"
     },
     windows-mail: {
-      "2023-11": "n"
+      "2023-12": "n"
     },
     macos: {
-      "2023-11": "n"
+      "2023-12": "n"
     },
     outlook-com: {
-      "2023-11": "y"
+      "2023-12": "y"
     },
     ios: {
       "10": "n",
@@ -80,111 +80,111 @@ stats: {
       "15": "y"
     },
     android: {
-      "2023-11": "y"
+      "2023-12": "y"
     }
   },
   yahoo: {
     desktop-webmail: {
-      "2023-11": "n"
+      "2023-12": "n"
     },
     ios: {
-      "2023-11": "n"
+      "2023-12": "n"
     },
     android: {
-      "2023-11": "n"
+      "2023-12": "n"
     }
   },
   aol: {
     desktop-webmail: {
-      "2023-11": "n"
+      "2023-12": "n"
     },
     ios: {
-      "2023-11": "n"
+      "2023-12": "n"
     },
     android: {
-      "2023-11": "n"
+      "2023-12": "n"
     }
   },
   samsung-email: {
     android: {
-      "2023-11": "y"
+      "2023-12": "y"
     }
   },
   sfr: {
     desktop-webmail: {
-      "2023-11":"u"
+      "2023-12":"u"
     },
     ios: {
-      "2023-11":"u"
+      "2023-12":"u"
     },
     android: {
-      "2023-11":"u"
+      "2023-12":"u"
     }
   },
   thunderbird: {
     macos: {
-      "2023-11": "y"
+      "2023-12": "y"
     }
   },
   protonmail: {
     desktop-webmail: {
-      "2023-11":"u"
+      "2023-12":"u"
     },
     ios: {
-      "2023-11":"u"
+      "2023-12":"u"
     },
     android: {
-      "2023-11":"u"
+      "2023-12":"u"
     }
   },
   hey: {
     desktop-webmail: {
-      "2023-11":"u"
+      "2023-12":"u"
     }
   },
   mail-ru: {
     desktop-webmail: {
-      "2023-11":"y"
+      "2023-12":"y"
     }
   },
   fastmail: {
     desktop-webmail: {
-      "2023-11": "u"
+      "2023-12": "u"
     }
   },
   laposte: {
     desktop-webmail: {
-      "2023-11": "u"
+      "2023-12": "u"
     }
   },
   gmx: {
     desktop-webmail: {
-      "2023-11": "n"
+      "2023-12": "n"
     },
     ios: {
-      "2023-11":"u"
+      "2023-12":"u"
     },
     android: {
-      "2023-11":"u"
+      "2023-12":"u"
     }
   },
   web-de: {
     desktop-webmail: {
-      "2023-11": "n",
+      "2023-12": "n",
     },
     ios: {
-      "2023-11":"u"
+      "2023-12":"u"
     },
     android: {
-      "2023-11":"u"
+      "2023-12":"u"
     }
   },
   ionos-1and1: {
     desktop-webmail: {
-      "2023-11": "u"
+      "2023-12": "u"
     },
     android: {
-      "2023-11": "u"
+      "2023-12": "u"
     }
   }
 }
