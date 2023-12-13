@@ -3,7 +3,7 @@ title: "@media"
 description: ""
 category: css
 keywords: "media queries, media query, media feature"
-last_test_date: "2019-08-20"
+last_test_date: "2023-12-13"
 test_url: "/tests/css-media.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/hMLCNCSKZYHkLgLOpIWltlnYjtagbNsrwzMxalc2VbghN/list"
 stats: {
@@ -74,7 +74,8 @@ stats: {
     samsung-email: {
         android: {
             "5.0.10.2": "y",
-            "6.0":"y"
+            "6.0":"y",
+            "6.1.90.16":"a #9"
         }
     },
     sfr: {
@@ -195,7 +196,8 @@ notes_by_num: {
     "5": "Buggy. The first rule inside a media query is not prefixed.",
     "6": "Partial. Not supported with non Gmail accounts.",
     "7": "Partial. Does not support height based media queries.",
-	"8": "Partial. Does not support landscape media query."
+    "8": "Partial. Does not support landscape media query.",
+	"9": "Partial. Not supported with Hotmail/Outlook accounts."
 }
 links: {
     "Can I use: CSS3 Media Queries":"https://caniuse.com/#feat=css-mediaqueries",
