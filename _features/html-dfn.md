@@ -1,5 +1,5 @@
 ---
-title: "<def> element"
+title: "<dfn> element"
 description: "It is used to identify a term that is going to be described within the content."
 category: html
 last_test_date: "2023-09-11"
