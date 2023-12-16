@@ -40,11 +40,10 @@ stats: {
   },
   orange: {
     desktop-webmail: {
-      "2023-12":"u",
-      "2023-12":"u"
+      "2023-12":"n"
     },
     ios: {
-      "2023-12":"u"
+      "2023-12":"n"
     },
     android: {
       "2023-12":"u"
@@ -102,7 +101,7 @@ stats: {
   },
   sfr: {
     desktop-webmail: {
-      "2023-12":"u"
+      "2023-12":"y"
     },
     ios: {
       "2023-12":"u"
@@ -118,10 +117,10 @@ stats: {
   },
   protonmail: {
     desktop-webmail: {
-      "2023-12":"u"
+      "2023-12":"y"
     },
     ios: {
-      "2023-12":"u"
+      "2023-12":"y"
     },
     android: {
       "2023-12":"u"
@@ -129,7 +128,7 @@ stats: {
   },
   hey: {
     desktop-webmail: {
-      "2023-12":"u"
+      "2023-12":"y"
     }
   },
   mail-ru: {
@@ -139,12 +138,12 @@ stats: {
   },
   fastmail: {
     desktop-webmail: {
-      "2023-12": "u"
+      "2023-12": "y"
     }
   },
   laposte: {
     desktop-webmail: {
-      "2023-12": "u"
+      "2023-12": "y"
     }
   },
   gmx: {
