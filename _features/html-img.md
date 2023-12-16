@@ -2,7 +2,7 @@
 title: "<img> element"
 description: "Displays an image into the document"
 category: html
-last_test_date: "2023-09-11"
+last_test_date: "2023-12-16"
 test_url: "/tests/html-img.html"
 test_results_url: "https://testi.at/proj/dyogfa8504y2cljofa2"
 stats: {
@@ -30,10 +30,10 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2023-09":"u"
+            "2023-12":"y"
         },
         ios: {
-            "2023-09":"u"
+            "2023-12":"y"
         },
         android: {
             "2023-09":"u"
@@ -69,10 +69,10 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2023-09":"u"
+            "2023-12":"y"
         },
         ios: {
-            "2023-09":"u"
+            "2023-12":"y"
         },
         android: {
             "2023-09":"u"
@@ -107,10 +107,10 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2023-09":"u"
+            "2023-12":"y"
         },
         ios: {
-            "2023-09":"u"
+            "2023-12":"y"
         },
         android: {
             "2023-09":"u"
@@ -118,7 +118,7 @@ stats: {
     },
     hey: {
         desktop-webmail: {
-            "2023-09":"u"
+            "2023-12":"y"
         }
     },
     mail-ru: {
@@ -128,17 +128,17 @@ stats: {
     },
     fastmail: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-12": "y"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-09": "y"
         }
     },
     free-fr: {
         desktop-webmail: {
-            "2023-09": "u"
+            "2023-12": "y"
         }
     },
     t-online-de: {
