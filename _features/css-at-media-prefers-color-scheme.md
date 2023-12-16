@@ -85,7 +85,7 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"n"
+            "6.0":"n",
 			"6.1":"y"
         }
     },
