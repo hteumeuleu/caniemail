@@ -3,7 +3,7 @@ title: "aspect-ratio"
 description: "Sets a preferred aspect ratio for the element"
 category: css
 keywords: ratio
-last_test_date: "2021-11-02"
+last_test_date: "2023-12-19"
 test_url: "/tests/css-aspect-ratio.html"
 test_results_url: "https://testi.at/proj/Mv0IO0vs3vTgRQuJ8IzyBfD6"
 stats: {
@@ -57,10 +57,12 @@ stats: {
 			"2021-10": "n"
 		},
 		macos: {
-			"2021-10": "n"
+			"2021-10": "n",
+      "16.80": "y",
 		},
 		outlook-com: {
-			"2021-10": "n"
+			"2021-10": "n",
+			"2023-12": "n",
 		},
 		ios: {
 			"2021-10": "n"
