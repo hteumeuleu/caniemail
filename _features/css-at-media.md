@@ -59,10 +59,12 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80": "a #1 #10"
         },
         outlook-com: {
-            "2019-08":"a #1"
+            "2019-08":"a #1",
+            "2023-12":"a #1 #10"
         },
         ios: {
             "2019-08":"a #1"
@@ -197,7 +199,8 @@ notes_by_num: {
     "6": "Partial. Not supported with non Gmail accounts.",
     "7": "Partial. Does not support height based media queries.",
     "8": "Partial. Does not support landscape media query.",
-	"9": "Partial. Not supported with Hotmail/Outlook accounts."
+	"9": "Partial. Not supported with Hotmail/Outlook accounts.",
+    "10": "Partial. Nested media queries are removed."
 }
 links: {
     "Can I use: CSS3 Media Queries":"https://caniuse.com/#feat=css-mediaqueries",

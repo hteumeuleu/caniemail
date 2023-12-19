@@ -3,7 +3,7 @@ title: "@font-face"
 description: "`@font-face` in CSS allows to include your own fonts inside an email."
 category: css
 keywords: font face, web fonts, google fonts
-last_test_date: "2019-07-18"
+last_test_date: "2023-12-19"
 test_url: "/tests/css-font-face.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/veY9MhuhgFeF1ly5crrhTXawfLJSwxgpYi27OElI7iSoc/list"
 stats: {
@@ -56,10 +56,12 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80":"n",
         },
         outlook-com: {
-            "2019-07":"n"
+            "2019-07":"n",
+            "2023-12":"n",
         },
         ios: {
             "2.51.1":"y",
