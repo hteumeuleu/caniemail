@@ -1,17 +1,19 @@
 ---
 title: "box-shadow"
-description: ""
+description: "Adds shadow effects around an element's frame."
 category: css
-last_test_date: "2023-01-15"
+last_test_date: "2023-12-20"
 test_url: "/tests/css-box-shadow.html"
-test_results_url: "https://testi.at/proj/po0Imx6tAX0U9bum5DTNpWcJ"
+test_results_url: "https://app.emailonacid.com/app/acidtest/TxbmgM1vnD44aLEEOdI06riwAqm3qmfet8jFoYTQ65bRp/list"
 stats: {
 	apple-mail: {
 		macos: {
-			"12.4": "y"
+			"12.4": "y",
+			"16.0": "y",
 		},
 		ios: {
-			"12.1":	"y"
+			"12.1":	"y",
+			"17.2":	"y",
 		}
 	},
 	gmail: {
@@ -37,10 +39,12 @@ stats: {
             "2021-03":"n"
         },
         ios: {
-            "2019-08":"y"
+            "2021-03":"n",
+            "2023-12":"n",
         },
         android: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2023-12":"n",
         }
     },
 	outlook: {
@@ -55,19 +59,23 @@ stats: {
 			"2019-02":	"n"
 		},
 		macos: {
-			"2019-02":	"y"
+			"2019-02":	"y",
+			"16.80":	"y",
 		},
 		outlook-com: {
 			"2019-02":	"n",
-			"2023-01":	"n"
+			"2023-01":	"n",
+			"2023-12":	"y",
 		},
 		ios: {
 			"2019-02":	"n",
-			"2023-01":	"n"
+			"2023-01":	"n",
+			"2023-12":	"y",
 		},
 		android: {
 			"2019-02":	"n",
-			"2023-01":	"n"
+			"2023-01":	"n",
+			"2023-12":	"y",
 		}
 	},
 	yahoo: {
