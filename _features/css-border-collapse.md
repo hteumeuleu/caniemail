@@ -5,7 +5,7 @@ category: css
 keywords: table
 last_test_date: "2023-12-20"
 test_url: "/tests/css-border-collapse.html"
-test_results_url: "https://testi.at/proj/dyodfk8c5dhjanflz"
+test_results_url: "https://testi.at/proj/4zk4fe7tv86fn4bc6"
 stats: {
   apple-mail: {
     macos: {
