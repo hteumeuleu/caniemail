@@ -178,6 +178,11 @@ stats: {
 		android: {
 			"2022-11":"n"
 		}
-	}
+	},
+    wp-pl: {
+        desktop-webmail: {
+            "2023-12": "n"
+        }
+    }
 }
 ---

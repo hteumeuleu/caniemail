@@ -167,6 +167,11 @@ stats: {
         android: {
             "2022-06": "y"
         }
+    },
+    wp-pl: {
+        desktop-webmail: {
+            "2023-12": "n"
+        }
     }
 }
 notes_by_num: {

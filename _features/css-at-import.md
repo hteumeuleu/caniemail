@@ -173,7 +173,12 @@ stats: {
 		android: {
 			"2022-06":"n"
 		}
-	}
+	},
+    wp-pl: {
+        desktop-webmail: {
+            "2023-12": "n"
+        }
+    }
 }
 links: {
     "MDN: @import":"https://developer.mozilla.org/en-US/docs/Web/CSS/@import"

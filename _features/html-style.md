@@ -212,6 +212,11 @@ stats: {
         desktop-webmail: {
             "2023-02": "n"
         }
+    },
+    wp-pl: {
+        desktop-webmail: {
+            "2023-12": "y"
+        }
     }
 }
 notes: ""
