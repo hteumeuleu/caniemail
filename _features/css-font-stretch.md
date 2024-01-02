@@ -88,7 +88,8 @@ stats: {
 	},
 	samsung-email: {
     	android: {
-			"6.1.31.2": "u"
+			"6.1.31.2": "u",
+            "6.1.90.16": "n",
     	}
 	},
 	mail-ru: {

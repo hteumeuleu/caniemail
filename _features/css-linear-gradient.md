@@ -69,7 +69,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"y"
+            "6.0":"y",
+            "6.1.90.16": "a #2",
         }
     },
     sfr: {
@@ -183,7 +184,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Gradients can be created in VML using `type=\"gradient\"` on a `<v:fill>`. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element#gradient-fill)."
+    "1": "Gradients can be created in VML using `type=\"gradient\"` on a `<v:fill>`. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element#gradient-fill).",
+    "2": "Partial. Not supported with Hotmail/Outlook accounts."
 }
 links: {
     "Can I use: CSS Gradients":"https://caniuse.com/css-gradients",

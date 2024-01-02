@@ -67,7 +67,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.0":"u",
+            "6.1.90.16": "a #1",
         }
     },
     sfr: {
@@ -149,6 +150,9 @@ stats: {
             "2023-01":"n"
         }
     }
+}
+notes_by_num: {
+    "1": "Partial. Not supported with Hotmail/Outlook accounts."
 }
 links: {
     "Can I use: CSS Conic Gradient":"https://caniuse.com/css-conic-gradients",

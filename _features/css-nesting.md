@@ -65,7 +65,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.0":"u",
+            "6.1.90.16": "a #4",
         }
     },
     sfr: {
@@ -181,7 +182,8 @@ stats: {
 notes_by_num: {
     "1": "Buggy. `E { F {}}` doesn’t work, but `E { & F {}}` does.",
     "2": "Buggy. The syntax is supported, but nested selectors are prefixed by the webmail, which might invalidate the selector.",
-    "3": "Not supported. The nested selectors are removed, making the nest properties apply to the parent selector."
+    "3": "Not supported. The nested selectors are removed, making the nest properties apply to the parent selector.",
+    "4": "Partial. Not supported with Hotmail/Outlook accounts."
 }
 links: {
     "Can I use: CSS Nesting":"https://caniuse.com/css-nesting",

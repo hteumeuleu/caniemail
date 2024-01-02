@@ -88,7 +88,8 @@ stats: {
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "u"
+			"5.0.10.2": "u",
+            "6.1.90.16": "a #1",
 		}
 	},
     sfr: {
@@ -168,5 +169,8 @@ stats: {
             "2022-06":"u"
         }
     }
+}
+notes_by_num: {
+    "1": "Partial. Not supported with Hotmail/Outlook accounts."
 }
 ---
