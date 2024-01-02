@@ -87,7 +87,7 @@ stats: {
     },
     aol: {
         desktop-webmail: {
-            "2023-08":"u"
+            "2024-01":"n #3"
         },
         ios: {
             "2023-08":"u"
@@ -182,7 +182,7 @@ stats: {
 notes_by_num: {
     "1": "Buggy. `E { F {}}` doesn’t work, but `E { & F {}}` does.",
     "2": "Buggy. The syntax is supported, but nested selectors are prefixed by the webmail, which might invalidate the selector.",
-    "3": "Not supported. The nested selectors are removed, making the nest properties apply to the parent selector.",
+    "3": "Not supported. The nested selectors are removed, making the nested properties apply to the parent selector.",
     "4": "Partial. Not supported with Hotmail/Outlook accounts."
 }
 links: {
