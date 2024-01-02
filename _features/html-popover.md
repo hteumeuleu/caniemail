@@ -126,7 +126,7 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-10":"u"
+            "2024-01":"a"
         }
     },
 	fastmail: {
@@ -171,6 +171,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with Hotmail/Outlook accounts."
+    "1": "Partial. Not supported with Hotmail/Outlook accounts.",
+    "2": "Partial. The `popovertarget` attribute is supported, but the `popover` attribute and the `dialog` element are not.",
 }
 ---

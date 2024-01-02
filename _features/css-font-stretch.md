@@ -94,7 +94,7 @@ stats: {
 	},
 	mail-ru: {
 		desktop-webmail: {
-    		"2022-08":"u"
+    		"2024-01":"y",
     	}	
 	},
 	free-fr: {

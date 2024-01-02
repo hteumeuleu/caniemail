@@ -125,7 +125,7 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2023-08":"u"
+            "2024-01":"n"
         }
     },
     fastmail: {
