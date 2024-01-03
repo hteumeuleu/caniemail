@@ -4,28 +4,28 @@ description: "Tests with values `blur`, `brightness`, `grayscale`, `hue-rotate`,
 category: css
 last_test_date: "2019-02-28"
 test_url: "/tests/css-visual-effects.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/DhTRmGsVH6uobU4pHD3CasJywfBL4HnEjA1LOF8f9ctso/list"
+test_results_url: "https://testi.at/proj/73yrcloa1z681dkzu6"
 stats: {
 	apple-mail: {
 		macos: {
-			"12.4": "y"
+			"2024-01": "y"
 		},
 		ios: {
-			"12.1": "y"
+			"2024-01": "y"
 		}
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
 		ios: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
 		android: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
         mobile-webmail: {
-            "2020-02":"n"
+            "2024-01":"n"
         }
 	},
     orange: {
@@ -52,17 +52,17 @@ stats: {
 			"2019-02": "n"
 		},
 		macos: {
-			"2019-02": "y",
+			"2024-01": "y",
             "16.80": "n",
 		},
 		outlook-com: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
 		ios: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
 		android: {
-			"2019-02": "n"
+			"2024-01": "n"
 		}
 	},
     thunderbird: {
@@ -72,29 +72,29 @@ stats: {
     },
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
 		ios: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
 		android: {
-			"2019-02": "n"
+			"2024-01": "n"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
 		ios: {
-			"2019-02": "n"
+			"2024-01": "n"
 		},
 		android: {
-			"2019-02": "n"
+			"2024-01": "n"
 		}
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "y"
+			"2024-01": "y"
 		}
 	},
     sfr: {
@@ -126,7 +126,7 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-10":"y"
+            "2024-01":"a #1"
         }
     },
 	fastmail: {
@@ -141,7 +141,7 @@ stats: {
     },
     gmx: {
         desktop-webmail: {
-            "2022-06": "n"
+            "2024-01": "n"
         },
         ios: {
             "2022-06":"y"
@@ -152,7 +152,7 @@ stats: {
     },
     web-de: {
         desktop-webmail: {
-            "2022-06": "n"
+            "2024-01": "n"
         },
         ios: {
             "2022-06":"y"
@@ -169,5 +169,8 @@ stats: {
             "2022-06":"y"
         }
     }
+}
+notes_by_num: {
+    "1": "Partial. Multiple values don't work.",
 }
 ---
