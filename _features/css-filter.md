@@ -2,30 +2,30 @@
 title: "filter"
 description: "Tests with values `blur`, `brightness`, `grayscale`, `hue-rotate`, `invert`, `opacity`, `saturate`, `sepia` and `shadow`."
 category: css
-last_test_date: "2019-02-28"
+last_test_date: "2024-01-03"
 test_url: "/tests/css-visual-effects.html"
 test_results_url: "https://testi.at/proj/73yrcloa1z681dkzu6"
 stats: {
 	apple-mail: {
 		macos: {
-			"2024-01": "y"
+			"12.4": "y"
 		},
 		ios: {
-			"2024-01": "y"
+			"12.1": "y"
 		}
 	},
 	gmail: {
 		desktop-webmail: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
 		ios: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
 		android: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
         mobile-webmail: {
-            "2024-01":"n"
+            "2020-02":"n"
         }
 	},
     orange: {
@@ -52,17 +52,17 @@ stats: {
 			"2019-02": "n"
 		},
 		macos: {
-			"2024-01": "y",
+			"2019-02": "y",
             "16.80": "n",
 		},
 		outlook-com: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
 		ios: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
 		android: {
-			"2024-01": "n"
+			"2019-02": "n"
 		}
 	},
     thunderbird: {
@@ -72,29 +72,29 @@ stats: {
     },
 	yahoo: {
 		desktop-webmail: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
 		ios: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
 		android: {
-			"2024-01": "n"
+			"2019-02": "n"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
 		ios: {
-			"2024-01": "n"
+			"2019-02": "n"
 		},
 		android: {
-			"2024-01": "n"
+			"2019-02": "n"
 		}
 	},
 	samsung-email: {
 		android: {
-			"2024-01": "y"
+			"5.0.10.2": "y"
 		}
 	},
     sfr: {
@@ -141,7 +141,7 @@ stats: {
     },
     gmx: {
         desktop-webmail: {
-            "2024-01": "n"
+            "2022-06": "n"
         },
         ios: {
             "2022-06":"y"
@@ -152,7 +152,7 @@ stats: {
     },
     web-de: {
         desktop-webmail: {
-            "2024-01": "n"
+            "2022-06": "n"
         },
         ios: {
             "2022-06":"y"
