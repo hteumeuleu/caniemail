@@ -173,4 +173,8 @@ stats: {
 notes_by_num: {
     "1": "Partial. Multiple values don't work.",
 }
+links: {
+    "Can I use: filter":"https://caniuse.com/?search=filter",
+    "MDN: filter":"https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+}
 ---
