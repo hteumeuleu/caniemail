@@ -62,10 +62,12 @@ stats: {
       "2022-07": "n"
     },
     macos: {
-      "2022-07": "y"
+      "2022-07": "y",
+      "16.80": "n #1",
     },
     outlook-com: {
-      "2022-07": "y"
+      "2022-07": "y",
+      "2024-01": "y",
     },
     ios: {
       "2022-07": "y"
@@ -138,6 +140,9 @@ stats: {
       "2022-07": "u"
     }
   }
+}
+notes_by_num: {
+    "1": "Not supported. All tables are forced to `table-layout:fixed`."
 }
 links: {
   "Can I use: CSS property: table-layout":"https://caniuse.com/mdn-css_properties_table-layout",
