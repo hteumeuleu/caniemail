@@ -3,11 +3,11 @@ title:  "The new Outlook on macOS"
 date: 2024-01-29
 ---
 
-The new Outlook on macOS is here. Microsoft has been teasing new versions of Outlook under the codename “One” for a few years now. And while both Windows and macOS versions have been available in beta for quite some time now, the new version on macOS has been enabled by default.
+The new Outlook on macOS is here. Microsoft has been teasing new versions of Outlook under the codename “One” [for a few years](https://www.theverge.com/2021/1/4/22213300/microsoft-one-outlook-app-windows-10-mail-app-calendar-replacement). And while both Windows and macOS versions have been available in beta for quite some time[<a href="#post-cite-note-1">1</a>], the new version on macOS is now enabled by default. One of the biggest goal of Outlook “One” is to unify its support with Outlook.com (desktop webmail) and the Outlook mobile apps (on iOS and Android). While this is an excellent news for Outlook on Windows, finally moving away from Word as a rendering engine, this comes at a big cost for Outlook on macOS.
 
-Out of the 272 HTML and CSS features tested, the new Outlook on macOS <b>supports 162 features</b> (from previously 236). In our [Email Client Support Scoreboard](https://www.caniemail.com/scoreboard/), the new Outlook on macOS is falling from the 3rd position to the <b>23rd position</b>.
+Out of the 272 HTML and CSS features tested on Can I email, the new Outlook on macOS <b>supports 162 features</b> (from previously 236). In our [Email Client Support Scoreboard](https://www.caniemail.com/scoreboard/), the new Outlook on macOS falls from the 3rd position to the <b>23rd position</b>.
 
-The new Outlook loses support for a lot of advanced CSS properties, like `animation`, `@font-face`, and `linear-gradient()`. It also loses support for CSS pseudo-classes either completely (`:not()`, `:nth-child`, …) or partially (`:hover`, `:checked`, …), now working only on type selectors. (So `a:hover` works but not `.link:hover`.) It also loses a lot of modern HTML support, like HTML5 semantics (`<header>`, `<footer>`, `<main>`, …), responsive images with `<picture>` and `srcset`.
+The new Outlook loses support for a lot of advanced CSS properties, like `animation`, `@font-face`, and `linear-gradient()`. It also loses support for CSS pseudo-classes either completely (`:not()`, `:nth-child`, …) or partially (`:hover`, `:checked`, …), now working only on type selectors. (So `a:hover` works, but not `.link:hover`.) It also loses a lot of modern HTML support, like HTML5 semantics (`<header>`, `<footer>`, `<main>`, …) or responsive images with `<picture>` and `srcset`.
 
 Here’s a full comparison of all the differences in support between the old Outlook on macOS versus the new Outlook on macOS.
 
@@ -34,7 +34,7 @@ Here’s a full comparison of all the differences in support between the old Out
 		{% for version in outlook-platform-values %}
 			{% assign version-key = version | first %}
 			{% assign version-values = version | last | split: ' ' | first %}
-			{% if forloop.first == true %}
+			{% if forloop.last == false or forloop.first == true and forloop.last == true %}
 			{% assign old-support-value = version-values %}
 			{% endif %}
 			{% if forloop.last == true %}
@@ -77,3 +77,17 @@ Here’s a full comparison of all the differences in support between the old Out
 </table>
 
 From now on, we will only test new features and updates in this new version of Outlook. Any test done in version 16.80 or above is one the new version.
+
+Rémi  
+@HTeuMeuLeu
+
+<hr style="max-width:8rem; background:rgba(255, 255, 255, 0.2); border:none; height:2px;" />
+
+<ul class="data-notes-list" style="margin-left:0;">
+	<li id="post-cite-note-1" class="data-note">
+		<span class="data-note-key">1</span>
+		<p>
+			The official <a href="https://techcommunity.microsoft.com/t5/outlook-blog/updates-on-the-new-outlook-for-windows/ba-p/3924365">Outlook Blog</a> has <a href="https://www.youtube.com/watch?v=Qt3TugLOD8g">a great video</a> on how they’re rolling out these updates.
+		</p>
+	</li>
+</ul>
