@@ -11,7 +11,8 @@ stats: {
             "16.0":"a #1"
         },
         ios: {
-            "16.6":"a #1"
+            "16.6":"a #1",
+            "17.2":"y",
         }
     },
     gmail: {
@@ -182,7 +183,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. `E { F {}}` doesn’t work, but `E { & F {}}` does.",
+    "1": "Partial. `E { F {}}` doesn’t work, but `E { & F {}}` does. Full support was added in macOS 14.2.",
     "2": "Buggy. The syntax is supported, but nested selectors are prefixed by the webmail, which might invalidate the selector.",
     "3": "Not supported. The nested selectors are removed, making the nested properties apply to the parent selector.",
     "4": "Partial. Not supported with Hotmail/Outlook accounts."
