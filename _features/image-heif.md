@@ -9,10 +9,12 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidha
 stats: {
     apple-mail: {
         macos: {
-            "13":"n"
+            "13":"n",
+            "16":"y #2",
         },
         ios: {
-            "13":"n"
+            "13":"n",
+            "17":"y",
         }
     },
     gmail: {
@@ -177,6 +179,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial: Converts file to jpg."
+    "1": "Partial: Converts file to jpg.",
+    "2": "Supported on macOS 14 Sonoma.",
 }
 ---
