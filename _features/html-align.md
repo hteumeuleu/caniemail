@@ -53,7 +53,7 @@ stats: {
         },
         macos: {
             "16.56":"y",
-            "16.80":"y",
+            "16.80":"a #3",
         },
         outlook-com: {
             "2021-11":"y",
@@ -173,7 +173,8 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. `<img>` elements are wrapped in a `<span>` so `left` and `right` values have no effect.",
-    "2": "Partial. Not supported on `<img>` elements."
+    "2": "Partial. Not supported on `<img>` elements.",
+    "3": "Partial. `left` and `right` do not work on `<table>` elements. Use `float:left` or `float:right` styles instead.",
 }
 links: {
     "Can I use: HTML element: table: align":"https://caniuse.com/mdn-html_elements_table_align",
