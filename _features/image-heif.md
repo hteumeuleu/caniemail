@@ -199,6 +199,6 @@ stats: {
 notes_by_num: {
     "1": "Partial: Converts file to jpg.",
     "2": "Supported on macOS 14 Sonoma.",
-	"3": "Partial: Image loads when using Safari, but not Chrome, Firefox, or Edge."
+	"3": "Partial. Webmail rendering depends on browser support."
 }
 ---
