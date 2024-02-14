@@ -9,7 +9,7 @@ test_results_url: "https://testi.at/proj/6vd212zjibljibxkt9"
 stats: {
   apple-mail: {
     macos: {
-      "2024-01": "y"
+      "2024-01": "a #2"
     },
     ios: {
       "2024-01": "n"
@@ -171,6 +171,7 @@ stats: {
 }
 notes_by_num: {
   "1": "`resize` property is stripped from style tag",
+  "2": "Does not support `inline` and `block` values",
 }
 links: {
   "Can I use: CSS resize":"https://caniuse.com/?search=resize",
