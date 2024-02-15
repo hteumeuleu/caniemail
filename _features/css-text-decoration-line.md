@@ -2,6 +2,7 @@
 title: "text-decoration-line"
 description: "Sets the kind of decoration that is used on text in an element, such as an underline or overline."
 category: css
+tags: i18n
 keywords: underline, overline, line-through
 last_test_date: "2023-12-06"
 test_url: "/tests/css-text-decoration-line.html"

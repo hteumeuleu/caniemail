@@ -2,6 +2,7 @@
 title: "text-decoration-skip-ink"
 description: "Specifies how overlines and underlines are drawn when they pass over glyph ascenders and descenders."
 category: css
+tags: i18n
 keywords: underline
 last_test_date: "2023-12-08"
 test_url: "/tests/css-text-decoration-skip-ink.html"
