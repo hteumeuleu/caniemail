@@ -2,6 +2,7 @@
 title: "text-underline-position"
 description: "Specifies the position of the underline which is set using the `text-decoration property`'s underline value."
 category: css
+tags: i18n
 keywords: underline
 last_test_date: "2023-12-08"
 test_url: "/tests/css-text-underline-position.html"
