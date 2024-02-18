@@ -189,7 +189,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Partial. Only supported on the `<body>` element."
 }
 links: {

@@ -190,7 +190,7 @@ stats: {
     }
 }
 notes_by_num: {
-  "1": "Partial. Only supported with non Gmail accounts."
+  "1": "Partial. Only supported with non Google accounts."
 }
 links: {
 	"Can I use: CSS3 Box-shadow":"https://caniuse.com/css-boxshadow",

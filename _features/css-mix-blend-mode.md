@@ -178,7 +178,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with Non Gmail Accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: CSS property mix-blend-mode":"https://caniuse.com/mdn-css_properties_mix-blend-mode",

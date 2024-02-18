@@ -175,7 +175,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with Non Gmail Accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: writing-mode":"https://caniuse.com/css-writing-mode",

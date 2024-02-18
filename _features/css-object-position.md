@@ -175,7 +175,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: object-position":"https://caniuse.com/object-position",

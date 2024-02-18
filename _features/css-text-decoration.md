@@ -173,7 +173,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Partial. Not supported with multiple values.",
     "3": "Partial. `overline` is not supported.",
     "4": "Partial. Only supports the line property, not style, color or thickness.",

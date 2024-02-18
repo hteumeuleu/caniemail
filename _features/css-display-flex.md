@@ -184,7 +184,7 @@ stats: {
     }
 }
 notes_by_num: {
-	"1": "Not supported with non Gmail accounts.",
+	"1": "Not supported with non Google accounts.",
     "2": "`display:inline-flex` is not supported."
 }
 ---

@@ -195,7 +195,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Buggy. Requires at least one `<img>` element in the email to download all images.",
     "3": "Partial. Does not support multiple values. The comma between two values is removed.",
     "4": "Partial. Images URL must be between quotes.",

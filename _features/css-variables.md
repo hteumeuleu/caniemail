@@ -186,6 +186,6 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. The `var()` function is supported, but not the variable declaration.",
-    "2": "Partial. Not supported with non Gmail accounts."
+    "2": "Partial. Not supported with non Google accounts."
 }
 ---

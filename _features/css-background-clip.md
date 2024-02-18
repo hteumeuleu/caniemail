@@ -173,6 +173,6 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts. But it can be used in the `background` shorthand property instead."
+    "1": "Partial. Not supported with non Google accounts. But it can be used in the `background` shorthand property instead."
 }
 ---

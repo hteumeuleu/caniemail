@@ -180,7 +180,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Partial. Not supported with non Gmail accounts.",
+  "1": "Partial. Not supported with non Google accounts.",
   "2": "Buggy. Interacting with the element submits the form it belongs in.",
   "3": "Partial. The element is present but is not interactive."
 }

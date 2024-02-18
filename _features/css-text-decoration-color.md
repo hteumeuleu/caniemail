@@ -178,7 +178,7 @@ notes: "`text-decoration-color` is not supported in Internet Explorer."
 notes_by_num: {
     "1": "Supported with prefix `-webkit-`.",
     "2": "Not supported, but the proprietary `text-underline-color` property can be used instead.",
-    "3": "Partial. Not supported with non Gmail accounts."
+    "3": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: text-decoration-color": "https://caniuse.com/#feat=text-decoration-color",

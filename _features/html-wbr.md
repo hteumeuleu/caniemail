@@ -173,6 +173,6 @@ stats: {
 	}
 }
 notes_by_num: {
-	"1": "Partial. Supported with Non Gmail Accounts only."
+	"1": "Partial. Supported with non Google accounts only."
 }
 ---

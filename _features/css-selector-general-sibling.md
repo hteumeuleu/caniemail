@@ -174,7 +174,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: General sibling combinator":"https://caniuse.com/#feat=mdn-css_selectors_general_sibling",

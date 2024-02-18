@@ -196,7 +196,7 @@ notes_by_num: {
     "3": "Buggy. Requires a double `<head>` hack to work.",
     "4": "Partial. Does not support simple `@media {}` declarations.",
     "5": "Buggy. The first rule inside a media query is not prefixed.",
-    "6": "Partial. Not supported with non Gmail accounts.",
+    "6": "Partial. Not supported with non Google accounts.",
     "7": "Partial. Does not support height based media queries.",
     "8": "Partial. Does not support landscape media query.",
 	"9": "Partial. Not supported with Hotmail/Outlook accounts.",

@@ -143,6 +143,6 @@ stats: {
 notes_by_num: {
     "1": "Partial. Supports `min-content` and `fit-content` only.",
     "2": "Buggy. `width: min-content` acts as if `word-break: break-all` had been set on the element.",
-    "3": "Partial. Not supported with non Gmail accounts."
+    "3": "Partial. Not supported with non Google accounts."
 }
 ---

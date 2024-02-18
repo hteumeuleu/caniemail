@@ -179,6 +179,6 @@ stats: {
 notes: ""
 notes_by_num: {
     "1": "Partial. Webmail rendering doesn't work in IE.",
-    "2": "Partial. Not supported with non Gmail accounts."
+    "2": "Partial. Not supported with non Google accounts."
 }
 ---
