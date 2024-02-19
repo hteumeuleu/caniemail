@@ -179,7 +179,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Does not support the unquoted attribute value syntax `<div hidden></div>`"
-},
+}
 links: {
   "MDN: hidden attribute":"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden",
   "Can I use: hidden attribute":"https://caniuse.com/hidden"
