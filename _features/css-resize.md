@@ -1,5 +1,5 @@
 ---
-title: "text-decoration-style"
+title: "resize"
 description: "Sets whether an element is resizable, and in which directions."
 category: css
 keywords: textarea
