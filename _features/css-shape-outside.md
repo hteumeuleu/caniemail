@@ -1,11 +1,11 @@
 ---
-title: "Test property"
-description: "This is the description of the test property."
+title: "shape-outside"
+description: "Defines a shape, which may be non-rectangular, around which adjacent inline content should wrap."
 category: css
-keywords: a, b, c
-last_test_date: "1970-01-31"
-test_url: "/tests/template.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/uz6yTbAfykA362dvPZZKX81wEhGuUm4uJekIk2NKacALI/list"
+keywords: shape
+last_test_date: "2024-02-28"
+test_url: "/tests/css-shape-outside.html"
+test_results_url: "https://testi.at/proj/6vdjc5l6ungvfjgu94"
 stats: {
     apple-mail: {
         macos: {
@@ -17,137 +17,129 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         ios: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         android: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         mobile-webmail: {
-            "2023-04":"u"
+            "2024-02":"u"
         }
     },
     orange: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         ios: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         android: {
-            "2023-04":"u"
+            "2024-02":"u"
         }
     },
     outlook: {
         windows: {
             "2013":"n",
             "2016":"n",
-            "2019":"n"
+            "2019":"n",
+            "2021":"n",
         },
         windows-mail: {
-            "2023-04":"n"
+            "2024-02":"n"
         },
         macos: {
             "16.56":"y"
         },
         outlook-com: {
-            "2023-04":"u"
+            "2024-02":"n"
         },
         ios: {
-            "2023-04":"n"
+            "2024-02":"n"
         },
         android: {
-            "2023-04":"n"
+            "2024-02":"n"
         }
     },
     samsung-email: {
         android: {
-            "10":"y"
-            "11":"y"
+        "2024-02":"y"
         }
     },
     sfr: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         ios: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         android: {
-            "2023-04":"u"
+            "2024-02":"u"
         }
     },
     thunderbird: {
         macos: {
-            "78.14":"u"
+            "2024-02":"y"
         }
     },
     aol: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2024-02":"n"
         },
         ios: {
-            "2023-04":"u"
+            "2024-02":"n"
         },
         android: {
-            "2023-04":"u"
+            "2024-02":"n"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2024-02":"n"
         },
         ios: {
-            "2023-04":"u"
+            "2024-02":"n"
         },
         android: {
-            "2023-04":"u"
+            "2024-02":"n"
         }
     },
     protonmail: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         ios: {
-            "2023-04":"u"
+            "2024-02":"u"
         },
         android: {
-            "2023-04":"u"
+            "2024-02":"u"
         }
     },
     hey: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2024-02":"u"
         }
     },
     mail-ru: {
         desktop-webmail: {
-            "2023-04":"u"
+            "2024-02":"y"
         }
     },
     fastmail: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2024-02": "u"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2023-04": "u"
+            "2024-02": "u"
         }
     }
 }
-notes: "This is a global note."
-notes_by_num: {
-    "1": "Partial. Fixed attachment is not supported.",
-    "2": "Partial. Slash syntax values are not supported.",
-    "3": "Partial. Values containing background images are not supported.",
-    "4": "Buggy. For slash syntax values, it removes the slash character, making the value invalid.",
-    "5": "Partial. Seems to only support background colors."
-}
 links: {
-    "Can I use: @font-face Web fonts":"https://www.caniuse.com/#feat=fontface",
-    "MDN: @font-face":"https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+    "Can I use: shape-outside":"https://caniuse.com/?search=shape-outside",
+    "MDN: shape-outside":"https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside"
 }
 ---
