@@ -29,7 +29,7 @@ permalink: "/api/data-ordered.json"
 							{{ platform-key | jsonify }}:[
 								{%- for version in platform-values -%}
 									{%- assign version-key = version | first -%}
-									{%- assign version-values = version | last | split: ' ' | first -%}
+									{%- assign version-values = version | last -%}
 									{ {{ version-key | jsonify }}:{{ version-values | jsonify }} }
 									{%- unless forloop.last -%},{%- endunless -%}
 								{%- endfor -%}
