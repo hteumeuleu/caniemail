@@ -192,6 +192,6 @@ stats: {
 }
 "notes_by_num": {
 	"1": "Partial. The `reversed` attribute on `<ol>` is not supported.",
-	"2": "Partila. Setting the `value` attribute to an `<li>` within an `<ol>` results in a different behaviour in comparison to browsers. The `<ol>` tag is closed before the `<li value=\"\">`. A new `<ol>` is added with the `start` attribute on it set to the value of the `value` attribute of the `<li>`."
+	"2": "Partial. Setting the `value` attribute to an `<li>` within an `<ol>` results in a different behaviour in comparison to browsers. The `<ol>` tag is closed before the `<li value=\"\">`. A new `<ol>` is added with the `start` attribute on it set to the value of the `value` attribute of the `<li>`."
 }
 ---
