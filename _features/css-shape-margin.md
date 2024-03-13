@@ -139,7 +139,7 @@ stats: {
     }
 }
 links: {
-    "Can I use: shape-outside":"https://caniuse.com/?search=shape-outside",
-    "MDN: shape-outside":"https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside"
+    "Can I use: shape-margin":"https://caniuse.com/?search=shape-margin",
+    "MDN: shape-margin":"https://developer.mozilla.org/en-US/docs/Web/CSS/shape-margin"
 }
 ---
