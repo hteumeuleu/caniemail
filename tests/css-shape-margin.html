@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>shape-outside CSS property</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+		h1, h2 {
+			font-size: 16px;
+			text-align: center;
+			font-family: monospace;
+		}
+		
+		.shape-td {
+			vertical-align: top;
+			padding: 20px;
+			border-top: 1px solid lightgrey;
+		}
+
+		.shape-div {
+			shape-outside:circle(50%);
+			clip-path: circle(50%);
+			background-color:goldenrod;
+			width: 250px;
+			height: 250px;
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="max-width:450px; margin:0 auto;">
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			shape-outside CSS Property
+		</h1>
+
+		<div style="margin-bottom:60px;">
+			<h2>
+				No margin
+			</h2>
+
+			<div class="shape-div" style="shape-margin:0;"></div>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi ratione commodi ducimus! Minima cum magni debitis vero nesciunt nemo incidunt nihil, aut quam iure ducimus, ipsam non eos accusamus!
+			</p>
+		</div>
+
+		<div style="margin-bottom:60px;">
+			<h2>
+				shape-margin: 40px
+			</h2>
+
+			<div class="shape-div" style="shape-margin:40px;"></div>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi ratione commodi ducimus! Minima cum magni debitis vero nesciunt nemo incidunt nihil, aut quam iure ducimus, ipsam non eos accusamus!
+			</p>
+		</div>
+
+		<div style="margin-bottom:60px;">
+			<h2>
+				shape-margin: 5%
+			</h2>
+
+			<div class="shape-div" style="shape-margin:5%;"></div>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi ratione commodi ducimus! Minima cum magni debitis vero nesciunt nemo incidunt nihil, aut quam iure ducimus, ipsam non eos accusamus!
+			</p>
+		</div>
+
+		<div style="margin-bottom:60px;">
+			<h2>
+				shape-margin: 1em
+			</h2>
+
+			<div class="shape-div" style="shape-margin:2em"></div>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi ratione commodi ducimus! Minima cum magni debitis vero nesciunt nemo incidunt nihil, aut quam iure ducimus, ipsam non eos accusamus!
+			</p>
+		</div>
+
+		<p style="margin-top:1.6em; font:20px serif;">
+			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2024.
+		</p>
+	</div>
+</body>
+
+</html>
