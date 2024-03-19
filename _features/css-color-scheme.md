@@ -73,13 +73,13 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2022-12":"u"
+            "2024-03":"a #2"
         },
         ios: {
-            "2022-12":"u"
+            "2024-03":"n"
         },
         android: {
-            "2022-12":"u"
+            "2024-03":"y"
         }
     },
     thunderbird: {
@@ -182,6 +182,7 @@ stats: {
 	}
 }
 notes_by_num: {
-	"1": "Works only the html/root element"
+    "1": "Works only the html/root element",
+	"2": "Buggy. The property is supported but does not work due to a prefix added by the webmail on the rule selector.",
 }
 ---

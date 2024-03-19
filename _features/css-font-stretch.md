@@ -101,7 +101,7 @@ stats: {
     	desktop-webmail: {
     		"2022-08": "u"
     	}
-  },
+  	},
 	gmx: {
    		desktop-webmail: {
     		"2022-08": "u"
@@ -111,7 +111,18 @@ stats: {
     	desktop-webmail: {
     		"2022-08": "u"
 		}
-	},  
+	},
+	sfr: {
+		desktop-webmail: {
+			"2024-03": "y"
+		},
+		ios: {
+			"2024-03": "y"
+		},
+		android: {
+			"2024-03": "n"
+		}
+	},
 }
 notes_by_num: {
   "1": "Partial. Depends on the browser. There is currently a bug in Chrome/Edge where font-stretch does not work for variable fonts."
