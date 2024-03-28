@@ -136,7 +136,8 @@ stats: {
     },
 	fastmail: {
 		desktop-webmail: {
-			"2021-07": "y"
+			"2021-07": "y",
+			"2024-03": "n"
 		}
 	},
 	laposte: {
