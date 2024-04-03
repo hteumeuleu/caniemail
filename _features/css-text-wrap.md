@@ -89,7 +89,7 @@ stats: {
   },
   samsung-email: {
     android: {
-      "2024-04": "n"
+      "2024-04": "y"
     }
   },
   sfr: {
