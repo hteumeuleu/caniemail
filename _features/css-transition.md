@@ -37,7 +37,7 @@ stats: {
             "2024-03":"n"
         },
         android: {
-            "2024-03":"u"
+            "2024-03":"n"
         }
     },
     outlook: {
@@ -61,12 +61,12 @@ stats: {
             "2024-03":"n"
         },
         android: {
-            "2024-03":"u"
+            "2024-03":"n"
         }
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.1.90.16":"a #5"
         }
     },
     sfr: {
@@ -77,7 +77,7 @@ stats: {
             "2024-03":"n"
         },
         android: {
-            "2024-03":"u"
+            "2024-03":"n"
         }
     },
     thunderbird: {
@@ -93,7 +93,7 @@ stats: {
             "2024-03":"a #1 #2"
         },
         android: {
-            "2024-03":"u"
+            "2024-03":"a #1 #2"
         }
     },
     yahoo: {
@@ -104,7 +104,7 @@ stats: {
             "2024-03":"a #1 #2"
         },
         android: {
-            "2024-03":"u"
+            "2024-03":"a #1 #2"
         }
     },
     protonmail: {
@@ -185,6 +185,7 @@ notes_by_num: {
     "2": "Buggy. The `all` keyword is not supported.",
     "3": "Buggy. `transition-duration` is forced to `0` on a global reset style.",
     "4": "Transition properties are supported but pseudo-classes like `:hover` are not.",
+    "5": "Partial. Not supported with Outlook accounts.",
 }
 links: {
     "Can I use: transition":"https://caniuse.com/css-transitions",
