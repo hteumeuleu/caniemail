@@ -109,14 +109,13 @@
 
 .latest-post-title {
 	color: #fff;
-	text-decoration: none;
+	text-decoration: underline;
 	overflow: hidden;
 	text-overflow: ellipsis;
 
 	&:focus,
 	&:hover {
 		color: $color-blue;
-		text-decoration: underline;
 	}
 
 	&::before {
