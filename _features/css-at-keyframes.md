@@ -31,7 +31,7 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2021-05":"a #1"
+            "2021-05":"n #1"
         },
         ios: {
             "2021-05":"n"
@@ -173,7 +173,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Buggy. `@keyframes` are incorrectly prefixed.",
+    "1": "Not supported. The `@keyframes` declaration is kept but values are incorrectly prefixed.",
     "2": "Partial. Only supports from and to keyframes. Does not support % keyframes"
 }
 links: {
