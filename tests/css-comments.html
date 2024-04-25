@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head></head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>text-indent</title>
+  <style>
+    p { 
+    	background-color: lightgreen;
+    	/*color: red;*/
+    	}
+  </style>
+</head>
+
+<body>
+  <h2>Comment inside style tag</h2>
+  <p>Expected output: black text against green background</p>
+
+  <!-- <h3>Commented out heading</h3> -->
+	<h2>Comment inside style attribute</h2>
+  <span style="background-color:orange; /*color:white*/">Expected output: black text against orange background</span>
+</body>
+
+</html>
