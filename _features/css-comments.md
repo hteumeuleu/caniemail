@@ -69,10 +69,10 @@ stats: {
       "2024-04":"y"
     },
     ios: {
-      "2024-04":"y #1"
+      "2024-04":"a #1"
     },
     android: {
-      "2024-04":"y #1"
+      "2024-04":"a #1"
     }
   },
   aol: {
@@ -80,10 +80,10 @@ stats: {
       "2024-04":"y"
     },
     ios: {
-      "2024-04":"y #1"
+      "2024-04":"a #1"
     },
     android: {
-      "2024-04":"y #1"
+      "2024-04":"a #1"
     }
   },
   samsung-email: {
@@ -170,10 +170,10 @@ stats: {
   }
 }
 notes_by_num: {
-  "1": "Works with empty `<head></head>` tag",
-  "2": "Partial. In a non-gmail account, comment inside `style:` attribute works. Comment inside `<style>` tag strips the whole tag.",
+  "1": "Buggy. The first <head> in the HTML is removed, so comment needs to be in the `<style>` tag of a second `<head>` element.",
+  "2": "Partial. `<style>` tag not supported with non-google account. Comment inside `style:` attribute works.",
   "3": "Partial. Comment inside `<style>` tag works. Comment inside `style:` attribute strips the whole attribute.",
-  "4": "Partial. Comment inside `style:` attribute works. Comment inside `<style>` tag strips the whole tag."
+  "4": "Partial. `<style>` tag not supported. Comment inside `style:` attribute works.",
 }
 links: {
   "MDN: comments":"https://developer.mozilla.org/en-US/docs/Web/CSS/Comments"
