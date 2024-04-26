@@ -22,10 +22,10 @@ stats: {
       "2024-04":"y"
     },
     android: {
-     "2024-04":"a #3"
+     "2024-04":"a #2"
     },
     mobile-webmail: {
-      "2024-04":"n #1"
+      "2024-04":"a #4"
     }
   },
   orange: {
@@ -69,21 +69,21 @@ stats: {
       "2024-04":"y"
     },
     ios: {
-      "2024-04":"y #2"
+      "2024-04":"y #1"
     },
     android: {
-      "2024-04":"y #2"
+      "2024-04":"y #1"
     }
   },
   aol: {
     desktop-webmail: {
-      "2024-04":"y #2"
+      "2024-04":"y"
     },
     ios: {
-      "2024-04":"y #2"
+      "2024-04":"y #1"
     },
     android: {
-      "2024-04":"u"
+      "2024-04":"y #1"
     }
   },
   samsung-email: {
@@ -125,7 +125,7 @@ stats: {
   },
   mail-ru: {
     desktop-webmail: {
-      "2024-04""a #4"
+      "2024-04":"a #3"
     }
   },
   fastmail: {
@@ -140,7 +140,7 @@ stats: {
   },
   gmx: {
     desktop-webmail: {
-       "2024-04":"n #1",
+       "2024-04":"n",
     },
     ios: {
       "2024-04":"u"
@@ -151,7 +151,7 @@ stats: {
   },
   web-de: {
     desktop-webmail: {
-      "2024-04":"n #1",
+      "2024-04":"n",
     },
     ios: {
       "2024-04":"u"
@@ -171,8 +171,9 @@ stats: {
 }
 notes_by_num: {
   "1": "Works with empty `<head></head>` tag",
-  "2": "Partial. In a non-gmail account, comment inside `style:` attribute works. Comment inside `<style>` tag strips the whole tag."
-  "3": "Partial. Comment inside `<style>` tag works. Comment inside `style:` attribute strips the whole attribute."
+  "2": "Partial. In a non-gmail account, comment inside `style:` attribute works. Comment inside `<style>` tag strips the whole tag.",
+  "3": "Partial. Comment inside `<style>` tag works. Comment inside `style:` attribute strips the whole attribute.",
+  "4": "Partial. Comment inside `style:` attribute works. Comment inside `<style>` tag strips the whole tag."
 }
 links: {
   "MDN: comments":"https://developer.mozilla.org/en-US/docs/Web/CSS/Comments"
