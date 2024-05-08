@@ -2,27 +2,31 @@
 title: "float"
 description: ""
 category: css
-last_test_date: "2019-02-28"
+last_test_date: "2024-05-08"
 test_url: "/tests/css-box-model.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/pyPQFHSYLFrhbRShalju0B2fYNwUgLuyKTLx4MLqiw5mE/list"
 stats: {
 	apple-mail: {
 		macos: {
+            "11.7": "a #2",
 			"12.4": "y"
 		},
 		ios: {
-			"12.1": "y"
+			"14": "a #2",
+            "15": "y"
 		}
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "y",
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "2024-05": "a #2"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "2024-05": "a #1"
 		},
         mobile-webmail: {
             "2020-02": "y"
@@ -62,30 +66,37 @@ stats: {
 			"2019-02": "y"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "2024-05": "u" #TODO
 		}
 	},
 	yahoo: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "2024-05": "a #1"
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "2024-05": "a #1"
 		},
 		android: {
 			"2019-02": "n",
-			"2023-01": "y"
+			"2023-01": "y",
+            "2024-05": "u" #TODO
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "2024-05": "a #1"
 		},
 		ios: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "2024-05": "a #1"
 		},
 		android: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "2024-05": "u" #TODO
 		}
 	},
 	samsung-email: {
@@ -142,7 +153,8 @@ stats: {
     },
     gmx: {
         desktop-webmail: {
-            "2022-06": "y"
+            "2022-06": "y",
+            "2024-05": "a #1"
         },
         ios: {
             "2022-06":"y"
@@ -153,7 +165,8 @@ stats: {
     },
     web-de: {
         desktop-webmail: {
-            "2022-06": "y"
+            "2022-06": "y",
+            "2024-05": "a #1"
         },
         ios: {
             "2022-06":"y"
@@ -172,6 +185,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Not supported. `table` and `img` elements can use an `align` attribute to get a similar effect."
+    "1": "Not supported. `table` and `img` elements can use an `align` attribute to get a similar effect.",
+    "2": "Logical property values `inline-start` and `inline-end` are not supported."
 }
 ---
