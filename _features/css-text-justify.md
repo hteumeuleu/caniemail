@@ -8,24 +8,24 @@ test_results_url: "https://testi.at/proj/z7b61px4fel2ivk9sb2"
 stats: {
   apple-mail: {
     macos: {
-      "2024-04": "n #1"
+      "2024-04":"n #1"
     },
     ios: {
-      "2024-04": "n #1"
+      "2024-04":"n #1"
     }
   },
   gmail: {
     desktop-webmail: {
-      "2024-04": "a #2"
+      "2024-04":"a #2"
     },
     ios: {
-      "2024-04": "n #1"
+      "2024-04":"n #1"
     },
     android: {
-     "2024-04": "n #1"
+     "2024-04":"n #1"
     },
     mobile-webmail: {
-      "2024-04": "a #2"
+      "2024-04":"a #2"
     }
   },
   orange: {
@@ -42,52 +42,52 @@ stats: {
   },
   outlook: {
     windows: {
-      "2013": "n",
-      "2016": "n",
-      "2019": "n",
-      "2021": "n"
+      "2013":"a #3",
+      "2016":"a #3",
+      "2019":"a #3",
+      "2021":"a #3"
     },
     windows-mail: {
-      "2024-04": "n"
+      "2024-04":"n #5"
     },
     macos: {
-      "2024-04": "n",
+      "2024-04":"n #1",
     },
     outlook-com: {
-      "2024-04": "a #2",
+      "2024-04":"a #2",
     },
     ios: {
-      "2024-04": "n #1"
+      "2024-04":"n #1"
     },
     android: {
-      "2024-04": "n #1"
+      "2024-04":"n #1"
     }
   },
   yahoo: {
     desktop-webmail: {
-      "2024-04": "n"
+      "2024-04":"a #2 #4"
     },
     ios: {
-      "2024-04": "n"
+      "2024-04":"n #1"
     },
     android: {
-      "2024-04": "n #1"
+      "2024-04":"n #1"
     }
   },
   aol: {
     desktop-webmail: {
-      "2024-04": "n"
+      "2024-04":"n #2 #4"
     },
     ios: {
-      "2024-04": "n"
+      "2024-04":"n #1"
     },
     android: {
-      "2024-04": "n #1"
+      "2024-04":"n #1"
     }
   },
   samsung-email: {
     android: {
-      "2024-04": "n #1"
+      "2024-04":"n #1"
     }
   },
   sfr: {
@@ -103,7 +103,7 @@ stats: {
   },
   thunderbird: {
     macos: {
-      "2024-04": "y"
+      "2024-04":"u"
     }
   },
   protonmail: {
@@ -124,22 +124,22 @@ stats: {
   },
   mail-ru: {
     desktop-webmail: {
-      "2024-04":"n"
+      "2024-04":"a #2"
     }
   },
   fastmail: {
     desktop-webmail: {
-      "2024-04": "u"
+      "2024-04":"u"
     }
   },
   laposte: {
     desktop-webmail: {
-      "2024-04": "u"
+      "2024-04":"u"
     }
   },
   gmx: {
     desktop-webmail: {
-      "2024-04": "n"
+      "2024-04":"a #2"
     },
     ios: {
       "2024-04":"u"
@@ -150,7 +150,7 @@ stats: {
   },
   web-de: {
     desktop-webmail: {
-      "2024-04": "a #1"
+      "2024-04":"n #1"
     },
     ios: {
       "2024-04":"u"
@@ -161,16 +161,20 @@ stats: {
   },
   ionos-1and1: {
     desktop-webmail: {
-      "2024-04": "u"
+      "2024-04":"u"
     },
     android: {
-      "2024-04": "u"
+      "2024-04":"u"
     }
   }
 },
 notes_by_num: {
   "1": "Buggy. `text-justify` is stripped",
   "2": "Partial. Depends on browser support",
+  "3": "Partial. `text-justify` is stripped except when the value is `inter-character`,
+  "4": "Partial. `text-justify` is stripped except when the value is `inter-word` or `distribute`,
+  "5": "Buggy. `text-justify` values `none`, `inter-word` and `distribute` are replaced with `inter-ideograph`,
+
 }
 links: {
   "Can I use: CSS text-justify":"https://caniuse.com/?search=text-justify",
