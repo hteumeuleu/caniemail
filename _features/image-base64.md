@@ -17,7 +17,7 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2020-02":"n"
+            "2024-05":"n"
         },
         ios: {
             "2020-02":"n"
