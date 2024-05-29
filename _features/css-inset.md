@@ -1,191 +1,175 @@
 ---
-title: "float"
-description: ""
+title: "inset"
+description: "Shorthand that corresponds to the `top`, `right`, `bottom`, and/or `left` properties"
 category: css
-last_test_date: "2024-05-09"
+last_test_date: "2024-05-29"
 test_url: "/tests/css-inset.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/pyPQFHSYLFrhbRShalju0B2fYNwUgLuyKTLx4MLqiw5mE/list"
+test_results_url: "https://testi.at/proj/rlpdia3k18jytjx8c2"
 stats: {
 	apple-mail: {
 		macos: {
-            "11.7": "a #2",
-			"12.4": "y"
+            "10.15": "n"
+            "11.7": "y",
 		},
 		ios: {
-			"14": "a #2",
+			"14": "n"
             "15": "y"
 		}
 	},
 	gmail: {
 		desktop-webmail: {
-			"2019-02": "y",
+			"2024-05": "n",
 		},
 		ios: {
-			"2019-02": "y",
-            "2024-05": "a #2"
+			"2024-05": "n",
 		},
 		android: {
-			"2019-02": "y",
-            "2024-05": "a #1"
+			"2024-05": "n",
 		},
         mobile-webmail: {
-            "2020-02": "y"
+            "2020-02": "n",
         }
 	},
     orange: {
         desktop-webmail: {
-            "2019-08":"y",
-            "2021-03":"y"
+            "2024-05":"u",
         },
         ios: {
-            "2019-08":"y"
+            "2024-05":"u"
         },
         android: {
-            "2019-08":"y"
+            "2024-05":"u"
         }
     },
 	outlook: {
 		windows: {
-			"2007": "n #1",
-			"2010": "n #1",
-			"2013": "n #1",
-			"2016": "n #1",
-			"2019": "n #1"
+			"2013": "n",
+			"2016": "n",
+			"2019": "n"
 		},
 		windows-mail: {
-			"2019-02": "n #1"
+			"2024-05": "n"
 		},
 		macos: {
-			"2019-02": "y",
-            "16.80": "y",
+			"2024-05": "n",
 		},
 		outlook-com: {
-			"2019-02": "y"
+			"2024-05": "n"
 		},
 		ios: {
-			"2019-02": "y"
+			"2024-05": "n"
 		},
 		android: {
-			"2019-02": "y",
-            "2024-05": "u" #TODO
+			"2024-05": "n",
 		}
 	},
-	yahoo: {
+	yahoo: { 
 		desktop-webmail: {
-			"2019-02": "y",
-            "2024-05": "a #1"
+			"2024-05": "n",
 		},
 		ios: {
-			"2019-02": "y",
-            "2024-05": "a #1"
+			"2024-05": "n",
 		},
 		android: {
-			"2019-02": "n",
-			"2023-01": "y",
-            "2024-05": "u" #TODO
+            "2024-05": "n"
 		}
 	},
 	aol: {
 		desktop-webmail: {
-			"2019-02": "y",
-            "2024-05": "a #1"
+			"2024-05": "n",
 		},
 		ios: {
-			"2019-02": "y",
-            "2024-05": "a #1"
+			"2024-05": "n",
 		},
 		android: {
-			"2019-02": "y",
-            "2024-05": "u" #TODO
+            "2024-05": "n"
 		}
 	},
 	samsung-email: {
 		android: {
-			"5.0.10.2": "y"
+			"2024-05": "n"
 		}
 	},
     sfr: {
         desktop-webmail: {
-            "2019-08":"y"
+            "2024-05":"u"
         },
         ios: {
-            "2019-08":"y"
+            "2024-05":"u"
         },
         android: {
-            "2019-08":"y"
+            "2024-05":"u"
         }
     },
 	thunderbird: {
 		macos: {
-			"60.5": "y"
+			"2024-05":"y"
 		}
 	},
     protonmail: {
         desktop-webmail: {
-            "2020-03":"y"
+            "2024-05":"u"
         },
         ios: {
-            "2020-03":"y"
+            "2024-05":"u"
         },
         android: {
-            "2020-03":"y"
+            "2024-05":"u"
         }
     },
     hey: {
         desktop-webmail: {
-            "2020-06":"y"
+            "2024-05":"u"
         }
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-10":"y"
+            "2024-05":"n"
         }
     },
 	fastmail: {
 		desktop-webmail: {
-			"2021-07": "y"
+			"2024-05": "u"
 		}
 	},
     laposte: {
         desktop-webmail: {
-            "2021-08": "y"
+            "2021-08": "u"
         }
     },
     gmx: {
         desktop-webmail: {
-            "2022-06": "y",
-            "2024-05": "a #1"
+            "2024-05": "n"
         },
         ios: {
-            "2022-06":"y"
+            "2024-05":"u"
         },
         android: {
-            "2022-06":"y"
+            "2024-05":"u"
         }
     },
     web-de: {
         desktop-webmail: {
-            "2022-06": "y",
-            "2024-05": "a #1"
+            "2024-05": "n"
         },
         ios: {
-            "2022-06":"y"
+            "2024-05":"u"
         },
         android: {
-            "2022-06":"y"
+            "2024-05":"u"
         }
     },
     ionos-1and1: {
         desktop-webmail: {
-            "2022-06": "y"
+            "2024-05": "u"
         },
         android: {
-            "2022-06":"y"
+            "2024-05":"u"
         }
     }
 }
-notes_by_num: {
-    "1": "Not supported. `table` and `img` elements can use an `align` attribute to get a similar effect.",
-    "2": "Logical property values `inline-start` and `inline-end` are not supported."
+links: {
+  "Can I use: CSS inset":"https://caniuse.com/?search=inset",
+  "MDN: inset":"https://developer.mozilla.org/en-US/docs/Web/CSS/inset"
 }
 ---
