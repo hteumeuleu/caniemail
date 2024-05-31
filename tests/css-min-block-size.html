@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>min-block-size</title>
+  <style>
+     div {margin: 0 0 50px 0;} 
+  </style>
+</head>
+<body>
+  <table width="500" style="width:500px; background-color:#b39a9a; margin-bottom: 40px;">
+    <tr>
+      <td>
+        td Element without min-block
+        <p style="background-color: #5b6dcd; min-height:150px;">Testing Min Block Size</p>
+        td Element with min-block
+        <p style="background-color: #5b6dcd; min-block-size:150px; display: inline-block;">Testing Min Block Size</p>
+      </td>
+    </tr>
+  </table>
+  DIV Element without min-block
+  <div style="background-color: #5b6dcd;">Testing Min Block Size</div>
+
+  DIV Element with min-block
+  <div style="background-color: #5b6dcd; min-block-size:150px; display: inline-block;">Testing Min Block Size</div>
+</body>
+</html>
