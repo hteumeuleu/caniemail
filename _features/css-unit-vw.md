@@ -17,7 +17,7 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2020-02":"y"
+            "2020-02":"y #1"
         },
         ios: {
             "2020-02":"y"
@@ -46,8 +46,8 @@ stats: {
             "16.80":"y",
         },
         outlook-com: {
-            "2020-02":"y",
-            "2024-01":"y",
+            "2020-02":"y #1",
+            "2024-01":"y #1",
         },
         ios: {
             "2020-02":"y"
@@ -71,7 +71,7 @@ stats: {
     },
     aol: {
         desktop-webmail: {
-            "2020-02":"y"
+            "2020-02":"y #1"
         },
         ios: {
             "2020-02":"y"
@@ -82,7 +82,7 @@ stats: {
     },
     yahoo: {
         desktop-webmail: {
-            "2020-02":"y"
+            "2020-02":"y #1"
         },
         ios: {
             "2020-02":"y"
@@ -135,7 +135,7 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-10":"y"
+            "2020-10":"y #1"
         }
     },
     fastmail: {
@@ -181,5 +181,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
+  "1": "The HTML of the email message is embedded directly on the webmail (not in an <iframe>) and may not fill the full viewport's width. In this case, the vw values are relevant to the viewport (browser window) not the email message.",
 }
 ---
