@@ -181,6 +181,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Buggy. Viewport width is wider than the email preview window, which can lead to buggy results.",
+  "1": "The HTML of the email message is embedded directly on the webmail (not in an <iframe>) and may not fill the full viewport's width. In this case, the vw values are relevant to the viewport (browser window) not the email message.",
 }
 ---
