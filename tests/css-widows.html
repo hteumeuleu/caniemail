@@ -12,31 +12,23 @@
   <o:PixelsPerInch>96</o:PixelsPerInch>
   </o:OfficeDocumentSettings>
   </xml><![endif]-->
-  <title>text-orientation</title>
+  <title>widows property</title>
   <style>
     h1 { margin-bottom: 40px; }
     h2 { font-family: monospace; }
-    p { 
-      margin-bottom: 40px;
-      font-size: 20px;
-      widows: 3;
-      display: inline-block;
-      width: 25%
-    }
+   
   </style>
 </head>
 
 <body>
-  <div>
-    <p>This is the first paragraph containing some text.</p>
-    <p>
-      This is the second paragraph containing some more text than the first one.
-      It is used to demonstrate how widows work.
-    </p>
-    <p>
-      This is the third paragraph. It has a little bit more text than the first
-      one.
-    </p>
+  <div style="max-width:1000px; margin:0 auto; columns: 3; widows: 3;">
+    <p>Amet consectetur adipisicing elit. Inventore rerum quis placeat voluptatum nobis tenetur nemo eius eum iure vitae ipsa numquam provident deserunt minima dolores, quo dolorem quia delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, asperiores nesciunt? Ab commodi officiis harum excepturi cum delectus error libero, dolore explicabo quae unde porro similique, nostrum molestiae deleniti maxime.</p>
+  </div>
+
+  <hr>
+
+  <div style="max-width:1000px; margin:0 auto;  columns: 3; widows: 4;">
+    <p>Amet consectetur adipisicing elit. Inventore rerum quis placeat voluptatum nobis tenetur nemo eius eum iure vitae ipsa numquam provident deserunt minima dolores, quo dolorem quia delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, asperiores nesciunt? Ab commodi officiis harum excepturi cum delectus error libero, dolore explicabo quae unde porro similique, nostrum molestiae deleniti maxime.</p>
   </div>
 </body>
 
