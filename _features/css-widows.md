@@ -9,10 +9,10 @@ test_results_url: "https://testi.at/proj/6vd8udzx1b5l1vrnsr"
 stats: {
   apple-mail: {
     macos: {
-      "2024-05": "u",
+      "2024-05": "y",
     },
     ios: {
-      "2024-05": "u",
+      "2024-05": "y",
     }
   },
   gmail: {
@@ -23,10 +23,10 @@ stats: {
       "2024-05": "n"
     },
     android: {
-      "2024-05": "u"
+      "2024-05": "y"
     },
     mobile-webmail: {
-      "2024-05": "u"
+      "2024-05": "n #1 #2"
     }
   },
   orange: {
@@ -51,7 +51,7 @@ stats: {
       "2024-05": "n"
     },
     macos: {
-      "2024-05": "u",
+      "2024-05": "y",
     },
     outlook-com: {
       "2024-05": "y",
@@ -60,7 +60,7 @@ stats: {
       "2024-05": "y"
     },
     android: {
-      "2024-05": "u"
+      "2024-05": "y"
     }
   },
   yahoo: {
@@ -87,7 +87,7 @@ stats: {
   },
   samsung-email: {
     android: {
-      "2024-05": "u"
+      "2024-05": "y"
     }
   },
   sfr: {
@@ -164,10 +164,13 @@ stats: {
   }
 }
 notes_by_num: {
-    "1": "Buggy. `column` property is stripped."
+    "1": "Buggy. `column` property is stripped which is required for `widows` to work"
+    "2": "Buggy. `widows` property value is replaced with `auto`"
 }
 links: {
-  "Can I use: CSS property: min-block-size":"https://caniuse.com/mdn-css_properties_min-block-size",
-  "MDN: min-block-size":"https://developer.mozilla.org/en-US/docs/Web/CSS/min-block-size"
+  "Can I use: CSS property: widows":"https://caniuse.com/widows",
+  "MDN: widows":"https://developer.mozilla.org/en-US/docs/Web/CSS/widows"
+  "Can I use: CSS property: columns":"https://caniuse.com/columns",
+  "MDN: columns":"https://developer.mozilla.org/en-US/docs/Web/CSS/columns"
 }
 ---
