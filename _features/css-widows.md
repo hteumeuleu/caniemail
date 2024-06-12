@@ -1,8 +1,8 @@
 ---
 title: "widows"
-description: "Sets the minimum number of lines in a block container that must be shown at the top of a page, region, or column."
+description: "Sets the minimum number of lines in a block container split on a new page, region or column."
 category: css
-keywords: column
+keywords: columns
 last_test_date: "2024-05-03"
 test_url: "/tests/css-widows.html"
 test_results_url: "https://testi.at/proj/6vd8udzx1b5l1vrnsr"
@@ -23,7 +23,7 @@ stats: {
       "2024-05": "n"
     },
     android: {
-      "2024-05": "y"
+      "2024-05": "n #3"
     },
     mobile-webmail: {
       "2024-05": "n #1 #2"
@@ -164,8 +164,9 @@ stats: {
   }
 }
 notes_by_num: {
-    "1": "Buggy. `column` property is stripped which is required for `widows` to work"
-    "2": "Buggy. `widows` property value is replaced with `auto`"
+    "1": "Buggy. `columns` property is stripped which is required for `widows` to work",
+    "2": "Buggy. `widows` property value is replaced by `auto`",
+    # "3": "Gmail adds default `widows` value"
 }
 links: {
   "Can I use: CSS property: widows":"https://caniuse.com/widows",
