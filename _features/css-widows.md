@@ -17,7 +17,7 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2024-05": "n"
+      "2024-05": "n #4"
     },
     ios: {
       "2024-05": "n"
@@ -119,7 +119,7 @@ stats: {
   },
   mail-ru: {
     desktop-webmail: {
-      "2024-05":"y"
+      "2024-05":"y #4"
     }
   },
   fastmail: {
@@ -134,7 +134,7 @@ stats: {
   },
   gmx: {
     desktop-webmail: {
-      "2024-05": "n #1"
+      "2024-05": "n #1 #4"
     },
     ios: {
       "2024-05":"u"
@@ -145,7 +145,7 @@ stats: {
   },
   web-de: {
     desktop-webmail: {
-      "2024-05": "n #1"
+      "2024-05": "n #1 #4"
     },
     ios: {
       "2024-05":"u"
@@ -166,7 +166,8 @@ stats: {
 notes_by_num: {
     "1": "Buggy. `columns` property is stripped which is required for `widows` to work",
     "2": "Buggy. `widows` property value is replaced by `auto`",
-    # "3": "Gmail adds default `widows` value"
+    "3": "Not supported, but Gmail's default styles on the email message container includes the `widows` property. These values are inherited by children elements"
+    "4": "Webmail rendering depends on browser support"
 }
 links: {
   "Can I use: CSS property: widows":"https://caniuse.com/widows",
