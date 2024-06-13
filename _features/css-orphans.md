@@ -1,9 +1,9 @@
 ---
-title: "widows"
-description: "Sets the minimum number of lines in a block container split on the previous page, region or column."
+title: "orphans"
+description: "Sets the minimum number of lines in a block container split on an old page, region or column."
 category: css
 keywords: columns
-last_test_date: "2024-06-12"
+last_test_date: "2024-06-13"
 test_url: "/tests/css-widows.html"
 test_results_url: "https://testi.at/proj/6vd8udzx1b5l1vrnsr"
 stats: {
@@ -17,13 +17,13 @@ stats: {
   },
   gmail: {
     desktop-webmail: {
-      "2024-05": "n"
+      "2024-05": "n #4"
     },
     ios: {
       "2024-05": "n"
     },
     android: {
-      "2024-05": "y"
+      "2024-05": "n #3"
     },
     mobile-webmail: {
       "2024-05": "n #1 #2"
@@ -119,7 +119,7 @@ stats: {
   },
   mail-ru: {
     desktop-webmail: {
-      "2024-05":"y"
+      "2024-05":"y #4"
     }
   },
   fastmail: {
@@ -134,7 +134,7 @@ stats: {
   },
   gmx: {
     desktop-webmail: {
-      "2024-05": "n #1"
+      "2024-05": "n #1 #4"
     },
     ios: {
       "2024-05":"u"
@@ -145,7 +145,7 @@ stats: {
   },
   web-de: {
     desktop-webmail: {
-      "2024-05": "n #1"
+      "2024-05": "n #1 #4"
     },
     ios: {
       "2024-05":"u"
@@ -164,12 +164,14 @@ stats: {
   }
 }
 notes_by_num: {
-    "1": "Buggy. `column` property is stripped which is required for `widows` to work"
-    "2": "Buggy. `widows` property value is replaced with `auto`"
+    "1": "Buggy. `columns` property is stripped which is required for `orphans` to work",
+    "2": "Buggy. `orphans` property value is replaced by `auto`",
+    "3": "Not supported, but Gmail's default styles on the email message container includes the `orphans` property. These values are inherited by children elements"
+    "4": "Webmail rendering depends on browser support"
 }
 links: {
-  "Can I use: CSS property: widows":"https://caniuse.com/widows",
-  "MDN: widows":"https://developer.mozilla.org/en-US/docs/Web/CSS/widows"
+  "Can I use: CSS property: orphans":"https://caniuse.com/orphans",
+  "MDN: orphans":"https://developer.mozilla.org/en-US/docs/Web/CSS/orphans"
   "Can I use: CSS property: columns":"https://caniuse.com/columns",
   "MDN: columns":"https://developer.mozilla.org/en-US/docs/Web/CSS/columns"
 }
