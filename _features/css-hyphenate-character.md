@@ -1,11 +1,11 @@
 ---
-title: "hyphens"
-description: ""
+title: "hyphenate-character"
+description: "Sets the character (or string) used at the end of a line before a hyphenation break."
 category: css
 keywords: hyphens, break
 last_test_date: "2024-06-19"
 test_url: "/tests/css-hyphenate-character.html"
-test_results_url: "https://testi.at/proj/rvEUZkBsPVNSbRohvoRigyRiM"
+test_results_url: "https://testi.at/proj/vr3e1e5bikda08oxc2"
 stats: {
   apple-mail: {
     macos: {
@@ -33,7 +33,7 @@ stats: {
       "2024-06": "n"
     },
     mobile-webmail: {
-      "2024-06": "u"
+      "2024-06": "n"
     }
   },
   orange: {
@@ -58,7 +58,7 @@ stats: {
       "2024-06": "n"
     },
     macos: {
-      "2024-06": "y", #TODO
+      "2024-06": "n",
     },
     outlook-com: {
       "2024-06": "n",
@@ -133,6 +133,7 @@ stats: {
     desktop-webmail: {
       "2024-06": "u"
     },
+  },
   laposte: {
     desktop-webmail: {
       "2024-06": "u"
@@ -171,11 +172,11 @@ stats: {
 }
 
 notes_by_num: {
-  "1": "Partial. Strips entire style tag if value uses special characters",
+  "1": "Partial. Does not support encoded character values",
 }
  
 links: {
-  "Can I use: CSS property: hyphens":"https://caniuse.com/css-hyphens",
-  "MDN: hyphens":"https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens"
+  "Can I use: CSS property: hyphenate-character":"https://caniuse.com/hyphenate-character",
+  "MDN: hyphenate-character":"https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-character"
 }
 ---
