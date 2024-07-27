@@ -70,6 +70,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #2"
+    	},
         windows: {
           "2020-02":"y"
         },
@@ -186,6 +189,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partially supported. Only works with non Google accounts."
+    "1": "Partially supported. Only works with non Google accounts.",
+    "2": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

@@ -75,6 +75,9 @@ stats: {
 		}
 	},
     thunderbird: {
+		linux: {
+      		"115": "y #1"
+    	},
         macos: {
             "60.8":"y",
             "78.5":"n"
@@ -184,5 +187,8 @@ stats: {
             "2023-12": "n"
         }
     }
+}
+notes_by_num: {
+    "1": "Remote content will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

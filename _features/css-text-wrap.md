@@ -104,6 +104,9 @@ stats: {
     }
   },
   thunderbird: {
+    linux: {
+      "115": "n"
+    },
     macos: {
       "2024-04": "u"
     }

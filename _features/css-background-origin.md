@@ -109,6 +109,9 @@ stats: {
         }
     },
 	thunderbird: {
+		linux: {
+			"115": "y #2"
+		},
 		macos: {
 			"60.5.0": "y"
 		}
@@ -176,6 +179,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Background images origin can be used in VML with the `origin` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/origin-attribute--fill--vml)."
+    "1": "Background images origin can be used in VML with the `origin` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/origin-attribute--fill--vml).",
+	"2": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

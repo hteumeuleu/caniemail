@@ -92,6 +92,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #2"
+    	},
         macos: {
             "60.3":"y"
         }
@@ -182,6 +185,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-    "1": "`<picture>` and `<source>` tags are replaced by `<u></u>` tags."
+    "1": "`<picture>` and `<source>` tags are replaced by `<u></u>` tags.",
+    "2": "Remote content will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

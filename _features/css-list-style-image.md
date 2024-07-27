@@ -84,6 +84,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+			"115": "y #4"
+	    },
         macos: {
             "68.7":"y"
         }
@@ -175,7 +178,8 @@ stats: {
 notes_by_num: {
     "1": "Not supported, but the proprietary `mso-bullet-image` property can be used instead on `<li>`. Outlook 2007 and 2010 only support `.ico` and `.gif` file formats.",
     "2": "Not supported, but image values are supported through the `list-style` shorthand property.",
-    "3": "`url()` is transformed into `proton-url()`."
+    "3": "`url()` is transformed into `proton-url()`.",
+    "4": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 links: {
     "Can I use: list-style-image":"https://caniuse.com/#feat=mdn-css_properties_list-style-image",
