@@ -85,6 +85,11 @@ stats: {
             "102.10.1":"u"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"y #1"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2023-09":"y"
@@ -158,6 +163,9 @@ stats: {
             "2023-09": "u"
         }
     }
+}
+notes_by_num: {
+    "1": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 links: {
     "Can I use: &lt;img&gt;":"https://caniuse.com/?search=img",

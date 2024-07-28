@@ -94,6 +94,11 @@ stats: {
             "60.3":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"n #6"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-01":"n #4"
@@ -183,6 +188,7 @@ notes_by_num: {
     "2": "Partial. `<details>`, `<main>`, `<nav>` and `<summary>` are not supported. Opening and closing tags are replaced by `<u></u>`.",
     "3": "Partial. `<article>` is not supported.",
     "4": "Unsupported opening and closing tags are stripped.",
-    "5": "Partial. `<article>`, `<aside>`, `<header>`, `<main>` `<nav>`, `<section>`, `<summary>` are not supported."
+    "5": "Partial. `<article>`, `<aside>`, `<header>`, `<main>` `<nav>`, `<section>`, `<summary>` are not supported.",
+    "6": "Unsupported elements are not rendered at all. Contents may get lost"
 }
 ---

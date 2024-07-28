@@ -109,6 +109,11 @@ stats: {
             "60.5": "y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"a #3"
+		}
+  	},
     protonmail: {
         desktop-webmail: {
             "2020-03":"y"
@@ -173,6 +178,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. Cannot scroll through to hidden content.",
-    "2": "Not supported. `overflow` is replaced by `java-script`."
+    "2": "Not supported. `overflow` is replaced by `java-script`.",
+    "3": "Overflow scroll does not work. Scrolling works only on one direction very slowly. Most of the overflow is completely inaccessible."
 }
 ---

@@ -125,6 +125,11 @@ stats: {
 			"60.5.0": "y"
 		}
 	},
+	k-9: {
+		android: {
+			"6.904":"a #2 #7 #8"
+		}
+  	},
     protonmail: {
         desktop-webmail: {
             "2020-03":"y"
@@ -199,10 +204,12 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. Not supported with non Google accounts.",
-    "2": "Buggy. Requires at least one `<img>` element in the email to download all images.",
+    "2": "Requires at least one `<img>` element in the email to download all images.",
     "3": "Partial. Does not support multiple values. The comma between two values is removed.",
     "4": "Partial. Images URL must be between quotes.",
 	"5": "Background images can be used in VML. See [backgrounds.cm](https://backgrounds.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element).",
-	"6": "Partial and buggy. Removes the entire `style` attribute or `<style>` tag when a `url()` function with a valid image URL is present. See [Gmail rolling out changes that strip CSS with background images](https://freshinbox.com/blog/gmail-rolling-out-changes-that-strip-background-image-css/) and [Gmail and background images](https://parcel.io/blog/gmail-and-background-images)."
+	"6": "Partial and buggy. Removes the entire `style` attribute or `<style>` tag when a `url()` function with a valid image URL is present. See [Gmail rolling out changes that strip CSS with background images](https://freshinbox.com/blog/gmail-rolling-out-changes-that-strip-background-image-css/) and [Gmail and background images](https://parcel.io/blog/gmail-and-background-images).",
+	"7": "Not supported on <body>",
+	"8": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 ---

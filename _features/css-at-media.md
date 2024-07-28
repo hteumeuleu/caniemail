@@ -98,6 +98,11 @@ stats: {
 			"102.11":"n"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"a #11"
+		}
+  	},
     yahoo: {
         desktop-webmail: {
             "2019-08":"a #1 #2",
@@ -200,7 +205,8 @@ notes_by_num: {
     "7": "Partial. Does not support height based media queries.",
     "8": "Partial. Does not support landscape media query.",
 	"9": "Partial. Not supported with Hotmail/Outlook accounts.",
-    "10": "Partial. Nested media queries are removed."
+    "10": "Partial. Nested media queries are removed.",
+    "11": "Partial. Does not support portrait media query.",
 }
 links: {
     "Can I use: CSS3 Media Queries":"https://caniuse.com/#feat=css-mediaqueries",

@@ -94,6 +94,11 @@ stats: {
             "60.3":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"n"
+		}
+  	},
     yahoo: {
         desktop-webmail: {
             "2019-06":"n",

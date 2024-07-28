@@ -50,6 +50,11 @@ stats: {
             "60.8":"n"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"n"
+		}
+  	},
     outlook: {
         windows: {
             "2007": "y",

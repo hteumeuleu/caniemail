@@ -68,6 +68,11 @@ stats: {
             "68.4":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"y #1"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-02":"y"
@@ -174,5 +179,8 @@ stats: {
             "2022-09":"y"
         }
     }
+}
+notes_by_num: {
+    "1": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 ---

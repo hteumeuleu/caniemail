@@ -88,6 +88,11 @@ stats: {
             "68.7":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"a #5"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-04":"a #3"
@@ -178,7 +183,8 @@ notes_by_num: {
     "1": "`list-style-image` values are not supported. The entire `list-style` property is removed if present.",
     "2": "Only `list-style-type` values are supported.",
     "3": "`list-style-image` values are not supported but the rest of the `list-style` property is kept.",
-    "4": "`url()` is transformed into `proton-url()` for `list-style-type` values, invalidating the entire property."
+    "4": "`url()` is transformed into `proton-url()` for `list-style-type` values, invalidating the entire property.",
+    "5": "No support for `symbols()`, otherwise supported"
 }
 links: {
     "Can I use: list-style":"https://caniuse.com/#feat=mdn-css_properties_list-style",

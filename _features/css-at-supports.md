@@ -89,6 +89,11 @@ stats: {
             "78.5":"n"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"y"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-05":"y #1"

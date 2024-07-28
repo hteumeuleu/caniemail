@@ -79,6 +79,11 @@ stats: {
 			"6.1.51.1": "y"
 		}
 	},
+	k-9: {
+		android: {
+			"6.904":"y"
+		}
+  	},
 	free-fr: {
 		desktop-webmail: {
 			"2022-08": "y"

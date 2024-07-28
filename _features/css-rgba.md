@@ -114,6 +114,11 @@ stats: {
       "78.10": "y"
     }
   },
+  k-9: {
+		android: {
+			"6.904":"y"
+		}
+  },
   protonmail: {
     desktop-webmail: {
       "2021-05":"y"

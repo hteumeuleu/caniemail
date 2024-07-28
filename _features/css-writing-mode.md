@@ -89,6 +89,11 @@ stats: {
             "91.5.0":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"y"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2022-05":"n"

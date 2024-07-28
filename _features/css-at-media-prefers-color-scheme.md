@@ -115,6 +115,11 @@ stats: {
             "91.13":"n"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"a #7"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-01":"n #1"
@@ -223,7 +228,8 @@ notes_by_num: {
     "3": "Additional custom `data` attributes (`data-ogsc`, `data-ogac`, `data-ogsb`, `data-ogab`) are added when viewing an email in dark mode. See [this article](https://www.hteumeuleu.com/2021/emails-react-outlook-com-dark-mode/) for examples.",
     "4": "`@media (prefers-color-scheme:dark)` is transformed into `@media all` at run time if it applies.",
     "5": "Not supported. `@media (prefers-color-scheme:dark)` is transformed into `@media (false)`",
-    "6": "Not supported. `@media (prefers-color-scheme:dark)` is transformed into `@media ()`"
+    "6": "Not supported. `@media (prefers-color-scheme:dark)` is transformed into `@media ()`",
+    "7": "Picture element does not respect color scheme preference"
 }
 links: {
     "Can I use: prefers-color-scheme media query":"https://caniuse.com/prefers-color-scheme",
