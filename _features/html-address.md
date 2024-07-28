@@ -118,6 +118,11 @@ stats: {
 			"78.5": "y"
 		}
 	},
+	k-9: {
+		android: {
+			"6.904":"n #2"
+		}
+  	},
 	protonmail: {
 		desktop-webmail: {
 			"2020-12":"y"
@@ -181,7 +186,8 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Unsupported opening and closing tags are stripped."
+    "1": "Unsupported opening and closing tags are stripped.",
+	"2": "Unsupported elements are not rendered at all"
 }
 links: {
     "Can I use: HTML element address":"https://caniuse.com/mdn-html_elements_address",

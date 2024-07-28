@@ -118,6 +118,11 @@ stats: {
 			"78.5": "y"
 		}
 	},
+    k-9: {
+		android: {
+			"6.904":"y #2"
+		}
+  	},
     protonmail: {
         desktop-webmail: {
             "2020-12":"y"
@@ -181,7 +186,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Google accounts."
+    "1": "Partial. Not supported with non Google accounts.",
+    "2": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 links: {
     "Can I use: CSS property mix-blend-mode":"https://caniuse.com/mdn-css_properties_mix-blend-mode",

@@ -68,6 +68,11 @@ stats: {
             "68.4":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"y #2"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-02":"y"
@@ -176,6 +181,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. An image renders but the colours are incorrect."
+    "1": "Buggy. An image renders but the colours are incorrect.",
+    "2": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 ---

@@ -107,6 +107,11 @@ stats: {
       "2024-01": "u"
     }
   },
+  k-9: {
+		android: {
+			"6.904":"n #3"
+		}
+  },
   protonmail: {
     desktop-webmail: {
       "2024-01":"u"
@@ -172,6 +177,7 @@ stats: {
 notes_by_num: {
   "1": "`resize` property is stripped from style tag",
   "2": "Does not support `inline` and `block` values",
+  "3": "Technically the support is there, but it is so slow and uncontrollable that it is impossible to use in practise"
 }
 links: {
   "Can I use: CSS resize":"https://caniuse.com/?search=resize",

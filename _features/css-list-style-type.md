@@ -89,6 +89,11 @@ stats: {
             "68.7":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"a #1"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-04":"y"
@@ -176,6 +181,7 @@ stats: {
 }
 notes: "Tests and support are based on the CSS Level 2 specification. `<custom-ident>`, `symbols()` and `<string>` values are not tested here."
 notes_by_num: {
+    "1": "No support for `symbols()`"
 }
 links: {
     "Can I use: list-style-type":"https://caniuse.com/#feat=mdn-css_properties_list-style-type",

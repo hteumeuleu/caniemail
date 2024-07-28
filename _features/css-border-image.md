@@ -100,6 +100,11 @@ stats: {
 			"60.5": "y"
 		}
 	},
+	k-9: {
+		android: {
+			"6.904":"y #1"
+		}
+  	},
     sfr: {
         desktop-webmail: {
             "2019-08":"y"
@@ -172,5 +177,8 @@ stats: {
 			"2022-06":"y"
 		}
 	}
+}
+notes_by_num: {
+	"1": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 ---

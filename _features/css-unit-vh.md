@@ -71,6 +71,11 @@ stats: {
             "68.4":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"n #3"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-02":"y"
@@ -185,5 +190,6 @@ notes: ""
 notes_by_num: {
   "1": "Buggy. Can affect the preview window size, meaning content can get lost.",
   "2": "Buggy. Value resolves to zero",
+  "3": "Unsupported elements are not rendered at all"
 }
 ---

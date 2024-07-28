@@ -88,6 +88,11 @@ stats: {
             "68.7":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"a #4 #5"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2020-04":"n"
@@ -175,7 +180,9 @@ stats: {
 notes_by_num: {
     "1": "Not supported, but the proprietary `mso-bullet-image` property can be used instead on `<li>`. Outlook 2007 and 2010 only support `.ico` and `.gif` file formats.",
     "2": "Not supported, but image values are supported through the `list-style` shorthand property.",
-    "3": "`url()` is transformed into `proton-url()`."
+    "3": "`url()` is transformed into `proton-url()`.",
+    "4": "Requires at least one `<img>` element in the email to download all images.",
+    "5": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 links: {
     "Can I use: list-style-image":"https://caniuse.com/#feat=mdn-css_properties_list-style-image",

@@ -107,6 +107,11 @@ stats: {
 			"102.10.1": "y"
 		}
 	},
+	k-9: {
+		android: {
+			"6.904":"a #1"
+		}
+  	},
 	protonmail: {
 		desktop-webmail: {
 			"2023-04":"y"
@@ -138,6 +143,9 @@ stats: {
 			"2023-04": "y"
 		}
 	}
+}
+notes_by_num: {
+    "1": "Works, but unpredictable. Proximity scroll is unusable, but feature technically exists if user is dedicated enough."
 }
 links: {
 	"MDN: The scroll-snap-type CSS property": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type",

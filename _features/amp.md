@@ -113,6 +113,11 @@ stats: {
       "68.4":"n"
     }
   },
+  k-9: {
+    android: {
+      "6.904":"n"
+    }
+  },
     protonmail: {
         desktop-webmail: {
             "2020-03":"n"

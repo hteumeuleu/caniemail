@@ -88,6 +88,11 @@ stats: {
             "78.10":"y"
         }
     },
+    k-9: {
+		android: {
+			"6.904":"y #1"
+		}
+  	},
     aol: {
         desktop-webmail: {
             "2021-10":"y"
@@ -171,6 +176,9 @@ stats: {
 			"2022-11":"y"
 		}
 	}
+}
+notes_by_num: {
+    "1": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 links: {
     "HTML: image maps":"https://html.spec.whatwg.org/multipage/image-maps.html#image-maps",

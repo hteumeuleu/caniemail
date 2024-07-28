@@ -108,6 +108,11 @@ stats: {
       "2024-04": "u"
     }
   },
+  k-9: {
+		android: {
+			"6.904":"a #1"
+		}
+  },
   protonmail: {
     desktop-webmail: {
       "2024-04":"u"
@@ -169,6 +174,9 @@ stats: {
       "2024-04": "u"
     }
   }
+}
+notes_by_num: {
+  "1": "Wrap and nowrap works. Balance is identical to wrap. Pretty is less pretty than expected."
 }
 links: {
   "Can I use: CSS text-wrap":"https://caniuse.com/?search=text-wrap",
