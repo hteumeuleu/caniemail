@@ -92,6 +92,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y"
+    	},
         windows: {
             "2020-02":"y"
         },

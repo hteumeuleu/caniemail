@@ -61,6 +61,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #1"
+    	},
         windows: {
           "2020-02":"y"
         },
@@ -174,5 +177,8 @@ stats: {
             "2022-09":"y"
         }
     }
+}
+notes_by_num: {
+    "1": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

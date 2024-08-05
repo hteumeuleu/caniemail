@@ -94,6 +94,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "n #7"
+    	},
         macos: {
             "68.4":"y"
         }
@@ -189,6 +192,7 @@ notes_by_num: {
   "3": "Does not submit in preview pane, but does when the email is opened in a new window.",
   "4": "Not supported. `<form>` is transformed into `<noform>`.",
   "5": "Not supported. The `<form>` and its entire content is removed.",
-  "6": "Not supported. The `<form>` is there but values are not submitted."
+  "6": "Not supported. The `<form>` is there but values are not submitted.",
+  "7": "Form and all the elements are rendered properly, but submission is triggered immediately when a field is selected, so it cannot be used."
 }
 ---

@@ -61,6 +61,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #3"
+    	},
         windows: {
           "2020-02":"y"
         },
@@ -177,6 +180,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial: Does not support animated gif images.",
-    "2": "Partial: With an Office 365 account, it plays the animation 3 times then stops and shows a play button to reactivate the animation."
+    "2": "Partial: With an Office 365 account, it plays the animation 3 times then stops and shows a play button to reactivate the animation.",
+    "3": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 ---
