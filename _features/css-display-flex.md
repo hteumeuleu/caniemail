@@ -120,6 +120,9 @@ stats: {
         }
     },
 	thunderbird: {
+        linux: {
+			"115": "y"
+		},
 		macos: {
 			"60.5": "y"
 		}

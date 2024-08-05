@@ -97,6 +97,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "u #7"
+    	},
         macos: {
             "68.7":"y"
         },
@@ -194,7 +197,8 @@ notes_by_num: {
     "3": "The `<audio>` element is supported but can not be played.",
     "4": "The `<audio>` element is supported, but the video can not play due to a strict Content Security Policy.",
     "5": "Not supported. The `<audio>` element and all its content is removed.",
-    "6": "Not supported. The `src` attribute is replaced by `data-src`."
+    "6": "Not supported. The `src` attribute is replaced by `data-src`.",
+    "7": "Likely supported, test file was broken during testing so could not validate"
 }
 links: {
     "Can I use: audio":"https://caniuse.com/audio",

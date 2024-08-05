@@ -81,6 +81,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+            "115":"u"
+        },
         macos: {
             "78.14":"u"
         }

@@ -108,6 +108,9 @@ stats: {
         }
     },
 	thunderbird: {
+		linux: {
+			"115": "y #4"
+		},
 		macos: {
 			"60.5.0": "y"
 		}
@@ -177,6 +180,7 @@ stats: {
 notes_by_num: {
     "1": "Partial. Not supported with non Google accounts. But it can be used in the `background` shorthand property instead.",
     "2": "Partial. Does not support multiple values. The comma between two values is removed.",
-    "3": "Background images size can be used in VML with the `size` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/size-attribute--fill--vml)."
+    "3": "Background images size can be used in VML with the `size` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/size-attribute--fill--vml).",
+	"4": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 ---

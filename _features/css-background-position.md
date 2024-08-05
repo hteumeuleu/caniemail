@@ -111,6 +111,9 @@ stats: {
         }
     },
 	thunderbird: {
+		linux: {
+			"115": "y #3"
+		},
 		macos: {
 			"60.5.0": "y"
 		}
@@ -179,6 +182,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. Does not support multiple values. The comma between two values is removed.",
-    "2": "Background images position can be used in VML with the `position` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/position-attribute--fill--vml)."
+    "2": "Background images position can be used in VML with the `position` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/position-attribute--fill--vml).",
+	"3": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

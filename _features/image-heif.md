@@ -71,6 +71,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "u"
+    	},
         windows: {
           "2020-02":"n",
 		  "115.7":"n"
