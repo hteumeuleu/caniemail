@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-wrap CSS property</title>
+  <style>
+    code {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<div style="padding:30px; max-width:120px;">
+<!--[if mso]>
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="400" align="center" style="border-spacing:0;">
+    <tr>
+      <td>
+<![endif]-->
+  <p style="border:1px solid; padding:12px; text-align:center; hyphens: auto; hyphenate-limit-chars: 15;">
+    <code>hyphenate-limit-chars: 15;</code><br>
+    juxtaposition and acknowledgement
+  </p>
+
+  <p style="border:1px solid; padding:12px; text-align:center; hyphens: auto; hyphenate-limit-chars: 10 5;">
+    <code>hyphenate-limit-chars: 10 5;</code><br>
+    juxtaposition and acknowledgement
+  </p>
+
+  <p style="border:1px solid; padding:12px; text-align:center; hyphens: auto; hyphenate-limit-chars: 10;">
+    <code>hyphenate-limit-chars: 10;</code><br>
+    juxtaposition and acknowledgement
+  </p>
+
+  <p style="border:1px solid; padding:12px; text-align:center; hyphens: auto; hyphenate-limit-chars: 10 auto;">
+    <code>thyphenate-limit-chars: 10 auto;</code><br>
+    juxtaposition and acknowledgement
+  </p>
+
+  <p style="border:1px solid; padding:12px; text-align:center; hyphens: auto; hyphenate-limit-chars: auto auto;">
+    <code>thyphenate-limit-chars: auto auto;</code><br>
+    juxtaposition and acknowledgement
+  </p>
+<!--[if mso]>
+    </td>
+  </tr>
+</table>
+<![endif]-->
+</div>
+</body>
+</html>
