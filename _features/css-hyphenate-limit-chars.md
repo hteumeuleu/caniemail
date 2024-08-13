@@ -1,6 +1,6 @@
 ---
 title: "hyphenate-limit-chars"
-description: "Specifies the minimum word length to allow hyphenation of words as well as the minimum number of characters before and after the hyphen.
+description: "Specifies the minimum word length to allow hyphenation of words as well as the minimum number of characters before and after the hyphen."
 category: css
 last_test_date: "2024-08-08"
 test_url: "/tests/css-hyphenate-limit-chars.html"
@@ -8,10 +8,10 @@ test_results_url: "https://testi.at/proj/kgljcojhdyrfdv5s2"
 stats: {
   apple-mail: {
     macos: {
-      "2024-08": "y"
+      "2024-08": "n"
     },
     ios: {
-      "2024-08": "y",
+      "2024-08": "n",
     }
   },
   gmail: {
@@ -87,7 +87,7 @@ stats: {
   },
   samsung-email: {
     android: {
-      "2024-08": "y"
+      "2024-08": "n"
     }
   },
   sfr: {
