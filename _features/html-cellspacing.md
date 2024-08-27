@@ -1,9 +1,9 @@
 ---
-title: "cell-padding"
-description: "Represents the padding around the individual cells of the table"
+title: "cellspacing attribute"
+description: "Represents the spacing around the individual `<th>` and `<td>` elements"
 category: html
 last_test_date: "2024-05-01"
-test_url: "/tests/html-cell-spacing.html"
+test_url: "/tests/html-cellspacing.html"
 test_results_url: "https://testi.at/proj/rlpatnzxf3eyce9oc3"
 stats: {
   apple-mail: {
@@ -170,7 +170,7 @@ stats: {
   }
 }
 links: {
-  "MDN: cell-padding":"https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/cellPadding",
-  "Can I use: cell-padding":"https://caniuse.com/?search=cell-padding"
+  "MDN: cell-spacing":"https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/cellSpacing",
+  "Can I use: cell-spacing":"https://caniuse.com/?search=cell-spacing"
 }
 ---
