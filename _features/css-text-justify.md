@@ -171,10 +171,9 @@ stats: {
 notes_by_num: {
   "1": "Buggy. `text-justify` is stripped",
   "2": "Partial. Depends on browser support",
-  "3": "Partial. `text-justify` is stripped except when the value is `inter-character`,
-  "4": "Partial. `text-justify` is stripped except when the value is `inter-word` or `distribute`,
-  "5": "Buggy. `text-justify` values `none`, `inter-word` and `distribute` are replaced with `inter-ideograph`,
-
+  "3": "Partial. `text-justify` is stripped except when the value is `inter-character`",
+  "4": "Partial. `text-justify` is stripped except when the value is `inter-word` or `distribute`",
+  "5": "Buggy. `text-justify` values `none`, `inter-word` and `distribute` are replaced with `inter-ideograph`",
 }
 links: {
   "Can I use: CSS text-justify":"https://caniuse.com/?search=text-justify",
