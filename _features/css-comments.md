@@ -30,14 +30,13 @@ stats: {
   },
   orange: {
     desktop-webmail: {
-      "2024-04":"u",
-      "2024-04":"u"
+      "2024-08":"n #6"
     },
     ios: {
-      "2024-04":"u"
+      "2024-08":"n #6"
     },
     android: {
-      "2024-04":"u"
+      "2024-08":"n #6"
     }
   },
   outlook: {
@@ -93,13 +92,13 @@ stats: {
   },
   sfr: {
     desktop-webmail: {
-      "2024-04":"u"
+      "2024-08":"a #5"
     },
     ios: {
-      "2024-04":"u"
+      "2024-08":"a #5"
     },
     android: {
-      "2024-04":"u"
+      "2024-08":"a #5"
     }
   },
   thunderbird: {
@@ -135,7 +134,7 @@ stats: {
   },
   laposte: {
     desktop-webmail: {
-      "2024-04": "u"
+      "2024-08": "a #5"
     }
   },
   gmx: {
@@ -172,8 +171,10 @@ stats: {
 notes_by_num: {
   "1": "Buggy. The first <head> in the HTML is removed, so comment needs to be in the `<style>` tag of a second `<head>` element.",
   "2": "Partial. `<style>` tag not supported with non-google account. Comment inside `style:` attribute works.",
-  "3": "Partial. Comment inside `<style>` tag works. Comment inside `style:` attribute strips the whole attribute.",
+  "3": "Partial. Comment inside `<style>` tag works. Comment inside `style` attribute strips the whole attribute.",
   "4": "Partial. `<style>` tag not supported. Comment inside `style:` attribute works.",
+  "5": "Partial. Comment inside `style` attribute works.",
+  "6": "Not supported. The entire rule is removed within a `<style> element. The entire inline `style` attribute is removed.",
 }
 links: {
   "MDN: comments":"https://developer.mozilla.org/en-US/docs/Web/CSS/Comments"
