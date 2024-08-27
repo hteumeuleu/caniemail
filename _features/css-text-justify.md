@@ -167,7 +167,7 @@ stats: {
       "2024-04":"u"
     }
   }
-},
+}
 notes_by_num: {
   "1": "Buggy. `text-justify` is stripped",
   "2": "Partial. Depends on browser support",
