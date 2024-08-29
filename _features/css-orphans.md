@@ -166,13 +166,13 @@ stats: {
 notes_by_num: {
     "1": "Buggy. `columns` property is stripped which is required for `orphans` to work",
     "2": "Buggy. `orphans` property value is replaced by `auto`",
-    "3": "Not supported, but Gmail's default styles on the email message container includes the `orphans` property. These values are inherited by children elements"
-    "4": "Webmail rendering depends on browser support"
+    "3": "Not supported, but Gmail's default styles on the email message container includes the `orphans` property. These values are inherited by children elements",
+    "4": "Webmail rendering depends on browser support",
 }
 links: {
   "Can I use: CSS property: orphans":"https://caniuse.com/orphans",
-  "MDN: orphans":"https://developer.mozilla.org/en-US/docs/Web/CSS/orphans"
+  "MDN: orphans":"https://developer.mozilla.org/en-US/docs/Web/CSS/orphans",
   "Can I use: CSS property: columns":"https://caniuse.com/columns",
-  "MDN: columns":"https://developer.mozilla.org/en-US/docs/Web/CSS/columns"
+  "MDN: columns":"https://developer.mozilla.org/en-US/docs/Web/CSS/columns",
 }
 ---
