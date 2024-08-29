@@ -27,6 +27,7 @@
 	<link href="{{ site.url }}/feed.xml" rel="alternate" type="application/atom+xml" />
 	<meta name="color-scheme" content="dark" />
 	<link rel="me" href="https://mastodon.social/@caniemail" />
+	<meta http-equiv="content-security-policy" content="script-src 'self' 'unsafe-inline' https://piwik.tilt-studio.net; base-uri 'self';" />
 </head>
 <body>
 	<div class="caniemail{{ page.name | remove: '.html' | slugify | default: 'default' | prepend: ' page--' }}">
@@ -37,5 +38,8 @@
 		{% include footer.html %}
 	</div>
 	<script src="/assets/js/caniemail.js" defer></script>
+	{% if jekyll.environment == 'production' %}
+		{% include analytics.html %}
+	{% endif %}
 </body>
 </html>
