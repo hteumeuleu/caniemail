@@ -8,11 +8,11 @@ test_results_url: "https://testi.at/proj/rlpdia3k18jytjx8c2"
 stats: {
 	apple-mail: {
 		macos: {
-            "10.15": "n"
+            "10.15": "n",
             "11.7": "y",
 		},
 		ios: {
-			"14": "n"
+			"14": "n",
             "15": "y"
 		}
 	},
