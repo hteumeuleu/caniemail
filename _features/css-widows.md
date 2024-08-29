@@ -166,13 +166,13 @@ stats: {
 notes_by_num: {
     "1": "Buggy. `columns` property is stripped which is required for `widows` to work",
     "2": "Buggy. `widows` property value is replaced by `auto`",
-    "3": "Not supported, but Gmail's default styles on the email message container includes the `widows` property. These values are inherited by children elements"
-    "4": "Webmail rendering depends on browser support"
+    "3": "Not supported, but Gmail's default styles on the email message container includes the `widows` property. These values are inherited by children elements",
+    "4": "Webmail rendering depends on browser support",
 }
 links: {
   "Can I use: CSS property: widows":"https://caniuse.com/widows",
-  "MDN: widows":"https://developer.mozilla.org/en-US/docs/Web/CSS/widows"
+  "MDN: widows":"https://developer.mozilla.org/en-US/docs/Web/CSS/widows",
   "Can I use: CSS property: columns":"https://caniuse.com/columns",
-  "MDN: columns":"https://developer.mozilla.org/en-US/docs/Web/CSS/columns"
+  "MDN: columns":"https://developer.mozilla.org/en-US/docs/Web/CSS/columns",
 }
 ---
