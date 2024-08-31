@@ -5,7 +5,7 @@ date: 2024-04-30
 
 New this April: a big data update for [Orange apps on iOS](https://www.caniemail.com/clients/orange/#ios) and [Android](https://www.caniemail.com/clients/orange/#android).
 
-This follows [Orange’s desktop webmail update](2021-03-17-orange-new-desktop-webmail) from 2021. The good news is it makes support more cohesive across all of Orange’s email clients. The bad news is it takes away a lot of features that were previously supported.
+This follows [Orange’s desktop webmail update](/news/2021-03-17-orange-new-desktop-webmail) from 2021. The good news is it makes support more cohesive across all of Orange’s email clients. The bad news is it takes away a lot of features that were previously supported.
 
 {% assign features-by-custom-order = site.features | sort:'id' %}
 <table class="clients-comparison-table">
