@@ -13,10 +13,10 @@ stats: {
       "11": "n",
       "12": "n",
       "13": "n",
-      "14": "y",
+      "14": "y #1",
     },
     ios: {
-      "15": "y"
+      "15": "y #1"
     }
   },
   gmail: {
@@ -91,7 +91,7 @@ stats: {
   },
   samsung-email: {
     android: {
-      "2024-09": "y"
+      "2024-09": "y #1"
     }
   },
   sfr: {
@@ -123,7 +123,7 @@ stats: {
   },
   mail-ru: {
     desktop-webmail: {
-      "2024-09":"y"
+      "2024-09":"y #1"
     }
   },
   fastmail: {
@@ -132,7 +132,9 @@ stats: {
     }
   }
 }
- 
+notes_by_num: {
+  "1": "Partial. `preserve-spaces` value works only on Firefox.",
+}
 links: {
   "Can I use: CSS property: white-space-collapse":"https://caniuse.com/css-white-space-collapse",
   "MDN: white-space-collapse":"https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse"
