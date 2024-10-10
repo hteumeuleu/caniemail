@@ -271,7 +271,46 @@ h2 {
 
 <div style="clear:both;"></div>
 
-<h2>display:grid</h2>
+<div style="background-color: red; margin-bottom:100px;">
+  <h2>clear:left;</h2>
+  <div>
+    <img style="float:left" src="https://dummyimage.com/100x100/ffa200/ffffff.jpg&text=Left+Float" width="100" height="100">
+    <img style="float:right" src="https://dummyimage.com/100x140/ffa200/ffffff.jpg&text=Right+Float" width="100" height="140">
+    <p style="margin:0; clear:left; color:white;">This paragraph clears left</p>
+  </div>
+
+  <h2>clear:right;</h2>
+  <div>
+    <img style="float:left" src="https://dummyimage.com/100x100/ffa200/ffffff.jpg&text=Left+Float" width="100" height="100">
+    <img style="float:right" src="https://dummyimage.com/100x140/ffa200/ffffff.jpg&text=Right+Float" width="100" height="140">
+    <p style="margin:0; clear:right; color:white;">This paragraph clears right</p>
+  </div>
+
+  <h2>clear:both;</h2>
+  <div>
+    <img style="float:left" src="https://dummyimage.com/100x100/ffa200/ffffff.jpg&text=Left+Float" width="100" height="100">
+    <img style="float:right" src="https://dummyimage.com/100x140/ffa200/ffffff.jpg&text=Right+Float" width="100" height="140">
+    <p style="margin:0; clear:right; color:white;">This paragraph clears both sides</p>
+  </div>
+
+  <h2>clear:inline-start;</h2>
+  <div>
+    <img style="float:left" src="https://dummyimage.com/100x100/ffa200/ffffff.jpg&text=Left+Float" width="100" height="100">
+    <img style="float:right" src="https://dummyimage.com/100x140/ffa200/ffffff.jpg&text=Right+Float" width="100" height="140">
+    <p style="margin:0; clear:inline-start; color:white;">This paragraph clears the start side based on direction of element (left)</p>
+  </div>
+
+  <h2>clear:inline-end;</h2>
+  <div>
+    <img style="float:left" src="https://dummyimage.com/100x100/ffa200/ffffff.jpg&text=Left+Float" width="100" height="100">
+    <img style="float:right" src="https://dummyimage.com/100x140/ffa200/ffffff.jpg&text=Right+Float" width="100" height="140">
+    <p style="margin:0; clear:inline-end; color:white;">This paragraph clears the end side based on direction of element (right)</p>
+  </div>
+</div>
+
+
+<div>
+  <h2>display:grid</h2>
   <div class="grid-container">
     <div>1</div>
     <div>2</div>
@@ -282,6 +321,8 @@ h2 {
     <div>7</div>
     <div>8</div>
   </div>
+</div>
+
 
 <h2>display:grid + grid-template-columns</h2>
   <div class="grid-container grid-container-columns">
