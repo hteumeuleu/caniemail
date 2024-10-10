@@ -114,6 +114,9 @@ stats: {
         }
     },
 	thunderbird: {
+        linux: {
+			"115": "y #2"
+	    },
 		macos: {
 			"78.5": "y"
 		}
@@ -181,7 +184,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Google accounts."
+    "1": "Partial. Not supported with non Google accounts.",
+    "2": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 links: {
     "Can I use: CSS property mix-blend-mode":"https://caniuse.com/mdn-css_properties_mix-blend-mode",

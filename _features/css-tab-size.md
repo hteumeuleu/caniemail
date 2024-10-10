@@ -114,6 +114,11 @@ stats: {
       "2022-07":"u"
     }
   }, 
+  thunderbird: {
+    linux: {
+      "115": "y"
+    }
+  },
   protonmail: {
     desktop-webmail: {
       "2022-07":"u"

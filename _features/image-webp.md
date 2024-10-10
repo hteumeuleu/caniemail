@@ -67,6 +67,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #4"
+    	},
         windows: {
           "2020-02":"y"
         },
@@ -189,6 +192,7 @@ stats: {
 notes_by_num: {
     "1": "Partial: Converts file to jpg.",
     "2": "Partial. Webmail rendering depends on browser support.",
-    "3": "Partial. Does not support animation."
+    "3": "Partial. Does not support animation.",
+    "4": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

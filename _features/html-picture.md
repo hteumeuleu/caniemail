@@ -97,6 +97,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #3"
+    	},
         macos: {
             "60.3":"y"
         }
@@ -188,6 +191,7 @@ stats: {
 notes: ""
 notes_by_num: {
     "1": "`<picture>` and `<source>` tags are replaced by `<u></u>` tags.",
-    "2": "`<picture>` tag is stripped in some cases (like having too few content or no background-color)."
+    "2": "`<picture>` tag is stripped in some cases (like having too few content or no background-color).",
+    "3": "Remote content will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

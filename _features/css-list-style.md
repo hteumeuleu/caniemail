@@ -84,6 +84,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+			"115": "y #5"
+	    },
         macos: {
             "68.7":"y"
         }
@@ -178,7 +181,8 @@ notes_by_num: {
     "1": "`list-style-image` values are not supported. The entire `list-style` property is removed if present.",
     "2": "Only `list-style-type` values are supported.",
     "3": "`list-style-image` values are not supported but the rest of the `list-style` property is kept.",
-    "4": "`url()` is transformed into `proton-url()` for `list-style-type` values, invalidating the entire property."
+    "4": "`url()` is transformed into `proton-url()` for `list-style-type` values, invalidating the entire property.",
+    "5": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 links: {
     "Can I use: list-style":"https://caniuse.com/#feat=mdn-css_properties_list-style",
