@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>order</title>
+</head>
+
+<body>
+  <table role="presentation" style="width: 100%; background-color: #f2f2f2; padding: 10px;">
+    <tr style="display: flex;">
+      <td style="background-color: #4a9d27; color: #ffffff; padding: 10px; font-size: 14px; margin: 5px; flex: 1; order: 1;">
+        Item with order 1 (Expected position: 3rd)
+      </td>
+
+      <td style="background-color: #d68c27; color: #ffffff; padding: 10px; font-size: 14px; margin: 5px; flex: 1; order: 0;">
+        Item with order 0 (Expected position: 2nd)
+      </td>
+
+      <td style="background-color: #d64527; color: #ffffff; padding: 10px; font-size: 14px; margin: 5px; flex: 1; order: -1;">
+        Item with order -1 (Expected position: 1st)
+      </td>
+
+      <td style="background-color: #5e2d86; color: #ffffff; padding: 10px; font-size: 14px; margin: 5px; flex: 1; order: 999;">
+        Item with order 999 (Expected position: 4th)
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
