@@ -4,8 +4,8 @@ description: "Tested with the values `overline`, `underline` and `line-through`.
 category: css
 keywords: underline
 last_test_date: "2019-02-28"
-test_url: "/tests/css-text.html"
-test_results_url: "https: //app.emailonacid.com/app/acidtest/DkqbHs69ek5UnK6uhZ7Uj0n5GVQNTP4Z1FvgXvnKyEoTM/list"
+test_url: "/tests/css-text-decoration.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/3r2uYHjW7RohepVjh05qVkSQ9t7gJVJd6O5ABI8grFvqQ/list"
 stats: {
 	apple-mail: {
 		macos: {

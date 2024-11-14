@@ -4,7 +4,7 @@ description: ""
 category: html
 last_test_date: "2019-02-28"
 test_url: "/tests/css-text.html"
-test_results_url: "https: //app.emailonacid.com/app/acidtest/DkqbHs69ek5UnK6uhZ7Uj0n5GVQNTP4Z1FvgXvnKyEoTM/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/DkqbHs69ek5UnK6uhZ7Uj0n5GVQNTP4Z1FvgXvnKyEoTM/list"
 stats: {
 	apple-mail: {
 		macos: {
