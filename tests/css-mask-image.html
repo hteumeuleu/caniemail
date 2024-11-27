@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<head>
+  <meta charset="UTF-8">
+  <title>mask-image Email Compatibility Test</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px; text-align: center;">
+
+  <h1>mask-image</h1>
+
+  <h2>Mask Image URL</h2>
+  <table role="presentation" style="margin: 0 auto;">
+    <tr>
+      <td style="width: 200px;
+      height: 200px;
+      mask-repeat: no-repeat;
+      mask-size: 100%;
+      background: red;
+      color: black;
+      mask-image: url(https://mdn.github.io/shared-assets/images/examples/mask-star.svg);">
+        Masked
+      </td>
+    </tr>
+  </table>
+
+  <h2>Mask Image Gradient</h2>
+  <table role="presentation" style="margin: 0 auto;">
+    <tr>
+      <td style="width: 200px;
+      height: 200px;
+      mask-repeat: no-repeat;
+      mask-size: 100%;
+      background: red;
+      color: black;
+      mask-image: linear-gradient(rgb(0 0 0 / 100%), transparent);">
+        Masked Gradient
+      </td>
+    </tr>
+  </table>
+
+  <h2>Mask Image Mutiple</h2>
+  <table role="presentation" style="margin: 0 auto;">
+    <tr>
+      <td style="width: 200px;
+      height: 200px;
+      mask-repeat: no-repeat;
+      mask-size: 100%;
+      background: red;
+      color: black;
+      mask-image: url(https://mdn.github.io/shared-assets/images/examples/mask-star.svg),
+      radial-gradient(transparent 50%, black);">
+        Masked Gradient
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
