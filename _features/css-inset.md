@@ -121,10 +121,10 @@ stats: {
 		}
 	},
 	mail-ru: {
-		desktop-webmail: {å
+		desktop-webmail: {
 			"2024-05":"n"
 		}
-},
+	},
 	fastmail: {
 		desktop-webmail: {
 			"2024-05": "u"
