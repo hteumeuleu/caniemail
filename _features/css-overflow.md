@@ -8,12 +8,12 @@ test_results_url: "https://testi.at/proj/p4rru3ez069p15p6ij"
 stats: {
     apple-mail: {
         macos: {
-            "12.4": "a #1"
-            "2024-10":  "a #4"
+            "12.4": "a #1",
+            "2024-10":  "a #4",
         },
         ios: {
-            "12.1": "y"
-            "2024-10":  "a #4"
+            "12.1": "y",
+            "2024-10":  "a #4",
         }
     },
     gmail: {
@@ -80,7 +80,7 @@ stats: {
             "2019-02":  "y"
         },
         ios: {
-            "2019-02":  "y"
+            "2019-02":  "y",
             "2024-10":  "a #4"
         },
         android: {
@@ -193,8 +193,8 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. Cannot scroll through to hidden content.",
-    "2": "Not supported. `overflow` is replaced by `java-script`."
-    "3": "Partial. Support for `overflow-block` & `overflow-inline` depends on browser support."
+    "2": "Not supported. `overflow` is replaced by `java-script`.",
+    "3": "Partial. Support for `overflow-block` & `overflow-inline` depends on browser support.",
     "4": "Partial. `overflow-block` & `overflow-inline` not supported."
 }
 ---
