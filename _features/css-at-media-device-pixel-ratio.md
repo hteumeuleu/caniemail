@@ -87,6 +87,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+			"115": "n"
+		},
         macos: {
             "60.3":"n",
             "78.5":"n"

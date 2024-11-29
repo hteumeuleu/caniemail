@@ -103,6 +103,9 @@ stats: {
     }
   },
   thunderbird: {
+    linux: {
+      "115": "a #3"
+    },
     macos: {
       "2024-01": "u"
     }
@@ -172,6 +175,7 @@ stats: {
 notes_by_num: {
   "1": "`resize` property is stripped from style tag",
   "2": "Does not support `inline` and `block` values",
+  "3": "Resize direction is unsupported, only 'resize: both' is supported for div and p elements, but not for td element"
 }
 links: {
   "Can I use: CSS resize":"https://caniuse.com/?search=resize",

@@ -81,6 +81,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #1"
+    	},
         macos: {
             "102.10.1":"u"
         }
@@ -158,6 +161,9 @@ stats: {
             "2023-09": "u"
         }
     }
+}
+notes_by_num: {
+    "1": "Remote content will not be loaded unless user explicitly allows 'remote content'"
 }
 links: {
     "Can I use: &lt;img&gt;":"https://caniuse.com/?search=img",

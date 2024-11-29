@@ -82,6 +82,9 @@ stats: {
         }
     },
 	thunderbird: {
+		linux: {
+			"115": "u"
+		},
 		macos: {
     		"2023-09": "y"
 		}

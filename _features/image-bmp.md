@@ -61,6 +61,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #2"
+    	},
         windows: {
           "2020-02":"y"
         },
@@ -176,6 +179,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. An image renders but the colours are incorrect."
+    "1": "Buggy. An image renders but the colours are incorrect.",
+    "2": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

@@ -108,6 +108,9 @@ stats: {
 		}
 	},
 	thunderbird: {
+		linux: {
+      		"115": "y #1 #4"
+    	},
 		macos: {
 			"2021-10": "y #1"
 		}
@@ -177,7 +180,8 @@ stats: {
 notes_by_num: {
   "1": "The `loading` attribute is supported, but not confirmed whether it works according to spec.",
   "2": "The `loading` attribute is supported by the email client, but not by the browser engine.",
-  "3": "Not supported. The webmail adds `loading=\"lazy\"` to all images."
+  "3": "Not supported. The webmail adds `loading=\"lazy\"` to all images.",
+  "4": "Remote content will not be loaded unless user explicitly allows 'remote content'"
 }
 links: {
 	"MDN: `loading` attribute on `<img>`": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading",

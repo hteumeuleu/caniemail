@@ -155,7 +155,7 @@ class Compare {
 
 	addEventToDevicesButtons() {
 		const mobilePlatforms = ['mobile-webmail', 'webmail', 'ios', 'android', 'outlook-com'];
-		const desktopPlatforms = ['desktop-app', 'desktop-webmail', 'webmail', 'windows', 'macos', 'windows-mail', 'outlook-com'];
+		const desktopPlatforms = ['desktop-app', 'desktop-webmail', 'webmail', 'windows', 'macos', 'linux', 'windows-mail', 'outlook-com'];
 		let mobileButton = this.panel.querySelector('#compare-mobile-button');
 		let desktopButton = this.panel.querySelector('#compare-desktop-button');
 

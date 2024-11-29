@@ -92,6 +92,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+			"115": "y #9"
+		},
         macos: {
             "60.7":"y",
             "78.5":"y"
@@ -189,7 +192,8 @@ notes_by_num: {
     "5": "Buggy. Elements using a font declared with `@font-face` ignore the font stack and fall back to Times New Roman. Use `mso-generic-font-family` and `mso-font-alt` to control the fallback.",
     "6": "Not supported. Roboto and Google Sans can be used, but only because they're embedded with the webmail's own styles.",
     "7": "Not supported. The `@font-face` declaration is kept but the `src` property is removed.",
-    "8": "Not supported when using a Microsoft email address; outlook, live, hotmail, etc."
+    "8": "Not supported when using a Microsoft email address; outlook, live, hotmail, etc.",
+    "9": "@import not supported. Remote fonts will not be shown unless user explicitly allows 'remote content'"
 }
 links: {
     "Can I use: @font-face Web fonts":"https://www.caniuse.com/#feat=fontface",

@@ -111,6 +111,9 @@ stats: {
     }
   },
   thunderbird: {
+    linux: {
+      "115": "y"
+    },
     macos: {
       "2021-01": "y"
     }
