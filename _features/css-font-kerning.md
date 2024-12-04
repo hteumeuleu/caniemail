@@ -112,6 +112,11 @@ stats: {
       "2024-03": "u"
     }
   },
+  thunderbird: {
+    linux: {
+			"115": "u"
+		}
+	},
 }
 
 links: {

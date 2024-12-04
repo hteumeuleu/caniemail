@@ -84,6 +84,9 @@ stats: {
         }
     },
     thunderbird: {
+        linux: {
+      		"115": "y #1"
+    	},
         macos: {
             "78.10":"y"
         }
@@ -171,6 +174,9 @@ stats: {
 			"2022-11":"y"
 		}
 	}
+}
+notes_by_num: {
+    "1": "Remote content will not be loaded unless user explicitly allows 'remote content'"
 }
 links: {
     "HTML: image maps":"https://html.spec.whatwg.org/multipage/image-maps.html#image-maps",

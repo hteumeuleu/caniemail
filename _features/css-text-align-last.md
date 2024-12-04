@@ -69,6 +69,11 @@ stats: {
 			"2024-03": "n"
 		}
 	},
+	thunderbird: {
+    	linux: {
+      		"115": "y"
+    	},
+  	},
 	aol: {
 		desktop-webmail: {
 			"2022-08": "n"

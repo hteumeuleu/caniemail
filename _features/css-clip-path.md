@@ -115,6 +115,9 @@ stats: {
 		}
 	},
 	thunderbird: {
+		linux: {
+			"115": "y #4"
+		},
 		macos: {
 			"2021-02": "y"
 		}
@@ -185,6 +188,7 @@ notes_by_num: {
 	"1": "Partial. `path()` is not supported.",
 	"2": "Partial. [Embedded SVG](/features/html-svg/) is not supported. Referencing an embedded SVG's `<clipPath>` with `url()` does not work.",
 	"3": "Partial. Referencing an external SVG's `<clipPath>` with `url()` does not work.",
+	"4": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 links: {
 	"MDN: clip-path":"https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path",

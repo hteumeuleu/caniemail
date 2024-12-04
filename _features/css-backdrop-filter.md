@@ -110,6 +110,9 @@ stats: {
     }
   },
   thunderbird: {
+    linux: {
+			"115": "y #2"
+		},
     macos: {
       "2024-01": "u"
     }
@@ -178,6 +181,7 @@ stats: {
 }
 notes_by_num: {
   "1": "Works with prefix `-webkit`",
+  "2": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 links: {
   "Can I use: CSS backdrop-filter":"https://caniuse.com/?search=backdrop-filter",

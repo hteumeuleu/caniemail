@@ -87,6 +87,9 @@ stats: {
     }
   },
   thunderbird: {
+    linux: {
+      "115": "y #1"
+    },
     macos: {
       "78.14":"u"
     }
@@ -174,6 +177,9 @@ stats: {
           "2022-09":"y"
       }
   }
+}
+notes_by_num: {
+    "1": "Emphasis default position is above"
 }
 links: {
     "MDN: text-emphasis-position":"https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-position"

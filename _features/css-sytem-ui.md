@@ -104,6 +104,9 @@ stats: {
         }
     },
 	thunderbird: {
+		linux: {
+            "115": "u #3"
+        },
 		macos: {
 			"102.6":"a #1"
 		}
@@ -152,7 +155,8 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. Supports `system-ui` only.",
-    "2": "Partial. Depends on browser support. `system-ui` works in all browsers. `ui-serif`, `ui-sans-serif`, `ui-rounded` and `ui-monospace` are supported on all browsers on iOS and Safari on MacOS."
+    "2": "Partial. Depends on browser support. `system-ui` works in all browsers. `ui-serif`, `ui-sans-serif`, `ui-rounded` and `ui-monospace` are supported on all browsers on iOS and Safari on MacOS.",
+	"3": "Test results unclear, ui-serif rendered as sans serif, ui-rounded and ui-monospace unsupported"
 }
 links: {
 	"Can I use: system fonts":"https://caniuse.com/extended-system-fonts",

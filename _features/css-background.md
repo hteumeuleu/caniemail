@@ -117,6 +117,9 @@ stats: {
         }
     },
 	thunderbird: {
+		linux: {
+			"115": "y #8"
+		},
 		macos: {
 			"60.5.0": "y"
 		}
@@ -190,6 +193,7 @@ notes_by_num: {
     "4": "Partial. Images URL must be between quotes.",
     "5": "Partial. Does not support multiple values. The entire property is removed if so.",
     "6": "Partial. Does not support the `/ value` shorthand for `background-size`.",
-	"7": "Partial and buggy. Removes the entire `style` attribute or `<style>` tag when a `url()` function with a valid image URL is present. See [Gmail rolling out changes that strip CSS with background images](https://freshinbox.com/blog/gmail-rolling-out-changes-that-strip-background-image-css/) and [Gmail and background images](https://parcel.io/blog/gmail-and-background-images)."
+	"7": "Partial and buggy. Removes the entire `style` attribute or `<style>` tag when a `url()` function with a valid image URL is present. See [Gmail rolling out changes that strip CSS with background images](https://freshinbox.com/blog/gmail-rolling-out-changes-that-strip-background-image-css/) and [Gmail and background images](https://parcel.io/blog/gmail-and-background-images).",
+	"8": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 ---

@@ -121,6 +121,9 @@ stats: {
         }
     },
 	thunderbird: {
+		linux: {
+			"115": "y #7"
+		},
 		macos: {
 			"60.5.0": "y"
 		}
@@ -203,6 +206,7 @@ notes_by_num: {
     "3": "Partial. Does not support multiple values. The comma between two values is removed.",
     "4": "Partial. Images URL must be between quotes.",
 	"5": "Background images can be used in VML. See [backgrounds.cm](https://backgrounds.cm/) and [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element).",
-	"6": "Partial and buggy. Removes the entire `style` attribute or `<style>` tag when a `url()` function with a valid image URL is present. See [Gmail rolling out changes that strip CSS with background images](https://freshinbox.com/blog/gmail-rolling-out-changes-that-strip-background-image-css/) and [Gmail and background images](https://parcel.io/blog/gmail-and-background-images)."
+	"6": "Partial and buggy. Removes the entire `style` attribute or `<style>` tag when a `url()` function with a valid image URL is present. See [Gmail rolling out changes that strip CSS with background images](https://freshinbox.com/blog/gmail-rolling-out-changes-that-strip-background-image-css/) and [Gmail and background images](https://parcel.io/blog/gmail-and-background-images).",
+	"7": "Remote images will not be loaded unless user explicitly allows 'remote content'"
 }
 ---

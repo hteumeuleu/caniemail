@@ -30,6 +30,7 @@ platform:
   android: "Android"
   windows: "Windows"
   macos: "macOS"
+  linux: "Linux"
   windows-mail: "Windows Mail"
   outlook-com: "Outlook.com"
 support:

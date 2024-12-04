@@ -96,6 +96,9 @@ stats: {
 		}
 	},
 	thunderbird: {
+		linux: {
+			"115": "y #1"
+		},
 		macos: {
 			"60.5": "y"
 		}
@@ -172,5 +175,8 @@ stats: {
 			"2022-06":"y"
 		}
 	}
+}
+notes_by_num: {
+	"1": "Remote images will not be shown unless user explicitly allows 'remote content'"
 }
 ---
