@@ -2,6 +2,7 @@
 title: "inset"
 description: "Shorthand that corresponds to the `top`, `right`, `bottom`, and/or `left` properties"
 category: css
+keywords: inset-block, inset-inline, inset-inline-start, inset-inline-end, inset-block-start, inset-block-end
 last_test_date: "2024-05-29"
 test_url: "/tests/css-inset.html"
 test_results_url: "https://testi.at/proj/rlpdia3k18jytjx8c2"
