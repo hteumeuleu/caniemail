@@ -226,6 +226,6 @@ notes_by_num: {
     "1": "Partial. Not supported inside the `<body>`.",
     "2": "Partial. Not supported with non Google accounts.",
     "3": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element.",
-    "4": "Buggy. `<style>` elements need to be declared before their rules are used.",
+    "4": "Buggy. `<style>` elements need to be declared before their rules are used."
 }
 ---
