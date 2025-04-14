@@ -5,7 +5,6 @@ category: css
 last_test_date: "2023-02-27"
 test_url: "/tests/css-scroll-snap.html"
 test_results_url: "https://testi.at/proj/O5rtNMDHo58i8YirVtvyUvG"
-tags: performance
 stats: {
 	apple-mail: {
 		macos: {
