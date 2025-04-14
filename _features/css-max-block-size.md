@@ -6,6 +6,7 @@ keywords: max, block, size
 last_test_date: "2022-09-01"
 test_url: "/tests/css-max-block-size.html"
 test_results_url: "https://testi.at/proj/1y7SkPH3W7FPg0HwxS9lEiY"
+tags: i18n
 stats: {
   apple-mail: {
     macos: {

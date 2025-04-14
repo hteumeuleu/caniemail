@@ -6,6 +6,7 @@ keywords: max, inline, size
 last_test_date: "2024-05-31"
 test_url: "/tests/css-max-inline-size.html"
 test_results_url: "https://testi.at/proj/8r8g0dn81y8jc72z09"
+tags: i18n
 stats: {
   apple-mail: {
     macos: {
