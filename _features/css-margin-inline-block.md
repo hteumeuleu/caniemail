@@ -39,14 +39,14 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2022-07":"u",
-            "2022-07":"u"
+            "2022-07":"y",
+            "2021-03":"y"
         },
         ios: {
-            "2022-07":"u"
+            "2022-07":"y"
         },
         android: {
-            "2022-07":"u"
+            "2022-07":"y"
         }
     },
     outlook: {
@@ -82,18 +82,18 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2022-07":"u"
+            "2022-07":"y"
         },
         ios: {
-            "2022-07":"u"
+            "2022-07":"y"
         },
         android: {
-            "2022-07":"u"
+            "2022-07":"y"
         }
     },
     thunderbird: {
         macos: {
-            "60.3":"u"
+            "60.3":"y"
         }
     },
     aol: {
@@ -120,18 +120,18 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2022-07":"u"
+            "2022-07":"y"
         },
         ios: {
-            "2022-07":"u"
+            "2022-07":"y"
         },
         android: {
-            "2022-07":"u"
+            "2022-07":"y"
         }
     },
     hey: {
         desktop-webmail: {
-            "2022-07":"u"
+            "2022-07":"y"
         }
     },
     mail-ru: {
@@ -141,12 +141,12 @@ stats: {
     },
     fastmail: {
         desktop-webmail: {
-            "2022-07": "u"
+            "2022-07": "y"
         }
     },
     laposte: {
         desktop-webmail: {
-            "2022-07": "u"
+            "2022-07": "y"
         }
     },
     gmx: {
