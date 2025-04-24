@@ -4,7 +4,7 @@ description: "An HTML element to contain style information, in CSS, for a docume
 category: html
 last_test_date: "2023-07-27"
 test_url: "/tests/html-style.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/od5IYQtx8yIbIUbeRyQXnP0yzFKEm2E9CKa3FU4BcEXFv/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/CAMb612bxbVwRWPhM4wZKNhhdcdkNxj0Rj6dtRRw6LQUO/list"
 stats: {
     apple-mail: {
         macos: {
@@ -193,7 +193,8 @@ stats: {
 	},
 	web-de: {
 		desktop-webmail: {
-			"2022-11": "y"
+			"2022-11": "y",
+			"2025-04": "n",
 		},
 		ios: {
 			"2022-11":"y"
