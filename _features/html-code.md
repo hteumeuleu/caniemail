@@ -5,6 +5,7 @@ category: html
 last_test_date: "2023-04-25"
 test_url: "/tests/html-code.html"
 test_results_url: "https://testi.at/proj/VpMij9qijz7SbpecQE7ubxbhQl"
+tags: accessibility
 stats: {
     apple-mail: {
         macos: {

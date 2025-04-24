@@ -6,6 +6,7 @@ keywords: inset-block, inset-inline, inset-inline-start, inset-inline-end, inset
 last_test_date: "2024-05-29"
 test_url: "/tests/css-inset.html"
 test_results_url: "https://testi.at/proj/rlpdia3k18jytjx8c2"
+tags: i18n
 stats: {
 	apple-mail: {
 	  macos: {

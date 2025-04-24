@@ -6,6 +6,7 @@ keywords: min, block, size
 last_test_date: "2024-05-31"
 test_url: "/tests/css-min-block-size.html"
 test_results_url: "https://testi.at/proj/73yg05zgtpk3cez6ua5"
+tags: i18n
 stats: {
   apple-mail: {
     macos: {

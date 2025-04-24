@@ -6,6 +6,7 @@ keywords: vertical orientation
 last_test_date: "2023-12-08"
 test_url: "/tests/css-text-orientation.html"
 test_results_url: "https://testi.at/proj/6vppidbfjxnczrxh4"
+tags: i18n
 stats: {
   apple-mail: {
     macos: {
