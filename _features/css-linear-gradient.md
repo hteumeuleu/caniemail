@@ -23,7 +23,8 @@ stats: {
             "2021-12":"y"
         },
         android: {
-            "2021-12":"y"
+            "2021-12":"y",
+            "2025-04":"a #3",
         },
         mobile-webmail: {
             "2021-12":"y"
@@ -185,7 +186,8 @@ stats: {
 }
 notes_by_num: {
     "1": "Gradients can be created in VML using `type=\"gradient\"` on a `<v:fill>`. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element#gradient-fill).",
-    "2": "Partial. Not supported with Hotmail/Outlook accounts."
+    "2": "Partial. Not supported with Hotmail/Outlook accounts.",
+    "3": "Buggy. Does not work inline in the `background-image` property. (See [email-bugs#135](https://github.com/hteumeuleu/email-bugs/issues/135))"
 }
 links: {
     "Can I use: CSS Gradients":"https://caniuse.com/css-gradients",
