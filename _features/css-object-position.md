@@ -55,10 +55,12 @@ stats: {
         },
         macos: {
             "2016":"n",
-            "2019":"y"
+            "2019":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2021-07":"y"
+            "2021-07":"y",
+            "2024-01":"y",
         },
         ios: {
             "2021-07":"y"
@@ -173,7 +175,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: object-position":"https://caniuse.com/object-position",

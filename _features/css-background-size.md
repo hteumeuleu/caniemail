@@ -35,10 +35,12 @@ stats: {
             "2021-03":"n"
         },
         ios: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"n",
         },
         android: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"n",
         }
     },
 	outlook: {
@@ -53,7 +55,8 @@ stats: {
 			"2019-02": "n"
 		},
 		macos: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "16.80": "y"
 		},
 		outlook-com: {
 			"2019-02": "y"
@@ -172,7 +175,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts. But it can be used in the `background` shorthand property instead.",
+    "1": "Partial. Not supported with non Google accounts. But it can be used in the `background` shorthand property instead.",
     "2": "Partial. Does not support multiple values. The comma between two values is removed.",
     "3": "Background images size can be used in VML with the `size` attribute. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/size-attribute--fill--vml)."
 }

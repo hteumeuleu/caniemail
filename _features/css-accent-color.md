@@ -3,7 +3,7 @@ title: "accent-color"
 description: ""
 category: css
 keywords: accent,color
-last_test_date: "2022-07-21"
+last_test_date: "2023-12-19"
 test_url: "/tests/css-accent-color.html"
 test_results_url: "https://testi.at/proj/LAzSmlkimAnFmnrtPjPuPjpT1rO"
 stats: {
@@ -62,7 +62,8 @@ stats: {
       "2022-07": "n"
     },
     macos: {
-      "2022-07": "n"
+      "2022-07": "n",
+      "16.80": "n",
     },
     outlook-com: {
       "2022-07": "n"

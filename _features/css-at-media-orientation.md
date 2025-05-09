@@ -15,7 +15,8 @@ stats: {
             "10.3":"n",
             "12":"y",
             "13":"y",
-            "15":"y"
+            "15":"y",
+      		"18.3.2": "a #2",
         }
     },
     gmail: {
@@ -23,7 +24,8 @@ stats: {
             "2019-08":"y"
         },
         ios: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2025-04":"n",
         },
         android: {
             "2019-08":"y"
@@ -35,13 +37,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-08":"y #1",
-            "2021-03":"y"
+            "2021-03":"y",
+            "2024-04":"y",
         },
         ios: {
-            "2019-08":"n"
+            "2019-08":"n",
+            "2024-04":"y",
         },
         android: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"y",
         }
     },
     outlook: {
@@ -58,7 +63,8 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80": "y",
         },
         outlook-com: {
             "2019-08":"y"
@@ -178,7 +184,8 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Buggy. The first rule inside a media query is not prefixed."
+    "1": "Buggy. The first rule inside a media query is not prefixed.",
+    "2": "Partial. `orientation:portrait` is not supported.",
 }
 links: {
     "Can I use: CSS3 Media Queries":"https://caniuse.com/#feat=css-mediaqueries",

@@ -9,19 +9,10 @@ test_results_url: "https://testi.at/proj/zxOsWrYsJqztvWC7JYF8xrUgn"
 stats: {
   apple-mail: {
     macos: {
-      "16": "n",
-      "17": "n",
-      "18": "n",
-      "19": "n",
-      "20": "n",
-      "21": "n"
+      "16.0": "a #1",
     },
     ios: {
-      "11": "n",
-      "12": "n",
-      "13": "n",
-      "14": "n",
-      "15": "n"
+      "18.3.2": "a #1",
     }
   },
   gmail: {
@@ -62,10 +53,12 @@ stats: {
       "2022-08": "n"
     },
     macos: {
-      "2022-08": "y"
+      "2022-08": "y",
+      "16.80": "n",
     },
     outlook-com: {
-      "2022-08": "n"
+      "2022-08": "n",
+      "2024-01": "n",
     },
     ios: {
       "2022-08": "n"
@@ -139,7 +132,9 @@ stats: {
     }
   }
 }
- 
+notes_by_num: {
+    "1": "Buggy. Requires `word-break:normal` to reset Apple Mail default style (See [issue#394](https://github.com/hteumeuleu/caniemail/issues/394).)"
+}
 links: {
   "Can I use: CSS property: Overflow-wrap":"https://caniuse.com/wordwrap",
   "MDN: overflow-wrap":"https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"

@@ -2,6 +2,7 @@
 title: ":active"
 category: css
 keywords: pseudo-class
+tags: accessibility
 last_test_date: "2019-10-28"
 test_url: "/tests/css-selectors-pseudo-classes.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkwNJDd7B4JUpo23Nz6qANcSlRUA/list"
@@ -52,10 +53,12 @@ stats: {
 			"2019-10": "n"
 		},
 		macos: {
-			"2019-02": "y"
+			"2019-02": "y",
+			"16.80": "a #1",
 		},
 		outlook-com: {
-			"2019-10": "a #1"
+			"2019-10": "a #1",
+			"2024-01": "a #1",
 		},
 		ios: {
 			"2019-10": "n"

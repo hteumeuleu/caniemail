@@ -2,6 +2,7 @@
 title: "text-underline-offset"
 category: css
 keywords: underline
+tags: i18n
 last_test_date: "2023-01-16"
 test_url: "/tests/css-text-decoration.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/Zo8XyakhcacSbta8lYvU5vSTAWnaTLi7XIcWtQ7B218Cj/list"
@@ -57,10 +58,12 @@ stats: {
         },
         macos: {
             "2016":"n",
-            "16.46":"y"
+            "16.46":"y",
+            "16.80":"n",
         },
         outlook-com: {
-            "2021-01":"n"
+            "2021-01":"n",
+            "2024-01":"n",
         },
         ios: {
             "2021-01":"n",

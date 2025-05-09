@@ -52,10 +52,12 @@ stats: {
 			"2019-02":"n"
 		},
 		macos: {
-			"2019-02":"y #2"
+			"2019-02":"y #2",
+			"16.80":"y",
 		},
 		outlook-com: {
-			"2019-02":"y #2"
+			"2019-02":"y #2",
+			"2024-01":"y",
 		},
 		ios: {
 			"2019-02":"y #2"
@@ -170,7 +172,7 @@ stats: {
 		}
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Partial. `pre` value is not supported."
 }
 links: {

@@ -35,10 +35,12 @@ stats: {
             "2021-03":"n"
         },
         ios: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2023-12":"n",
         },
         android: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2023-12":"n",
         }
     },
 	outlook: {
@@ -53,10 +55,12 @@ stats: {
 			"2019-02": "y"
 		},
 		macos: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "16.80": "n",
 		},
 		outlook-com: {
-			"2019-02": "n"
+			"2019-02": "n",
+            "2023-12": "n",
 		},
 		ios: {
 			"2019-02": "n"
@@ -169,7 +173,12 @@ stats: {
 		android: {
 			"2022-06":"n"
 		}
-	}
+	},
+    wp-pl: {
+        desktop-webmail: {
+            "2023-12": "n"
+        }
+    }
 }
 links: {
     "MDN: @import":"https://developer.mozilla.org/en-US/docs/Web/CSS/@import"

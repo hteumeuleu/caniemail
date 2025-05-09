@@ -51,10 +51,12 @@ stats: {
 			"2022-12": "n"
 		},
 		macos: {
-			"2022-12": "y"
+			"2022-12": "y",
+			"16.80": "y",
 		},
 		outlook-com: {
-			"2022-12": "y"
+			"2022-12": "y",
+			"2023-12": "y",
 		},
 		ios: {
 			"2022-12": "a #1"
@@ -141,6 +143,6 @@ stats: {
 notes_by_num: {
     "1": "Partial. Supports `min-content` and `fit-content` only.",
     "2": "Buggy. `width: min-content` acts as if `word-break: break-all` had been set on the element.",
-    "3": "Partial. Not supported with non Gmail accounts."
+    "3": "Partial. Not supported with non Google accounts."
 }
 ---

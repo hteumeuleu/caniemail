@@ -54,10 +54,12 @@ stats: {
             "2022-05":"n"
         },
         macos: {
-            "16.62":"y"
+            "16.62":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2022-05":"y"
+            "2022-05":"y",
+            "2024-01":"y",
         },
         ios: {
             "2022-05":"y"
@@ -173,7 +175,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with Non Gmail Accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: writing-mode":"https://caniuse.com/css-writing-mode",

@@ -41,10 +41,12 @@ stats: {
             "2020-02":"y"
         },
         macos: {
-            "2016":"y"
+            "2016":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2020-02":"n"
+            "2020-02":"n",
+            "2024-01":"n",
         },
         ios: {
             "2020-02":"y"
@@ -175,6 +177,6 @@ stats: {
 }
 notes_by_num: {
     "1": "Buggy. An image renders but the colours are incorrect.",
-    "2": "Partial. Does not render with non Gmail accounts.",
+    "2": "Partial. Does not render with non Google accounts.",
 }
 ---

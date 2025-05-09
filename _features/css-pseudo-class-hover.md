@@ -2,6 +2,7 @@
 title: ":hover"
 category: css
 keywords: rollover, pseudo-class
+tags: accessibility
 last_test_date: "2019-10-23"
 test_url: "/tests/css-selectors-pseudo-classes.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkwNJDd7B4JUpo23Nz6qANcSlRUA/list"
@@ -53,10 +54,12 @@ stats: {
 			"2019-10": "n"
 		},
 		macos: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "16.80":"a #2",
 		},
 		outlook-com: {
-			"2019-10": "a #2"
+			"2019-10": "a #2",
+            "2024-01":"a #2",
 		},
 		ios: {
 			"2019-10": "n"
@@ -172,7 +175,7 @@ stats: {
     }
 }
 notes_by_num: {
-	"1": "Partial. Not supported with non Gmail accounts.",
+	"1": "Partial. Not supported with non Google accounts.",
     "2": "Partial. Only supported on type selectors."
 }
 links: {

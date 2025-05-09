@@ -37,13 +37,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2020-12":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n"
         },
         ios: {
-            "2020-12":"y"
+            "2020-12":"y",
+            "2024-04":"n"
         },
         android: {
-            "2020-12":"y"
+            "2020-12":"y",
+            "2024-04":"n"
         }
     },
 	outlook: {
@@ -58,10 +61,12 @@ stats: {
 			"2020-12": "n"
 		},
 		macos: {
-			"2020-12": "y"
+			"2020-12": "y",
+			"16.80": "y",
 		},
 		outlook-com: {
-			"2020-12": "y"
+			"2020-12": "y",
+			"2024-01": "y",
 		},
 		ios: {
 			"2020-12": "y"
@@ -176,7 +181,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with Non Gmail Accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: CSS property mix-blend-mode":"https://caniuse.com/mdn-css_properties_mix-blend-mode",

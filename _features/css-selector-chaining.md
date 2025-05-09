@@ -31,13 +31,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-10":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"y",
         },
         ios: {
-            "2019-10":"y"
+            "2019-10":"y",
+            "2024-04":"y",
         },
         android: {
-            "2019-10":"y"
+            "2019-10":"y",
+            "2024-04":"y",
         }
     },
     outlook: {
@@ -54,10 +57,12 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80": "y",
         },
         outlook-com: {
-            "2019-10":"n #4"
+            "2019-10":"n #4",
+            "2024-01":"n #4",
         },
         ios: {
             "2019-10":"y"
@@ -172,7 +177,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element.",
     "3": "Buggy. Styles will be applied to the first selector of the chain.",
     "4": "Buggy. Only the first selector of the chain is prefixed in the styles, but all classes are prefixed in the HTML.",

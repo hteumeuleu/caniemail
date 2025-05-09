@@ -53,10 +53,12 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2021-05":"y"
+            "2021-05":"y",
+            "2023-12":"y",
         },
         ios: {
             "2021-05":"y"
@@ -67,7 +69,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"y"
+            "6.0":"y",
+            "6.2.01.1": "a #2",
         }
     },
     sfr: {
@@ -171,7 +174,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. `left` and `top` are not supported."
+    "1": "Partial. `left` and `top` are not supported.",
+    "2": "Partial. Percentages values are not supported.",
 }
 links: {
     "Can I use: CSS property: z-index":"https://caniuse.com/mdn-css_properties_left",

@@ -52,10 +52,12 @@ stats: {
 			"2019-02":"n"
 		},
 		macos: {
-			"2019-02":"y"
+			"2019-02":"y",
+			"16.80":"y",
 		},
 		outlook-com: {
-			"2019-02":"y"
+			"2019-02":"y",
+			"2024-01":"y",
 		},
 		ios: {
 			"2019-02":"y"
@@ -170,7 +172,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Not supported. `overflow` is replaced by `java-script`."
 }
 links: {

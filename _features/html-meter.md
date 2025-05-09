@@ -31,13 +31,16 @@ stats: {
 	orange: {
 		desktop-webmail: {
 			"2019-08":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
 		},
 		ios: {
-			"2019-08":"y"
+			"2019-08":"y",
+            "2024-04":"n",
 		},
 		android: {
-			"2020-01":"y"
+			"2020-01":"y",
+            "2024-04":"n",
 		}
 	},
 	outlook: {
@@ -52,10 +55,12 @@ stats: {
 			"2019-02": "n"
 		},
 		macos: {
-			"2019-02": "y"
+			"2019-02": "y",
+			"16.80": "y",
 		},
 		outlook-com: {
-			"2019-02": "y"
+			"2019-02": "y",
+			"2024-01": "y",
 		},
 		ios: {
 			"2019-02": "y"
@@ -170,6 +175,6 @@ stats: {
 	}
 }
 notes_by_num: {
-	"1": "Partial. Supported with Non Gmail Accounts only."
+	"1": "Partial. Supported with non Google accounts only."
 }
 ---

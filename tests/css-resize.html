@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>resize</title>
+  <style>
+    h1 { margin-bottom: 40px; }
+    h2 { font-family: monospace; }
+    p { 
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="resize:both; width:200px; height:100px; border:1px solid black; overflow: scroll;">
+    resize: both; on div element
+  </div>
+  <p style="resize:both; width:200px; height:100px; border: 1px solid black; overflow: scroll; font-size:16px;">
+    resize: both; on p element
+  </p>
+
+  <table role="presentation">
+    <tr>
+      <td style="resize:both; width:200px; height:100px; border: 1px solid black; overflow: scroll; font-size:16px; margin-bottom:20px;">
+        resize: both; on td
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td style="resize:horizontal; width:200px; height:100px; border: 1px solid black; overflow: scroll; font-size:16px;">
+        resize: horizontal; on td
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td style="resize:vertical; width:200px; height:100px; border: 1px solid black; overflow: scroll; font-size:16px;">
+        resize: vertical; on td
+      </td>
+    </tr>
+  </table>
+
+  <table style="writing-mode: vertical-rl;">
+    <tr>
+      <td style="resize:block; width:200px; height:100px; border: 1px solid black; overflow: scroll; font-size:16px;">
+        resize: block; on td with vertical writing mode
+      </td>
+    </tr>
+  </table>
+
+  <table style="writing-mode: vertical-rl;">
+    <tr>
+      <td style="resize:inline; width:200px; height:100px; border: 1px solid black; overflow: scroll; font-size:16px;">
+        resize: inline; on td with vertical writing mode
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

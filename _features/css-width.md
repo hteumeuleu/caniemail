@@ -3,7 +3,7 @@ title: "width property"
 category: css
 last_test_date: "2019-09-27"
 test_url: "/tests/css-width-height.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/UhsQmS14DHKFfotKEcCTnWaoAiS24FJMiApZ1OtmHR7vs/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/N3bgM8CXDd1TNWZzO65F0RkiJwugaAuNYr8mvcYt1C3Da/list"
 stats: {
     apple-mail: {
         macos: {
@@ -42,21 +42,23 @@ stats: {
     outlook: {
         windows: {
             "2003":"y",
-            "2007":"a #1 #2",
-            "2010":"a #1 #2",
-            "2013":"a #1 #2",
-            "2016":"a #1 #2",
-            "2019":"a #1 #2"
+            "2007":"a #1",
+            "2010":"a #1",
+            "2013":"a #1",
+            "2016":"a #1",
+            "2019":"a #1"
         },
         windows-mail: {
             "2019-09":"y"
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2019-09":"y"
+            "2019-09":"y",
+            "2024-01":"y",
         },
         ios: {
             "2019-09":"y"
@@ -136,7 +138,7 @@ stats: {
     },
     laposte: {
         desktop-webmail: {
-            "2021-08": "a #3"
+            "2021-08": "a #2"
         }
     },
     gmx: {
@@ -171,8 +173,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Buggy. Percentage width on `<img>` elements are based on the physical file's width, not on the parent element's width.",
-    "2": "Partial. Not supported on `<body>`, `<span>`, `<div>` or `<p>` elements.",
-    "3": "Buggy. The webmail has a generic style that sets `table { width:inherit; }`."
+    "1": "Partial. Not supported on `<body>`, `<span>`, `<div>`, `<p>` or `<img>` elements.",
+    "2": "Buggy. The webmail has a generic style that sets `table { width:inherit; }`."
 }
 ---

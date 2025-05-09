@@ -30,13 +30,16 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2021-12":"a #1"
+            "2021-12":"a #1",
+            "2024-04":"n #1",
         },
         ios: {
-            "2021-12":"n"
+            "2021-12":"n",
+            "2024-04":"n",
         },
         android: {
-            "2021-12":"n"
+            "2021-12":"n",
+            "2024-04":"n",
         }
     },
     outlook: {
@@ -52,10 +55,12 @@ stats: {
             "2021-12":"n"
         },
         macos: {
-            "16.56":"y"
+            "16.56":"y",
+            "16.80":"a #1",
         },
         outlook-com: {
-            "2021-12":"a #1"
+            "2021-12":"a #1",
+            "2024-01":"a #1",
         },
         ios: {
             "2021-12":"a #1 #2"
@@ -170,7 +175,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Buggy. The element is removed but URLs are still correctly computed in links `href` attribute.",
+    "1": "Buggy. The element is removed but URLs are turned into links with `href` attribute.",
     "2": "Buggy. URLs are computed based on the first `<base>` element found in the `<body>`.",
     "3": "Buggy. URLs are computed based on the last `<base>` element found in the `<body>`.",
     "4": "Buggy. Not supported for local anchor links."

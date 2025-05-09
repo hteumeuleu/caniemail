@@ -4,13 +4,18 @@ description: "This is the description of the `<picture>` element."
 category: html
 keywords: picture, responsive image
 tags: accessibility performance
-last_test_date: "2019-05-29"
+last_test_date: "2024-04-15"
 test_url: "/tests/html-picture.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/AQoLHTLaC6F6JcMrkx38M7oyiJlAlXeRnJgkK06bSJiBR/list"
+test_results_url: "https://testi.at/proj/vr32cxxk1exntxrjfdp"
 stats: {
     apple-mail: {
         macos: {
-            "10.3":"y"
+            "10.3":"y",
+            "10.15":"a #2",
+            "11.7":"a #2",
+            "12.7":"a #2",
+            "13.6":"a #2",
+            "14.4":"a #2",
         },
         ios: {
             "10.3":"y",
@@ -34,13 +39,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-05":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2019-05":"y"
+            "2019-05":"y",
+            "2024-04":"n",
         },
         android: {
-            "2019-05":"y"
+            "2019-05":"y",
+            "2024-04":"n",
         }
     },
     outlook: {
@@ -58,10 +66,12 @@ stats: {
         macos: {
             "2011":"y",
             "2016":"y",
-            "16.62":"n"
+            "16.62":"n",
+            "16.80":"n",
         },
         outlook-com: {
-            "2019-05":"n"
+            "2019-05":"n",
+            "2024-01":"n",
         },
         ios: {
             "2019-05":"n"
@@ -177,6 +187,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-    "1": "`<picture>` and `<source>` tags are replaced by `<u></u>` tags."
+    "1": "`<picture>` and `<source>` tags are replaced by `<u></u>` tags.",
+    "2": "`<picture>` tag is stripped in some cases (like having too few content or no background-color)."
 }
 ---

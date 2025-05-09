@@ -2,9 +2,9 @@
 title: "filter"
 description: "Tests with values `blur`, `brightness`, `grayscale`, `hue-rotate`, `invert`, `opacity`, `saturate`, `sepia` and `shadow`."
 category: css
-last_test_date: "2019-02-28"
+last_test_date: "2024-01-03"
 test_url: "/tests/css-visual-effects.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/DhTRmGsVH6uobU4pHD3CasJywfBL4HnEjA1LOF8f9ctso/list"
+test_results_url: "https://testi.at/proj/73yrcloa1z681dkzu6"
 stats: {
 	apple-mail: {
 		macos: {
@@ -31,13 +31,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-08":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"n",
         },
         android: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"n",
         }
     },
 	outlook: {
@@ -52,7 +55,8 @@ stats: {
 			"2019-02": "n"
 		},
 		macos: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "16.80": "n",
 		},
 		outlook-com: {
 			"2019-02": "n"
@@ -125,7 +129,7 @@ stats: {
     },
     mail-ru: {
         desktop-webmail: {
-            "2020-10":"y"
+            "2024-01":"a #1"
         }
     },
 	fastmail: {
@@ -168,5 +172,12 @@ stats: {
             "2022-06":"y"
         }
     }
+}
+notes_by_num: {
+    "1": "Partial. Multiple values don't work.",
+}
+links: {
+    "Can I use: filter":"https://caniuse.com/?search=filter",
+    "MDN: filter":"https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
 }
 ---

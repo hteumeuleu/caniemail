@@ -55,10 +55,12 @@ stats: {
         },
         macos: {
             "2011":"n",
-            "2016":"n"
+            "2016":"n",
+            "16.80":"n",
         },
         outlook-com: {
-            "2021-05":"n"
+            "2021-05":"n",
+            "2023-12":"n",
         },
         ios: {
             "2021-05":"n"
@@ -173,7 +175,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with Non Gmail Accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: CSS math functions min(), max() and clamp()":"https://caniuse.com/css-math-functions",

@@ -35,13 +35,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2020-04":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2020-04":"n #3"
+            "2020-04":"n #3",
+            "2024-04":"n",
         },
         android: {
-            "2020-04":"y"
+            "2020-04":"y",
+            "2024-04":"n",
         }
     },
     outlook: {
@@ -57,11 +60,13 @@ stats: {
         },
         macos: {
             "2016":"y #1",
-            "2019":"n"
+            "2019":"n",
+            "16.80":"n",
         },
         outlook-com: {
             "2020-04":"n",
-            "2021-05":"n #4"
+            "2021-05":"n #4",
+            "2024-01":"n #4",
         },
         ios: {
             "2020-04":"n",
@@ -190,5 +195,10 @@ notes_by_num: {
     "4": "The `<audio>` element is supported, but the video can not play due to a strict Content Security Policy.",
     "5": "Not supported. The `<audio>` element and all its content is removed.",
     "6": "Not supported. The `src` attribute is replaced by `data-src`."
+}
+links: {
+    "Can I use: audio":"https://caniuse.com/audio",
+    "MDN: The Embed Audio element":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio",
+	"Podnews: How to email someone your podcast: the AUDIO tag in email": "https://podnews.net/article/html5-audio-tag-in-email"
 }
 ---

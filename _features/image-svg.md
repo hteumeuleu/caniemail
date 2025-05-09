@@ -21,7 +21,8 @@ stats: {
     gmail: {
         desktop-webmail: {
             "2020-02":"n",
-            "2023-01":"n"
+            "2023-01":"n",
+			"2024-07":"n"
         },
         ios: {
             "2020-02":"a #1",
@@ -42,17 +43,19 @@ stats: {
             "2010":"n",
             "2013":"n",
             "2016":"n",
-            "2019":"n"
+            "2019":"y"
         },
         windows-mail: {
             "2020-02":"y"
         },
         macos: {
             "2016":"n",
-            "13.1":"y"
+            "13.1":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2024-01":"y",
         },
         ios: {
             "2020-02":"n",
@@ -184,6 +187,6 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partially supported. Only works with non Gmail accounts."
+    "1": "Partially supported. Only works with non Google accounts."
 }
 ---

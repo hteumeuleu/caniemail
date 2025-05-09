@@ -52,7 +52,8 @@ stats: {
             "2021-12":"a #4 #5"
         },
         macos: {
-            "16.56":"y"
+            "16.56":"y",
+            "16.80": "y",
         },
         outlook-com: {
             "2021-12":"y"
@@ -170,7 +171,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. `flex`, `grid`, `flow-root`, `contents`, `inline flow-root`, `inline flex`, `inline grid`, `initial`, `revert`, `unset` are not supported with Non Gmail Accounts.",
+    "1": "Partial. `flex`, `grid`, `flow-root`, `contents`, `inline flow-root`, `inline flex`, `inline grid`, `initial`, `revert`, `unset` are not supported with non Google accounts.",
     "2": "Partial. `inline-flex`, `inline-grid`, `flex`, `grid`, `flow-root`, `contents`, `inline flow-root`, `inline flex`, `inline grid`, `initial`, `revert`, `unset` values are not supported.",
     "3": "Buggy. Only the first value is kept with the two-value syntax.",
     "4": "Buggy. `display:none` does not inherit to inner tables.",

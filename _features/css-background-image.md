@@ -38,13 +38,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-08":"y",
-            "2021-03":"y"
+            "2021-03":"y",
+            "2024-04":"y",
         },
         ios: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"y",
         },
         android: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"y",
         }
     },
 	outlook: {
@@ -59,7 +62,8 @@ stats: {
 			"2019-02": "n"
 		},
 		macos: {
-			"2019-02": "y"
+			"2019-02": "y",
+            "16.80": "y"
 		},
 		outlook-com: {
 			"2019-02": "y"
@@ -194,7 +198,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Buggy. Requires at least one `<img>` element in the email to download all images.",
     "3": "Partial. Does not support multiple values. The comma between two values is removed.",
     "4": "Partial. Images URL must be between quotes.",

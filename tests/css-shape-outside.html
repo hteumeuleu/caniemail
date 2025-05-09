@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>shape-outside CSS property</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+		h1, h2 {
+			font-size: 16px;
+			text-align: center;
+			font-family: monospace;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="max-width:600px; margin:0 auto;">
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			shape-outside CSS Property
+		</h1>
+		<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; table-layout:fixed; border-bottom:1px solid lightgrey;">
+			<tbody>
+				<tr>
+					<td style="width:25%; vertical-align:top; padding:20px; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+						shape-outside:circle
+					</td>
+					<td style="width:75%; vertical-align:top; padding:20px; font-size:20px; border-top:1px solid lightgrey;">
+						<span style="shape-outside:circle(50%); clip-path: circle(50%); background-color:goldenrod;
+						width: 200px;
+						height: 200px;
+						float: left;"></span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio.</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25%; vertical-align:top; padding:20px; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+						shape-outside:ellipse;
+					</td>
+					<td style="width:75%; vertical-align:top; padding:20px; font-size:20px; border-top:1px solid lightgrey;">
+						<span style="shape-outside: ellipse(70px 100px at 50% 50%); clip-path: ellipse(70px 100px at 50% 50%); background-color:goldenrod;
+						width: 200px;
+						height: 200px;
+						float: left;"></span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio.</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25%; vertical-align:top; padding:20px; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+						shape-outside:inset
+					</td>
+					<td style="width:75%; vertical-align:top; padding:20px; font-size:20px; border-top:1px solid lightgrey;">
+						<span style="shape-outside: inset(40px 20px 50px 20px); background-color:goldenrod;
+						width: 200px;
+						height: 200px;
+						float: left;"></span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio.</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="width:25%; vertical-align:top; padding:20px; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+						shape-outside:polygon
+					</td>
+					<td style="width:75%; vertical-align:top; padding:20px; font-size:20px; border-top:1px solid lightgrey;">
+						<span style="shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); background-color:goldenrod;
+						width: 200px;
+						height: 200px;
+						float: left;"></span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio.</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="width:25%; vertical-align:top; padding:20px; border-right:1px solid lightgrey; font:16px monospace; border-top:1px solid lightgrey;">
+						shape-outside:url
+					</td>
+					<td style="width:75%; vertical-align:top; padding:20px; font-size:20px; border-top:1px solid lightgrey;">
+						<img src="https://via.placeholder.com/200x200/daa520/ffffff.png?text=Placeholder"style="shape-outside: url('https://via.placeholder.com/200x200/daa520/ffffff.png?text=Placeholder'); float: left;">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium nulla! Nemo atque iusto expedita quaerat ipsum, quod facere assumenda debitis provident aspernatur neque dolorem, harum quisquam voluptatem quo optio.</p>
+					</td>
+				</tr>
+				
+			<tbody>
+		</table>
+		<p style="margin-top:1.6em; font:20px serif;">
+			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2023.
+		</p>
+	</div>
+</body>
+
+</html>

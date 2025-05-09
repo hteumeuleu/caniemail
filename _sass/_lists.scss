@@ -22,12 +22,11 @@
 
 	a {
 		color: #fff;
-		text-decoration: none;
+		text-decoration: underline;
 
 		&:focus,
 		&:hover {
 			color: $color-blue;
-			text-decoration: underline;
 		}
 	}
 }

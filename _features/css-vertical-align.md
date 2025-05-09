@@ -52,10 +52,12 @@ stats: {
             "2020-12":"y"
         },
         macos: {
-            "2016":"y"
+            "2016":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2020-12":"y"
+            "2020-12":"y",
+            "2024-01":"y",
         },
         ios: {
             "2020-12":"y"
@@ -168,14 +170,6 @@ stats: {
 			"2022-09":"y"
 		}
 	}
-}
-notes: "This is a global note."
-notes_by_num: {
-    "1": "Partial. Fixed attachment is not supported.",
-    "2": "Partial. Slash syntax values are not supported.",
-    "3": "Partial. Values containing background images are not supported.",
-    "4": "Buggy. For slash syntax values, it removes the slash character, making the value invalid.",
-    "5": "Partial. Seems to only support background colors."
 }
 links: {
     "Can I use: vertical-align":"https://caniuse.com/mdn-css_properties_vertical-align",

@@ -54,10 +54,12 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2019-10":"y"
+            "2019-10":"y",
+            "2024-01":"y",
         },
         ios: {
             "2019-10":"y"
@@ -202,7 +204,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element."
 }
 links: {

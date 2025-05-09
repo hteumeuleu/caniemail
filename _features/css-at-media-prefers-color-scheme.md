@@ -3,6 +3,7 @@ title: "@media (prefers-color-scheme)"
 description: "This media query allows to theme for system light and dark mode."
 category: css
 keywords: "media queries, media query, media feature, dark mode, light mode"
+tags: accessibility
 last_test_date: "2023-03-08"
 test_url: "/tests/css-media-prefers-color-scheme.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/CBhafIa5yXDRKQKbV442rVFISXim84wMgXaoCqVFD8VTe/list"
@@ -41,15 +42,18 @@ stats: {
         desktop-webmail: {
             "2019-08":"y",
             "2021-03":"y",
-            "2022-12":"y"
+            "2022-12":"y",
+            "2024-04":"y",
         },
         ios: {
             "2020-01":"n",
-            "2022-12":"y"
+            "2022-12":"y",
+            "2024-04":"y",
         },
         android: {
             "2020-01":"n",
-            "2022-12":"n"
+            "2022-12":"n",
+            "2024-04":"y",
         }
     },
     outlook: {
@@ -66,7 +70,8 @@ stats: {
         },
         macos: {
             "2019":"y",
-            "16.70":"y #3"
+            "16.70":"y #3",
+            "16.80":"y #3",
         },
         outlook-com: {
             "2019-07":"y",
@@ -84,7 +89,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"n"
+            "6.0":"n",
+			"6.1":"y"
         }
     },
     sfr: {

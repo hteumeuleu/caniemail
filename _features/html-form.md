@@ -34,13 +34,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2020-01":"n #4",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2020-01":"n #4"
+            "2020-01":"n #4",
+            "2024-04":"n",
         },
         android: {
-            "2020-01":"n #4"
+            "2020-01":"n #4",
+            "2024-04":"n",
         }
     },
     outlook: {
@@ -58,11 +61,13 @@ stats: {
         macos: {
             "2011":"n",
             "2016":"n",
-            "2019":"n"
+            "2019":"n",
+            "16.80":"a #6",
         },
         outlook-com: {
             "2019-02":"y #2",
-            "2019-10":"a #2 #3"
+            "2019-10":"a #2 #3",
+            "2024-01":"a #6",
         },
         ios: {
             "2019-06":"y"
@@ -179,7 +184,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Does not submit in iOS with non Gmail accounts.",
+  "1": "Does not submit in iOS with non Google accounts.",
   "2": "On submit name values are prefixed with `x_`.",
   "3": "Does not submit in preview pane, but does when the email is opened in a new window.",
   "4": "Not supported. `<form>` is transformed into `<noform>`.",

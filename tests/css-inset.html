@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head></head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <title>inset</title>
+  <style>
+   div {
+    background-color: yellow;
+    width: 200px;
+    height: 120px;
+    position: relative;
+  }
+
+  td {
+    background-color: yellow;
+    width: 150px;
+    height: 120px;
+    position: relative;
+  }
+
+  .insetText {
+    position: absolute;
+    inset: 40px 36px 30px 20px;
+    background-color: #c8c800;
+  }
+  </style>
+</head>
+
+<body style="background-color:#ffffff;">
+ 
+
+  <table role="presentation">
+
+    <tr>
+      <td>
+        <div>
+          <span style="position:absolute; inset:10px 40px 45% 0; background-color:#c87f00;">inset:10px 40px 45% 0;</span>
+        </div>
+      </td>
+    </tr>
+    
+    
+    <tr>
+      <td>
+        <img style="max-width:100%; position:absolute; inset:40px 36px 30px 30px; background-color:#c8c800;" src="https://dummyimage.com/100x100/008000/ffa200" alt="">
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        <div>
+          <span style="position:absolute; inset-block:20px 30px; inset-inline:10px 20px; background-color:#c87f00;">inset-block:10px 20px; inset-inline:10px 20px;</span>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div>
+          <span style="position:absolute; inset-block-start:40px; inset-block-end:30px; background-color:#c87f00;">inset-block-start:40px; inset-block-end:30px;</span>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div>
+          <span style="position:absolute; inset-inline-start:10px; inset-inline-end:30px; background-color:#c87f00;">inset-inline-start:10px; inset-inline-end:30px;</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

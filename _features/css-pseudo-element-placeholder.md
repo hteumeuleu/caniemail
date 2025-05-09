@@ -55,14 +55,17 @@ stats: {
         macos: {
             "2011":"y",
             "2016":"y",
-            "2019":"a #1"
+            "2019":"a #1",
+            "16.80":"a #1 #2",
         },
         outlook-com: {
-            "2020-05":"n"
+            "2020-05":"n",
+            "2024-01":"a #2",
         },
         ios: {
             "2.51.1":"y",
-            "4.38.0":"n"
+            "4.38.0":"n",
+            "4.2352.0":"a #2",
         },
         android: {
             "2020-05":"n"
@@ -175,7 +178,8 @@ stats: {
 }
 notes_by_num: {
     "1": "Not supported with non Outlook accounts.",
-    "2": "The pseudo-element is supported but `<input>` elements are not."
+    "2": "The pseudo-element is supported but `<input>` elements are not.",
+    "3": "Partial. Only supported on type selectors."
 }
 links: {
     "Can I use: ::placeholder":"https://caniuse.com/#feat=css-placeholder",

@@ -56,10 +56,12 @@ stats: {
             "2020-03":"n"
         },
         macos: {
-            "2016":"y"
+            "2016":"y",
+            "16.80":"a #3",
         },
         outlook-com: {
-            "2020-04":"y"
+            "2020-04":"y",
+            "2024-01":"a #3",
         },
         ios: {
             "2020-04":"y"
@@ -181,6 +183,7 @@ stats: {
 }
 notes_by_num: {
     "1": "The `<marquee>` element is supported but the animation doesn't play in Internet Explorer or Firefox.",
-    "2": "The `behavior` attribute is not supported."
+    "2": "The `behavior` attribute is not supported.",
+    "3": "The `<marquee>` element is supported but not the `behavior` or `direction` attributes."
 }
 ---

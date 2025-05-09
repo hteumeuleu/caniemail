@@ -6,6 +6,7 @@ keywords: max, block, size
 last_test_date: "2022-09-01"
 test_url: "/tests/css-max-block-size.html"
 test_results_url: "https://testi.at/proj/1y7SkPH3W7FPg0HwxS9lEiY"
+tags: i18n
 stats: {
   apple-mail: {
     macos: {
@@ -62,10 +63,12 @@ stats: {
       "2022-07": "n"
     },
     macos: {
-      "2022-07": "y"
+      "2022-07": "y",
+      "16.80": "n",
     },
     outlook-com: {
-      "2022-07": "n"
+      "2022-07": "n",
+      "2024-01": "n",
     },
     ios: {
       "2022-07": "y"

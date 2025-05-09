@@ -32,13 +32,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-09":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2019-09":"n #1"
+            "2019-09":"n #1",
+            "2024-04":"n",
         },
         android: {
-            "2019-09":"y"
+            "2019-09":"y",
+            "2024-04":"n",
         }
     },
     outlook: {
@@ -55,11 +58,13 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80":"y #11"
         },
         outlook-com: {
             "2019-09":"n #4",
-            "2021-05":"n #8"
+            "2021-05":"n #8",
+            "2024-01":"n #8",
         },
         ios: {
             "2019-09":"n #4",
@@ -185,7 +190,8 @@ notes_by_num: {
     "7": "The `<video>` element is supported and the `poster` image is visible, but the video can not play due to a strict Content Security Policy.",
     "8": "The `<video>` element is supported, but the video can not play due to a strict Content Security Policy.",
     "9": "Not supported. The `<video>` element and all its content is removed.",
-    "10": "Not supported. The `src` attribute is replaced by `data-src`."
+    "10": "Not supported. The `src` attribute is replaced by `data-src`.",
+    "11": "Partial support. The video can be played by doing a right click and play. But `autoplay` and `controls` are not supported."
 }
 links: {
     "Can I use: Video element":"https://caniuse.com/#feat=video",

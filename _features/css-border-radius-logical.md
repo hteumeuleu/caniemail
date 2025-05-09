@@ -6,6 +6,7 @@ keywords: border-start-start-radius, border-start-end-radius, border-end-start-r
 last_test_date: "2022-08-16"
 test_url: "/tests/css-border-logical-properties.html"
 test_results_url: "https://testi.at/proj/1yxFDAGtwrUmbf4tzMTY"
+tags: i18n
 stats: {
     apple-mail: {
         macos: {
@@ -57,7 +58,8 @@ stats: {
         },
         macos: {
             "2011":"n",
-            "2016":"n"
+            "2016":"n",
+            "16.80": "n"
         },
         outlook-com: {
             "2022-08":"n"
@@ -77,13 +79,13 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2022-08":"u"
+            "2024-03":"y"
         },
         ios: {
-            "2022-08":"u"
+            "2024-03":"y"
         },
         android: {
-            "2022-08":"u"
+            "2024-03":"y"
         }
     },
     thunderbird: {

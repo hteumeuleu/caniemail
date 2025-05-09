@@ -4,8 +4,8 @@ description: "Tested with the values `overline`, `underline` and `line-through`.
 category: css
 keywords: underline
 last_test_date: "2019-02-28"
-test_url: "/tests/css-text.html"
-test_results_url: "https: //app.emailonacid.com/app/acidtest/DkqbHs69ek5UnK6uhZ7Uj0n5GVQNTP4Z1FvgXvnKyEoTM/list"
+test_url: "/tests/css-text-decoration.html"
+test_results_url: "https://app.emailonacid.com/app/acidtest/3r2uYHjW7RohepVjh05qVkSQ9t7gJVJd6O5ABI8grFvqQ/list"
 stats: {
 	apple-mail: {
 		macos: {
@@ -53,10 +53,12 @@ stats: {
 			"2019-02": "a #2 #3"
 		},
 		macos: {
-			"2019-02": "y"
+			"2019-02": "y",
+			"16.80": "y",
 		},
 		outlook-com: {
-			"2019-02": "y"
+			"2019-02": "y",
+			"2024-01": "y",
 		},
 		ios: {
 			"2019-02": "y"
@@ -171,11 +173,11 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts.",
+    "1": "Partial. Not supported with non Google accounts.",
     "2": "Partial. Not supported with multiple values.",
     "3": "Partial. `overline` is not supported.",
     "4": "Partial. Only supports the line property, not style, color or thickness.",
-    "5": "Partial. Only supports style, color or thickness when written with long hadn selectors."
+    "5": "Partial. Only supports style, color or thickness when written with long hand selectors."
 }
 links: {
     "Can I use: text-decoration": "https://caniuse.com/#feat=text-decoration",

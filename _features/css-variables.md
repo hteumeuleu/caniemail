@@ -31,13 +31,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2019-08":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"n",
         },
         android: {
-            "2019-08":"y"
+            "2019-08":"y",
+            "2024-04":"n",
         }
     },
     outlook: {
@@ -50,15 +53,17 @@ stats: {
             "2019":"n"
         },
         windows-mail: {
-            "2020-01":"n"
+            "2020-01":"n",
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80":"n",
         },
         outlook-com: {
             "2019-08":"n",
-            "2020-02":"n"
+            "2020-02":"n",
+            "2024-01":"n",
         },
         ios: {
             "2019-08":"n",
@@ -184,6 +189,6 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. The `var()` function is supported, but not the variable declaration.",
-    "2": "Partial. Not supported with non Gmail accounts."
+    "2": "Partial. Not supported with non Google accounts."
 }
 ---

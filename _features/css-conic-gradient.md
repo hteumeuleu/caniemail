@@ -52,10 +52,12 @@ stats: {
             "2022-12":"n"
         },
         macos: {
-            "2022-12":"y"
+            "2022-12":"y",
+            "16.80": "n",
         },
         outlook-com: {
-            "2022-12":"n"
+            "2022-12":"n",
+            "2024-01":"n",
         },
         ios: {
             "2022-12":"n",
@@ -66,7 +68,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.0":"u",
+            "6.1.90.16": "a #1",
         }
     },
     sfr: {
@@ -148,6 +151,9 @@ stats: {
             "2023-01":"n"
         }
     }
+}
+notes_by_num: {
+    "1": "Partial. Not supported with Hotmail/Outlook accounts."
 }
 links: {
     "Can I use: CSS Conic Gradient":"https://caniuse.com/css-conic-gradients",

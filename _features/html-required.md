@@ -34,13 +34,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2020-01":"a #2",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2020-01":"a #2"
+            "2020-01":"a #2",
+            "2024-04":"n",
         },
         android: {
-            "2020-01":"a #2"
+            "2020-01":"a #2",
+            "2024-04":"n",
         }
     },
     outlook: {
@@ -58,10 +61,12 @@ stats: {
         macos: {
             "2011":"y",
             "2016":"y",
-            "2019":"y"
+            "2019":"y",
+            "16.80":"n",
         },
         outlook-com: {
-            "2019-09":"n"
+            "2019-09":"n",
+            "2024-01":"n",
         },
         ios: {
             "2019-06":"y"
@@ -178,7 +183,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Partial. Only supported with non Gmail accounts.",
+  "1": "Partial. Only supported with non Google accounts.",
   "2": "Partial. The `required` attribute is supported, but form elements are not."
 }
 ---

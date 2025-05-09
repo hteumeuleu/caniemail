@@ -54,10 +54,12 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2020-03":"y"
+            "2020-03":"y",
+            "2024-01":"y",
         },
         ios: {
             "2020-03":"y"
@@ -172,7 +174,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 links: {
     "Can I use: General sibling combinator":"https://caniuse.com/#feat=mdn-css_selectors_general_sibling",

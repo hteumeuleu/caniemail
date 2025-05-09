@@ -4,8 +4,9 @@ description: ""
 category: css
 keywords: min, inline, size
 last_test_date: "2022-08-30"
-test_url: "/tests/css-min--inline-size.html"
+test_url: "/tests/css-min-inline-size.html"
 test_results_url: "https://testi.at/proj/6m0cx5puENPh8pLi9rpSPzJSB"
+tags: i18n
 stats: {
   apple-mail: {
     macos: {
@@ -35,7 +36,7 @@ stats: {
       "2022-08": "n"
     },
     mobile-webmail: {
-      "2022-07": "u"
+      "2022-07": "n"
     }
   },
   orange: {
@@ -62,10 +63,12 @@ stats: {
       "2022-07": "n"
     },
     macos: {
-      "2022-07": "y"
+      "2022-07": "y",
+      "16.80": "n",
     },
     outlook-com: {
-      "2022-07": "n"
+      "2022-07": "n",
+      "2024-01": "n",
     },
     ios: {
       "2022-07": "y"

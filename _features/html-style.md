@@ -2,9 +2,9 @@
 title: "<style> element"
 description: "An HTML element to contain style information, in CSS, for a document or part of a document."
 category: html
-last_test_date: "2019-06-24"
+last_test_date: "2023-07-27"
 test_url: "/tests/html-style.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/od5IYQtx8yIbIUbeRyQXnP0yzFKEm2E9CKa3FU4BcEXFv/list"
+test_results_url: "https://app.emailonacid.com/app/acidtest/CAMb612bxbVwRWPhM4wZKNhhdcdkNxj0Rj6dtRRw6LQUO/list"
 stats: {
     apple-mail: {
         macos: {
@@ -67,11 +67,13 @@ stats: {
             "2011":"y",
             "2016":"y",
             "2019":"y",
-            "2021":"y"
+            "2021":"y",
+            "16.80":"y",
         },
         outlook-com: {
             "2019-06":"y",
-            "2023-01":"y"
+            "2023-01":"y",
+            "2024-01":"y",
         },
         ios: {
             "2019-06":"y",
@@ -179,7 +181,8 @@ stats: {
     },
 	gmx: {
 		desktop-webmail: {
-			"2022-11": "y"
+            "2022-11": "y",
+			"2023-07": "n"
 		},
 		ios: {
 			"2022-11":"y"
@@ -190,7 +193,8 @@ stats: {
 	},
 	web-de: {
 		desktop-webmail: {
-			"2022-11": "y"
+			"2022-11": "y",
+			"2025-04": "n",
 		},
 		ios: {
 			"2022-11":"y"
@@ -211,12 +215,17 @@ stats: {
         desktop-webmail: {
             "2023-02": "n"
         }
+    },
+    wp-pl: {
+        desktop-webmail: {
+            "2023-12": "y"
+        }
     }
 }
 notes: ""
 notes_by_num: {
     "1": "Partial. Not supported inside the `<body>`.",
-    "2": "Partial. Not supported with Non Gmail Accounts.",
+    "2": "Partial. Not supported with non Google accounts.",
     "3": "Buggy. The first `<head>` in the HTML is removed, so `<style>` elements need to be in a second `<head>` element.",
     "4": "Buggy. `<style>` elements need to be declared before their rules are used.",
     "5": "A CSS rule following a CSS comment is ignored. (See [email-bugs#25](https://github.com/hteumeuleu/email-bugs/issues/25).)"

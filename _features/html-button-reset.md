@@ -34,13 +34,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2020-01":"y",
-            "2021-03":"y"
+            "2021-03":"y",
+            "2024-04":"y",
         },
         ios: {
-            "2020-01":"y"
+            "2020-01":"y",
+            "2024-04":"y",
         },
         android: {
-            "2020-01":"y"
+            "2020-01":"y",
+            "2024-04":"y",
         }
     },
     outlook: {
@@ -58,10 +61,12 @@ stats: {
         macos: {
             "2011":"y",
             "2016":"y",
-            "2019":"y"
+            "2019":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2019-09":"y"
+            "2019-09":"y",
+            "2024-01":"y",
         },
         ios: {
             "2019-06":"n"
@@ -178,7 +183,7 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-  "1": "Partial. Not supported with non Gmail accounts.",
+  "1": "Partial. Not supported with non Google accounts.",
   "2": "Buggy. Interacting with the element submits the form it belongs in.",
   "3": "Partial. The element is present but is not interactive."
 }

@@ -42,10 +42,12 @@ stats: {
             "2020-02":"n"
         },
         macos: {
-            "2016":"y"
+            "2016":"y",
+            "16.80":"n",
         },
         outlook-com: {
-            "2020-02":"n"
+            "2020-02":"n",
+            "2024-01":"n",
         },
         ios: {
             "2020-02":"n"
@@ -92,13 +94,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2020-02":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2024-04":"n",
         },
         android: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2024-04":"n",
         }
     },
     sfr: {
@@ -176,6 +181,6 @@ stats: {
 }
 notes: ""
 notes_by_num: {
-    "1": "Partial. Not supported with non Gmail accounts."
+    "1": "Partial. Not supported with non Google accounts."
 }
 ---

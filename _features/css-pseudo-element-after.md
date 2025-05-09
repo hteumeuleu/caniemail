@@ -31,13 +31,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2020-05":"y",
-            "2021-03":"n #2"
+            "2021-03":"n #2",
+            "2024-04":"n #2",
         },
         ios: {
-            "2020-05":"y"
+            "2020-05":"y",
+            "2024-04":"n",
         },
         android: {
-            "2020-05":"n"
+            "2020-05":"n",
+            "2024-04":"n",
         }
     },
     outlook: {
@@ -55,14 +58,17 @@ stats: {
         macos: {
             "2011":"y",
             "2016":"y",
-            "2019":"a #1"
+            "2019":"a #1",
+            "16.80":"a #1 #3",
         },
         outlook-com: {
-            "2020-05":"n"
+            "2020-05":"n",
+            "2024-01":"a #3",
         },
         ios: {
             "2.51.1":"y",
-            "4.38.0":"n"
+            "4.38.0":"n",
+            "4.2352.0":"a #3",
         },
         android: {
             "2020-05":"n"
@@ -175,7 +181,8 @@ stats: {
 }
 notes_by_num: {
     "1": "Not supported with non Outlook accounts.",
-    "2": "The pseudo-element is supported but the `content` property is not."
+    "2": "The pseudo-element is supported but the `content` property is not.",
+    "3": "Partial. Only supported on type selectors."
 }
 links: {
     "Can I use: CSS Generated content for pseudo-elements":"https://caniuse.com/#feat=css-gencontent",

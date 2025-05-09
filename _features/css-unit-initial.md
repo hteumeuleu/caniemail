@@ -42,10 +42,12 @@ stats: {
             "2020-02":"n"
         },
         macos: {
-            "2016":"y"
+            "2016":"y",
+            "16.80":"y",
         },
         outlook-com: {
-            "2020-02":"a #1"
+            "2020-02":"a #1",
+            "2024-01":"y",
         },
         ios: {
             "2020-02":"y"
@@ -92,13 +94,16 @@ stats: {
     orange: {
         desktop-webmail: {
             "2020-02":"y",
-            "2021-03":"n"
+            "2021-03":"n",
+            "2024-04":"n",
         },
         ios: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2024-04":"n",
         },
         android: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2024-04":"n",
         }
     },
     sfr: {
@@ -177,6 +182,6 @@ stats: {
 notes: ""
 notes_by_num: {
     "1": "Partial. Webmail rendering doesn't work in IE.",
-    "2": "Partial. Not supported with non Gmail accounts."
+    "2": "Partial. Not supported with non Google accounts."
 }
 ---

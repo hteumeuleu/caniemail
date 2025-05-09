@@ -3,6 +3,7 @@ title: "@media (hover), @media (any-hover)"
 description: "This media query tests whether the user's input device[s] (i.e mouse, trackpad etc.) can hover over elements"
 category: css
 keywords: "media, media query, hover, any-hover"
+tags: accessibility
 last_test_date: "2022-08-29"
 test_url: "/tests/css-media-hover.html"
 test_results_url: "https://testi.at/proj/onECpNVH8Dhv7BSLPXUbQ4s0O"
@@ -49,7 +50,8 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80": "y",
         },
         outlook-com: {
             "2022-08":"y"
@@ -69,13 +71,13 @@ stats: {
     },
     sfr: {
         desktop-webmail: {
-            "2022-08":"u"
+            "2024-03":"y"
         },
         ios: {
-            "2022-08":"u"
+            "2024-03":"n"
         },
         android: {
-            "2022-08":"u"
+            "2024-03":"n"
         }
     },
     thunderbird: {

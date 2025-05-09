@@ -9,24 +9,30 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidha
 stats: {
     apple-mail: {
         macos: {
-            "13":"n"
+            "13":"n",
+            "16":"y #2",
         },
         ios: {
-            "13":"n"
+            "13":"n",
+            "17":"y",
         }
     },
     gmail: {
         desktop-webmail: {
-            "2020-02":"a #1"
+            "2020-02":"a #1",
+			"2024-02":"a #1"
         },
         ios: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"a #1"
         },
         android: {
-            "2020-02":"a #1"
+            "2020-02":"a #1",
+			"2024-02":"a #1"
         },
         mobile-webmail: {
-            "2020-02":"a #1"
+            "2020-02":"a #1",
+			"2024-02":"a #1"
         }
     },
     outlook: {
@@ -38,20 +44,25 @@ stats: {
             "2019":"n"
         },
         windows-mail: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"n"
         },
         macos: {
             "2016":"n",
-            "2019":"n"
+            "2019":"n",
+            "16.80":"y",
         },
         outlook-com: {
-            "2020-02":"n"
+            "2020-02":"n",
+            "2024-02":"n"
         },
         ios: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"y"
         },
         android: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"n"
         }
     },
     samsung-email: {
@@ -61,32 +72,40 @@ stats: {
     },
     thunderbird: {
         windows: {
-          "2020-02":"n"
+          "2020-02":"n",
+		  "115.7":"n"
         },
         macos: {
-            "68.4":"n"
+            "68.4":"n",
+			"115.7":"n"
         }
     },
     aol: {
         desktop-webmail: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"a #3"
         },
         ios: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"y"
         },
         android: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"n"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"a #3"
         },
         ios: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"y"
         },
         android: {
-            "2020-02":"n"
+            "2020-02":"n",
+			"2024-02":"n"
         }
     },
     orange: {
@@ -114,13 +133,16 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2020-03":"n"
+            "2020-03":"n",
+			"2024-02":"a #3"
         },
         ios: {
-            "2020-03":"n"
+            "2020-03":"n",
+			"2024-02":"y"
         },
         android: {
-            "2020-03":"n"
+            "2020-03":"n",
+			"2024-02":"n"
         }
     },
     hey: {
@@ -175,6 +197,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial: Converts file to jpg."
+    "1": "Partial: Converts file to jpg.",
+    "2": "Supported on macOS 14 Sonoma.",
+	"3": "Partial. Webmail rendering depends on browser support."
 }
 ---

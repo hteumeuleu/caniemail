@@ -56,10 +56,12 @@ stats: {
         },
         macos: {
             "2011":"y",
-            "2016":"y"
+            "2016":"y",
+            "16.80": "a #1 #2 #3",
         },
         outlook-com: {
-            "2020-12":"a #1 #2 #3"
+            "2020-12":"a #1 #2 #3",
+            "2024-01":"a #1 #2 #3",
         },
         ios: {
             "2020-12":"a #1 #2"
@@ -180,7 +182,7 @@ notes_by_num: {
     "3": "Buggy. A `class=\"test\"` in the HTML is prefixed `class=\"x_test\"`, but an attribute selector stays unprefixed `[class=\"test\"]`.",
     "4": "Partial. Only supports `[attr=value]` syntax.",
     "5": "Partial. Only supports `[attr~=value]` syntax. Only `class` as an attribute name is known to be supported.",
-    "6": "Partial. Doesn't work with Non Gmail Accounts."
+    "6": "Partial. Doesn't work with non Google accounts."
 }
 links: {
     "Can I use: CSS 2.1 selectors":"https://caniuse.com/css-sel2",
