@@ -3,7 +3,7 @@ title: "dir attribute"
 description: "Indicates the directionality of the element's text."
 category: html
 keywords: direction, ltr, rtl
-tags: i18n
+tags: i18n accessibility
 last_test_date: "2021-11-01"
 test_url: "/tests/css-direction.html"
 test_results_url: "https://testi.at/proj/onwCpJ1Hp7mc8XYhbvUVbvHoM"
