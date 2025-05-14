@@ -9,7 +9,8 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkw
 stats: {
 	apple-mail: {
 		macos: {
-			"12.4": "n"
+			"12.4": "n",
+            "16": "y"
 		},
 		ios: {
             "13.1": "n"
