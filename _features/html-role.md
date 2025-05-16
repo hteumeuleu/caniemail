@@ -75,7 +75,7 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"y"
+			"5.0.10.2": "y"
         }
     },
     sfr: {
@@ -120,11 +120,6 @@ stats: {
         android: {
             "2019-02": "n",
             "2020-02":"a #2"
-        }
-    },
-    samsung-email: {
-        android: {
-            "5.0.10.2": "y"
         }
     },
     protonmail: {
