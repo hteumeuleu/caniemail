@@ -39,7 +39,6 @@ stats: {
     },
     orange: {
         desktop-webmail: {
-            "2022-07":"u",
             "2022-07":"u"
         },
         ios: {
