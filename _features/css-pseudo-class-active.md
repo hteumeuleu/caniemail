@@ -9,7 +9,8 @@ test_results_url: "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkw
 stats: {
 	apple-mail: {
 		macos: {
-			"12.4": "n"
+			"12.4": "n",
+            "16": "a #2"
 		},
 		ios: {
             "13.1": "n"
@@ -173,7 +174,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Only supported on type selectors."
+    "1": "Partial. Only supported on type selectors.",
+    "2": "Partial. Supported with mouse clicks. Not supported with keyboard input."
 }
 links: {
     "Can I use: :active":"https://caniuse.com/#feat=mdn-css_selectors_active",
