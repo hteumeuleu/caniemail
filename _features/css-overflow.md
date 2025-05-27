@@ -3,7 +3,7 @@ title: "overflow"
 description:  "Sets the desired behavior when content does not fit in the element's padding box"
 keywords: overflow-block, overflow-inline
 category: css
-last_test_date: "2024-10-02"
+last_test_date: "2025-05-27"
 test_url: "/tests/css-box-model.html"
 test_results_url: "https://testi.at/proj/278gsp8afyl8f6nbu4"
 stats: {
