@@ -117,13 +117,13 @@ stats: {
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2021-02": "n"
+			"2021-02": "a #2"
 		},
 		ios: {
-			"2021-02": "n"
+			"2021-02": "a #2"
 		},
 		android: {
-			"2021-02": "n"
+			"2021-02": "a #2"
 		}
 	},
 	hey: {
@@ -179,6 +179,7 @@ stats: {
 }
 notes_by_num: {
     "1": "Not supported. `@media (prefers-reduced-motion:reduce)` is transformed into `@media none`."
+	"2": "Partially supported. Not supported on `picture`."
 }
 links: {
 	"Can I use: prefers-reduced-motion":"https://caniuse.com/prefers-reduced-motion",
