@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Wrapping &amp; Breaking Demonstration</title>
+</head>
+<body style="margin:20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.4;color:#333;">
+
+  <h1>CSS Wrapping &amp; Breaking Demonstration</h1>
+
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+
+    <!-- word-wrap: normal -->
+    <tr><td style="padding:10px 0;"><strong>word-wrap: normal</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-wrap: normal;
+          ">
+            VeryLongWordWithoutAnySpacesThatWillOverflowAndNotWrap
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- word-wrap: break-word -->
+    <tr><td style="padding:10px 0;"><strong>word-wrap: break-word</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-wrap: break-word;
+          ">
+            VeryLongWordWithoutAnySpacesThatWillWrapBecauseOfBreakWord
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- word-wrap: initial -->
+    <tr><td style="padding:10px 0;"><strong>word-wrap: initial</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-wrap: initial;
+          ">
+            WordWrapInitialExampleWithoutSpacesWillOverflowAndNotWrap
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- word-wrap: inherit -->
+    <tr><td style="padding:10px 0;"><strong>word-wrap: inherit</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse; word-wrap: break-word;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-wrap: inherit;
+          ">
+            WordWrapInheritExampleWithoutSpacesWillWrapBecauseInherited
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- overflow-wrap: normal -->
+    <tr><td style="padding:10px 0;"><strong>overflow-wrap: normal</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            overflow-wrap: normal;
+          ">
+            AntidisestablishmentarianismWithoutAnySpacesThatWillOverflow
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- overflow-wrap: break-word -->
+    <tr><td style="padding:10px 0;"><strong>overflow-wrap: break-word</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            overflow-wrap: break-word;
+          ">
+            AntidisestablishmentarianismWithoutAnySpacesThatWillWrap
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- overflow-wrap: initial -->
+    <tr><td style="padding:10px 0;"><strong>overflow-wrap: initial</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            overflow-wrap: initial;
+          ">
+            OverflowWrapInitialExampleWithoutSpacesWillOverflow
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- overflow-wrap: inherit -->
+    <tr><td style="padding:10px 0;"><strong>overflow-wrap: inherit</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse; overflow-wrap: break-word;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            overflow-wrap: inherit;
+          ">
+            OverflowWrapInheritExampleWithoutSpacesWillWrapBecauseInherited
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- word-break: normal -->
+    <tr><td style="padding:10px 0;"><strong>word-break: normal</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-break: normal;
+          ">
+            PneumonoultramicroscopicsilicovolcanoconiosisWithoutSpaces
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- word-break: break-all -->
+    <tr><td style="padding:10px 0;"><strong>word-break: break-all</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-break: break-all;
+          ">
+            PneumonoultramicroscopicsilicovolcanoconiosisWithoutSpacesWillBreak
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- word-break: initial -->
+    <tr><td style="padding:10px 0;"><strong>word-break: initial</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-break: initial;
+          ">
+            WordBreakInitialExampleWithoutSpacesWillNotBreak
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- word-break: inherit -->
+    <tr><td style="padding:10px 0;"><strong>word-break: inherit</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse; word-break: break-all;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-break: inherit;
+          ">
+            WordBreakInheritExampleWithoutSpacesWillBreakBecauseInherited
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- MSO equivalency check -->
+    <tr><td style="padding:10px 0;"><strong>MSO equivalency check</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+<td style="
+  border:1px solid #ccc;
+  padding:10px;
+  white-space: normal;
+  -ms-word-break: break-all;
+  mso-hyphenate: none;
+  mso-line-height-rule: exactly;
+  line-height:20px;
+">
+  VeryLongWordWithoutAnySpacesThatWillNowWrapInOutlook
+</td>
+        </tr>
+      </table>
+    </td></tr>
+
+    <!-- word-break: keep-all -->
+    <tr><td style="padding:10px 0;"><strong>word-break: keep-all</strong></td></tr>
+    <tr><td>
+      <table role="presentation"
+             style="table-layout: fixed; width:250px; border-collapse: collapse;"
+             border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="
+            border:1px solid #ccc;
+            padding:10px;
+            white-space: normal;
+            word-break: keep-all;
+          ">
+            这是一些中文文本，这些文本在“keep-all”模式下不会中断
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+
+  </table>
+
+</body>
+</html>
