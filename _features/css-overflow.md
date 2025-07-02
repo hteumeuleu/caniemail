@@ -3,9 +3,9 @@ title: "overflow"
 description:  "Sets the desired behavior when content does not fit in the element's padding box"
 keywords: overflow-block, overflow-inline
 category: css
-last_test_date: "2024-10-02"
+last_test_date: "2025-05-27"
 test_url: "/tests/css-box-model.html"
-test_results_url: "https://testi.at/proj/p4rru3ez069p15p6ij"
+test_results_url: "https://testi.at/proj/278gsp8afyl8f6nbu4"
 stats: {
     apple-mail: {
         macos: {
@@ -28,7 +28,8 @@ stats: {
         },
         android: {
             "2019-02":  "y",
-            "2024-10":  "a #4"
+            "2024-10":  "a #4",
+            "2025-07":  "a #1 #4"
         },
         mobile-webmail: {
             "2020-02": "y",
@@ -54,6 +55,7 @@ stats: {
             "2016": "n",
             "2019": "n",
             "2021": "n",
+            "2024": "n"
         },
         windows-mail: {
             "2019-02":  "n"
@@ -66,26 +68,30 @@ stats: {
         outlook-com: {
             "2019-02":  "y",
             "2024-01":  "y",
-            "2024-10":  "a #3"
+            "2024-10":  "a #3",
+            "2025-05":  "a #4"
         },
         ios: {
             "2019-02":  "y",
             "2024-10":  "a #4"
         },
         android: {
-            "2019-02":  "n"
+            "2019-02":  "n",
+            "2025-05":  "a #1 #4"
         }
     },
     yahoo: {
         desktop-webmail: {
-            "2019-02":  "y"
+            "2019-02":  "y",
+            "2025-05":  "a #4"
         },
         ios: {
             "2019-02":  "y",
             "2024-10":  "a #4"
         },
         android: {
-            "2019-02":  "n"
+            "2019-02":  "n",
+            "2025-05":  "a #1 #4"
         }
     },
     aol: {
@@ -98,7 +104,8 @@ stats: {
             "2024-10":  "a #4"
         },
         android: {
-            "2019-02":  "n"
+            "2019-02":  "n",
+            "2025-07":  "a #1 #4"
         }
     },
     samsung-email: {
@@ -120,18 +127,22 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "60.5": "y"
+            "60.5": "y",
+            "138" : "y",
         }
     },
     protonmail: {
         desktop-webmail: {
-            "2020-03":"y"
+            "2020-03":"y",
+            "2025-07":"a #3"
         },
         ios: {
-            "2020-03":"y"
+            "2020-03":"y",
+            "2025-07":"a #3"
         },
         android: {
-            "2020-03":"y"
+            "2020-03":"y",
+            "2025-07":"a #1 #3"
         }
     },
     hey: {
@@ -166,7 +177,8 @@ stats: {
         },
         android: {
             "2022-06": "y",
-            "2024-10":  "a #3"
+            "2024-10":  "a #3",
+            "2025-07":  "a #1 #3"
         }
     },
     web-de: {
