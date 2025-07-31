@@ -143,7 +143,8 @@ stats: {
 	},
     laposte: {
         desktop-webmail: {
-            "2021-08": "y"
+            "2021-08": "y",
+            "2025-07":"n",
         }
     },
     gmx: {
