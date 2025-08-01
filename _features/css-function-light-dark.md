@@ -66,7 +66,7 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"u"
+            "6.2":"a #3"
         }
     },
     sfr: {
@@ -158,6 +158,7 @@ stats: {
 notes_by_num: {
     "1": "Only supported if you’ve updated your OS with Safari 17.5 or later.",
     "2": "Buggy. The function is supported but the color stays light even in dark mode.",
+    "3": "Partial. Not supported with Hotmail/Outlook accounts.",
 }
 links: {
     "Can I use: light-dark()":"https://caniuse.com/mdn-css_types_color_light-dark",
