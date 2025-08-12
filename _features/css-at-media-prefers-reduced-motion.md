@@ -179,7 +179,7 @@ stats: {
 	}
 }
 notes_by_num: {
-    "1": "Not supported. `@media (prefers-reduced-motion:reduce)` is transformed into `@media none`."
+    "1": "Not supported. `@media (prefers-reduced-motion:reduce)` is transformed into `@media none`.",
 	"2": "Partially supported. Not supported on `picture`."
 }
 links: {

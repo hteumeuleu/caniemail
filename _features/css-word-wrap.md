@@ -18,7 +18,7 @@ stats: {
     gmail: {
         desktop-webmail: {
             "2025-05":"a #1"
-        }
+        },
         android: {
             "2025-05":"a #1"
         }
