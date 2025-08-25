@@ -113,7 +113,7 @@ stats: {
             "2021-11":"a #8"
         },
         ios: {
-            "2021-11":"a #6"
+            "2021-11":"a #9"
         },
         android: {
             "2021-11":"a #6"
@@ -183,7 +183,8 @@ notes_by_num: {
     "5": "Partial. Not supported inline. (See [email-bugs#31](https://github.com/hteumeuleu/email-bugs/issues/31))",
     "6": "Partial. Only supported inline due to the lack of `<style>` support.",
     "7": "Partial. Removed if there is no space before when used with a `background-image` property. (See [email-bugs#16](https://github.com/hteumeuleu/email-bugs/issues/16))",
-    "8": "Partial. Only supported in lowercase."
+    "8": "Partial. Only supported in lowercase.",
+    "9": "Partial. Only supported if not written in lowercase."
 }
 links: {
     "MDN: CSS Specificity":"https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"
