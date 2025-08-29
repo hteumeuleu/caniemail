@@ -182,7 +182,7 @@ stats: {
 notes_by_num: {
     "1": "Partial. Only supported on type selectors.",
     "2": "Not supported. `<input>` elements are transformed into `<noinput>`.",
-    "3": "Only works when the attribute has an explicit value, e.g. only works when the attribute has an explicit value, e.g. `checked="checked"`"
+    "3": "Only works when the attribute has an explicit value, e.g. only works when the attribute has an explicit value, e.g. `checked=\"checked\"`"
 }
 links: {
     "Can I use: :checked":"https://caniuse.com/#feat=mdn-css_selectors_checked",
