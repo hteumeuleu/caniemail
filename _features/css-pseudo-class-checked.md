@@ -143,6 +143,11 @@ stats: {
             "2025-07":"n",
         }
     },
+    free: {
+        desktop-webmail: {
+            "2025-08": "y #3",
+        }
+    },
     gmx: {
         desktop-webmail: {
             "2022-07": "n"
@@ -176,7 +181,8 @@ stats: {
 }
 notes_by_num: {
     "1": "Partial. Only supported on type selectors.",
-    "2": "Not supported. `<input>` elements are transformed into `<noinput>`."
+    "2": "Not supported. `<input>` elements are transformed into `<noinput>`.",
+    "3": "Only works when the attribute has an explicit value, e.g. only works when the attribute has an explicit value, e.g. `checked="checked"`"
 }
 links: {
     "Can I use: :checked":"https://caniuse.com/#feat=mdn-css_selectors_checked",
