@@ -1,5 +1,5 @@
 ---
-title:  "August 2025 updates"
+title:  "July 2025 updates"
 date: 2025-08-01
 ---
 
