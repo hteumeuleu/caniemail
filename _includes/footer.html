@@ -1,46 +1,58 @@
 <footer class="footer" role="contentinfo">
-	<div class="footer-section">
-		<h1 class="footer-title">Can I email…</h1>
+	<div class="footer-layout">
+		<div class="footer-section">
+			<h1 class="footer-title">Can I email…</h1>
+			<p>
+				Launched and maintained by <a href="https://mastodon.social/@HTeuMeuLeu">@HTeuMeuLeu</a> and the team at <a href="https://www.tilt-studio.fr/">Tilt Studio</a>.
+			</p>
+			<p>
+				Based on the original <a href="https://www.caniuse.com">caniuse.com</a> by <a href="https://front-end.social/@Fyrd">@Fyrd</a> and designed by <a href="https://mastodon.world/@lensco">@Lensco</a>.<br />
+				Also based on the original name and idea by <a href="https://mastodon.social/@M_J_Robbins">@M_J_Robbins</a> and the team at <a href="https://web.archive.org/web/20181007004741/https://www.gorebel.com/">Rebel</a>.<br />
+			</p>
+			<p>
+				Support data contributions by the wonderful email geeks community <a href="https://github.com/HTeuMeuLeu/caniemail/graphs/contributors">on GitHub</a>.
+			</p>
+			<p>
+				If you see something wrong, please <a href="https://github.com/hteumeuleu/caniemail/issues">report bugs on GitHub</a>.
+			</p>
+		</div>
+		<div class="footer-section">
+			<h2 class="footer-title">Site links</h2>
+			<ul class="footer-links">
+				<li><a href="/">Home</a></li>
+				<li><a href="/features/">Feature index</a></li>
+				<li><a href="/clients/">Compare email clients</a></li>
+				<li><a href="/scoreboard/">Email Client Support Scoreboard</a></li>
+				<li><a href="/api/data.json">Data available in JSON</a></li>
+				<li><a href="https://github.com/HTeuMeuLeu/caniemail">Caniemail on GitHub</a></li>
+				<li><a href="https://embed.caniemail.com">The Caniemail Embed</a></li>
+			</ul>
+		</div>
+		<div class="footer-section">
+			<h2 class="footer-title">Legend</h2>
+			<ol class="legend-list">
+				<li><span class="supported"></span> = Supported</li>
+				<li><span class="unsupported"></span> = Not supported</li>
+				<li><span class="mitigated"></span> = Partial support</li>
+				<li><span class="mixed"></span> = Mixed support</li>
+				<li><span class="unknown"></span> = Support unknown</li>
+			</ol>
+			<p class="a11y-colors">
+				<button type="button" class="a11y-colors-button link-button" data-label-toggle="Use default colors">Enable accessible colors</button>
+				<noscript>
+					<style>.a11y-colors { display:none; }</style>
+				</noscript>
+			</p>
+		</div>
+	</div>
+	{% if page.permalink != '/' and page.layout != 'feature' %}
+	<div class="footer-sponsor">
 		<p>
-			Launched and maintained by <a href="https://mastodon.social/@HTeuMeuLeu">@HTeuMeuLeu</a> and the team at <a href="https://www.tilt-studio.fr/">Tilt Studio</a>.
-		</p>
-		<p>
-			Based on the original <a href="https://www.caniuse.com">caniuse.com</a> by <a href="https://front-end.social/@Fyrd">@Fyrd</a> and designed by <a href="https://mastodon.world/@lensco">@Lensco</a>.<br />
-			Also based on the original name and idea by <a href="https://mastodon.social/@M_J_Robbins">@M_J_Robbins</a> and the team at <a href="https://web.archive.org/web/20181007004741/https://www.gorebel.com/">Rebel</a>.<br />
-		</p>
-		<p>
-			Support data contributions by the wonderful email geeks community <a href="https://github.com/HTeuMeuLeu/caniemail/graphs/contributors">on GitHub</a>.
-		</p>
-		<p>
-			If you see something wrong, please <a href="https://github.com/hteumeuleu/caniemail/issues">report bugs on GitHub</a>.
+			<span class="footer-sponsor-by">Sponsored by <a href="https://go.resend.com/caniemail">Resend</a>.</span>
+			<span class="footer-sponsor-word">
+				<b>Email for developers.</b> The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.
+			</span>
 		</p>
 	</div>
-	<div class="footer-section">
-		<h2 class="footer-title">Site links</h2>
-		<ul class="footer-links">
-			<li><a href="/">Home</a></li>
-			<li><a href="/features/">Feature index</a></li>
-			<li><a href="/clients/">Compare email clients</a></li>
-			<li><a href="/scoreboard/">Email Client Support Scoreboard</a></li>
-			<li><a href="/api/data.json">Data available in JSON</a></li>
-			<li><a href="https://github.com/HTeuMeuLeu/caniemail">Caniemail on GitHub</a></li>
-			<li><a href="https://embed.caniemail.com">The Caniemail Embed</a></li>
-		</ul>
-	</div>
-	<div class="footer-section">
-		<h2 class="footer-title">Legend</h2>
-		<ol class="legend-list">
-			<li><span class="supported"></span> = Supported</li>
-			<li><span class="unsupported"></span> = Not supported</li>
-			<li><span class="mitigated"></span> = Partial support</li>
-			<li><span class="mixed"></span> = Mixed support</li>
-			<li><span class="unknown"></span> = Support unknown</li>
-		</ol>
-		<p class="a11y-colors">
-			<button type="button" class="a11y-colors-button link-button" data-label-toggle="Use default colors">Enable accessible colors</button>
-			<noscript>
-				<style>.a11y-colors { display:none; }</style>
-			</noscript>
-		</p>
-	</div>
+	{% endif %}
 </footer>

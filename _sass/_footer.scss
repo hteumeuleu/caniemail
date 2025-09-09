@@ -1,8 +1,5 @@
 // Footer
 .footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	margin-top: rem(80px);
 	padding: rem(32px) 0;
 	border-top: 2px solid rgba(255, 255, 255, 0.2);
@@ -19,6 +16,12 @@
 	p:not(:last-child) {
 		margin-bottom: rem(12px);
 	}
+}
+
+.footer-layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	@media only screen and (min-width: rem(960px)) {
 		flex-direction: row;
@@ -148,4 +151,47 @@
 	text-transform: uppercase;
 	vertical-align: text-top;
 	background: #fbd91b;
+}
+
+.footer-sponsor {
+	position: relative;
+	display: flex;
+	gap: rem(8px);
+	font-size: rem(16px);
+	border-top: 2px solid rgba(255, 255, 255, 0.2);
+	padding-top: rem(32px);
+	margin-top: rem(32px);
+
+	a {
+		color: inherit;
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+		}
+
+		&:hover {
+			color: currentColor;
+		}
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		flex-shrink: 0;
+		flex-grow: 0;
+		width: rem(18px);
+		height: rem(21px);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b1b1b3' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+	}
+
+	.footer-sponsor-by {
+		font-size: rem(12px);
+		font-weight: bold;
+		text-transform: uppercase;
+	}
 }

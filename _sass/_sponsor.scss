@@ -1,0 +1,49 @@
+.sponsor {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: rem(8px);
+	padding-right: rem(16px);
+	gap: rem(16px);
+	border: rem(1px) solid rgba(255, 255, 255, 0.2);
+	border-radius: rem(8px);
+	max-width: rem(608px);
+
+	a {
+		color: inherit;
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+		}
+	}
+}
+
+.sponsor-img {
+	align-self: flex-start;
+	flex-shrink: 0;
+	flex-grow: 0;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	width: rem(128px);
+	height: rem(96px);
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: rem(3px);
+
+	img {
+		width: rem(96px);
+		height: auto;
+	}
+}
+
+.sponsor-word {
+	color: #fff;
+}
+
+.sponsor-by {
+	text-transform: uppercase;
+	font-size: rem(12px);
+	font-weight: bold;
+}
