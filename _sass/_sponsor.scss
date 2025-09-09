@@ -1,4 +1,4 @@
-.sponsor {
+.thanks {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -20,7 +20,7 @@
 	}
 }
 
-.sponsor-img {
+.thanks-img {
 	align-self: flex-start;
 	flex-shrink: 0;
 	flex-grow: 0;
@@ -38,11 +38,11 @@
 	}
 }
 
-.sponsor-word {
+.thanks-word {
 	color: #fff;
 }
 
-.sponsor-by {
+.thanks-by {
 	text-transform: uppercase;
 	font-size: rem(12px);
 	font-weight: bold;
