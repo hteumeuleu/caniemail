@@ -6,6 +6,8 @@ _Can I email_ runs on [Jekyll](https://jekyllrb.com/docs/) as [GitHub Pages](htt
 
 ## Sponsor
 
+![Resend](/assets/images/sponsor-readme.png)
+
 _Can I email_ is sponsored by [Resend](https://go.resend.com/caniemail). **Email for developers.** The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.
 
 ## Installation
