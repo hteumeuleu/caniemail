@@ -583,6 +583,7 @@
 		padding: rem(32px);
 	}
 
+	& > .data-sponsor,
 	& > .data-notes {
 		border-bottom: 1px solid #3c3c3d;
 	}
@@ -591,17 +592,16 @@
 		display: flex;
 		flex-wrap: wrap;
 
+		& > .data-notes,
+		& > .data-notes + .data-sponsor,
 		& > .data-contribute,
 		& > .data-test {
 			width: 50%;
 		}
 
+		& > .data-notes,
 		& > .data-contribute {
 			border-right: 1px solid #3c3c3d;
-		}
-
-		& > .data-notes {
-			width: 100%;
 		}
 	}
 }
@@ -684,6 +684,7 @@
 	.feature {
 		margin-bottom: rem(32px);
 
+		.data-sponsor,
 		.data-contribute,
 		.data-test {
 			display: none;
@@ -691,6 +692,8 @@
 
 		.feature-footer > .data-notes {
 			border-bottom: none;
+			border-right: none;
+			width: auto;
 		}
 
 		.feature-title {
