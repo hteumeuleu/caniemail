@@ -79,6 +79,17 @@ stats: {
 			"6.1.51.1": "y"
 		}
 	},
+    protonmail: {
+      desktop-webmail: {
+        "2022-07":"y"
+      },
+      ios: {
+        "2022-07":"y"
+      },
+      android: {
+        "2022-07":"y"
+      }
+    },
 	free-fr: {
 		desktop-webmail: {
 			"2022-08": "y"
