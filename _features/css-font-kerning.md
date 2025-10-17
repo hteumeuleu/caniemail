@@ -117,6 +117,17 @@ stats: {
 			"128.9.0":"y"
 		}
 	},
+	protonmail: {
+    	desktop-webmail: {
+      		"2023-12":"y"
+    	},
+    	ios: {
+    	  "2023-12":"y"
+    	},
+    	android: {
+     	 "2023-12":"y"
+    	}
+  	},
 }
 
 links: {
