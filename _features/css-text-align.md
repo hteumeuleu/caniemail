@@ -2,10 +2,11 @@
 title: "text-align"
 description: "Sets the horizontal alignment of the content."
 category: css
+tags: i18n
 keywords: align
-last_test_date: "2021-09-24"
+last_test_date: "2025-11-14"
 test_url: "/tests/css-text-align.html"
-test_results_url: "https://testi.at/proj/G4YtBn8fBxEsLx6uybqcxD"
+test_results_url: "https://testi.at/proj/j39ys8ybfbr8srez1ab"
 stats: {
 	apple-mail: {
 		macos: {
