@@ -71,7 +71,8 @@ stats: {
     },
     samsung-email: {
         android: {
-            "6.0":"n"
+            "6.0":"n",
+            "6.2.06.0":"a #2"
         }
     },
     sfr: {
@@ -175,7 +176,8 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Not supported with non Google accounts."
+    "1": "Partial. Not supported with non Google accounts.",
+    "2": "Partial. Not supported with Microsoft accounts."
 }
 links: {
     "Can I use: CSS math functions min(), max() and clamp()":"https://caniuse.com/css-math-functions",
