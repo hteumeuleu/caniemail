@@ -171,8 +171,8 @@ stats: {
 notes_by_num: {
   "1": "Works with `-webkit` prefix",
   "2": "`all` value does not work",
-  "3": "Property is stripped from style tag"
-  "4": "`none` value does not work, client allow to select text anyway",
+  "3": "Property is stripped from style tag",
+  "4": "`none` value does not work, client allow to select text anyway"
 }
 links: {
   "Can I use: CSS user-select":"https://caniuse.com/?search=user-select",
