@@ -108,13 +108,13 @@ stats: {
   },
   protonmail: {
     desktop-webmail: {
-      "2024-02":"u"
+      "2024-02":"a #2 #4"
     },
     ios: {
-      "2024-02":"u"
+      "2024-02":"a #2 #4"
     },
     android: {
-      "2024-02":"u"
+      "2024-02":"a #2 #4"
     }
   },
   hey: {
@@ -172,6 +172,7 @@ notes_by_num: {
   "1": "Works with `-webkit` prefix",
   "2": "`all` value does not work",
   "3": "Property is stripped from style tag"
+  "4": "`none` value does not work, client allow to select text anyway",
 }
 links: {
   "Can I use: CSS user-select":"https://caniuse.com/?search=user-select",
