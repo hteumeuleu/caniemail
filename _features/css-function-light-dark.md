@@ -2,6 +2,7 @@
 title: "light-dark()"
 description: "Enables setting two colors (one for light and the other for dark mode) for a property."
 category: css
+tags: accessibility
 keywords: dark, light
 last_test_date: "2024-08-14"
 test_url: "/tests/css-function-light-dark.html"

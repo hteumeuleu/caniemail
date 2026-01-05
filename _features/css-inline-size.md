@@ -2,6 +2,7 @@
 title: "inline-size "
 description: ""
 category: css
+tags: i18n
 last_test_date: "2019-02-28"
 test_url: "/tests/css-box-model.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/pyPQFHSYLFrhbRShalju0B2fYNwUgLuyKTLx4MLqiw5mE/list"
