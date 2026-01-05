@@ -1,6 +1,7 @@
 ---
 title: "<table> element"
 category: html
+tags: accessibility
 last_test_date: "2019-09-15"
 test_url: "/tests/html-table.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/wwEgKadK3WVORrysJAcIrYgLlqhSw7z0aVvEQziMSHo7n/list"
