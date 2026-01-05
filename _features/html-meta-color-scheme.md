@@ -3,6 +3,7 @@ title: "color-scheme meta tag"
 description: "Changes the default colors of HTML elements. Useful for when you want an email to display only in a dark color scheme or only a light scheme, regardless of user settings. Equivalent to setting the color-scheme CSS property on the root element"
 category: html
 keywords: dark-mode
+tags: accessibility
 last_test_date: "2023-09-18"
 test_url: "/tests/html-meta-color-scheme.html"
 test_results_url: ""
