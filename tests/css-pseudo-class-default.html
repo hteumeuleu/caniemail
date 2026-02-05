@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head></head>
+<head>
+	<meta charset="UTF-8" />
+	<title>CSS Pseudo Class :default</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<!--[if mso]>
+	<xml>
+		<o:OfficeDocumentSettings>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+	<style>
+		input:default {
+			color: #ff0000;
+			outline: 2px solid #ff0000;
+		}
+		button:default {
+			color: #ff0000;
+			outline: 2px solid #ff0000;
+		}
+		option:default {
+			text-align:right;
+		}
+		label {
+			font-size:14px;
+			font-family:sans-serif;
+		}
+		sup {
+			line-height:0.5;
+			font-size: 60%;
+		}
+	</style>
+</head>
+<body>
+	<div style="max-width:600px; margin:0 auto;">
+		<h1 style="margin:0 0 1em; font:38px Palatino, serif; color:#000; background:none; border:none;">
+			Pseudo-class :default
+		</h1>
+		<h2 style="margin:0 0 1em; font:bold 16px monospace;">
+			:default on various elements in a <i>form</i>
+		</h2>
+		<div class="form-test" style="font:20px serif;">
+			<form action="">
+				<p style="font:16px monospace; margin:10px 0 0;"><b>&lt;input&gt;</b> [checkbox]<sup>*</sup></p>
+				<label><input type="checkbox" name="check" id="check1" value="check1" checked />Check 1</label>
+				<label><input type="checkbox" name="check" id="check2" value="check2" />Check 2</label>
+				<label><input type="checkbox" name="check" id="check3" value="check3" />Check 3</label>
+				<br>
+				<p style="font:16px monospace; margin:10px 0 0;"><b>&lt;input&gt;</b> [radio]<sup>*</sup></p>
+				<label><input type="radio" name="radio" id="radio1" value="radio1" checked />Radio 1</label>
+				<label><input type="radio" name="radio" id="radio2" value="radio2" />Radio 2</label>
+				<label><input type="radio" name="radio" id="radio3" value="radio3" />Radio 3</label>
+				<br>
+				<label for="opt-select">
+					<p style="font:16px monospace; margin:10px 0 0;"><b>&lt;select&gt;</b> with &lt;option&gt;<sup>**</sup></p>
+				</label>
+				<select id="opt-select" name="option-select" style="font-size:14px; width:300px;">
+					<option value="">Select an option</option>
+					<option value="opt1" selected>O1-RIGHT</option>
+					<option value="opt2">Option 2</option>
+					<option value="opt3">Option 3</option>
+				</select>
+				<br>
+				<p style="font:16px monospace; margin:10px 0 0;">Input type submit<sup>*</sup></p>
+				<input type="submit" value="Submit" name="submit-input">
+			</form>
+
+			<br>
+			<div style="background-color:#000000; line-height:4px;">&nbsp;</div>
+			<br>
+
+			<h2 style="margin:0 0 1em; font:bold 16px monospace;">
+				:default on button element in a <i>form</i>
+			</h2>
+			<form action="">
+				<p style="font:16px monospace; margin:10px 0 0;">Button element<sup>*</sup></p>
+				<button name="submit-button" id="submit" value="button">Button</button>
+			</form>
+			
+			<br>
+			<div style="background-color:#000000; line-height:4px;">&nbsp;</div>
+			<br>
+
+			<h2 style="margin:0 0 1em; font:bold 16px monospace;">
+				:default on radio + checkbox <i>outside</i> of a form
+			</h2>
+			<div>
+				<p style="font:16px monospace; margin:10px 0 0;"><b>&lt;input&gt;</b> [checkbox]<sup>*</sup></p>
+				<label><input type="checkbox" name="check-outside" id="check-outside-1" value="check1" checked />Check 1</label>
+				<label><input type="checkbox" name="check-outside" id="check-outside-2" value="check2" />Check 2</label>
+				<label><input type="checkbox" name="check-outside" id="check-outside-3" value="check3" />Check 3</label>
+				<br>
+				<p style="font:16px monospace; margin:10px 0 0;"><b>&lt;input&gt;</b> [radio]<sup>*</sup></p>
+				<label><input type="radio" name="radio-outside" id="radio-outside-1" value="radio1" checked />Radio 1</label>
+				<label><input type="radio" name="radio-outside" id="radio-outside-2" value="radio2" />Radio 2</label>
+				<label><input type="radio" name="radio-outside" id="radio-outside-3" value="radio3" />Radio 3</label>
+			</form>
+		</div>
+
+		<br>
+		<div style="background-color:#000000; line-height:4px;">&nbsp;</div>
+		<br>
+
+		<p style="margin-top:1.6em; font:20px serif;">
+			*Default-selected (1st option) Checkbox, Radio, and Submit elements will be outlined in red if :default works.
+		</p>
+		<p style="margin-top:0; font:20px serif;">
+			**Select element will have default option (O1-RIGHT) right-aligned if default works.
+		</p>
+
+		<br>
+		<div style="background-color:#000000; line-height:4px;">&nbsp;</div>
+		<br>
+		<p style="margin-top:0; font:20px serif;">
+			Control tests
+
+			<form action="">
+				1.<button style="outline:2px solid #00FF00; color:#00FF00;">Button</button>
+				<br>
+				2.<input type="submit" style="outline:2px solid #00FF00; color:#00FF00;" value="Submit"/>
+				<br>
+				3.<input type="checkbox" name="test1" id="testcheck1" value="check1" style="outline:2px solid #00FF00;" />
+				<br>
+				4.<input type="radio" name="test2" id="testradio1" value="radio1" style="outline:2px solid #00FF00;" />
+				<br>
+				5.<select name="test-select-group" id="test-select" style="width:200px; text-align:center;">
+					<option value="Test1">Test 1</option>
+					<option value="Test2">Test 2</option>
+				</select>
+			</form>
+		</p>
+
+		<br>
+		<div style="background-color:#000000; line-height:4px;">&nbsp;</div>
+		<br>
+
+		<p style="margin-top:1.6em; font:20px serif;">
+			<a href="https://www.caniemail.com" style="color:#000; text-decoration:none;">caniemail.com</a>, 2026.
+		</p>
+
+	</div>
+</body>
+</html>
