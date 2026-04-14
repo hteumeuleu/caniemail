@@ -1,7 +1,7 @@
 ---
-title: ":focus"
+title: ":focus-visible"
 category: css
-keywords: pseudo-class
+keywords: pseudo-class, focus
 tags: accessibility
 last_test_date: "2026-04-14"
 test_url: "/tests/css-selectors-pseudo-class-focus.html"
