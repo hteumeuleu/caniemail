@@ -12,7 +12,7 @@ stats: {
 			"2026-04": "y",
 		},
 		ios: {
-            "2026-04": "y"
+            "2026-04": "u"
 		}
 	},
 	gmail: {
@@ -23,7 +23,7 @@ stats: {
 			"2026-04": "n"
 		},
 		android: {
-			"2026-04": "u"
+			"2026-04": "n"
 		},
         mobile-webmail: {
             "2026-04": "n"
@@ -53,16 +53,16 @@ stats: {
 			"2026-04": "u"
 		},
 		macos: {
-			"2026-04": "u"
+			"2026-04": "a #1"
 		},
 		outlook-com: {
-            "2026-04":"a #1",
+            "2026-04":"n",
 		},
 		ios: {
-			"2026-04": "y"
+			"2026-04": "u"
 		},
 		android: {
-			"2026-04": "u"
+			"2026-04": "a #1"
 		}
 	},
     thunderbird: {
@@ -75,10 +75,10 @@ stats: {
 			"2026-04": "y"
 		},
 		ios: {
-			"2026-04": "y"
+			"2026-04": "u"
 		},
 		android: {
-			"2026-04": "u"
+			"2026-04": "y"
 		}
 	},
 	aol: {
@@ -86,15 +86,15 @@ stats: {
 			"2026-04": "y"
 		},
 		ios: {
-			"2026-04": "y"
+			"2026-04": "u"
 		},
 		android: {
-			"2026-04": "u"
+			"2026-04": "y"
 		}
 	},
 	samsung-email: {
 		android: {
-			"2026-04": "u"
+			"2026-04": "y"
 		}
 	},
     sfr: {
@@ -103,10 +103,10 @@ stats: {
             "2026-04":"u",
         },
         ios: {
-            "2026-04":"n"
+            "2026-04":"u"
         },
         android: {
-            "2026-04":"n"
+            "2026-04":"u"
         }
     },
     protonmail: {
@@ -176,7 +176,7 @@ notes_by_num: {
     "1": "Partial. Only supported on type selectors."
 }
 links: {
-    "Can I use: :focus-visible":"https://caniuse.com/?search=focus-visible",
-    "MDN: :focus-visible":"https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible"
+    "Can I use: :focus-within":"https://caniuse.com/?search=focus-within",
+    "MDN: :focus-within":"https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-within"
 }
 ---
