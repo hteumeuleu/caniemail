@@ -9,10 +9,10 @@ test_results_url: "https://testi.at/proj/pv47sy35udb30ae816"
 stats: {
 	apple-mail: {
 		macos: {
-			"2026-04": "y",
+			"2026-04": "y #3",
 		},
 		ios: {
-            "2026-04": "y"
+            "2026-04": "u"
 		}
 	},
 	gmail: {
@@ -23,7 +23,7 @@ stats: {
 			"2026-04": "n"
 		},
 		android: {
-			"2026-04": "u"
+			"2026-04": "n"
 		},
         mobile-webmail: {
             "2026-04": "n"
@@ -53,16 +53,16 @@ stats: {
 			"2026-04": "u"
 		},
 		macos: {
-			"2026-04": "u"
+			"2026-04": "a #1"
 		},
 		outlook-com: {
             "2026-04":"a #1",
 		},
 		ios: {
-			"2026-04": "y"
+			"2026-04": "u"
 		},
 		android: {
-			"2026-04": "u"
+			"2026-04": "y"
 		}
 	},
     thunderbird: {
@@ -78,7 +78,7 @@ stats: {
 			"2026-04": "y"
 		},
 		android: {
-			"2026-04": "u"
+			"2026-04": "y"
 		}
 	},
 	aol: {
@@ -89,12 +89,12 @@ stats: {
 			"2026-04": "y"
 		},
 		android: {
-			"2026-04": "u"
+			"2026-04": "y"
 		}
 	},
 	samsung-email: {
 		android: {
-			"2026-04": "u"
+			"2026-04": "y #2"
 		}
 	},
     sfr: {
@@ -103,10 +103,10 @@ stats: {
             "2026-04":"u",
         },
         ios: {
-            "2026-04":"n"
+            "2026-04":"u"
         },
         android: {
-            "2026-04":"n"
+            "2026-04":"u"
         }
     },
     protonmail: {
@@ -173,7 +173,9 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partial. Only supported on type selectors."
+    "1": "Partial. Only supported on type selectors.",
+    "2": "Input with type text is not focusable at all",
+    "3": "Button is not focusable on tab",
 }
 links: {
     "Can I use: :focus-visible":"https://caniuse.com/?search=focus-visible",
