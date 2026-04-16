@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>font-size-adjust</title>
+
+    <style>
+
+
+      h1, h2, h3, h4 {
+        font-family: monospace;
+        margin:0;
+      }
+      h1 {
+        margin:20px 0;
+      }
+
+      h2 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      h3, h4 {
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing:-0.5px;
+      }
+
+      h3 {
+        font-weight: normal;
+      }
+
+      p {
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        font-style: normal;
+        margin:5px 0;
+      }
+
+      p span {
+        border-right:1px solid #ff0000;
+      }
+
+      th, td {
+        text-align: left;
+        border: 1px solid #000000;
+        padding: 8px 10px;
+      }
+
+      th {
+        background-color: #c0c0f0;
+      }
+
+      .font-family-override p {
+        font-family: 'TestFont2026', 'Verdana', Arial, sans-serif;
+      }
+    </style>
+
+    <style>
+      .fsa-unset {
+        font-size-adjust: unset;
+      }
+
+      .fsa-0p3 {
+        font-size-adjust: 0.3;
+      }
+      .fsa-0p5 {
+        font-size-adjust: 0.5;
+      }
+      .fsa-0p75 {
+        font-size-adjust: 0.75;
+      }
+      .fsa-1 {
+        font-size-adjust: 1;
+      }
+
+      .fsa-from-font {
+        font-size-adjust: from-font;
+      }
+
+      .fsa-ex-height-0p5 {
+        font-size-adjust: ex-height 0.5;
+      }
+
+      .fsa-ic-height-from-font {
+        font-size-adjust: ic-height from-font;
+      }
+
+      .fsa-cap-height-0p5 {
+        font-size-adjust: cap-height 0.5;
+      }
+
+      .fsa-ch-width-0p5 {
+        font-size-adjust: ch-width 0.5;
+      }
+
+      .fsa-ic-width-0p5 {
+        font-size-adjust: ic-width 0.5;
+      }
+
+      .fsa-ic-height-0p5 {
+        font-size-adjust: ic-height 0.5;
+      }
+    </style>
+
+  </head>
+  <body class="body">
+    <div class="container" lang="en" dir="ltr" style="font-size:16px; max-width: 600px;">
+
+      <h1>font-size-adjust</h1>
+
+      <h2>Inline CSS</h2>
+      <table role="presentation">
+        <tr>
+          <th width="160"><h2>Condition</h2></th>
+          <th><h2>Sample</h2></th>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h4>No style</h4>
+            <h4>fsa: unset</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-unset"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>0.3</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-0p3"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-0p5"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>0.75</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-0p75"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>1</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-1"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>from font</h4>
+            <h3>Control</h3>
+            <h4>from font</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-from-font"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-from-font"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ex-height 0.5</h4>
+            <h3>Control</h3>
+            <h4>ex-height 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ex-height-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ex-height-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ic-height from-font</h4>
+            <h3>Control</h3>
+            <h4>ic-height from-font</h4>
+          </td>
+          <td class="font-family-override">
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ic-height-from-font"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ic-height-from-font"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>cap-height 0.5</h4>
+            <h3>Control</h3>
+            <h4>cap-height 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-cap-height-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-cap-height-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ch-width 0.5</h4>
+            <h3>Control</h3>
+            <h4>ch-width 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ch-width-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ch-width-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ic-width 0.5</h4>
+            <h3>Control</h3>
+            <h4>ic-width 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ic-width-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ic-width-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ic-height 0.5</h4>
+            <h3>Control</h3>
+            <h4>ic-height 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ic-height-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ic-height-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        
+        
+      </table>
+
+      <h2 style="margin-top:40px;">Embedded CSS</h2>
+      <table role="presentation">
+        <tr>
+          <th width="160"><h2>Condition</h2></th>
+          <th><h2>Sample</h2></th>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h4>No style</h4>
+            <h4>fsa: unset</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-unset"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>0.3</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-0p3"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-0p5"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>0.75</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-0p75"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>1</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-1"><span>lorem ipsum</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>from font</h4>
+            <h3>Control</h3>
+            <h4>from font</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-from-font"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-from-font"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ex-height 0.5</h4>
+            <h3>Control</h3>
+            <h4>ex-height 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ex-height-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ex-height-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ic-height from-font</h4>
+            <h3>Control</h3>
+            <h4>ic-height from-font</h4>
+          </td>
+          <td class="font-family-override">
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ic-height-from-font"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ic-height-from-font"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>cap-height 0.5</h4>
+            <h3>Control</h3>
+            <h4>cap-height 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-cap-height-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-cap-height-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ch-width 0.5</h4>
+            <h3>Control</h3>
+            <h4>ch-width 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ch-width-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ch-width-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ic-width 0.5</h4>
+            <h3>Control</h3>
+            <h4>ic-width 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ic-width-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ic-width-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        <!--  -->
+        <tr>
+          <td width="160">
+            <h3>Control</h3>
+            <h4>ic-height 0.5</h4>
+            <h3>Control</h3>
+            <h4>ic-height 0.5</h4>
+          </td>
+          <td>
+            <p><span>lorem ipsum</span></p>
+            <p class="fsa-ic-height-0p5"><span>lorem ipsum</span></p>
+            <p><span>LOREM IPSUM</span></p>
+            <p class="fsa-ic-height-0p5"><span>LOREM IPSUM</span></p>
+          </td>
+        </tr>
+        
+        
+      </table>
+
+    </div>
+  </body>
+</html>
