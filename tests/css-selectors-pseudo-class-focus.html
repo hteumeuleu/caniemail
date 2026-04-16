@@ -45,11 +45,11 @@
 			}
 
 			form:focus-within {
-				background-color: burlywood;
+				background-color: hotpink;
 				font-weight: bold;
 			}
 			.form:focus-within {
-				background-color: palegoldenrod;
+				background-color: goldenrod;
 				font-weight: bold;
 			}
 		</style>
@@ -64,14 +64,16 @@
 					<tr>
 						<td style="text-align:center;">
 							<p>
-								Tab through (or tap) to check if you see an outline around the inputs.
+								Tab through to check if you see an outline around the inputs.
 								<br>
-								Red: Pseudoclass with type selector
+								<span style="color:crimson; font-weight:700;">Red</span> outline: Pseudoclass with type selector
 								<br>
-								Blue outline: Pseudoclass with class
+								<span style="color:blue; font-weight:700;">Blue</span> outline: Pseudoclass with class
 								<br>
 								<br>
-								Expected outcome: Tabbing through should highlight the inputs, but clicking or tapping a button should not. 
+								<b>Expected outcome:</b> <br>
+									- Tabbing through should highlight the inputs, but clicking or tapping a button should not. <br>
+									- Tabbing through should also highlight the whole form. (<span style="color:hotpink; font-weight:700;">pink</span> with type selector, <span style="color:goldenrod;font-weight:700;">gold</span> with class)
 							 </p>
 						</td>
 					</tr>
