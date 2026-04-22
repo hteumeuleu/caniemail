@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>focus:visible & focus-within</title>
+		<style>
+			form {
+					text-align: center;
+					padding: 20px;
+			}
+
+			label {
+					display: block;
+					padding: 10px 0;
+			}
+
+			button {
+					display: block;
+					margin: 0 auto;
+			}
+
+			input {
+				border: 1px solid #000;
+			}
+
+			input, select, button {
+					outline: none;
+			}
+
+			input:focus-visible,
+			select:focus-visible,
+			button:focus-visible {
+				border: 2px dashed crimson;
+			}
+
+			button {
+				margin-top: 20px;
+				margin-bottom: 10px;
+				padding: 10px;
+			}
+
+			.button:focus-visible {
+					border: 2px dashed blue;
+			}
+
+			form:focus-within {
+				background-color: hotpink;
+				font-weight: bold;
+			}
+			.form:focus-within {
+				background-color: goldenrod;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<tr>
+			<td style="text-align:center;">
+				<table role="presentation" style="margin:0 auto;">
+
+					<tr>
+						<td style="text-align:center;">
+							<p>
+								Tab through to check if you see an outline around the inputs.
+								<br>
+								<span style="color:crimson; font-weight:700;">Red</span> outline: Pseudoclass with type selector
+								<br>
+								<span style="color:blue; font-weight:700;">Blue</span> outline: Pseudoclass with class
+								<br>
+								<br>
+								<b>Expected outcome:</b> <br>
+									- Tabbing through should highlight the inputs, but clicking or tapping a button should not. <br>
+									- Tabbing through should also highlight the whole form. (<span style="color:hotpink; font-weight:700;">pink</span> with type selector, <span style="color:goldenrod;font-weight:700;">gold</span> with class)
+							 </p>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<form class="form">
+								<p>Which flavor would you like to order?</p>
+								<label>Full Name: <input name="firstName" type="text" /></label>
+								<label
+										>Flavor:
+										<select name="flavor">
+										<option>Cherry</option>
+										<option>Green Tea</option>
+										<option>Moose Tracks</option>
+										<option>Mint Chip</option>
+										</select>
+								</label>
+							
+								<button class="button">:focus-visible</button>
+							</form>
+						</td>
+					</tr>
+
+
+				</table>
+			</td>
+		</tr>
+
+
+	</body>
+
+</html>
