@@ -117,7 +117,7 @@ stats: {
   },
   protonmail: {
     desktop-webmail: {
-      "2021-01":"y"
+      "2021-01":"a #2"
     },
     ios: {
       "2021-01":"y"
