@@ -65,6 +65,58 @@
     Vestibulum ac leo vitae metus faucibus gravida ac in neque.
     Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
   </p>
+
+
+  <hr>
+
+  <div>
+    <p dir="rtl" style="border:1px solid; padding:12px;">
+      No text-align is set, but dir="rtl" is set. This is to compare with the 2 below tests.
+      <br>
+      <br>
+
+      Integer elementum massa at nulla placerat varius.
+      Suspendisse in libero risus, in interdum massa.
+      Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+      Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
+    </p>
+  </div>
+
+  <div style="text-align:match-parent;">
+    <p dir="rtl" style="border:1px solid; padding:12px;">
+      <code>text-align:match-parent;</code><br>
+
+      if aligned to the right, it doesn't work.
+      <br>
+      <br>
+      if aligned to the left, it works.
+      <br>
+      <br>
+
+      Integer elementum massa at nulla placerat varius.
+      Suspendisse in libero risus, in interdum massa.
+      Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+      Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
+    </p>
+  </div>
+
+  <div style="text-align:-webkit-match-parent;">
+    <p dir="rtl" style="border:1px solid; padding:12px;">
+      <code>text-align:-webkit-match-parent;</code><br>
+
+      if aligned to the right, it doesn't work.
+      <br>
+      <br>
+      if aligned to the left, it works.
+      <br>
+      <br>
+
+      Integer elementum massa at nulla placerat varius.
+      Suspendisse in libero risus, in interdum massa.
+      Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+      Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
+    </p>
+  </div>
 <!--[if mso]>
     </td>
   </tr>
