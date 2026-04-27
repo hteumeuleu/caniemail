@@ -2,6 +2,7 @@
 title: "<ul>, <ol> and <dl>"
 description: "Support for lists in HTML: `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` and `<dd>` elements."
 category: html
+tags: accessibility
 keywords: ul, ol, li, dl, dt, dd
 last_test_date: "2024-02-17"
 test_url: "/tests/css-list.html"

@@ -3,6 +3,7 @@ title: "text-decoration"
 description: "Tested with the values `overline`, `underline` and `line-through`."
 category: css
 keywords: underline
+tags: i18n
 last_test_date: "2019-02-28"
 test_url: "/tests/css-text-decoration.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/3r2uYHjW7RohepVjh05qVkSQ9t7gJVJd6O5ABI8grFvqQ/list"

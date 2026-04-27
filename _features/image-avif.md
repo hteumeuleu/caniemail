@@ -208,7 +208,6 @@ notes_by_num: {
 }
 links: {
   "Can I use: AVIF image format":"https://caniuse.com/avif",
-  "MDN: Image file type and format guide":"https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types",
-  "avif.io: a free AVIF converter by Justin Schmitz and Niksa Sporin":"https://avif.io/"
+  "MDN: Image file type and format guide":"https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types"
 }
 ---

@@ -2,6 +2,7 @@
 title: "<dfn> element"
 description: "It is used to identify a term that is going to be described within the content."
 category: html
+tags: accessibility
 last_test_date: "2023-09-11"
 test_url: "/tests/html-dfn.html"
 test_results_url: "https://testi.at/proj/gy2dfo4j19d4176d08y"

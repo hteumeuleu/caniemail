@@ -3,7 +3,7 @@ title: "animation"
 description: "Tests for the shorthand `animation` property and its longhand equivalents."
 category: css
 keywords: keyframes
-last_test_date: "2023-12-19"
+last_test_date: "2026-04-07"
 test_url: "/tests/css-animation.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/u4oWccYOFNNyTagHs2NSUZqJYQ3MssrqDMocBnRa35hf7/list"
 stats: {
@@ -85,7 +85,8 @@ stats: {
     },
     thunderbird: {
         macos: {
-            "78.10":"y"
+            "78.10":"y",
+  			"149.0.1":"n"
         }
     },
     aol: {

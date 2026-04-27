@@ -2,6 +2,7 @@
 title: "color-scheme CSS property"
 description: "Changes the default colors of HTML elements. Useful for when you want an email to display only in a dark color scheme or only a light scheme, regardless of user settings"
 category: css
+tags: accessibility
 keywords: "dark mode, light mode"
 last_test_date: "2023-09-18"
 test_url: "/tests/css-color-scheme.html"

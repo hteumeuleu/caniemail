@@ -3,6 +3,7 @@ title: "text-align-last"
 description: "The `text-align-last` CSS property sets how the last line of a block or a line right before a forced line break is aligned."
 category: css
 keywords: align, align-last
+tags: i18n
 last_test_date: "2022-08-31"
 test_url: "/tests/css-text-align-last.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/LxplTmJT9Ilq9GUyn8Aq8MVK6EO427qmx1Ic4A7jc7bOJ/list"

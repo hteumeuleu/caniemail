@@ -113,13 +113,13 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2023-08":"u"
+            "2023-08":"y"
         },
         ios: {
-            "2023-08":"u"
+            "2023-08":"a #5"
         },
         android: {
-            "2023-08":"u"
+            "2023-08":"a #5"
         }
     },
     hey: {
@@ -187,7 +187,8 @@ notes_by_num: {
     "1": "Partial. `E { F {}}` doesn’t work, but `E { & F {}}` does. Full support was added in macOS 14.2.",
     "2": "Buggy. The syntax is supported, but nested selectors are prefixed by the webmail, which might invalidate the selector.",
     "3": "Not supported. The nested selectors are removed, making the nested properties apply to the parent selector.",
-    "4": "Partial. Not supported with Hotmail/Outlook accounts."
+    "4": "Partial. Not supported with Hotmail/Outlook accounts.",
+	"5": "Partial. `@media` is not fully supported, and `& & &` syntax not supported"
 }
 links: {
     "Can I use: CSS Nesting":"https://caniuse.com/css-nesting",

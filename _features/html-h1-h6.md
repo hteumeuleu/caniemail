@@ -3,6 +3,7 @@ title: "<h1> to <h6> elements"
 description: "Support for headings elements in HTML: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`."
 category: html
 keywords: headings, h1, h2, h3, h4, h5, h6
+tags: accessibility
 last_test_date: "2020-05-08"
 test_url: "/tests/html-semantics.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/IulqGoKCPriLhe6DbI1dWmF2AjH535vSIujVufxhenXVC/list"

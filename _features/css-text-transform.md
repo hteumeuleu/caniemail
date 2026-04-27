@@ -2,6 +2,7 @@
 title: "text-transform"
 description: "Each of the six `text-transform` values defined by MDN (`capitalize`, `uppercase`, `lowercase`, `none`, `full-width`, `full-size-kana`)."
 category: css
+tags: i18n
 last_test_date: "2021-09-19"
 test_url: "/tests/css-text-transform.html"
 test_results_url: "https://app.emailonacid.com/shared-preview/R6niSqR1SM"

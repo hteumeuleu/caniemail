@@ -2,6 +2,7 @@
 title: "<p> element"
 category: html
 keywords: paragraph
+tags: accessibility
 last_test_date: "2020-05-08"
 test_url: "/tests/html-semantics.html"
 test_results_url: "https://app.emailonacid.com/app/acidtest/IulqGoKCPriLhe6DbI1dWmF2AjH535vSIujVufxhenXVC/list"
