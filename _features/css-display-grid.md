@@ -21,11 +21,11 @@ stats: {
 		},
 		ios: {
 			"2019-02": "n",
-			"2026-03": "y"
+			"2026-03": "a #1"
 		},
 		android: {
 			"2019-02": "n",
-			"2026-03": "y"
+			"2026-03": "a #1"
 		},
         mobile-webmail: {
             "2020-02": "y"
@@ -184,5 +184,8 @@ stats: {
             "2022-06":"y"
         }
     }
+}
+notes_by_num: {
+	"1": "Not supported with non Google accounts."
 }
 ---
