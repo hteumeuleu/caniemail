@@ -112,13 +112,13 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2026-04":"u"
+            "2026-04":"a #1"
         },
         ios: {
-            "2026-04":"u"
+            "2026-04":"n"
         },
         android: {
-            "2026-04":"u"
+            "2026-04":"n"
         }
     },
     hey: {
@@ -172,6 +172,9 @@ stats: {
             "2026-04": "u"
         }
     }
+}
+notes_by_num: {
+  "1": "Works except on form tag",
 }
 links: {
     "Can I use: inert":"https://caniuse.com/?search=inert",
