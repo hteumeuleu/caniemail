@@ -114,13 +114,13 @@ stats: {
   }, 
   protonmail: {
     desktop-webmail: {
-      "2024-11":"u"
+      "2024-11":"a #1"
     },
     ios: {
-      "2024-11":"u"
+      "2024-11":"a #1"
     },
     android: {
-      "2024-11":"u"
+      "2024-11":"a #1"
     }
   },
   hey: {
@@ -174,7 +174,9 @@ stats: {
     }
   }
 }
- 
+notes_by_num: {
+ "1": "Notation using `url` is not supported.",
+}
 links: {
   "Can I use: CSS property: mask-image":"https://caniuse.com/mask-image",
   "MDN: mask-image":"https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image"
