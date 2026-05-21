@@ -116,13 +116,13 @@ stats: {
   }, 
   protonmail: {
     desktop-webmail: {
-      "2022-08":"u"
+      "2022-08":"y"
     },
     ios: {
-      "2022-08":"u"
+      "2022-08":"y #1"
     },
     android: {
-      "2022-08":"u"
+      "2022-08":"y #1"
     }
   },
   hey: {
@@ -141,7 +141,9 @@ stats: {
     }
   }
 }
- 
+notes_by_num: {
+    "1": "Applies an equivalent behaviour of `word-wrap: break-word` for mobile.",
+}
 links: {
   "Can I use: CSS property: hyphens":"https://caniuse.com/css-hyphens",
   "MDN: hyphens":"https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens"
