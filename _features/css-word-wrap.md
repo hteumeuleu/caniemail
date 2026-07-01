@@ -46,12 +46,24 @@ stats: {
         desktop-webmail: {
             "2025-05":"y"
         }
-    }
+    },
+	protonmail: {
+        desktop-webmail: {
+            "2025-05":"y"
+        },
+        ios: {
+          "2024-11":"a #4"
+        },
+        android: {
+          "2024-11":"a #4"
+        }
+    },
 }
 notes_by_num: {
     "1": "Applies `word-wrap: break-word` to all items.",
     "2": "Does not honor any wrapping, including `word-wrap`, `overflow-wrap`, and `word-break`. Using an equivalent MSO breakdown (`-ms-word-break: break-all` and `mso-hyphenate: none` together) does not work.",
-    "3": "Supports both `word-wrap` and equivalent MSO breakdown (`-ms-word-break: break-all` and `mso-hyphenate: none` together)"
+    "3": "Supports both `word-wrap` and equivalent MSO breakdown (`-ms-word-break: break-all` and `mso-hyphenate: none` together)",
+	"4": "`word-wrap` is correctly supported, however `word-break` seems to break for all values"
 }
 links: {
     "Can I use: word-wrap":"https://caniuse.com/wordwrap",
