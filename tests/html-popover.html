@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="x-apple-disable-message-reformatting">
     <style>
-      dialog {
+      dialog, [popover] {
         padding: 20px;
         border-radius: 8px;
       }
@@ -20,13 +20,31 @@
 
 </head>
 <body>
-    <div style="max-width: 600px;">
-      <button popovertarget="my-popover">Show div</button>
-      <button popovertarget="dialog">Open dialog</button>
+  <div style="max-width: 600px;">
+    <button popovertarget="my-popover">Open popover</button><br><br>
+    <button popovertarget="my-popover1" popovertargetaction="toggle">popovertargetaction Toggle</button><br><br>
+    <button popovertarget="my-popover2" popovertargetaction="show">popovertargetaction Show</button><br><br>
+    <button commandFor="my-popover3" command="toggle-popover">command togle popover</button><br><br>
+    <button commandFor="my-popover4" command="show-popover">command show popover</button><br><br>
+    <button command="show-modal" commandfor="my-dialog">Open dialog</button><br><br>
+    <button command="show-modal" commandfor="my-dialog2">Open dialog2</button><br><br>
 
-<div popover id="my-popover">I am some text in a div</div>
-<dialog popover id="dialog">Greetings, I am some text in a dialog</dialog>
+    <div popover id="my-popover">Popover opened without popovertargetaction.</div>
+    <div popover id="my-popover1">Popover opened without popovertargetaction toggle.</div>
+    <div popover id="my-popover2">Popover opened without popovertargetaction show.
+      <button popovertarget="my-popover2" popovertargetaction="hide">popovertargetaction Hide popover</button>
+    </div>
+    <div popover id="my-popover3">Popover opened without command toggle.</div>
+    <div popover id="my-popover4">Popover opened without command show.
+      <button commandFor="my-popover4" command="hide-popover">command Hide popover</button>
+    </div>
+    <dialog id="my-dialog">Greetings, I am some text in a dialog
+    <button type="button" commandfor="my-dialog" command="close">Close dialog</button>
+    </dialog>
+    <dialog id="my-dialog2" open>Dialog open by default
+    <button type="button" commandfor="my-dialog2" command="close">Close dialog</button>
+    </dialog>
 
-</div>
+  </div>
 </body>
 </html>
