@@ -131,7 +131,7 @@ stats: {
     },
     hey: {
         desktop-webmail: {
-            "2020-06":"n"
+            "2026-08":"y"
         }
     },
     mail-ru: {
