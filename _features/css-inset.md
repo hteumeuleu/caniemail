@@ -108,13 +108,13 @@ stats: {
 	},
 	protonmail: {
 		desktop-webmail: {
-			"2024-05":"u"
+			"2024-05":"n #1"
 		},
 		ios: {
-			"2024-05":"u"
+			"2024-05":"n"
 		},
 		android: {
-			"2024-05":"u"
+			"2024-05":"y"
 		}
 	},
 	hey: {
@@ -167,6 +167,9 @@ stats: {
 			"2024-05":"u"
 		}
 	}
+}
+notes_by_num: {
+    "1": "Buggy. Almost all values are replaced by `unset`.",
 }
 links: {
   "Can I use: CSS inset":"https://caniuse.com/?search=inset",
