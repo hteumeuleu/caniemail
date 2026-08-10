@@ -2,7 +2,7 @@
 title: "popover attribute"
 description: "Show and hide things"
 category: html
-last_test_date: "2023-09-25"
+last_test_date: "2026-07-13"
 test_url: "/tests/html-popover.html"
 test_results_url: ""
 stats: {
@@ -85,7 +85,8 @@ stats: {
 			"2023-09": "n"
 		},
 		android: {
-			"2023-09": "u"
+			"2023-09": "u",
+            "2026-07": "n"
 		}
 	},
 	samsung-email: {
@@ -107,18 +108,22 @@ stats: {
     },
 	thunderbird: {
 		macos: {
-			"115.2": "n"
+			"115.2": "n",
+            "152": "a #3"
 		}
 	},
     protonmail: {
         desktop-webmail: {
-            "2023-09":"n"
+            "2023-09":"n",
+            "2026-07": "y"
         },
         ios: {
-            "2023-09":"n"
+            "2023-09":"n",
+            "2026-07": "y #4"
         },
         android: {
-            "2023-09":"u"
+            "2023-09":"u",
+            "2026-07": "y #4"
         }
     },
     hey: {
@@ -143,10 +148,12 @@ stats: {
     },
     gmx: {
         desktop-webmail: {
-            "2022-06": "u"
+            "2022-06": "u",
+            "2026-07": "n"
         },
         ios: {
-            "2022-06":"u"
+            "2022-06":"u",
+            "2026-07": "y"
         },
         android: {
             "2022-06":"u"
@@ -154,10 +161,12 @@ stats: {
     },
     web-de: {
         desktop-webmail: {
-            "2022-06": "u"
+            "2022-06": "u",
+            "2026-07": "n"
         },
         ios: {
-            "2022-06":"u"
+            "2022-06":"u",
+            "2026-07": "y"
         },
         android: {
             "2022-06":"u"
@@ -165,7 +174,8 @@ stats: {
     },
     ionos-1and1: {
         desktop-webmail: {
-            "2022-06": "u"
+            "2022-06": "u",
+            "2026-07": "n"
         },
         android: {
             "2022-06":"u"
@@ -175,5 +185,7 @@ stats: {
 notes_by_num: {
     "1": "Partial. Not supported with Hotmail/Outlook accounts.",
     "2": "Partial. The `popovertarget` attribute is supported, but the `popover` attribute and the `dialog` element are not.",
+    "3": "Buggy. A button with just an image inside will trigger an image zoom rather than the popover.",
+    "4": "Partial. Does not work with command/commandfor attributes only with popovertarget/popovertargetaction",
 }
 ---
