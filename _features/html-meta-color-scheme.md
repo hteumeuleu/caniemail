@@ -4,9 +4,9 @@ description: "Changes the default colors of HTML elements. Useful for when you w
 category: html
 keywords: dark-mode
 tags: accessibility
-last_test_date: "2023-09-18"
+last_test_date: "2026-09-16"
 test_url: "/tests/html-meta-color-scheme.html"
-test_results_url: ""
+test_results_url: "https://public.mailgun.com/email-preview/ffb681d2-e77b-4990-888d-8d65edfd5877"
 stats: {
     apple-mail: {
         macos: {
@@ -18,16 +18,20 @@ stats: {
     },
     gmail: {
         desktop-webmail: {
-            "2023-09":"n"
+            "2023-09":"n",
+            "2026-09":"n",
         },
         ios: {
-            "2019-09":"n"
+            "2019-09":"n",
+            "2026-09":"a #1",
         },
         android: {
-            "2023-09":"n"
+            "2023-09":"n",
+            "2026-09":"a #1",
         },
         mobile-webmail: {
-            "2023-09":"n"
+            "2023-09":"n",
+            "2026-09":"n",
         }
     },
     orange: {
@@ -174,4 +178,7 @@ stats: {
 	}
 }
 notes: ""
+notes_by_num: {
+    "1": "Partial support. Only the value `light only` is supported (see [Google IssueTracker](https://issuetracker.google.com/issues/201441498#comment21).",
+}
 ---
