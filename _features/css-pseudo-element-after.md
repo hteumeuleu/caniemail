@@ -120,10 +120,10 @@ stats: {
     },
     protonmail: {
         desktop-webmail: {
-            "2020-05":"n"
+            "2020-05":"y"
         },
         ios: {
-            "2020-05":"n"
+            "2020-05":"y"
         },
         android: {
             "2020-05":"y"
