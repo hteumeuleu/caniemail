@@ -3,9 +3,9 @@ title: "SVG image format"
 description: "Support for SVG image format, as a linked file. See [SVG html](/features/html-svg) for embedded SVG support."
 category: image
 keywords: image, SVG
-last_test_date: "2023-01-15"
+last_test_date: "2026-09-16"
 test_url: "/tests/images.html"
-test_results_url: "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidhagmt3Z53CjqbkMhorlvuM0Gz57/list"
+test_results_url: "https://public.mailgun.com/email-preview/bfa94a66-b687-47d2-8301-3c53fdb16a5c"
 stats: {
     apple-mail: {
         macos: {
@@ -15,26 +15,31 @@ stats: {
         ios: {
             "13":"n",
 			"14":"n",
-			"15":"y"
+			"15":"y",
+			"26":"y",
         }
     },
     gmail: {
         desktop-webmail: {
             "2020-02":"n",
             "2023-01":"n",
-			"2024-07":"n"
+			"2024-07":"n",
+			"2026-09":"a #2",
         },
         ios: {
             "2020-02":"a #1",
-            "2023-01":"a #1"
+            "2023-01":"a #1",
+			"2026-09":"a #2",
         },
         android: {
             "2020-02":"a #1",
-            "2023-01":"a #1"
+            "2023-01":"a #1",
+			"2026-09":"a #2",
         },
         mobile-webmail: {
             "2020-02":"n",
-            "2023-01":"n"
+            "2023-01":"n",
+			"2026-09":"a #2",
         }
     },
     outlook: {
@@ -80,7 +85,8 @@ stats: {
     },
     aol: {
         desktop-webmail: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2026-09":"y",
         },
         ios: {
             "2020-02":"y"
@@ -91,7 +97,8 @@ stats: {
     },
     yahoo: {
         desktop-webmail: {
-            "2020-02":"y"
+            "2020-02":"y",
+            "2026-09":"y",
         },
         ios: {
             "2020-02":"y"
@@ -187,6 +194,7 @@ stats: {
     }
 }
 notes_by_num: {
-    "1": "Partially supported. Only works with non Google accounts."
+    "1": "Partially supported. Only works with non Google accounts.",
+    "2": "Partially supported. The image is rendered but rasterized in PNG."
 }
 ---
