@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Pseudo selector :lang property</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			padding: 30px;
+		}
+
+		h1, h2, p {
+			font-family: Palatino, serif;
+			text-align: center;
+			color:#0000FF;
+		}
+
+		h1 {
+			padding: 20px;
+		}
+
+		h2 {
+			padding-bottom: 10px;
+			font-size: 24px;
+		}
+		
+		h3 {
+			padding-bottom: 10px;
+			font-size: 24px;
+		}
+
+		p {
+			font-size: 18px;
+			padding-bottom: 30px;
+		}
+
+		:dir(ltr) {
+			color: #000000;
+		}
+
+		span:dir(ltr) {
+			color: #006000;
+			font-weight: 700;
+		}
+		span:dir(rtl) {
+			color: #ff0000;
+			font-weight: 700;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		CSS Pseudo Elements - dir
+	</h1>
+	<p>
+		Paragraphs + heading text color set to blue. :ltr sets all text to black if working.
+		<br>
+		LTR spans set to green. RTL spans set to red.
+	</p>
+	
+	
+	<h2>:dir(ltr) specified</h2>
+	<p>
+		Wrapped with span set to LTR: <span dir="ltr">LTR Text</span>
+	</p>
+
+	
+	
+	<h2>:dir(ltr) unspecified</h2>
+	<p>
+		Wrapped with span, unset: <span>LTR Text</span>
+	</p>
+
+	
+	
+	<h2>:dir(rtl) specified</h2>
+	<p>
+		Wrapped with span set to RTL: <span dir="rtl">RTL Text</span>
+	</p>
+
+	
+	
+	<h2>:dir(ltr) unspecified</h2>
+	<p>
+		Wrapped with span, unset: <span>RTL Text</span>
+	</p>
+
+
+	
+	
+	<h2>:dir(rtl) specified - RTL implied</h2>
+	<p>
+		Wrapped with span set to RTL: <span dir="rtl">نص رتل</span>
+	</p>
+
+	
+	
+	<h2>:dir(ltr) unspecified - RTL implied</h2>
+	<p>
+		Wrapped with span, unset: <span>نص رتل</span>
+	</p>
+
+</body>
+</html>
